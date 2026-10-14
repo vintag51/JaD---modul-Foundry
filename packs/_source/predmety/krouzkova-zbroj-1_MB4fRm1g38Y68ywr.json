@@ -1,0 +1,94 @@
+{
+  "_id": "MB4fRm1g38Y68ywr",
+  "name": "Kroužková zbroj +1",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Vzácný</em></p><p>Ke svému OČ přidává magický Bonus +1 (vzácná), +2 (velmi vzácná) nebo +3 (legendární).</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#zbroj-x\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 55,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 16,
+      "dex": 0,
+      "magicalBonus": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 13,
+    "proficient": null,
+    "type": {
+      "value": "heavy",
+      "baseItem": "chainmail"
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [
+      "mgc",
+      "stealthDisadvantage"
+    ],
+    "activities": {},
+    "attuned": false,
+    "identifier": "chain-mail-1"
+  },
+  "effects": [],
+  "folder": "cOJvO0ILUmaTXB2r",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "zbroj-x"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MB4fRm1g38Y68ywr"
+}

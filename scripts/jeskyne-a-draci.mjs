@@ -8,6 +8,8 @@
  * - ohlásí, zda je aktivní volitelná vrstva Midi-QOL.
  */
 
+import { NASTROJE } from "./registr-predmetu.mjs";
+
 const MODUL = "jeskyne-a-draci";
 const DATA = `modules/${MODUL}/data/kompendium`;
 
@@ -17,7 +19,8 @@ const BALIKY = [
   { pack: "seznamy-kouzel", soubor: "seznamy-kouzel.json" },
   { pack: "rasy", soubor: "rasy.json" },
   { pack: "povolani", soubor: "povolani.json" },
-  { pack: "zazemi", soubor: "zazemi.json" }
+  { pack: "zazemi", soubor: "zazemi.json" },
+  { pack: "predmety", soubor: "predmety.json" }
 ];
 
 const t = (klic, data) => data ? game.i18n.format(`JAD.${klic}`, data) : game.i18n.localize(`JAD.${klic}`);
@@ -34,8 +37,33 @@ Hooks.once("init", () => {
     hint: "JAD.Nastaveni.Jednotky.Napoveda",
     scope: "world", config: true, type: Boolean, default: true
   });
+  game.settings.register(MODUL, "jmenaMinci", {
+    name: "JAD.Nastaveni.Mince.Nazev",
+    hint: "JAD.Nastaveni.Mince.Napoveda",
+    scope: "world", config: true, type: Boolean, default: true, requiresReload: true
+  });
   game.settings.register(MODUL, "importovanaVerze", { scope: "world", config: false, type: String, default: "" });
+  registrovatNastroje();
+  if ( game.settings.get(MODUL, "jmenaMinci") ) prejmenovatMince();
 });
+
+/** Pomůcky JaD, které v dnd5e nejsou (Hornické nářadí…), přidá do seznamu nástrojů pro Zdatnosti. */
+function registrovatNastroje() {
+  const nastroje = CONFIG.DND5E?.tools;
+  if ( !nastroje ) return;
+  for ( const [klic, data] of Object.entries(NASTROJE) ) nastroje[klic] ??= data;
+}
+
+/** Zlaťáky, stříbrňáky a měďáky místo gp/sp/cp (převodní poměry zůstávají). */
+function prejmenovatMince() {
+  const mince = CONFIG.DND5E?.currencies;
+  if ( !mince ) return;
+  for ( const [klic, jad] of [["gp", "Zl"], ["sp", "St"], ["cp", "Md"]] ) {
+    if ( !mince[klic] ) continue;
+    mince[klic].label = `JAD.Mince.${jad}.Nazev`;
+    mince[klic].abbreviation = `JAD.Mince.${jad}.Zkratka`;
+  }
+}
 
 Hooks.once("ready", async () => {
   const modul = game.modules.get(MODUL);

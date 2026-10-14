@@ -1,0 +1,94 @@
+{
+  "_id": "Sku1Pyqe33CsWmhE",
+  "name": "Zbroj nezranitelnosti",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-collared-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Legendární, vyžaduje Sladění</em></p><p>Máš Odolnost proti nemagickým Zásahům. Jednou denně ji můžeš Akcí na deset minut změnit na Imunitu.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#zbroj-nezranitelnosti\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 65,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 18,
+      "dex": 0,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 15,
+    "proficient": null,
+    "type": {
+      "value": "heavy",
+      "baseItem": "plate"
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc",
+      "stealthDisadvantage"
+    ],
+    "activities": {},
+    "attuned": false,
+    "identifier": "armor-of-invulnerability"
+  },
+  "effects": [],
+  "folder": "qKUWltnp7ikpLmDW",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "zbroj-nezranitelnosti"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Sku1Pyqe33CsWmhE"
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Páčidlo",
+  "type": "loot",
+  "img": "icons/tools/hand/pickaxe-steel-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Výhoda k hodům na Sílu, kde lze páku využít.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/6-vybaveni.html#balicky-vybaveni\" target=\"_blank\">SRD Jeskyní a draků – Vybavení</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "identified": true,
+    "container": "dcqgwIFRXwpA0EC9",
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "properties": [],
+    "identifier": "crowbar"
+  },
+  "effects": [],
+  "folder": "8PVX2jtLAg9AJ05j",
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "f8tmDCVg5wu4ZwLo",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!f8tmDCVg5wu4ZwLo"
+}

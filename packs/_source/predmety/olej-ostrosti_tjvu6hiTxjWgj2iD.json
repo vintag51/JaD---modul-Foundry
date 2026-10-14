@@ -1,0 +1,415 @@
+{
+  "_id": "tjvu6hiTxjWgj2iD",
+  "name": "Olej ostrosti",
+  "type": "consumable",
+  "img": "icons/consumables/potions/flask-ornate-skull-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Velmi vzácný</em></p><p>Natření zbraně nebo pěti Bodných či Sečných střel (minuta) jim na hodinu dá +3 k Útoku a Zásahu.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#olej-ostrosti\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": "",
+      "name": "Unidentified Oil"
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {
+      "cT06cj9LC81wNski": {
+        "type": "enchant",
+        "name": "Natřít zbraň",
+        "_id": "cT06cj9LC81wNski",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "minute",
+          "override": false,
+          "condition": "",
+          "value": 1
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "concentration": false,
+          "override": false,
+          "value": "1"
+        },
+        "effects": [
+          {
+            "_id": "IHJhvGPE1KPinh1r",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "touch",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "object",
+            "count": "1",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": true,
+          "identifier": ""
+        },
+        "enchant": {
+          "self": false
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "weapon"
+        }
+      },
+      "Wa0cWtddVr7eTGOz": {
+        "type": "enchant",
+        "name": "Natřít střely",
+        "img": "",
+        "sort": 300000,
+        "activation": {
+          "type": "minute",
+          "override": false,
+          "value": 1,
+          "condition": ""
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "concentration": false,
+          "override": false,
+          "value": "1"
+        },
+        "effects": [
+          {
+            "_id": "IHJhvGPE1KPinh1r",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "touch",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "5",
+            "type": "object",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": true,
+          "identifier": ""
+        },
+        "enchant": {
+          "self": false
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [
+            "ammo"
+          ],
+          "properties": [],
+          "type": "consumable"
+        },
+        "_id": "Wa0cWtddVr7eTGOz"
+      }
+    },
+    "attuned": false,
+    "identifier": "oil-of-sharpness"
+  },
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "Olej ostrosti: zbraň",
+      "img": "icons/consumables/potions/flask-ornate-skull-green.webp",
+      "disabled": true,
+      "_id": "IHJhvGPE1KPinh1r",
+      "system": {
+        "changes": [
+          {
+            "key": "system.magicalBonus",
+            "type": "upgrade",
+            "value": 3,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.description.value",
+            "type": "override",
+            "value": "{} <p><strong>Oil of Sharpness.</strong> For the duration, this weapon is magical and has a +3 bonus to attack and damage rolls.</p>",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.properties",
+            "type": "add",
+            "value": "mgc",
+            "phase": "initial",
+            "priority": null
+          }
+        ],
+        "magical": true
+      },
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek předmětu <em>Olej ostrosti</em>.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!tjvu6hiTxjWgj2iD.IHJhvGPE1KPinh1r"
+    },
+    {
+      "type": "enchantment",
+      "name": "Olej ostrosti: střely",
+      "img": "icons/consumables/potions/flask-ornate-skull-green.webp",
+      "disabled": true,
+      "system": {
+        "changes": [
+          {
+            "key": "system.magicalBonus",
+            "type": "upgrade",
+            "value": 3,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.description.value",
+            "type": "override",
+            "value": "{} <p><strong>Oil of Sharpness.</strong> For the duration, this piece of ammunition is magical and has a +3 bonus to attack and damage rolls.</p>",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.properties",
+            "type": "add",
+            "value": "mgc",
+            "phase": "initial",
+            "priority": null
+          }
+        ],
+        "magical": true
+      },
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek předmětu <em>Olej ostrosti</em>.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "L6ERoLhCCv7UsF1b",
+      "_key": "!items.effects!tjvu6hiTxjWgj2iD.L6ERoLhCCv7UsF1b"
+    }
+  ],
+  "folder": "qBb2ap6iqOYoK6Y6",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "olej-ostrosti"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!tjvu6hiTxjWgj2iD"
+}

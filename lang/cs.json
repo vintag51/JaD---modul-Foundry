@@ -8,6 +8,10 @@
       "Jednotky": {
         "Nazev": "Kontrolovat mřížku scény",
         "Napoveda": "Upozorní GM, pokud scéna nemá 1 pole = 1 sáh (5 stop, 1,5 m)."
+      },
+      "Mince": {
+        "Nazev": "Mince JaD (zl, st, md)",
+        "Napoveda": "Přejmenuje zlaté, stříbrné a měděné mince dnd5e na zlaťáky, stříbrňáky a měďáky. Převodní poměry se nemění."
       }
     },
     "Import": {
@@ -42,6 +46,20 @@
           "many": "{number} sáhu",
           "other": "{number} sáhů"
         }
+      }
+    },
+    "Mince": {
+      "Zl": {
+        "Nazev": "Zlaťáky",
+        "Zkratka": "zl"
+      },
+      "St": {
+        "Nazev": "Stříbrňáky",
+        "Zkratka": "st"
+      },
+      "Md": {
+        "Nazev": "Měďáky",
+        "Zkratka": "md"
       }
     }
   }

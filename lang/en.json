@@ -8,6 +8,10 @@
       "Jednotky": {
         "Nazev": "Check scene grid",
         "Napoveda": "Warns the GM if the scene grid is not 1 square = 1 fathom (5 ft, 1.5 m)."
+      },
+      "Mince": {
+        "Nazev": "JaD coins (zl, st, md)",
+        "Napoveda": "Renames dnd5e gold, silver and copper pieces to the Czech JaD coins. Conversion rates stay the same."
       }
     },
     "Import": {
@@ -36,6 +40,20 @@
           "one": "{number} sáh",
           "other": "{number} sáh"
         }
+      }
+    },
+    "Mince": {
+      "Zl": {
+        "Nazev": "Zlaťáky (gold)",
+        "Zkratka": "zl"
+      },
+      "St": {
+        "Nazev": "Stříbrňáky (silver)",
+        "Zkratka": "st"
+      },
+      "Md": {
+        "Nazev": "Měďáky (copper)",
+        "Zkratka": "md"
       }
     }
   }

@@ -1,0 +1,91 @@
+{
+  "_id": "st3RJGDN1Hz41Fbt",
+  "name": "Kouzelný svitek (9. Stupeň)",
+  "type": "consumable",
+  "img": "icons/sundries/scrolls/scroll-bound-sealed-red-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Legendární</em></p><p>Kouzlo ze seznamu tvého Povolání sešleš přečtením bez surovin (jinak je svitek nečitelný). Je-li nad tvé síly, potřebuješ Ověření Sesílací vlastnosti SO 10 + Stupeň. SO a Útočný bonus určuje Stupeň: trik a 1. – 13/+5, 2. – 13/+5, 3.–4. – 15/+7, 5.–6. – 17/+9, 7.–8. – 18/+10, 9. – 19/+11. Svitek se použitím zničí.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#kouzelny-svitek\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "scroll",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": "",
+      "name": "Unidentified Scroll"
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {},
+    "attuned": false,
+    "identifier": "spell-scroll-9th-level"
+  },
+  "effects": [],
+  "folder": "ymbo6VGKXeMTK4IB",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "kouzelny-svitek"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!st3RJGDN1Hz41Fbt"
+}

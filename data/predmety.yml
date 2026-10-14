@@ -1,0 +1,306 @@
+# Předměty a vybavení Jeskyní a draků (kapitola 6 Vybavení a 11 Kouzelné předměty).
+# Mechanika se přebírá z odpovídajícího SRD předmětu systému dnd5e (srd: cesta v packs/_source/items bez .yml),
+# název, cena (zl/st/md), váha (lb) a vlastní shrnutí podle JaD. Texty JaD se nekopírují – d: je vlastní shrnutí.
+# Položky bez srd: jsou vlastní (zaklad: SRD předmět, z něhož se vychází, nebo typ).
+
+# ---------------------------------------------------------------- 6. kapitola: zbraně
+zbrane:
+  # Jednoduché na blízko
+  - {srd: weapon/dagger, n: Dýka, cena: 2 zl, lb: 1, t: "1k4 Bodný", dostrel: "4 / 12", v: "Lehká, Vytříbená, Vrhací"}
+  - {srd: weapon/quarterstaff, n: Hůl, cena: 2 st, lb: 5, t: "1k6 Drtivý", v: "Jedenapůlruční (1k8)"}
+  - {srd: weapon/spear, n: Kopí, cena: 1 zl, lb: 3, t: "1k6 Bodný", dostrel: "4 / 12", v: "Jedenapůlruční (1k8), Vrhací"}
+  - {srd: weapon/club, n: Kyj, cena: 1 st, lb: 2, t: "1k4 Drtivý", v: "Lehká"}
+  - {srd: weapon/light-hammer, n: Lehké kladivo, cena: 2 zl, lb: 2, t: "1k4 Drtivý", dostrel: "4 / 12", v: "Lehká, Vrhací"}
+  - {srd: weapon/javelin, n: Oštěp, cena: 5 st, lb: 2, t: "1k6 Bodný", dostrel: "6 / 24", v: "Vrhací"}
+  - {srd: weapon/mace, n: Palcát, cena: 5 zl, lb: 4, t: "1k6 Drtivý"}
+  - {srd: weapon/handaxe, n: Sekera, cena: 5 zl, lb: 2, t: "1k6 Sečný", dostrel: "4 / 12", v: "Lehká, Vrhací"}
+  - {srd: weapon/sickle, n: Srp, cena: 1 zl, lb: 2, t: "1k4 Sečný", v: "Lehká"}
+  - {srd: weapon/greatclub, n: Těžký kyj, cena: 2 st, lb: 10, t: "1k8 Drtivý", v: "Obouruční"}
+  # Válečné na blízko
+  - {srd: weapon/whip, n: Bič, cena: 2 zl, lb: 3, t: "1k4 Sečný", v: "Dlouhá, Vytříbená"}
+  - {srd: weapon/war-pick, n: Cepín, cena: 5 zl, lb: 2, t: "1k8 Bodný"}
+  - {srd: weapon/longsword, n: Dlouhý meč, cena: 15 zl, lb: 3, t: "1k8 Sečný", v: "Jedenapůlruční (1k10)"}
+  - {srd: weapon/lance, n: Dřevec, cena: 10 zl, lb: 6, t: "1k12 Bodný", v: "Dlouhá, Zvláštní",
+     d: "Proti cíli do 1 sáhu útočíš s Nevýhodou. Bez sedla ho musíš držet oběma rukama."}
+  - {srd: weapon/halberd, n: Halapartna, cena: 20 zl, lb: 6, t: "1k10 Sečný", v: "Dlouhá, Obouruční, Těžká"}
+  - {srd: weapon/shortsword, n: Krátký meč, cena: 10 zl, lb: 2, t: "1k6 Bodný", v: "Lehká, Vytříbená"}
+  - {srd: weapon/morningstar, n: Kropáč, cena: 15 zl, lb: 4, t: "1k8 Bodný"}
+  - {srd: weapon/glaive, n: Kůsa, cena: 20 zl, lb: 6, t: "1k10 Sečný", v: "Dlouhá, Obouruční, Těžká"}
+  - {srd: weapon/greatsword, n: Obouruční meč, cena: 50 zl, lb: 6, t: "2k6 Sečný", v: "Obouruční, Těžká"}
+  - {srd: weapon/greataxe, n: Obouruční sekera, cena: 30 zl, lb: 7, t: "1k12 Sečný", v: "Obouruční, Těžká"}
+  - {srd: weapon/maul, n: Palice, cena: 10 zl, lb: 10, t: "2k6 Drtivý", v: "Obouruční, Těžká"}
+  - {srd: weapon/pike, n: Píka, cena: 5 zl, lb: 6, t: "1k10 Bodný", v: "Dlouhá, Obouruční, Těžká"}
+  - {srd: weapon/rapier, n: Rapír, cena: 25 zl, lb: 2, t: "1k8 Bodný", v: "Vytříbená"}
+  - {srd: weapon/flail, n: Řemdih, cena: 10 zl, lb: 2, t: "1k8 Drtivý"}
+  - {srd: weapon/scimitar, n: Šavle, cena: 25 zl, lb: 3, t: "1k6 Sečný", v: "Lehká, Vytříbená"}
+  - {srd: weapon/trident, n: Trojzubec, cena: 5 zl, lb: 4, t: "1k6 Bodný", dostrel: "4 / 12", v: "Jedenapůlruční (1k8), Vrhací"}
+  - {srd: weapon/battleaxe, n: Válečná sekera, cena: 10 zl, lb: 4, t: "1k8 Sečný", v: "Jedenapůlruční (1k10)"}
+  - {srd: weapon/warhammer, n: Válečné kladivo, cena: 15 zl, lb: 2, t: "1k8 Drtivý", v: "Jedenapůlruční (1k10)"}
+  # Na dálku
+  - {srd: weapon/shortbow, n: Krátký luk, cena: 25 zl, lb: 2, t: "1k6 Bodný", dostrel: "16 / 64", v: "Obouruční, Střelná"}
+  - {srd: weapon/light-crossbow, n: Lehká kuše, cena: 25 zl, lb: 5, t: "1k8 Bodný", dostrel: "16 / 64", v: "Nabíjecí, Obouruční, Střelná"}
+  - {srd: weapon/sling, n: Prak, cena: 1 st, lb: 0, t: "1k4 Drtivý", dostrel: "6 / 24", v: "Střelná"}
+  - {srd: weapon/dart, n: Šipka, cena: 5 md, lb: 0.25, t: "1k4 Bodný", dostrel: "4 / 12", v: "Vrhací, Vytříbená"}
+  - {srd: weapon/longbow, n: Dlouhý luk, cena: 50 zl, lb: 2, t: "1k8 Bodný", dostrel: "30 / 120", v: "Obouruční, Střelná, Těžká"}
+  - {srd: weapon/blowgun, n: Foukačka, cena: 10 zl, lb: 1, t: "1 Bodný", dostrel: "5 / 20", v: "Nabíjecí, Střelná"}
+  - {srd: weapon/hand-crossbow, n: Ruční kuše, cena: 75 zl, lb: 3, t: "1k6 Bodný", dostrel: "6 / 24", v: "Lehká, Nabíjecí, Střelná"}
+  - {srd: weapon/net, n: Síť, cena: 1 zl, lb: 3, t: "—", dostrel: "1 / 3", v: "Vrhací, Zvláštní",
+     d: "Zasažený tvor velikosti Velký nebo menší je Zadržený, dokud se nevyprostí (Akce, Síla SO 10, může vyprostit i jiného). Na beztvaré a Obrovské či větší tvory nepůsobí. Síť má OČ 10 a zničí ji 5 Bodů Sečného zásahu. Kdo na Síť útočí, provede jen jeden Útok."}
+  - {srd: weapon/heavy-crossbow, n: Těžká kuše, cena: 50 zl, lb: 10, t: "1k10 Bodný", dostrel: "20 / 80", v: "Nabíjecí, Obouruční, Střelná, Těžká"}
+
+# Palné zbraně (volitelné pravidlo JaD) – vlastní předměty
+palne:
+  - {k: dlanova-pistole, n: Dlaňová pistole, druh: simpleR, cena: 50 zl, lb: 1, kostka: [1, 8], typ: piercing, dostrel: [20, 80], vl: [lod, lgt, fir], selhani: 1, nabiti: 1}
+  - {k: pistole, n: Pistole, druh: simpleR, cena: 50 zl, lb: 3, kostka: [1, 10], typ: piercing, dostrel: [30, 120], vl: [lod, fir], selhani: 1, nabiti: 1}
+  - {k: musketa, n: Mušketa, druh: simpleR, cena: 150 zl, lb: 10, kostka: [1, 12], typ: piercing, dostrel: [60, 240], vl: [lod, two, fir], selhani: 2, nabiti: 1}
+  - {k: trombon, n: Trombón, druh: martialR, cena: 75 zl, lb: 4, kostka: [2, 8], typ: piercing, dostrel: [30, 120], vl: [lod, fir], selhani: 2, nabiti: 1}
+  - {k: hakovnice, n: Hákovnice, druh: martialR, cena: 200 zl, lb: 12, kostka: [2, 10], typ: piercing, dostrel: [100, 400], vl: [lod, two, hvy, fir], selhani: 2, nabiti: 1}
+  - {k: rucni-hmozdir, n: Ruční hmoždíř, druh: martialR, cena: 250 zl, lb: 20, kostka: [2, 8], typ: fire, dostrel: [15, 30], vl: [lod, hvy, fir], selhani: 3, nabiti: 1, vybusna: true}
+  - {k: delo-male, n: Dělo (malé), druh: martialR, cena: 500 zl, lb: 200, kostka: [3, 10], typ: bludgeoning, dostrel: [150, 600], vl: [lod, two, fir], selhani: 2, nabiti: 3, vybusna: true}
+
+# ---------------------------------------------------------------- zbroje a štíty
+zbroje:
+  - {srd: armor/shield, n: Štít, cena: 10 zl, lb: 6, oc: "+2", radky: 1}
+  - {srd: armor/padded-armor, n: Vycpávaná zbroj, cena: 5 zl, lb: 8, oc: "11 + Oprava obratnosti", radky: 1,
+     d: "Prošívané vrstvy látky a ovčí vlny."}
+  - {srd: armor/leather-armor, n: Kožená zbroj, cena: 10 zl, lb: 10, oc: "11 + Oprava obratnosti", radky: 1,
+     d: "Krunýř a nárameníky z kůže tvrzené vyvářením v oleji, spojené měkčí kůží."}
+  - {srd: armor/studded-leather-armor, n: Okovaná kožená zbroj, cena: 45 zl, lb: 12, oc: "12 + Oprava obratnosti", radky: 1,
+     d: "Tvrzená kůže zpevněná hustě nasázenými nýty či hroty."}
+  - {srd: armor/hide-armor, n: Kožešinová zbroj, cena: 10 zl, lb: 12, oc: "12 + Oprava obratnosti (max +2)", radky: 2,
+     d: "Silné kožešiny a nevydělané kůže – zbroj těch, kdo nemají přístup k lepší výrobě."}
+  - {srd: armor/chain-shirt, n: Kroužková košile, cena: 50 zl, lb: 20, oc: "13 + Oprava obratnosti (max +2)", radky: 2,
+     d: "Drátěná košile s prošívanicí, chrání trup od pasu nahoru."}
+  - {srd: armor/scale-mail, n: Šupinová zbroj, cena: 50 zl, lb: 45, oc: "14 + Oprava obratnosti (max +2)", radky: 2,
+     d: "Kožený kabátec a nohavice pokryté překrývajícími se kovovými plátky; patří k ní rukavice."}
+  - {srd: armor/breastplate, n: Kyrys, cena: 400 zl, lb: 20, oc: "14 + Oprava obratnosti (max +2)", radky: 2,
+     d: "Kovový hrudní plát – kryje životně důležité orgány a pohyb téměř neomezuje."}
+  - {srd: armor/half-plate-armor, n: Poloplátová zbroj, cena: 750 zl, lb: 40, oc: "15 + Oprava obratnosti (max +2)", radky: 2,
+     d: "Tvarované pláty přes většinu těla; nohy chrání jen stehenní díly na řemenech."}
+  - {srd: armor/ring-mail, n: Zbroj pošitá kroužky, cena: 30 zl, lb: 40, oc: "14", radky: 3,
+     d: "Též falérová zbroj – kůže zpevněná našitými těžkými kroužky. Volba těch, kdo nemají na lepší."}
+  - {srd: armor/chain-mail, n: Kroužková zbroj, cena: 75 zl, lb: 55, oc: "16", sila: 13, radky: 3,
+     d: "Kompletní drátěná zbroj včetně kápě a prošívanice pod ní."}
+  - {srd: armor/splint-armor, n: Lamelová zbroj, cena: 200 zl, lb: 60, oc: "17", sila: 15, radky: 3,
+     d: "Úzké kovové pásy nanýtované na kůži, spoje kryté kroužky."}
+  - {srd: armor/plate-armor, n: Plátová zbroj, cena: 1500 zl, lb: 65, oc: "18", sila: 15, radky: 3,
+     d: "Snýtované pláty kryjící celé tělo, s přilbou, rukavicemi, botami a prošívanicí."}
+
+# ---------------------------------------------------------------- výbava dobrodruhů
+# s: složka (Výbava, Ohniskové předměty, Střely, Oblečení, Kontejnery, Jezdecké potřeby)
+vybava:
+  - {srd: potion/alchemists-fire, n: Alchymistický oheň (Láhev), cena: 50 zl, lb: 1,
+     d: "Láhev lepkavé směsi, která na vzduchu vzplane. Hodíš ji jako Improvizovanou zbraň až na 4 sáhy; zasažený hoří a na začátku každého svého Tahu utrpí 1k4 + tvá Oprava obratnosti Ohnivého zásahu. Oheň uhasí Akcí a úspěšnou Záchranou na Obratnost se SO 10."}
+  - {srd: container/backpack, n: Batoh, cena: 2 zl, lb: 5, s: Kontejnery,
+     d: "Pojme zhruba 30 litrů. S Batohem uneseš o 5 Řádků více (Těžké naložení) a v nouzi ho můžeš i s obsahem rychle odhodit."}
+  - {srd: trinket/portable-ram, n: Beranidlo (přenosné), cena: 4 zl, lb: 35,
+     d: "Při vyrážení dveří dává +4 k hodu na Sílu; pomocník u druhého konce ti dá Výhodu."}
+  - {srd: container/pouch, n: Brašnička, cena: 5 st, lb: 1, s: Kontejnery}
+  - {srd: container/component-pouch, n: Brašnička na suroviny, cena: 25 zl, lb: 2, s: Ohniskové předměty,
+     d: "Opasková brašnička s přihrádkami na suroviny pro Sesílání – nahradí všechny suroviny bez uvedené ceny."}
+  - {srd: loot/whetstone, n: Brousek, cena: 1 md, lb: 1}
+  - {srd: loot/spyglass, n: Dalekohled, cena: 1000 zl, lb: 1, d: "Předměty vidíš dvakrát blíž."}
+  - {srd: spellcasting-focus/wooden-staff, n: Dřevěná berla (druidský ohniskový předmět), cena: 5 zl, lb: 4, s: Ohniskové předměty,
+     d: "Druid ji může používat jako Ohniskový předmět pro Sesílání kouzel."}
+  - {srd: spellcasting-focus/sprig-of-mistletoe, n: Snítka jmelí (druidský ohniskový předmět), cena: 1 zl, lb: 0, s: Ohniskové předměty,
+     d: "Druid ji může používat jako Ohniskový předmět pro Sesílání kouzel."}
+  - {srd: spellcasting-focus/yew-wand, n: Tisová hůlka (druidský ohniskový předmět), cena: 10 zl, lb: 1, s: Ohniskové předměty,
+     d: "Druid ji může používat jako Ohniskový předmět pro Sesílání kouzel."}
+  - {srd: spellcasting-focus/totem, n: Totem (druidský ohniskový předmět), cena: 1 zl, lb: 0, s: Ohniskové předměty,
+     d: "Peří, kožešina, kosti či zuby posvátných zvířat – Druidův Ohniskový předmět."}
+  - {k: dymovnice, zaklad: potion/alchemists-fire, n: Dýmovnice, cena: 50 zl, lb: 1, typ: trinket,
+     d: "Akcí ji hodíš až na 4 sáhy; dým zahalí kruh o poloměru 2 sáhy. Oblast je Slabě zahalená a Útoky na dálku skrz ni mají Nevýhodu. Dým vydrží minutu, pokud ho dřív nerozfouká vítr.",
+     akt: {n: Hodit, typ: utility, dosah: 4, sablona: {typ: radius, velikost: 2}}}
+  - {srd: container/jug, n: Džbán nebo karafa, cena: 2 md, lb: 4, s: Kontejnery, d: "Pojme 3 litry."}
+  - {srd: container/vial, n: Flakónek, cena: 1 zl, lb: 0, s: Kontejnery,
+     d: "Lahvička na 120 ml. Obsah můžeš chrstnout na cíl do 1 sáhu, nebo Flakónek hodit až na 4 sáhy jako Improvizovanou zbraň – sám nezraní, ale cíl zasáhne jeho obsah."}
+  - {srd: trinket/climbers-kit, n: Horolezecká výstroj, cena: 25 zl, lb: 12,
+     d: "Skoby, hroty na boty, rukavice a úvaz. Zajištěný nespadneš víc než 5 sáhů od bodu jištění, ale dál než 5 sáhů od něj nevylezeš. Lano je třeba zvlášť."}
+  - {k: hrebiky, zaklad: trinket/iron-spike, n: "Hřebíky, železné (10 ks)", cena: 1 zl, lb: 5, typ: loot}
+  - {srd: loot/ink-bottle, n: Inkoust (malá lahvička), cena: 10 zl, lb: 0}
+  - {srd: loot/ink-pen, n: Inkoustové pero, cena: 2 md, lb: 0}
+  - {srd: poison/basic-poison, n: "Jed, základní (Flakónek)", cena: 100 zl, lb: 0,
+     d: "Akcí ho naneseš na Sečnou či Bodnou zbraň nebo až tři střely. Zasažený musí uspět v Záchraně na Odolnost se SO 10, jinak utrpí 1k4 Jedového zásahu. Jed po nanesení zaschne do minuty."}
+  - {srd: trinket/caltrops, n: Ježci (pytlík s 20 ks), cena: 1 zl, lb: 2,
+     d: "Váček pokryje 1 čtvereční sáh. Kdo na plochu vstoupí, musí uspět v Záchraně na Obratnost se SO 15, jinak se zastaví a utrpí 1 Bodný zásah; dokud si neobnoví aspoň 1 Bod výdrže, má Rychlost o 2 sáhy menší. Při pohybu poloviční Rychlostí se házet nemusí."}
+  - {srd: loot/bedroll, n: Karimatka, cena: 1 zl, lb: 7}
+  - {srd: loot/hammer, n: Kladivo, cena: 1 zl, lb: 3}
+  - {srd: loot/sledgehammer, n: "Kladivo, perlík", cena: 2 zl, lb: 10}
+  - {srd: trinket/block-and-tackle, n: Kladkostroj, cena: 1 zl, lb: 5, d: "Soustava kladek s lanem a hákem – zvedneš čtyřnásobek obvyklé váhy."}
+  - {srd: loot/book, n: Kniha, cena: 25 zl, lb: 5}
+  - {srd: loot/spellbook, n: Kniha kouzel, cena: 50 zl, lb: 3, d: "Kožená kniha se 100 listy jemného pergamenu – nezbytnost pro Kouzelníka."}
+  - {srd: container/basket, n: Koš, cena: 4 st, lb: 2, s: Kontejnery, d: "Pojme 30 litrů (až 40 lb)."}
+  - {srd: container/iron-pot, n: "Kotlík, železný", cena: 2 zl, lb: 10, s: Kontejnery}
+  - {srd: loot/grappling-hook, n: Kotvička, cena: 2 zl, lb: 4}
+  - {srd: loot/miners-pick, n: "Krumpáč, hornický", cena: 2 zl, lb: 10}
+  - {srd: loot/tinderbox, n: Křesadlo, cena: 5 st, lb: 1, d: "Zapálení pochodně zabere Akci, většího ohně minutu."}
+  - {srd: loot/chalk, n: Křída (1 ks), cena: 1 md, lb: 0}
+  - {srd: trinket/ball-bearings, n: Kuličky (Pytel s 1 000 ks), cena: 1 zl, lb: 2,
+     d: "Akcí je rozsypeš na plochu 3 × 2 sáhy. Kdo po ní jde, musí uspět v Záchraně na Obratnost se SO 10, jinak upadne. Při pohybu poloviční Rychlostí se házet nemusí."}
+  - {srd: potion/acid-vial, n: Kyselina (Flakónek), cena: 25 zl, lb: 1,
+     d: "Chrstneš nebo hodíš jako Flakónek; při zásahu 2k6 + tvá Oprava obratnosti Kyselinového zásahu."}
+  - {srd: container/glass-bottle, n: "Láhev, větší skleněná", cena: 2 zl, lb: 2, s: Kontejnery}
+  - {srd: container/tankard, n: Láhev menší nebo Korbel, cena: 2 md, lb: 1, s: Kontejnery, d: "Pojme půl litru."}
+  - {srd: trinket/lamp, n: Lampa, cena: 5 st, lb: 1, d: "Jasné světlo 3 sáhy, Slabé dalších 6. Láhev oleje vydrží 6 hodin."}
+  - {srd: trinket/silk-rope-50-ft, n: "Lano, hedvábné (10 sáhů)", cena: 10 zl, lb: 5, d: "Má 2 Body výdrže, přetrhneš ho Silou se SO 17."}
+  - {srd: trinket/hempen-rope-50-ft, n: "Lano, konopné (10 sáhů)", cena: 1 zl, lb: 10, d: "Má 2 Body výdrže, přetrhneš ho Silou se SO 17."}
+  - {srd: trinket/healers-kit, n: Léčitelská souprava, cena: 5 zl, lb: 3,
+     d: "Obvazy, masti a dlahy na 10 použití. Akcí a jedním použitím Stabilizuješ tvora s 0 Body výdrže bez hodu na Lékařství."}
+  - {srd: loot/shovel, n: Lopata, cena: 2 zl, lb: 5}
+  - {srd: trinket/hunting-trap, n: Lovecká past, cena: 5 zl, lb: 15,
+     d: "Nastražíš ji Akcí. Kdo do ní šlápne, musí uspět v Záchraně na Obratnost se SO 13, jinak utrpí 1k4 Bodného zásahu a zastaví se; dokud se nevyprostí (Akce, Síla SO 13, neúspěch = 1 Bodný zásah), drží ho řetěz."}
+  - {srd: trinket/hooded-lantern, n: "Lucerna, s okenicemi", cena: 5 zl, lb: 2,
+     d: "Jasné světlo 6 sáhů, Slabé dalších 6. Láhev oleje vydrží 6 hodin. Akcí přivřeš okenice a světlo klesne na 1 sáh."}
+  - {srd: trinket/bullseye-lantern, n: "Lucerna, směrová", cena: 10 zl, lb: 2,
+     d: "Svítí v jednom směru: Jasné světlo 12 sáhů, Slabé dalších 12. Láhev oleje vydrží 6 hodin."}
+  - {srd: loot/magnifying-glass, n: Lupa, cena: 100 zl, lb: 0,
+     d: "Výhoda k hodům při oceňování nebo zkoumání drobných či detailních předmětů. Za jasného dne s ní za 5 minut zapálíš troud."}
+  - {k: mesec, zaklad: container/pouch, n: Měšec, cena: 1 md, lb: 1, typ: container, s: Kontejnery, d: "Pojme až 100 mincí."}
+  - {srd: food/waterskin, n: Měch na vodu, cena: 2 st, lb: 5, d: "Pojme 2 litry."}
+  - {srd: loot/soap, n: Mýdlo, cena: 2 md, lb: 0}
+  - {srd: spellcasting-focus/staff, n: Berla (mystický ohniskový předmět), cena: 5 zl, lb: 4, s: Ohniskové předměty,
+     d: "Ohniskový předmět pro Mystická kouzla (Kouzelník, Čaroděj, Černokněžník)."}
+  - {srd: spellcasting-focus/wand, n: Hůlka (mystický ohniskový předmět), cena: 10 zl, lb: 1, s: Ohniskové předměty,
+     d: "Ohniskový předmět pro Mystická kouzla."}
+  - {srd: spellcasting-focus/orb, n: Koule (mystický ohniskový předmět), cena: 20 zl, lb: 3, s: Ohniskové předměty,
+     d: "Ohniskový předmět pro Mystická kouzla."}
+  - {srd: spellcasting-focus/crystal, n: Křišťál (mystický ohniskový předmět), cena: 10 zl, lb: 1, s: Ohniskové předměty,
+     d: "Ohniskový předmět pro Mystická kouzla."}
+  - {srd: spellcasting-focus/rod, n: Žezlo (mystický ohniskový předmět), cena: 10 zl, lb: 2, s: Ohniskové předměty,
+     d: "Ohniskový předmět pro Mystická kouzla."}
+  - {srd: loot/mess-kit, n: Nádobí na cesty, cena: 2 st, lb: 1, d: "Plechová krabička – půlky poslouží jako pánev a miska, uvnitř hrnek a příbor."}
+  - {srd: equipment/travelers-clothes, n: "Oblečení, cestovní", cena: 2 zl, lb: 4, s: Oblečení}
+  - {srd: equipment/costume-clothes, n: "Oblečení, kostým", cena: 5 zl, lb: 4, s: Oblečení}
+  - {srd: equipment/common-clothes, n: "Oblečení, obyčejné", cena: 5 st, lb: 3, s: Oblečení}
+  - {srd: equipment/fine-clothes, n: "Oblečení, zdobené", cena: 15 zl, lb: 6, s: Oblečení}
+  - {srd: trinket/manacles, n: Okovy, cena: 2 zl, lb: 6,
+     d: "Spoutají Malého či Středního tvora. Vyklouznutí: Obratnost SO 20, rozlomení: Síla SO 20, odemčení bez klíče: Zlodějské náčiní SO 15. Mají 15 Bodů výdrže."}
+  - {srd: trinket/oil-flask, n: Olej (menší Láhev), cena: 1 st, lb: 1,
+     d: "Akcí ho vychrstneš na cíl do 1 sáhu nebo hodíš Láhev až na 4 sáhy. Potřísněný cíl utrpí při prvním Ohnivém zásahu během minuty dalších 5 Ohnivého zásahu. Rozlitý na zem (1 × 1 sáh) po zapálení hoří 2 Kola a pálí za 5 každého, kdo do něj vstoupí nebo v něm skončí Tah."}
+  - {srd: loot/crowbar, n: Páčidlo, cena: 2 zl, lb: 5, d: "Výhoda k hodům na Sílu, kde lze páku využít."}
+  - {srd: loot/paper, n: Papír (jeden list), cena: 2 st, lb: 0}
+  - {srd: loot/perfume, n: Parfém (Flakónek), cena: 5 zl, lb: 0}
+  - {srd: loot/signet-ring, n: Pečetní prsten, cena: 5 zl, lb: 0}
+  - {srd: loot/sealing-wax, n: Pečetní vosk, cena: 5 st, lb: 0}
+  - {srd: loot/parchment, n: Pergamen (jeden list), cena: 1 st, lb: 0}
+  - {srd: loot/abacus, n: Počítadlo, cena: 2 zl, lb: 2}
+  - {srd: trinket/torch, n: Pochodeň, cena: 1 md, lb: 1,
+     d: "Hoří hodinu: Jasné světlo 4 sáhy, Slabé dalších 4. Zásah hořící pochodní způsobí 1 Ohnivý zásah místo obvyklého."}
+  - {srd: container/crossbow-bolt-case, n: Pouzdro na šipky do kuše, cena: 1 zl, lb: 1, s: Kontejnery, d: "Pojme 20 šipek."}
+  - {srd: potion/antitoxin, n: Protijed (Flakónek), cena: 50 zl, lb: 0,
+     d: "Po vypití máš hodinu Výhodu k Záchranám proti Jedu. Na Nemrtvé a Výtvory nepůsobí."}
+  - {srd: loot/hourglass, n: Přesýpací hodiny, cena: 25 zl, lb: 1}
+  - {srd: loot/blanket, n: Přikrývka, cena: 5 st, lb: 3}
+  - {srd: container/sack, n: Pytel, cena: 1 md, lb: 0.5, s: Kontejnery, d: "Pojme 30 litrů (až 30 lb)."}
+  - {srd: equipment/robes, n: Roucho, cena: 1 zl, lb: 4, s: Oblečení}
+  - {srd: loot/fishing-tackle, n: Rybářské potřeby, cena: 1 zl, lb: 4}
+  - {srd: trinket/chain-10-feet, n: Řetěz (2 sáhy), cena: 5 zl, lb: 10, d: "Má 10 Bodů výdrže; přetrhneš ho Silou se SO 20."}
+  - {srd: loot/signal-whistle, n: Signální píšťalka, cena: 5 md, lb: 0}
+  - {srd: trinket/piton, n: Skoba, cena: 5 md, lb: 0.25}
+  - {k: soudek, zaklad: container/barrel, n: Soudek, cena: 3 md, lb: 2, typ: container, s: Kontejnery, d: "Malý soudek na 2 litry."}
+  - {srd: container/barrel, n: Sud, cena: 2 zl, lb: 70, s: Kontejnery, d: "Pojme 120 litrů."}
+  - {srd: loot/two-person-tent, n: "Stan, pro dvě osoby", cena: 2 zl, lb: 20}
+  - {srd: ammunition/blowgun-needle, n: Jehly do foukačky, cena: 1 zl, lb: 1, ks: 50, s: Střely}
+  - {srd: ammunition/sling-bullet, n: Kule do praku, cena: 4 md, lb: 1.5, ks: 20, s: Střely}
+  - {srd: ammunition/crossbow-bolt, n: Šipky do kuše, cena: 1 zl, lb: 1.5, ks: 20, s: Střely}
+  - {srd: ammunition/arrow, n: Šípy, cena: 1 zl, lb: 1, ks: 20, s: Střely}
+  - {srd: spellcasting-focus/amulet, n: Amulet (svatý symbol), cena: 5 zl, lb: 1, s: Ohniskové předměty,
+     d: "Svatý symbol – Klerik, Chrámový rytíř nebo Svatokupec ho může používat jako Ohniskový předmět, pokud ho drží nebo nosí na očích."}
+  - {srd: spellcasting-focus/emblem, n: Emblém (svatý symbol), cena: 5 zl, lb: 0, s: Ohniskové předměty,
+     d: "Svatý symbol vyrytý či vykládaný na Štítu – slouží jako Ohniskový předmět Klerika, Chrámového rytíře nebo Svatokupce."}
+  - {srd: spellcasting-focus/reliquary, n: Relikvie (svatý symbol), cena: 5 zl, lb: 2, s: Ohniskové předměty,
+     d: "Schránka se zlomkem posvátné relikvie – Ohniskový předmět Klerika, Chrámového rytíře nebo Svatokupce."}
+  - {srd: potion/flask-of-holy-water, n: Svěcená voda (menší Láhev), cena: 25 zl, lb: 1,
+     d: "Chrstneš nebo hodíš jako Flakónek; Běsa nebo Nemrtvého zasáhne za 2k6 + tvá Oprava obratnosti Zářivého zásahu. Klerik, Chrámový rytíř či Svatokupec ji vyrobí hodinovým rituálem (stříbrný prášek za 25 zl a Pozice 1. Stupně)."}
+  - {srd: trinket/candle, n: Svíčka, cena: 1 md, lb: 0, d: "Hodinu svítí: Jasné světlo 1 sáh, Slabé další 1 sáh."}
+  - {srd: container/quiver, n: Toulec, cena: 1 zl, lb: 1, s: Kontejnery, d: "Pojme 20 šípů."}
+  - {srd: container/chest, n: Truhla, cena: 5 zl, lb: 15, s: Kontejnery, d: "Pojme 360 litrů (až 300 lb)."}
+  - {srd: container/map-or-scroll-case, n: Tubus na mapy či svitky, cena: 1 zl, lb: 1, s: Kontejnery, d: "Pojme 10 listů papíru nebo 5 pergamenu."}
+  - {srd: loot/pole, n: Tyč (2 sáhy), cena: 5 md, lb: 7}
+  - {srd: loot/merchants-scale, n: "Váhy, kupecké", cena: 5 zl, lb: 3, d: "Malé vahadlo se závažími do 1 kg – pomůže určit hodnotu drahých kovů a drobného zboží."}
+  - {srd: container/bucket, n: Vědro, cena: 5 md, lb: 2, s: Kontejnery, d: "Pojme 15 litrů."}
+  - {k: voda-sfer, zaklad: potion/flask-of-holy-water, n: Voda sfér, cena: 25 zl, lb: 1, typ: consumable,
+     d: "Chrstneš nebo hodíš jako Flakónek; bytost z jiné Sféry (Běs, Ďábel, Démon, Elementál, Nebešťan, Víla) utrpí 2k6 + tvá Oprava obratnosti Zářivého zásahu. Alchymista ji vyrobí hodinovým rituálem za stříbrný prášek (25 zl) a jedno Použití truhly."}
+  - {srd: trinket/lock, n: Zámek, cena: 10 zl, lb: 1, d: "Dodává se s klíčem. Bez klíče ho otevře Zdatný se Zlodějským náčiním hodem na Obratnost se SO 15."}
+  - {srd: food/rations, n: Zásoby (na 1 den), cena: 5 st, lb: 2, d: "Sušené maso, ovoce a ořechy – skladné jídlo na cesty."}
+  - {srd: loot/steel-mirror, n: "Zrcátko, kovové", cena: 5 zl, lb: 0.5}
+  - {srd: loot/bell, n: Zvonek, cena: 1 zl, lb: 0}
+  - {srd: loot/ladder-10-foot, n: Žebřík (2 sáhy), cena: 1 st, lb: 15}
+  # jezdecké potřeby
+  - {srd: food/feed, n: Krmivo (na den), cena: 5 md, lb: 10, s: Jezdecké potřeby}
+  - {srd: equipment/exotic-saddle, n: "Sedlo, exotické", cena: 60 zl, lb: 40, s: Jezdecké potřeby, d: "Nutné pro jízdu na létajícím či vodním tvoru. Zabere 2 Řádky."}
+  - {srd: equipment/riding-saddle, n: "Sedlo, cestovní", cena: 10 zl, lb: 25, s: Jezdecké potřeby}
+  - {srd: equipment/pack-saddle, n: "Sedlo, s nákladním postrojem", cena: 5 zl, lb: 15, s: Jezdecké potřeby}
+  - {srd: equipment/military-saddle, n: "Sedlo, bitevní", cena: 20 zl, lb: 30, s: Jezdecké potřeby, d: "Výhoda k hodům na udržení se v sedle."}
+  - {srd: container/saddlebags, n: Sedlové brašny, cena: 4 zl, lb: 8, s: Jezdecké potřeby}
+  - {srd: equipment/bit-and-bridle, n: Udidlo a uzda, cena: 2 zl, lb: 1, s: Jezdecké potřeby}
+
+# Balíčky vybavení (obsah podle SRD, názvy obsahu podle seznamu výše nebo obsah:)
+balicky:
+  - {srd: equipment-packs/entertainers-pack, n: Bavičův balíček, cena: 40 zl}
+  - {srd: equipment-packs/diplomats-pack, n: Diplomatův balíček, cena: 39 zl}
+  - {srd: equipment-packs/dungeoneers-pack, n: Jeskyňářův balíček, cena: 12 zl}
+  - {srd: equipment-packs/priests-pack, n: Kněžský balíček, cena: 19 zl}
+  - {srd: equipment-packs/burglars-pack, n: Lupičův balíček, cena: 16 zl}
+  - {srd: equipment-packs/explorers-pack, n: Průzkumníkův balíček, cena: 10 zl}
+  - {srd: equipment-packs/scholars-pack, n: Učencův balíček, cena: 40 zl}
+# názvy předmětů, které jsou jen uvnitř balíčků
+obsah:
+  alms-box: Pokladnička na charitu
+  block-of-incense: Kadidlo
+  censer: Kadidelnice
+  vestments: Obřadní oděv
+  bag-of-sand: Pytlík písku
+  small-knife: Nožík
+  book-of-lore: Kniha znalostí
+  string: Struna
+  ball-bearings: Kuličky
+  disguise-kit: Pomůcky pro přestrojování
+  flask: Láhev oleje
+  map-case: Tubus na mapy
+  scroll-case: Tubus na svitky
+  string-10-ft: Struna (2 sáhy)
+
+# ---------------------------------------------------------------- pomůcky
+pomucky:
+  - {srd: tool/herbalism-kit, n: Bylinkářská souprava, cena: 5 zl, lb: 3,
+     d: "Nůžky, hmoždíř, váčky a flakónky. Zdatnost pomáhá při určování a používání bylin a je nutná k výrobě Protijedu a Léčivého lektvaru."}
+  - {srd: tool/navigators-tools, n: Navigační pomůcky, cena: 25 zl, lb: 2, d: "Se Zdatností určíš kurz lodi podle map a neztratíš se na moři."}
+  - {srd: tool/playing-cards-set, n: Balíček karet, cena: 5 st, lb: 0}
+  - {srd: tool/dice-set, n: Sada kostek, cena: 1 st, lb: 0}
+  - {srd: tool/drum, n: Buben, cena: 6 zl, lb: 3}
+  - {srd: tool/dulcimer, n: Cimbál, cena: 25 zl, lb: 10}
+  - {srd: tool/bagpipes, n: Dudy, cena: 30 zl, lb: 6}
+  - {srd: tool/flute, n: Flétna, cena: 2 zl, lb: 1}
+  - {srd: tool/horn, n: Lesní roh, cena: 3 zl, lb: 2}
+  - {srd: tool/lute, n: Loutna, cena: 35 zl, lb: 2}
+  - {srd: tool/lyre, n: Lyra, cena: 30 zl, lb: 2}
+  - {srd: tool/pan-flute, n: Panova flétna, cena: 12 zl, lb: 2}
+  - {srd: tool/shawm, n: Šalmaj, cena: 2 zl, lb: 1}
+  - {srd: tool/viol, n: Viola, cena: 30 zl, lb: 1}
+  - {srd: tool/alchemists-supplies, n: Alchymistická souprava, cena: 50 zl, lb: 8}
+  - {srd: tool/potters-tools, n: Hrnčířské nástroje, cena: 10 zl, lb: 3}
+  - {k: hornicke, zaklad: tool/masons-tools, n: Hornické nářadí, cena: 5 zl, lb: 8, vlastnost: str}
+  - {k: kamenicke, zaklad: tool/masons-tools, n: Kamenické nářadí, cena: 15 zl, lb: 6, vlastnost: str}
+  - {srd: tool/calligraphers-supplies, n: Kaligrafické náčiní, cena: 10 zl, lb: 5}
+  - {srd: tool/cartographers-tools, n: Kartografické pomůcky, cena: 15 zl, lb: 6}
+  - {srd: tool/jewelers-tools, n: Klenotnické náčiní, cena: 25 zl, lb: 2}
+  - {srd: tool/smiths-tools, n: Kovářské nářadí, cena: 20 zl, lb: 8}
+  - {srd: tool/leatherworkers-tools, n: Koželužnická souprava, cena: 5 zl, lb: 5}
+  - {srd: tool/cooks-utensils, n: Kuchařské nástroje, cena: 1 zl, lb: 8}
+  - {srd: tool/tinkers-tools, n: Kutilské nástroje, cena: 50 zl, lb: 10}
+  - {srd: tool/painters-supplies, n: Malířské náčiní, cena: 10 zl, lb: 5}
+  - {srd: tool/brewers-supplies, n: Pivovarnické nástroje, cena: 20 zl, lb: 9}
+  - {srd: tool/woodcarvers-tools, n: Řezbářské náčiní, cena: 1 zl, lb: 5}
+  - {srd: tool/glassblowers-tools, n: Sklářské nástroje, cena: 30 zl, lb: 5}
+  - {srd: tool/cobblers-tools, n: Ševcovské náčiní, cena: 5 zl, lb: 5}
+  - {k: sperkarske, zaklad: tool/jewelers-tools, n: Šperkařské nástroje, cena: 40 zl, lb: 4, vlastnost: dex}
+  - {srd: tool/carpenters-tools, n: Tesařské nástroje, cena: 8 zl, lb: 6}
+  - {srd: tool/weavers-tools, n: Tkalcovské náčiní, cena: 1 zl, lb: 5}
+  - {k: vinarske, zaklad: tool/brewers-supplies, n: Vinařské nástroje, cena: 20 zl, lb: 9, vlastnost: wis}
+  - {srd: tool/masons-tools, n: Zednické nářadí, cena: 10 zl, lb: 8}
+  - {srd: tool/forgery-kit, n: Padělatelské nástroje, cena: 15 zl, lb: 5, d: "Papíry, inkousty, pečetidla a lístky kovů – Zdatnost se uplatní při padělání listin."}
+  - {srd: tool/disguise-kit, n: Pomůcky pro přestrojování, cena: 25 zl, lb: 3, d: "Líčidla, barva na vlasy a drobné rekvizity – Zdatnost se uplatní při tvorbě přestrojení."}
+  - {srd: tool/poisoners-kit, n: Travičská souprava, cena: 50 zl, lb: 2, d: "Zdatnost se uplatní při výrobě a používání Jedů."}
+  - {srd: tool/thieves-tools, n: Zlodějské náčiní, cena: 25 zl, lb: 1,
+     d: "Pilník, paklíče, zrcátko na držátku, nůžky a kleště. Zdatnost se uplatní při otevírání zámků a zneškodňování pastí."}

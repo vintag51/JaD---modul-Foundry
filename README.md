@@ -24,7 +24,9 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 | **374 schopností povolání** – počty použití a obnova, aktivity (léčení, útoky, záchrany, efekty) a volby (Tajemná vzývání, Metamagie, Bojové styly, Lovecká zakletí, Laskavost paktu, Mystický taj) | hotovo |
 | **16 zázemí JaD** (Akolyta, Bylinkář, Dělník, Strážce, Lovec, Chovatel, Kramář, Mudrc, Pobuda, Právník, Sluha, Šlechtic, Úředník, Voják, Zasvěcenec, Zbojník) se zdatnostmi, volbou jazyků a nástrojů a schopností zázemí | hotovo |
 | **10 odborností** (Gigant, Mistr sekerník, Nedůvěřivost, Nepolapitelnost, Obranný manévr, Pašerák, Pestrý původ, Válečný výcvik, Vílí spřízněnost, Vrozená mystická síla) s postupem, použitími a efekty | hotovo |
-| Předměty | další fáze, ve stejném modulu |
+| **Vybavení JaD** – 37 zbraní, 7 palných zbraní (volitelné pravidlo), 12 zbrojí a štít, 109 položek výbavy, ohniskových předmětů, střel a jezdeckých potřeb, 39 pomůcek a 7 balíčků s obsahem; ceny v zl/st/md, dostřely v sázích | hotovo |
+| **Kouzelné předměty JaD** – 116 předmětů z 11. kapitoly (celkem 336 položek včetně variant): lektvary, zbroje, zbraně (i všechny varianty +1 až +3), hůlky, berly, prsteny, svitky, posilující, vyvolávací, cestovatelské předměty a 4 artefakty; automatizace z SRD dnd5e, kouzla odkazují do kompendia JaD | hotovo |
+| Mince přejmenované na zlaťáky, stříbrňáky a měďáky (lze vypnout v nastavení) | hotovo |
 
 ## Instalace
 
@@ -33,7 +35,7 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 3. Ve světě s dnd5e zapni modul. Při prvním spuštění GM modul sám naplní kompendia z `data/kompendium/*.json` (pokud nejsou předem sestavená).
 4. Mřížku scén nastav na **1 sáh** (nebo 5 stop / 1,5 m) na pole – šablony kouzel se přepočítají automaticky.
 
-Kompendia najdeš ve složce **Jeskyně a draci**: *JaD – Kouzla*, *JaD – Rasy*, *JaD – Povolání a obory*, *JaD – Zázemí a odbornosti* a *JaD – Seznamy kouzel povolání*.
+Kompendia najdeš ve složce **Jeskyně a draci**: *JaD – Kouzla*, *JaD – Rasy*, *JaD – Povolání a obory*, *JaD – Zázemí a odbornosti*, *JaD – Předměty a vybavení* a *JaD – Seznamy kouzel povolání*.
 
 Ruční reimport (např. po aktualizaci dat): v konzoli `game.modules.get("jeskyne-a-draci").api.importovat()`.
 
@@ -62,6 +64,7 @@ python3 tools/generuj.py --dnd5e ../dnd5e        # --jednotky ft pro stopy míst
 python3 tools/generuj_rasy.py                     # rasy
 python3 tools/generuj_povolani.py                 # povolání a obory
 python3 tools/generuj_zazemi.py                   # zázemí a odbornosti
+python3 tools/generuj_predmety.py --dnd5e ../dnd5e # předměty, vybavení a kouzelné předměty
 python3 tools/kontrola.py                        # strukturní kontrola
 npm install && npm run build                     # LevelDB kompendia (Foundry CLI)
 ```
