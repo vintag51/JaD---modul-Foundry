@@ -26,9 +26,12 @@ jobs:
       - name: Sestavit kompendia a ZIP
         working-directory: jeskyne-a-draci
         run: |
-          npm install
+          set -o pipefail
           mkdir -p dist
-          npm run zip
+          ( npm install && npm run zip ) 2>&1 | tee build.log || {
+            tail -n 25 build.log | while IFS= read -r l; do echo "::error::$l"; done
+            exit 1
+          }
           cp module.json dist/module.json
       - name: Nahrát k vydání
         if: github.event_name == 'release'
