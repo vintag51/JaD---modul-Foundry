@@ -11,6 +11,7 @@
 import { NASTROJE, ZAKLADNI } from "./registr-predmetu.mjs";
 import { zapnoutNosnost, zajistitRezimNalozeni } from "./nosnost.mjs";
 import { registrovatDenik } from "./denik.mjs";
+import { registrovatMeritko } from "./meritko.mjs";
 
 const MODUL = "jeskyne-a-draci";
 const DATA = `modules/${MODUL}/data/kompendium`;
@@ -73,6 +74,7 @@ Hooks.once("init", () => {
   }
   registrovatDenik();
   vynutitRychlostRasy();
+  registrovatMeritko();
   if ( game.settings.get(MODUL, "ceskePredmety") ) nahraditZakladniPredmety();
 });
 

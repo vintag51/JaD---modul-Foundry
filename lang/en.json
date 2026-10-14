@@ -58,7 +58,7 @@
         }
       },
       "Titulek": "Scene grid in sáhy",
-      "Dotaz": "Scene “{scena}” has a grid of {mrizka} per square. JaD characters have speed in sáhy and token movement measurement compares speed with grid units. Convert the scene to 1 sáh per square?",
+      "Dotaz": "Scene “{scena}” has a grid of {mrizka} per square. Jeskyně a draci measures in sáhy (1 square = 1 sáh) – token movement is converted at any scale, but map distances will show in feet. Convert the scene to 1 sáh per square?",
       "Prevest": "Convert to sáhy",
       "Nechat": "Keep (don't ask again)",
       "Prevedeno": "Scene “{scena}” now has a grid of 1 sáh per square."

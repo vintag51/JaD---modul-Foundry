@@ -64,7 +64,7 @@
         }
       },
       "Titulek": "Mřížka scény v sázích",
-      "Dotaz": "Scéna „{scena}“ má mřížku {mrizka} na pole. Postavy JaD mají rychlost v sázích a měření pohybu tokenů po mapě porovnává rychlost s jednotkami mřížky. Převést scénu na 1 sáh na pole?",
+      "Dotaz": "Scéna „{scena}“ má mřížku {mrizka} na pole. Jeskyně a draci počítají v sázích (1 pole = 1 sáh) – pohyb tokenů se přepočítá v každém měřítku, ale vzdálenosti na mapě pak uvidíš ve stopách. Převést scénu na 1 sáh na pole?",
       "Prevest": "Převést na sáhy",
       "Nechat": "Nechat (už se neptat)",
       "Prevedeno": "Scéna „{scena}“ má teď mřížku 1 sáh na pole."

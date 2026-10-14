@@ -50,6 +50,7 @@ Pořadí spouštění: kouzla → předměty → rasy → povolání → zázem�
 
 - `scripts/denik.mjs` – Deník JaD (podtřída deníku postavy dnd5e), šablony v `templates/`, vzhled v `styles/jeskyne-a-draci.css`.
 - `scripts/nosnost.mjs` – nosnost na Řádky (nahrazuje výpočet naložení v dnd5e).
+- `scripts/meritko.mjs` – pravítko tokenů, které převádí rychlost postavy na jednotky mřížky scény.
 - `tools/kontrola-sablon.mjs` – v GitHub Action vykreslí šablony a otestuje výpočet Řádků.
 
 ### Pravidla pro texty

@@ -46,7 +46,7 @@ Ruční instalace: stáhni `jeskyne-a-draci.zip` z [Releases](https://github.com
 1. **Kompendia** najdeš na kartě Kompendia ve složce **Jeskyně a draci**: Kouzla, Rasy, Povolání a obory, Zázemí a odbornosti, Předměty a vybavení, Seznamy kouzel povolání.
 2. **Tvorba postavy**: přetáhni na postavu rasu, povolání a zázemí z kompendií – volby (dovednosti, jazyky, vybavení…) se nabídnou samy.
 3. **Deník JaD**: v okně postavy klikni v záhlaví na nastavení deníku a vyber **Deník JaD**. Pro všechny postavy ho nastavíš v **Nastavení hry → Výchozí deníky**.
-4. **Mřížka scén**: scény mají mít **1 pole = 1 sáh** (jednotka „sáh“). Nové scény to dostanou samy, u starších modul převod nabídne. Pak měření pohybu tokenů po mapě i šablony kouzel odpovídají rychlosti postav v sázích.
+4. **Mřížka scén**: scény mají mít **1 pole = 1 sáh** (jednotka „sáh“). Nové scény to dostanou samy, u starších modul převod nabídne. Měření pohybu tokenů si rychlost přepočítá na jednotky scény samo, takže funguje i na mapách ve stopách a s nestvůrami ze systému dnd5e.
 
 ## Nastavení modulu
 
