@@ -272,3 +272,12 @@
 }
 .jad-denik .jad-podnadpis span { flex: 0 1 auto !important; }
 .jad-denik .jad-podnadpis::before, .jad-denik .jad-podnadpis::after { content: ""; flex: 1; border-top: 1px solid var(--jad-okraj); margin: 0 6px; }
+
+.jad-denik .jad-stit .rollable { cursor: pointer; }
+.jad-denik .jad-stit .jad-stit-oprava.rollable:hover { color: var(--jad-cervena); text-shadow: none; }
+.jad-denik .jad-stit-vstup { width: 3em; text-align: center; font-size: 0.85rem; padding: 0; height: 1.4em;
+  border: 1px solid var(--jad-cervena) !important; border-radius: 10px; }
+.jad-denik .jad-podnadpis-blok { margin: 8px 0 2px; font-size: 0.72rem; text-transform: uppercase; color: var(--jad-cervena);
+  border-bottom: 1px solid var(--jad-okraj); }
+.jad-denik .jad-stupen-znak { display: inline-block; min-width: 1.4em; text-align: center; font-weight: bold;
+  border: 1px solid var(--jad-okraj); border-radius: 50%; font-size: 0.72rem; line-height: 1.3em; }

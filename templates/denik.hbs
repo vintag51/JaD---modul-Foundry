@@ -33,10 +33,15 @@
       <div class="jad-vlastnosti-blok">
         <div class="jad-stity">
           {{#each vlastnosti}}
-          <div class="jad-stit {{ @root.rollableClass }}" data-ability="{{ key }}" data-action="roll" data-type="ability" data-tooltip="Ověření vlastnosti">
-            <span class="jad-stit-nazev">{{ nazev }}</span>
-            <span class="jad-stit-oprava">{{ oprava }}</span>
+          <div class="jad-stit" data-ability="{{ key }}">
+            <span class="jad-stit-nazev {{ @root.rollableClass }}" data-action="roll" data-type="ability" data-tooltip="Ověření vlastnosti">{{ nazev }}</span>
+            <span class="jad-stit-oprava {{ @root.rollableClass }}" data-action="roll" data-type="ability" data-tooltip="Ověření vlastnosti">{{ oprava }}</span>
+            {{#if ../upravy}}
+            <input type="number" class="jad-pole jad-stit-vstup" data-cesta="system.abilities.{{ key }}.value" data-typ="cislo"
+                   value="{{ zdroj }}" min="1" max="30" data-tooltip="Hodnota vlastnosti">
+            {{else}}
             <span class="jad-stit-hodnota">{{ hodnota }}</span>
+            {{/if}}
           </div>
           {{/each}}
         </div>
@@ -128,6 +133,19 @@
             <span class="jad-lomitko">/ {{ kouzla.pakt.max }}</span>
           </label>
         </div>
+        {{/if}}
+        {{#if kouzla.pripravena.length}}
+        <h4 class="jad-podnadpis-blok">Připravená kouzla</h4>
+        <ul class="jad-seznam jad-pripravena">
+          {{#each kouzla.pripravena}}
+          <li data-item-id="{{ id }}">
+            <span class="jad-stupen-znak" data-tooltip="Stupeň">{{ stupen }}</span>
+            <a class="jad-polozka" data-action="jadPouzit" data-tooltip="Seslat"><img src="{{ img }}" alt=""><span>{{ nazev }}</span></a>
+            {{#if utokSo}}<span class="jad-pouziti">{{ utokSo }}</span>{{/if}}
+            <a class="jad-detail" data-action="jadOtevrit" data-tooltip="Popis kouzla"><i class="fas fa-book-open"></i></a>
+          </li>
+          {{/each}}
+        </ul>
         {{/if}}
         {{#if kouzla.truhla}}
         <div class="jad-truhla" data-item-id="{{ kouzla.truhla.id }}">

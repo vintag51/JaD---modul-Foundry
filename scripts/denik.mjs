@@ -127,7 +127,7 @@ export function vytvoritDenik() {
       const vlastnosti = VLASTNOSTI.map(([k, nazev]) => {
         const a = sys.abilities[k] ?? {};
         return {
-          key: k, nazev, hodnota: a.value ?? 10, oprava: sign(a.mod ?? 0),
+          key: k, nazev, hodnota: a.value ?? 10, zdroj: actor._source?.system?.abilities?.[k]?.value ?? a.value ?? 10, oprava: sign(a.mod ?? 0),
           zachrana: sign(a.save?.value ?? a.save ?? a.mod ?? 0), zachranaZdatnost: !!a.proficient
         };
       });
@@ -196,7 +196,15 @@ export function vytvoritDenik() {
         so: sys.attributes.spellcasting ? (spell.dc ?? "—") : "—",
         pozice, pakt,
         truhla: truhla ? { id: truhla.id, value: truhla.system.uses.value ?? 0, max: truhla.system.uses.max } : null,
-        zobrazit: !!(sys.attributes.spellcasting || pozice.length || pakt || truhla)
+        pripravena: (() => {
+          try {
+            return pripravitKouzla(actor, false).skupiny.flatMap(g => g.kouzla).filter(k => k.stav);
+          } catch(err) {
+            console.warn(`${MODUL} | Připravená kouzla nelze zobrazit`, err);
+            return [];
+          }
+        })(),
+        zobrazit: !!(sys.attributes.spellcasting || pozice.length || pakt || truhla || actor.itemTypes.spell?.length)
       };
 
       // Zbraně (vybavené, jinak všechny)
@@ -273,7 +281,8 @@ export function vytvoritDenik() {
           neuspechy: [1, 2, 3].map(n => n <= (smrt.failure ?? 0))
         },
         poznamky: actor.flags?.[MODUL]?.poznamkyHrani ?? "",
-        editovatelne: this.isEditable
+        editovatelne: this.isEditable,
+        upravy: this.isEditable && (this.isEditMode ?? true)
       };
     }
 
