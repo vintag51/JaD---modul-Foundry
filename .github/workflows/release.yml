@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with: { path: jad-kouzla }
+        with: { path: jeskyne-a-draci }
       - uses: actions/checkout@v4
         with: { repository: foundryvtt/dnd5e, path: dnd5e }
       - uses: actions/setup-node@v4
@@ -21,10 +21,10 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install pyyaml
       - name: Vygenerovat kouzla
-        working-directory: jad-kouzla
+        working-directory: jeskyne-a-draci
         run: python3 tools/generuj.py --dnd5e ../dnd5e
       - name: Sestavit kompendia a ZIP
-        working-directory: jad-kouzla
+        working-directory: jeskyne-a-draci
         run: |
           npm install
           mkdir -p dist
@@ -35,9 +35,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            jad-kouzla/dist/module.json
-            jad-kouzla/dist/jad-kouzla.zip
+            jeskyne-a-draci/dist/module.json
+            jeskyne-a-draci/dist/jeskyne-a-draci.zip
       - uses: actions/upload-artifact@v4
         with:
-          name: jad-kouzla
-          path: jad-kouzla/dist/
+          name: jeskyne-a-draci
+          path: jeskyne-a-draci/dist/

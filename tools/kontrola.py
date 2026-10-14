@@ -46,7 +46,7 @@ for p in polozky:
                 chyby.append(f"{n}/{a['name']}: odkaz na chybějící efekt {e['_id']}")
         if not a.get("name"):
             chyby.append(f"{n}: aktivita bez názvu")
-    for u in re.findall(r"Compendium\.jad-kouzla\.kouzla\.Item\.([A-Za-z0-9]{16})", json.dumps(p)):
+    for u in re.findall(r"Compendium\.jeskyne-a-draci\.kouzla\.Item\.([A-Za-z0-9]{16})", json.dumps(p)):
         if u not in idy:
             chyby.append(f"{n}: odkaz na neexistující kouzlo {u}")
 
@@ -56,9 +56,9 @@ for s in j["pages"]:
         if u.split(".")[-1] not in idy:
             chyby.append(f"seznam {s['name']}: chybí {u}")
 
-skript = open(os.path.join(KOREN, "scripts/jad-kouzla.mjs"), encoding="utf-8").read()
-if j["_id"] not in skript or any(s["_id"] not in skript for s in j["pages"]):
-    chyby.append("ID seznamů ve skriptu neodpovídají vygenerovaným datům")
+reg = json.load(open(os.path.join(KOREN, "data/kompendium/registr.json"), encoding="utf-8"))
+if len(reg["seznamyKouzel"]) != len(j["pages"]) or any(s["_id"] not in " ".join(reg["seznamyKouzel"]) for s in j["pages"]):
+    chyby.append("registr.json neodpovídá seznamům kouzel")
 
 print(f"Kouzel: {len(polozky)}, složek: {len(slozky)}, seznamů: {len(j['pages'])}")
 for c in chyby:

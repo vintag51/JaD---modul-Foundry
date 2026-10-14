@@ -1,0 +1,343 @@
+{
+  "_id": "ERNiy67lqw8gbrJh",
+  "name": "Vytvoř nemrtvého",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Vytvoříš silnější nemrtvé – ghúly, ghasty, mumie či wighty.</p><h3>Automatizace</h3><ul><li><strong>Seslat – oživit ostatky:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Ovládaný nemrtvý.</li><li><strong>Seslat: obnovit kontrolu:</strong> efekt: Ovládaný nemrtvý.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vytvor-nemrtveho\" target=\"_blank\">SRD Jeskyní a draků – Vytvoř nemrtvého</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "Toto kouzlo lze seslat jen v noci.",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "3",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "spec",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "3",
+      "units": "m",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 6,
+    "school": "nec",
+    "materials": {
+      "value": "za každou mrtvolu jeden hliněný hrnec s hřbitovní hlínou, jeden se slanou vodou a jeden černý onyx v hodnotě 150 zl",
+      "consumed": false,
+      "cost": 150,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "summon",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "@item.level - 6",
+            "name": "",
+            "_id": "GGQa2fXx4sJFOhCv",
+            "uuid": "Compendium.dnd5e.monsters.Actor.IyIybE5t2adMEVUM",
+            "level": {
+              "min": 8,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "@item.level - 3",
+            "name": "",
+            "_id": "439tNP7qngefOmVd",
+            "uuid": "Compendium.dnd5e.monsters.Actor.OBujQLLPSmlJiZnL",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "@item.level - 7",
+            "name": "",
+            "_id": "8377f4szK4aEYLqD",
+            "uuid": "Compendium.dnd5e.monsters.Actor.t8WYD7ak07X7xpx8",
+            "level": {
+              "min": 9,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "@item.level - 6",
+            "name": "",
+            "_id": "1wXs9fpxffiMlT1j",
+            "uuid": "Compendium.dnd5e.monsters.Actor.rbyp54px2D0ql4QK",
+            "level": {
+              "min": 8,
+              "max": null
+            },
+            "types": []
+          }
+        ],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat – oživit ostatky",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "tempHP": "",
+        "effects": [
+          {
+            "_id": "tcvcliUzqg19mdCv",
+            "level": {}
+          }
+        ]
+      },
+      "3zXKdZYunkVxWMeN": {
+        "type": "utility",
+        "name": "Seslat: obnovit kontrolu",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "tcvcliUzqg19mdCv",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "1 + @scaling.increase * 2",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "_id": "3zXKdZYunkVxWMeN"
+      }
+    },
+    "identifier": "create-undead"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "srd": "E4NXux0RHvME1XgP",
+      "nazevEn": "Create Undead",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vytvor-nemrtveho"
+    }
+  },
+  "img": "icons/magic/death/undead-skeleton-lich-armor.webp",
+  "effects": [
+    {
+      "name": "Ovládaný nemrtvý",
+      "img": "icons/magic/death/undead-skeleton-deformed-red.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.ERNiy67lqw8gbrJh",
+      "transfer": false,
+      "_id": "tcvcliUzqg19mdCv",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 24,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Vytvoř nemrtvého</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781435708000,
+        "modifiedTime": 1781435708000,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.OYuUjh3THR33f9xA.ActiveEffect.Gz4NTcpPjakj03qY",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!E4NXux0RHvME1XgP.tcvcliUzqg19mdCv"
+    }
+  ],
+  "folder": "q8T7G2snLfGf2EUI",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ERNiy67lqw8gbrJh"
+}

@@ -1,10 +1,10 @@
-# Jeskyně a draci – Kouzla (Foundry VTT)
+# Jeskyně a draci pro Foundry VTT
 
 Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidává kompendium automatizovaných kouzel kompatibilních s hrou **Jeskyně a draci** a seznamy kouzel jednotlivých povolání.
 
 ![JaD – komunitní tvorba](assets/logo-jad-komunitni.jpg)
 
-> Jeskyně a draci – Kouzla je nezávislá tvorba autora vintag51 a není spojena s autory ani vydavatelem hry Jeskyně a Draci (dostupné na [imago.cz](https://imago.cz)). Publikováno pod Licencí JaD pro třetí strany.
+> Jeskyně a draci pro Foundry VTT je nezávislá tvorba autora vintag51 a není spojena s autory ani vydavatelem hry Jeskyně a Draci (dostupné na [imago.cz](https://imago.cz)). Publikováno pod Licencí JaD pro třetí strany.
 
 ## Co modul obsahuje (verze 0.1.0)
 
@@ -22,13 +22,13 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 ## Instalace
 
 1. Do `assets/` vlož **logo komunitní tvorby JaD** jako `logo-jad-komunitni.jpg` (stáhni z <https://www.mytago.cz/blog/jad-komunitni-tvorba>; licence vyžaduje jeho viditelné použití v nezměněné podobě, barvu lze upravit).
-2. Zkopíruj složku `jad-kouzla` do `Data/modules/` (nebo instaluj přes manifest po zveřejnění na GitHubu).
+2. Zkopíruj složku `jeskyne-a-draci` do `Data/modules/` (nebo instaluj přes manifest po zveřejnění na GitHubu).
 3. Ve světě s dnd5e zapni modul. Při prvním spuštění GM modul sám naplní kompendia z `data/kompendium/*.json` (pokud nejsou předem sestavená).
 4. Doporučeno: v nastavení dnd5e zapni **metrické jednotky délky** a scény nastav na **1,5 m na pole**.
 
 Kompendia najdeš ve složce **Jeskyně a draci**: *JaD – Kouzla* a *JaD – Seznamy kouzel povolání*.
 
-Ruční reimport (např. po aktualizaci dat): v konzoli `game.modules.get("jad-kouzla").api.importovat()`.
+Ruční reimport (např. po aktualizaci dat): v konzoli `game.modules.get("jeskyne-a-draci").api.importovat()`.
 
 ## Automatizace
 
@@ -56,7 +56,7 @@ python3 tools/kontrola.py                        # strukturní kontrola
 npm install && npm run build                     # LevelDB kompendia (Foundry CLI)
 ```
 
-GitHub Action `.github/workflows/release.yml` při vydání vše vygeneruje, sestaví a přiloží `module.json` + `jad-kouzla.zip`.
+GitHub Action `.github/workflows/release.yml` při vydání vše vygeneruje, sestaví a přiloží `module.json` + `jeskyne-a-draci.zip`.
 
 ### Přidání kouzla mimo SRD
 

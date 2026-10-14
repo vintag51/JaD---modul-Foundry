@@ -18,7 +18,7 @@ Použití:
 import argparse, copy, glob, hashlib, html, json, os, re, shutil, sys, unicodedata
 import yaml
 
-MODUL = "jad-kouzla"
+MODUL = "jeskyne-a-draci"
 KOREN = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRD_JAD = "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html"
 CORE_VERZE, SYS_VERZE = "14.367", "6.0.6"
@@ -34,8 +34,8 @@ ZRANENI = {"acid": "kyselinové", "bludgeoning": "drtivé", "cold": "chladné", 
 POVOLANI = {"bard": "Bard", "cleric": "Klerik", "druid": "Druid", "paladin": "Paladin",
             "ranger": "Hraničář", "sorcerer": "Čaroděj", "warlock": "Černokněžník", "wizard": "Kouzelník"}
 SLOZKY = ["Triky"] + [f"{i}. stupeň" for i in range(1, 10)]
-ATRIBUCE = ('<p><img src="modules/jad-kouzla/assets/logo-jad-komunitni.jpg" alt="JaD – komunitní tvorba" width="140"></p>'
-            '<p class="jad-atribuce">Jeskyně a draci – Kouzla je nezávislá tvorba autora vintag51 a není spojena s autory ani '
+ATRIBUCE = ('<p><img src="modules/jeskyne-a-draci/assets/logo-jad-komunitni.jpg" alt="JaD – komunitní tvorba" width="140"></p>'
+            '<p class="jad-atribuce">Jeskyně a draci pro Foundry VTT je nezávislá tvorba autora vintag51 a není spojena s autory ani '
             'vydavatelem hry Jeskyně a Draci (dostupné na imago.cz). Publikováno pod Licencí JaD pro třetí strany.</p>')
 RADY = {"1st": 1, "2nd": 2, "3rd": 3, "4th": 4, "5th": 5, "6th": 6, "7th": 7, "8th": 8, "9th": 9}
 
@@ -393,7 +393,7 @@ def main():
         k = vlastni.sestav(ident, spec, foundry_id)
         odkaz = f"{SRD_JAD}#{slug(spec['cz'])}"
         k["system"]["description"]["value"] = popis_kouzla(k, spec.get("shrnuti"), odkaz, spec.get("overeno"))
-        k["flags"]["jad-kouzla"]["odkaz"] = odkaz
+        k["flags"]["jeskyne-a-draci"]["odkaz"] = odkaz
         k["folder"] = folder_id[k["system"]["level"]]
         k["_stats"] = {"coreVersion": CORE_VERZE, "systemId": "dnd5e", "systemVersion": SYS_VERZE,
                        "createdTime": None, "modifiedTime": None, "lastModifiedBy": None,
@@ -457,6 +457,10 @@ def main():
     d2["pages"] = [bez_klicu(p) for p in d2["pages"]]
     with open(os.path.join(KOREN, "data/kompendium/seznamy-kouzel.json"), "w", encoding="utf-8") as fh:
         json.dump({"journal": [d2]}, fh, ensure_ascii=False)
+
+    with open(os.path.join(KOREN, "data/kompendium/registr.json"), "w", encoding="utf-8") as fh:
+        json.dump({"seznamyKouzel": [f"Compendium.{MODUL}.seznamy-kouzel.JournalEntry.{jid}.JournalEntryPage.{p['_id']}"
+                                     for p in stranky]}, fh, ensure_ascii=False, indent=1)
 
     print(f"Kouzel: {len(kouzla)}, seznamů: {len(stranky)}, jednotky: {args.jednotky}")
     print("Ověřených názvů:", sum(1 for k in kouzla if k['flags'].get(MODUL, {}).get('overeno')))

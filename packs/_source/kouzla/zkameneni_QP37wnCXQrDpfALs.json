@@ -1,0 +1,468 @@
+{
+  "_id": "QP37wnCXQrDpfALs",
+  "name": "Zkamenění",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Postupně proměníš tvora v kámen.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Zkamenění.</li><li><strong>Záchrana proti zkamenění:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Neúspěšná záchrana proti zkamenění, Úspěšná záchrana proti zkamenění, Zkamenělý.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zkameneni\" target=\"_blank\">SRD Jeskyní a draků – Zkamenění</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "m",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "18",
+      "units": "m",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 6,
+    "school": "trs",
+    "materials": {
+      "value": "špetka vápna, voda a hlína",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "J3DB2z7n1E9Ey0Qx": {
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "mVqFBzC5qYpFnZFV",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "img": "",
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "_id": "J3DB2z7n1E9Ey0Qx",
+        "name": "Seslat"
+      },
+      "ZLjky0SAN3L2Afkr": {
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": true,
+          "condition": "Na konci každého tahu cíle, dokud v něm nemoc inkubuje."
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [
+          {
+            "_id": "GlcVeHlxmWkdMTiP",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "W767OHpOwFKPPaCL",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "lIhef4AI9rE2By2t",
+            "level": {},
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": true,
+          "units": "spec",
+          "special": ""
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m",
+            "stationary": false,
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "bonus": "",
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 200000,
+        "name": "Záchrana proti zkamenění",
+        "img": "",
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "_id": "ZLjky0SAN3L2Afkr"
+      }
+    },
+    "identifier": "flesh-to-stone"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "srd": "kozNy29b0X6exFhY",
+      "nazevEn": "Flesh to Stone",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zkameneni"
+    }
+  },
+  "img": "icons/commodities/treasure/statue-bust-stone-grey.webp",
+  "effects": [
+    {
+      "name": "Zkamenění",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.QP37wnCXQrDpfALs",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "disabled": false,
+      "_id": "mVqFBzC5qYpFnZFV",
+      "description": "<p>Účinek kouzla <em>Zkamenění</em>. Podrobnosti v popisu kouzla.</p>",
+      "transfer": false,
+      "statuses": [
+        "restrained"
+      ],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781447726553,
+        "modifiedTime": 1781447743384,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!kozNy29b0X6exFhY.mVqFBzC5qYpFnZFV"
+    },
+    {
+      "name": "Neúspěšná záchrana proti zkamenění",
+      "img": "icons/sundries/flags/banner-pink.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.QP37wnCXQrDpfALs",
+      "transfer": false,
+      "_id": "GlcVeHlxmWkdMTiP",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zkamenění</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781447738891,
+        "modifiedTime": 1781447760125,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.ONcKueMSAooUCr7q.ActiveEffect.LhWesCC0aYGqzgk3",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!kozNy29b0X6exFhY.GlcVeHlxmWkdMTiP"
+    },
+    {
+      "name": "Úspěšná záchrana proti zkamenění",
+      "img": "icons/sundries/flags/banner-green.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.QP37wnCXQrDpfALs",
+      "transfer": false,
+      "_id": "W767OHpOwFKPPaCL",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zkamenění</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781447740108,
+        "modifiedTime": 1781447770515,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.ONcKueMSAooUCr7q.ActiveEffect.NVfW1Rp0QTgISmDW",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!kozNy29b0X6exFhY.W767OHpOwFKPPaCL"
+    },
+    {
+      "name": "Zkamenělý",
+      "img": "icons/commodities/treasure/statue-bust-stone-grey.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.QP37wnCXQrDpfALs",
+      "transfer": false,
+      "_id": "lIhef4AI9rE2By2t",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zkamenění</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "petrified"
+      ],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781447789294,
+        "modifiedTime": 1781447908161,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!kozNy29b0X6exFhY.lIhef4AI9rE2By2t"
+    }
+  ],
+  "folder": "q8T7G2snLfGf2EUI",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!QP37wnCXQrDpfALs"
+}

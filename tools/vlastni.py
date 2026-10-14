@@ -117,5 +117,5 @@ def sestav(ident, s, foundry_id, ikona="icons/magic/symbols/runes-star-pentagon-
             "source": {"custom": "", "book": "Jeskyně a draci", "page": str(s.get("strana", "")), "license": s.get("licence", ""), "rules": "2014"},
             "description": {"value": "", "chat": ""}
         },
-        "flags": {"jad-kouzla": {"vlastni": True, "overeno": bool(s.get("overeno")), "povolani": s.get("povolani", [])}},
+        "flags": {"jeskyne-a-draci": {"vlastni": True, "overeno": bool(s.get("overeno")), "povolani": s.get("povolani", [])}},
     }

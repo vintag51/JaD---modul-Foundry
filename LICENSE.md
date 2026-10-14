@@ -2,7 +2,7 @@
 
 ## Licence JaD pro třetí strany
 
-**Jeskyně a draci – Kouzla je nezávislá tvorba autora vintag51 a není spojena s autory ani vydavatelem hry Jeskyně a Draci (dostupné na [imago.cz](https://imago.cz)). Publikováno pod Licencí JaD pro třetí strany.**
+**Jeskyně a draci pro Foundry VTT je nezávislá tvorba autora vintag51 a není spojena s autory ani vydavatelem hry Jeskyně a Draci (dostupné na [imago.cz](https://imago.cz)). Publikováno pod Licencí JaD pro třetí strany.**
 
 Podmínky licence: <https://www.mytago.cz/blog/jad-komunitni-tvorba>
 

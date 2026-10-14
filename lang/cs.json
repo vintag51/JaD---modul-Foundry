@@ -3,9 +3,9 @@
   "JAD.Nastaveni.Seznamy.Napoveda": "Přidá seznamy kouzel Barda, Klerika, Druida, Paladina, Hraničáře, Čaroděje, Černokněžníka a Kouzelníka do registru dnd5e (výběr kouzel při postupu na úroveň).",
   "JAD.Nastaveni.Jednotky.Nazev": "Upozornit na metrické jednotky",
   "JAD.Nastaveni.Jednotky.Napoveda": "Kouzla používají metry (1 pole = 1,5 m). Upozorní GM, pokud systém dnd5e nemá zapnuté metrické délky.",
-  "JAD.Import.Zacatek": "JaD – Kouzla: plním kompendia z dat modulu…",
-  "JAD.Import.Hotovo": "JaD – Kouzla: naimportováno {pocet} kouzel.",
-  "JAD.Import.Chyba": "JaD – Kouzla: import kompendií selhal, podrobnosti v konzoli (F12).",
-  "JAD.Midi.Aktivni": "JaD – Kouzla: Midi-QOL je aktivní – opakované záchrany a zranění na konci tahu (OverTime) se vyhodnocují automaticky.",
+  "JAD.Import.Zacatek": "Jeskyně a draci: plním kompendia z dat modulu…",
+  "JAD.Import.Hotovo": "Jeskyně a draci: naimportováno {pocet} kouzel.",
+  "JAD.Import.Chyba": "Jeskyně a draci: import kompendií selhal, podrobnosti v konzoli (F12).",
+  "JAD.Midi.Aktivni": "Jeskyně a draci: Midi-QOL je aktivní – opakované záchrany a zranění na konci tahu (OverTime) se vyhodnocují automaticky.",
   "JAD.Jednotky.Upozorneni": "JaD – Kouzla používají metry. Pro správné zobrazení zapni v nastavení systému dnd5e „metrické jednotky délky“ a nastav scény na 1,5 m na pole."
 }
