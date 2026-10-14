@@ -30,16 +30,19 @@
     {{!-- Levý sloupec: vlastnosti a dovednosti --}}
     <div class="jad-sloupec jad-levy">
       <h3 class="jad-pruh">Dovednosti</h3>
-      {{#each skupiny}}
-      <div class="jad-vlastnost" data-ability="{{ key }}">
-        {{#with (lookup ../vlastnosti @index)}}
-        <div class="jad-stit {{ @root.rollableClass }}" data-action="roll" data-type="ability" data-tooltip="Ověření vlastnosti">
-          <span class="jad-stit-nazev">{{ nazev }}</span>
-          <span class="jad-stit-oprava">{{ oprava }}</span>
-          <span class="jad-stit-hodnota">{{ hodnota }}</span>
+      <div class="jad-vlastnosti-blok">
+        <div class="jad-stity">
+          {{#each vlastnosti}}
+          <div class="jad-stit {{ @root.rollableClass }}" data-ability="{{ key }}" data-action="roll" data-type="ability" data-tooltip="Ověření vlastnosti">
+            <span class="jad-stit-nazev">{{ nazev }}</span>
+            <span class="jad-stit-oprava">{{ oprava }}</span>
+            <span class="jad-stit-hodnota">{{ hodnota }}</span>
+          </div>
+          {{/each}}
         </div>
-        {{/with}}
-        <ul class="jad-dovednosti">
+        <ul class="jad-dovednosti jad-dovednosti-vse">
+          {{#each skupiny}}
+          {{#if dovednosti.length}}<li class="jad-podnadpis"><span>{{ nazev }}</span></li>{{/if}}
           {{#each dovednosti}}
           <li data-key="{{ key }}">
             <a class="jad-hvezda {{ zdatnost }}" data-action="jadZdatnost" data-cesta="system.skills.{{ key }}.value" data-druh="cyklus" data-tooltip="Zdatnost (kliknutím změníš)"></a>
@@ -47,9 +50,9 @@
             <span class="jad-cislo">{{ celkem }}</span>
           </li>
           {{/each}}
+          {{/each}}
         </ul>
       </div>
-      {{/each}}
 
       <h3 class="jad-pruh">Pomůcky</h3>
       <ul class="jad-dovednosti">

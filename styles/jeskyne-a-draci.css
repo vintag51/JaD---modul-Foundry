@@ -259,3 +259,16 @@
 .jad-denik .jad-zbrane td:first-child { white-space: normal; width: 40%; }
 .jad-denik .jad-radky-tabulka td:nth-child(2) input { width: 3.2em; text-align: center; padding: 0; }
 .jad-denik .jad-radky-tabulka td:nth-child(3) input { width: 3em; text-align: center; padding: 0; }
+
+/* Vlastnosti a dovednosti jako na kartě: štíty těsně pod sebou, dovednosti souvislým seznamem */
+.jad-denik .jad-vlastnosti-blok { display: grid; grid-template-columns: 74px 1fr; gap: 8px; align-items: start; }
+.jad-denik .jad-stity { display: flex; flex-direction: column; gap: 3px; }
+.jad-denik .jad-stity .jad-stit { margin: 0; padding-bottom: 6px; }
+.jad-denik .jad-dovednosti-vse { margin: 0; }
+.jad-denik .jad-dovednosti-vse li { min-height: 21px; }
+.jad-denik .jad-podnadpis {
+  justify-content: center; border-bottom: none !important; font-size: 0.68rem; font-weight: bold;
+  text-transform: uppercase; letter-spacing: 0.06em; color: var(--jad-cervena); padding-top: 4px !important;
+}
+.jad-denik .jad-podnadpis span { flex: 0 1 auto !important; }
+.jad-denik .jad-podnadpis::before, .jad-denik .jad-podnadpis::after { content: ""; flex: 1; border-top: 1px solid var(--jad-okraj); margin: 0 6px; }
