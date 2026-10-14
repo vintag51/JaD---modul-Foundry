@@ -1,0 +1,219 @@
+{
+  "_id": "XyVvYBGKL1vJLJud",
+  "name": "Falešný život",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Získáš dočasné životy.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> obnoví 1k4 + 4 dočasných životů (+5 za každý stupeň nad 1); efekt: Falešný život.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#falesny-zivot\" target=\"_blank\">SRD Jeskyní a draků – Falešný život</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "self",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "m",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 1,
+    "school": "nec",
+    "materials": {
+      "value": "trocha alkoholu nebo pálenky",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "heal",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "fYF3Na2tHtDcgC6j",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "healing": {
+          "number": 1,
+          "denomination": 4,
+          "bonus": "4",
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": "5"
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "false-life"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "7e3QXF10hLNDEdr6",
+      "nazevEn": "False Life",
+      "overeno": true,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#falesny-zivot"
+    }
+  },
+  "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",
+  "effects": [
+    {
+      "name": "Falešný život",
+      "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.XyVvYBGKL1vJLJud",
+      "transfer": false,
+      "_id": "fYF3Na2tHtDcgC6j",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Falešný život</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.0",
+        "createdTime": 1772823002091,
+        "modifiedTime": 1772823056766,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!7e3QXF10hLNDEdr6.fYF3Na2tHtDcgC6j"
+    }
+  ],
+  "folder": "erm85e6K4abje6Vq",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!XyVvYBGKL1vJLJud"
+}

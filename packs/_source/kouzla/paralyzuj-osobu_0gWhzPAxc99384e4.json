@@ -1,0 +1,230 @@
+{
+  "_id": "0gWhzPAxc99384e4",
+  "name": "Paralyzuj osobu",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Humanoid je paralyzován.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Paralyzuj osobu.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#paralyzuj-osobu\" target=\"_blank\">SRD Jeskyní a draků – Paralyzuj osobu</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "m",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "18",
+      "units": "m",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "enc",
+    "materials": {
+      "value": "malý rovný kousek železa",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "HH5YVjzxkwXpDZS0",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "hold-person"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "3Lo9boi7P2ro6QV4",
+      "nazevEn": "Hold Person",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#paralyzuj-osobu"
+    }
+  },
+  "img": "icons/magic/control/debuff-chains-shackle-movement-red.webp",
+  "effects": [
+    {
+      "name": "Paralyzuj osobu",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.0gWhzPAxc99384e4",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": true,
+      "_id": "HH5YVjzxkwXpDZS0",
+      "description": "<p>Účinek kouzla <em>Paralyzuj osobu</em>. Podrobnosti v popisu kouzla.</p>",
+      "transfer": false,
+      "statuses": [
+        "paralyzed"
+      ],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "jad-kouzla": {
+          "midiOverTime": true
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781226516273,
+        "modifiedTime": 1781226516273,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "img": "icons/magic/control/debuff-chains-shackle-movement-red.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,label=Paralyzuj osobu",
+            "type": "custom",
+            "priority": 20
+          }
+        ]
+      },
+      "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!3Lo9boi7P2ro6QV4.HH5YVjzxkwXpDZS0"
+    }
+  ],
+  "folder": "eyCozdDlUqUNknW5",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0gWhzPAxc99384e4"
+}

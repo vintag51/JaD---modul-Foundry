@@ -1,0 +1,1447 @@
+{
+  "_id": "WCuRUKyjn6tS0TRy",
+  "name": "Přání",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Nejmocnější kouzlo – napodobí jiné kouzlo nebo změní realitu.</p><h3>Automatizace</h3><ul><li><strong>Vyčerpávající přání: udělit odolnost:</strong> efekt: Odolnost vůči kyselině, Odolnost vůči drtivému zranění, Odolnost vůči chladu, Odolnost vůči ohni….</li><li><strong>Vyčerpávající přání: udělit odolnost:</strong> efekt: Imunita.</li><li><strong>Vyčerpávající přání: přepsat události:</strong> efekt: Imunita.</li><li><strong>Následky vyčerpávajícího přání:</strong> efekt: Vyčerpání z přání.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#prani\" target=\"_blank\">SRD Jeskyní a draků – Přání</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "self",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "m",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 9,
+    "school": "con",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal"
+    ],
+    "activities": {
+      "9MWp6lmC7jks1X2b": {
+        "type": "utility",
+        "name": "Napodobit kouzlo (8. stupně nebo nižší)",
+        "_id": "9MWp6lmC7jks1X2b",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      },
+      "piGTME44iVi7Erzh": {
+        "type": "utility",
+        "name": "Vyčerpávající přání: vyvolat bohatství",
+        "_id": "piGTME44iVi7Erzh",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      },
+      "ZuyAC02rGDZArcve": {
+        "type": "utility",
+        "name": "Vyčerpávající přání: obnovit zdraví",
+        "img": "",
+        "sort": 300000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "20",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "_id": "ZuyAC02rGDZArcve"
+      },
+      "2R7bdONDAFfwCk3B": {
+        "type": "utility",
+        "name": "Vyčerpávající přání: udělit odolnost",
+        "img": "",
+        "sort": 400000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "ZGUs6XyEiVhupfxs",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "RsfQJVpVW6BCoBpf",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "aPWFW5wxTiftsaNv",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "N9eB29lBOFMj6YQS",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "JdSUqFz6TFuQBqU4",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "9g5ioU44S0IIIE7N",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "bwOhsXgOgwViMUIq",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "muNTqdPikqsok8nd",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "sB9UWRUrZxxt19wX",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "hARpKSAZFBZILJ8L",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "WjdaHgMyQCSNPhK9",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "G1R0YJuXHKDF3ig1",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "a58k6ZCEYLCko09e",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "20",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "_id": "2R7bdONDAFfwCk3B"
+      },
+      "ZFQAppQ4CwUu6G4E": {
+        "type": "utility",
+        "name": "Vyčerpávající přání: udělit odolnost",
+        "img": "",
+        "sort": 500000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "RMvtXgt8vxr5xaIO",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "20",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "_id": "ZFQAppQ4CwUu6G4E"
+      },
+      "QCNUOWZDEYZqz5rI": {
+        "type": "utility",
+        "name": "Vyčerpávající přání: přepsat události",
+        "img": "",
+        "sort": 600000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "RMvtXgt8vxr5xaIO",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "20",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "_id": "QCNUOWZDEYZqz5rI"
+      },
+      "rdc6j17QxpWYSY0p": {
+        "type": "utility",
+        "name": "Následky vyčerpávajícího přání",
+        "_id": "rdc6j17QxpWYSY0p",
+        "img": "",
+        "sort": 700000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "aLW7iyRM1lOAv7kn",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "Schopnost budoucích přání",
+          "formula": "1d100cf<34"
+        }
+      }
+    },
+    "identifier": "wish"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "3okM6Gn63zzEULkz",
+      "nazevEn": "Wish",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#prani"
+    }
+  },
+  "img": "icons/commodities/treasure/brass-lamp-yellow.webp",
+  "effects": [
+    {
+      "name": "Odolnost vůči kyselině",
+      "img": "icons/magic/acid/projectile-faceted-glob.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "_id": "ZGUs6XyEiVhupfxs",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "acid",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385273383,
+        "modifiedTime": 1781385307385,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!3okM6Gn63zzEULkz.ZGUs6XyEiVhupfxs"
+    },
+    {
+      "name": "Odolnost vůči drtivému zranění",
+      "img": "icons/skills/melee/strike-flail-destructive-yellow.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "bludgeoning",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385310975,
+        "modifiedTime": 1781385345296,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "RsfQJVpVW6BCoBpf",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.RsfQJVpVW6BCoBpf"
+    },
+    {
+      "name": "Odolnost vůči chladu",
+      "img": "icons/magic/water/snowflake-ice-blue-white.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "cold",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385313659,
+        "modifiedTime": 1781385359789,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "aPWFW5wxTiftsaNv",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.aPWFW5wxTiftsaNv"
+    },
+    {
+      "name": "Odolnost vůči ohni",
+      "img": "icons/magic/fire/flame-burning-earth-yellow.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "fire",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385314329,
+        "modifiedTime": 1781385374509,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "N9eB29lBOFMj6YQS",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.N9eB29lBOFMj6YQS"
+    },
+    {
+      "name": "Odolnost vůči silovému zranění",
+      "img": "icons/magic/lightning/bolt-beam-strike-blue.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "force",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385314932,
+        "modifiedTime": 1781385422039,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "JdSUqFz6TFuQBqU4",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.JdSUqFz6TFuQBqU4"
+    },
+    {
+      "name": "Odolnost vůči blesku",
+      "img": "icons/magic/lightning/bolt-blue.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "lightning",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385316101,
+        "modifiedTime": 1781385442866,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "9g5ioU44S0IIIE7N",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.9g5ioU44S0IIIE7N"
+    },
+    {
+      "name": "Odolnost vůči nekrotickému zranění",
+      "img": "icons/magic/death/hand-withered-gray.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "necrotic",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385318898,
+        "modifiedTime": 1781385472138,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "bwOhsXgOgwViMUIq",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.bwOhsXgOgwViMUIq"
+    },
+    {
+      "name": "Odolnost vůči bodnému zranění",
+      "img": "icons/skills/ranged/arrow-flying-broadhead-metal.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "piercing",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385319560,
+        "modifiedTime": 1781385543158,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "muNTqdPikqsok8nd",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.muNTqdPikqsok8nd"
+    },
+    {
+      "name": "Odolnost vůči jedu",
+      "img": "icons/skills/toxins/symbol-poison-drop-skull-green.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "poison",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385320161,
+        "modifiedTime": 1781385524388,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "sB9UWRUrZxxt19wX",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.sB9UWRUrZxxt19wX"
+    },
+    {
+      "name": "Odolnost vůči psychickému zranění",
+      "img": "icons/magic/lightning/strike-arrow-spear-red.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "psychic",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385320790,
+        "modifiedTime": 1781385571157,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "hARpKSAZFBZILJ8L",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.hARpKSAZFBZILJ8L"
+    },
+    {
+      "name": "Odolnost vůči zářivému zranění",
+      "img": "icons/magic/light/beam-strike-village-yellow.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "radiant",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385321434,
+        "modifiedTime": 1781385598768,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "WjdaHgMyQCSNPhK9",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.WjdaHgMyQCSNPhK9"
+    },
+    {
+      "name": "Odolnost vůči sečnému zranění",
+      "img": "icons/skills/melee/strike-axe-red.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "slashing",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385322090,
+        "modifiedTime": 1781385623090,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "G1R0YJuXHKDF3ig1",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.G1R0YJuXHKDF3ig1"
+    },
+    {
+      "name": "Odolnost vůči hromu",
+      "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "thunder",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385322739,
+        "modifiedTime": 1781385653211,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "a58k6ZCEYLCko09e",
+      "_key": "!items.effects!3okM6Gn63zzEULkz.a58k6ZCEYLCko09e"
+    },
+    {
+      "name": "Imunita",
+      "img": "icons/commodities/treasure/stone-cracked-lightning-blue.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "_id": "RMvtXgt8vxr5xaIO",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 8,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385815563,
+        "modifiedTime": 1781385862178,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!3okM6Gn63zzEULkz.RMvtXgt8vxr5xaIO"
+    },
+    {
+      "name": "Vyčerpání z přání",
+      "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.WCuRUKyjn6tS0TRy",
+      "transfer": false,
+      "_id": "aLW7iyRM1lOAv7kn",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.value",
+            "type": "downgrade",
+            "value": 3,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Přání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781385928760,
+        "modifiedTime": 1781386273697,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!3okM6Gn63zzEULkz.aLW7iyRM1lOAv7kn"
+    }
+  ],
+  "folder": "MkSV7EpzLz15sdno",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!WCuRUKyjn6tS0TRy"
+}

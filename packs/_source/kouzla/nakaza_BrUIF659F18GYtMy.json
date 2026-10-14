@@ -1,0 +1,1142 @@
+{
+  "_id": "BrUIF659F18GYtMy",
+  "name": "Nákaza",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Nakazíš cíl jednou z magických nemocí.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> útok kouzlem na blízko; efekt: Inkubace – oslepující nemoc, Inkubace – špinavá horečka, Inkubace – hniloba masa, Inkubace – oheň mysli….</li><li><strong>Záchrana proti nemoci:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Neúspěšná záchrana proti nákaze, Úspěšná záchrana proti nákaze.</li><li><strong>Nakazit nemocí:</strong> efekt: Oslepující nemoc, Špinavá horečka, Hniloba masa, Oheň mysli….</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#nakaza\" target=\"_blank\">SRD Jeskyní a draků – Nákaza</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "7",
+      "units": "day"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "m",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 5,
+    "school": "nec",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activities": {
+      "dSOAotUiZwU8xIlV": {
+        "type": "attack",
+        "name": "Seslat",
+        "_id": "dSOAotUiZwU8xIlV",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "sZYUpIcA0Ixip7bo",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "rdL5guwwTuCvTU1v",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "9qsScAIMMLwDDkJl",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "egrhxJgirkl5YnuZ",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "1VXYcPSs43a4CHkf",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "6Ha38CDFwGGbDbQz",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        }
+      },
+      "WWmYQQAcFBcp9BgI": {
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": true,
+          "condition": "Na konci každého tahu cíle, dokud v něm nemoc inkubuje."
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [
+          {
+            "_id": "LhWesCC0aYGqzgk3",
+            "level": {},
+            "onSave": false
+          },
+          {
+            "_id": "NVfW1Rp0QTgISmDW",
+            "level": {},
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": true,
+          "units": "spec",
+          "special": ""
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m",
+            "stationary": false,
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "bonus": "",
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 300000,
+        "name": "Záchrana proti nemoci",
+        "img": "",
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "_id": "WWmYQQAcFBcp9BgI"
+      },
+      "JHDzsuyXxSyhdNM6": {
+        "type": "utility",
+        "name": "Nakazit nemocí",
+        "_id": "JHDzsuyXxSyhdNM6",
+        "img": "",
+        "sort": 400000,
+        "activation": {
+          "type": "special",
+          "override": true,
+          "condition": "Když ovlivněný tvor neuspěje ve třech záchranách."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "day",
+          "concentration": false,
+          "override": true,
+          "value": "7"
+        },
+        "effects": [
+          {
+            "_id": "i7n9jGZ51Scdwwia",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "hZkALiwlSPABBDSk",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "1VOSXuEvObGjy3nZ",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "S3eSD4rmdbYajX2l",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "GCyWrky8VpY2W8PA",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "nnfr2kBR5ByV6rdT",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "spec",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "1",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      }
+    },
+    "identifier": "contagion"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "CjIq8Ed7bu3vVwT1",
+      "nazevEn": "Contagion",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#nakaza"
+    }
+  },
+  "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+  "effects": [
+    {
+      "name": "Inkubace – oslepující nemoc",
+      "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "transfer": false,
+      "_id": "sZYUpIcA0Ixip7bo",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "diseased"
+      ],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781392928507,
+        "modifiedTime": 1781393043555,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.sZYUpIcA0Ixip7bo"
+    },
+    {
+      "name": "Inkubace – špinavá horečka",
+      "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "diseased"
+      ],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393051636,
+        "modifiedTime": 1781393074141,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "rdL5guwwTuCvTU1v",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.rdL5guwwTuCvTU1v"
+    },
+    {
+      "name": "Inkubace – hniloba masa",
+      "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "diseased"
+      ],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393058156,
+        "modifiedTime": 1781393087409,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "9qsScAIMMLwDDkJl",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.9qsScAIMMLwDDkJl"
+    },
+    {
+      "name": "Inkubace – oheň mysli",
+      "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "diseased"
+      ],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393058992,
+        "modifiedTime": 1781393099990,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "egrhxJgirkl5YnuZ",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.egrhxJgirkl5YnuZ"
+    },
+    {
+      "name": "Inkubace – záchvaty",
+      "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "diseased"
+      ],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393059685,
+        "modifiedTime": 1781393116698,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "1VXYcPSs43a4CHkf",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.1VXYcPSs43a4CHkf"
+    },
+    {
+      "name": "Inkubace – slizká zhouba",
+      "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "diseased"
+      ],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393060407,
+        "modifiedTime": 1781393128956,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "6Ha38CDFwGGbDbQz",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.6Ha38CDFwGGbDbQz"
+    },
+    {
+      "name": "Neúspěšná záchrana proti nákaze",
+      "img": "icons/sundries/flags/banner-pink.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "transfer": false,
+      "_id": "LhWesCC0aYGqzgk3",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393182601,
+        "modifiedTime": 1781393220340,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.LhWesCC0aYGqzgk3"
+    },
+    {
+      "name": "Úspěšná záchrana proti nákaze",
+      "img": "icons/sundries/flags/banner-green.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "transfer": false,
+      "_id": "NVfW1Rp0QTgISmDW",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393183235,
+        "modifiedTime": 1781393238798,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.NVfW1Rp0QTgISmDW"
+    },
+    {
+      "name": "Oslepující nemoc",
+      "img": "icons/commodities/biological/eye-lizard-green.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "type": "base",
+      "_id": "i7n9jGZ51Scdwwia",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.wis.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.wis.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 7,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "blinded"
+      ],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393276451,
+        "modifiedTime": 1781393343738,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.i7n9jGZ51Scdwwia"
+    },
+    {
+      "name": "Špinavá horečka",
+      "img": "icons/magic/acid/dissolve-vomit-green-brown.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 7,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393347801,
+        "modifiedTime": 1781393590191,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "hZkALiwlSPABBDSk",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.hZkALiwlSPABBDSk"
+    },
+    {
+      "name": "Hniloba masa",
+      "img": "icons/magic/acid/dissolve-arm-flesh.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dv.value",
+            "type": "add",
+            "value": "ALL",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.cha.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 7,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393397704,
+        "modifiedTime": 1781393593461,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "1VOSXuEvObGjy3nZ",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.1VOSXuEvObGjy3nZ"
+    },
+    {
+      "name": "Oheň mysli",
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.int.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.int.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 7,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393467994,
+        "modifiedTime": 1783216567194,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "S3eSD4rmdbYajX2l",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.S3eSD4rmdbYajX2l"
+    },
+    {
+      "name": "Záchvaty",
+      "img": "icons/commodities/biological/hand-clawed-blue.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.dex.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 7,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393540333,
+        "modifiedTime": 1781393584723,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "GCyWrky8VpY2W8PA",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.GCyWrky8VpY2W8PA"
+    },
+    {
+      "name": "Slizká zhouba",
+      "img": "icons/skills/wounds/blood-cells-vessel-red.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.BrUIF659F18GYtMy",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.con.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 7,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Nákaza</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781393598071,
+        "modifiedTime": 1781393668465,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "nnfr2kBR5ByV6rdT",
+      "_key": "!items.effects!CjIq8Ed7bu3vVwT1.nnfr2kBR5ByV6rdT"
+    }
+  ],
+  "folder": "F61L28hjPT1Vg5UY",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!BrUIF659F18GYtMy"
+}

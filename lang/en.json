@@ -1,0 +1,11 @@
+{
+  "JAD.Nastaveni.Seznamy.Nazev": "Register JaD class spell lists",
+  "JAD.Nastaveni.Seznamy.Napoveda": "Adds the JaD class spell lists to the dnd5e spell list registry.",
+  "JAD.Nastaveni.Jednotky.Nazev": "Warn about metric units",
+  "JAD.Nastaveni.Jednotky.Napoveda": "Spells use metres (1 square = 1.5 m). Warns the GM if dnd5e metric length units are disabled.",
+  "JAD.Import.Zacatek": "JaD Spells: populating compendiums from module data…",
+  "JAD.Import.Hotovo": "JaD Spells: imported {pocet} spells.",
+  "JAD.Import.Chyba": "JaD Spells: compendium import failed, see console (F12).",
+  "JAD.Midi.Aktivni": "JaD Spells: Midi-QOL is active – repeat saves and end-of-turn damage (OverTime) are automated.",
+  "JAD.Jednotky.Upozorneni": "JaD Spells use metres. Enable dnd5e metric length units and set scenes to 1.5 m per square."
+}

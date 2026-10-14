@@ -1,0 +1,154 @@
+{
+  "_id": "UypLjos1wa50VKyY",
+  "name": "Hlídej a střež",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Rozsáhlá ochrana pevnosti – mlha, zamčené dveře, pavučiny a další.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hlidej-a-strez\" target=\"_blank\">SRD Jeskyní a draků – Hlídej a střež</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 10
+    },
+    "duration": {
+      "value": "24",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "m",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 6,
+    "school": "abj",
+    "materials": {
+      "value": "hořící kadidlo, trocha síry a oleje, uzlovaný provázek, trocha krve hrabavce a malá stříbrná tyčinka v hodnotě nejméně 10 zl",
+      "consumed": false,
+      "cost": 10,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "guards-and-wards"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "yw0tYQkOMCgKZ8Ur",
+      "nazevEn": "Guards and Wards",
+      "overeno": true,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hlidej-a-strez"
+    }
+  },
+  "img": "icons/environment/settlement/watchtower-castle-night.webp",
+  "effects": [],
+  "folder": "WUgppkXFVqSRukbp",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UypLjos1wa50VKyY"
+}

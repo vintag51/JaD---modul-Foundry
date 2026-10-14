@@ -1,0 +1,248 @@
+{
+  "_id": "VgKlwKAXMBwW0lYN",
+  "name": "Simulakrum",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Vytvoříš iluzorní kopii tvora, která ti slouží.</p><h3>Automatizace</h3><ul><li><strong>Vytvořit simulakrum:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Simulakrum.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#simulakrum\" target=\"_blank\">SRD Jeskyní a draků – Simulakrum</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "hour",
+      "condition": "",
+      "value": 12
+    },
+    "duration": {
+      "value": "",
+      "units": "disp"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "spec",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 7,
+    "school": "ill",
+    "materials": {
+      "value": "dost sněhu nebo ledu na kopii tvora v životní velikosti; vlasy, nehty či jiná část jeho těla vložená dovnitř; a rubínový prach v hodnotě 1 500 zl, který kouzlo spotřebuje",
+      "consumed": true,
+      "cost": 1500,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "1nnzri1OiTFd4Q5N": {
+        "type": "summon",
+        "name": "Vytvořit simulakrum",
+        "_id": "1nnzri1OiTFd4Q5N",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9gAmWWC5uTiUuxAI",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "disposition": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "XWcgL4VOVzev1rVp",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": ""
+        },
+        "tempHP": ""
+      }
+    },
+    "identifier": "simulacrum"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "jccbeBIfLrqEZnDP",
+      "nazevEn": "Simulacrum",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#simulakrum"
+    }
+  },
+  "img": "icons/magic/water/ice-snowman.webp",
+  "effects": [
+    {
+      "name": "Simulakrum",
+      "img": "icons/magic/water/ice-snowman.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.VgKlwKAXMBwW0lYN",
+      "transfer": false,
+      "_id": "9gAmWWC5uTiUuxAI",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.hp.max",
+            "type": "multiply",
+            "value": 0.5,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Simulakrum</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781465833689,
+        "modifiedTime": 1781466006394,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!jccbeBIfLrqEZnDP.9gAmWWC5uTiUuxAI"
+    }
+  ],
+  "folder": "yTCuXdztU4f78ffj",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!VgKlwKAXMBwW0lYN"
+}

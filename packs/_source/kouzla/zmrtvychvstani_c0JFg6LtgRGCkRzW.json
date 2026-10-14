@@ -1,0 +1,382 @@
+{
+  "_id": "c0JFg6LtgRGCkRzW",
+  "name": "Zmrtvýchvstání",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Oživíš tvora mrtvého až sto let.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Nemoc ze vzkříšení, Magická únava.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zmrtvychvstani\" target=\"_blank\">SRD Jeskyní a draků – Zmrtvýchvstání</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "hour",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "spec",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 7,
+    "school": "nec",
+    "materials": {
+      "value": "diamant v hodnotě nejméně 1 000 zl, který kouzlo spotřebuje",
+      "consumed": true,
+      "cost": 1000,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "ydRvh0MNOPLGsycK",
+            "level": {}
+          },
+          {
+            "_id": "tqHU3nZQatPgxW7r",
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "resurrection"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "jhhT9PsHy5A7EojO",
+      "nazevEn": "Resurrection",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zmrtvychvstani"
+    }
+  },
+  "img": "icons/magic/holy/saint-glass-portrait-halo.webp",
+  "effects": [
+    {
+      "name": "Nemoc ze vzkříšení",
+      "img": "icons/environment/settlement/graveyard-tombstone-night.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.c0JFg6LtgRGCkRzW",
+      "transfer": false,
+      "_id": "ydRvh0MNOPLGsycK",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.abilities.save",
+            "type": "add",
+            "value": -4,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.bonuses.abilities.check",
+            "type": "add",
+            "value": -4,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.bonuses.mwak.attack",
+            "type": "add",
+            "value": -4,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.bonuses.msak.attack",
+            "type": "add",
+            "value": -4,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.bonuses.rwak.attack",
+            "type": "add",
+            "value": -4,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.bonuses.rsak.attack",
+            "type": "add",
+            "value": -4,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 4,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zmrtvýchvstání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781463336472,
+        "modifiedTime": 1781463336472,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.jad-kouzla.kouzla.Item.vplYDP5K14frxVZP.ActiveEffect.tiAHzh61HiuYLoYf",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!jhhT9PsHy5A7EojO.ydRvh0MNOPLGsycK"
+    },
+    {
+      "name": "Magická únava",
+      "img": "icons/magic/symbols/rune-sigil-red-orange.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.c0JFg6LtgRGCkRzW",
+      "transfer": false,
+      "_id": "tqHU3nZQatPgxW7r",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.dex.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.con.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.int.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.int.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.wis.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.wis.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.cha.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.cha.check.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 8,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zmrtvýchvstání</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781463390924,
+        "modifiedTime": 1781463516540,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!jhhT9PsHy5A7EojO.tqHU3nZQatPgxW7r"
+    }
+  ],
+  "folder": "yTCuXdztU4f78ffj",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c0JFg6LtgRGCkRzW"
+}

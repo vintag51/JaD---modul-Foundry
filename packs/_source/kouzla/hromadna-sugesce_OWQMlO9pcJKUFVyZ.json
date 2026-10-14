@@ -1,0 +1,372 @@
+{
+  "_id": "OWQMlO9pcJKUFVyZ",
+  "name": "Hromadná sugesce",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Vnukneš postup až dvanácti tvorům.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Hromadná sugesce (podle stupně).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hromadna-sugesce\" target=\"_blank\">SRD Jeskyní a draků – Hromadná sugesce</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "24",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "12",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "m",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "18",
+      "units": "m",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 6,
+    "school": "enc",
+    "materials": {
+      "value": "hadí jazyk a buď kousek plástve, nebo kapka sladkého oleje",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "s8TC1UrCgjeBdf78",
+            "onSave": false,
+            "level": {
+              "min": 6,
+              "max": 6
+            }
+          },
+          {
+            "_id": "8zdxyPjy2ubw9zER",
+            "onSave": false,
+            "level": {
+              "min": 7,
+              "max": 7
+            }
+          },
+          {
+            "_id": "BGqCb71GgI0jO1zt",
+            "onSave": false,
+            "level": {
+              "min": 8,
+              "max": 8
+            }
+          },
+          {
+            "_id": "kyGswuqopTTebwTU",
+            "onSave": false,
+            "level": {
+              "min": 9,
+              "max": 9
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "mass-suggestion"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "5OGFdJw35QXp6mh6",
+      "nazevEn": "Mass Suggestion",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hromadna-sugesce"
+    }
+  },
+  "img": "icons/environment/people/charge.webp",
+  "effects": [
+    {
+      "name": "Hromadná sugesce: 6. stupeň",
+      "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.OWQMlO9pcJKUFVyZ",
+      "transfer": false,
+      "_id": "s8TC1UrCgjeBdf78",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 24,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Hromadná sugesce</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781446133116,
+        "modifiedTime": 1781446210109,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.jad-kouzla.kouzla.Item.PfeHzpWdylhP5o0T.ActiveEffect.ODGIMpaADKrhr2Ib",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!5OGFdJw35QXp6mh6.s8TC1UrCgjeBdf78"
+    },
+    {
+      "name": "Hromadná sugesce: 7. stupeň",
+      "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.OWQMlO9pcJKUFVyZ",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 10,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Hromadná sugesce</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781446214860,
+        "modifiedTime": 1781446234114,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.jad-kouzla.kouzla.Item.PfeHzpWdylhP5o0T.ActiveEffect.ODGIMpaADKrhr2Ib",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "8zdxyPjy2ubw9zER",
+      "_key": "!items.effects!5OGFdJw35QXp6mh6.8zdxyPjy2ubw9zER"
+    },
+    {
+      "name": "Hromadná sugesce: 8. stupeň",
+      "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.OWQMlO9pcJKUFVyZ",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 30,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Hromadná sugesce</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781446215669,
+        "modifiedTime": 1781446250992,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.jad-kouzla.kouzla.Item.PfeHzpWdylhP5o0T.ActiveEffect.ODGIMpaADKrhr2Ib",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "BGqCb71GgI0jO1zt",
+      "_key": "!items.effects!5OGFdJw35QXp6mh6.BGqCb71GgI0jO1zt"
+    },
+    {
+      "name": "Hromadná sugesce: 9. stupeň",
+      "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.OWQMlO9pcJKUFVyZ",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 366,
+        "units": "days",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Hromadná sugesce</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781446216576,
+        "modifiedTime": 1781446269174,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.jad-kouzla.kouzla.Item.PfeHzpWdylhP5o0T.ActiveEffect.ODGIMpaADKrhr2Ib",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "kyGswuqopTTebwTU",
+      "_key": "!items.effects!5OGFdJw35QXp6mh6.kyGswuqopTTebwTU"
+    }
+  ],
+  "folder": "WUgppkXFVqSRukbp",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OWQMlO9pcJKUFVyZ"
+}

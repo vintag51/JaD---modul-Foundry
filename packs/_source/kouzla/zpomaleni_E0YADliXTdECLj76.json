@@ -1,0 +1,320 @@
+{
+  "_id": "E0YADliXTdECLj76",
+  "name": "Zpomalení",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Až šest tvorů je zpomaleno – pomalejší, s horší OČ a omezenými akcemi.</p><h3>Automatizace</h3><ul><li><strong>Záchrana:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Zpomalený.</li><li><strong>Užitek:</strong> efekt: Zpomalený.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zpomaleni\" target=\"_blank\">SRD Jeskyní a draků – Zpomalení</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "m",
+        "type": "cube",
+        "size": "12",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "36",
+      "units": "m",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "trs",
+    "materials": {
+      "value": "kapka melasy",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "YtN8kTDQyxFaxpEx",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "name": "Záchrana"
+      },
+      "dnd5eactivity300": {
+        "_id": "dnd5eactivity300",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "YtN8kTDQyxFaxpEx"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "1d20",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "name": "Užitek"
+      }
+    },
+    "identifier": "slow"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "yqUDoxk4x0NWG5Bz",
+      "nazevEn": "Slow",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zpomaleni"
+    }
+  },
+  "img": "icons/skills/movement/arrow-down-pink.webp",
+  "effects": [
+    {
+      "name": "Zpomalený",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.E0YADliXTdECLj76",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": true,
+      "_id": "YtN8kTDQyxFaxpEx",
+      "description": "<p>Účinek kouzla <em>Zpomalení</em>. Podrobnosti v popisu kouzla.</p>",
+      "transfer": false,
+      "statuses": [],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "jad-kouzla": {
+          "midiOverTime": true
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781293621557,
+        "modifiedTime": 1781293713804,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "img": "icons/skills/movement/arrow-down-pink.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "type": "add",
+            "value": -2,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.burrow",
+            "type": "multiply",
+            "value": "0.15",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.climb",
+            "type": "multiply",
+            "value": "0.15",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.fly",
+            "type": "multiply",
+            "value": "0.15",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.swim",
+            "type": "multiply",
+            "value": "0.15",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.walk",
+            "type": "multiply",
+            "value": "0.15",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "type": "add",
+            "value": -1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,label=Zpomalený",
+            "type": "custom",
+            "priority": 20
+          }
+        ]
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!yqUDoxk4x0NWG5Bz.YtN8kTDQyxFaxpEx"
+    }
+  ],
+  "folder": "0qxJaICx40H9VPA6",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!E0YADliXTdECLj76"
+}

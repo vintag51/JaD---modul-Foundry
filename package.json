@@ -1,0 +1,15 @@
+{
+  "name": "jad-kouzla",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Jeskyně a draci – automatizovaná kouzla pro Foundry VTT (dnd5e)",
+  "type": "module",
+  "scripts": {
+    "generuj": "python3 tools/generuj.py --dnd5e ../dnd5e",
+    "build": "node tools/build.mjs",
+    "zip": "node tools/build.mjs && cd .. && zip -r jad-kouzla/dist/jad-kouzla.zip jad-kouzla/module.json jad-kouzla/README.md jad-kouzla/LICENSE.md jad-kouzla/scripts jad-kouzla/styles jad-kouzla/lang jad-kouzla/packs/kouzla jad-kouzla/packs/seznamy-kouzel jad-kouzla/data/kompendium jad-kouzla/assets -x '*/_source/*'"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": ">=1.1.0"
+  }
+}

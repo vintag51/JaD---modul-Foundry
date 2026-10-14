@@ -1,0 +1,247 @@
+{
+  "_id": "3Uwz4k6L0Q9y1sD7",
+  "name": "Leomundova tajná truhla",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Ukryješ truhlu v Éterické sféře a můžeš si ji přivolat.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> očaruje předmět; efekt: Leomundova tajná truhla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#leomundova-tajna-truhla\" target=\"_blank\">SRD Jeskyní a draků – Leomundova tajná truhla</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "m",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "con",
+    "materials": {
+      "value": "vzácná truhla 90 × 60 × 60 cm z materiálů v hodnotě nejméně 5 000 zl a její Drobná replika ze stejných materiálů v hodnotě nejméně 50 zl",
+      "consumed": false,
+      "cost": 5050,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "aEojyxuwfh5KJlJY": {
+        "type": "enchant",
+        "name": "Seslat",
+        "_id": "aEojyxuwfh5KJlJY",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "LRgM5MR01y8ZEi0g",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "touch",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "object",
+            "count": "",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "enchant": {
+          "self": false
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "container"
+        }
+      }
+    },
+    "identifier": "secret-chest"
+  },
+  "sort": 0,
+  "flags": {
+    "jad-kouzla": {
+      "srd": "8sgwRh8NUNkn9Vi0",
+      "nazevEn": "Secret Chest",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#leomundova-tajna-truhla"
+    }
+  },
+  "img": "icons/containers/chest/chest-reinforced-steel-tan.webp",
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "Leomundova tajná truhla",
+      "img": "icons/containers/chest/chest-reinforced-steel-tan.webp",
+      "disabled": true,
+      "_id": "LRgM5MR01y8ZEi0g",
+      "system": {
+        "changes": [
+          {
+            "key": "system.description.value",
+            "type": "override",
+            "value": "{} <p><strong>Leomundova tajná truhla.</strong> Ukryješ truhlu v Éterické sféře a můžeš si ji přivolat.</p>",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "name",
+            "type": "override",
+            "value": "Secret {}",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.properties",
+            "type": "add",
+            "value": "mgc",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Leomundova tajná truhla</em>. Podrobnosti v popisu kouzla.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781379054175,
+        "modifiedTime": 1783216738253,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!8sgwRh8NUNkn9Vi0.LRgM5MR01y8ZEi0g"
+    }
+  ],
+  "folder": "puy461ojtmk7Z2NW",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3Uwz4k6L0Q9y1sD7"
+}

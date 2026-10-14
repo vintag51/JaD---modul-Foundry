@@ -1,0 +1,725 @@
+{
+  "_id": "oJ3Eo1pocDNXgedC",
+  "name": "Plamenná čepel",
+  "type": "spell",
+  "img": "icons/weapons/daggers/dagger-glowing-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>V ruce ti vzplane ohnivá čepel, se kterou útočíš.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> očaruje předmět; efekt: Plamenná čepel (podle stupně).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#plamenna-cepel\" target=\"_blank\">SRD Jeskyní a draků – Plamenná čepel</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "bonus",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "self",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "m",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "evo",
+    "materials": {
+      "value": "list škumpy",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "rUOzC7j6wRPm8fpO": {
+        "type": "utility",
+        "name": "Přivolat plamennou čepel do ruky",
+        "_id": "rUOzC7j6wRPm8fpO",
+        "img": "",
+        "sort": 600000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      },
+      "Wj7GiWyEQQKGdYol": {
+        "type": "enchant",
+        "name": "Seslat",
+        "_id": "Wj7GiWyEQQKGdYol",
+        "img": "",
+        "sort": 500000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Dg3Qi2SmWyCMpmU4",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [
+                "rUOzC7j6wRPm8fpO"
+              ],
+              "effect": [
+                "vULxJuCFS32tApK7"
+              ],
+              "item": [
+                "Compendium.dnd5e.spells.Item.8cPlf8sC5j7O6mTv"
+              ]
+            }
+          },
+          {
+            "_id": "nHmffcGZo11sgPV3",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [
+                "rUOzC7j6wRPm8fpO"
+              ],
+              "effect": [
+                "tpXf44S04mFJMol7"
+              ],
+              "item": [
+                "Compendium.dnd5e.spells.Item.8cPlf8sC5j7O6mTv"
+              ]
+            }
+          },
+          {
+            "_id": "JF8ELBI1o8vmfiZA",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [
+                "rUOzC7j6wRPm8fpO"
+              ],
+              "effect": [
+                "BUBEz95PSksSQbVs"
+              ],
+              "item": [
+                "Compendium.dnd5e.spells.Item.8cPlf8sC5j7O6mTv"
+              ]
+            }
+          },
+          {
+            "_id": "HrBnniYMsaCB4PQz",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [
+                "rUOzC7j6wRPm8fpO"
+              ],
+              "effect": [
+                "9TTHVfcjufZowUOr"
+              ],
+              "item": [
+                "Compendium.dnd5e.spells.Item.8cPlf8sC5j7O6mTv"
+              ]
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "m"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "enchant": {
+          "self": true
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "categories": [],
+          "properties": [],
+          "type": ""
+        }
+      }
+    },
+    "identifier": "flame-blade"
+  },
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "Plamenná čepel: 2. stupeň",
+      "img": "icons/weapons/daggers/dagger-glowing-white.webp",
+      "disabled": true,
+      "_id": "Dg3Qi2SmWyCMpmU4",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.flame-blade-damage",
+            "type": "override",
+            "value": "3d6",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Plamenná čepel</em>. Podrobnosti v popisu kouzla.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781224832058,
+        "modifiedTime": 1783217902256,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Advtckpz1B733bu9.Dg3Qi2SmWyCMpmU4"
+    },
+    {
+      "name": "Plamenná čepel: 2. stupeň",
+      "img": "icons/magic/fire/blast-jet-stream-splash.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.oJ3Eo1pocDNXgedC",
+      "type": "base",
+      "_id": "vULxJuCFS32tApK7",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.flame-blade-damage",
+            "type": "upgrade",
+            "value": "3d6",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Plamenná čepel</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781225001605,
+        "modifiedTime": 1783644874705,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Advtckpz1B733bu9.vULxJuCFS32tApK7"
+    },
+    {
+      "name": "Plamenná čepel: 4. stupeň",
+      "img": "icons/magic/fire/blast-jet-stream-splash.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.oJ3Eo1pocDNXgedC",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.flame-blade-damage",
+            "type": "upgrade",
+            "value": "4d6",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Plamenná čepel</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781225071156,
+        "modifiedTime": 1783218010950,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "tpXf44S04mFJMol7",
+      "_key": "!items.effects!Advtckpz1B733bu9.tpXf44S04mFJMol7"
+    },
+    {
+      "name": "Plamenná čepel: 6. stupeň",
+      "img": "icons/magic/fire/blast-jet-stream-splash.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.oJ3Eo1pocDNXgedC",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.flame-blade-damage",
+            "type": "upgrade",
+            "value": "5d6",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Plamenná čepel</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781225094696,
+        "modifiedTime": 1783218013844,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "BUBEz95PSksSQbVs",
+      "_key": "!items.effects!Advtckpz1B733bu9.BUBEz95PSksSQbVs"
+    },
+    {
+      "name": "Plamenná čepel: 8. stupeň",
+      "img": "icons/magic/fire/blast-jet-stream-splash.webp",
+      "origin": "Compendium.jad-kouzla.kouzla.Item.oJ3Eo1pocDNXgedC",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.flame-blade-damage",
+            "type": "upgrade",
+            "value": "6d6",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Plamenná čepel</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781225107165,
+        "modifiedTime": 1783218017711,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "9TTHVfcjufZowUOr",
+      "_key": "!items.effects!Advtckpz1B733bu9.9TTHVfcjufZowUOr"
+    },
+    {
+      "type": "enchantment",
+      "name": "Plamenná čepel: 4. stupeň",
+      "img": "icons/weapons/daggers/dagger-glowing-white.webp",
+      "disabled": true,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.flame-blade-damage",
+            "type": "override",
+            "value": "4d6",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Plamenná čepel</em>. Podrobnosti v popisu kouzla.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781225153025,
+        "modifiedTime": 1783217934805,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "nHmffcGZo11sgPV3",
+      "_key": "!items.effects!Advtckpz1B733bu9.nHmffcGZo11sgPV3"
+    },
+    {
+      "type": "enchantment",
+      "name": "Plamenná čepel: 6. stupeň",
+      "img": "icons/weapons/daggers/dagger-glowing-white.webp",
+      "disabled": true,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.flame-blade-damage",
+            "type": "override",
+            "value": "5d6",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Plamenná čepel</em>. Podrobnosti v popisu kouzla.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781225160352,
+        "modifiedTime": 1783217941959,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "JF8ELBI1o8vmfiZA",
+      "_key": "!items.effects!Advtckpz1B733bu9.JF8ELBI1o8vmfiZA"
+    },
+    {
+      "type": "enchantment",
+      "name": "Plamenná čepel: 8. stupeň",
+      "img": "icons/weapons/daggers/dagger-glowing-white.webp",
+      "disabled": true,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.flame-blade-damage",
+            "type": "override",
+            "value": "6d6",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Plamenná čepel</em>. Podrobnosti v popisu kouzla.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781225167303,
+        "modifiedTime": 1783217951202,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "HrBnniYMsaCB4PQz",
+      "_key": "!items.effects!Advtckpz1B733bu9.HrBnniYMsaCB4PQz"
+    }
+  ],
+  "folder": "eyCozdDlUqUNknW5",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jad-kouzla": {
+      "srd": "Advtckpz1B733bu9",
+      "nazevEn": "Flame Blade",
+      "overeno": false,
+      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#plamenna-cepel"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!oJ3Eo1pocDNXgedC"
+}

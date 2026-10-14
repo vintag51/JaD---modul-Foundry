@@ -1,0 +1,24 @@
+# Kouzla mimo SRD 5.1: kouzla obsažená v knize Jeskyně a draci, která nejsou v SRD 5.1,
+# a původní kouzla JaD (např. Hexenšus, Běsnění, Elementální erupce, Hadí uštknutí, Hlas bouře…).
+# Formát viz tools/vlastni.py. Položka s `vypnuto: true` se do kompendia nezařadí.
+# Mechaniky se doplňují podle PDF knihy JaD (strana do `strana:`), texty jen vlastními slovy.
+
+witch-bolt:
+  cz: Čarodějnický blesk
+  vypnuto: true            # vzor – zapnout po ověření, že kouzlo je v JaD
+  stupen: 1
+  skola: evo
+  slozky: [V, S, M, C]
+  material: větvička ze stromu zasaženého bleskem
+  dosah: {hodnota: 9, jednotky: m}
+  trvani: {hodnota: 1, jednotky: minute}
+  cil: {pocet: 1, typ: creature}
+  shrnuti: Oblouk modré energie spojí tebe a cíl a v dalších kolech ho můžeš akcí znovu zasáhnout.
+  povolani: [sorcerer, warlock, wizard]
+  aktivity:
+    - typ: attack
+      utok: ranged
+      zraneni: [{kostky: 1d12, typ: lightning, skalovani: 1d12}]
+    - typ: damage
+      nazev: Zranění v dalším kole
+      zraneni: [{kostky: 1d12, typ: lightning}]
