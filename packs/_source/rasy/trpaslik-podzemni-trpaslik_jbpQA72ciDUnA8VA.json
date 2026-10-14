@@ -1,0 +1,233 @@
+{
+  "_id": "jbpQA72ciDUnA8VA",
+  "name": "Trpaslík – Podzemní trpaslík",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "folder": "qzOuc9xP9ZV3EDJI",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Nejstarší trpasličí rod z měst v hlubokém podzemí, s nejsilnějším pojetím mystiky.</p><ul><li><strong>Rychlost:</strong> 5 sáhů</li><li><strong>Vidění ve tmě:</strong> 24 sáhů</li></ul><p><em>Více o rase: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/3-rasy.html#podzemni-trpaslici\" target=\"_blank\">SRD Jeskyní a draků – Rasy</a>; pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#schopnosti-ras\" target=\"_blank\">Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "podzemni-trpaslik",
+    "advancement": {
+      "8cZndG3efFaUMwm5": {
+        "_id": "8cZndG3efFaUMwm5",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 2,
+            "int": 0,
+            "wis": 1,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "0v2kdm0tUhIgeLVV": {
+        "_id": "0v2kdm0tUhIgeLVV",
+        "type": "Size",
+        "level": 1,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": ""
+        }
+      },
+      "LMdTb8JNrf5PcLxJ": {
+        "_id": "LMdTb8JNrf5PcLxJ",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common",
+            "languages:standard:dwarvish"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "EE39pxRp8BQwUVJY": {
+        "_id": "EE39pxRp8BQwUVJY",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti a odolnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:poison",
+            "weapon:sim:lighthammer",
+            "weapon:mar:warhammer"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:mason",
+                "tool:art:smith"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "8UY7ivyPiW45IoGv": {
+        "_id": "8UY7ivyPiW45IoGv",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Rasové schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.cMVgbjqcaJm14Eti",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.ic0v0Hg5PKjX8i9d",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.gldh7pZjU5wBrX1c",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.hoax1briztYyuETt",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.ZAbDnzFtHu7wmJ9Q",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.o8CQUFXMRLanqzpc",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "LV0Lrd4WSvHI9caP": {
+        "_id": "LV0Lrd4WSvHI9caP",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Vrozená magie",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.3BhNz1y9KuE4ij6T",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "movement": {
+      "walk": 5,
+      "climb": null,
+      "burrow": null,
+      "fly": null,
+      "swim": null,
+      "units": "sah",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 24,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": "sah",
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "Trpaslík",
+      "custom": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": "podzemni-trpaslik"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!jbpQA72ciDUnA8VA"
+}

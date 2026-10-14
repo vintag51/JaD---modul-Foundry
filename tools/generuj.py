@@ -406,9 +406,10 @@ def main():
             e["_key"] = f"!items.effects!{k['_id']}.{e['_id']}"
 
     # zápis
-    for cil in ("packs/_source/kouzla", "packs/_source/seznamy-kouzel", "data/kompendium"):
+    for cil in ("packs/_source/kouzla", "packs/_source/seznamy-kouzel"):
         shutil.rmtree(os.path.join(KOREN, cil), ignore_errors=True)
         os.makedirs(os.path.join(KOREN, cil))
+    os.makedirs(os.path.join(KOREN, "data/kompendium"), exist_ok=True)
     for k in kouzla:
         with open(os.path.join(KOREN, "packs/_source/kouzla", f"{slug(k['name'])}_{k['_id']}.json"), "w", encoding="utf-8") as fh:
             json.dump(k, fh, ensure_ascii=False, indent=2)

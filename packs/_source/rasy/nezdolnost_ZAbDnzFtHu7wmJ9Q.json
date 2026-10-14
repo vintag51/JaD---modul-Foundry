@@ -1,0 +1,95 @@
+{
+  "_id": "ZAbDnzFtHu7wmJ9Q",
+  "name": "Nezdolnost",
+  "type": "feat",
+  "img": "icons/sundries/books/book-embossed-bound-brown.webp",
+  "folder": "zwCo1dCsL1r0dIP3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "vOHrABtgVOlUk5pz",
+      "name": "Nezdolnost",
+      "img": "icons/sundries/books/book-embossed-bound-brown.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "flags": {},
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.hp.bonuses.level",
+            "value": 1,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Nezdolnost (pasivní rasová schopnost).</p>",
+      "origin": "Compendium.jeskyne-a-draci.rasy.Item.ZAbDnzFtHu7wmJ9Q",
+      "_key": "!items.effects!ZAbDnzFtHu7wmJ9Q.vOHrABtgVOlUk5pz"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Tvé Maximum výdrže se zvyšuje o 1 za každou Úroveň.</p><p><em>Pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Trpaslík",
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "nezdolnost",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ZAbDnzFtHu7wmJ9Q"
+}

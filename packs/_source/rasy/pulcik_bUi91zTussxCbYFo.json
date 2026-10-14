@@ -1,0 +1,166 @@
+{
+  "_id": "bUi91zTussxCbYFo",
+  "name": "Půlčík",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "folder": "qzOuc9xP9ZV3EDJI",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Drobní a nenápadní milovníci jídla a společnosti, z nichž se mimo domov stávají překvapivě smělí hrdinové.</p><ul><li><strong>Rychlost:</strong> 5 sáhů</li></ul><p><em>Více o rase: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/3-rasy.html#pulcici\" target=\"_blank\">SRD Jeskyní a draků – Rasy</a>; pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#schopnosti-ras\" target=\"_blank\">Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "pulcik",
+    "advancement": {
+      "ThFsQx5i8wdPS7Aw": {
+        "_id": "ThFsQx5i8wdPS7Aw",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "str": 0,
+            "dex": 2,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 1
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "9KTnJUkwfmCpAnrD": {
+        "_id": "9KTnJUkwfmCpAnrD",
+        "type": "Size",
+        "level": 1,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {
+          "size": ""
+        }
+      },
+      "YN111rwrOgipbdKs": {
+        "_id": "YN111rwrOgipbdKs",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common",
+            "languages:standard:halfling"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "ikFhtmGSIugMVqG7": {
+        "_id": "ikFhtmGSIugMVqG7",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Rasové schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.9vN8jvgszNNjDdgn",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.mgyY7bEYa1KjBVuj",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.BtmcyFtNkqHJzd7v",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.jehxCsLFSresmuE8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "movement": {
+      "walk": 5,
+      "climb": null,
+      "burrow": null,
+      "fly": null,
+      "swim": null,
+      "units": "sah",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": "sah",
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "Půlčík",
+      "custom": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": "pulcik"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!bUi91zTussxCbYFo"
+}

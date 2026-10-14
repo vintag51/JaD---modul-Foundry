@@ -1,0 +1,207 @@
+{
+  "_id": "atCir6hF9vMPr0ru",
+  "name": "Dračí původ – Nebeské světlo",
+  "type": "feat",
+  "img": "icons/magic/light/beam-rays-yellow.webp",
+  "folder": "r3oOW87Pkx1j9yq2",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "b6yTHtWaLTb8Gtqk",
+      "name": "Odolání zásahům (Nebeské světlo)",
+      "img": "icons/magic/light/beam-rays-yellow.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "flags": {},
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Nebeské světlo (pasivní rasová schopnost).</p>",
+      "origin": "Compendium.jeskyne-a-draci.rasy.Item.atCir6hF9vMPr0ru",
+      "_key": "!items.effects!atCir6hF9vMPr0ru.b6yTHtWaLTb8Gtqk"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Dračí původ: Nebeské světlo. Jednou mezi Odpočinky vydechneš akcí ničivou energii (kužel 3 sáhy); tvorové v oblasti si hází Záchranný hod (SO 8 + Zdatnostní bonus + Oprava odolnosti), při neúspěchu utrpí zásah 2k6 (3k6 na 6., 4k6 na 11. a 5k6 na 16. Úrovni), při úspěchu polovinu. Máš Odolnost vůči tomuto typu zásahu.</p><p><em>Pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#drakorozeny\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Drakorozený",
+    "properties": [
+      "trait"
+    ],
+    "activities": {
+      "LQur7dcbU5ywDPUa": {
+        "_id": "LQur7dcbU5ywDPUa",
+        "type": "save",
+        "name": "Dračí dech",
+        "img": "",
+        "sort": 0,
+        "flags": {},
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "cone",
+            "size": "3",
+            "width": "",
+            "height": "",
+            "units": "sah"
+          },
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "radiant"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.drakorozeny.dech"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "con",
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "dech-nebeske-svetlo",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!atCir6hF9vMPr0ru"
+}

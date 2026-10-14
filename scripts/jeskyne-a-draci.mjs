@@ -1,5 +1,5 @@
 /**
- * Jeskyně a draci – Kouzla (komunitní tvorba)
+ * Jeskyně a draci pro Foundry VTT (komunitní tvorba)
  * Modul pro Foundry VTT v14 a systém dnd5e.
  *
  * - registruje seznamy kouzel povolání JaD do registru dnd5e,
@@ -10,6 +10,13 @@
 
 const MODUL = "jeskyne-a-draci";
 const DATA = `modules/${MODUL}/data/kompendium`;
+
+/** Kompendia modulu a soubory se záložními daty pro import. */
+const BALIKY = [
+  { pack: "kouzla", soubor: "kouzla.json" },
+  { pack: "seznamy-kouzel", soubor: "seznamy-kouzel.json" },
+  { pack: "rasy", soubor: "rasy.json" }
+];
 
 const t = (klic, data) => data ? game.i18n.format(`JAD.${klic}`, data) : game.i18n.localize(`JAD.${klic}`);
 
@@ -66,34 +73,32 @@ async function registrovatSeznamy() {
 }
 
 /**
- * Pokud jsou kompendia prázdná (nebo je vynuceno), naplní je z JSON dat modulu.
+ * Pokud je některé kompendium prázdné (nebo je vynuceno), naplní ho z JSON dat modulu.
  * @param {boolean} vynutit  Smazat stávající obsah a importovat znovu.
  */
 async function zajistitKompendia(vynutit) {
-  const verze = game.modules.get(MODUL).version;
-  const kouzla = game.packs.get(`${MODUL}.kouzla`);
-  const seznamy = game.packs.get(`${MODUL}.seznamy-kouzel`);
-  if ( !kouzla || !seznamy ) return;
-
-  const prazdna = (await kouzla.getIndex()).size === 0;
-  if ( !vynutit && !prazdna ) return;
-
-  ui.notifications.info(t("Import.Zacatek"));
-  const [dk, ds] = await Promise.all([
-    fetch(`${DATA}/kouzla.json`).then(r => r.json()),
-    fetch(`${DATA}/seznamy-kouzel.json`).then(r => r.json())
-  ]);
-
-  await naplnit(kouzla, async pack => {
-    await Folder.implementation.createDocuments(dk.folders, { pack: pack.collection, keepId: true });
-    await Item.implementation.createDocuments(dk.items, { pack: pack.collection, keepId: true });
-  }, vynutit);
-  await naplnit(seznamy, async pack => {
-    await JournalEntry.implementation.createDocuments(ds.journal, { pack: pack.collection, keepId: true });
-  }, vynutit);
-
-  await game.settings.set(MODUL, "importovanaVerze", verze);
-  ui.notifications.info(t("Import.Hotovo", { pocet: dk.items.length }));
+  let celkem = 0;
+  let zacato = false;
+  for ( const { pack: nazev, soubor } of BALIKY ) {
+    const pack = game.packs.get(`${MODUL}.${nazev}`);
+    if ( !pack ) continue;
+    if ( !vynutit && (await pack.getIndex()).size > 0 ) continue;
+    if ( !zacato ) {
+      ui.notifications.info(t("Import.Zacatek"));
+      zacato = true;
+    }
+    const data = await fetch(`${DATA}/${soubor}`).then(r => r.json());
+    await naplnit(pack, async p => {
+      if ( data.folders?.length ) await Folder.implementation.createDocuments(data.folders, { pack: p.collection, keepId: true });
+      if ( data.items?.length ) await Item.implementation.createDocuments(data.items, { pack: p.collection, keepId: true });
+      if ( data.journal?.length ) await JournalEntry.implementation.createDocuments(data.journal, { pack: p.collection, keepId: true });
+    }, vynutit);
+    celkem += (data.items?.length ?? 0) + (data.journal?.length ?? 0);
+  }
+  if ( zacato ) {
+    await game.settings.set(MODUL, "importovanaVerze", game.modules.get(MODUL).version);
+    ui.notifications.info(t("Import.Hotovo", { pocet: celkem }));
+  }
 }
 
 async function naplnit(pack, vytvorit, vynutit) {

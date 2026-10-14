@@ -1,0 +1,375 @@
+# Rasy a rody Jeskyní a draků (kapitola 2 – Tvorba postavy, kapitola 3 – Rasy).
+# Pravidla podle knihy, popisy vlastními slovy (licence JaD zakazuje kopírovat text).
+# Vzdálenosti v sázích (1 sáh = 1 pole = 5 stop).
+#
+# schopnosti: rasové schopnosti (položky typu „feat“, druh „race“)
+#   popis, pouziti {max, obnova: sr|lr}, aktivity [...], efekty [{zmeny}], postup [advancement uvnitř schopnosti]
+# rasy: hratelné rasy (každý rod je samostatná položka, protože dnd5e podrasy neskládá)
+#   asi {fixni: {str: 2}, body: N}, velikost, rychlost {walk, climb}, videni, jazyky, zdatnosti, volby_zdatnosti,
+#   schopnosti [klíče], volby [{nazev, pocet, z: [klíče schopností]}], kouzla [{kouzlo, uroven, max, obnova, vlastnost}],
+#   volba_kouzla {nazev, z|seznam, vlastnost}, skala {...}
+
+schopnosti:
+  # ---------------------------------------------------------------- společné
+  videni-ve-tme:
+    nazev: Vidění ve tmě
+    popis: V šeru do vymezené vzdálenosti vidíš jako za denního světla a ve tmě jako v šeru, barvy však nerozeznáš.
+  citlivost-na-slunce:
+    nazev: Citlivost na sluneční světlo
+    popis: Když jsi ty nebo tvůj cíl na přímém slunci, máš Nevýhodu na Útoky a na Ověření moudrosti (Vnímání) založená na zraku.
+
+  # ---------------------------------------------------------------- člověk
+  momenty-hrdinstvi:
+    nazev: Momenty hrdinství
+    popis: Jednou mezi dvěma Odpočinky si po hodu na Útok rozšíříš rozsah Kritického úspěchu o 1, nebo prohlásíš hozenou dvacítku na Ověření za úspěch bez ohledu na SO.
+    pouziti: {max: 1, obnova: sr}
+    aktivity: [{nazev: Moment hrdinství, sesilani: special}]
+  spolecenske-nadani:
+    nazev: Společenské nadání
+    popis: Získáš Zdatnost v jedné společenské Dovednosti dle své volby.
+    postup:
+      - {typ: trait, volby: [{pocet: 1, z: [skills:dec, skills:per, skills:prf, skills:itm]}]}
+  vzneseny-rod:
+    nazev: Vznešený rod
+    popis: Potomek vznešené pokrevní linie – namísto Společenského nadání si zvýšíš jednu Vlastnost o 1.
+    postup:
+      - {typ: asi, body: 1}
+  severan:
+    nazev: Seveřan – Drsný původ
+    popis: Drsné podnebí tě zocelilo – namísto Společenského nadání získáš Zdatnost v jedné přežití napomáhající Dovednosti a umíš zacházet s loděmi a navigačními pomůckami (a s rybářskými potřebami).
+    postup:
+      - {typ: trait, zdatnosti: [tool:navg, vehicle:water], volby: [{pocet: 1, z: [skills:ath, skills:med, skills:sur, skills:nat]}]}
+  lesni-narod:
+    nazev: Lesní národ – Lesní řemesla
+    popis: Vyrůstal jsi v hlubokých lesích – namísto Společenského nadání získáš Zdatnost v jedné lesní Dovednosti, s tesařským a řezbářským nářadím (a v používání loveckých pastí).
+    postup:
+      - {typ: trait, zdatnosti: [tool:art:carpenter, tool:art:woodcarver], volby: [{pocet: 1, z: [skills:ste, skills:sur, skills:nat, skills:prc]}]}
+  kocovnik:
+    nazev: Kočovník – Zcestovalost
+    popis: Procestoval jsi kus světa – namísto Společenského nadání umíš další jazyk, řemeslo a hudební nástroj a v jedné Dovednosti své kultury máš Kvalifikaci.
+    postup:
+      - {typ: trait, volby: [{pocet: 1, z: ["languages:*"]}, {pocet: 1, z: ["tool:art:*"]}, {pocet: 1, z: ["tool:music:*"]}]}
+      - {typ: trait, rezim: expertise, volby: [{pocet: 1, z: ["skills:*"]}]}
+  vsestrannost:
+    nazev: Všestrannost
+    popis: Varianta místo Momentů hrdinství – získáš další Dovednost, sadu pomůcek, hudební nástroj a jazyk a jednu svou Zdatnost povýšíš na Kvalifikaci.
+    postup:
+      - {typ: trait, volby: [{pocet: 1, z: ["skills:*"]}, {pocet: 1, z: ["tool:*"]}, {pocet: 1, z: ["tool:music:*"]}, {pocet: 1, z: ["languages:*"]}]}
+      - {typ: trait, rezim: expertise, volby: [{pocet: 1, z: ["skills:*", "tool:*"]}]}
+  drsna-soudrznost:
+    nazev: Drsná soudržnost
+    popis: Varianta místo Momentů hrdinství – jednou mezi dvěma Odpočinky v konfliktu skupin podpoříš spojence (zvýšíš jeho Zásah nebo mu dáš Dočasné body výdrže), případně zvýšíš něčí hod na společenskou Dovednost.
+    pouziti: {max: 1, obnova: sr}
+    aktivity:
+      - {nazev: Posílit Zásah spojence, sesilani: bonus}
+      - {nazev: Dočasné body výdrže spojenci, sesilani: reaction, typ: heal, leceni: {bonus: "@prof", typ: temphp}, cil: {pocet: 1, typ: ally}}
+      - {nazev: Podpora ve společenském střetu, sesilani: bonus}
+
+  # ---------------------------------------------------------------- elf
+  vili-puvod:
+    nazev: Vílí původ a trans
+    popis: Máš Výhodu proti Zmámení a magie tě nemůže uspat. Místo spánku ti stačí čtyři hodiny transu (Dlouhý odpočinek ale stále trvá osm hodin).
+  bystre-smysly:
+    nazev: Bystré smysly
+    popis: Máš Zdatnost v Dovednosti Vnímání.
+  hbitost-divokeho-elfa:
+    nazev: Hbitost
+    popis: Tvá Rychlost je 7 sáhů, přirozené prostředí pro tebe nikdy není Těžkým terénem a stejnou rychlostí umíš i šplhat.
+  vrozena-magie-divoka:
+    nazev: Vrozená magie (Divoký elf)
+    popis: Ovládáš jeden z druidských triků – Druidství, Stvoř plamen nebo Tančící světla. Sesílací vlastností je Charisma.
+  vrozena-magie-vznesena:
+    nazev: Vrozená magie (Vznešený elf)
+    popis: Znáš jeden trik ze seznamu Kouzelníka. Sesílací vlastností je Inteligence.
+  remesla-a-umeni:
+    nazev: Řemesla a umění
+    popis: Umíš zacházet s jedním řemeslnickým nářadím a jedním hudebním nástrojem.
+  vrozena-magie-nocni:
+    nazev: Vrozená magie (Noční elf)
+    popis: Ovládáš trik Vedení. Od 3. Úrovně jednou za Dlouhý odpočinek sešleš Spánek, od 5. Úrovně jednou za Odpočinek Předvídání. Sesílací vlastností je Moudrost.
+  vrozena-magie-krvava:
+    nazev: Vrozená magie (Krvavý elf)
+    popis: Ovládáš trik Dotek smrti. Od 3. Úrovně jednou za Dlouhý odpočinek sešleš Způsob zranění, od 5. Úrovně jednou za Odpočinek Paprsek slabosti. Sesílací vlastností je Inteligence nebo Charisma (ta, kterou ti rod zvýšil).
+
+  # ---------------------------------------------------------------- trpaslík
+  nezlomnost:
+    nazev: Nezlomnost
+    popis: Máš Výhodu k Záchranným hodům proti jedům a Odolnost vůči Jedovému zásahu.
+  spanek-a-utlum:
+    nazev: Spánek a útlum
+    popis: Pokud nejsi unavený, vystačíš si s jedním Dlouhým odpočinkem za dva dny a lépe odoláváš únavě z nevyspalosti. Dokážeš upadnout do úsporného útlumu, z něhož se ale probouzíš pomalu a s jedním Stupněm únavy.
+  nezdolnost:
+    nazev: Nezdolnost
+    popis: Tvé Maximum výdrže se zvyšuje o 1 za každou Úroveň.
+    efekty: [{nazev: Nezdolnost, zmeny: [{klic: system.attributes.hp.bonuses.level, hodnota: 1, typ: add}]}]
+  mystika-kamene:
+    nazev: Mystika kamene
+    popis: V Ověřeních inteligence (Historie) týkajících se kamenické práce máš Kvalifikaci. Ovládáš trik Oprava.
+  mystika-tvorby:
+    nazev: Mystika tvorby
+    popis: V Ověřeních inteligence (Historie) týkajících se kovářské práce máš Kvalifikaci. Jednou mezi Odpočinky si při práci s nástrojem, který jsi vyrobil nebo dostal od mistra, vezmeš Výhodu, nebo s ním dokážeš něco neobvyklého.
+    pouziti: {max: 1, obnova: sr}
+    aktivity: [{nazev: Mistrovský nástroj, sesilani: special}]
+  mystika-cinu:
+    nazev: Mystika činů
+    popis: V Ověřeních inteligence (Historie) o činech významných osobností máš Kvalifikaci. Podle díla či činů dokážeš o jejich původci zjistit informace společenskými Dovednostmi, jako bys s ním mluvil.
+  mystika-plamene:
+    nazev: Mystika plamene
+    popis: Ovládáš trik Stvoř plamen a rozděláš oheň i v dešti. Jednou za Dlouhý odpočinek můžeš z předmětu zničeného v plamenech vyčíst jeho tajemství.
+    pouziti: {max: 1, obnova: lr}
+    aktivity: [{nazev: Tajemství z plamenů, sesilani: special}]
+
+  # ---------------------------------------------------------------- půlčík
+  pulcicka-hbitost:
+    nazev: Půlčická hbitost
+    popis: Můžeš procházet prostorem tvorů větší Třídy velikosti.
+    efekty: [{nazev: Půlčická hbitost, zmeny: [{klic: flags.dnd5e.halflingNimbleness, hodnota: true, typ: override}]}]
+  stesti:
+    nazev: Štěstí
+    popis: Když ti na k20 při Útoku, Ověření nebo Záchranném hodu padne 1, hoď si znovu a použij nový výsledek.
+    efekty: [{nazev: Štěstí, zmeny: [{klic: flags.dnd5e.halflingLucky, hodnota: true, typ: override}]}]
+  smelost:
+    nazev: Smělost
+    popis: Máš Výhodu k Záchranným hodům proti Vystrašení.
+  prirozena-nenapadnost:
+    nazev: Přirozená nenápadnost
+    popis: Můžeš se pokusit schovat i za tvorem, který je jen o jednu Třídu velikosti větší než ty.
+
+  # ---------------------------------------------------------------- půlork
+  zaryta-houzevnatost:
+    nazev: Zarytá houževnatost
+    popis: Jednou za Dlouhý odpočinek, když by ti Body výdrže klesly na 0 a nezemřeš na místě, zůstaneš na 1.
+    pouziti: {max: 1, obnova: lr}
+    aktivity: [{nazev: Zůstat na nohou, sesilani: special, typ: heal, leceni: {bonus: "1", typ: healing}, cil: {typ: self}}]
+  divoke-utoky:
+    nazev: Divoké útoky
+    popis: Při Kritickém zásahu Útokem na blízko zbraní si hodíš jednou z kostek zásahu zbraně navíc.
+    efekty: [{nazev: Divoké útoky, zmeny: [{klic: flags.dnd5e.meleeCriticalDamageDice, hodnota: 1, typ: add}]}]
+  hrozivy:
+    nazev: Hrozivý
+    popis: Máš Zdatnost v Dovednosti Zastrašování.
+
+  # ---------------------------------------------------------------- gnóm
+  gnomi-prohnanost:
+    nazev: Gnómí prohnanost
+    popis: Máš Výhodu ke všem Záchranným hodům na Inteligenci, Moudrost a Charisma proti magii.
+  kutil:
+    nazev: Kutil
+    popis: S kutilskými nástroji a surovinami za 10 zl dokážeš za hodinu sestavit drobnou neškodnou mechanickou hříčku, která den funguje; kdykoli ji můžeš rozebrat a suroviny získat zpět.
+    aktivity: [{nazev: Sestavit hříčku, sesilani: hour}]
+  znalost-alchymie:
+    nazev: Znalost alchymie
+    popis: V Ověřeních inteligence (Historie) týkajících se kouzelných a alchymistických předmětů a technických zařízení máš Kvalifikaci.
+
+  # ---------------------------------------------------------------- tiefling
+  pekelne-dedictvi:
+    nazev: Pekelné dědictví
+    popis: Znáš trik Divotvorství. Od 3. Úrovně jednou za Dlouhý odpočinek sešleš Pekelné pokárání jako kouzlo 2. Stupně, od 5. Úrovně jednou za Dlouhý odpočinek Tmu. Sesílací vlastností je Charisma.
+  pekelne-odolani:
+    nazev: Pekelné odolání
+    popis: Máš Odolnost vůči Ohnivému zásahu.
+
+drakorozeny_puvody:
+  # klíč: [název, typ zásahu, šablona (cone|line), Záchranný hod]
+  blesky: [Blesky, lightning, line, dex]
+  hlasity-rev: [Hlasitý řev, thunder, cone, con]
+  mraz-a-chlad: [Mráz a chlad, cold, cone, con]
+  jedovaty-plyn: [Jedovatý plyn, poison, cone, con]
+  zirava-aerosol: [Žíravý aerosol, acid, line, dex]
+  plameny: [Plameny, fire, cone, dex]
+  nebeske-svetlo: [Nebeské světlo, radiant, cone, con]
+  samotna-smrt: [Samotná smrt, necrotic, cone, con]
+  strepy-vule: [Střepy vůle, psychic, cone, wis]
+  magicka-esence: [Magická esence, force, line, dex]
+
+rasy:
+  clovek:
+    nazev: Člověk
+    kotva: lide
+    popis: Lidé ničím nevynikají a v ničem nezaostávají – univerzální rasa hrdinů, kteří se v nejtěžších chvílích dokážou vzepjout k velkým činům.
+    asi: {body: 2}
+    velikost: med
+    rychlost: {walk: 6}
+    jazyky: [languages:standard:common]
+    volby_zdatnosti: [{pocet: 1, z: ["languages:*"]}]
+    volby:
+      - {nazev: Lidský rod, pocet: 1, z: [spolecenske-nadani, vzneseny-rod, severan, lesni-narod, kocovnik]}
+      - {nazev: Lidská povaha, pocet: 1, z: [momenty-hrdinstvi, vsestrannost, drsna-soudrznost]}
+
+  divoky-elf:
+    nazev: Elf – Divoký elf
+    kotva: divoci-elfove
+    popis: Elfové spjatí s divokou přírodou – intuitivní, rychlí a nepředvídatelní.
+    asi: {fixni: {dex: 2, cha: 1}}
+    velikost: med
+    rychlost: {walk: 7, climb: 7}
+    videni: 12
+    podtyp: Elf
+    jazyky: [languages:standard:common, languages:standard:elvish]
+    zdatnosti: [skills:prc, weapon:mar:shortsword, weapon:mar:longsword, weapon:sim:shortbow, weapon:mar:longbow]
+    schopnosti: [videni-ve-tme, vili-puvod, bystre-smysly, hbitost-divokeho-elfa, vrozena-magie-divoka]
+    volba_kouzla: {nazev: Vrozená magie, z: [druidcraft, produce-flame, dancing-lights], vlastnost: cha}
+  vzneseny-elf:
+    nazev: Elf – Vznešený elf
+    kotva: vzneseni-elfove
+    popis: Mistři magie a řemesel z mramorových měst a horských citadel.
+    asi: {fixni: {dex: 2, int: 1}}
+    velikost: med
+    rychlost: {walk: 6}
+    videni: 12
+    podtyp: Elf
+    jazyky: [languages:standard:common, languages:standard:elvish]
+    zdatnosti: [skills:prc, weapon:mar:shortsword, weapon:mar:longsword, weapon:sim:spear, weapon:sim:shortbow, weapon:mar:longbow]
+    volby_zdatnosti: [{pocet: 1, z: ["languages:*"]}, {pocet: 1, z: ["tool:art:*"]}, {pocet: 1, z: ["tool:music:*"]}]
+    schopnosti: [videni-ve-tme, vili-puvod, bystre-smysly, vrozena-magie-vznesena, remesla-a-umeni]
+    volba_kouzla: {nazev: Vrozená magie, seznam: wizard, vlastnost: int}
+  nocni-elf:
+    nazev: Elf – Noční elf
+    kotva: nocni-elfove
+    popis: Tajuplný rod oddaný mystice a proroctvím, zrozený v hlubinách.
+    asi: {fixni: {dex: 2, wis: 1}}
+    velikost: med
+    rychlost: {walk: 6}
+    videni: 24
+    podtyp: Elf
+    jazyky: [languages:standard:common, languages:standard:elvish]
+    zdatnosti: [skills:prc, weapon:sim:dagger, weapon:sim:javelin, weapon:mar:shortsword, weapon:mar:rapier, weapon:sim:lightcrossbow, weapon:mar:handcrossbow]
+    schopnosti: [videni-ve-tme, vili-puvod, bystre-smysly, citlivost-na-slunce, vrozena-magie-nocni]
+    kouzla:
+      - {kouzlo: guidance, vlastnost: wis}
+      - {kouzlo: sleep, uroven: 3, max: 1, obnova: lr, vlastnost: wis}
+      - {kouzlo: augury, uroven: 5, max: 1, obnova: sr, vlastnost: wis}
+  krvavy-elf:
+    nazev: Elf – Krvavý elf
+    kotva: krvavi-elfove
+    popis: Temní příbuzní Nočních elfů, zocelení útěkem do hlubin – dravci toužící po smečce. Hraní domluvte s PH a skupinou.
+    asi: {fixni: {dex: 2}, body: 1, omezeni: [int, cha]}
+    velikost: med
+    rychlost: {walk: 6}
+    videni: 24
+    podtyp: Elf
+    jazyky: [languages:standard:common, languages:standard:elvish]
+    zdatnosti: [skills:prc, weapon:sim:dagger, weapon:mar:shortsword, weapon:mar:rapier, weapon:sim:lightcrossbow, weapon:mar:handcrossbow]
+    schopnosti: [videni-ve-tme, vili-puvod, bystre-smysly, citlivost-na-slunce, vrozena-magie-krvava]
+    kouzla:
+      - {kouzlo: chill-touch, vlastnost: [int, cha]}
+      - {kouzlo: inflict-wounds, uroven: 3, max: 1, obnova: lr, vlastnost: [int, cha]}
+      - {kouzlo: ray-of-enfeeblement, uroven: 5, max: 1, obnova: sr, vlastnost: [int, cha]}
+
+  podzemni-trpaslik:
+    nazev: Trpaslík – Podzemní trpaslík
+    kotva: podzemni-trpaslici
+    popis: Nejstarší trpasličí rod z měst v hlubokém podzemí, s nejsilnějším pojetím mystiky.
+    asi: {fixni: {con: 2, wis: 1}}
+    velikost: med
+    rychlost: {walk: 5}
+    videni: 24
+    podtyp: Trpaslík
+    jazyky: [languages:standard:common, languages:standard:dwarvish]
+    zdatnosti: [dr:poison, weapon:sim:lighthammer, weapon:mar:warhammer]
+    volby_zdatnosti: [{pocet: 1, z: [tool:art:mason, tool:art:smith]}]
+    schopnosti: [videni-ve-tme, nezlomnost, spanek-a-utlum, citlivost-na-slunce, nezdolnost, mystika-kamene]
+    kouzla: [{kouzlo: mending, vlastnost: wis}]
+  skalni-trpaslik:
+    nazev: Trpaslík – Skalní trpaslík
+    kotva: skalni-trpaslici
+    popis: Proslulí mistři řemesel z pevností na rozhraní podzemí a povrchu, neústupní jako kámen.
+    asi: {fixni: {con: 2, str: 2}}
+    velikost: med
+    rychlost: {walk: 5}
+    videni: 12
+    podtyp: Trpaslík
+    jazyky: [languages:standard:common, languages:standard:dwarvish]
+    zdatnosti: [dr:poison, weapon:sim:handaxe, weapon:mar:battleaxe]
+    volby_zdatnosti: [{pocet: 1, z: [tool:art:smith, tool:art:mason, tool:art:carpenter]}]
+    schopnosti: [videni-ve-tme, nezlomnost, spanek-a-utlum, mystika-tvorby]
+  svetly-trpaslik:
+    nazev: Trpaslík – Světlý trpaslík
+    kotva: svetli-trpaslici
+    popis: Nejmladší trpasličí rod z povrchu, jehož mystiku z velké části nahradilo náboženství.
+    asi: {fixni: {con: 2, dex: 1, int: 1}}
+    velikost: med
+    rychlost: {walk: 5}
+    videni: 12
+    podtyp: Trpaslík
+    jazyky: [languages:standard:common, languages:standard:dwarvish]
+    zdatnosti: [dr:poison, weapon:sim:handaxe, weapon:sim:lightcrossbow, weapon:mar:handcrossbow]
+    volby_zdatnosti:
+      - {pocet: 1, z: [tool:art:smith, tool:art:jeweler, tool:art:carpenter, tool:art:leatherworker, tool:art:brewer]}
+      - {pocet: 1, z: [skills:his, skills:rel]}
+    schopnosti: [videni-ve-tme, nezlomnost, spanek-a-utlum, mystika-cinu]
+  ohnivy-trpaslik:
+    nazev: Trpaslík – Ohnivý trpaslík
+    kotva: ohnivi-trpaslici
+    popis: Obávaný rod z nitra sopek, který chápe svět skrze to, co zničí a znovu vytvoří.
+    asi: {fixni: {con: 2, cha: 1}}
+    velikost: med
+    rychlost: {walk: 5}
+    videni: 12
+    podtyp: Trpaslík
+    jazyky: [languages:standard:common, languages:standard:dwarvish]
+    zdatnosti: [dr:poison, weapon:sim:lighthammer, weapon:mar:warhammer]
+    volby_zdatnosti: [{pocet: 1, z: [tool:art:smith, tool:art:mason]}]
+    schopnosti: [videni-ve-tme, nezlomnost, spanek-a-utlum, mystika-plamene]
+    kouzla: [{kouzlo: produce-flame, vlastnost: cha}]
+
+  pulcik:
+    nazev: Půlčík
+    kotva: pulcici
+    popis: Drobní a nenápadní milovníci jídla a společnosti, z nichž se mimo domov stávají překvapivě smělí hrdinové.
+    asi: {fixni: {dex: 2, cha: 1}}
+    velikost: sm
+    rychlost: {walk: 5}
+    podtyp: Půlčík
+    jazyky: [languages:standard:common, languages:standard:halfling]
+    schopnosti: [pulcicka-hbitost, stesti, smelost, prirozena-nenapadnost]
+  pulork:
+    nazev: Půlork
+    kotva: pulorkove
+    popis: Robustní a vytrvalí, s výbušným temperamentem a ambicemi dotáhnout věci do konce.
+    asi: {fixni: {str: 2, con: 1}}
+    velikost: med
+    rychlost: {walk: 6}
+    videni: 12
+    podtyp: Půlork
+    jazyky: [languages:standard:common, languages:standard:orc]
+    zdatnosti: [skills:itm]
+    schopnosti: [videni-ve-tme, zaryta-houzevnatost, divoke-utoky, hrozivy]
+  gnom:
+    nazev: Gnóm
+    kotva: gnomove
+    popis: Zvídaví a neposední kutilové s talentem pro řemesla, techniku a magii.
+    asi: {fixni: {int: 2, con: 1}}
+    velikost: sm
+    rychlost: {walk: 5}
+    videni: 12
+    podtyp: Gnóm
+    jazyky: [languages:standard:common, languages:standard:gnomish]
+    zdatnosti: [tool:art:tinker]
+    schopnosti: [videni-ve-tme, gnomi-prohnanost, kutil, znalost-alchymie]
+  drakorozeny:
+    nazev: Drakorozený
+    kotva: drakorozeni
+    popis: Humanoidní potomci draků se šupinami, dračí hrdostí a ničivým dechem.
+    asi: {fixni: {str: 2, cha: 1}}
+    velikost: med
+    rychlost: {walk: 6}
+    podtyp: Drakorozený
+    jazyky: [languages:standard:common, languages:exotic:draconic]
+    drakorozeny: true
+  tiefling:
+    nazev: Tiefling
+    kotva: tieflingove
+    popis: Potomci kultistů s pekelnou krví – okouzlující i děsiví, věčně zápasící se svým dědictvím.
+    asi: {fixni: {cha: 2, int: 1}}
+    velikost: med
+    rychlost: {walk: 6}
+    videni: 12
+    podtyp: Tiefling
+    jazyky: [languages:standard:common, languages:exotic:infernal]
+    zdatnosti: [dr:fire]
+    schopnosti: [videni-ve-tme, pekelne-dedictvi, pekelne-odolani]
+    kouzla:
+      - {kouzlo: thaumaturgy, vlastnost: cha}
+      - {kouzlo: hellish-rebuke, uroven: 3, max: 1, obnova: lr, vlastnost: cha}
+      - {kouzlo: darkness, uroven: 5, max: 1, obnova: lr, vlastnost: cha}

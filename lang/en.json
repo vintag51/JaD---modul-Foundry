@@ -12,7 +12,7 @@
     },
     "Import": {
       "Zacatek": "Jeskyně a draci: populating compendiums…",
-      "Hotovo": "Jeskyně a draci: imported {pocet} spells.",
+      "Hotovo": "Jeskyně a draci: imported {pocet} compendium entries.",
       "Chyba": "Jeskyně a draci: compendium import failed, see console (F12)."
     },
     "Midi": {

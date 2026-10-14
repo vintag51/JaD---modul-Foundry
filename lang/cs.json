@@ -12,7 +12,7 @@
     },
     "Import": {
       "Zacatek": "Jeskyně a draci: plním kompendia z dat modulu…",
-      "Hotovo": "Jeskyně a draci: naimportováno {pocet} kouzel.",
+      "Hotovo": "Jeskyně a draci: do kompendií naimportováno {pocet} položek.",
       "Chyba": "Jeskyně a draci: import kompendií selhal, podrobnosti v konzoli (F12)."
     },
     "Midi": {

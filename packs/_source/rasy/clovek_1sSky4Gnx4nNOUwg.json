@@ -1,0 +1,236 @@
+{
+  "_id": "1sSky4Gnx4nNOUwg",
+  "name": "Člověk",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "folder": "qzOuc9xP9ZV3EDJI",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Lidé ničím nevynikají a v ničem nezaostávají – univerzální rasa hrdinů, kteří se v nejtěžších chvílích dokážou vzepjout k velkým činům.</p><ul><li><strong>Rychlost:</strong> 6 sáhů</li></ul><p><em>Více o rase: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/3-rasy.html#lide\" target=\"_blank\">SRD Jeskyní a draků – Rasy</a>; pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#schopnosti-ras\" target=\"_blank\">Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "clovek",
+    "advancement": {
+      "K4SrCuYZAuPQKOdp": {
+        "_id": "K4SrCuYZAuPQKOdp",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 1,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "n3zzxG4t62CkOfdp": {
+        "_id": "n3zzxG4t62CkOfdp",
+        "type": "Size",
+        "level": 1,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": ""
+        }
+      },
+      "K4OQ7gF5y6meGl3h": {
+        "_id": "K4OQ7gF5y6meGl3h",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "129xCTWakq1dQ0FW": {
+        "_id": "129xCTWakq1dQ0FW",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Lidský rod",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.x0VO3xkeCbbzaRI5"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.OVfuhsWb92DfGc7z"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.81UtRiqYGldCockm"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.KZcVmELEO8A3qh5X"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.xFDKCR22CpzPr144"
+            }
+          ],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "race",
+            "subtype": "",
+            "level": "",
+            "list": []
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      "wfUCqDyFeF6Sj5P6": {
+        "_id": "wfUCqDyFeF6Sj5P6",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Lidská povaha",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.09pLkWOpb2QCXLvM"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.G2Fwhunq4zaT4bHn"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.FJcZlRh3M4x18L8t"
+            }
+          ],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "race",
+            "subtype": "",
+            "level": "",
+            "list": []
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      }
+    },
+    "movement": {
+      "walk": 6,
+      "climb": null,
+      "burrow": null,
+      "fly": null,
+      "swim": null,
+      "units": "sah",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": "sah",
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "Člověk",
+      "custom": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": "clovek"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1sSky4Gnx4nNOUwg"
+}
