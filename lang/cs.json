@@ -7,7 +7,7 @@
       },
       "Jednotky": {
         "Nazev": "Kontrolovat mřížku scény",
-        "Napoveda": "Upozorní GM, pokud scéna nemá 1 pole = 1 sáh (5 stop, 1,5 m)."
+        "Napoveda": "Při otevření scény, která nemá mřížku v sázích, nabídne GM její převod na 1 sáh na pole."
       },
       "Mince": {
         "Nazev": "Mince JaD (zl, st, md)",
@@ -24,6 +24,10 @@
       "Zjednodusena": {
         "Nazev": "Zjednodušená nosnost (JaD)",
         "Napoveda": "Bez Stupňů naložení: postava unese 15 + Oprava síly Řádků bez postihu, víc ne. Těžká zbroj bez potřebné Síly zpomalí o 2 sáhy."
+      },
+      "ScenyVSazich": {
+        "Nazev": "Nové scény v sázích",
+        "Napoveda": "Nově vytvořené scény dostanou mřížku 1 pole = 1 sáh, aby měření pohybu tokenů odpovídalo rychlosti postav v sázích."
       }
     },
     "Import": {
@@ -35,7 +39,7 @@
       "Aktivni": "Jeskyně a draci: Midi-QOL je aktivní – opakované Záchranné hody a zásahy na konci tahu (OverTime) se vyhodnocují automaticky."
     },
     "Jednotky": {
-      "Upozorneni": "Jeskyně a draci: kouzla měří v sázích (1 sáh = 1 pole). Nastav mřížku scény na 1 sáh, 5 stop nebo 1,5 m na pole.",
+      "Upozorneni": "Jeskyně a draci: postavy a kouzla měří v sázích. Nastav mřížku scény na 1 sáh na pole.",
       "Sah": {
         "Nazev": "Sáhy",
         "Zkratka": "sáh",
@@ -58,7 +62,12 @@
           "many": "{number} sáhu",
           "other": "{number} sáhů"
         }
-      }
+      },
+      "Titulek": "Mřížka scény v sázích",
+      "Dotaz": "Scéna „{scena}“ má mřížku {mrizka} na pole. Postavy JaD mají rychlost v sázích a měření pohybu tokenů po mapě porovnává rychlost s jednotkami mřížky. Převést scénu na 1 sáh na pole?",
+      "Prevest": "Převést na sáhy",
+      "Nechat": "Nechat (už se neptat)",
+      "Prevedeno": "Scéna „{scena}“ má teď mřížku 1 sáh na pole."
     },
     "Mince": {
       "Zl": {

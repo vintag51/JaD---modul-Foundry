@@ -7,7 +7,7 @@
       },
       "Jednotky": {
         "Nazev": "Check scene grid",
-        "Napoveda": "Warns the GM if the scene grid is not 1 square = 1 fathom (5 ft, 1.5 m)."
+        "Napoveda": "When a scene without a sáh grid is opened, offers the GM to convert it to 1 sáh per square."
       },
       "Mince": {
         "Nazev": "JaD coins (zl, st, md)",
@@ -24,6 +24,10 @@
       "Zjednodusena": {
         "Nazev": "Simplified encumbrance (JaD)",
         "Napoveda": "No encumbrance levels: a character carries 15 + Str mod Rows without penalty, but no more. Heavy armor without the required Strength slows by 2 sáhy."
+      },
+      "ScenyVSazich": {
+        "Nazev": "New scenes in sáhy",
+        "Napoveda": "Newly created scenes get a grid of 1 square = 1 sáh, so token movement measurement matches character speeds in sáhy."
       }
     },
     "Import": {
@@ -35,7 +39,7 @@
       "Aktivni": "Jeskyně a draci: Midi-QOL is active – repeat saves and end-of-turn damage (OverTime) are automated."
     },
     "Jednotky": {
-      "Upozorneni": "Jeskyně a draci spells measure in fathoms (1 fathom = 1 square). Set the scene grid to 1 fathom, 5 ft or 1.5 m.",
+      "Upozorneni": "Jeskyně a draci: characters and spells measure in sáhy. Set the scene grid to 1 sáh per square.",
       "Sah": {
         "Nazev": "Fathoms (sáh)",
         "Zkratka": "sáh",
@@ -52,7 +56,12 @@
           "one": "{number} sáh",
           "other": "{number} sáh"
         }
-      }
+      },
+      "Titulek": "Scene grid in sáhy",
+      "Dotaz": "Scene “{scena}” has a grid of {mrizka} per square. JaD characters have speed in sáhy and token movement measurement compares speed with grid units. Convert the scene to 1 sáh per square?",
+      "Prevest": "Convert to sáhy",
+      "Nechat": "Keep (don't ask again)",
+      "Prevedeno": "Scene “{scena}” now has a grid of 1 sáh per square."
     },
     "Mince": {
       "Zl": {

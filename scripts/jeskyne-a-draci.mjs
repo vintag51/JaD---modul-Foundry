@@ -44,6 +44,11 @@ Hooks.once("init", () => {
     hint: "JAD.Nastaveni.Mince.Napoveda",
     scope: "world", config: true, type: Boolean, default: true, requiresReload: true
   });
+  game.settings.register(MODUL, "scenyVSazich", {
+    name: "JAD.Nastaveni.ScenyVSazich.Nazev",
+    hint: "JAD.Nastaveni.ScenyVSazich.Napoveda",
+    scope: "world", config: true, type: Boolean, default: true
+  });
   game.settings.register(MODUL, "importovanaVerze", { scope: "world", config: false, type: String, default: "" });
   game.settings.register(MODUL, "ceskePredmety", {
     name: "JAD.Nastaveni.Predmety.Nazev",
@@ -124,9 +129,22 @@ function prejmenovatMince() {
   }
 }
 
+Hooks.on("preCreateScene", (scene, data) => {
+  if ( !game.settings.get(MODUL, "scenyVSazich") ) return;
+  const g = data.grid ?? {};
+  // Jen pokud tvůrce nezadal vlastní měřítko (výchozí je 5 stop na pole)
+  if ( (g.units === undefined || g.units === "ft") && (g.distance === undefined || Number(g.distance) === 5) ) {
+    scene.updateSource({ "grid.distance": 1, "grid.units": "sáh" });
+  }
+});
+
+Hooks.on("canvasReady", () => {
+  if ( game.ready ) upozornitNaJednotky();
+});
+
 Hooks.once("ready", async () => {
   const modul = game.modules.get(MODUL);
-  modul.api = { importovat: (vynutit = true) => zajistitKompendia(vynutit) };
+  modul.api = { importovat: (vynutit = true) => zajistitKompendia(vynutit), prevestScenuNaSahy };
 
   if ( game.users.activeGM?.isSelf ) {
     try {
@@ -224,15 +242,44 @@ function registrovatSahy() {
     type: "imperial",
     travelResolution: "round"
   };
+  // Alias s diakritikou – tak jednotku obvykle zapíše GM do mřížky scény („sáh“).
+  cfg.movementUnits["sáh"] = { ...cfg.movementUnits.sah };
   if ( cfg.distanceUnits && !Object.isFrozen(cfg.distanceUnits) ) cfg.distanceUnits.sah = "JAD.Jednotky.Sah.Nazev";
 }
 
-/** Upozorní GM, pokud aktuální scéna nemá mřížku 1 pole = 5 stop / 1 sáh (doporučené nastavení pro JaD). */
-function upozornitNaJednotky() {
-  if ( !game.settings.get(MODUL, "upozorneniJednotky") ) return;
-  const grid = canvas?.scene?.grid;
-  if ( !grid ) return;
-  const ok = (grid.units === "sah" && grid.distance === 1) || (grid.units === "ft" && grid.distance === 5)
-    || (grid.units === "m" && grid.distance === 1.5);
-  if ( !ok ) ui.notifications.warn(t("Jednotky.Upozorneni"));
+const JEDNOTKY_SAH = new Set(["sah", "sáh", "sáhy", "sáhů", "sahy", "sahu"]);
+
+/** Je mřížka scény v sázích (1 pole = 1 sáh)? */
+function scenaVSazich(scene) {
+  const g = scene?.grid;
+  return !!g && JEDNOTKY_SAH.has(String(g.units ?? "").trim().toLowerCase()) && (Number(g.distance) === 1);
+}
+
+/** Převede mřížku scény na 1 sáh na pole. */
+async function prevestScenuNaSahy(scene = canvas?.scene) {
+  if ( !scene ) return;
+  await scene.update({ "grid.distance": 1, "grid.units": "sáh" });
+  ui.notifications.info(t("Jednotky.Prevedeno", { scena: scene.name }));
+}
+
+/**
+ * Rychlost postav i měření pohybu tokenů po mapě počítá Foundry v jednotkách mřížky scény. Postavy JaD mají
+ * rychlost v sázích, proto má mít scéna 1 pole = 1 sáh. Pokud nemá, nabídne GM převod.
+ */
+async function upozornitNaJednotky() {
+  if ( !game.settings.get(MODUL, "upozorneniJednotky") || !game.user.isGM ) return;
+  const scene = canvas?.scene;
+  if ( !scene || scenaVSazich(scene) || scene.getFlag(MODUL, "bezSahu") ) return;
+  const DialogV2 = foundry.applications?.api?.DialogV2;
+  if ( !DialogV2 ) return ui.notifications.warn(t("Jednotky.Upozorneni"));
+  const ano = await DialogV2.confirm({
+    window: { title: t("Jednotky.Titulek") },
+    content: `<p>${t("Jednotky.Dotaz", { scena: foundry.utils.escapeHTML?.(scene.name) ?? scene.name,
+      mrizka: `${scene.grid.distance} ${scene.grid.units ?? ""}` })}</p>`,
+    yes: { label: t("Jednotky.Prevest") },
+    no: { label: t("Jednotky.Nechat") },
+    rejectClose: false
+  });
+  if ( ano ) await prevestScenuNaSahy(scene);
+  else if ( ano === false ) await scene.setFlag(MODUL, "bezSahu", true);
 }

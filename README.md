@@ -46,7 +46,7 @@ Ruční instalace: stáhni `jeskyne-a-draci.zip` z [Releases](https://github.com
 1. **Kompendia** najdeš na kartě Kompendia ve složce **Jeskyně a draci**: Kouzla, Rasy, Povolání a obory, Zázemí a odbornosti, Předměty a vybavení, Seznamy kouzel povolání.
 2. **Tvorba postavy**: přetáhni na postavu rasu, povolání a zázemí z kompendií – volby (dovednosti, jazyky, vybavení…) se nabídnou samy.
 3. **Deník JaD**: v okně postavy klikni v záhlaví na nastavení deníku a vyber **Deník JaD**. Pro všechny postavy ho nastavíš v **Nastavení hry → Výchozí deníky**.
-4. **Mřížka scén**: nastav **1 sáh** (nebo 5 stop / 1,5 m) na pole – šablony kouzel pak sedí na mřížku.
+4. **Mřížka scén**: scény mají mít **1 pole = 1 sáh** (jednotka „sáh“). Nové scény to dostanou samy, u starších modul převod nabídne. Pak měření pohybu tokenů po mapě i šablony kouzel odpovídají rychlosti postav v sázích.
 
 ## Nastavení modulu
 
@@ -57,7 +57,8 @@ Ruční instalace: stáhni `jeskyne-a-draci.zip` z [Releases](https://github.com
 | Mince JaD | Zlaťáky, stříbrňáky a měďáky místo gp/sp/cp |
 | České základní předměty | Volby „jakákoliv zbraň/zbroj/pomůcka“ nabízejí české předměty JaD |
 | Registrovat seznamy kouzel | Seznamy kouzel povolání JaD ve výběru kouzel |
-| Kontrolovat mřížku scény | Upozorní PH, když mřížka neodpovídá sáhům |
+| Nové scény v sázích | Nové scény dostanou mřížku 1 pole = 1 sáh |
+| Kontrolovat mřížku scény | Při otevření scény mimo sáhy nabídne PH převod na 1 sáh na pole |
 
 ## Deník JaD v kostce
 
