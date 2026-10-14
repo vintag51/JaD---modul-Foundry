@@ -2,12 +2,22 @@
 
 ## 0.7.0 – první veřejná testovací verze
 
-- **Kouzla:** všech 342 kouzel ze seznamu JaD (319 s automatizací ze SRD dnd5e, 23 původních kouzel JaD), seznamy kouzel povolání, vzdálenosti v sázích.
-- **Rasy:** 14 ras a rodů s automatickým postupem (vlastnosti, rychlost a vidění ve tmě v sázích, jazyky, schopnosti).
-- **Povolání:** 11 povolání JaD včetně Alchymisty a Lovce netvorů, 41 oborů, postup do 20. Úrovně.
-- **Zázemí a odbornosti:** 16 zázemí, 10 odborností.
-- **Předměty:** zbraně, palné zbraně, zbroje, výbava, pomůcky, balíčky a přes 300 kouzelných předmětů; ceny v zl/st/md.
-- **Počáteční vybavení** povolání a zázemí podle JaD.
-- **Deník JaD:** deník postavy podle karty postavy JaD včetně záložky Kouzla, Vzhled a vztahy.
-- **Nosnost na Řádky** se snížením rychlosti v sázích.
-- **Měření pohybu tokenů** převádí rychlost na jednotky scény (sáhy i stopy).
+První veřejná verze komunitního modulu, který přináší Jeskyně a draky do Foundry VTT.
+
+**Kouzla** – kompletní seznam 342 kouzel JaD, včetně unikátních kouzel, která najdete jen v JaD. Útoky, záchranné hody, zásahy, léčení i oblasti kouzel se vyhodnocují automaticky.
+
+**Rasy** – 14 ras a rodů, které postavě samy nastaví vlastnosti, rychlost, vidění ve tmě, jazyky i rasové schopnosti.
+
+**Povolání** – všech 11 povolání JaD včetně Alchymisty a Lovce netvorů, 41 oborů a kompletní postup až do 20. Úrovně.
+
+**Zázemí a odbornosti** – 16 zázemí a 10 odborností.
+
+**Předměty** – zbraně, zbroje, výbava, pomůcky, balíčky vybavení a přes 300 kouzelných předmětů. Ceny ve zlaťácích, stříbrňácích a měďácích.
+
+**Tvorba postavy** – počáteční vybavení podle knihy, nebo zlaťáky na nákup.
+
+**Deník JaD** – deník postavy inspirovaný kartou postavy JaD: vlastnosti a dovednosti, zbraně, kouzla, výbava, schopnosti, vzhled a vztahy na jednom místě.
+
+**Nosnost podle JaD** – naložení se počítá na Řádky a samo upravuje rychlost postavy.
+
+Jde o testovací verzi – chyby a nápady prosím hlaste přes [GitHub Issues](https://github.com/vintag51/JaD---modul-Foundry/issues).
