@@ -165,3 +165,4 @@
 .jad-denik .jad-mrizka label, .jad-denik .jad-blok { display: flex; flex-direction: column-reverse; font-size: 0.75rem; color: var(--jad-tlumene); }
 .jad-denik .jad-blok { margin-top: 6px; }
 .jad-denik .jad-blok textarea { resize: vertical; }
+.jad-denik .jad-tab img.jad-logo { width: 64px; height: 64px; border: none; mix-blend-mode: multiply; }
