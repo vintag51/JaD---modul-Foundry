@@ -182,12 +182,10 @@
 
 .jad-denik .jad-zbrane th { background: none; color: var(--jad-tlumene); }
 .jad-denik .jad-zbrane td { vertical-align: middle; padding: 4px 6px; }
-.jad-denik .jad-zbrane td:first-child { display: flex; align-items: center; gap: 6px; }
 .jad-denik .jad-zbrane td:nth-child(2), .jad-denik .jad-zbrane td:nth-child(3) { text-align: center; white-space: nowrap; }
 .jad-denik .jad-nevybaveno td { opacity: 0.6; }
 .jad-denik .jad-vybavit { color: #b5a99a; }
 .jad-denik .jad-vybavit.aktivni { color: var(--jad-cervena); }
-.jad-denik .jad-radky-tabulka td:first-child { display: flex; align-items: center; gap: 4px; }
 .jad-denik .jad-kontejner-radek td { font-weight: bold; }
 .jad-denik .jad-odsazeni { display: inline-block; }
 
@@ -252,3 +250,12 @@
 .jad-denik .jad-ovladani { white-space: nowrap; text-align: right; }
 .jad-denik .jad-ovladani a { margin-left: 4px; color: var(--jad-tlumene); }
 .jad-denik .jad-ovladani a:hover { color: var(--jad-cervena); }
+
+/* buňky tabulek: flex jen uvnitř, buňka zůstává buňkou tabulky */
+.jad-denik .jad-tabulka { table-layout: auto; }
+.jad-denik .jad-bunka { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.jad-denik .jad-bunka .jad-polozka { flex: 1; min-width: 0; }
+.jad-denik .jad-zbrane td { white-space: nowrap; }
+.jad-denik .jad-zbrane td:first-child { white-space: normal; width: 40%; }
+.jad-denik .jad-radky-tabulka td:nth-child(2) input { width: 3.2em; text-align: center; padding: 0; }
+.jad-denik .jad-radky-tabulka td:nth-child(3) input { width: 3em; text-align: center; padding: 0; }

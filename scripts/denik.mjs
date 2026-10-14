@@ -305,6 +305,14 @@ export function vytvoritDenik() {
       // Světlý (pergamenový) motiv dnd5e pro všechny záložky Deníku JaD
       this.element.classList.remove("theme-dark");
       this.element.classList.add("themed", "theme-light");
+      for ( const input of this.element.querySelectorAll("input.jad-pocet") ) {
+        input.addEventListener("change", event => {
+          event.stopPropagation();
+          const item = this.actor.items.get(input.dataset.itemId);
+          const n = Math.max(Math.floor(Number(input.value)), 0);
+          if ( item && Number.isFinite(n) ) item.update({ "system.quantity": n });
+        });
+      }
       for ( const pole of this.element.querySelectorAll(".jad-pole") ) {
         pole.addEventListener("change", event => {
           event.stopPropagation();

@@ -140,8 +140,8 @@
         <tbody>
           {{#each zbrane}}
           <tr data-item-id="{{ id }}" class="{{#unless vybaveno}}jad-nevybaveno{{/unless}}">
-            <td><a class="jad-vybavit {{#if vybaveno}}aktivni{{/if}}" data-action="jadVybavit" data-tooltip="{{#if vybaveno}}V ruce / vybavená – kliknutím odložíš{{else}}Nevybavená – kliknutím vezmeš do ruky{{/if}}"><i class="fas fa-hand-fist"></i></a>
-              <a class="jad-polozka" data-action="jadPouzit" data-tooltip="Zaútočit"><img src="{{ img }}" alt=""><span>{{ nazev }}</span></a></td>
+            <td><div class="jad-bunka"><a class="jad-vybavit {{#if vybaveno}}aktivni{{/if}}" data-action="jadVybavit" data-tooltip="{{#if vybaveno}}V ruce / vybavená – kliknutím odložíš{{else}}Nevybavená – kliknutím vezmeš do ruky{{/if}}"><i class="fas fa-hand-fist"></i></a>
+              <a class="jad-polozka" data-action="jadPouzit" data-tooltip="Zaútočit"><img src="{{ img }}" alt=""><span>{{ nazev }}</span></a></div></td>
             <td class="jad-stred-text"><strong>{{ bonus }}</strong></td><td class="jad-stred-text">{{ zasah }}</td><td>{{ typ }}</td><td>{{ dosah }}</td>
           </tr>
           {{else}}
@@ -209,12 +209,12 @@
         <tbody>
           {{#each vybava}}
           <tr data-item-id="{{ id }}" class="{{#if odlozeno}}jad-odlozeno{{/if}} {{#if jeKontejner}}jad-kontejner-radek{{/if}}">
-            <td>
+            <td><div class="jad-bunka">
               <span class="jad-odsazeni" style="padding-left: {{ odsazeni }}px"></span>
               {{#if vybavitelne}}<a class="jad-vybavit {{#if vybaveno}}aktivni{{/if}}" data-action="jadVybavit" data-tooltip="{{#if vybaveno}}Vybaveno – kliknutím sundáš{{else}}Nevybaveno – kliknutím vybavíš{{/if}}"><i class="fas fa-shield-halved"></i></a>{{/if}}
               <a class="jad-polozka" data-action="jadOtevrit"><img src="{{ img }}" alt=""><span>{{ nazev }}</span></a>
-            </td>
-            <td>{{ pocet }}</td>
+            </div></td>
+            <td><input type="number" class="jad-pocet" data-item-id="{{ id }}" value="{{ pocet }}" min="0" {{#unless ../editovatelne}}disabled{{/unless}}></td>
             <td><input type="text" class="jad-radky" data-item-id="{{ id }}" value="{{ rucne }}" placeholder="{{ radky }}" {{#unless ../editovatelne}}disabled{{/unless}}></td>
             <td>{{#if jeKontejner}}<a data-action="jadOdlozit" data-tooltip="{{#if vlastniOdlozeni}}Vzít zpět{{else}}Odložit i s obsahem (nepočítá se do Naložení){{/if}}"><i class="fas {{#if vlastniOdlozeni}}fa-hand{{else}}fa-arrow-down{{/if}}"></i></a>{{/if}}</td>
           </tr>
