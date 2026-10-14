@@ -26,6 +26,7 @@ jobs:
           python3 tools/generuj.py --dnd5e ../dnd5e
           python3 tools/generuj_rasy.py
           python3 tools/generuj_povolani.py
+          python3 tools/generuj_zazemi.py
           python3 tools/kontrola.py
       - name: Sestavit kompendia a ZIP
         working-directory: jeskyne-a-draci

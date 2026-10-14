@@ -22,7 +22,9 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 | **11 povolání JaD** (Alchymista, Barbar, Bard, Bojovník, Čaroděj, Černokněžník, Druid, Klerik, Kouzelník, Lovec netvorů, Tulák) s postupem do 20. Úrovně: Body výdrže, zdatnosti, záchrany, dovednosti, zvýšení vlastností, škály (Zuřivost, Zákeřný útok, Kostka temnoty…), sesílání kouzel a volba oboru | hotovo |
 | **41 oborů** včetně doménových kouzel a kouzel původu; obory se sesíláním kouzel (Chodec, Chrámový rytíř, Svatokupec, Theurg, Řád zaprodanců) mají vlastní seznamy kouzel | hotovo |
 | **374 schopností povolání** – počty použití a obnova, aktivity (léčení, útoky, záchrany, efekty) a volby (Tajemná vzývání, Metamagie, Bojové styly, Lovecká zakletí, Laskavost paktu, Mystický taj) | hotovo |
-| Zázemí, Odbornosti, předměty | další fáze, ve stejném modulu |
+| **16 zázemí JaD** (Akolyta, Bylinkář, Dělník, Strážce, Lovec, Chovatel, Kramář, Mudrc, Pobuda, Právník, Sluha, Šlechtic, Úředník, Voják, Zasvěcenec, Zbojník) se zdatnostmi, volbou jazyků a nástrojů a schopností zázemí | hotovo |
+| **10 odborností** (Gigant, Mistr sekerník, Nedůvěřivost, Nepolapitelnost, Obranný manévr, Pašerák, Pestrý původ, Válečný výcvik, Vílí spřízněnost, Vrozená mystická síla) s postupem, použitími a efekty | hotovo |
+| Předměty | další fáze, ve stejném modulu |
 
 ## Instalace
 
@@ -31,7 +33,7 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 3. Ve světě s dnd5e zapni modul. Při prvním spuštění GM modul sám naplní kompendia z `data/kompendium/*.json` (pokud nejsou předem sestavená).
 4. Mřížku scén nastav na **1 sáh** (nebo 5 stop / 1,5 m) na pole – šablony kouzel se přepočítají automaticky.
 
-Kompendia najdeš ve složce **Jeskyně a draci**: *JaD – Kouzla* a *JaD – Seznamy kouzel povolání*.
+Kompendia najdeš ve složce **Jeskyně a draci**: *JaD – Kouzla*, *JaD – Rasy*, *JaD – Povolání a obory*, *JaD – Zázemí a odbornosti* a *JaD – Seznamy kouzel povolání*.
 
 Ruční reimport (např. po aktualizaci dat): v konzoli `game.modules.get("jeskyne-a-draci").api.importovat()`.
 
@@ -59,6 +61,7 @@ pip install pyyaml
 python3 tools/generuj.py --dnd5e ../dnd5e        # --jednotky ft pro stopy místo sáhů
 python3 tools/generuj_rasy.py                     # rasy
 python3 tools/generuj_povolani.py                 # povolání a obory
+python3 tools/generuj_zazemi.py                   # zázemí a odbornosti
 python3 tools/kontrola.py                        # strukturní kontrola
 npm install && npm run build                     # LevelDB kompendia (Foundry CLI)
 ```

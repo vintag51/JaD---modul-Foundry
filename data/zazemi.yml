@@ -1,0 +1,175 @@
+# Zázemí (kapitola 2 – Tvorba postavy) a Odbornosti (kapitola 4 – Povolání) Jeskyní a draků.
+# Popisy jsou vlastní shrnutí; plné znění v SRD JaD.
+# zdatnosti: klíče dnd5e (skills:xxx, tool:xxx, vehicle:land, languages:*), volby: [{pocet, z}]
+
+zazemi:
+  akolyta:
+    nazev: Akolyta
+    kotva: akolyta
+    popis: Prošel jsi službou v chrámu, znáš obřady i hlubší nauku své víry a pouto k ní tě provází dál.
+    zdatnosti: [skills:rel, skills:ins]
+    volby: [{pocet: 2, z: ["languages:*"]}]
+    vybaveni: Posvátný symbol a modlitební výbava, 5 dávek kadidla, chrámový šat, obyčejné oblečení, 15 zl.
+    schopnost: {k: cirkevni-utociste, n: Církevní útočiště, d: V chrámech své víry najdeš pro sebe i společníky úkryt, nocleh, ošetření a skromné zaopatření.}
+  bylinkar:
+    nazev: Bylinkář
+    kotva: bylinkar
+    popis: Znáš byliny, z nichž se dělají léky i jedy, a okolí si zvyklo chodit za tebou pro mast či lék.
+    zdatnosti: [skills:med, skills:nat, tool:herb, tool:pois]
+    vybaveni: Bylinkářská a travičská souprava, herbář, obyčejné oblečení, 10 zl.
+    schopnost: {k: ingredience, n: Ingredience, d: Vždy máš po ruce nebo rychle najdeš byliny a suroviny, které ocení alchymisté a sesilatelé – za peníze i za kontakty.}
+  delnik:
+    nazev: Dělník
+    kotva: delnik
+    popis: Celý život jsi poctivě dřel na stavbách a polích a viděl svět bez příkras.
+    zdatnosti: [skills:ath, skills:ani, vehicle:land]
+    volby: [{pocet: 1, z: ["tool:art:*"]}]
+    vybaveni: Lopata, sekera, železný kotlík, obyčejné oblečení, 5 zl.
+    schopnost: {k: mezi-svymi, n: Mezi svými, d: Mezi pracujícími lidmi snadno zapadneš, naslouchají ti a v nouzi ti opatrně pomohou proti vrchnosti.}
+  strazce:
+    nazev: Strážce
+    kotva: strazce
+    popis: Sloužil jsi v osobní stráži významné osoby a víš, jak čelit vrahům i rozmarům chráněného.
+    zdatnosti: [skills:ath, skills:prc]
+    volby: [{pocet: 2, z: ["languages:*"]}]
+    vybaveni: Doporučení od zaměstnavatele, nástroj zabavený vrahovi, obyčejné oblečení, 10 zl.
+    schopnost: {k: cit-pro-bezpecnost, n: Cit pro bezpečnost, d: Včas vycítíš nepřátelství a blížící se agresi a odhalíš slabiny v zabezpečení.}
+  lovec:
+    nazev: Lovec
+    kotva: lovec
+    popis: Divočina ti byla domovem – víš, jak v ní chodit, lovit a přežít.
+    zdatnosti: [skills:ath, skills:sur]
+    volby: [{pocet: 1, z: ["tool:music:*"]}, {pocet: 1, z: ["languages:*"]}]
+    vybaveni: Berla, lovecká past, lovecká trofej, cestovní oblečení, 10 zl.
+    schopnost: {k: preziti-v-divocine, n: Přežití v divočině, d: Pamatuješ si mapy a terén a v divočině najdeš jídlo a vodu pro sebe a pět dalších.}
+  chovatel:
+    nazev: Chovatel
+    kotva: chovatel
+    popis: Většinu života jsi strávil se zvířaty – na pastvinách, v sedle či v domácnosti.
+    zdatnosti: [skills:ani, skills:nat, tool:herb]
+    volby: [{pocet: 1, z: ["tool:music:*"]}]
+    vybaveni: Bylinkářská souprava, hudební nástroj, cestovní oblečení, 10 zl.
+    schopnost: {k: mezi-zviraty, n: Mezi zvířaty, d: Z chování zvířat vyčteš, co se kolem děje, a dokážeš je uklidnit.}
+  kramar:
+    nazev: Kramář
+    kotva: kramar
+    popis: Jezdil jsi s vozíkem plným všelijakého zboží a živil se obchodním duchem.
+    zdatnosti: [skills:dec, skills:per, vehicle:land]
+    volby: [{pocet: 1, z: ["languages:*"]}]
+    vybaveni: Dvoukolák s mulou, 10 flakónků s podivnými tekutinami, 4 cetky, cestovní oblečení, 15 zl.
+    schopnost: {k: tohle-mam, n: Tohle mám, d: Jednou denně vytáhneš z truhly neprodaného zboží jeden předmět v hodnotě do 1 zl (každý jen jednou)., p: 1/day}
+  mudrc:
+    nazev: Mudrc
+    kotva: mudrc
+    popis: Studoval jsi na univerzitě či podobné instituci a mezi knihami a svitky jsi doma.
+    zdatnosti: [skills:his, skills:arc]
+    volby: [{pocet: 2, z: ["languages:*"]}]
+    vybaveni: Inkoust, brk, nožík, dopis od učence o nevyřešeném problému, obyčejné oblečení, 10 zl.
+    schopnost: {k: badatel, n: Badatel, d: Víš, kde hledat informace, a snadno získáš přístup do knihoven, univerzit a k radám učenců.}
+  pobuda:
+    nazev: Pobuda
+    kotva: pobuda
+    popis: Žil jsi ve stínech mimo dohled úřadů a naučil ses, jak to ve světě opravdu chodí.
+    zdatnosti: [skills:ste, skills:inv]
+    volby: [{pocet: 1, z: [skills:slt, tool:thief]}, {pocet: 1, z: ["languages:*"]}]
+    vybaveni: Zlodějské náčiní, páčidlo, tmavé oblečení s kapucí, 10 zl.
+    schopnost: {k: zlodejske-oko, n: Zlodějské oko, d: Při prohlídce stavení nebo jeho plánu poznáš, kudy dovnitř, kudy ven a kde se skrýt.}
+  pravnik:
+    nazev: Právník
+    kotva: pravnik
+    popis: Vyznáš se v zákonech a nařízeních – ať už pro spravedlnost, nebo pro zisk.
+    zdatnosti: [skills:his, skills:per]
+    volby: [{pocet: 2, z: ["languages:*"]}]
+    vybaveni: Černý inkoust, brk, nožík, sbírka zákonů exotické země, obyčejné oblečení, 10 zl.
+    schopnost: {k: klicky-a-precedenty, n: Kličky a precedenty, d: Při jednání s úřady a mocnými získáš díky právním kličkám čas, komplikace pro protivníky či jiné páky.}
+  sluha:
+    nazev: Sluha
+    kotva: sluha
+    popis: Sloužil jsi mocným a bohatým – nevšímali si tě, ale ty sis všímal jich.
+    zdatnosti: [skills:ste, skills:ins]
+    volby: [{pocet: 2, z: ["languages:*"]}]
+    vybaveni: Doporučení od zaměstnavatele, sada nádobí, obyčejné oblečení, 10 zl.
+    schopnost: {k: doma-pod-schody, n: Doma pod schody, d: Nenápadně zapadneš mezi cizí služebnictvo a vytáhneš z něj informace.}
+  slechtic:
+    nazev: Šlechtic
+    kotva: slechtic-1
+    popis: Pocházíš z rodu s erbem, rodokmenem a postavením, které se jen těžko zapírá.
+    zdatnosti: [skills:his, skills:per]
+    volby: [{pocet: 1, z: ["tool:game:*"]}, {pocet: 1, z: ["languages:*"]}]
+    vybaveni: Zdobené oblečení, pečetní prsten, rodokmen na pergamenu, 25 zl.
+    schopnost: {k: urozenost, n: Urozenost, d: Umíš se pohybovat mezi vyššími třídami, jsi zván na jejich události a prostí lidé se k tobě chovají uctivě.}
+  urednik:
+    nazev: Úředník
+    kotva: urednik
+    popis: Rukama ti prošlo nespočet listin a v úřadech se pohybuješ jako ryba ve vodě.
+    zdatnosti: [skills:his, skills:ins, tool:art:calligrapher]
+    volby: [{pocet: 1, z: ["languages:*"]}]
+    vybaveni: Pouzdro s brkem, inkoustem a pergamenem, perořízek, zdobené oblečení, 10 zl.
+    schopnost: {k: znalec-uradu, n: Znalec úřadů, d: Rychle sehnáš listiny i lidi, kteří rozhodují, a zajistíš si u úřadů lepší zacházení.}
+  vojak:
+    nazev: Voják
+    kotva: vojak
+    popis: Živil tě boj – v žoldnéřské rotě nebo v armádě – a víš, že zbraň není hračka.
+    zdatnosti: [skills:ath, skills:itm, vehicle:land]
+    volby: [{pocet: 1, z: ["tool:game:*"]}]
+    vybaveni: Odznak hodnosti, válečná trofej, kostky či karty, obyčejné oblečení, 10 zl.
+    schopnost: {k: veteran-zazemi, n: Veterán, d: Snadno zapadneš do vojenského ležení; u spojeneckých vojsk máš respekt a můžeš získat zásoby a informace.}
+  zasvecenec:
+    nazev: Zasvěcenec
+    kotva: zasvecenec
+    popis: Byl jsi přijat do tajného společenstva, které zná symboliku velkých chrámů a svatyní.
+    zdatnosti: [skills:arc, skills:rel, tool:art:calligrapher]
+    volby: [{pocet: 1, z: ["languages:*"]}]
+    vybaveni: Kniha tajemství v tajném jazyce, podivný amulet, kaligrafická souprava, rýsovací pomůcky, cestovní oblečení, 15 zl.
+    schopnost: {k: bratrstvo, n: Bratrstvo, d: Ostatní zasvěcenci tě podpoří jako bratra a znáš tajné značky, kterými si předáváte zprávy.}
+  zbojnik:
+    nazev: Zbojník
+    kotva: zbojnik
+    popis: Byl jsi psancem, žil v lesních úkrytech a živil se pytláctvím a přepady.
+    zdatnosti: [skills:ste, skills:sur, vehicle:land]
+    vybaveni: Berla, lovecká past, plakát s odměnou za tvé dopadení, cestovní oblečení, 10 zl.
+    schopnost: {k: prepad, n: Přepad, d: Poznáš ideální místo, čas i oběť pro přepadení – a odhalíš, když to tak jen vypadá.}
+
+odbornosti:
+  gigant:
+    nazev: Gigant
+    pozadavek: Síla 15
+    d: Větší tvorové proti tobě nemají výhody z velikosti, nosíš víc, máš Výhodu na silová Ověření při zvedání a tažení a těžké zbraně ovládáš i jednou rukou.
+    pas: [[flags.dnd5e.powerfulBuild, "true", override]]
+  mistr-sekernik:
+    nazev: Mistr sekerník
+    d: Kritický zásah sekerou zničí protivníkovi štít nebo mu zhorší zbroj o 2; jedničky na zásahu sekerou počítáš jako dvojky.
+  neduverivost:
+    nazev: Nedůvěřivost
+    d: Máš Výhodu proti Klamání a na první Záchranný hod proti Zmámení.
+  nepolapitelnost:
+    nazev: Nepolapitelnost
+    d: Máš Výhodu proti spoutání, uvěznění a chycení i na prorážení a prosmýknutí; tvor, kterého v tahu zasáhneš, na tebe nemůže použít Příležitostný útok.
+  obranny-manevr:
+    nazev: Obranný manévr
+    pozadavek: Obratnost 12
+    d: Když humanoid, který tě v tomto kole nezasáhl, mine útok, můžeš reakcí provést útočný manévr.
+    akt: [{n: Obranný manévr, t: reaction}]
+  paserak:
+    nazev: Pašerák
+    d: Získáš Zdatnost a Kvalifikaci v Nenápadnosti a vždy dokážeš ukrýt aspoň jeden drobný předmět i před důkladnou prohlídkou.
+    trait: {rezim: default, zdatnosti: [skills:ste]}
+    trait2: {rezim: expertise, zdatnosti: [skills:ste]}
+  pestry-puvod:
+    nazev: Pestrý původ
+    d: V tvých žilách koluje i krev jiné rasy – získáš jednu její schopnost a +1 k Vlastnosti, kterou tato rasa zvyšuje.
+    asi: 1
+  valecny-vycvik:
+    nazev: Válečný výcvik
+    d: Získáš Zdatnost se štíty, se zbrojí o třídu těžší, než máš, a se dvěma válečnými zbraněmi.
+    trait: {zdatnosti: [armor:shl], volby: [{pocet: 1, z: [armor:lgt, armor:med, armor:hvy]}, {pocet: 2, z: ["weapon:mar:*"]}]}
+  vili-spriznenost:
+    nazev: Vílí spřízněnost
+    d: Jednou za Dlouhý odpočinek ti víly drobně pomohou ve správnou chvíli (PH rozhodne jak) a s vílami jednáš s Výhodou.
+    p: 1/lr
+    akt: [{n: Vílí pomoc, t: special}]
+  vrozena-mysticka-sila:
+    nazev: Vrozená mystická síla
+    d: Jednou mezi Odpočinky zvýšíš Stupeň sesílaného kouzla o 1 (po utracení Pozice).
+    p: 1/sr
+    akt: [{n: Posílit kouzlo, t: special}]

@@ -1,0 +1,60 @@
+{
+  "_id": "6i1HTFAw5V9KWE0A",
+  "name": "Urozenost",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-brown-tan.webp",
+  "folder": "6hOcJ0lZSPodJXuJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p><strong>Předpoklad:</strong> Šlechtic</p><p>Umíš se pohybovat mezi vyššími třídami</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#slechtic-1\" target=\"_blank\">SRD Jeskyní a draků</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "requirements": "Šlechtic",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "urozenost",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "background": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!6i1HTFAw5V9KWE0A"
+}

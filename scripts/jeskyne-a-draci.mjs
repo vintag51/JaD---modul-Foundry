@@ -16,7 +16,8 @@ const BALIKY = [
   { pack: "kouzla", soubor: "kouzla.json" },
   { pack: "seznamy-kouzel", soubor: "seznamy-kouzel.json" },
   { pack: "rasy", soubor: "rasy.json" },
-  { pack: "povolani", soubor: "povolani.json" }
+  { pack: "povolani", soubor: "povolani.json" },
+  { pack: "zazemi", soubor: "zazemi.json" }
 ];
 
 const t = (klic, data) => data ? game.i18n.format(`JAD.${klic}`, data) : game.i18n.localize(`JAD.${klic}`);

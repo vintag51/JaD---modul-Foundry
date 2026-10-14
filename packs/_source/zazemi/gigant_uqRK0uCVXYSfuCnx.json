@@ -1,0 +1,93 @@
+{
+  "_id": "uqRK0uCVXYSfuCnx",
+  "name": "Gigant",
+  "type": "feat",
+  "img": "icons/sundries/books/book-worn-brown-grey.webp",
+  "folder": "I49mVPhzcvBZkuhz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "kSCEj26Hw40snI0g",
+      "name": "Gigant",
+      "img": "icons/sundries/books/book-worn-brown-grey.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.powerfulBuild",
+            "value": "true",
+            "type": "override",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Gigant (pasivní)</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.zazemi.Item.uqRK0uCVXYSfuCnx",
+      "_key": "!items.effects!uqRK0uCVXYSfuCnx.kSCEj26Hw40snI0g"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p><strong>Předpoklad:</strong> Síla 15</p><p>Větší tvorové proti tobě nemají výhody z velikosti, nosíš víc, máš Výhodu na silová Ověření při zvedání a tažení a těžké zbraně ovládáš i jednou rukou.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#odbornosti\" target=\"_blank\">SRD Jeskyní a draků</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "requirements": "Síla 15",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "gigant",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "feat": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!uqRK0uCVXYSfuCnx"
+}
