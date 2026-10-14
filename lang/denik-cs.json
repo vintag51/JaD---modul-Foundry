@@ -1,0 +1,842 @@
+{
+  "DND5E": {
+    "ACTIVITY": {
+      "Action": {
+        "Delete": "Smazat aktivitu",
+        "Edit": "Upravit aktivitu"
+      },
+      "Title": {
+        "few": "Aktivity",
+        "many": "Aktivity",
+        "other": "Aktivity"
+      }
+    },
+    "ACTOR": {
+      "Warning": {
+        "InvalidItem": "Předměty typu {itemType} nelze přidat k {actorType}.",
+        "Singleton": "K {actorType} lze přidat jen jeden předmět typu {itemType}."
+      }
+    },
+    "ARMORCLASS": {
+      "Action": {
+        "Configure": "Nastavit zbroj"
+      }
+    },
+    "AbbreviationConc": "Sous.",
+    "AbbreviationDC": "SO",
+    "AbbreviationLR": "DO",
+    "AbbreviationSR": "KO",
+    "Ability": "Vlastnost",
+    "AbilityConfigure": "Nastavit {ability}",
+    "AbilityPromptTitle": "Ověření vlastnosti – {ability}",
+    "AbilityStr": "Síla",
+    "Action": "Akce",
+    "ActionAbbr": "A",
+    "Add": "Přidat",
+    "AdditionalControls": "Další ovládání",
+    "Appearance": "Vzhled",
+    "Armor": "Zbroj",
+    "ArmorClass": "Obranné číslo",
+    "Attack": "Útok",
+    "Attunement": "Sladění",
+    "AttunementAttuned": "Sladěno",
+    "BONUSES": {
+      "FIELDS": {
+        "bonuses": {
+          "label": "Obecné bonusy"
+        }
+      }
+    },
+    "BackgroundAdd": "Přidat zázemí",
+    "Bastion": {
+      "Label": "Bastion",
+      "Trade": {
+        "Cancel": "Zrušit čekající obchod",
+        "Invalid": "Odebráním čekajícího obchodu zneplatníš svou obchodní objednávku.",
+        "Pending": "Čekající obchod"
+      }
+    },
+    "Biography": "Životopis",
+    "BiographyPublicEdit": "Upravit veřejný životopis",
+    "Bonds": "Pouta",
+    "BonusAction": "Bonusová akce",
+    "BonusActionAbbr": "BA",
+    "CAST": {
+      "SECTIONS": {
+        "Spellbook": "Další kouzla"
+      }
+    },
+    "CONCENTRATION": {
+      "Action": {
+        "Break": "Ukončit Soustředění"
+      }
+    },
+    "CONSUMABLE": {
+      "Type": {
+        "Ammunition": {
+          "Arrow": "Šíp",
+          "Bolt": "Šipka do kuše",
+          "BulletFirearm": "Kule, palná zbraň",
+          "BulletSling": "Kule, prak",
+          "EnergyCell": "Energetický článek",
+          "Label": "Střely",
+          "Needle": "Jehla"
+        },
+        "Food": {
+          "Label": "Jídlo"
+        },
+        "Poison": {
+          "Contact": "Kontaktní",
+          "Ingested": "Požitý",
+          "Inhaled": "Vdechovaný",
+          "Injury": "Zraňující",
+          "Label": "Jed"
+        },
+        "Potion": {
+          "Label": "Lektvar"
+        },
+        "Rod": {
+          "Label": "Žezlo"
+        },
+        "Scroll": {
+          "Label": "Svitek"
+        },
+        "Trinket": {
+          "Label": "Cetka"
+        },
+        "Wand": {
+          "Label": "Hůlka"
+        },
+        "Wondrous": {
+          "Label": "Zázračný předmět"
+        }
+      }
+    },
+    "Charged": "Nabitý",
+    "Charges": "Dávky",
+    "ClassAdd": "Přidat povolání",
+    "ClassMakeOriginal": "Původní povolání",
+    "ClassMakeOriginalHint": "První povolání postavy, podle kterého se při kombinaci povolání určují některé vlastnosti.",
+    "ClassOriginal": "Původní povolání",
+    "ClassSaves": "Záchranné hody",
+    "Concentration": "Soustředění",
+    "Conditions": "Stavy",
+    "ContainerRecursiveError": "Kontejner nemůže obsahovat sám sebe.",
+    "Contents": "Obsah",
+    "ContextMenuActionDelete": "Smazat",
+    "ContextMenuActionDisable": "Vypnout",
+    "ContextMenuActionDuplicate": "Duplikovat",
+    "ContextMenuActionEdit": "Upravit",
+    "ContextMenuActionEnable": "Zapnout",
+    "CreatureAberration": "Zrůda",
+    "CreatureAberrationPl": "Zrůdy",
+    "CreatureBeast": "Zvíře",
+    "CreatureBeastPl": "Zvířata",
+    "CreatureCelestial": "Nebešťan",
+    "CreatureCelestialPl": "Nebešťané",
+    "CreatureConstruct": "Výtvor",
+    "CreatureConstructPl": "Výtvory",
+    "CreatureDragon": "Drak",
+    "CreatureDragonPl": "Draci",
+    "CreatureElemental": "Elementál",
+    "CreatureElementalPl": "Elementálové",
+    "CreatureFey": "Víla",
+    "CreatureFeyPl": "Víly",
+    "CreatureFiend": "Běs",
+    "CreatureFiendPl": "Běsi",
+    "CreatureGiant": "Obr",
+    "CreatureGiantPl": "Obři",
+    "CreatureHumanoid": "Humanoid",
+    "CreatureHumanoidPl": "Humanoidi",
+    "CreatureMonstrosity": "Obluda",
+    "CreatureMonstrosityPl": "Obludy",
+    "CreatureOoze": "Sliz",
+    "CreatureOozePl": "Slizy",
+    "CreaturePlant": "Rostlina",
+    "CreaturePlantPl": "Rostliny",
+    "CreatureSwarm": "Hejno",
+    "CreatureSwarmPhrase": "Hejno – {size} {type}",
+    "CreatureSwarmSize": "Velikost hejna",
+    "CreatureTag": "{size} {type}, {alignment}",
+    "CreatureType": "Typ tvora",
+    "CreatureTypeConfig": "Nastavit typ tvora",
+    "CreatureTypeSelectorCustom": "Vlastní typ",
+    "CreatureTypeSelectorSubtype": "Podtyp",
+    "CreatureTypeTitle": "Nastavit typ tvora",
+    "CreatureUndead": "Nemrtvý",
+    "CreatureUndeadPl": "Nemrtví",
+    "Currency": "Peníze",
+    "CurrencyAbbrCP": "md",
+    "CurrencyAbbrEP": "el",
+    "CurrencyAbbrGP": "zl",
+    "CurrencyAbbrPP": "pl",
+    "CurrencyAbbrSP": "st",
+    "CurrencyCP": "Měďáky",
+    "CurrencyEP": "Elektrum",
+    "CurrencyGP": "Zlaťáky",
+    "CurrencyManager": {
+      "Convert": {
+        "Action": "Převést všechny peníze",
+        "Hint": "Převede všechny nesené peníze na co nejvyšší hodnotu mincí, aby jich postava nesla méně. Pozor, tuto akci nelze vrátit.",
+        "Label": "Převést"
+      },
+      "Error": {
+        "InsufficientFunds": "Postavě {name} se nepodařilo odečíst {amount}{denomination}. Nedostatek peněz."
+      },
+      "Title": "Správa peněz",
+      "Transfer": {
+        "Action": "Převést vybrané",
+        "All": "Vše",
+        "Half": "Polovinu",
+        "Label": "Převod"
+      }
+    },
+    "CurrencyPP": "Platina",
+    "CurrencySP": "Stříbrňáky",
+    "DAMAGE": {
+      "All": "Všechny zásahy",
+      "PhysicalBypass": {
+        "DescriptionShort": "Neplatí proti zdrojům: {type}"
+      }
+    },
+    "Damage": "Zásah",
+    "DamageApplication": {
+      "Back": "Zpět na předchozí panel",
+      "Change": {
+        "Immunity": "Imunita: {type}",
+        "Modification": "Úprava: {type}",
+        "Resistance": "Odolnost: {type}",
+        "Threshold": "Práh zásahu",
+        "Vulnerability": "Zranitelnost: {type}"
+      },
+      "Downgrading": "{source} sníženo na Odolnost",
+      "Ignoring": "{source} se ignoruje",
+      "Multiplier": "Násobitel zásahu",
+      "Section": {
+        "Changes": "Použito na tento cíl",
+        "Multiplier": "Násobitel",
+        "Targets": "Cíle v této skupině"
+      },
+      "State": {
+        "active": "Použito",
+        "downgrade": "Sníženo",
+        "ignore": "Ignorováno"
+      }
+    },
+    "DamageModification": {
+      "BypassHint": "Tyto vlastnosti zbraní obejdou úpravu fyzických zásahů.",
+      "Formatter": "Úprava zásahu – {name}",
+      "Hint": "Vzorce hodnot, které se přičtou k zásahům daného typu, které tato postava utrží. Záporné hodnoty utržený zásah snižují.",
+      "Label": "Úprava zásahu"
+    },
+    "DamageRoll": "Hod na zásah",
+    "DamageThreshold": "Práh zásahu",
+    "DamageType": "Typ zásahu",
+    "DamageTypes": "Typy zásahu",
+    "DeathSaveConfigure": "Nastavit záchrany proti smrti",
+    "DeathSaveHide": "Skrýt záchrany proti smrti",
+    "DeathSaveRoll": "Hodit záchranu proti smrti",
+    "DeathSaveShow": "Zobrazit záchrany proti smrti",
+    "Details": "Podrobnosti",
+    "DetailsEdit": "Upravit podrobnosti",
+    "DisplayCard": "Zobrazit v chatu",
+    "DocumentViewWarn": "K zobrazení tohoto dokumentu nemáš oprávnění.",
+    "EFFECT": {
+      "Action": {
+        "Search": "Hledat efekty"
+      },
+      "Category": {
+        "Inactive": "Neaktivní efekty",
+        "Passive": "Pasivní efekty",
+        "Temporary": "Dočasné efekty",
+        "Unavailable": "Nedostupné efekty"
+      },
+      "New": "Nový efekt",
+      "Suppressed": {
+        "Hint": "Zdrojový předmět musí být vybavený nebo sladěný, aby se aktivovaly"
+      },
+      "Tab": "Efekty"
+    },
+    "ENCHANTMENT": {
+      "Category": {
+        "Active": "Aktivní očarování",
+        "General": "Očarování",
+        "Inactive": "Neaktivní očarování"
+      }
+    },
+    "Effect": "Efekt",
+    "EquipmentBonus": "Magický bonus",
+    "EquipmentHeavy": "Těžká zbroj",
+    "EquipmentLight": "Lehká zbroj",
+    "EquipmentMedium": "Střední zbroj",
+    "EquipmentNatural": "Přirozená zbroj",
+    "EquipmentShield": "Štít",
+    "EquipmentShieldProficiency": "Štíty",
+    "Equipped": "Vybaveno",
+    "ExhaustionLevel": "Vyčerpání – stupeň {n}",
+    "ExperiencePoints": {
+      "Progress": "Postup na další Úroveň"
+    },
+    "FACILITY": {
+      "Action": {
+        "DeleteDefender": "Smazat obránce",
+        "DeleteOccupant": "Smazat obyvatele"
+      },
+      "AvailableFacility": {
+        "basic": {
+          "build": "Postavit zařízení"
+        }
+      },
+      "Build": {
+        "Unbuilt": "Nepostaveno"
+      },
+      "Description": "Popis",
+      "FIELDS": {
+        "defenders": {
+          "max": {
+            "label": "Obránci"
+          }
+        }
+      },
+      "NoDefenders": "Bastion nikdo nebrání.",
+      "Types": {
+        "Basic": {
+          "Label": {
+            "few": "Základní zařízení",
+            "many": "Základní zařízení",
+            "other": "Základní zařízení"
+          }
+        },
+        "Special": {
+          "Label": {
+            "few": "Zvláštní zařízení",
+            "many": "Zvláštní zařízení",
+            "other": "Zvláštní zařízení"
+          }
+        }
+      }
+    },
+    "FILTER": {
+      "Action": {
+        "Edit": "Upravit filtry"
+      },
+      "Empty": "Bez filtrů",
+      "Invalid": "Neplatný filtr",
+      "Operator": {
+        "And": "a",
+        "Not": "ne",
+        "Or": "nebo"
+      }
+    },
+    "Favorite": "Oblíbené",
+    "FavoriteDrop": "Přetáhni oblíbené",
+    "FavoriteRemove": "Odebrat z oblíbených",
+    "Favorites": "Oblíbené",
+    "FeatureActive": "Aktivní schopnosti",
+    "FeatureAdd": "Vytvořit schopnost",
+    "FeaturePassive": "Pasivní schopnosti",
+    "FeatureSearch": "Hledat schopnosti",
+    "Features": "Schopnosti",
+    "FeaturesBackground": "Schopnosti zázemí",
+    "FeaturesClass": "Schopnosti – {class}",
+    "FeaturesOther": "Ostatní schopnosti",
+    "Filter": "Filtr",
+    "FilterClear": "Zrušit filtry",
+    "FilterGroupCategory": "Seskupit podle kategorie",
+    "FilterGroupFaction": "Seskupit podle frakce",
+    "FilterGroupOrigin": "Seskupit podle původu",
+    "FilterNoSpells": "Pro tyto filtry nebyla nalezena žádná kouzla.",
+    "Flaws": "Slabosti",
+    "Gear": {
+      "Action": {
+        "Add": "Přidat k vybavení",
+        "Remove": "Odebrat z vybavení"
+      }
+    },
+    "HitDice": "Kostky obnovy",
+    "HitDiceConfig": "Upravit kostky obnovy",
+    "HitPoints": "Body výdrže",
+    "HitPointsConfig": "Nastavit body výdrže",
+    "ITEM": {
+      "Category": {
+        "Label": "Kategorie",
+        "Physical": "Fyzické"
+      },
+      "Property": {
+        "Adamantine": "Adamantinové",
+        "Ammunition": "Střelivo",
+        "Concentration": "Soustředění",
+        "Finesse": "Jemná",
+        "Firearm": "Palná zbraň",
+        "Focus": "Ohnisko",
+        "Gear": "Vybavení",
+        "Heavy": "Těžká",
+        "Light": "Lehká",
+        "Loading": "Nabíjení",
+        "Magical": "Kouzelné",
+        "Material": "Materiální",
+        "Reach": "Dlouhý dosah",
+        "Reload": "Přebíjení",
+        "Returning": "Vracející se",
+        "Ritual": "Rituál",
+        "Sidekick": "Pomocník",
+        "Silvered": "Postříbřené",
+        "Somatic": "Pohybová",
+        "Special": "Zvláštní",
+        "StealthDisadvantage": "Nevýhoda k Nenápadnosti",
+        "Thrown": "Vrhací",
+        "Trait": "Pasivní rys",
+        "TwoHanded": "Obouruční",
+        "UnidentifiedContents": "Skrýt neidentifikovaný obsah",
+        "Verbal": "Slovní",
+        "Versatile": "Univerzální",
+        "WeightlessContents": "Beztížný obsah"
+      }
+    },
+    "Ideals": "Ideály",
+    "Identify": "Identifikovat",
+    "Immunities": "Imunity",
+    "Initiative": "Iniciativa",
+    "InitiativeConfig": "Nastavit iniciativu",
+    "Inspiration": "Inspirace",
+    "Inventory": "Inventář",
+    "InventorySearch": "Hledat v inventáři",
+    "ItemDelete": "Smazat předmět",
+    "ItemEdit": "Upravit předmět",
+    "ItemView": "Zobrazit předmět",
+    "Language": {
+      "All": "Všechny jazyky",
+      "Category": {
+        "Exotic": "Exotické jazyky",
+        "Rare": "Vzácné jazyky",
+        "Standard": "Běžné jazyky"
+      },
+      "Communication": {
+        "Label": "Dorozumívání na dálku",
+        "Telepathy": "Telepatie"
+      },
+      "Label": "Jazyk",
+      "Language": {
+        "Aarakocra": "Aarakokrština",
+        "Abyssal": "Propastná řeč",
+        "Aquan": "Vodní řeč",
+        "Auran": "Vzdušná řeč",
+        "Celestial": "Nebeská řeč",
+        "Common": "Obecná řeč",
+        "CommonSign": "Obecná znaková řeč",
+        "DeepSpeech": "Hlubinná řeč",
+        "Draconic": "Drakonština",
+        "Druidic": "Druidština",
+        "Dwarvish": "Trpasličtina",
+        "Elvish": "Elfština",
+        "Giant": "Obrština",
+        "Gith": "Githština",
+        "Gnoll": "Gnolština",
+        "Gnomish": "Gnómština",
+        "Goblin": "Skřetština",
+        "Halfling": "Hobitština",
+        "Ignan": "Ohnivá řeč",
+        "Infernal": "Pekelná řeč",
+        "Orc": "Orkština",
+        "Primordial": "Prvotní řeč",
+        "Sylvan": "Sylvánština",
+        "Terran": "Zemská řeč",
+        "ThievesCant": "Zlodějská hantýrka",
+        "Undercommon": "Podobecná řeč"
+      }
+    },
+    "Languages": "Jazyky",
+    "Level": "Úroveň",
+    "LevelNumber": "Úroveň {level}",
+    "MOVEMENT": {
+      "Action": {
+        "Configure": "Nastavit rychlost pohybu"
+      },
+      "FIELDS": {
+        "bonus": {
+          "label": "Bonus k pohybu"
+        },
+        "ignoredDifficultTerrain": {
+          "label": "Ignorovaný obtížný terén"
+        },
+        "multiplier": {
+          "label": "Násobitel pohybu"
+        },
+        "special": {
+          "label": "Zvláštní pohyb"
+        },
+        "speeds": {
+          "label": "Rychlosti pohybu"
+        },
+        "units": {
+          "label": "Jednotka"
+        }
+      },
+      "Hover": "Vznášení",
+      "HoverSpeed": "{speed} (vznášení)",
+      "Speed": "Bojová rychlost",
+      "Type": {
+        "Burrow": "Hrabání",
+        "Climb": "Šplhání",
+        "Fly": "Létání",
+        "Jump": "Skok",
+        "Speed": "Rychlost",
+        "Swim": "Plavání",
+        "Walk": "Chůze"
+      }
+    },
+    "MaxCharacterLevelExceededWarn": "Postava nemůže postoupit nad úroveň {max}.",
+    "Multiplier": "Násobitel",
+    "NoSpellLevels": "Tato postava nemá úrovně sesílatele, ale kouzla můžeš přidat ručně.",
+    "None": "Žádné",
+    "PersonalityTraits": "Povahové rysy",
+    "Portrait": "Portrét",
+    "Prepared": "Připravené",
+    "Price": "Cena",
+    "Proficiency": "Zdatnost",
+    "Public": "Veřejné",
+    "Quantity": "Množství",
+    "RENOWN": {
+      "Search": "Hledat pověst",
+      "Unknown": "Neznámé"
+    },
+    "REST": {
+      "Long": {
+        "Label": "Dlouhý odpočinek"
+      },
+      "Short": {
+        "Label": "Krátký odpočinek"
+      }
+    },
+    "Range": "Dosah",
+    "Reaction": "Reakce",
+    "ReactionAbbr": "R",
+    "Recovery": "Obnova",
+    "Remaining": "Zbývá",
+    "Resistances": "Odolnosti",
+    "Ritual": "Rituál",
+    "SPELL": {
+      "Embed": {
+        "CastingTimeTrigger": "{castingTime}, kterou provedeš {trigger}",
+        "Tag": {
+          "Cantrip": "Trik ({school})",
+          "CantripLegacy": "trik ({school})",
+          "Classes": "{levelSchool} ({classes})",
+          "Leveled": "{school}, {level}. stupeň",
+          "LeveledLegacy": "{school}, {levelOrdinal} stupeň",
+          "Ritual": "{levelSchool} (rituál)"
+        }
+      }
+    },
+    "SPELLCASTING": {
+      "METHODS": {
+        "AtWill": {
+          "label": "Libovolně"
+        },
+        "Innate": {
+          "label": "Vrozené sesílání"
+        },
+        "Pact": {
+          "Full": {
+            "label": "Magie paktu"
+          },
+          "abbr": "Pakt",
+          "label": "Magie paktu"
+        },
+        "Ritual": {
+          "label": "Jen rituály"
+        },
+        "Spell": {
+          "Artificer": {
+            "label": "Výrobce"
+          },
+          "Full": {
+            "label": "Plný sesílatel"
+          },
+          "Half": {
+            "label": "Poloviční sesílatel"
+          },
+          "Third": {
+            "label": "Třetinový sesílatel"
+          },
+          "label": "Sesílání kouzel"
+        }
+      },
+      "SLOTS": {
+        "spell0": "Triky",
+        "spell1": "1. stupeň",
+        "spell2": "2. stupeň",
+        "spell3": "3. stupeň",
+        "spell4": "4. stupeň",
+        "spell5": "5. stupeň",
+        "spell6": "6. stupeň",
+        "spell7": "7. stupeň",
+        "spell8": "8. stupeň",
+        "spell9": "9. stupeň"
+      },
+      "STATES": {
+        "AlwaysPrepared": "Vždy připravené",
+        "Prepared": "Připravené",
+        "Unprepared": "Nepřipravené"
+      },
+      "Unlabeled": "Nepojmenované sesílání"
+    },
+    "Scroll": {
+      "CreateScroll": "Vytvořit svitek"
+    },
+    "Senses": "Smysly",
+    "Size": "Velikost",
+    "SizeGargantuan": "Gigantická",
+    "SizeGargantuanAbbr": "Gig",
+    "SizeHuge": "Obrovská",
+    "SizeHugeAbbr": "Obr",
+    "SizeLarge": "Velká",
+    "SizeLargeAbbr": "Vel",
+    "SizeMedium": "Střední",
+    "SizeMediumAbbr": "Stř",
+    "SizeSmall": "Malá",
+    "SizeSmallAbbr": "Mal",
+    "SizeTiny": "Drobná",
+    "SizeTinyAbbr": "Dro",
+    "Skill": "Dovednost",
+    "SkillAcr": "Akrobacie",
+    "SkillAni": "Ovládání zvířat",
+    "SkillArc": "Mystika",
+    "SkillAth": "Atletika",
+    "SkillBonusPassive": "Pasivní bonus",
+    "SkillBonuses": "Bonusy k dovednostem",
+    "SkillConfigurationHint": "Nastav zdatnost a bonusy dovednosti.",
+    "SkillConfigure": "Nastavit dovednost",
+    "SkillConfigureTitle": "Nastavit {skill}",
+    "SkillDec": "Klamání",
+    "SkillGlobalBonusCheckHint": "Tento bonus platí pro všechna ověření dovedností této postavy.",
+    "SkillHis": "Historie",
+    "SkillIns": "Vhled",
+    "SkillInv": "Pátrání",
+    "SkillItm": "Zastrašování",
+    "SkillMed": "Lékařství",
+    "SkillModifierHint": "Oprava {skill}",
+    "SkillNat": "Příroda",
+    "SkillPassiveHint": "Pasivní {skill}",
+    "SkillPassiveScore": "Pasivní hodnota {skill}",
+    "SkillPassiveSpecificHint": "Pasivní {ability} ({skill})",
+    "SkillPassives": "Pasivní dovednosti",
+    "SkillPer": "Přesvědčování",
+    "SkillPrc": "Vnímání",
+    "SkillPrf": "Vystupování",
+    "SkillPromptTitle": "Ověření {ability} ({skill})",
+    "SkillRel": "Náboženství",
+    "SkillRoll": "Hodit ověření {ability} ({skill})",
+    "SkillSlt": "Čachry",
+    "SkillSte": "Nenápadnost",
+    "SkillSur": "Přežití",
+    "SkillTitle": "{ability} ({skill})",
+    "Skills": "Dovednosti",
+    "SkillsConfig": "Nastavit dovednosti",
+    "SpecialTraits": "Zvláštní rysy",
+    "Species": {
+      "Add": "Přidat rasu",
+      "Features": "Rasové schopnosti"
+    },
+    "SpellAbility": "Sesílací vlastnost",
+    "SpellAbilitySet": "Nastavit jako hlavní sesílací vlastnost",
+    "SpellAdd": "Přidat kouzlo",
+    "SpellAttackBonus": "Bonus ke kouzelnému útoku",
+    "SpellCantrip": "Trik",
+    "SpellCastConsume": "Spotřebovat pozici kouzla?",
+    "SpellCastNoSlots": "Nemáš volnou pozici kouzla ({level}), jíž bys seslal {name}",
+    "SpellCastNoSlotsLeft": "Nemáš žádnou volnou pozici kouzla, jíž bys seslal {name}!",
+    "SpellCastTime": "Doba sesílání",
+    "SpellCastUpcast": "Seslat na stupni",
+    "SpellCastingHeader": "Sesílání kouzel",
+    "SpellComponent": "Složka kouzla",
+    "SpellComponents": "Složky kouzla",
+    "SpellComponentsMaterial": "{components} ({materials})",
+    "SpellCreate": "Vytvořit kouzlo",
+    "SpellDC": "SO kouzla",
+    "SpellDetails": "Podrobnosti kouzla",
+    "SpellEffects": "Účinky kouzla",
+    "SpellHeader": {
+      "Formula": "Vzorec",
+      "Range": "Dosah",
+      "Roll": "Hod",
+      "School": "Škola",
+      "Target": "Cíl",
+      "Time": "Doba"
+    },
+    "SpellLevel": "Stupeň kouzla",
+    "SpellLevel0": "Trik",
+    "SpellLevel1": "1. stupeň",
+    "SpellLevel2": "2. stupeň",
+    "SpellLevel3": "3. stupeň",
+    "SpellLevel4": "4. stupeň",
+    "SpellLevel5": "5. stupeň",
+    "SpellLevel6": "6. stupeň",
+    "SpellLevel7": "7. stupeň",
+    "SpellLevel8": "8. stupeň",
+    "SpellLevel9": "9. stupeň",
+    "SpellLevelPact": "Pozice paktu [{level}. stupeň] (pozic: {n})",
+    "SpellLevelSpell": "{level} (pozic: {n})",
+    "SpellLevels": "Stupně kouzel",
+    "SpellMaterials": "Kouzelné suroviny",
+    "SpellMaterialsConsumed": "Spotřebovat suroviny",
+    "SpellMaterialsCost": "Cena surovin",
+    "SpellMaterialsDescription": "Popis surovin",
+    "SpellMaterialsSupply": "Zásoba surovin",
+    "SpellName": "Název kouzla",
+    "SpellNone": "Žádné",
+    "SpellPrepAlways": "Vždy připravené",
+    "SpellPrepAtWill": "Libovolně",
+    "SpellPrepInnate": "Vrozené sesílání",
+    "SpellPrepPrepared": "Připravené",
+    "SpellPrepRitual": "Jen rituály",
+    "SpellPreparation": {
+      "Formula": "Vzorec přípravy",
+      "Label": "Příprava kouzel",
+      "Method": "Způsob sesílání"
+    },
+    "SpellPrepared": "Připravené",
+    "SpellProgArt": "Výrobce",
+    "SpellProgAvailable": "Volné pozice",
+    "SpellProgFull": "Plný sesílatel",
+    "SpellProgHalf": "Poloviční sesílatel",
+    "SpellProgLeveled": "Magie se stupni",
+    "SpellProgOverride": "Přepsat pozice",
+    "SpellProgPact": "Magie paktu",
+    "SpellProgThird": "Třetinový sesílatel",
+    "SpellProgression": "Postup kouzel",
+    "SpellSchool": "Škola kouzla",
+    "SpellScroll": "Kouzelný svitek",
+    "SpellSlotExpended": "Spotřebovaná pozice kouzla",
+    "SpellSlotN": {
+      "few": "pozice kouzla {n}. stupně",
+      "many": "pozice kouzla {n}. stupně",
+      "one": "pozice kouzla {n}. stupně",
+      "other": "pozice kouzla {n}. stupně",
+      "two": "pozice kouzla {n}. stupně"
+    },
+    "SpellSlotTemporary": "Dočasná pozice kouzla",
+    "SpellSlotsConfig": "Nastavit pozice kouzel",
+    "SpellSlotsN": {
+      "few": "Pozice {n}. stupně",
+      "many": "Pozice {n}. stupně",
+      "one": "Pozice {n}. stupně",
+      "other": "Pozice {n}. stupně",
+      "two": "Pozice {n}. stupně"
+    },
+    "SpellSlotsPact": "Pozice paktu",
+    "SpellTag": "Štítek kouzla",
+    "SpellTarget": "Cíl kouzla",
+    "SpellUnprepared": "Nepřipravené",
+    "SpellUsage": "Použití kouzla",
+    "Spellbook": "Kniha kouzel",
+    "SpellcasterLevel": "Úroveň sesílatele",
+    "Spellcasting": "Sesílání kouzel",
+    "SpellcastingClass": "Sesílání kouzel ({class})",
+    "SpellsSearch": "Hledat kouzla",
+    "SplitStack": {
+      "Title": "Rozdělit hromádku"
+    },
+    "SubclassAdd": "Přidat obor",
+    "SubclassAssignmentError": "{class} už má obor. Než přidáš nový, odeber stávající obor „{subclass}“.",
+    "SubclassDuplicateError": "Obor s identifikátorem {identifier} už tato postava má.",
+    "SubclassMismatchWarn": "Obor {name} nemá odpovídající povolání s identifikátorem „{class}“.",
+    "Suppressed": "Potlačeno",
+    "TMP": "Dočasné",
+    "TRAIT": {
+      "Action": {
+        "Configure": "Nastavit {trait}"
+      },
+      "Condition": {
+        "Immunity": {
+          "title": "Imunity vůči stavům"
+        }
+      },
+      "Damage": {
+        "Immunity": {
+          "title": "Imunity vůči zásahu"
+        }
+      },
+      "Tool": {
+        "title": "Zdatnosti s pomůckami"
+      }
+    },
+    "TRANSFORM": {
+      "Action": {
+        "Restore": "Zrušit proměnu"
+      }
+    },
+    "TimeDayAbbr": "d",
+    "TimeHourAbbr": "h",
+    "TimeMinuteAbbr": "min",
+    "ToggleDescription": "Zobrazit/skrýt popis",
+    "ToolArtisans": "Řemeslnické nástroje",
+    "ToolBonuses": "Bonusy k pomůckám",
+    "ToolCheck": "Ověření s pomůckou",
+    "ToolConfigure": "Nastavit zdatnost s pomůckou",
+    "ToolDisguiseKit": "Převlekové náčiní",
+    "ToolForgeryKit": "Padělatelské náčiní",
+    "ToolGamingSet": "Herní sada",
+    "ToolHerbalismKit": "Bylinkářská souprava",
+    "ToolMusicalInstrument": "Hudební nástroj",
+    "ToolNavigators": "Navigátorské nástroje",
+    "ToolPoisonersKit": "Travičská souprava",
+    "ToolPromptTitle": "Ověření: {tool}",
+    "ToolThieves": "Zlodějské náčiní",
+    "ToolVehicle": "Dopravní prostředky",
+    "Usage": "Použití",
+    "Uses": "Použití",
+    "Vulnerabilities": "Zranitelnosti",
+    "WEAPON": {
+      "Mastery": {
+        "Label": "Mistrovství se zbraní"
+      }
+    },
+    "WarnCantAddMultipleAdvancements": "Předměty s postupem nelze zatím přidat k postavě najednou. Přidej je prosím jednotlivě.",
+    "WeaponCategory": "Zbraň: {category}",
+    "WeaponImprov": "Improvizovaná",
+    "WeaponMartialM": "Válečná na blízko",
+    "WeaponMartialProficiency": "Válečné",
+    "WeaponMartialR": "Válečná na dálku",
+    "WeaponNatural": "Přirozená",
+    "WeaponSiege": "Obléhací zbraň",
+    "WeaponSimpleM": "Jednoduchá na blízko",
+    "WeaponSimpleProficiency": "Jednoduché",
+    "WeaponSimpleR": "Jednoduchá na dálku",
+    "Weight": "Váha"
+  },
+  "TYPES": {
+    "Item": {
+      "background": "Zázemí",
+      "backgroundPl": "Zázemí",
+      "class": "Povolání",
+      "classPl": "Povolání",
+      "consumable": "Spotřební předmět",
+      "consumablePl": "Spotřební předměty",
+      "container": "Kontejner",
+      "containerPl": "Kontejnery",
+      "equipment": "Vybavení",
+      "equipmentPl": "Vybavení",
+      "facility": "Zařízení",
+      "facilityPl": "Zařízení",
+      "feat": "Schopnost",
+      "featurePl": "Schopnosti",
+      "loot": "Kořist",
+      "lootPl": "Kořist",
+      "race": "Rasa",
+      "raceLegacy": "Rasa",
+      "raceLegacyPl": "Rasy",
+      "racePl": "Rasy",
+      "renown": "Pověst",
+      "renownPl": "Pověst",
+      "spell": "Kouzlo",
+      "spellPl": "Kouzla",
+      "subclass": "Obor",
+      "subclassPl": "Obory",
+      "tool": "Pomůcka",
+      "toolPl": "Pomůcky",
+      "weapon": "Zbraň",
+      "weaponPl": "Zbraně"
+    }
+  }
+}

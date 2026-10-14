@@ -1,5 +1,9 @@
 # Změny
 
+## 0.7.1 – čeština v deníku
+
+Zbytek popisků na listu postavy je nově česky a v názvosloví JaD: postranní panel, inventář, kouzla, schopnosti, efekty a životopis (Rychlost, Body výdrže, Pozice kouzel, Pomůcky, Zdatnosti, Smysly, Jazyky, Vlastnosti zbraní a další).
+
 ## 0.7.0 – první veřejná testovací verze
 
 První veřejná verze komunitního modulu, který přináší Jeskyně a draky do Foundry VTT.
