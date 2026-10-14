@@ -1,4 +1,1 @@
-# Logo komunitní tvorby JaD
-
-Sem vlož soubor `logo-jad-komunitni.jpg` (ke stažení na https://www.mytago.cz/blog/jad-komunitni-tvorba).
-Licence JaD vyžaduje jeho viditelné použití v nezměněné podobě; barvu lze upravit.
+<img width="1276" height="1280" alt="logo-jad-plus-b-2" src="https://github.com/user-attachments/assets/71f55c9c-1915-4913-9fa9-d029d47d4429" />
