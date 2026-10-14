@@ -74,7 +74,8 @@
       "ZalozkaVzhled": "Appearance & relations"
     },
     "Nosnost": {
-      "RezimNastaven": "Jeskyně a draci: the dnd5e encumbrance rule was set for Row-based encumbrance."
+      "RezimNastaven": "Jeskyně a draci: the dnd5e encumbrance rule was set for Row-based encumbrance.",
+      "Sloupec": "Rows"
     }
   }
 }

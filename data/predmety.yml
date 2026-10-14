@@ -328,7 +328,8 @@ radky:
   Batoh: 0
   Beranidlo (přenosné): 2
   "Stan, pro dvě osoby": 3
-  Zásoby (na 1 den): 0.3333
+  Zásoby (na 1 den): 0.25
+  Skoba: 0.1
   Měch na vodu: 0.3333
   Pochodeň: 0.2
   Svíčka: 0.1

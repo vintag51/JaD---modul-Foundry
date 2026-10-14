@@ -80,7 +80,8 @@
       "ZalozkaVzhled": "Vzhled a vztahy"
     },
     "Nosnost": {
-      "RezimNastaven": "Jeskyně a draci: pravidlo Naložení systému dnd5e bylo nastaveno podle nosnosti na Řádky."
+      "RezimNastaven": "Jeskyně a draci: pravidlo Naložení systému dnd5e bylo nastaveno podle nosnosti na Řádky.",
+      "Sloupec": "Řádky"
     }
   }
 }

@@ -27,6 +27,13 @@ const PASIVNI = [["ath", "Atletika"], ["acr", "Akrobacie"], ["ste", "Nenápadnos
 const ZDATNOST = { 0: "", 0.5: "polovicni", 1: "plna", 2: "dvojita" };
 const STUPNE = { lehke: "Lehké", stredni: "Střední", tezke: "Těžké", pretizeni: "Přetížení" };
 
+const TYPY_ZASAHU = {
+  acid: "Kyselinový", bludgeoning: "Drtivý", cold: "Chladný", fire: "Ohnivý", force: "Silový", lightning: "Bleskový",
+  necrotic: "Nekrotický", piercing: "Bodný", poison: "Jedový", psychic: "Psychický", radiant: "Zářivý",
+  slashing: "Sečný", thunder: "Hromový", healing: "Léčení", temphp: "Dočasné BV"
+};
+const CYKLUS_ZDATNOSTI = [0, 1, 2, 0.5];
+
 const sign = n => (Number(n) >= 0 ? `+${Number(n)}` : `${Number(n)}`);
 
 /**
@@ -49,7 +56,9 @@ export function vytvoritDenik() {
       actions: {
         jadPouzit: DenikJaD.#pouzit,
         jadOdlozit: DenikJaD.#odlozit,
-        jadOtevrit: DenikJaD.#otevrit
+        jadOtevrit: DenikJaD.#otevrit,
+        jadZdatnost: DenikJaD.#zdatnost,
+        jadVybavit: DenikJaD.#vybavit
       }
     };
 
@@ -81,7 +90,14 @@ export function vytvoritDenik() {
     /** @inheritDoc */
     async _preparePartContext(partId, context, options) {
       context = await super._preparePartContext(partId, context, options);
-      if ( partId === "denik" ) context.jad = this.#pripravitDenik(context);
+      if ( partId === "denik" ) {
+        try {
+          context.jad = this.#pripravitDenik(context);
+        } catch(err) {
+          console.error(`${MODUL} | Deník JaD nelze připravit`, err);
+          context.jad = { chyba: `${err.name}: ${err.message}` };
+        }
+      }
       if ( partId === "vzhled" ) context.jad = this.#pripravitVzhled(context);
       return context;
     }
@@ -130,17 +146,23 @@ export function vytvoritDenik() {
       const krok = jednotky === "sah" ? 1 : (jednotky === "m" ? 1.5 : 5);
       const nalozeni = sys.attributes.encumbrance?.jad ?? (nosnostZapnuta ? spocitatNalozeni(actor) : null);
       const aktualni = Number(pohyb.speed ?? pohyb.speeds?.walk ?? pohyb.walk ?? 0);
-      const snizeni = { lehke: 0, stredni: 1, tezke: 3 }[nalozeni?.stupen] ?? 0;
-      const zakladni = nalozeni?.stupen === "pretizeni" ? null : aktualni + (snizeni * krok);
-      const jednotkaText = jednotky === "sah" ? "sáh." : (CONFIG.DND5E.movementUnits?.[jednotky]?.abbreviation ?? jednotky);
+      const stupen = nalozeni?.stupen ?? "lehke";
+      const snizeni = { lehke: 0, stredni: 1, tezke: 3 }[stupen];
+      const zdroj = actor._source?.system?.attributes?.movement ?? {};
+      const zakladni = (snizeni !== undefined) ? aktualni + (snizeni * krok)
+        : Number(pohyb.fromSpecies?.walk || zdroj.speeds?.walk || zdroj.walk || aktualni);
+      const jednotkaText = jednotky === "sah" ? "sáhů" : (CONFIG.DND5E.movementUnits?.[jednotky]?.abbreviation ?? jednotky);
+      const stupne = [
+        { nazev: "Lehké", hodnota: zakladni, aktivni: stupen === "lehke" },
+        { nazev: "Střední (−1)", hodnota: Math.max(zakladni - krok, 0), aktivni: stupen === "stredni" },
+        { nazev: "Těžké (−3)", hodnota: Math.max(zakladni - (3 * krok), 0), aktivni: stupen === "tezke" }
+      ];
+      if ( stupen === "pretizeni" ) stupne.push({ nazev: "Přetížení", hodnota: aktualni, aktivni: true });
       const rychlost = {
-        jednotky: jednotkaText,
-        aktualni,
-        stupne: zakladni === null ? null : [
-          { nazev: "Lehké", hodnota: zakladni, aktivni: nalozeni?.stupen === "lehke" },
-          { nazev: "Střední (−1)", hodnota: Math.max(zakladni - krok, 0), aktivni: nalozeni?.stupen === "stredni" },
-          { nazev: "Těžké (−3)", hodnota: Math.max(zakladni - (3 * krok), 0), aktivni: nalozeni?.stupen === "tezke" }
-        ]
+        stupne, pretizeni: stupen === "pretizeni",
+        text: stupen === "pretizeni"
+          ? `Přetížení: neseš víc, než uneseš – můžeš se pohybovat nejvýš ${aktualni} ${jednotkaText} za kolo (věci jen táhneš). Odlož část výbavy.`
+          : `Aktuální rychlost: ${aktualni} ${jednotkaText} za kolo.`
       };
 
       // Kouzla
@@ -162,33 +184,40 @@ export function vytvoritDenik() {
       };
 
       // Zbraně (vybavené, jinak všechny)
-      let zbraneSeznam = actor.itemTypes.weapon ?? [];
-      if ( zbraneSeznam.some(z => z.system.equipped) ) zbraneSeznam = zbraneSeznam.filter(z => z.system.equipped);
+      const zbraneSeznam = [...(actor.itemTypes.weapon ?? [])]
+        .sort((a, b) => (Number(!!b.system.equipped) - Number(!!a.system.equipped)) || ((a.sort ?? 0) - (b.sort ?? 0)));
       const zbraneData = zbraneSeznam.map(item => {
         const utok = item.system.activities?.find?.(a => a.type === "attack");
         const zasahy = utok?.labels?.damages ?? [];
         return {
-          id: item.id, nazev: item.name, img: item.img,
+          id: item.id, nazev: item.name, img: item.img, vybaveno: !!item.system.equipped,
           bonus: utok?.labels?.toHit ?? "",
           zasah: zasahy.map(d => d.formula).filter(_ => _).join(" + "),
-          typ: zasahy.map(d => (d.label ?? "").replace(d.formula ?? "", "").trim()).filter(_ => _).join(", "),
+          typ: [...new Set(zasahy.flatMap(d => [d.damageType ?? d.damageTypes ?? []].flat())
+            .map(t => TYPY_ZASAHU[t] ?? CONFIG.DND5E.damageTypes?.[t]?.label ?? t))].join(", ")
+            || zasahy.map(d => (d.label ?? "").replace(d.formula ?? "", "").trim()).filter(_ => _).join(", "),
           dosah: item.labels?.range ?? utok?.labels?.range ?? ""
         };
       });
 
-      // Výbava v Řádcích
-      const vybava = actor.items.filter(i => ("quantity" in i.system) && ("weight" in i.system))
-        .sort((a, b) => (a.sort ?? 0) - (b.sort ?? 0))
-        .map(item => {
-          const rucne = item.flags?.[MODUL]?.radky;
-          const kontejner = item.system.container ? actor.items.get(item.system.container) : null;
-          return {
-            id: item.id, nazev: item.name, img: item.img, pocet: item.system.quantity ?? 1,
-            radky: formatRadky(radkyPredmetu(item)), rucne: (rucne ?? "") === "" ? "" : rucne,
-            vKontejneru: kontejner?.name ?? "", jeKontejner: item.type === "container",
-            odlozeno: odlozeny(item), vlastniOdlozeni: !!item.flags?.[MODUL]?.odlozeno
-          };
+      // Výbava v Řádcích: předměty mimo kontejnery, obsah kontejneru odsazeně pod ním
+      const fyzicke = actor.items.filter(i => ("quantity" in i.system) && ("weight" in i.system));
+      const PORADI_TYPU = { weapon: 0, equipment: 1, consumable: 2, tool: 3, loot: 4, container: 5 };
+      const serad = (a, b) => ((PORADI_TYPU[a.type] ?? 9) - (PORADI_TYPU[b.type] ?? 9)) || ((a.sort ?? 0) - (b.sort ?? 0));
+      const vybava = [];
+      const pridat = (item, hloubka) => {
+        const rucne = item.flags?.[MODUL]?.radky;
+        vybava.push({
+          id: item.id, nazev: item.name, img: item.img, pocet: item.system.quantity ?? 1, hloubka,
+          odsazeni: hloubka * 18, radky: formatRadky(radkyPredmetu(item)), rucne: (rucne ?? "") === "" ? "" : rucne,
+          jeKontejner: item.type === "container", vybavitelne: "equipped" in item.system,
+          vybaveno: !!item.system.equipped, odlozeno: odlozeny(item), vlastniOdlozeni: !!item.flags?.[MODUL]?.odlozeno
         });
+        if ( (item.type === "container") && (hloubka < 5) ) {
+          fyzicke.filter(i => i.system.container === item.id).sort(serad).forEach(i => pridat(i, hloubka + 1));
+        }
+      };
+      fyzicke.filter(i => !i.system.container || !actor.items.get(i.system.container)).sort(serad).forEach(i => pridat(i, 0));
 
       const schopnosti = (actor.itemTypes.feat ?? []).map(item => ({
         id: item.id, nazev: item.name, img: item.img,
@@ -220,7 +249,8 @@ export function vytvoritDenik() {
           nazev: game.i18n.localize(CONFIG.DND5E.currencies[k]?.abbreviation ?? k)
         })),
         jazyky: Array.isArray(jazyky?.languages) ? jazyky.languages.join(", ") : "",
-        hp: { value: hp.value ?? 0, max: hp.max ?? 0, temp: hp.temp ?? "" },
+        hp: { value: hp.value ?? 0, max: hp.max ?? 0, temp: hp.temp || "",
+          maxRucne: actor._source?.system?.attributes?.hp?.max ?? "" },
         hd: { value: hd.value ?? "", max: hd.max ?? "" },
         smrt: {
           uspechy: [1, 2, 3].map(n => n <= (smrt.success ?? 0)),
@@ -256,6 +286,15 @@ export function vytvoritDenik() {
     /** @inheritDoc */
     async _onRender(context, options) {
       await super._onRender(context, options);
+      // Světlý (pergamenový) motiv dnd5e pro všechny záložky Deníku JaD
+      this.element.classList.remove("theme-dark");
+      this.element.classList.add("themed", "theme-light");
+      for ( const pole of this.element.querySelectorAll(".jad-pole") ) {
+        pole.addEventListener("change", event => {
+          event.stopPropagation();
+          this.#ulozitPole(pole);
+        });
+      }
       for ( const input of this.element.querySelectorAll("input.jad-radky") ) {
         input.addEventListener("change", async event => {
           event.stopPropagation();
@@ -268,6 +307,62 @@ export function vytvoritDenik() {
       }
     }
 
+    /** Uloží pole Deníku JaD (pole nemají „name“, aby se nebila se stejnými poli jiných záložek). */
+    async #ulozitPole(pole) {
+      const cesta = pole.dataset.cesta;
+      let hodnota;
+      switch ( pole.dataset.typ ) {
+        case "bool": hodnota = pole.checked; break;
+        case "cislo": hodnota = Number(pole.value) || 0; break;
+        case "cislo-null": hodnota = pole.value.trim() === "" ? null : Number(pole.value); break;
+        default: hodnota = pole.value;
+      }
+      if ( (typeof hodnota === "number") && !Number.isFinite(hodnota) ) return;
+      await this.actor.update({ [cesta]: hodnota });
+    }
+
+    /** Ruční přepnutí zdatnosti (dovednost, pomůcka, záchrana, zbroje a zbraně). */
+    static async #zdatnost(event, target) {
+      if ( !this.isEditable ) return;
+      const { cesta, druh, klic } = target.dataset;
+      const aktualni = foundry.utils.getProperty(this.actor._source, cesta);
+      let hodnota;
+      if ( druh === "sada" ) {
+        const sada = new Set(aktualni ?? []);
+        if ( sada.has(klic) ) sada.delete(klic);
+        else sada.add(klic);
+        hodnota = Array.from(sada);
+      } else if ( druh === "prepinac" ) {
+        hodnota = aktualni ? 0 : 1;
+      } else {
+        const i = CYKLUS_ZDATNOSTI.indexOf(Number(aktualni ?? 0));
+        hodnota = CYKLUS_ZDATNOSTI[(i + (event.shiftKey || event.button === 2 ? CYKLUS_ZDATNOSTI.length - 1 : 1)) % CYKLUS_ZDATNOSTI.length];
+      }
+      return this.actor.update({ [cesta]: hodnota });
+    }
+
+    /** Ve sloupci Hmotnost inventáře ukazuje Řádky. */
+    async _prepareItemPhysical(item, ctx) {
+      await super._prepareItemPhysical(item, ctx);
+      if ( game.settings.get(MODUL, "nosnostRadky") && ("quantity" in item.system) ) {
+        ctx.totalWeight = formatRadky(radkyPredmetu(item)) || "0";
+      }
+    }
+
+    /** Sloupec Hmotnost přejmenovaný na Řádky. */
+    async _configureInventorySections(sections) {
+      await super._configureInventorySections(sections);
+      if ( !game.settings.get(MODUL, "nosnostRadky") ) return;
+      for ( const s of sections ) {
+        if ( !Array.isArray(s.columns) ) continue;
+        s.columns = s.columns.map(c => {
+          const id = typeof c === "string" ? c : c?.id;
+          if ( id !== "weight" ) return c;
+          return { ...(typeof c === "object" ? c : {}), id: "weight", label: "JAD.Nosnost.Sloupec" };
+        });
+      }
+    }
+
     static async #pouzit(event, target) {
       const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
       return item?.use({ event });
@@ -276,6 +371,12 @@ export function vytvoritDenik() {
     static async #otevrit(event, target) {
       const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
       return item?.sheet.render(true);
+    }
+
+    static async #vybavit(event, target) {
+      const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+      if ( !item || !("equipped" in item.system) ) return;
+      return item.update({ "system.equipped": !item.system.equipped });
     }
 
     static async #odlozit(event, target) {

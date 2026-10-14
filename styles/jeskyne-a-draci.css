@@ -166,3 +166,55 @@
 .jad-denik .jad-blok { margin-top: 6px; }
 .jad-denik .jad-blok textarea { resize: vertical; }
 .jad-denik .jad-tab img.jad-logo { width: 64px; height: 64px; border: none; mix-blend-mode: multiply; }
+
+/* --- úpravy po prvním testu --- */
+.jad-denik .jad-vlastnost { display: grid; grid-template-columns: 74px 1fr; gap: 8px; align-items: start; }
+.jad-denik .jad-stit { width: 74px; box-sizing: border-box; overflow: hidden; }
+.jad-denik .jad-stit-nazev { font-size: 0.52rem; letter-spacing: 0; white-space: nowrap; overflow: hidden; text-overflow: clip; }
+.jad-denik .jad-dovednosti li { min-height: 22px; }
+.jad-denik a.jad-hvezda { cursor: pointer; text-decoration: none; }
+.jad-denik a.jad-hvezda:hover::before { color: var(--jad-cervena); text-shadow: 0 0 3px rgb(122 29 22 / 40%); }
+
+.jad-denik .jad-polozka { display: inline-flex; align-items: center; gap: 6px; min-width: 0; }
+.jad-denik .jad-polozka img { flex: 0 0 22px; width: 22px; height: 22px; display: inline-block; margin: 0; }
+.jad-denik .jad-polozka span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.jad-denik .jad-seznam li > a.jad-polozka { flex: 1; }
+
+.jad-denik .jad-zbrane th { background: none; color: var(--jad-tlumene); }
+.jad-denik .jad-zbrane td { vertical-align: middle; padding: 4px 6px; }
+.jad-denik .jad-zbrane td:first-child { display: flex; align-items: center; gap: 6px; }
+.jad-denik .jad-zbrane td:nth-child(2), .jad-denik .jad-zbrane td:nth-child(3) { text-align: center; white-space: nowrap; }
+.jad-denik .jad-nevybaveno td { opacity: 0.6; }
+.jad-denik .jad-vybavit { color: #b5a99a; }
+.jad-denik .jad-vybavit.aktivni { color: var(--jad-cervena); }
+.jad-denik .jad-radky-tabulka td:first-child { display: flex; align-items: center; gap: 4px; }
+.jad-denik .jad-kontejner-radek td { font-weight: bold; }
+.jad-denik .jad-odsazeni { display: inline-block; }
+
+.jad-denik .jad-ctverec .jad-max { width: 2.8em; font-size: 0.9rem; }
+.jad-denik .jad-varovani { color: var(--jad-cervena); font-weight: bold; }
+.jad-denik .jad-rychlost-stupen:last-child.aktivni { background: #f6dcd6; }
+
+/* Ostatní záložky dnd5e v barvách JaD (světlý motiv dnd5e + červené pruhy) */
+.jad-denik.dnd5e2 {
+  --dnd5e-card-header-1: #2b0b08;
+  --dnd5e-card-header-2: #6e1a14;
+  --dnd5e-color-gold: #7a1d16;
+  --dnd5e-color-hd-1: #2b0b08;
+  --dnd5e-color-hd-2: #6e1a14;
+  --dnd5e-background-card: #fffaf0;
+  --dnd5e-color-card: #fffaf0;
+  --dnd5e-background-parchment: #f6f1e3;
+  --dnd5e-color-parchment: #f6f1e3;
+  --dnd5e-character-body-image: none;
+  --dnd5e-application-background: #f6f1e3;
+}
+.jad-denik.dnd5e2 .tab-body { background: #f6f1e3; }
+.jad-denik.dnd5e2 .items-section .items-header,
+.jad-denik.dnd5e2 .items-header.header {
+  background: linear-gradient(90deg, #2b0b08 0%, #6e1a14 50%, #2b0b08 100%);
+  color: #fff;
+}
+.jad-denik.dnd5e2 .items-header .item-name,
+.jad-denik.dnd5e2 .items-header .item-header { color: #fff; }
+.jad-denik.dnd5e2 .items-section { border-color: #3b2a22; background: #fffaf0; }

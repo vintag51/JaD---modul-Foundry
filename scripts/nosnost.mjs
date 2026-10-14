@@ -18,7 +18,14 @@ export const TRETINA = 1 / 3;
 const VELIKOST = { tiny: 0.5, sm: 1, med: 1, lg: 2, huge: 4, grg: 8 };
 
 /** Identifikátory předmětů, které fungují jako Batoh (zvýší maximální nosnost o 5 Řádků). */
-export const BATOHY = new Set(["backpack"]);
+export const BATOHY = new Set([
+  "backpack", "burglars-pack", "dungeoneers-pack", "entertainers-pack", "explorers-pack", "priests-pack", "scholars-pack"
+]);
+
+/** Je předmět Batoh (nebo balíček vybavení zabalený v batohu)? */
+export function jeBatoh(item) {
+  return (item.type === "container") && (BATOHY.has(item.system?.identifier) || !!item.flags?.[MODUL]?.batoh);
+}
 
 /**
  * Řádky jednoho kusu předmětu podle typu a váhy.
@@ -28,7 +35,7 @@ export const BATOHY = new Set(["backpack"]);
 export function radkyZaKus(item) {
   const s = item.system;
   const vaha = Number(s.weight?.value ?? s.weight ?? 0) || 0;
-  const podleVahy = w => (w <= 1 ? TRETINA : w <= 12 ? 1 : w <= 30 ? 2 : w <= 60 ? 3 : Math.ceil(w / 20));
+  const podleVahy = w => (w < 0.5 ? 0.1 : w <= 1.5 ? TRETINA : w <= 12 ? 1 : w <= 30 ? 2 : w <= 60 ? 3 : Math.ceil(w / 20));
   switch ( item.type ) {
     case "weapon": {
       const vl = s.properties ?? new Set();
@@ -47,11 +54,11 @@ export function radkyZaKus(item) {
       return podleVahy(vaha);
     }
     case "consumable":
-      return TRETINA;
+      return vaha < 0.5 ? 0.1 : TRETINA;
     case "tool":
       return vaha <= 1.5 ? TRETINA : podleVahy(vaha);
     case "container":
-      if ( BATOHY.has(s.identifier) ) return 0;
+      if ( jeBatoh(item) ) return 0;
       return podleVahy(vaha);
     default:
       return podleVahy(vaha);
@@ -113,7 +120,7 @@ export function spocitatNalozeni(actor) {
     if ( !fyzicky(item) ) continue;
     if ( odlozeny(item) ) continue;
     if ( vBeztiznemKontejneru(item) ) continue;
-    if ( (item.type === "container") && BATOHY.has(item.system.identifier) ) batoh = true;
+    if ( jeBatoh(item) ) batoh = true;
     const r = radkyPredmetu(item);
     celkem += r;
     polozky.push({ item, radky: r });

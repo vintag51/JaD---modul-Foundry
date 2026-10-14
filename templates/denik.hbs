@@ -1,9 +1,10 @@
 <section class="tab jad-tab {{ tab.cssClass }}" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
 {{#with jad}}
+  {{#if chyba}}<p class="jad-nalozeni jad-stupen-pretizeni">Deník JaD se nepodařilo připravit: {{ chyba }}</p>{{else}}
   <div class="jad-horni">
     <div class="jad-ctverec"><span class="jad-hodnota">{{ prof }}</span><span class="jad-popis">Zdatnostní bonus</span></div>
     <label class="jad-ctverec jad-inspirace">
-      <input type="checkbox" name="system.attributes.inspiration" {{#if inspirace}}checked{{/if}} {{#unless editovatelne}}disabled{{/unless}}>
+      <input type="checkbox" class="jad-pole" data-cesta="system.attributes.inspiration" data-typ="bool" {{#if inspirace}}checked{{/if}} {{#unless editovatelne}}disabled{{/unless}}>
       <span class="jad-popis">Inspirace</span>
     </label>
     <div class="jad-ctverec {{ @root.rollableClass }}" data-action="roll" data-type="initiative">
@@ -12,13 +13,15 @@
     <div class="jad-ctverec jad-oc"><span class="jad-hodnota">{{ oc }}</span><span class="jad-popis">Obranné číslo</span></div>
     <div class="jad-ctverec jad-bv">
       <span class="jad-hodnota">
-        <input type="number" name="system.attributes.hp.value" value="{{ hp.value }}" {{#unless editovatelne}}disabled{{/unless}}>
-        <span class="jad-lomitko">/ {{ hp.max }}</span>
+        <input type="number" class="jad-pole" data-cesta="system.attributes.hp.value" data-typ="cislo" value="{{ hp.value }}" {{#unless editovatelne}}disabled{{/unless}}>
+        <span class="jad-lomitko">/</span>
+        <input type="number" class="jad-pole jad-max" data-cesta="system.attributes.hp.max" data-typ="cislo-null" value="{{ hp.maxRucne }}" placeholder="{{ hp.max }}"
+               data-tooltip="Maximum Bodů výdrže – prázdné = automaticky podle povolání" {{#unless editovatelne}}disabled{{/unless}}>
       </span>
       <span class="jad-popis">Body výdrže</span>
     </div>
     <div class="jad-ctverec jad-docasne">
-      <span class="jad-hodnota"><input type="number" name="system.attributes.hp.temp" value="{{ hp.temp }}" placeholder="—" {{#unless editovatelne}}disabled{{/unless}}></span>
+      <span class="jad-hodnota"><input type="number" class="jad-pole" data-cesta="system.attributes.hp.temp" data-typ="cislo-null" value="{{ hp.temp }}" placeholder="—" {{#unless editovatelne}}disabled{{/unless}}></span>
       <span class="jad-popis">Dočasné BV</span>
     </div>
   </div>
@@ -39,7 +42,7 @@
         <ul class="jad-dovednosti">
           {{#each dovednosti}}
           <li data-key="{{ key }}">
-            <span class="jad-hvezda {{ zdatnost }}" data-tooltip="Zdatnost"></span>
+            <a class="jad-hvezda {{ zdatnost }}" data-action="jadZdatnost" data-cesta="system.skills.{{ key }}.value" data-druh="cyklus" data-tooltip="Zdatnost (kliknutím změníš)"></a>
             <span class="jad-nazev {{ @root.rollableClass }}" data-action="roll" data-type="skill">{{ nazev }}</span>
             <span class="jad-cislo">{{ celkem }}</span>
           </li>
@@ -52,7 +55,7 @@
       <ul class="jad-dovednosti">
         {{#each pomucky}}
         <li data-key="{{ key }}">
-          <span class="jad-hvezda {{ zdatnost }}"></span>
+          <a class="jad-hvezda {{ zdatnost }}" data-action="jadZdatnost" data-cesta="system.tools.{{ key }}.value" data-druh="cyklus" data-tooltip="Zdatnost (kliknutím změníš)"></a>
           <span class="jad-nazev {{ @root.rollableClass }}" data-action="roll" data-type="tool">{{ nazev }}</span>
           <span class="jad-cislo">{{ celkem }}</span>
         </li>
@@ -66,10 +69,10 @@
     <div class="jad-sloupec jad-stred">
       <h3 class="jad-pruh">Obranné číslo</h3>
       <div class="jad-zdatnosti-zbroj">
-        <span class="jad-hvezda {{#if zbroj.lehke}}plna{{/if}}"></span> Lehké
-        <span class="jad-hvezda {{#if zbroj.stredni}}plna{{/if}}"></span> Střední
-        <span class="jad-hvezda {{#if zbroj.tezke}}plna{{/if}}"></span> Těžké
-        <span class="jad-hvezda {{#if zbroj.stity}}plna{{/if}}"></span> Štíty
+        <a class="jad-hvezda {{#if zbroj.lehke}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.armorProf.value" data-klic="lgt" data-druh="sada"></a> Lehké
+        <a class="jad-hvezda {{#if zbroj.stredni}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.armorProf.value" data-klic="med" data-druh="sada"></a> Střední
+        <a class="jad-hvezda {{#if zbroj.tezke}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.armorProf.value" data-klic="hvy" data-druh="sada"></a> Těžké
+        <a class="jad-hvezda {{#if zbroj.stity}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.armorProf.value" data-klic="shl" data-druh="sada"></a> Štíty
       </div>
 
       <div class="jad-dvojice">
@@ -78,7 +81,7 @@
           <ul class="jad-dovednosti">
             {{#each vlastnosti}}
             <li data-ability="{{ key }}">
-              <span class="jad-hvezda {{#if zachranaZdatnost}}plna{{/if}}"></span>
+              <a class="jad-hvezda {{#if zachranaZdatnost}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.abilities.{{ key }}.proficient" data-druh="prepinac" data-tooltip="Zdatnost v záchraně"></a>
               <span class="jad-nazev saving-throw {{ @root.rollableClass }}" data-action="roll" data-type="ability">{{ nazev }}</span>
               <span class="jad-cislo">{{ zachrana }}</span>
             </li>
@@ -108,7 +111,7 @@
           {{#each kouzla.pozice}}
           <label class="jad-pozice-stupen" data-tooltip="Pozice {{ stupen }}. Stupně – zbývá">
             <span>{{ stupen }}.</span>
-            <input type="number" name="{{ cesta }}" value="{{ value }}" min="0" max="{{ max }}" {{#unless ../editovatelne}}disabled{{/unless}}>
+            <input type="number" class="jad-pole" data-cesta="{{ cesta }}" data-typ="cislo" value="{{ value }}" min="0" max="{{ max }}" {{#unless ../editovatelne}}disabled{{/unless}}>
             <span class="jad-lomitko">/ {{ max }}</span>
           </label>
           {{/each}}
@@ -118,7 +121,7 @@
         <div class="jad-pozice">
           <label class="jad-pozice-stupen jad-pakt" data-tooltip="Magie paktu">
             <span>Pakt ({{ kouzla.pakt.stupen }}.)</span>
-            <input type="number" name="system.spells.pact.value" value="{{ kouzla.pakt.value }}" min="0" max="{{ kouzla.pakt.max }}">
+            <input type="number" class="jad-pole" data-cesta="system.spells.pact.value" data-typ="cislo" value="{{ kouzla.pakt.value }}" min="0" max="{{ kouzla.pakt.max }}">
             <span class="jad-lomitko">/ {{ kouzla.pakt.max }}</span>
           </label>
         </div>
@@ -132,13 +135,14 @@
       {{/if}}
 
       <h3 class="jad-pruh">Zbraně</h3>
-      <table class="jad-tabulka">
+      <table class="jad-tabulka jad-zbrane">
         <thead><tr><th>Zbraň / útok</th><th>Bonus</th><th>Zásah</th><th>Typ</th><th>Dosah</th></tr></thead>
         <tbody>
           {{#each zbrane}}
-          <tr data-item-id="{{ id }}">
-            <td><a data-action="jadPouzit" data-tooltip="Použít"><img src="{{ img }}" alt=""> {{ nazev }}</a></td>
-            <td>{{ bonus }}</td><td>{{ zasah }}</td><td>{{ typ }}</td><td>{{ dosah }}</td>
+          <tr data-item-id="{{ id }}" class="{{#unless vybaveno}}jad-nevybaveno{{/unless}}">
+            <td><a class="jad-vybavit {{#if vybaveno}}aktivni{{/if}}" data-action="jadVybavit" data-tooltip="{{#if vybaveno}}V ruce / vybavená – kliknutím odložíš{{else}}Nevybavená – kliknutím vezmeš do ruky{{/if}}"><i class="fas fa-hand-fist"></i></a>
+              <a class="jad-polozka" data-action="jadPouzit" data-tooltip="Zaútočit"><img src="{{ img }}" alt=""><span>{{ nazev }}</span></a></td>
+            <td class="jad-stred-text"><strong>{{ bonus }}</strong></td><td class="jad-stred-text">{{ zasah }}</td><td>{{ typ }}</td><td>{{ dosah }}</td>
           </tr>
           {{else}}
           <tr><td colspan="5" class="jad-prazdne">Žádné zbraně</td></tr>
@@ -146,15 +150,14 @@
         </tbody>
       </table>
       <div class="jad-zdatnosti-zbroj">
-        <span class="jad-hvezda {{#if zbraneZdatnost.jednoduche}}plna{{/if}}"></span> Jednoduché
-        <span class="jad-hvezda {{#if zbraneZdatnost.valecne}}plna{{/if}}"></span> Válečné
+        <a class="jad-hvezda {{#if zbraneZdatnost.jednoduche}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.weaponProf.value" data-klic="sim" data-druh="sada"></a> Jednoduché
+        <a class="jad-hvezda {{#if zbraneZdatnost.valecne}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.weaponProf.value" data-klic="mar" data-druh="sada"></a> Válečné
       </div>
     </div>
 
     {{!-- Pravý sloupec --}}
     <div class="jad-sloupec jad-pravy">
       <h3 class="jad-pruh">Rychlost (dle Naložení)</h3>
-      {{#if rychlost.stupne}}
       <div class="jad-rychlost">
         {{#each rychlost.stupne}}
         <div class="jad-rychlost-stupen {{#if aktivni}}aktivni{{/if}}">
@@ -162,10 +165,7 @@
         </div>
         {{/each}}
       </div>
-      {{else}}
-      <div class="jad-rychlost"><div class="jad-rychlost-stupen aktivni"><span class="jad-cislo-velke">{{ rychlost.aktualni }}</span><span class="jad-popis">Přetížení</span></div></div>
-      {{/if}}
-      <p class="jad-poznamka">Rychlost v {{ rychlost.jednotky }}</p>
+      <p class="jad-poznamka {{#if rychlost.pretizeni}}jad-varovani{{/if}}">{{ rychlost.text }}</p>
 
       <div class="jad-dvojice">
         <div>
@@ -182,7 +182,7 @@
       </div>
 
       <h3 class="jad-pruh">Poznámky k hraní postavy</h3>
-      <textarea class="jad-poznamky" name="flags.jeskyne-a-draci.poznamkyHrani" rows="8" {{#unless editovatelne}}disabled{{/unless}}>{{ poznamky }}</textarea>
+      <textarea data-cesta="flags.jeskyne-a-draci.poznamkyHrani" data-typ="text" class="jad-pole jad-poznamky" rows="8" {{#unless editovatelne}}disabled{{/unless}}>{{ poznamky }}</textarea>
     </div>
   </div>
 
@@ -192,7 +192,7 @@
       <div class="jad-mince">
         <span>Peníze:</span>
         {{#each mince}}
-        <label><input type="number" name="{{ cesta }}" value="{{ hodnota }}" min="0" {{#unless ../editovatelne}}disabled{{/unless}}> {{ nazev }}</label>
+        <label><input type="number" class="jad-pole" data-cesta="{{ cesta }}" data-typ="cislo" value="{{ hodnota }}" min="0" {{#unless ../editovatelne}}disabled{{/unless}}> {{ nazev }}</label>
         {{/each}}
       </div>
       {{#if nalozeni}}
@@ -208,14 +208,15 @@
         <thead><tr><th>Předmět</th><th>Ks</th><th data-tooltip="Řádky (prázdné = automaticky)">Řádky</th><th></th></tr></thead>
         <tbody>
           {{#each vybava}}
-          <tr data-item-id="{{ id }}" class="{{#if odlozeno}}jad-odlozeno{{/if}}">
+          <tr data-item-id="{{ id }}" class="{{#if odlozeno}}jad-odlozeno{{/if}} {{#if jeKontejner}}jad-kontejner-radek{{/if}}">
             <td>
-              <a data-action="jadOtevrit"><img src="{{ img }}" alt=""> {{ nazev }}</a>
-              {{#if vKontejneru}}<span class="jad-kontejner">v: {{ vKontejneru }}</span>{{/if}}
+              <span class="jad-odsazeni" style="padding-left: {{ odsazeni }}px"></span>
+              {{#if vybavitelne}}<a class="jad-vybavit {{#if vybaveno}}aktivni{{/if}}" data-action="jadVybavit" data-tooltip="{{#if vybaveno}}Vybaveno – kliknutím sundáš{{else}}Nevybaveno – kliknutím vybavíš{{/if}}"><i class="fas fa-shield-halved"></i></a>{{/if}}
+              <a class="jad-polozka" data-action="jadOtevrit"><img src="{{ img }}" alt=""><span>{{ nazev }}</span></a>
             </td>
             <td>{{ pocet }}</td>
             <td><input type="text" class="jad-radky" data-item-id="{{ id }}" value="{{ rucne }}" placeholder="{{ radky }}" {{#unless ../editovatelne}}disabled{{/unless}}></td>
-            <td>{{#if jeKontejner}}<a data-action="jadOdlozit" data-tooltip="{{#if vlastniOdlozeni}}Vzít zpět{{else}}Odložit (nepočítat do Naložení){{/if}}"><i class="fas {{#if vlastniOdlozeni}}fa-hand{{else}}fa-arrow-down{{/if}}"></i></a>{{/if}}</td>
+            <td>{{#if jeKontejner}}<a data-action="jadOdlozit" data-tooltip="{{#if vlastniOdlozeni}}Vzít zpět{{else}}Odložit i s obsahem (nepočítá se do Naložení){{/if}}"><i class="fas {{#if vlastniOdlozeni}}fa-hand{{else}}fa-arrow-down{{/if}}"></i></a>{{/if}}</td>
           </tr>
           {{else}}
           <tr><td colspan="4" class="jad-prazdne">Žádná výbava</td></tr>
@@ -230,7 +231,7 @@
       <ul class="jad-seznam">
         {{#each schopnosti}}
         <li data-item-id="{{ id }}">
-          <a data-action="jadPouzit"><img src="{{ img }}" alt=""> {{ nazev }}</a>
+          <a class="jad-polozka" data-action="jadPouzit"><img src="{{ img }}" alt=""><span>{{ nazev }}</span></a>
           {{#if pouziti}}<span class="jad-pouziti">{{ pouziti }}</span>{{/if}}
           <a class="jad-detail" data-action="jadOtevrit" data-tooltip="Otevřít"><i class="fas fa-book-open"></i></a>
         </li>
@@ -238,6 +239,7 @@
       </ul>
     </div>
   </div>
+  {{/if}}
   <p class="jad-paticka"><img class="jad-logo" src="modules/jeskyne-a-draci/assets/logo-jad-komunitni.jpg" alt="JaD – komunitní tvorba"><br>Deník JaD – komunitní tvorba podle Licence JaD pro třetí strany.</p>
 {{/with}}
 </section>
