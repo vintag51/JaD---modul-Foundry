@@ -618,8 +618,84 @@
       "ability": "",
       "preparation": {}
     },
-    "startingEquipment": [],
-    "wealth": "",
+    "startingEquipment": [
+      {
+        "_id": "GhH7ZAzARjlaiIfD",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "ZLxHULRtKCYEjHcX",
+        "group": "GhH7ZAzARjlaiIfD",
+        "sort": 200000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "DbFuoKE0xGtg13LK",
+        "group": "ZLxHULRtKCYEjHcX",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.OihvbI9i0VxIBk8m",
+        "count": null
+      },
+      {
+        "_id": "Quhzt246uqQKXhH3",
+        "group": "ZLxHULRtKCYEjHcX",
+        "sort": 400000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "martialM",
+        "count": null
+      },
+      {
+        "_id": "qtCeVlfZBUl9W8jJ",
+        "group": "GhH7ZAzARjlaiIfD",
+        "sort": 500000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "F9emQD0XHbTf0tMa",
+        "group": "qtCeVlfZBUl9W8jJ",
+        "sort": 600000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.8g10SpRbpcJm52PO",
+        "count": 2
+      },
+      {
+        "_id": "OeC2nd7vi428LxTk",
+        "group": "qtCeVlfZBUl9W8jJ",
+        "sort": 700000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "sim",
+        "count": null
+      },
+      {
+        "_id": "XA5EPHGYQBptsuTX",
+        "group": "GhH7ZAzARjlaiIfD",
+        "sort": 800000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.LcNmi3qssEyYP7JZ",
+        "count": null
+      },
+      {
+        "_id": "sqVXmPuWYTRuRSkp",
+        "group": "GhH7ZAzARjlaiIfD",
+        "sort": 900000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.n15YAxQ2BxutOk3p",
+        "count": 4
+      }
+    ],
+    "wealth": "2d4 * 10",
     "primaryAbility": {
       "value": [],
       "all": true

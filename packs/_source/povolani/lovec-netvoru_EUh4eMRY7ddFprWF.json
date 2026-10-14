@@ -759,8 +759,148 @@
       "ability": "",
       "preparation": {}
     },
-    "startingEquipment": [],
-    "wealth": "",
+    "startingEquipment": [
+      {
+        "_id": "NyHDvJ3nVYin18ZD",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "xUgrIPjSqJcVKuln",
+        "group": "NyHDvJ3nVYin18ZD",
+        "sort": 200000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "xoy6Mv3pXOgoLgrt",
+        "group": "xUgrIPjSqJcVKuln",
+        "sort": 300000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "mar",
+        "count": null
+      },
+      {
+        "_id": "4q9TaF9AlQwsQQtg",
+        "group": "xUgrIPjSqJcVKuln",
+        "sort": 400000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "F1OjdOGb8WQX6jq9",
+        "group": "4q9TaF9AlQwsQQtg",
+        "sort": 500000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "sim",
+        "count": null
+      },
+      {
+        "_id": "k96XDTmH3u9I588T",
+        "group": "4q9TaF9AlQwsQQtg",
+        "sort": 600000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "sim",
+        "count": null
+      },
+      {
+        "_id": "MuDFdnpgfhRhPkA9",
+        "group": "NyHDvJ3nVYin18ZD",
+        "sort": 700000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "GqdsiNTMs0QfYiAy",
+        "group": "MuDFdnpgfhRhPkA9",
+        "sort": 800000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "qYq2H1T1B8TIYsX0",
+        "group": "GqdsiNTMs0QfYiAy",
+        "sort": 900000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.AYXZCWYneorv0cDO",
+        "count": null
+      },
+      {
+        "_id": "6m0WfkGIsUh8fIjy",
+        "group": "GqdsiNTMs0QfYiAy",
+        "sort": 1000000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.XYOeHAs3f9D0jv6G",
+        "count": null
+      },
+      {
+        "_id": "5WBZkEQyJhNrtk2f",
+        "group": "MuDFdnpgfhRhPkA9",
+        "sort": 1100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "kVsKFEfyWixlUhuB",
+        "group": "5WBZkEQyJhNrtk2f",
+        "sort": 1200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.601Km7dKV92bzDQZ",
+        "count": null
+      },
+      {
+        "_id": "aPavNaRzyefgF5si",
+        "group": "5WBZkEQyJhNrtk2f",
+        "sort": 1300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.XYOeHAs3f9D0jv6G",
+        "count": null
+      },
+      {
+        "_id": "D5nrtbIPMjk8fPEF",
+        "group": "NyHDvJ3nVYin18ZD",
+        "sort": 1400000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "9d2hjPuRtbIbHviy",
+        "group": "D5nrtbIPMjk8fPEF",
+        "sort": 1500000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.SpNeVBfuy1DlHZf3",
+        "count": null
+      },
+      {
+        "_id": "Wl2pfFYlwDuxmJWE",
+        "group": "D5nrtbIPMjk8fPEF",
+        "sort": 1600000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.JIBbMF7YVwjzoE1F",
+        "count": null
+      },
+      {
+        "_id": "KgOHC8qsRFSTxE0v",
+        "group": "NyHDvJ3nVYin18ZD",
+        "sort": 1700000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.LcNmi3qssEyYP7JZ",
+        "count": null
+      }
+    ],
+    "wealth": "5d4 * 10",
     "primaryAbility": {
       "value": [
         "int"

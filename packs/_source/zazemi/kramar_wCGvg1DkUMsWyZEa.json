@@ -96,7 +96,42 @@
         "value": {}
       }
     },
-    "startingEquipment": [],
+    "startingEquipment": [
+      {
+        "_id": "p3CltIsmz8ynwM7t",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "mw20fRmmjSRXccmk",
+        "group": "p3CltIsmz8ynwM7t",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.lRHEY2Aeq2awHet7",
+        "count": 10
+      },
+      {
+        "_id": "zk4v6CPTTMHXAz9C",
+        "group": "p3CltIsmz8ynwM7t",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.U95CAq4qKrYqvZRX",
+        "count": null
+      },
+      {
+        "_id": "6ODL1aqrpq8vG7eQ",
+        "group": "p3CltIsmz8ynwM7t",
+        "sort": 400000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 15
+      }
+    ],
     "identifier": "kramar"
   },
   "flags": {

@@ -95,7 +95,60 @@
         "value": {}
       }
     },
-    "startingEquipment": [],
+    "startingEquipment": [
+      {
+        "_id": "cA43zXPXyDNHDLIq",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "dqSWJvg64LQex2sA",
+        "group": "cA43zXPXyDNHDLIq",
+        "sort": 200000,
+        "type": "focus",
+        "requiresProficiency": false,
+        "key": "holy",
+        "count": null
+      },
+      {
+        "_id": "umY0wsv98nKCZ7WV",
+        "group": "cA43zXPXyDNHDLIq",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.YxBlNQUaslgT0RAK",
+        "count": null
+      },
+      {
+        "_id": "TKjVqZlGadrAMrDD",
+        "group": "cA43zXPXyDNHDLIq",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.iTO8mR0JUgdlSs7x",
+        "count": null
+      },
+      {
+        "_id": "SZOjvbczdzSkaG4v",
+        "group": "cA43zXPXyDNHDLIq",
+        "sort": 500000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.PDIzddht2dqYN1VY",
+        "count": null
+      },
+      {
+        "_id": "jay7pBJa5yrDdhoQ",
+        "group": "cA43zXPXyDNHDLIq",
+        "sort": 600000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 15
+      }
+    ],
     "identifier": "akolyta"
   },
   "flags": {

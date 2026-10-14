@@ -226,9 +226,12 @@ def main():
 
     f_pov = slozka("Povolání")
     polozky, chyby = [], []
+    from vybava import startovni
+    vyb = (yaml.safe_load(open(os.path.join(KOREN, "data/vybaveni-startovni.yml"), encoding="utf-8")) or {}).get("povolani", {})
     for f in soubory:
         p = yaml.safe_load(open(f, encoding="utf-8"))
         cid = p["identifikator"]
+        sv = vyb.get(os.path.basename(f)[:-4], {})
         f_sch = slozka(f"Schopnosti – {p['nazev']}")
         ids = {}
         for s in p.get("schopnosti", []):
@@ -283,7 +286,8 @@ def main():
                        "source": {"custom": "", "book": "Jeskyně a draci", "page": "", "license": LICENCE, "rules": "2014"},
                        "identifier": cid, "levels": 1, "hd": {"denomination": p["kostka"], "spent": 0, "additional": ""},
                        "hitDice": p["kostka"], "hitDiceUsed": 0, "advancement": adv,
-                       "spellcasting": kouzleni(p.get("kouzleni")), "startingEquipment": [], "wealth": p.get("bohatstvi", ""),
+                       "spellcasting": kouzleni(p.get("kouzleni")), "startingEquipment": startovni(f"povolani-{cid}", sv.get("vybaveni"), chyby),
+                       "wealth": sv.get("bohatstvi") or p.get("bohatstvi", ""),
                        "primaryAbility": {"value": p.get("hlavni", []), "all": True}},
             "flags": {MODUL: {"povolani": cid}}, "_stats": stats(), "_key": f"!items!{cls_id}"})
 

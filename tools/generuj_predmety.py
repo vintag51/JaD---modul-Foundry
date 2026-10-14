@@ -26,6 +26,9 @@ VZACNOST = {"common": "Běžný", "uncommon": "Neobvyklý", "rare": "Vzácný", 
 DRUH_ZBRANE = {"simpleM": "Jednoduchá zbraň na blízko", "martialM": "Válečná zbraň na blízko",
                "simpleR": "Jednoduchá zbraň na dálku", "martialR": "Válečná zbraň na dálku"}
 TYPY_ODOLNOSTI = ["acid", "cold", "fire", "force", "lightning", "necrotic", "poison", "psychic", "radiant", "thunder"]
+OHNISKA = {"crystal": ("arcane", "crystal"), "orb": ("arcane", "orb"), "rod": ("arcane", "rod"), "staff": ("arcane", "staff"),
+           "wand": ("arcane", "wand"), "sprig-of-mistletoe": ("druidic", "mistletoe"), "wooden-staff": ("druidic", "woodenstaff"),
+           "yew-wand": ("druidic", "yewwand"), "amulet": ("holy", "amulet"), "emblem": ("holy", "emblem"), "reliquary": ("holy", "reliquary")}
 PLUS_VZACNOST_ZBRANE = {1: "uncommon", 2: "rare", 3: "veryRare"}
 
 
@@ -228,6 +231,7 @@ def main():
                 nase_kouzla[k["system"]["identifier"]] = k["_id"]
 
     g = Generator(srd, preklady, nase_kouzla)
+    zaklad_ids = {"weaponIds": {}, "armorIds": {}, "toolIds": {}, "focus": {}}
     zakladni = g.slozka("Vybavení")
     mag_root = g.slozka("Kouzelné předměty")
     s_zbr = g.slozka("Zbraně", "Vybavení")
@@ -257,6 +261,7 @@ def main():
         d["system"]["description"] = {"value": popis(radky, z.get("d"), f"{SRD_VYB}#tabulka-zbrani-na-blizko", "Vybavení"), "chat": ""}
         g.pridej(d)
         zbrane_srd[z["srd"]] = z["n"]
+        zaklad_ids["weaponIds"][d["system"]["type"]["baseItem"]] = uuid(d["_id"])
 
     # ----- palné zbraně
     s_pal = g.slozka("Palné zbraně", "Vybavení")
@@ -265,7 +270,7 @@ def main():
         d = g.novy(f"palna/{z['k']}", vzor, z["n"], s_pal)
         sy = d["system"]
         nastav(d, z)
-        sy["type"] = {"value": z["druh"], "baseItem": ""}
+        sy["type"] = {"value": z["druh"], "baseItem": {"pistole": "pistol", "musketa": "musket"}.get(z["k"], "")}
         sy["identifier"] = z["k"]
         sy["properties"] = list(z["vl"])
         sy.pop("ammunition", None)
@@ -298,6 +303,8 @@ def main():
                     "(SO 8 + Oprava obratnosti + Zdatnostní bonus střelce), jinak utrpí 1k8 Ohnivého zásahu." if z.get("vybusna") else ""))
         sy["description"] = {"value": popis(radky, pravidla, f"{SRD_VYB}#palne-zbrane", "Palné zbraně"), "chat": ""}
         g.pridej(d)
+        if sy["type"]["baseItem"]:
+            zaklad_ids["weaponIds"][sy["type"]["baseItem"]] = uuid(d["_id"])
 
     # ----- zbroje
     zbroje_srd = {}
@@ -316,6 +323,7 @@ def main():
         sy["description"] = {"value": popis(radky, z.get("d"), f"{SRD_VYB}#zbroje-a-stity", "Vybavení"), "chat": ""}
         g.pridej(d)
         zbroje_srd[z["srd"]] = z["n"]
+        zaklad_ids["armorIds"][d["system"]["type"]["baseItem"]] = uuid(d["_id"])
 
     # ----- výbava a pomůcky
     jmena_stem = {}
@@ -353,6 +361,12 @@ def main():
             nastav(d, z)
             d["system"]["description"] = {"value": popis([], z.get("d"), f"{SRD_VYB}#{kotva}", "Vybavení"), "chat": ""}
             g.pridej(d)
+            if d["type"] == "tool" and z.get("srd"):
+                zaklad_ids["toolIds"][d["system"]["type"]["baseItem"]] = uuid(d["_id"])
+            stem = (z.get("srd") or "").split("/")[-1]
+            if stem in OHNISKA:
+                typ, klic = OHNISKA[stem]
+                zaklad_ids["focus"].setdefault(typ, {})[klic] = uuid(d["_id"])
 
     # ----- balíčky (kontejnery s obsahem)
     obsah_jmena = data.get("obsah", {})
@@ -561,6 +575,8 @@ def main():
     with open(os.path.join(KOREN, "scripts/registr-predmetu.mjs"), "w", encoding="utf-8") as fh:
         fh.write("// Vygenerováno nástrojem tools/generuj_predmety.py – neupravovat ručně.\n")
         fh.write(f"export const NASTROJE = {json.dumps(nastroje, ensure_ascii=False, indent=2)};\n")
+        fh.write("// Základní předměty dnd5e (volby zbraní, zbrojí, pomůcek a ohnisek) → české předměty JaD.\n")
+        fh.write(f"export const ZAKLADNI = {json.dumps(zaklad_ids, ensure_ascii=False, indent=2)};\n")
 
     print(f"Předměty: {len(g.polozky)} ({dict(Counter(d['type'] for d in g.polozky))}), složek {len(folders)}")
     if g.nepr_akt:

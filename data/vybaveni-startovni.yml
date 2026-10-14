@@ -1,0 +1,113 @@
+# Počáteční vybavení povolání a zázemí JaD → system.startingEquipment v dnd5e.
+# Prvek: "Název předmětu" (z kompendia JaD – Předměty), "2x Název" (počet kusů),
+#        {zbran: simpleM|simpleR|martialM|martialR|sim|mar}, {zbroj: light|medium|heavy|shield},
+#        {ohnisko: arcane|druidic|holy}, {nastroj: art|music|game}, {mince: 10} (zlaťáky),
+#        [or, ...] výběr jedné možnosti, [and, ...] skupina.
+# Všechny prvky na nejvyšší úrovni postava dostane.
+
+povolani:
+  alchymista:
+    bohatstvi: 4d4 * 10
+    vybaveni:
+      - [or, Krátký meč, {zbran: simpleM}]
+      - [or, [and, Ruční kuše, Šipky do kuše], {zbran: simpleR}]
+      - Alchymistická truhla
+      - Kožená zbroj
+      - Dýka
+  barbar:
+    bohatstvi: 2d4 * 10
+    vybaveni:
+      - [or, Obouruční sekera, {zbran: martialM}]
+      - [or, 2x Sekera, {zbran: sim}]
+      - Průzkumníkův balíček
+      - 4x Oštěp
+  bard:
+    bohatstvi: 5d4 * 10
+    vybaveni:
+      - [or, Rapír, Dlouhý meč, {zbran: sim}]
+      - [or, Diplomatův balíček, Bavičův balíček]
+      - [or, Loutna, {nastroj: music}]
+      - Kožená zbroj
+      - Dýka
+  bojovnik:
+    bohatstvi: 5d4 * 10
+    vybaveni:
+      - [or, Kroužková zbroj, [and, Kožená zbroj, Dlouhý luk, Šípy]]
+      - [or, [and, {zbran: mar}, Štít], [and, {zbran: mar}, {zbran: mar}]]
+      - [or, [and, Lehká kuše, Šipky do kuše], 2x Sekera]
+      - [or, Jeskyňářův balíček, Průzkumníkův balíček]
+  carodej:
+    bohatstvi: 3d4 * 10
+    vybaveni:
+      - [or, [and, Lehká kuše, Šipky do kuše], {zbran: sim}]
+      - [or, Brašnička na suroviny, {ohnisko: arcane}]
+      - [or, Jeskyňářův balíček, Průzkumníkův balíček]
+      - 2x Dýka
+  cernokneznik:
+    bohatstvi: 4d4 * 10
+    vybaveni:
+      - [or, [and, Lehká kuše, Šipky do kuše], {zbran: sim}]
+      - [or, Brašnička na suroviny, {ohnisko: arcane}]
+      - [or, Učencův balíček, Jeskyňářův balíček]
+      - Kožená zbroj
+      - {zbran: sim}
+      - 2x Dýka
+  druid:
+    bohatstvi: 2d4 * 10
+    vybaveni:
+      - [or, Štít, {zbran: sim}]
+      - [or, Šavle, {zbran: simpleM}]
+      - Průzkumníkův balíček
+      - Kožená zbroj
+      - {ohnisko: druidic}
+  klerik:
+    bohatstvi: 5d4 * 10
+    vybaveni:
+      - [or, Palcát, Válečné kladivo]
+      - [or, Šupinová zbroj, Kožená zbroj]
+      - [or, [and, Lehká kuše, Šipky do kuše], {zbran: sim}]
+      - [or, Kněžský balíček, Průzkumníkův balíček]
+      - Štít
+      - {ohnisko: holy}
+  kouzelnik:
+    bohatstvi: 4d4 * 10
+    vybaveni:
+      - [or, Hůl, Dýka]
+      - [or, Brašnička na suroviny, {ohnisko: arcane}]
+      - [or, Učencův balíček, Průzkumníkův balíček]
+      - Kniha kouzel
+  lovec-netvoru:
+    bohatstvi: 5d4 * 10
+    vybaveni:
+      - [or, {zbran: mar}, [and, {zbran: sim}, {zbran: sim}]]
+      - [or, [and, Lehká kuše, Šipky do kuše], [and, Ruční kuše, Šipky do kuše]]
+      - [or, Okovaná kožená zbroj, Šupinová zbroj]
+      - Průzkumníkův balíček
+  tulak:
+    bohatstvi: 4d4 * 10
+    vybaveni:
+      - [or, Rapír, Krátký meč]
+      - [or, [and, Krátký luk, Toulec, Šípy], Krátký meč]
+      - [or, Lupičův balíček, Jeskyňářův balíček, Průzkumníkův balíček]
+      - Kožená zbroj
+      - 2x Dýka
+      - Zlodějské náčiní
+
+# Zázemí: co nemá v kompendiu obdobu (trofeje, dopisy, rodokmeny…), zůstává jen v popisu.
+zazemi:
+  akolyta: [{ohnisko: holy}, Kniha, Roucho, "Oblečení, obyčejné", {mince: 15}]
+  bylinkar: [Bylinkářská souprava, Travičská souprava, Kniha, "Oblečení, obyčejné", {mince: 10}]
+  delnik: [Lopata, Sekera, "Kotlík, železný", "Oblečení, obyčejné", {mince: 5}]
+  strazce: ["Oblečení, obyčejné", {mince: 10}]
+  lovec: [Hůl, Lovecká past, "Oblečení, cestovní", {mince: 10}]
+  chovatel: [Bylinkářská souprava, {nastroj: music}, "Oblečení, cestovní", {mince: 10}]
+  kramar: [10x Flakónek, "Oblečení, cestovní", {mince: 15}]
+  mudrc: [Inkoust (malá lahvička), Inkoustové pero, "Oblečení, obyčejné", {mince: 10}]
+  pobuda: [Zlodějské náčiní, Páčidlo, "Oblečení, obyčejné", {mince: 10}]
+  pravnik: [Inkoust (malá lahvička), Inkoustové pero, Kniha, "Oblečení, obyčejné", {mince: 10}]
+  sluha: [Nádobí na cesty, "Oblečení, obyčejné", {mince: 10}]
+  slechtic: ["Oblečení, zdobené", Pečetní prsten, Pergamen (jeden list), {mince: 25}]
+  urednik: [Tubus na mapy či svitky, Inkoust (malá lahvička), Inkoustové pero, Pergamen (jeden list), "Oblečení, zdobené", {mince: 10}]
+  vojak: [[or, Sada kostek, Balíček karet], "Oblečení, obyčejné", {mince: 10}]
+  zasvecenec: [Kniha, Kaligrafické náčiní, "Oblečení, cestovní", {mince: 15}]
+  zbojnik: [Hůl, Lovecká past, "Oblečení, cestovní", {mince: 10}]

@@ -95,7 +95,33 @@
         "value": {}
       }
     },
-    "startingEquipment": [],
+    "startingEquipment": [
+      {
+        "_id": "21ckWvKvqpy4QAq8",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "SZqyCx42MD2b6qal",
+        "group": "21ckWvKvqpy4QAq8",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.PDIzddht2dqYN1VY",
+        "count": null
+      },
+      {
+        "_id": "2jpjpuqgMdRhEiJe",
+        "group": "21ckWvKvqpy4QAq8",
+        "sort": 300000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 10
+      }
+    ],
     "identifier": "strazce"
   },
   "flags": {

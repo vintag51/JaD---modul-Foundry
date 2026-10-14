@@ -12,6 +12,10 @@
       "Mince": {
         "Nazev": "Mince JaD (zl, st, md)",
         "Napoveda": "Přejmenuje zlaté, stříbrné a měděné mince dnd5e na zlaťáky, stříbrňáky a měďáky. Převodní poměry se nemění."
+      },
+      "Predmety": {
+        "Nazev": "České základní předměty",
+        "Napoveda": "Volby zbraní, zbrojí, pomůcek a ohniskových předmětů (počáteční vybavení, zdatnosti) nabízejí předměty z kompendia JaD – Předměty a vybavení místo anglických předmětů dnd5e."
       }
     },
     "Import": {

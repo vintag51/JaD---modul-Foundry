@@ -12,6 +12,10 @@
       "Mince": {
         "Nazev": "JaD coins (zl, st, md)",
         "Napoveda": "Renames dnd5e gold, silver and copper pieces to the Czech JaD coins. Conversion rates stay the same."
+      },
+      "Predmety": {
+        "Nazev": "Czech base items",
+        "Napoveda": "Weapon, armor, tool and focus choices (starting equipment, proficiencies) offer items from the JaD Items compendium instead of the English dnd5e items."
       }
     },
     "Import": {

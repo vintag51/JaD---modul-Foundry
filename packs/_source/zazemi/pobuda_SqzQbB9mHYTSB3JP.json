@@ -103,7 +103,51 @@
         "value": {}
       }
     },
-    "startingEquipment": [],
+    "startingEquipment": [
+      {
+        "_id": "MrElf0Cy92HaIDcL",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "7WMLACFtmz5iDkTh",
+        "group": "MrElf0Cy92HaIDcL",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.xN3xclOejgmqFGiL",
+        "count": null
+      },
+      {
+        "_id": "lBFeI6zYyYrLSF8u",
+        "group": "MrElf0Cy92HaIDcL",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.cognQ1j4O6r93QAO",
+        "count": null
+      },
+      {
+        "_id": "KbfsfhdYtGxqwwBp",
+        "group": "MrElf0Cy92HaIDcL",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.PDIzddht2dqYN1VY",
+        "count": null
+      },
+      {
+        "_id": "pSy63rgsSptHuy8w",
+        "group": "MrElf0Cy92HaIDcL",
+        "sort": 500000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 10
+      }
+    ],
     "identifier": "pobuda"
   },
   "flags": {

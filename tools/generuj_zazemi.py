@@ -53,7 +53,9 @@ def main():
     slozky = {n: foundry_id(f"zazemi-slozka-{n}") for n in ("Zázemí", "Schopnosti zázemí", "Odbornosti")}
     folders = [{"_id": fid, "name": n, "type": "Item", "sorting": "a", "sort": (i + 1) * 100000, "folder": None,
                 "color": None, "flags": {}, "_key": f"!folders!{fid}"} for i, (n, fid) in enumerate(slozky.items())]
-    polozky = []
+    polozky, chyby = [], []
+    from vybava import startovni
+    vyb = (nacti_yaml("vybaveni-startovni.yml") or {}).get("zazemi", {})
 
     for k, z in d["zazemi"].items():
         s = z["schopnost"]
@@ -79,7 +81,8 @@ def main():
                         "sort": 0, "ownership": {"default": 0}, "effects": [],
                         "system": {"description": {"value": popis, "chat": ""},
                                    "source": {"custom": "", "book": "Jeskyně a draci", "page": "", "license": LICENCE, "rules": "2014"},
-                                   "advancement": adv, "startingEquipment": [], "identifier": slug(k)},
+                                   "advancement": adv, "startingEquipment": startovni(f"zazemi-{k}", vyb.get(k), chyby),
+                                   "identifier": slug(k)},
                         "flags": {MODUL: {"zazemi": k}}, "_stats": stats(), "_key": f"!items!{bid}"})
 
     for k, o in d["odbornosti"].items():
@@ -114,7 +117,9 @@ def main():
                    "items": [{**bez(p), "effects": [bez(e) for e in p.get("effects", [])]} for p in polozky]}, fh, ensure_ascii=False)
     from collections import Counter
     print("Zázemí a odbornosti:", dict(Counter(p["system"]["type"]["value"] if p["type"] == "feat" else p["type"] for p in polozky)))
-    return 0
+    for c in chyby:
+        print("CHYBA:", c)
+    return 1 if chyby else 0
 
 
 if __name__ == "__main__":

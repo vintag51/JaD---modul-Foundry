@@ -415,8 +415,93 @@
         "formula": "@abilities.wis.mod + @classes.druid.levels"
       }
     },
-    "startingEquipment": [],
-    "wealth": "",
+    "startingEquipment": [
+      {
+        "_id": "aFcdzIinZKsCUIA8",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "r4qttxoNL7T2Ifg8",
+        "group": "aFcdzIinZKsCUIA8",
+        "sort": 200000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "g61sVHan0jI5YdCt",
+        "group": "r4qttxoNL7T2Ifg8",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.4kR7wXgiJ97hgvmi",
+        "count": null
+      },
+      {
+        "_id": "sRcAnUhNixMYYpqN",
+        "group": "r4qttxoNL7T2Ifg8",
+        "sort": 400000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "sim",
+        "count": null
+      },
+      {
+        "_id": "36DZ9M2JCi2UhDlB",
+        "group": "aFcdzIinZKsCUIA8",
+        "sort": 500000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "TudKIVJxzucKfOYM",
+        "group": "36DZ9M2JCi2UhDlB",
+        "sort": 600000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.6TxjpzmfIl501mQB",
+        "count": null
+      },
+      {
+        "_id": "fhOjnnI202Vvb0dW",
+        "group": "36DZ9M2JCi2UhDlB",
+        "sort": 700000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "simpleM",
+        "count": null
+      },
+      {
+        "_id": "AbEkxLTaYLQOXkfh",
+        "group": "aFcdzIinZKsCUIA8",
+        "sort": 800000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.LcNmi3qssEyYP7JZ",
+        "count": null
+      },
+      {
+        "_id": "kqN5ghoeF1OfW43o",
+        "group": "aFcdzIinZKsCUIA8",
+        "sort": 900000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.lzLUH4Du6ml7S3ZG",
+        "count": null
+      },
+      {
+        "_id": "ImEGvSLK6EBdvyR6",
+        "group": "aFcdzIinZKsCUIA8",
+        "sort": 1000000,
+        "type": "focus",
+        "requiresProficiency": false,
+        "key": "druidic",
+        "count": null
+      }
+    ],
+    "wealth": "2d4 * 10",
     "primaryAbility": {
       "value": [],
       "all": true

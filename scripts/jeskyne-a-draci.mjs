@@ -8,7 +8,7 @@
  * - ohlásí, zda je aktivní volitelná vrstva Midi-QOL.
  */
 
-import { NASTROJE } from "./registr-predmetu.mjs";
+import { NASTROJE, ZAKLADNI } from "./registr-predmetu.mjs";
 
 const MODUL = "jeskyne-a-draci";
 const DATA = `modules/${MODUL}/data/kompendium`;
@@ -43,8 +43,14 @@ Hooks.once("init", () => {
     scope: "world", config: true, type: Boolean, default: true, requiresReload: true
   });
   game.settings.register(MODUL, "importovanaVerze", { scope: "world", config: false, type: String, default: "" });
+  game.settings.register(MODUL, "ceskePredmety", {
+    name: "JAD.Nastaveni.Predmety.Nazev",
+    hint: "JAD.Nastaveni.Predmety.Napoveda",
+    scope: "world", config: true, type: Boolean, default: true, requiresReload: true
+  });
   registrovatNastroje();
   if ( game.settings.get(MODUL, "jmenaMinci") ) prejmenovatMince();
+  if ( game.settings.get(MODUL, "ceskePredmety") ) nahraditZakladniPredmety();
 });
 
 /** Pomůcky JaD, které v dnd5e nejsou (Hornické nářadí…), přidá do seznamu nástrojů pro Zdatnosti. */
@@ -52,6 +58,26 @@ function registrovatNastroje() {
   const nastroje = CONFIG.DND5E?.tools;
   if ( !nastroje ) return;
   for ( const [klic, data] of Object.entries(NASTROJE) ) nastroje[klic] ??= data;
+}
+
+/**
+ * Volby „jakákoliv Jednoduchá zbraň“, zbroje, pomůcky a ohniskové předměty (počáteční vybavení, zdatnosti)
+ * budou nabízet české předměty z kompendia JaD – Předměty místo anglických předmětů dnd5e.
+ */
+function nahraditZakladniPredmety() {
+  const cfg = CONFIG.DND5E;
+  if ( !cfg ) return;
+  for ( const klic of ["weaponIds", "armorIds"] ) {
+    if ( cfg[klic] ) Object.assign(cfg[klic], ZAKLADNI[klic]);
+  }
+  for ( const [klic, id] of Object.entries(ZAKLADNI.toolIds) ) {
+    const n = cfg.tools?.[klic];
+    if ( n && (typeof n === "object") ) n.id = id;
+  }
+  for ( const [typ, polozky] of Object.entries(ZAKLADNI.focus) ) {
+    const f = cfg.focusTypes?.[typ];
+    if ( f?.itemIds ) Object.assign(f.itemIds, polozky);
+  }
 }
 
 /** Zlaťáky, stříbrňáky a měďáky místo gp/sp/cp (převodní poměry zůstávají). */

@@ -91,6 +91,8 @@ zbroje:
 vybava:
   - {srd: potion/alchemists-fire, n: Alchymistický oheň (Láhev), cena: 50 zl, lb: 1,
      d: "Láhev lepkavé směsi, která na vzduchu vzplane. Hodíš ji jako Improvizovanou zbraň až na 4 sáhy; zasažený hoří a na začátku každého svého Tahu utrpí 1k4 + tvá Oprava obratnosti Ohnivého zásahu. Oheň uhasí Akcí a úspěšnou Záchranou na Obratnost se SO 10."}
+  - {k: alchymisticka-truhla, zaklad: container/chest, n: Alchymistická truhla, cena: 50 zl, lb: 10, typ: container, s: Kontejnery,
+     d: "Truhla, brašna či kabát plný kapes, z něhož Alchymista vytahuje, co potřebuje. Pojme aspoň 60 litrů, zabírá 2 Řádky a počítá se za magický a nehořlavý předmět. Novou si Alchymista pořídí za 50 zl a den práce v dílně; počet Použití truhly to nemění."}
   - {srd: container/backpack, n: Batoh, cena: 2 zl, lb: 5, s: Kontejnery,
      d: "Pojme zhruba 30 litrů. S Batohem uneseš o 5 Řádků více (Těžké naložení) a v nouzi ho můžeš i s obsahem rychle odhodit."}
   - {srd: trinket/portable-ram, n: Beranidlo (přenosné), cena: 4 zl, lb: 35,

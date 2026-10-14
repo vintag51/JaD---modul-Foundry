@@ -813,8 +813,134 @@
         "formula": ""
       }
     },
-    "startingEquipment": [],
-    "wealth": "",
+    "startingEquipment": [
+      {
+        "_id": "bObwCqk8mWoKPW7S",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "j6CgIC6VS1takWfo",
+        "group": "bObwCqk8mWoKPW7S",
+        "sort": 200000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "lTAhvQydh3sI0eVq",
+        "group": "j6CgIC6VS1takWfo",
+        "sort": 300000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "WFpBuY1eJCqCdM36",
+        "group": "lTAhvQydh3sI0eVq",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.AYXZCWYneorv0cDO",
+        "count": null
+      },
+      {
+        "_id": "wSgA0cbZVt0p2LS1",
+        "group": "lTAhvQydh3sI0eVq",
+        "sort": 500000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.XYOeHAs3f9D0jv6G",
+        "count": null
+      },
+      {
+        "_id": "k0lEGy3KDR1dxqJN",
+        "group": "j6CgIC6VS1takWfo",
+        "sort": 600000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "sim",
+        "count": null
+      },
+      {
+        "_id": "0eXWzLzOmixUzeFH",
+        "group": "bObwCqk8mWoKPW7S",
+        "sort": 700000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "hWTio449VYSTU9wy",
+        "group": "0eXWzLzOmixUzeFH",
+        "sort": 800000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.NZJh9mfZeisgRnmc",
+        "count": null
+      },
+      {
+        "_id": "uW2nFxAbSnEix0mh",
+        "group": "0eXWzLzOmixUzeFH",
+        "sort": 900000,
+        "type": "focus",
+        "requiresProficiency": false,
+        "key": "arcane",
+        "count": null
+      },
+      {
+        "_id": "sw30PLjoLaK3y83P",
+        "group": "bObwCqk8mWoKPW7S",
+        "sort": 1000000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "H56nDldxeRnTxTWM",
+        "group": "sw30PLjoLaK3y83P",
+        "sort": 1100000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.Z5ze3G2o8K1qiMSp",
+        "count": null
+      },
+      {
+        "_id": "IIul7R6BFRK3c4qH",
+        "group": "sw30PLjoLaK3y83P",
+        "sort": 1200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.P7TNNgXtPGSULEDJ",
+        "count": null
+      },
+      {
+        "_id": "zgvy6FwGUEhFzuxq",
+        "group": "bObwCqk8mWoKPW7S",
+        "sort": 1300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.lzLUH4Du6ml7S3ZG",
+        "count": null
+      },
+      {
+        "_id": "ERyb9JTPAz0A46td",
+        "group": "bObwCqk8mWoKPW7S",
+        "sort": 1400000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "sim",
+        "count": null
+      },
+      {
+        "_id": "nQ3zsvkardx3qP6g",
+        "group": "bObwCqk8mWoKPW7S",
+        "sort": 1500000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.21m1tg18G2fWLgmD",
+        "count": 2
+      }
+    ],
+    "wealth": "4d4 * 10",
     "primaryAbility": {
       "value": [],
       "all": true

@@ -95,7 +95,42 @@
         "value": {}
       }
     },
-    "startingEquipment": [],
+    "startingEquipment": [
+      {
+        "_id": "sjwnEF7TLTjKnK20",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "2jzJ2zDl7HWERjwH",
+        "group": "sjwnEF7TLTjKnK20",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.ByaKsO5fPzE17DGt",
+        "count": null
+      },
+      {
+        "_id": "OUFeRQVvy4bNLhtQ",
+        "group": "sjwnEF7TLTjKnK20",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.PDIzddht2dqYN1VY",
+        "count": null
+      },
+      {
+        "_id": "8OqTzJihOZt9xkdl",
+        "group": "sjwnEF7TLTjKnK20",
+        "sort": 400000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 10
+      }
+    ],
     "identifier": "sluha"
   },
   "flags": {

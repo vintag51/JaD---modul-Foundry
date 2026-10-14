@@ -73,7 +73,60 @@
         "value": {}
       }
     },
-    "startingEquipment": [],
+    "startingEquipment": [
+      {
+        "_id": "EjP2mubSnot9lSHn",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "8ewTTmuXWQ91pG99",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.FjiDbuYxXVCONEqh",
+        "count": null
+      },
+      {
+        "_id": "euTE8vLd5XXOGwxb",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.pH0kBxDAjv1Y5gZz",
+        "count": null
+      },
+      {
+        "_id": "zS0ORk13XtM091q6",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.YxBlNQUaslgT0RAK",
+        "count": null
+      },
+      {
+        "_id": "8FySFRJ3bIZ999Hh",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 500000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.PDIzddht2dqYN1VY",
+        "count": null
+      },
+      {
+        "_id": "DbPBi4cMKhZrvffT",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 600000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 10
+      }
+    ],
     "identifier": "bylinkar"
   },
   "flags": {

@@ -26,6 +26,7 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 | **10 odborností** (Gigant, Mistr sekerník, Nedůvěřivost, Nepolapitelnost, Obranný manévr, Pašerák, Pestrý původ, Válečný výcvik, Vílí spřízněnost, Vrozená mystická síla) s postupem, použitími a efekty | hotovo |
 | **Vybavení JaD** – 37 zbraní, 7 palných zbraní (volitelné pravidlo), 12 zbrojí a štít, 109 položek výbavy, ohniskových předmětů, střel a jezdeckých potřeb, 39 pomůcek a 7 balíčků s obsahem; ceny v zl/st/md, dostřely v sázích | hotovo |
 | **Kouzelné předměty JaD** – 116 předmětů z 11. kapitoly (celkem 336 položek včetně variant): lektvary, zbroje, zbraně (i všechny varianty +1 až +3), hůlky, berly, prsteny, svitky, posilující, vyvolávací, cestovatelské předměty a 4 artefakty; automatizace z SRD dnd5e, kouzla odkazují do kompendia JaD | hotovo |
+| **Počáteční vybavení** povolání (volby podle JaD + náhodné bohatství) a zázemí napojené na předměty JaD; volby „jakákoliv zbraň/zbroj/pomůcka/ohnisko“ nabízejí české předměty | hotovo |
 | Mince přejmenované na zlaťáky, stříbrňáky a měďáky (lze vypnout v nastavení) | hotovo |
 
 ## Instalace
@@ -61,10 +62,10 @@ data/vlastni-kouzla.yml        ─┘
 git clone https://github.com/foundryvtt/dnd5e ../dnd5e
 pip install pyyaml
 python3 tools/generuj.py --dnd5e ../dnd5e        # --jednotky ft pro stopy místo sáhů
+python3 tools/generuj_predmety.py --dnd5e ../dnd5e # předměty, vybavení a kouzelné předměty
 python3 tools/generuj_rasy.py                     # rasy
 python3 tools/generuj_povolani.py                 # povolání a obory
 python3 tools/generuj_zazemi.py                   # zázemí a odbornosti
-python3 tools/generuj_predmety.py --dnd5e ../dnd5e # předměty, vybavení a kouzelné předměty
 python3 tools/kontrola.py                        # strukturní kontrola
 npm install && npm run build                     # LevelDB kompendia (Foundry CLI)
 ```

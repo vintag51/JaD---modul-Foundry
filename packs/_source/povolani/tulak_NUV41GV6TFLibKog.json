@@ -640,8 +640,152 @@
       "ability": "",
       "preparation": {}
     },
-    "startingEquipment": [],
-    "wealth": "",
+    "startingEquipment": [
+      {
+        "_id": "mvTpkPwD3LfS93jc",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "abaoHeDnz7I34Dlx",
+        "group": "mvTpkPwD3LfS93jc",
+        "sort": 200000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "ATP55d6eILrbD9IM",
+        "group": "abaoHeDnz7I34Dlx",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.j45EWWF2EnwAWtqA",
+        "count": null
+      },
+      {
+        "_id": "WuuvCN2fOFQim14C",
+        "group": "abaoHeDnz7I34Dlx",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.4dsj5AgfWRouVrVe",
+        "count": null
+      },
+      {
+        "_id": "aD88fM8dRYzJPlu5",
+        "group": "mvTpkPwD3LfS93jc",
+        "sort": 500000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "T9WuvyvhEcS2PEcR",
+        "group": "aD88fM8dRYzJPlu5",
+        "sort": 600000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "Vax02Oyow1CkgiCv",
+        "group": "T9WuvyvhEcS2PEcR",
+        "sort": 700000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.oOffqeXAf50F7uWQ",
+        "count": null
+      },
+      {
+        "_id": "dplMFNei8Xfh0tDh",
+        "group": "T9WuvyvhEcS2PEcR",
+        "sort": 800000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.FcDuUtkSGX2c0ryF",
+        "count": null
+      },
+      {
+        "_id": "ZllL5EVQIc50RAms",
+        "group": "T9WuvyvhEcS2PEcR",
+        "sort": 900000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.qsl3ICCT1bgmnCzX",
+        "count": null
+      },
+      {
+        "_id": "q9xzlYSFID4BUqxS",
+        "group": "aD88fM8dRYzJPlu5",
+        "sort": 1000000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.4dsj5AgfWRouVrVe",
+        "count": null
+      },
+      {
+        "_id": "XYv7DdOn0ug95JNJ",
+        "group": "mvTpkPwD3LfS93jc",
+        "sort": 1100000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "Fvf1qEu8DiI5BdCC",
+        "group": "XYv7DdOn0ug95JNJ",
+        "sort": 1200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.dcqgwIFRXwpA0EC9",
+        "count": null
+      },
+      {
+        "_id": "KasDZlJv4cxsl8qy",
+        "group": "XYv7DdOn0ug95JNJ",
+        "sort": 1300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.P7TNNgXtPGSULEDJ",
+        "count": null
+      },
+      {
+        "_id": "kzcxmRyb7m1yF4MY",
+        "group": "XYv7DdOn0ug95JNJ",
+        "sort": 1400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.LcNmi3qssEyYP7JZ",
+        "count": null
+      },
+      {
+        "_id": "vZccn8jFr8rL8tQc",
+        "group": "mvTpkPwD3LfS93jc",
+        "sort": 1500000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.lzLUH4Du6ml7S3ZG",
+        "count": null
+      },
+      {
+        "_id": "ebkgyj2OzltrdRiX",
+        "group": "mvTpkPwD3LfS93jc",
+        "sort": 1600000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.21m1tg18G2fWLgmD",
+        "count": 2
+      },
+      {
+        "_id": "8YCCc1RSFs2cux6Z",
+        "group": "mvTpkPwD3LfS93jc",
+        "sort": 1700000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.xN3xclOejgmqFGiL",
+        "count": null
+      }
+    ],
+    "wealth": "4d4 * 10",
     "primaryAbility": {
       "value": [],
       "all": true

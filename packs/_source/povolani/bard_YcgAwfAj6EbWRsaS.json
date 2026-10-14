@@ -566,8 +566,118 @@
         "formula": ""
       }
     },
-    "startingEquipment": [],
-    "wealth": "",
+    "startingEquipment": [
+      {
+        "_id": "iCcXeVu4BVrqMTlS",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "YzTjVHqYCED81hqn",
+        "group": "iCcXeVu4BVrqMTlS",
+        "sort": 200000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "wAuUZeyd4AA1jR2r",
+        "group": "YzTjVHqYCED81hqn",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.j45EWWF2EnwAWtqA",
+        "count": null
+      },
+      {
+        "_id": "o2nullROJjT8J0Br",
+        "group": "YzTjVHqYCED81hqn",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.7nPnqe6Qdlsyjqrw",
+        "count": null
+      },
+      {
+        "_id": "YsDNjktlSW8j6FBu",
+        "group": "YzTjVHqYCED81hqn",
+        "sort": 500000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "sim",
+        "count": null
+      },
+      {
+        "_id": "7gDHtBxs2ESpkSL6",
+        "group": "iCcXeVu4BVrqMTlS",
+        "sort": 600000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "PP4CT4xmF2egB4Op",
+        "group": "7gDHtBxs2ESpkSL6",
+        "sort": 700000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.g3qGTymckYQTYDn3",
+        "count": null
+      },
+      {
+        "_id": "8W6d0YJu5W2T5rWf",
+        "group": "7gDHtBxs2ESpkSL6",
+        "sort": 800000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.Zd7LbWUbcWLs0ZQt",
+        "count": null
+      },
+      {
+        "_id": "gqJvaBev2clDpvrM",
+        "group": "iCcXeVu4BVrqMTlS",
+        "sort": 900000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "KPgnCStN3uV4psNe",
+        "group": "gqJvaBev2clDpvrM",
+        "sort": 1000000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.eDf78nTtbutUzchj",
+        "count": null
+      },
+      {
+        "_id": "2k6gjZMx34UfWIoY",
+        "group": "gqJvaBev2clDpvrM",
+        "sort": 1100000,
+        "type": "tool",
+        "requiresProficiency": false,
+        "key": "music",
+        "count": null
+      },
+      {
+        "_id": "bn6eUhdUeICD3Vz6",
+        "group": "iCcXeVu4BVrqMTlS",
+        "sort": 1200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.lzLUH4Du6ml7S3ZG",
+        "count": null
+      },
+      {
+        "_id": "trX7j482JeEbQFlI",
+        "group": "iCcXeVu4BVrqMTlS",
+        "sort": 1300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.21m1tg18G2fWLgmD",
+        "count": null
+      }
+    ],
+    "wealth": "5d4 * 10",
     "primaryAbility": {
       "value": [],
       "all": true
