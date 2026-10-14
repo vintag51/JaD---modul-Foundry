@@ -167,18 +167,20 @@ export function vytvoritDenik() {
       const zdroj = actor._source?.system?.attributes?.movement ?? {};
       const zakladni = (snizeni !== undefined) ? aktualni + (snizeni * krok)
         : Number(pohyb.fromSpecies?.walk || zdroj.speeds?.walk || zdroj.walk || aktualni);
-      const jednotkaText = jednotky === "sah" ? "sáhů" : (CONFIG.DND5E.movementUnits?.[jednotky]?.abbreviation ?? jednotky);
+      const zkratka = jednotky === "sah" ? "sáh." : (game.i18n.localize(CONFIG.DND5E.movementUnits?.[jednotky]?.abbreviation ?? jednotky));
+      const jednotkaText = jednotky === "sah" ? "sáhů" : zkratka;
+      const postih = n => (jednotky === "sah" ? `−${n} ${n === 1 ? "sáh" : "sáhy"}` : `−${n * krok} ${zkratka}`);
       const stupne = [
-        { nazev: "Lehké", hodnota: zakladni, aktivni: stupen === "lehke" },
-        { nazev: "Střední (−1)", hodnota: Math.max(zakladni - krok, 0), aktivni: stupen === "stredni" },
-        { nazev: "Těžké (−3)", hodnota: Math.max(zakladni - (3 * krok), 0), aktivni: stupen === "tezke" }
+        { nazev: "Lehké", hodnota: `${zakladni}`, aktivni: stupen === "lehke" },
+        { nazev: `Střední (${postih(1)})`, hodnota: `${Math.max(zakladni - krok, 0)}`, aktivni: stupen === "stredni" },
+        { nazev: `Těžké (${postih(3)})`, hodnota: `${Math.max(zakladni - (3 * krok), 0)}`, aktivni: stupen === "tezke" }
       ];
       if ( stupen === "pretizeni" ) stupne.push({ nazev: "Přetížení", hodnota: aktualni, aktivni: true });
       const rychlost = {
         stupne, pretizeni: stupen === "pretizeni",
         text: stupen === "pretizeni"
           ? `Přetížení: neseš víc, než uneseš – můžeš se pohybovat nejvýš ${aktualni} ${jednotkaText} za kolo (věci jen táhneš). Odlož část výbavy.`
-          : `Aktuální rychlost: ${aktualni} ${jednotkaText} za kolo.`
+          : `Aktuální rychlost: ${aktualni} ${jednotkaText} za kolo.${jednotky === "sah" ? "" : " Postava nemá rychlost v sázích – přidej jí rasu JaD, nebo uprav rychlost v nastavení pohybu."}`
       };
 
       // Kouzla

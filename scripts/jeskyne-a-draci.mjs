@@ -67,6 +67,7 @@ Hooks.once("init", () => {
     if ( !game.settings.get(MODUL, "nosnostZjednodusena") ) CONFIG.DND5E.armorSpeedReduction = 0;
   }
   registrovatDenik();
+  vynutitRychlostRasy();
   if ( game.settings.get(MODUL, "ceskePredmety") ) nahraditZakladniPredmety();
 });
 
@@ -95,6 +96,21 @@ function nahraditZakladniPredmety() {
     const f = cfg.focusTypes?.[typ];
     if ( f?.itemIds ) Object.assign(f.itemIds, polozky);
   }
+}
+
+/**
+ * Rasy JaD mají rychlost a vidění ve tmě v sázích. dnd5e je ale použije jen tam, kde postava nemá vlastní
+ * hodnotu – nová postava má často výchozích 30 stop, a pak by se rychlost v sázích ztratila (30 „sáhů“).
+ * U postav s rasou JaD proto hodnoty rasy (včetně jednotek) vždy přednostně použijeme.
+ */
+function vynutitRychlostRasy() {
+  const AF = globalThis.dnd5e?.dataModels?.actor?.AttributesFields;
+  if ( !AF?.prepareRace ) return;
+  const puvodni = AF.prepareRace;
+  AF.prepareRace = function(race, options = {}) {
+    const jad = !!race?.flags?.[MODUL]?.rasa;
+    return puvodni.call(this, race, jad ? { ...options, force: true } : options);
+  };
 }
 
 /** Zlaťáky, stříbrňáky a měďáky místo gp/sp/cp (převodní poměry zůstávají). */
