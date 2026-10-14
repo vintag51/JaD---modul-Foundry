@@ -1,0 +1,324 @@
+{
+  "_id": "MUe0WOmC4RGiDuYt",
+  "name": "Bestiální podoba",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "d1Jq8p1Vnymxxwvq",
+  "sort": 3000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "MXB7XVOZADgZjhsF",
+      "name": "Bestiální podoba",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "+1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.bonuses.mwak.damage",
+            "value": "+1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Bestiální podoba</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.MUe0WOmC4RGiDuYt",
+      "_key": "!items.effects!MUe0WOmC4RGiDuYt.MXB7XVOZADgZjhsF"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Bonusovou akcí se na hodinu částečně proměníš – odolnost vůči nemagickým fyzickým zásahům, +1 OČ, silnější zásahy na blízko a drápy (1k6, od 11. Úrovně 1k8), ale hrozí ti krvavé běsnění.</p><p><em>Úroveň: 3., 7., 11., 18.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#rad-bestie\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "(1 + floor(@classes.lovec-netvoru.levels / 11))",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Řád bestie 3",
+    "properties": [],
+    "activities": {
+      "zKm2XVhWypPiCkpO": {
+        "_id": "zKm2XVhWypPiCkpO",
+        "type": "utility",
+        "name": "Proměnit se",
+        "img": "",
+        "sort": 0,
+        "flags": {},
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "MXB7XVOZADgZjhsF",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "SXHWNWt2JBxS6SJD": {
+        "_id": "SXHWNWt2JBxS6SJD",
+        "type": "attack",
+        "name": "Drápy",
+        "img": "",
+        "sort": 100000,
+        "flags": {},
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "slashing"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "1d6 + @abilities.dex.mod"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "bestialni-podoba",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MUe0WOmC4RGiDuYt"
+}

@@ -1,0 +1,237 @@
+{
+  "_id": "k6v4vsUeyWghzF0A",
+  "name": "Lektvar šplhání",
+  "type": "consumable",
+  "img": "icons/consumables/potions/potion-vial-corked-labeled-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Běžný</em></p><p>Na hodinu získáš Rychlost šplhání rovnou své Rychlosti a Výhodu k Atletice při šplhání.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#lektvar-splhani\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "common",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": "",
+      "name": "Unidentified Potion"
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {
+      "tbj9v3KiTzZwBX2E": {
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "I7ywYX94qSyb3GRk",
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "units": "touch",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "sah",
+            "stationary": false
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "name": "Vypít",
+        "img": "",
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireAttunement": false,
+          "requireIdentification": false
+        },
+        "behaviors": [],
+        "flags": {},
+        "_id": "tbj9v3KiTzZwBX2E"
+      }
+    },
+    "attuned": false,
+    "identifier": "potion-of-climbing"
+  },
+  "effects": [
+    {
+      "name": "Šplhání",
+      "img": "icons/environment/wilderness/terrain-rocks-brown.webp",
+      "origin": "Compendium.jeskyne-a-draci.predmety.Item.k6v4vsUeyWghzF0A",
+      "transfer": false,
+      "_id": "I7ywYX94qSyb3GRk",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.climb",
+            "type": "upgrade",
+            "value": "@attributes.movement.walk",
+            "phase": "initial",
+            "priority": null
+          }
+        ],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek předmětu <em>Lektvar šplhání</em>.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!k6v4vsUeyWghzF0A.I7ywYX94qSyb3GRk"
+    }
+  ],
+  "folder": "qBb2ap6iqOYoK6Y6",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "lektvar-splhani"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!k6v4vsUeyWghzF0A"
+}

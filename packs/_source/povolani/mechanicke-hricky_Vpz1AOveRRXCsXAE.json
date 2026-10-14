@@ -1,0 +1,130 @@
+{
+  "_id": "Vpz1AOveRRXCsXAE",
+  "name": "Mechanické hříčky",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "WASRWwMSNIjYy3Gd",
+  "sort": 3000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Za 3 Použití truhly akcí vyrobíš mechanickou hříčku (cibule</p><ul><li>Dobrodruhovy cibule</li><li>Karbidka</li><li>Lano s kotvičkou a navijákem</li><li>Lovecká nástraha</li><li>Mechanikovo nářadí</li><li>Univerzální nůž</li><li>Vyšetřovatelovo nářadí</li></ul><p><em>Úroveň: 3.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#divotvurce\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Divotvůrce 3",
+    "properties": [],
+    "activities": {
+      "KxiMI0sxeQJ2tRum": {
+        "_id": "KxiMI0sxeQJ2tRum",
+        "type": "utility",
+        "name": "Vyrobit hříčku",
+        "img": "",
+        "sort": 0,
+        "flags": {},
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "mechanicke-hricky",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Vpz1AOveRRXCsXAE"
+}

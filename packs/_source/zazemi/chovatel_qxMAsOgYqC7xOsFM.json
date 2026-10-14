@@ -1,0 +1,146 @@
+{
+  "_id": "qxMAsOgYqC7xOsFM",
+  "name": "Chovatel",
+  "type": "background",
+  "img": "icons/sundries/documents/document-sealed-brown-red.webp",
+  "folder": "7GrKTBBtDvTixn6S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Většinu života jsi strávil se zvířaty – na pastvinách, v sedle či v domácnosti.</p><p><strong>Schopnost:</strong> Mezi zvířaty</p><p><strong>Vybavení:</strong> Bylinkářská souprava, hudební nástroj, cestovní oblečení, 10 zl.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#chovatel\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "advancement": {
+      "tZdV8U7HKAUkQL57": {
+        "_id": "tZdV8U7HKAUkQL57",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ani",
+            "skills:nat",
+            "tool:herb"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:music:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "krihjpgEWVFni7IQ": {
+        "_id": "krihjpgEWVFni7IQ",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Schopnost zázemí",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.zazemi.Item.kgrBIhdWWM6noDnG",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "_id": "gmh0yPvXgR3bth9A",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "8i14LVNMdB5LUHJD",
+        "group": "gmh0yPvXgR3bth9A",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.FjiDbuYxXVCONEqh",
+        "count": null
+      },
+      {
+        "_id": "eLY0lgnis7QtQa9S",
+        "group": "gmh0yPvXgR3bth9A",
+        "sort": 300000,
+        "type": "tool",
+        "requiresProficiency": false,
+        "key": "music",
+        "count": null
+      },
+      {
+        "_id": "2nLH1gNpn4v5PII4",
+        "group": "gmh0yPvXgR3bth9A",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.U95CAq4qKrYqvZRX",
+        "count": null
+      },
+      {
+        "_id": "lyFrXEVhcVBhqac4",
+        "group": "gmh0yPvXgR3bth9A",
+        "sort": 500000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 10
+      }
+    ],
+    "identifier": "chovatel"
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "zazemi": "chovatel"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qxMAsOgYqC7xOsFM"
+}

@@ -1,0 +1,93 @@
+{
+  "_id": "81UtRiqYGldCockm",
+  "name": "Seveřan – Drsný původ",
+  "type": "feat",
+  "img": "icons/sundries/books/book-embossed-bound-brown.webp",
+  "folder": "zwCo1dCsL1r0dIP3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Drsné podnebí tě zocelilo – namísto Společenského nadání získáš Zdatnost v jedné přežití napomáhající Dovednosti a umíš zacházet s loděmi a navigačními pomůckami (a s rybářskými potřebami).</p><p><em>Pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Člověk",
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "severan",
+    "advancement": {
+      "W8wsvU4ZilrkvAtI": {
+        "_id": "W8wsvU4ZilrkvAtI",
+        "type": "Trait",
+        "level": 0,
+        "title": "Seveřan – Drsný původ",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:navg",
+            "vehicle:water"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:ath",
+                "skills:med",
+                "skills:sur",
+                "skills:nat"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      }
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!81UtRiqYGldCockm"
+}

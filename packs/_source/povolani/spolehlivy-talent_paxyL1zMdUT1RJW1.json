@@ -1,0 +1,93 @@
+{
+  "_id": "paxyL1zMdUT1RJW1",
+  "name": "Spolehlivý talent",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "FrDTip84yOALdb2e",
+  "sort": 11000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "ttSnBxtCIhgdCcnd",
+      "name": "Spolehlivý talent",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.reliableTalent",
+            "value": "true",
+            "type": "override",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Spolehlivý talent (pasivní schopnost)</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.paxyL1zMdUT1RJW1",
+      "_key": "!items.effects!paxyL1zMdUT1RJW1.ttSnBxtCIhgdCcnd"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Při Ověření se Zdatností se hod 9 a méně počítá jako 10.</p><p><em>Úroveň: 11.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#tulak\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Tulák 11",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "spolehlivy-talent",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!paxyL1zMdUT1RJW1"
+}

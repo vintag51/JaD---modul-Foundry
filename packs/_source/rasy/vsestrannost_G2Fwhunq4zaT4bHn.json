@@ -1,0 +1,130 @@
+{
+  "_id": "G2Fwhunq4zaT4bHn",
+  "name": "Všestrannost",
+  "type": "feat",
+  "img": "icons/sundries/books/book-embossed-bound-brown.webp",
+  "folder": "zwCo1dCsL1r0dIP3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Varianta místo Momentů hrdinství – získáš další Dovednost, sadu pomůcek, hudební nástroj a jazyk a jednu svou Zdatnost povýšíš na Kvalifikaci.</p><p><em>Pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Člověk",
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "vsestrannost",
+    "advancement": {
+      "gl5vCkwN4uQOdbkc": {
+        "_id": "gl5vCkwN4uQOdbkc",
+        "type": "Trait",
+        "level": 0,
+        "title": "Všestrannost",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*"
+              ]
+            },
+            {
+              "count": 1,
+              "pool": [
+                "tool:*"
+              ]
+            },
+            {
+              "count": 1,
+              "pool": [
+                "tool:music:*"
+              ]
+            },
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "9ETC8CBRKGSpUJSl": {
+        "_id": "9ETC8CBRKGSpUJSl",
+        "type": "Trait",
+        "level": 0,
+        "title": "Všestrannost",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "expertise",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*",
+                "tool:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      }
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!G2Fwhunq4zaT4bHn"
+}

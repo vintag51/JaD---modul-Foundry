@@ -1,0 +1,178 @@
+{
+  "_id": "Tp3KMYQE2lzUpNXS",
+  "name": "Zastrašující vzhled",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "1UTUgR1PVLLddB1J",
+  "sort": 10000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "9jcybChs61eL94sp",
+      "name": "Vystrašený (Zastrašující vzhled)",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [
+        "frightened"
+      ],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": 6,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "changes": []
+      },
+      "description": "<p>Zastrašující vzhled</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.Tp3KMYQE2lzUpNXS",
+      "_key": "!items.effects!Tp3KMYQE2lzUpNXS.9jcybChs61eL94sp"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Akcí vyděsíš tvora do 6 sáhů (Záchranný hod na Moudrost proti tvému SO odvozenému od Charismatu); efekt můžeš akcí prodlužovat.</p><p><em>Úroveň: 10.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#cesta-berserkra\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Cesta berserkra 10",
+    "properties": [],
+    "activities": {
+      "BXSw8uK1L23bIuKs": {
+        "_id": "BXSw8uK1L23bIuKs",
+        "type": "save",
+        "name": "Zastrašit",
+        "img": "",
+        "sort": 0,
+        "flags": {},
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9jcybChs61eL94sp",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "units": "sah",
+          "value": "6",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "zastrasujici-vzhled",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Tp3KMYQE2lzUpNXS"
+}

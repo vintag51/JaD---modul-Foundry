@@ -1,0 +1,196 @@
+{
+  "_id": "1FDXJ8MUFMgh9kpT",
+  "name": "Trpaslík – Skalní trpaslík",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "folder": "qzOuc9xP9ZV3EDJI",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Proslulí mistři řemesel z pevností na rozhraní podzemí a povrchu, neústupní jako kámen.</p><ul><li><strong>Rychlost:</strong> 5 sáhů</li><li><strong>Vidění ve tmě:</strong> 12 sáhů</li></ul><p><em>Více o rase: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/3-rasy.html#skalni-trpaslici\" target=\"_blank\">SRD Jeskyní a draků – Rasy</a>; pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#schopnosti-ras\" target=\"_blank\">Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "skalni-trpaslik",
+    "advancement": {
+      "ynNJiX6wYOlD26pT": {
+        "_id": "ynNJiX6wYOlD26pT",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "str": 2,
+            "dex": 0,
+            "con": 2,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "OSwyMtcioMhlJ10l": {
+        "_id": "OSwyMtcioMhlJ10l",
+        "type": "Size",
+        "level": 1,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": ""
+        }
+      },
+      "gYNwM0sI8OyrkI8n": {
+        "_id": "gYNwM0sI8OyrkI8n",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common",
+            "languages:standard:dwarvish"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "4DQAa6MafnRrSAsQ": {
+        "_id": "4DQAa6MafnRrSAsQ",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti a odolnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "dr:poison",
+            "weapon:sim:handaxe",
+            "weapon:mar:battleaxe"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:smith",
+                "tool:art:mason",
+                "tool:art:carpenter"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "DkL0f0U1Lg0E7dbe": {
+        "_id": "DkL0f0U1Lg0E7dbe",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Rasové schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.cMVgbjqcaJm14Eti",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.ic0v0Hg5PKjX8i9d",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.gldh7pZjU5wBrX1c",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.l4KhgF9gHLEtxwBx",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "movement": {
+      "walk": 5,
+      "climb": null,
+      "burrow": null,
+      "fly": null,
+      "swim": null,
+      "units": "sah",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 12,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": "sah",
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "Trpaslík",
+      "custom": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": "skalni-trpaslik"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1FDXJ8MUFMgh9kpT"
+}

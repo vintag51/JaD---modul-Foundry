@@ -1,0 +1,93 @@
+{
+  "_id": "5WtXsjdIZ4P01kqF",
+  "name": "Brýle noci",
+  "type": "equipment",
+  "img": "icons/equipment/head/goggles-leather-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Neobvyklý</em></p><p>Vidění ve tmě na 12 sáhů; máš-li ho už, prodlouží se o 12 sáhů.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#bryle-noci\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 0,
+      "dex": 0,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {},
+    "attuned": false,
+    "identifier": "goggles-of-night"
+  },
+  "effects": [],
+  "folder": "b95M8MAcPJIN4EQf",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "bryle-noci"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5WtXsjdIZ4P01kqF"
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Udidlo a uzda",
+  "type": "equipment",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/6-vybaveni.html#vybava-dobrodruhu\" target=\"_blank\">SRD Jeskyní a draků – Vybavení</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+      "value": "clothing",
+      "baseItem": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "bit-and-bridle"
+  },
+  "effects": [],
+  "folder": "6QThVRJNk5HgtZIj",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "radky": 0.3333
+    }
+  },
+  "_id": "jz2RjX8Nqea5ZyYe",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!jz2RjX8Nqea5ZyYe"
+}

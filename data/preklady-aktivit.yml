@@ -1,0 +1,365 @@
+# Překlady názvů aktivit (activities) a efektů ze SRD 5.1 do češtiny JaD.
+# Vzory typu "<Kouzlo>: Nth Level" řeší generátor automaticky.
+
+aktivity:
+  "": ""
+  Cast: Seslat
+  Cast Spell: Seslat kouzlo
+  "Cast: 8 Hours": "Seslat: 8 hodin"
+  "Cast: Action": "Seslat: akce"
+  "1. Red Ray": "1. Červený paprsek"
+  "2. Orange Ray": "2. Oranžový paprsek"
+  "3. Yellow Ray": "3. Žlutý paprsek"
+  "4. Green Ray": "4. Zelený paprsek"
+  "5. Blue Ray": "5. Modrý paprsek"
+  "6. Indigo Ray": "6. Indigový paprsek"
+  "7. Violet Ray": "7. Fialový paprsek"
+  Activated Spell Glyph: Aktivovaný kouzelný glyf
+  Additional End of Turn Damage: Zásah navíc na konci tahu
+  Apply Disease: Nakazit nemocí
+  Assume Direct Control: Převzít přímou kontrolu
+  Avoid Light Save: Záchrana – vyhnout se světlu
+  Awaken Beast: Probudit zvíře
+  Awaken Plant: Probudit rostlinu
+  Banish Save: Záchrana proti vypovězení
+  Begin Weather Change: Zahájit změnu počasí
+  Blinding Light: Oslepující světlo
+  Blink Check: Hod na mihnutí
+  Blue Wall: Modrá vrstva
+  Bonus Damage On Hit: Zásah navíc při zasažení
+  Bonus Mark Damage: Zásah navíc proti označenému
+  Break Enchantment: Zlomit očarování
+  Burning Web Damage: Zásah hořící pavučinou
+  Cast (Conjure Continual Flame on Object): Seslat (věčný plamen na předmět)
+  Cast (Conjure Darkness on Object): Seslat (tma na předmět)
+  Cast (Conjure Daylight on Object): Seslat (denní světlo na předmět)
+  Cast Animate Remains: Seslat – oživit ostatky
+  "Cast: Animate Remains": "Seslat: oživit ostatky"
+  Cast Inverted Magic Circle: Seslat obrácený magický kruh
+  Cast Magic Circle: Seslat magický kruh
+  "Cast: Banishing Attack": "Seslat: vypovídající útok"
+  "Cast: Planar Travel": "Seslat: cesta mezi sférami"
+  "Cast: Reassert Control": "Seslat: obnovit kontrolu"
+  Change Appearance: Změnit vzhled
+  Change Gust Direction: Změnit směr poryvu
+  Change Shape: Změnit tvar
+  Command Creature: Velet tvoru
+  Command Creatures: Velet tvorům
+  Command Servant: Velet sluhovi
+  Complete Stone Destruction Damage: Zásah při úplném zničení kamene
+  Configure Connection of Target: Nastavit spojení s cílem
+  Configure Knowledge of Target: Nastavit znalost cíle
+  Conjure Blade Barrier (Ringed Wall): Vyvolat bariéru čepelí (kruhová stěna)
+  Conjure Blade Barrier (Wall): Vyvolat bariéru čepelí (stěna)
+  Conjure Circular Wall of Thorns: Vyvolat kruhovou trnitou stěnu
+  Conjure Dome of Ice: Vyvolat ledovou kopuli
+  Conjure Hemispherical Wall of Force: Vyvolat silovou polokouli
+  Conjure Lights: Vyvolat světla
+  Conjure Mage Hand: Vyvolat mágovu ruku
+  Conjure Moon Beam: Vyvolat měsíční paprsek
+  Conjure Prismatic Sphere: Vyvolat duhovou kouli
+  Conjure Prismatic Wall: Vyvolat duhovou stěnu
+  Conjure Ringed Wall of Fire: Vyvolat kruhovou ohnivou stěnu
+  Conjure Spiritual Weapon: Vyvolat duchovní zbraň
+  Conjure Wall of Fire: Vyvolat ohnivou stěnu
+  Conjure Wall of Force: Vyvolat silovou stěnu
+  Conjure Wall of Ice: Vyvolat ledovou stěnu
+  Conjure Wall of Stone (10 ft. x 10 ft. Panels): Vyvolat kamennou stěnu (díly 3 × 3 m)
+  Conjure Wall of Stone (10 ft. x 20 ft. Panels): Vyvolat kamennou stěnu (díly 3 × 6 m)
+  Conjure Wall of Thorns: Vyvolat trnitou stěnu
+  Conjure Webs: Vyvolat pavučiny
+  Control Illusion: Ovládat iluzi
+  Control Mage Hand: Ovládat mágovu ruku
+  Create Simulacrum: Vytvořit simulakrum
+  Create Water: Vytvořit vodu
+  Creature to Creature: Tvor na tvora
+  Destroy Fog: Rozptýlit mlhu
+  Destroy Water: Zničit vodu
+  Detect Presence: Odhalit přítomnost
+  Disease Save: Záchrana proti nemoci
+  Dismissal Attack: Útok k odvolání
+  Dismissal Save: Záchrana proti odvolání
+  Enchant Weapon: Očarovat zbraň
+  End Dance Save: Záchrana k ukončení tance
+  End Effect Save: Záchrana k ukončení účinku
+  End of Turn Save: Záchrana na konci tahu
+  Enfeeblement Save: Záchrana proti oslabení
+  Enter / End Turn in Grease Save: Záchrana při vstupu / konci tahu v mastnotě
+  Enter / End of Turn Save: Záchrana při vstupu / na konci tahu
+  Enter / Start of Turn Save: Záchrana při vstupu / na začátku tahu
+  Enter Web Save: Záchrana při vstupu do pavučiny
+  Enter Zone Save: Záchrana při vstupu do zóny
+  Escape Labyrinth: Uniknout z bludiště
+  Escape Plants Check: Hod na vyproštění z rostlin
+  Evoke Flame Blade to Hand: Přivolat plamennou čepel do ruky
+  Explosive Rune Save: Záchrana proti výbušné runě
+  Failed Teleportation Damage: Zásah při nezdařené teleportaci
+  Falling Debris: Padající sutiny
+  Flood: Zaplavení
+  Focus Gaze: Zaměřit pohled
+  Forbidden Creature Damage: Zásah zakázaného tvora
+  Frigid Air Damage: Zásah mrazivým vzduchem
+  "Glyph Effect: Death": "Účinek glyfu: Smrt"
+  "Glyph Effect: Discord": "Účinek glyfu: Sváru"
+  "Glyph Effect: Fear": "Účinek glyfu: Strach"
+  "Glyph Effect: Hopelessness": "Účinek glyfu: Beznaděj"
+  "Glyph Effect: Insanity": "Účinek glyfu: Šílenství"
+  "Glyph Effect: Pain": "Účinek glyfu: Bolest"
+  "Glyph Effect: Sleep": "Účinek glyfu: Spánek"
+  "Glyph Effect: Stunning": "Účinek glyfu: Omráčení"
+  Grab Fixed Object Save: Záchrana – chycení pevného předmětu
+  Grant Temporary Hit Points: Udělit Dočasné body výdrže
+  Green Wall: Zelená vrstva
+  Guardian Strike Save: Záchrana proti úderu strážce
+  Hallow Effect Save: Záchrana proti účinku posvěcení
+  Hold onto Object Save: Záchrana – udržet předmět
+  Imbue Weapon: Naplnit zbraň
+  Indigo Wall: Indigová vrstva
+  Inscribe Glyph: Vepsat glyf
+  Investigate Disguise Check: Hod na prohlédnutí převleku
+  Investigate Illusion Check: Hod na prohlédnutí iluze
+  Lightning Bolt: Blesk
+  Lightning Bolt (Pre-Existing Storm): Blesk (existující bouře)
+  Line of Radiance: Paprsek záře
+  Maintain Concentration Save: Záchrana k udržení soustředění
+  Manipulate Creature: Manipulovat s tvorem
+  Manipulate Object: Manipulovat s předmětem
+  Mirror Image Interception: Zachycení zrcadlovým obrazem
+  Mishap Damage: Zásah při nehodě
+  Moonbeam Burn Save: Záchrana proti spálení měsíčním paprskem
+  Move & Command Spiritual Weapon: Posunout a ovládat duchovní zbraň
+  Move Moonbeam: Posunout měsíční paprsek
+  Move Sword and Attack: Posunout meč a zaútočit
+  Nightmare Save: Záchrana proti noční můře
+  Object into Creature: Předmět na tvora
+  Open Fissures: Otevřít trhliny
+  Orange Wall: Oranžová vrstva
+  Part Water: Rozestoupit vodu
+  Partial Stone Destruction Damage: Zásah při částečném zničení kamene
+  Petrification Save: Záchrana proti zkamenění
+  Possess Creature: Posednout tvora
+  Probe Deeper: Proniknout hlouběji
+  Prone / Concentration Save: Záchrana – sražení / soustředění
+  Raise Zombie: Pozvednout zombii
+  Red Wall: Červená vrstva
+  Redirect Flow: Přesměrovat tok
+  Repeat Save: Opakovaná záchrana
+  Repeat Save (After Comand): Opakovaná záchrana (po rozkazu)
+  Replicate Spell (8th Level or Lower): Napodobit kouzlo (8. Stupně nebo nižší)
+  Restraining Tentacles: Svírající chapadla
+  Revive Target: Oživit cíl
+  Roll Confusion Table Result: Hodit na tabulku zmatení
+  Roll Sphere: Kutálet kouli
+  "Round 2: Acid Rain": "2. kolo: Kyselý déšť"
+  "Round 3: Lightning Bolts": "3. kolo: Blesky"
+  "Round 4: Hailstones": "4. kolo: Kroupy"
+  "Round 5 - 10: Gusts & Freezing Rain": "5.–10. kolo: Poryvy a mrznoucí déšť"
+  Scorch Object: Opálit předmět
+  Scorching Ray Attack: Útok spalujícím paprskem
+  Sequester Creature: Ukrýt tvora
+  Sequester Item: Ukrýt předmět
+  Shield Retaliation Damage: Odvetný zásah štítu
+  Slippery Ice Save: Záchrana na kluzkém ledu
+  Speak Suggestion: Vyslovit sugesci
+  Spellcasting Attack: Útok kouzlem
+  Start of Turn / Enter Save: Záchrana na začátku tahu / při vstupu
+  Start of Turn / Enter Sphere Save: Záchrana na začátku tahu / při vstupu do koule
+  Stinking Cloud Save: Záchrana v páchnoucím oblaku
+  "Stressful Wish: Bestow Resistance": "Vyčerpávající přání: udělit odolnost"
+  "Stressful Wish: Conjure Wealth": "Vyčerpávající přání: vyvolat bohatství"
+  "Stressful Wish: Restore Health": "Vyčerpávající přání: obnovit zdraví"
+  "Stressful Wish: Rewrite Events": "Vyčerpávající přání: přepsat události"
+  Structure Damage: Zásah stavby
+  Summon: Přivolat
+  Summon Celestial: Přivolat nebešťana
+  Summon Creature: Přivolat tvora
+  Summon Elemental: Přivolat elementála
+  Summon Fey: Přivolat vílu
+  Summon Guardian of Faith: Přivolat strážce víry
+  Summon Hand: Přivolat ruku
+  Summon Hound: Přivolat psa
+  Summon Marked Objects: Přivolat označené předměty
+  Summon Servant: Přivolat sluhu
+  Summon Sphere: Přivolat kouli
+  Summon Steed: Přivolat oře
+  Thwart Teleportation Save: Záchrana proti zmaření teleportace
+  Transform into Beast: Proměnit se ve zvíře
+  Traversal Damage: Zásah při průchodu
+  Vampiric Touch Attack: Útok upířím dotekem
+  Violet Wall: Fialová vrstva
+  Wall Contact Damage: Zásah při dotyku stěny
+  Wall Contact Save: Záchrana při dotyku stěny
+  Ward Save: Záchrana proti ochraně
+  Whirlpool: Vír
+  Whirlpool (Start of Turn Save): Vír (záchrana na začátku tahu)
+  Wind Blast Save: Záchrana proti větrnému náporu
+  Wish Stress Effects: Následky vyčerpávajícího přání
+  Yellow Wall: Žlutá vrstva
+
+efekty:
+  Aquatic Adaptation: Vodní přizpůsobení
+  Changed Appearance: Změněný vzhled
+  Natural Weapons: Přirozené zbraně
+  Controlled Undead: Ovládaný nemrtvý
+  Antipathy: Antipatie
+  Aura of Antipathy: Aura antipatie
+  Aura of Sympathy: Aura sympatie
+  False Aura: Falešná aura
+  Mask: Maska
+  Awakened: Probuzený
+  Awakened Friendliness: Přátelskost probuzeného
+  Banished: Vypovězený
+  Hopeful: Plný naděje
+  Cursed Actions: Prokleté akce
+  Cursed Attacks: Prokleté útoky
+  Cursed Charisma: Prokleté Charisma
+  Cursed Constitution: Prokletá Odolnost
+  Cursed Dexterity: Prokletá Obratnost
+  Cursed Intelligence: Prokletá Inteligence
+  Cursed Resilience: Prokletá houževnatost
+  Cursed Strength: Prokletá Síla
+  Cursed Wisdom: Prokletá Moudrost
+  Restrained by Black Tentacles: Spoutaný černými chapadly
+  Blindness: Slepota
+  Deafness: Hluchota
+  Blinked into the Ethereal Plane: Mihnutý do Éterické sféry
+  Smite Brand: Cejch
+  Indifferent: Lhostejný
+  Suppressed Emotions: Potlačené emoce
+  Confused: Zmatený
+  Conjured Animal: Vyvolané zvíře
+  Summoned Celestial: Přivolaný nebešťan
+  Controlled Elemental: Ovládaný elementál
+  Controlled Fey: Ovládaná víla
+  Conjured Elemental: Vyvolaný elementál
+  Conjured Woodland Being: Vyvolaná lesní bytost
+  Insanity: Šílenství
+  Blinding Sickness: Oslepující nemoc
+  Failed Contagion Save: Neúspěšná záchrana proti nákaze
+  Filth Fever: Špinavá horečka
+  Flesh Rot: Hniloba masa
+  Incubating Blinding Sickness: Inkubace – oslepující nemoc
+  Incubating Filth Fever: Inkubace – špinavá horečka
+  Incubating Flesh Rot: Inkubace – hniloba masa
+  Incubating Mindfire: Inkubace – oheň mysli
+  Incubating Seizure: Inkubace – záchvaty
+  Incubating Slimy Doom: Inkubace – slizká zhouba
+  Mindfire: Oheň mysli
+  Seizure: Záchvaty
+  Slimy Doom: Slizká zhouba
+  Successful Contagion Save: Úspěšná záchrana proti nákaze
+  Active Contingency: Aktivní pohotovost
+  Wielding Continual Flame Object: Drží předmět s věčným plamenem
+  Caught in Whirlpool: Chycen ve víru
+  Wielding Darkness Covered Object: Drží předmět zahalený tmou
+  Wielding Daylight Object: Drží předmět s denním světlem
+  Cast: Sesláno
+  "Divine Word (30 HP or fewer)": "Božské slovo (30 Bodů výdrže a méně)"
+  "Divine Word (40 HP or fewer)": "Božské slovo (40 Bodů výdrže a méně)"
+  "Divine Word (50 HP or fewer)": "Božské slovo (50 Bodů výdrže a méně)"
+  Buried under Rubble: Zasypaný sutinami
+  "Bear's Endurance": Medvědí výdrž
+  "Bull's Strength": Býčí síla
+  "Cat's Grace": Kočičí ladnost
+  "Eagle's Splendor": Orlí nádhera
+  "Fox's Cunning": Liščí lstivost
+  "Owl's Wisdom": Soví moudrost
+  Enlarged: Zvětšený
+  Reduced: Zmenšený
+  Enthralled: Fascinovaný
+  "Eyebite: Panic": "Uhranutí: Panika"
+  "Eyebite: Sickened": "Uhranutí: Nevolnost"
+  "Eyebite: Slumber": "Uhranutí: Spánek"
+  Familiar: Familiár
+  Summoned Steed: Přivolaný oř
+  Permanently Controlled: Trvale ovládaný
+  Chill Shield: Mrazivý štít
+  Warm Shield: Hřejivý štít
+  Failed Flesh to Stone Save: Neúspěšná záchrana proti zkamenění
+  Petrified: Zkamenělý
+  Successful Flesh to Stone Save: Úspěšná záchrana proti zkamenění
+  Trapped within Forcecage: Uvězněný v silové kleci
+  Frozen in Ice: Zamrzlý v ledu
+  Glib: Výmluvný
+  Hallow Immunity: Imunita vůči posvěcení
+  Hastened: Zrychlený
+  Heated Metal Object: Rozžhavený kovový předmět
+  Holding onto Heated Object: Drží rozžhavený předmět
+  Bathing in Holy Aura: Ozářený svatou aurou
+  Blinded by Holy Aura: Oslepený svatou aurou
+  "Imprisonment: Buried": "Uvěznění: Pohřbení"
+  "Imprisonment: Chained": "Uvěznění: Spoutání řetězy"
+  "Imprisonment: Hedged Prison": "Uvěznění: Ohrazené vězení"
+  "Imprisonment: Minimum Containment": "Uvěznění: Minimální zadržení"
+  "Imprisonment: Slumber": "Uvěznění: Spánek"
+  Instant Summons Mark: Značka okamžitého přivolání
+  Levitating: Levitující
+  Magic Circle Protection: Ochrana magického kruhu
+  Inhabiting Soul Jar: Obývá nádobu duše
+  Magic Jar Possession: Posednutí magickou nádobou
+  "Magic Weapon, +1": "Magická zbraň +1"
+  "Magic Weapon, +2": "Magická zbraň +2"
+  "Magic Weapon, +3": "Magická zbraň +3"
+  Banished to Maze: Vypovězený do bludiště
+  Melded into Stone: Splynulý s kamenem
+  Mirror Image 1: Zrcadlový obraz 1
+  Mirror Image 2: Zrcadlový obraz 2
+  Mirror Image 3: Zrcadlový obraz 3
+  Misleading: Klamající
+  Modify Memory in Progress: Probíhá úprava paměti
+  Failed Petrification Save: Neúspěšná záchrana proti zkamenění
+  "Prismatic Spray (indigo)": "Duhová sprška (indigová)"
+  "Prismatic Spray (violet)": "Duhová sprška (fialová)"
+  Successful Petrification Save: Úspěšná záchrana proti zkamenění
+  Violet Blindness: Fialová slepota
+  Protection from Acid: Ochrana před kyselinou
+  Protection from Cold: Ochrana před chladem
+  Protection from Fire: Ochrana před ohněm
+  Protection from Lightning: Ochrana před bleskem
+  Protection from Thunder: Ochrana před hromem
+  Resurrection Sickness: Nemoc ze vzkříšení
+  Enfeebled: Oslabený
+  Chilled: Prochladlý
+  Regeneration: Regenerace
+  Encased in Resilient Sphere: Uzavřený v pružné kouli
+  Magical Fatigue: Magická únava
+  "Connection: Body Part": "Spojení: část těla"
+  "Connection: Likeness or Picture": "Spojení: podobizna nebo obraz"
+  "Connection: Possession or Garment": "Spojení: majetek nebo oděv"
+  "Knowledge: Familiar": "Znalost: dobře známý"
+  "Knowledge: Firsthand": "Znalost: z vlastní zkušenosti"
+  "Knowledge: Secondhand": "Znalost: z doslechu"
+  Seeming Disguise: Převlek zdání
+  Sequestered: Ukrytý
+  Sequestered Item: Ukrytý předmět
+  Slowed: Zpomalený
+  Retching and Reeling: Dávící se a vrávorající
+  Deafening Boom: Ohlušující rána
+  Suggested: Pod sugescí
+  Sunbeam Blindness: Slepota ze slunečního paprsku
+  Sunburst Blindness: Slepota ze slunečního výbuchu
+  Discord: Svár
+  Fear: Strach
+  Hopelessness: Beznaděj
+  Pain: Bolest
+  Sleep: Spánek
+  Stunned: Omráčený
+  Speaking in Tongues: Mluví jazyky
+  Water Walking: Chodí po vodě
+  Restrained in Webs: Spoutaný v pavučinách
+  Wind Walking: Větrná chůze
+  Ability Immunity: Imunita
+  Acid Resistance: Odolnost vůči kyselině
+  Bludgeoning Resistance: Odolnost vůči drtivým zásahům
+  Cold Resistance: Odolnost vůči chladu
+  Fire Resistance: Odolnost vůči ohni
+  Force Resistance: Odolnost vůči silovým zásahům
+  Lightning Resistance: Odolnost vůči blesku
+  Necrotic Resistance: Odolnost vůči nekrotickým zásahům
+  Piercing Resistance: Odolnost vůči bodným zásahům
+  Poison Resistance: Odolnost vůči jedu
+  Psychic Resistance: Odolnost vůči psychickým zásahům
+  Radiant Resistance: Odolnost vůči zářivým zásahům
+  Slashing Resistance: Odolnost vůči sečným zásahům
+  Thunder Resistance: Odolnost vůči hromu
+  Wish Stress: Vyčerpání z přání

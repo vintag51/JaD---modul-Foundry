@@ -1,0 +1,189 @@
+{
+  "_id": "BpmZ5lWGkJzntc36",
+  "name": "Časovaná ohnivá koule",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Žhnoucí kulička, jejíž exploze sílí s každým kolem odkladu.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Ohnivý zásah za 12k6 Bodů výdrže (+1k6 za každý Stupeň nad 7); při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#casovana-ohniva-koule\" target=\"_blank\">SRD Jeskyní a draků – Časovaná ohnivá koule</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "sphere",
+        "size": "4",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 7,
+    "school": "evo",
+    "materials": {
+      "value": "kulička z netopýřího trusu a síry",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "fg4NDHu8DhMQvmzT": {
+        "type": "save",
+        "name": "Seslat",
+        "_id": "fg4NDHu8DhMQvmzT",
+        "img": "",
+        "sort": 400000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 12,
+              "denomination": 6,
+              "bonus": "",
+              "modifiers": [],
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        }
+      }
+    },
+    "identifier": "delayed-blast-fireball"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "casovana-ohniva-koule",
+      "srd": "AoTTjapz1FsGOIZz",
+      "nazevEn": "Delayed Blast Fireball",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#casovana-ohniva-koule"
+    }
+  },
+  "img": "icons/magic/fire/explosion-mushroom-nuke-orange.webp",
+  "effects": [],
+  "folder": "KyQdK1WFiBiokCfS",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!BpmZ5lWGkJzntc36"
+}

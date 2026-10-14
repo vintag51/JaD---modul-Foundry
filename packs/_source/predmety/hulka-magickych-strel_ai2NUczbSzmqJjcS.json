@@ -1,0 +1,188 @@
+{
+  "_id": "ai2NUczbSzmqJjcS",
+  "name": "Hůlka magických střel",
+  "type": "equipment",
+  "img": "icons/weapons/wands/wand-gem-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Neobvyklý</em></p><p>Sedm Dávek (obnova 1k6 + 1 denně). Dávkou sešleš Magickou střelu 1. Stupně, další Dávky zvyšují Stupeň. Po poslední Dávce na 1 na k20 zanikne.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#hulka-magickych-strel\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "uses": {
+      "max": "7",
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d6 + 1"
+        }
+      ],
+      "autoDestroy": false,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": 3,
+        "denomination": 4,
+        "bonus": "",
+        "types": [
+          "force"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "wand",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": "",
+      "name": "Unidentified Wand"
+    },
+    "container": null,
+    "properties": [
+      "foc",
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {
+      "TdKi7kwKecDnJ77E": {
+        "type": "cast",
+        "spell": {
+          "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.RrDNZ15p5OxMMPty",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": "1",
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "ability": ""
+        },
+        "_id": "TdKi7kwKecDnJ77E",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "@item.uses.value"
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "amount",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": "",
+        "visibility": {
+          "requireIdentification": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      }
+    },
+    "attuned": false,
+    "identifier": "wand-of-magic-missiles",
+    "armor": {
+      "magicalBonus": ""
+    }
+  },
+  "effects": [],
+  "folder": "nITZT0yyRkvikc2D",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "hulka-magickych-strel"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ai2NUczbSzmqJjcS"
+}

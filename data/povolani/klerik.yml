@@ -1,0 +1,87 @@
+identifikator: cleric
+nazev: Klerik
+kotva: klerik
+popis: Služebník božstva a víry, který léčí, chrání a snáší na nepřátele boží hněv.
+kostka: d8
+zachrany: [wis, cha]
+zbroje: [armor:lgt, armor:med, armor:shl]
+zbrane: [weapon:sim]
+dovednosti: {pocet: 2, z: [his, med, rel, per, ins]}
+asi: [4, 8, 12, 16, 19]
+kouzleni: {progrese: full, vlastnost: wis, priprava: "@abilities.wis.mod + @classes.cleric.levels"}
+skaly:
+  bozska-prizen: {nazev: Použití Božské přízně, hodnoty: {2: 1, 6: 2, 18: 3}}
+  niceni-nemrtvych: {nazev: Ničení nemrtvých (NB), hodnoty: {5: 0.5, 8: 1, 11: 2, 14: 3, 17: 4}}
+obor: {nazev: Klerická doména, uroven: 1}
+
+schopnosti:
+  - {k: sesilani-kouzel, n: Sesílání kouzel, u: [1], d: Připravuješ a sesíláš Klerická kouzla s Moudrostí jako sesílací vlastností; ohniskem je svatý symbol.}
+  - k: bozska-prizen
+    n: Božská přízeň
+    u: [2, 6, 18]
+    d: Jednou mezi Odpočinky (od 6. Úrovně dvakrát, od 18. třikrát) necháš sebou proniknout slávu svého boha – například Odvracíš nemrtvé nebo použiješ přízeň své Domény.
+    p: "@scale.cleric.bozska-prizen/sr"
+    akt:
+      - {n: Odvracení nemrtvých, t: action, typ: save, save: wis, sablona: {typ: radius, velikost: 6}, ef: [0]}
+    ef: [{n: Odvrácený, st: [frightened], kola: 10}]
+  - {k: niceni-nemrtvych, n: Ničení nemrtvých, u: [5], d: Slabé nemrtvé (NB podle Úrovně – 1/2 až 4), kteří neodolají Odvracení, rovnou zničíš.}
+  - {k: bozsky-zasah, n: Božský zásah, u: [10, 20], d: Jednou za Dlouhý odpočinek akcí prosíš o přímý zásah boha (k% ≤ Úroveň klerika); na 20. Úrovni uspěješ automaticky., p: 1/lr, akt: [{n: Prosit o zásah, t: action, hod: "1d100"}]}
+
+obory:
+  inkvizitor:
+    nazev: Inkvizitor
+    kotva: inkvizitor
+    popis: Hledač nepřátel víry, jehož pohled odhalí lež i skryté hrozby.
+    kouzla_nazev: Doménová kouzla
+    kouzla:
+      - {uroven: 1, kouzla: [Najdi zlo a dobro, Rozkaz]}
+      - {uroven: 3, kouzla: [Odhal myšlenky, Zóna pravdy]}
+      - {uroven: 5, kouzla: [Jasnozřivost, Strach]}
+      - {uroven: 7, kouzla: [Mystické oko, Najdi tvora]}
+      - {uroven: 9, kouzla: [Podrob osobu, Úkol]}
+    schopnosti:
+      - {k: vysetrovatel, n: Vyšetřovatel, u: [1], d: Získáš Zdatnost v Pátrání, Vhledu a Zastrašování a ve dvou z nich Kvalifikaci., trait: {zdatnosti: [skills:inv, skills:ins, skills:itm]}}
+      - k: hruzna-autorita
+        n: "Božská přízeň: Hrůzná autorita"
+        u: [2]
+        d: Akcí vyděsíš tvory do 12 sáhů, kteří ti rozumí (Záchranný hod na Moudrost) – na minutu jsou Vystrašení a hůř ti lžou.
+        akt: [{n: Hrůzná autorita, t: action, typ: save, save: wis, sablona: {typ: radius, velikost: 12}, ef: [0]}]
+        ef: [{n: Vystrašený (Hrůzná autorita), st: [frightened], kola: 10}]
+      - {k: vsevidouci-oko, n: "Božská přízeň: Vševidoucí oko", u: [6], d: Akcí odhalíš pasti, tajné dveře, ukryté tvory a magické účinky do 6 sáhů., akt: [{n: Vševidoucí oko, t: action}]}
+      - {k: des-prozreni, n: Děs prozření, u: [8, 14], d: Jednou za tah způsobíš zásahem zbraní navíc 1k8 psychického zásahu (od 14. Úrovně 2k8)., akt: [{n: Děs prozření, t: special, typ: damage, dmg: ["(1 + floor(@classes.cleric.levels / 14))d8", psychic]}]}
+      - {k: zrak-pravdy, n: Zrak pravdy, u: [17], d: Vidíš neviditelné tvory a předměty a skutečnou podobu tvaroměnců a iluzí.}
+  kazatel:
+    nazev: Kazatel
+    kotva: kazatel
+    popis: Řečník víry, jehož slova strhnou davy a otevřou každé srdce.
+    kouzla_nazev: Doménová kouzla
+    kouzla:
+      - {uroven: 1, kouzla: [Rozkaz, Zmam osobu]}
+      - {uroven: 3, kouzla: [Sugesce, Uklidni emoce]}
+      - {uroven: 5, kouzla: [Jazyky, Uvrhni Kletbu]}
+      - {uroven: 7, kouzla: [Nutkání, Zmatek]}
+      - {uroven: 9, kouzla: [Podrob osobu, Úkol]}
+    schopnosti:
+      - {k: rozeny-recnik, n: Rozený řečník, u: [1], d: Získáš Zdatnost ve třech společenských Dovednostech, ve dvou Kvalifikaci, a naučíš se dva jazyky., trait: {volby: [{pocet: 3, z: [skills:dec, skills:per, skills:prf, skills:itm]}, {pocet: 2, z: ["languages:*"]}]}}
+      - {k: slova-od-srdce, n: "Božská přízeň: Slova od srdce", u: [2], d: V rozhovoru přiměješ tvora (Záchranný hod na Moudrost) prozradit ti důvěrnou informaci, kterou proti němu můžeš využít., akt: [{n: Slova od srdce, t: special, typ: save, save: wis}]}
+      - {k: mobilizujici-poselstvi, n: "Božská přízeň: Mobilizující poselství", u: [6], d: Během minuty k sobě přivoláš dav až 50 místních, kteří jsou tvé věci nakloněni., akt: [{n: Mobilizovat dav, t: minute}]}
+      - {k: silna-osobnost, n: Silná osobnost, u: [8], d: K zásahu svých triků přičítáš Opravu moudrosti.}
+      - {k: za-vyssi-dobro, n: Za vyšší dobro, u: [17], d: Jednou mezi Odpočinky můžeš při přemlouvání ignorovat zábrany cíle i nebezpečnost požadavku., p: 1/sr, akt: [{n: Za vyšší dobro, t: special}]}
+  misionar:
+    nazev: Misionář
+    kotva: misionar
+    popis: Poutník víry, který ji šíří i mezi nevěřícími – slovem, příkladem i mečem.
+    kouzla_nazev: Doménová kouzla
+    kouzla:
+      - {uroven: 1, kouzla: [Dlouhokrok, Skok]}
+      - {uroven: 3, kouzla: [Najdi pasti, Vidění ve tmě]}
+      - {uroven: 5, kouzla: [Jazyky, Vodní dech]}
+      - {uroven: 7, kouzla: [Podrob Zvíře, Volnost]}
+      - {uroven: 9, kouzla: [Spojení s přírodou, Štít proti živým]}
+    schopnosti:
+      - {k: polyglot, n: Polyglot, u: [1], d: Porozumění jazykům sešleš bez Pozice a surovin tolikrát za Dlouhý odpočinek, kolik je tvá Oprava moudrosti., p: "max(1, @abilities.wis.mod)/lr", akt: [{n: Porozumění jazykům, t: action}]}
+      - {k: pruprava-na-neverici, n: Průprava na nevěřící, u: [1], d: Získáš Zdatnost v Přesvědčování a Vhledu (v jedné Kvalifikaci), v Historii nebo Přírodě a se dvěma válečnými zbraněmi., trait: {zdatnosti: [skills:per, skills:ins], volby: [{pocet: 1, z: [skills:his, skills:nat]}, {pocet: 2, z: ["weapon:mar:*"]}]}}
+      - {k: pusobivy-prichod, n: "Božská přízeň: Působivý příchod", u: [2], d: Na začátku setkání akcí zapůsobíš na tvory do 12 sáhů – jsou Zmámení a máš proti nim Výhodu na společenské Dovednosti., akt: [{n: Působivý příchod, t: action, sablona: {typ: radius, velikost: 12}}]}
+      - {k: bystry-pozorovatel, n: Bystrý pozorovatel, u: [6], d: Máš Výhodu na Vnímání a +5 k Pasivnímu vnímání., pas: [[system.skills.prc.roll.mode, "1", add], [system.skills.prc.bonuses.passive, "5", add]]}
+      - {k: bozsky-uder, n: Božský úder, u: [8, 14], d: Jednou za tah způsobíš zásahem zbraní navíc 1k8 zářivého či nekrotického zásahu (od 14. Úrovně 2k8)., akt: [{n: Božský úder, t: special, typ: damage, dmg: ["(1 + floor(@classes.cleric.levels / 14))d8", [radiant, necrotic]]}]}
+      - {k: provizorni-svatyne, n: Provizorní svatyně, u: [17], d: Jednou za Dlouhý odpočinek minutovým rituálem posvětíš místo, které odpuzuje zvířata a nadpřirozené bytosti., p: 1/lr, akt: [{n: Posvětit místo, t: minute}]}

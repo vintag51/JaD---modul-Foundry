@@ -1,0 +1,106 @@
+identifikator: warlock
+nazev: Černokněžník
+kotva: cernokneznik
+popis: Sesilatel, který získal magickou moc smlouvou s mocnou bytostí – svým Patronem.
+kostka: d8
+zachrany: [wis, cha]
+zbroje: [armor:lgt]
+zbrane: [weapon:sim]
+dovednosti: {pocet: 2, z: [his, dec, arc, rel, inv, nat, itm]}
+asi: [4, 8, 12, 16, 19]
+kouzleni: {progrese: pact, vlastnost: cha}
+obor: {nazev: Černokněžníkův patron, uroven: 1}
+volby:
+  - {nazev: Tajemná vzývání, typ: feat, vymena: true, pocty: {2: 2, 5: 1, 7: 1, 9: 1, 12: 1, 15: 1, 18: 1}, z: [tv-dabelska-svezest, tv-dabelsky-zrak, tv-hlas-retezoveho-mistra, tv-hruza, tv-kapicky-kyseliny, tv-kniha-davnych-tajemstvi, tv-maska-mnoha-tvari, tv-namraza, tv-oci-spravce-run, tv-odpudivy-vysleh, tv-okouzlujici-vliv, tv-oslneni, tv-otrava, tv-pohled-dvou-mysli, tv-rec-zvirat, tv-stinova-ochrana, tv-stedra-magie, tv-tajemne-kopi, tv-tajemny-zrak, tv-tryznivy-vysleh, tv-vyboje, tv-zapaleni, tv-zbroj-stinu, tv-zlodej-peti-osudu, tv-zvukova-vlna, tv-divoky-duch, tv-hladova-hul, tv-splynuti-se-stiny, tv-spatne-znameni, tv-zatmeni-mysli, tv-zizniva-cepel, tv-hrozne-slovo, tv-podmanivy-sepot, tv-sochar-tela, tv-ctenar-znameni, tv-nadpozemsky-skok, tv-poskoci-chaosu, tv-sepot-ze-zahrobi, tv-vzestupny-krok, tv-zivotasaj, tv-carodejnicke-retezy, tv-carodejnicky-zrak, tv-mistr-nespoctu-podob, tv-vize-vzdalenych-risi]}
+  - {nazev: Laskavost daná Paktem, typ: feat, pocty: {3: 1}, z: [pakt-cepele, pakt-rukoveti, pakt-retezu]}
+  - {nazev: Mystický taj (6. Stupeň), typ: spell, pocty: {11: 1}, stupen: 6, seznam: warlock, max: 1, obnova: lr}
+  - {nazev: Mystický taj (7. Stupeň), typ: spell, pocty: {13: 1}, stupen: 7, seznam: warlock, max: 1, obnova: lr}
+  - {nazev: Mystický taj (8. Stupeň), typ: spell, pocty: {15: 1}, stupen: 8, seznam: warlock, max: 1, obnova: lr}
+  - {nazev: Mystický taj (9. Stupeň), typ: spell, pocty: {17: 1}, stupen: 9, seznam: warlock, max: 1, obnova: lr}
+
+schopnosti:
+  - {k: magie-dana-paktem, n: Magie daná Paktem, u: [1], d: Sesíláš Černokněžnická kouzla s Charismatem; máš málo Pozic, všechny nejvyššího dostupného Stupně, a obnovíš si je každým Odpočinkem.}
+  - {k: tajemna-vzyvani, n: Tajemná vzývání, u: [2], d: Získáš dvě Tajemná vzývání a další na 5., 7., 9., 12., 15. a 18. Úrovni; při postupu můžeš jedno vyměnit.}
+  - {k: laskavost-dana-paktem, n: Laskavost daná Paktem, u: [3], d: Patron ti udělí dar – Pakt čepele, Pakt rukověti nebo Pakt řetězu.}
+  - {k: pakt-cepele, n: Pakt čepele, d: Akcí si vytvoříš magickou Paktovou zbraň na blízko, se kterou jsi zdatný; rituálem můžeš svázat i kouzelnou zbraň., akt: [{n: Vytvořit Paktovou zbraň, t: action}]}
+  - {k: pakt-rukoveti, n: Pakt rukověti, d: Dostaneš Knihu stínů se třemi triky libovolných povolání, které se počítají za Černokněžnické.}
+  - {k: pakt-retezu, n: Pakt řetězu, d: Naučíš se Najdi přítelíčka jako rituál se zvláštními podobami a familiár může útočit místo tebe.}
+  - {k: mysticky-taj, n: Mystický taj, u: [11, 13, 15, 17], d: Zvolíš Černokněžnické kouzlo 6. Stupně (na 13., 15. a 17. Úrovni 7., 8. a 9.), které jednou za Dlouhý odpočinek sešleš bez Pozice.}
+  - {k: tajemny-mistr, n: Tajemný mistr, u: [20], d: Jednou za Dlouhý odpočinek si minutou prosby obnovíš všechny Pozice Magie dané Paktem., p: 1/lr, akt: [{n: Prosit Patrona, t: minute}]}
+  # Tajemná vzývání
+  - {k: tv-dabelska-svezest, n: "Vzývání: Ďábelská svěžest", d: Falešný život na sebe sešleš bez Pozice a surovin.}
+  - {k: tv-dabelsky-zrak, n: "Vzývání: Ďábelský zrak", d: V magické i nemagické tmě vidíš normálně do 24 sáhů., pas: [[system.attributes.senses.darkvision, "24", upgrade]]}
+  - {k: tv-hlas-retezoveho-mistra, n: "Vzývání: Hlas řetězového mistra", d: "(Pakt řetězu) S přítelíčkem komunikuješ telepaticky, vnímáš jeho smysly a mluvíš jeho ústy."}
+  - {k: tv-hruza, n: "Vzývání: Hrůza", d: "(Pakt rukověti) Psychický zásah tvého triku cíl při neúspěšné záchraně na Odolnost Vystraší."}
+  - {k: tv-kapicky-kyseliny, n: "Vzývání: Kapičky kyseliny", d: "(Pakt rukověti) Kyselinový zásah tvého triku na cíli ulpí a zraňuje ho dál, dokud se neotře."}
+  - {k: tv-kniha-davnych-tajemstvi, n: "Vzývání: Kniha dávných tajemství", d: "(Pakt rukověti) Do Knihy stínů si zapisuješ rituály a sesíláš je z ní."}
+  - {k: tv-maska-mnoha-tvari, n: "Vzývání: Maska mnoha tváří", d: Přestrojení sešleš bez Pozice a surovin.}
+  - {k: tv-namraza, n: "Vzývání: Námraza", d: "(Pakt rukověti) Chladný zásah tvého triku pokryje cíl námrazou, která ho dál zraňuje."}
+  - {k: tv-oci-spravce-run, n: "Vzývání: Oči správce run", d: Přečteš jakékoli písmo.}
+  - {k: tv-odpudivy-vysleh, n: "Vzývání: Odpudivý výšleh", d: Tajemný výšleh může zasaženého odtlačit o 2 sáhy.}
+  - {k: tv-okouzlujici-vliv, n: "Vzývání: Okouzlující vliv", d: Získáš Zdatnost v Klamání a Přesvědčování., trait: {zdatnosti: [skills:dec, skills:per]}}
+  - {k: tv-oslneni, n: "Vzývání: Oslnění", d: "(Pakt rukověti) Zářivý zásah tvého triku cíl při neúspěšné záchraně na Odolnost oslepí."}
+  - {k: tv-otrava, n: "Vzývání: Otrava", d: "(Pakt rukověti) Jedový zásah tvého triku cíl při neúspěšné záchraně na Odolnost otráví."}
+  - {k: tv-pohled-dvou-mysli, n: "Vzývání: Pohled dvou myslí", d: Akcí se dotkneš ochotného humanoida a vnímáš jeho smysly.}
+  - {k: tv-rec-zvirat, n: "Vzývání: Řeč zvířat", d: Mluv se zvířaty sešleš bez Pozice a surovin.}
+  - {k: tv-stinova-ochrana, n: "Vzývání: Stínová ochrana", d: "(Pakt řetězu) Přítelíček lépe odolává plošným účinkům a kouzlům."}
+  - {k: tv-stedra-magie, n: "Vzývání: Štědrá magie", d: Kouzlo s dosahem na sebe můžeš seslat na tvora, kterého se dotkneš.}
+  - {k: tv-tajemne-kopi, n: "Vzývání: Tajemné kopí", d: Tajemný výšleh má dosah 60 sáhů.}
+  - {k: tv-tajemny-zrak, n: "Vzývání: Tajemný zrak", d: Najdi magii sešleš bez Pozice a surovin.}
+  - {k: tv-tryznivy-vysleh, n: "Vzývání: Trýznivý výšleh", d: K zásahu Tajemného výšlehu přičítáš Opravu charismatu.}
+  - {k: tv-vyboje, n: "Vzývání: Výboje", d: "(Pakt rukověti) Bleskový zásah tvého triku nechá na cíli výboje, které ho dál zraňují."}
+  - {k: tv-zapaleni, n: "Vzývání: Zapálení", d: "(Pakt rukověti) Ohnivý zásah tvého triku cíl zapálí."}
+  - {k: tv-zbroj-stinu, n: "Vzývání: Zbroj stínů", d: Mágovu zbroj na sebe sešleš bez Pozice a surovin.}
+  - {k: tv-zlodej-peti-osudu, n: "Vzývání: Zloděj pěti osudů", d: Jednou za Dlouhý odpočinek sešleš Uřknutí Černokněžnickou Pozicí., p: 1/lr}
+  - {k: tv-zvukova-vlna, n: "Vzývání: Zvuková vlna", d: "(Pakt rukověti) Hromový zásah tvého triku cíl při neúspěšné záchraně srazí a ohluší."}
+  - {k: tv-divoky-duch, n: "Vzývání: Divoký duch", d: "(Pakt řetězu, od 5. Úrovně) Přítelíček zaútočí dvakrát."}
+  - {k: tv-hladova-hul, n: "Vzývání: Hladová hůl", d: "(Pakt rukověti a Sukovice, od 5. Úrovně) S trikem Sukovice útočíš dvakrát."}
+  - {k: tv-splynuti-se-stiny, n: "Vzývání: Splynutí se stíny", d: "(od 5. Úrovně) V šeru či tmě se akcí zneviditelníš, dokud se nepohneš nebo nejednáš.", akt: [{n: Splynout se stíny, t: action}]}
+  - {k: tv-spatne-znameni, n: "Vzývání: Špatné znamení", d: "(od 5. Úrovně) Jednou za Dlouhý odpočinek sešleš Uvrhni kletbu Černokněžnickou Pozicí.", p: 1/lr}
+  - {k: tv-zatmeni-mysli, n: "Vzývání: Zatmění mysli", d: "(od 5. Úrovně) Jednou za Dlouhý odpočinek sešleš Zpomalení Černokněžnickou Pozicí.", p: 1/lr}
+  - {k: tv-zizniva-cepel, n: "Vzývání: Žíznivá čepel", d: "(Pakt čepele, od 5. Úrovně) Paktovou zbraní útočíš v akci Útok dvakrát."}
+  - {k: tv-hrozne-slovo, n: "Vzývání: Hrozné slovo", d: "(od 7. Úrovně) Jednou za Dlouhý odpočinek sešleš Zmatek Černokněžnickou Pozicí.", p: 1/lr}
+  - {k: tv-podmanivy-sepot, n: "Vzývání: Podmanivý šepot", d: "(od 7. Úrovně) Jednou za Dlouhý odpočinek sešleš Nutkání Černokněžnickou Pozicí.", p: 1/lr}
+  - {k: tv-sochar-tela, n: "Vzývání: Sochař těla", d: "(od 7. Úrovně) Jednou za Dlouhý odpočinek sešleš Proměň tvora Černokněžnickou Pozicí.", p: 1/lr}
+  - {k: tv-ctenar-znameni, n: "Vzývání: Čtenář znamení", d: "(od 9. Úrovně) Jednou mezi Odpočinky sešleš Spojení nebo Spojení s přírodou bez Pozice.", p: 1/sr}
+  - {k: tv-nadpozemsky-skok, n: "Vzývání: Nadpozemský skok", d: "(od 9. Úrovně) Skok sešleš bez Pozice a surovin."}
+  - {k: tv-poskoci-chaosu, n: "Vzývání: Poskoci chaosu", d: "(od 9. Úrovně) Jednou za Dlouhý odpočinek sešleš Vyvolej Elementála Černokněžnickou Pozicí.", p: 1/lr}
+  - {k: tv-sepot-ze-zahrobi, n: "Vzývání: Šepot ze záhrobí", d: "(od 9. Úrovně) Mluv s mrtvými sešleš bez Pozice a surovin."}
+  - {k: tv-vzestupny-krok, n: "Vzývání: Vzestupný krok", d: "(od 9. Úrovně) Levitaci na sebe sešleš bez Pozice a surovin."}
+  - {k: tv-zivotasaj, n: "Vzývání: Životasaj", d: "(Pakt čepele, od 12. Úrovně) Zásah Paktovou zbraní způsobí navíc nekrotický zásah rovný Opravě charismatu."}
+  - {k: tv-carodejnicke-retezy, n: "Vzývání: Čarodějnické řetězy", d: "(Pakt řetězu, od 15. Úrovně) Jednou za Dlouhý odpočinek sešleš Znehybni nestvůru na běsa, nebešťana či elementála bez Pozice.", p: 1/lr}
+  - {k: tv-carodejnicky-zrak, n: "Vzývání: Čarodějnický zrak", d: "(od 15. Úrovně) Do 6 sáhů vidíš skutečnou podobu tvaroměnců a tvorů maskovaných iluzí či transmutací."}
+  - {k: tv-mistr-nespoctu-podob, n: "Vzývání: Mistr nespočtu podob", d: "(od 15. Úrovně) Změň svůj tvar sešleš bez Pozice a surovin."}
+  - {k: tv-vize-vzdalenych-risi, n: "Vzývání: Vize vzdálených říší", d: "(od 15. Úrovně) Mystické oko sešleš bez Pozice a surovin."}
+
+obory:
+  bourny-titan:
+    nazev: Bouřný titán
+    kotva: bourny-titan
+    popis: Patron z rodu bouřných obrů, který propůjčuje sílu, blesky a záblesky budoucnosti.
+    schopnosti:
+      - {k: sila-boure, n: Síla bouře, u: [1], d: Naučíš se trik Šokující sevření navíc a na jeho zásah házíš dvakrát (bereš lepší)., seznam: ["Rozšířený seznam: Naváděcí blesk, Určení; Poryv větru, Předvídání; Blesk, Svolej blesky; Ledová bouře, Věštění; Kužel mrazu, Poslyš mýty"]}
+      - {k: sila-obra, n: Síla obra, u: [1], d: Máš Výhodu na Ověření a Záchranné hody na Sílu a dvojnásobnou nosnost., pas: [[system.abilities.str.check.roll.mode, "1", add], [system.abilities.str.save.roll.mode, "1", add], [flags.dnd5e.powerfulBuild, "true", override]]}
+      - {k: navstevnik-vrcholku, n: Návštěvník vrcholků, u: [6], d: Máš Odolnost vůči bleskovým, hromovým a chladným zásahům, nevadí ti výška ani bouře a k těmto zásahům svých kouzel přičítáš Opravu charismatu., pas: [[system.traits.dr.value, lightning, add], [system.traits.dr.value, thunder, add], [system.traits.dr.value, cold, add]]}
+      - {k: predjimac, n: Předjímač, u: [10], d: Ty ani tví spojenci, kteří tě vnímají, nemůžete být překvapeni; jednou mezi Odpočinky si dáš Výhodu na Záchranný hod., p: 1/sr, akt: [{n: Výhoda na záchranu, t: special}]}
+      - {k: vrhac-blesku, n: Vrhač blesků, u: [14], d: Jednou mezi Odpočinky akcí svrhneš blesky na místo do 100 sáhů – tvorové do 2 sáhů utrpí 12k8 bleskového zásahu (Obratnost, polovina)., p: 1/sr, akt: [{n: Vrhač blesků, t: action, typ: save, save: dex, dosah: 100, sablona: {typ: radius, velikost: 2}, dmg: ["12d8", lightning]}]}
+  pradavny-drak:
+    nazev: Pradávný drak
+    kotva: pradavny-drak
+    popis: Patron z řad nejstarších draků, spojený s kostmi světa a ničivým dechem.
+    volby:
+      - {nazev: Bonusový trik (Dech Patrona), typ: spell, pocty: {1: 1}, z: [Mrazivý paprsek, Kyselinová koule, Šokující sevření, Ohnivá střela, Jedovatá sprška, Tajemný výšleh, Posvátný plamen, Dotek smrti, Zlomyslný výsměch, Hlas bouře], vlastnost: cha}
+    schopnosti:
+      - {k: magie-draciho-dechu, n: Magie dračího dechu, u: [1], d: Získáš bonusový trik podle Dechu svého Patrona a kouzlo s tímto Dechem spojené má dvojnásobný dosah., seznam: ["Rozšířený seznam: Hromová vlna, Způsob zranění; Kyselinový šíp, Měsíční paprsek; Blesk, Ohnivá koule; Fantóm, Ledová bouře; Mystická ruka, Oblak smrti"]}
+      - {k: stopa-domova, n: Stopa domova, u: [6], d: Jednou mezi Odpočinky akcí vyvoláš do 24 sáhů vzpomínku na domov Patrona (arktidu, poušť, bažinu…) se Soustředěním., p: 1/sr, akt: [{n: Stopa domova, t: action, dosah: 24}]}
+      - {k: nasycene-srdce, n: Nasycené srdce, u: [10], d: Jsi imunní vůči Vystrašení a Zmámení a máš Odolnost vůči psychickým zásahům., pas: [[system.traits.ci.value, frightened, add], [system.traits.ci.value, charmed, add], [system.traits.dr.value, psychic, add]]}
+      - {k: draci-dech-cernokneznika, n: Dračí dech, u: [14], d: Jednou mezi Odpočinky akcí vydechneš kužel 12 sáhů za 12k8 (typ a záchrana dle Dechu Patrona, polovina při úspěchu)., p: 1/sr, akt: [{n: Dračí dech, t: action, typ: save, save: [con, dex, wis, cha], sablona: {typ: cone, velikost: 12}, dmg: ["12d8", [cold, acid, lightning, fire, poison, force, radiant, necrotic, psychic, thunder]]}]}
+  ztraceny-mistr:
+    nazev: Ztracený mistr
+    kotva: ztraceny-mistr
+    popis: Tajemný patron, strážce zapovězených nauk a magických tajemství.
+    schopnosti:
+      - {k: grimoar-zapovezenych-nauk, n: Grimoár zapovězených nauk, u: [1], d: Získáš Grimoár s tolika Černokněžnickými kouzly, kolik je tvůj Zdatnostní bonus; během Odpočinku si odtud můžeš vyměnit známé kouzlo., seznam: ["Rozšířený seznam: Magická střela, Určení; Odhal myšlenky, Spatři neviditelné; Jasnozřivost, Stvoř Nemrtvého; Fantóm, Mocná neviditelnost; Mystická ruka, Podrob osobu"]}
+      - {k: zapovezena-geometrie, n: Zapovězená geometrie, u: [6], d: Jednou mezi Odpočinky změníš tvar oblasti svého kouzla (koule, válec, krychle, kužel) při zachování velikosti., p: 1/sr, akt: [{n: Přetvarovat kouzlo, t: special}]}
+      - {k: zapovezena-elementaristika, n: Zapovězená elementaristika, u: [10], d: Jednou mezi Odpočinky vyměníš typ zásahu svého kouzla za jiný ze stejné skupiny živlů či energií., p: 1/sr, akt: [{n: Změnit typ zásahu, t: special}]}
+      - {k: zapovezena-prizpusobivost, n: Zapovězená přizpůsobivost, u: [14], d: Jednou mezi Odpočinky změníš vlastnost, na kterou si cíle kouzla hází záchranu., p: 1/sr, akt: [{n: Změnit záchranu, t: special}]}

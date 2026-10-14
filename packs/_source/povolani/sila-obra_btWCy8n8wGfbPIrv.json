@@ -1,0 +1,107 @@
+{
+  "_id": "btWCy8n8wGfbPIrv",
+  "name": "Síla obra",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "sTtSrEepZ5FHUJTJ",
+  "sort": 1000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "iaMTOP0NFdaiz4F2",
+      "name": "Síla obra",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": "1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "flags.dnd5e.powerfulBuild",
+            "value": "true",
+            "type": "override",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Síla obra (pasivní schopnost)</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.btWCy8n8wGfbPIrv",
+      "_key": "!items.effects!btWCy8n8wGfbPIrv.iaMTOP0NFdaiz4F2"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Máš Výhodu na Ověření a Záchranné hody na Sílu a dvojnásobnou nosnost.</p><p><em>Úroveň: 1.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#bourny-titan\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Bouřný titán 1",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "sila-obra",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!btWCy8n8wGfbPIrv"
+}

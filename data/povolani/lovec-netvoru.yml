@@ -1,0 +1,115 @@
+identifikator: lovec-netvoru
+nazev: Lovec netvorů
+kotva: lovec-netvoru
+popis: Lovec, který v sobě nese temnotu a obrací ji proti nestvůrám – krví posílenou čepelí a mocnými zakletími.
+kostka: d10
+zachrany: [dex, int]
+zbroje: [armor:lgt, armor:med, armor:shl]
+zbrane: [weapon:sim, weapon:mar]
+pomucky: [tool:alchemist]
+dovednosti: {pocet: 3, z: [ath, acr, his, arc, rel, inv, sur, ins]}
+asi: [4, 8, 12, 16, 19]
+hlavni: [int]
+skaly:
+  zakleti: {nazev: Použití Loveckých zakletí, hodnoty: {1: 1, 6: 2, 13: 3, 17: 4}}
+  znama-zakleti: {nazev: Známá Lovecká zakletí, hodnoty: {1: 1, 6: 2, 10: 3, 14: 4, 18: 5}}
+  kostka-temnoty: {nazev: Kostka temnoty, typ: dice, hodnoty: {1: d4, 5: d6, 11: d8, 17: d10}}
+obor: {nazev: Řád Lovců netvorů, uroven: 3}
+volby:
+  - {nazev: Lovecká zakletí, typ: feat, vymena: true, pocty: {1: 1, 6: 1, 10: 1, 14: 1, 18: 1}, z: [lz-hruzne, lz-chradnouci, lz-nenavistne, lz-ochromujici, lz-oslnujici, lz-prolamujici, lz-srazejici, lz-tryznive, lz-smrtelne-krece]}
+  - {nazev: Bojový styl, typ: feat, pocty: {2: 1}, z: [styl-dve-zbrane, styl-obourucni, styl-obrana, styl-ochrana, styl-strelba, styl-serm]}
+
+schopnosti:
+  - {k: lov, n: Lov, u: [1], d: Máš Výhodu na Přežití při pronásledování kořisti a na Inteligenci o vílách, nemrtvých a běsech; pronásledovaná kořist tě nepřekvapí.}
+  - k: lovecka-zakleti
+    n: Lovecká zakletí
+    u: [1, 6, 10, 13, 14, 17, 18]
+    d: Znáš Lovecká zakletí (1 až 5 podle Úrovně) a sesíláš je většinou bonusovou akcí; mezi Odpočinky je použiješ 1×, od 6. Úrovně 2×, od 13. 3× a od 17. 4×. Některá lze sesílat zesíleně.
+    p: "@scale.lovec-netvoru.zakleti/sr"
+    akt: [{n: Seslat zakletí, t: bonus}, {n: Seslat zakletí (reakce), t: reaction}]
+  - {k: bojovy-styl, n: Bojový styl, u: [2], d: Naučíš se jeden bojový styl.}
+  - {k: styl-dve-zbrane, n: "Bojový styl: Boj dvěma zbraněmi", d: K Zásahu útoku druhou zbraní si přičítáš Opravu vlastnosti.}
+  - {k: styl-obourucni, n: "Bojový styl: Boj obouruční zbraní", d: Na Zásahu obouručně drženou zbraní na blízko si jedničky a dvojky můžeš přehodit.}
+  - {k: styl-obrana, n: "Bojový styl: Obrana", d: Ve zbroji máš +1 k OČ., pas: [[system.attributes.ac.bonus, "+1", add]]}
+  - {k: styl-ochrana, n: "Bojový styl: Ochrana", d: Se štítem můžeš reakcí dát Nevýhodu útoku na spojence do 1 sáhu., akt: [{n: Ochránit, t: reaction}]}
+  - {k: styl-strelba, n: "Bojový styl: Střelba", d: K útokům střelnou zbraní máš +2., pas: [[system.bonuses.rwak.attack, "+2", add]]}
+  - {k: styl-serm, n: "Bojový styl: Šerm", d: Se zbraní na blízko v jedné ruce a bez další zbraně máš +2 k Zásahu., pas: [[system.bonuses.mwak.damage, "+2", add]]}
+  - k: temna-cepel
+    n: Temná čepel
+    u: [2, 7, 14]
+    d: Bonusovou akcí potřísníš zbraň svou krví (utrpíš Kostku temnoty) a do příštího Odpočinku způsobuje navíc Kostku temnoty zásahu typu daného rituálem – žár, mráz, šok, vztek, hnis, hlad; od 14. Úrovně i zmar, nenávist nebo fanatismus. Rituály se naučíš na 2., 7. a 14. Úrovni.
+    seznam: ["Rituál žáru – ohnivý", "Rituál mrazu – chladný", "Rituál šoku – bleskový", "Rituál vzteku – hromový", "Rituál hnisu – jedový", "Rituál hladu – kyselinový", "Rituál zmaru – nekrotický (přízračný)", "Rituál nenávisti – psychický (přízračný)", "Rituál fanatismu – zářivý (přízračný)"]
+    akt:
+      - {n: Potřísnit čepel, t: bonus, typ: damage, dmg: ["@scale.lovec-netvoru.kostka-temnoty", necrotic]}
+      - {n: Zásah Temnou čepelí, t: special, typ: damage, dmg: ["@scale.lovec-netvoru.kostka-temnoty", [fire, cold, lightning, thunder, poison, acid, necrotic, psychic, radiant]]}
+  - {k: utok-navic, n: Útok navíc, u: [5], d: V akci Útok zaútočíš dvakrát.}
+  - {k: temne-spoutani, n: Temné spoutání, u: [6, 13], d: Jednou mezi Odpočinky nakazíš cíl zasažený Temnou čepelí – víš, kde je, a když zasáhne tebe či tvora poblíž, utrpí psychický zásah rovný Oprave inteligence (od 13. Úrovně silnější)., p: 1/sr, akt: [{n: Nakazit temnotou, t: special}, {n: Odplata temnoty, t: special, typ: damage, dmg: ["max(1, @abilities.int.mod)", psychic], bezpouziti: true}]}
+  - {k: citeni-zla, n: Cítění zla, u: [9], d: Máš Výhodu na Historii o minulosti předmětu či místa, kterého se dotýkáš, a temnou minulost můžeš spatřit ve vizi.}
+  - {k: posunute-hranice, n: Posunuté hranice, u: [10], d: Rychlost se ti zvýší o 1 sáh a k záchranám na Sílu, Obratnost a Odolnost přičítáš Opravu inteligence (aspoň +1)., pas: [[system.attributes.movement.walk, "1", add], [system.abilities.str.bonuses.save, "+max(1, @abilities.int.mod)", add], [system.abilities.dex.bonuses.save, "+max(1, @abilities.int.mod)", add], [system.abilities.con.bonuses.save, "+max(1, @abilities.int.mod)", add]]}
+  - {k: zatvrzelost, n: Zatvrzelost, u: [14], d: Máš Výhodu proti Vystrašení a Zmámení.}
+  - {k: zkroceni-temnoty, n: Zkrocení temnoty, u: [20], d: Kostkou temnoty si házíš dvakrát (bereš nižší) a každý zásah Temnou čepelí ti vrátí jedno použití Loveckého zakletí.}
+  # Lovecká zakletí
+  - {k: lz-hruzne, n: "Zakletí: Hrůzné", d: Bonusovou akcí znejistíš tvora do 6 sáhů – Zastrašování proti němu má do konce tvého příštího tahu Výhodu (zesílené mu dá Nevýhodu na Vnímání).}
+  - {k: lz-chradnouci, n: "Zakletí: Chřadnoucí", d: Tvor do 6 sáhů má Nevýhodu na první další hod na udržení Soustředění (zesílené na všechny).}
+  - {k: lz-nenavistne, n: "Zakletí: Nenávistné", d: Do konce tahu přidáš proti tvorovi do 6 sáhů k zásahu Temnou čepelí Kostku temnoty (zesílené dá Výhodu na první útok).}
+  - {k: lz-ochromujici, n: "Zakletí: Ochromující", d: Tvor do 6 sáhů při neúspěšné záchraně na Sílu ztratí Rychlost i reakce do konce svého tahu (zesílené na minutu)., akt: [{n: Ochromit, t: bonus, typ: save, save: str, dc: int, dosah: 6}]}
+  - {k: lz-oslnujici, n: "Zakletí: Oslňující", d: Reakcí odečteš Kostku temnoty od útoku tvora do 6 sáhů (zesílené od všech jeho útoků v tahu)., akt: [{n: Oslnit, t: reaction, hod: "@scale.lovec-netvoru.kostka-temnoty"}]}
+  - {k: lz-prolamujici, n: "Zakletí: Prolamující", d: Zasažený tvor do 6 sáhů ztratí do konce tahu odolnost vůči danému typu zásahu (zesílené sníží imunitu na odolnost).}
+  - {k: lz-srazejici, n: "Zakletí: Srážející", d: Odhodíš tvora do 6 sáhů o 3 sáhy; při neúspěšné záchraně na Sílu je sražený (zesílené na více či větší tvory)., akt: [{n: Srazit, t: bonus, typ: save, save: str, dc: int, dosah: 6}]}
+  - {k: lz-tryznive, n: "Zakletí: Trýznivé", d: Tvor do 6 sáhů má do konce svého tahu Nevýhodu na Sílu a Obratnost a za víc útoků utrpí 1k8 nekrotického (zesílené na minutu).}
+  - {k: lz-smrtelne-krece, n: "Zakletí smrtelné křeče", d: Reakcí přinutíš tvora padajícího na 0 Bodů výdrže zaútočit na cíl dle tvé volby.}
+
+obory:
+  rad-konecne-smrti:
+    nazev: Řád konečné smrti
+    kotva: rad-konecne-smrti
+    popis: Lovci nemrtvých, kteří obětovali kus života, aby mohli kráčet po hraně smrti.
+    schopnosti:
+      - {k: ritual-temne-zare, n: Rituál Temné záře, u: [3], d: Naučíš se přízračný rituál se zářivým zásahem – dává odolnost vůči nekrotickému zásahu a proti nemrtvým sílí.}
+      - {k: mistr-zakleti, n: Mistr zakletí, u: [3], d: Mezi Odpočinky můžeš seslat o jedno Lovecké zakletí víc.}
+      - {k: krok-za-oponou, n: Krok za oponou, u: [7, 15], d: Jednou mezi Odpočinky (od 15. Úrovně dvakrát) vstoupíš na několik kol do Éterické sféry., p: "(1 + floor(@classes.lovec-netvoru.levels / 15))/sr", akt: [{n: Vkročit do Éteru, t: special}]}
+      - {k: temne-prikovani, n: Temné přikování, u: [11], d: Tvorem nakaženým temnotou nelze procházet skrz věci a Temná čepel proti němu přidá Kostku temnoty.}
+      - {k: vysati-zla, n: Vysátí zla, u: [15], d: Naučíš se Očišťující zakletí (ukončí vystrašení, zmámení či posednutí).}
+      - {k: temne-navraceni, n: Temné navrácení, u: [18], d: Když s Temnou čepelí v ruce padneš na 0, pohltíš ji a zůstaneš na 1 Bodu výdrže.}
+  rad-pozmenencu:
+    nazev: Řád pozměněnců
+    kotva: rad-pozmenencu
+    popis: Lovci, kteří své tělo proměnili alchymickými pozměňovači.
+    skaly:
+      pozmenovace: {nazev: Použití Pozměňovačů, hodnoty: {3: 1, 7: 2, 15: 3}}
+    schopnosti:
+      - {k: pozmenovace, n: Pozměňovače, u: [3, 7, 11, 15, 18], d: Znáš receptury 4 pozměňovačů (další na 7., 11., 15. a 18. Úrovni); každý ti dá přínos i daň, použiješ je 1× mezi Odpočinky (od 7. 2×, od 15. 3×)., p: "@scale.rad-pozmenencu.pozmenovace/sr", seznam: [Mražení, Pevnost, Posilovač, Pronikavost, Prudkost, Pružnost, Soustředění, Soví oči, Temnota, Tuhost, Tvárnost, Tvrdost, Urychlení, Vnímavost, Žhnutí, Sebenakopávač, Běsnění, Krvelačnost, Mlžnost], akt: [{n: Vypít pozměňovač, t: bonus}]}
+      - {k: premenena-krev, n: Přeměněná krev, u: [7], d: Jsi imunní vůči jedům a otravě a jednou mezi Odpočinky bonusovou akcí potlačíš procesy ve svém těle., p: 1/sr, pas: [[system.traits.di.value, poison, add], [system.traits.ci.value, poisoned, add]], akt: [{n: Potlačit procesy, t: bonus}]}
+      - {k: odhalujici-spoutani, n: Odhalující spoutání, u: [11], d: Temné spoutání zruší cíli iluzorní maskování a odhalí proměněné tvory.}
+      - {k: prokleti-krve, n: Prokletí krve, u: [15], d: Naučíš se Hnilobné zakletí (otrávení s opakovanou záchranou).}
+      - {k: vnitrni-alchymie, n: Vnitřní alchymie, u: [18], d: Bonusovou akcí vyměníš působící pozměňovač za jiný, který umíš., p: "max(1, @abilities.int.mod)/lr", akt: [{n: Vyměnit pozměňovač, t: bonus}]}
+  rad-bestie:
+    nazev: Řád bestie
+    kotva: rad-bestie
+    popis: Lovci s bestií uvnitř, kteří ovládají částečnou proměnu – a krotí svou krvelačnost.
+    schopnosti:
+      - {k: smysly-selmy, n: Smysly šelmy, u: [3], d: Máš Výhodu na Vnímání sluchem a čichem.}
+      - k: bestialni-podoba
+        n: Bestiální podoba
+        u: [3, 7, 11, 18]
+        d: Bonusovou akcí se na hodinu částečně proměníš – odolnost vůči nemagickým fyzickým zásahům, +1 OČ, silnější zásahy na blízko a drápy (1k6, od 11. Úrovně 1k8), ale hrozí ti krvavé běsnění.
+        p: "(1 + floor(@classes.lovec-netvoru.levels / 11))/sr"
+        akt: [{n: Proměnit se, t: bonus, ef: [0]}, {n: Drápy, t: action, typ: attack, utok: melee, vlastnost: dex, dmg: ["1d6 + @abilities.dex.mod", slashing], bezpouziti: true}]
+        ef: [{n: Bestiální podoba, kola: 600, z: [[system.traits.dr.value, bludgeoning, add], [system.traits.dr.value, piercing, add], [system.traits.dr.value, slashing, add], [system.attributes.ac.bonus, "+1", add], [system.bonuses.mwak.damage, "+1", add], [system.abilities.str.save.roll.mode, "1", add]]}]
+      - {k: predatorska-hbitost, n: Predátorská hbitost, u: [7], d: Rychlost se ti zvýší o 2 sáhy a skáčeš dál i výš., pas: [[system.attributes.movement.walk, "2", add]]}
+      - {k: krvave-pouto, n: Krvavé pouto, u: [15], d: V bestiální podobě odoláváš běsnění a máš Výhodu na útoky proti tvorovi nakaženému temnotou.}
+      - {k: splynuti-s-bestii, n: Splynutí s bestií, u: [18], d: Bestiální podobu používáš neomezeně a naučíš se Zakletí mrznoucí krve.}
+  rad-zaprodancu:
+    nazev: Řád zaprodanců
+    kotva: rad-zaprodancu
+    popis: Lovci, kteří se zaprodali temnému patronovi a za službu dostali jeho magii.
+    kouzleni: {progrese: third, vlastnost: cha}
+    schopnosti:
+      - {k: patron-zaprodancu, n: Patron, u: [3], d: Zvolíš patrona řádu (arcivíla, běs, bouřný titán, čepel uřknutí, džin, hlubinný, nebešťan, neumírající, pradávný drak…), který určuje tvé další schopnosti.}
+      - {k: magie-dana-paktem-lovce, n: Magie daná Paktem, u: [3], d: Sesíláš Černokněžnická kouzla s Charismatem; pozice kouzel máš malé a obnovuješ je Odpočinkem.}
+      - {k: cepel-paktu, n: Čepel Paktu, u: [3], d: Patron posílí tvou Temnou čepel podle svého druhu.}
+      - {k: paktova-krvelacnost, n: Paktová krvelačnost, u: [7], d: Když sešleš trik, můžeš bonusovou akcí zaútočit zbraní., akt: [{n: Útok po triku, t: bonus}]}
+      - {k: propujcena-magie, n: Propůjčená magie, u: [7], d: Naučíš se kouzlo svého patrona a sesíláš ho Pozicí paktové magie.}
+      - {k: podmanujici-spoutani, n: Podmaňující spoutání, u: [11], d: Tvor nakažený temnotou má Nevýhodu na záchrany proti tvým Černokněžnickým kouzlům.}
+      - {k: venovana-magie, n: Věnovaná magie, u: [15], d: Naučíš se další kouzlo patrona a jednou za Dlouhý odpočinek sešleš jedno z nich bez Pozice., p: 1/lr, akt: [{n: Věnované kouzlo, t: action}]}
+      - {k: zakleti-obeti, n: Zakletí oběti, u: [18], d: Naučíš se Obětující zakletí – duši padlého nabídneš patronovi za Výhodu na útoky.}

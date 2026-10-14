@@ -1,0 +1,171 @@
+{
+  "_id": "43jfpDChTA4opdYj",
+  "name": "Pyrofor",
+  "type": "subclass",
+  "img": "icons/sundries/books/book-symbol-triangle-silver-blue.webp",
+  "folder": "WASRWwMSNIjYy3Gd",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Alchymista války – mistr ohně, výbušnin a palných zbraní.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#pyrofor\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "pyrofor",
+    "classIdentifier": "alchymista",
+    "advancement": {
+      "At01JrOK14tJU1kb": {
+        "_id": "At01JrOK14tJU1kb",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.dcyGIROY7sj0LNf1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.bh3EXW9XNGI9VQWR",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "O93dsGQfQDSC7JwR": {
+        "_id": "O93dsGQfQDSC7JwR",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.IvZ5mrMXOYmMauWK",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "S2GFs2q7fX1MLYez": {
+        "_id": "S2GFs2q7fX1MLYez",
+        "type": "ItemGrant",
+        "level": 13,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.tXg3aP1Y5YnSMfLJ",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.QIClHypzaQe8ce9R",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "oGJxvoYE59ssSRKX": {
+        "_id": "oGJxvoYE59ssSRKX",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.RxFtj5xZ1orDnI7U",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {}
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "obor": "pyrofor"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!43jfpDChTA4opdYj"
+}

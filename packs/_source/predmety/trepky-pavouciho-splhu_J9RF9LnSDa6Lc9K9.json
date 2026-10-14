@@ -1,0 +1,171 @@
+{
+  "_id": "J9RF9LnSDa6Lc9K9",
+  "name": "Trepky pavoučího šplhu",
+  "type": "equipment",
+  "img": "icons/equipment/feet/shoes-rounded-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Neobvyklý, vyžaduje Sladění</em></p><p>Rychlost šplhání rovná tvé Rychlosti, i po stěnách a stropech – ne však po kluzkém povrchu.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#trepky-pavouciho-splhu\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "cover": null,
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+      "value": "clothing",
+      "baseItem": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "Surface cannot be slippery.",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "sah"
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true
+        },
+        "appliedEffects": []
+      }
+    },
+    "attuned": false,
+    "identifier": "slippers-of-spider-climbing"
+  },
+  "effects": [],
+  "folder": "monJq3WM8Ubk9o5z",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "trepky-pavouciho-splhu"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!J9RF9LnSDa6Lc9K9"
+}

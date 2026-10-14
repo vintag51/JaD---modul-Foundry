@@ -1,0 +1,139 @@
+{
+  "_id": "zWtig7FU3ZSNj61P",
+  "name": "Prsten odolání (Psychický zásah)",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-cabochon-notched-gold-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Vzácný, vyžaduje Sladění</em></p><p>Odolnost proti jednomu Typu zásahu.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#prsten-odolani\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "cover": null,
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "armor": {
+      "value": 0,
+      "dex": 0,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+      "value": "ring",
+      "baseItem": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {},
+    "attuned": false,
+    "identifier": "ring-of-psychic-resistance"
+  },
+  "effects": [
+    {
+      "name": "Odolnost – Psychický zásah",
+      "img": "icons/equipment/finger/ring-cabochon-notched-gold-green.webp",
+      "_id": "euYYPfyCFWqOW1Qx",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek předmětu <em>Prsten odolání (Psychický zásah)</em>.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!zWtig7FU3ZSNj61P.euYYPfyCFWqOW1Qx"
+    }
+  ],
+  "folder": "7idjfFmE83TzsZQc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "prsten-odolani"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!zWtig7FU3ZSNj61P"
+}

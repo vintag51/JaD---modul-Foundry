@@ -1,0 +1,370 @@
+{
+  "_id": "TyBdfIVsVnnI5I9L",
+  "name": "Denní světlo",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Vytvoříš kouli jasného denního světla.</p><h3>Automatizace</h3><ul><li><strong>Seslat (denní světlo na předmět):</strong> očarování předmětu; efekt: Denní světlo.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#denni-svetlo\" target=\"_blank\">SRD Jeskyní a draků – Denní světlo</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "sphere",
+        "size": "12",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "12",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "evo",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "SrAIyQ5bcIehzgmX": {
+        "type": "enchant",
+        "name": "Seslat (denní světlo na předmět)",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "pXozRRGkzMMm00kl",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [
+                "9QQoXFhnT4bcSEVM"
+              ],
+              "item": []
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "object",
+            "count": "1",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "enchant": {
+          "self": false
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "categories": [],
+          "properties": [],
+          "type": ""
+        },
+        "_id": "SrAIyQ5bcIehzgmX"
+      }
+    },
+    "identifier": "daylight"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "denni-svetlo",
+      "srd": "BP3GCwa66IAw1yTG",
+      "nazevEn": "Daylight",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#denni-svetlo"
+    }
+  },
+  "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "Denní světlo",
+      "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+      "disabled": true,
+      "_id": "pXozRRGkzMMm00kl",
+      "system": {
+        "changes": [
+          {
+            "key": "system.description.value",
+            "type": "override",
+            "value": "{} <p><strong>Denní světlo.</strong> Vytvoříš kouli jasného denního světla.</p>",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Denní světlo</em>. Podrobnosti v popisu kouzla.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781298340420,
+        "modifiedTime": 1781305470853,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!TyBdfIVsVnnI5I9L.pXozRRGkzMMm00kl"
+    },
+    {
+      "name": "Drží předmět s denním světlem",
+      "img": "icons/magic/light/explosion-star-glow-yellow.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.TyBdfIVsVnnI5I9L",
+      "type": "base",
+      "_id": "9QQoXFhnT4bcSEVM",
+      "system": {
+        "changes": [
+          {
+            "key": "token.light.dim",
+            "type": "upgrade",
+            "value": 120,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "token.light.bright",
+            "type": "upgrade",
+            "value": 60,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "token.light.animation.type",
+            "type": "override",
+            "value": "starlight",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "token.light.color",
+            "type": "override",
+            "value": "#bb8c25",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Denní světlo</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781305211456,
+        "modifiedTime": 1781305289895,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!TyBdfIVsVnnI5I9L.9QQoXFhnT4bcSEVM"
+    }
+  ],
+  "folder": "Xm9ncGQteAtEtSzo",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!TyBdfIVsVnnI5I9L"
+}

@@ -1,0 +1,351 @@
+{
+  "_id": "uBB32mTglNZ02WUy",
+  "name": "Inkvizitor",
+  "type": "subclass",
+  "img": "icons/sundries/books/book-symbol-triangle-silver-blue.webp",
+  "folder": "JNSOEEsZYi50Lz7r",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Hledač nepřátel víry, jehož pohled odhalí lež i skryté hrozby.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#inkvizitor\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "inkvizitor",
+    "classIdentifier": "cleric",
+    "advancement": {
+      "A67tS5SHsEd2tYAC": {
+        "_id": "A67tS5SHsEd2tYAC",
+        "type": "ItemGrant",
+        "level": 1,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.41mTKnnYC7KIHDtN",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "nePMcfTQPm8Kfnpk": {
+        "_id": "nePMcfTQPm8Kfnpk",
+        "type": "ItemGrant",
+        "level": 2,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.uRyiJ6E3E4AJZkgy",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "3I5i3RKAmcLtKNwd": {
+        "_id": "3I5i3RKAmcLtKNwd",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.DL1ObjhLbBW0Eban",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "L4kkhGfaMRaMjkja": {
+        "_id": "L4kkhGfaMRaMjkja",
+        "type": "ItemGrant",
+        "level": 8,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.CBsFHadnbdIrNKp4",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "bd6w18JQCpCiX04i": {
+        "_id": "bd6w18JQCpCiX04i",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.650hA7ZysyzRPi2P",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "GSZSUb7vDYDn93qd": {
+        "_id": "GSZSUb7vDYDn93qd",
+        "type": "ItemGrant",
+        "level": 1,
+        "title": "Doménová kouzla",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.84W2yoqvyyTyPedZ",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.F8Qac5Vo65qpfT2X",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      },
+      "QheE96uGQMZAvFKt": {
+        "_id": "QheE96uGQMZAvFKt",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Doménová kouzla",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.tRoUwnEEoV0DzRFa",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.9PgLgBhaCxqv8f64",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      },
+      "WgPEFnsf54xiOCl8": {
+        "_id": "WgPEFnsf54xiOCl8",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Doménová kouzla",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.olALakVCTyRsD6fr",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.pAYfZzluKpD33BwT",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      },
+      "zUSdVNIlk72tvEhE": {
+        "_id": "zUSdVNIlk72tvEhE",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Doménová kouzla",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.z5CAfuKsi8IawVaL",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.aMWno7BVmWA6i1dL",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      },
+      "9f5skib1SK6MmSWx": {
+        "_id": "9f5skib1SK6MmSWx",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Doménová kouzla",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.ZsoRJXyWmnTz5PoC",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.i8I5rd8rISaRa7uj",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {}
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "obor": "inkvizitor"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!uBB32mTglNZ02WUy"
+}

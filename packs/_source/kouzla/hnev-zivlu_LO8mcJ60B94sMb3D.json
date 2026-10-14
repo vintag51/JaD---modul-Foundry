@@ -1,0 +1,591 @@
+{
+  "_id": "LO8mcJ60B94sMb3D",
+  "name": "Hněv živlů",
+  "type": "spell",
+  "img": "icons/magic/earth/projectile-stone-boulder-orange.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [
+    {
+      "_id": "ytcVcdwGpPpEnn7V",
+      "name": "Zamrzlý (Hněv živlů)",
+      "img": "icons/magic/earth/projectile-stone-boulder-orange.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "duration": {
+        "value": 6,
+        "units": "seconds",
+        "expiry": "turnEnd",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.all",
+            "value": "0",
+            "type": "override",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Hněv živlů</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_key": "!items.effects!LO8mcJ60B94sMb3D.ytcVcdwGpPpEnn7V"
+    },
+    {
+      "_id": "dSswzMRBxHPCa7S7",
+      "name": "Ohlušený (Hněv živlů)",
+      "img": "icons/magic/earth/projectile-stone-boulder-orange.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [
+        "deafened"
+      ],
+      "duration": {
+        "value": 6,
+        "units": "seconds",
+        "expiry": "turnEnd",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": []
+      },
+      "description": "<p>Účinek kouzla <em>Hněv živlů</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_key": "!items.effects!LO8mcJ60B94sMb3D.dSswzMRBxHPCa7S7"
+    },
+    {
+      "_id": "Bv7cc9mI1FKOahtd",
+      "name": "Ležící (Hněv živlů)",
+      "img": "icons/magic/earth/projectile-stone-boulder-orange.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [
+        "prone"
+      ],
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": []
+      },
+      "description": "<p>Účinek kouzla <em>Hněv živlů</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_key": "!items.effects!LO8mcJ60B94sMb3D.Bv7cc9mI1FKOahtd"
+    }
+  ],
+  "system": {
+    "identifier": "hnev-zivlu",
+    "level": 1,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "prach z barevných krystalů",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "12",
+      "units": "sah",
+      "special": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "",
+        "size": "",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "0zHYrIUkcD48KKM3": {
+        "_id": "0zHYrIUkcD48KKM3",
+        "type": "save",
+        "img": "",
+        "sort": 0,
+        "name": "Oheň",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": true,
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "sah",
+            "type": "line",
+            "size": "4",
+            "width": "1",
+            "height": "",
+            "count": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "ZI9psY61y1qq4wDv": {
+        "_id": "ZI9psY61y1qq4wDv",
+        "type": "save",
+        "img": "",
+        "sort": 100000,
+        "name": "Voda",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "ytcVcdwGpPpEnn7V",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "RTSF4QjQIXCwkGok": {
+        "_id": "RTSF4QjQIXCwkGok",
+        "type": "save",
+        "img": "",
+        "sort": 200000,
+        "name": "Vzduch",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "dSswzMRBxHPCa7S7",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": true,
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "sah",
+            "type": "radius",
+            "size": "2",
+            "width": "",
+            "height": "",
+            "count": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "thunder"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "RyXS4ucQIq7CDFeA": {
+        "_id": "RyXS4ucQIq7CDFeA",
+        "type": "save",
+        "img": "",
+        "sort": 300000,
+        "name": "Země",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Bv7cc9mI1FKOahtd",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": true,
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "sah",
+            "type": "radius",
+            "size": "2",
+            "width": "",
+            "height": "",
+            "count": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Obrátíš blízký živel proti nepříteli – oheň, vodu, vzduch nebo zemi, každý s jiným účinkem.</p><h3>Automatizace</h3><ul><li><strong>Oheň:</strong> Záchranný hod na Obratnost proti SO kouzla; Ohnivý zásah za 3k6 Bodů výdrže (+1k6 za každý Stupeň nad 1); při úspěchu poloviční Zásah.</li><li><strong>Voda:</strong> Záchranný hod na Obratnost proti SO kouzla; Chladný zásah za 3k6 Bodů výdrže (+1k6 za každý Stupeň nad 1); při úspěchu bez účinku; efekt: Zamrzlý (Hněv živlů).</li><li><strong>Vzduch:</strong> Záchranný hod na Odolnost proti SO kouzla; Hromový zásah za 2k6 Bodů výdrže (+1k6 za každý Stupeň nad 1); při úspěchu bez účinku; efekt: Ohlušený (Hněv živlů).</li><li><strong>Země:</strong> Záchranný hod na Sílu proti SO kouzla; Drtivý zásah za 2k6 Bodů výdrže (+1k6 za každý Stupeň nad 1); při úspěchu bez účinku; efekt: Ležící (Hněv živlů).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hnev-zivlu\" target=\"_blank\">SRD Jeskyní a draků – Hněv živlů</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "hnev-zivlu",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hnev-zivlu"
+    }
+  },
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!LO8mcJ60B94sMb3D"
+}

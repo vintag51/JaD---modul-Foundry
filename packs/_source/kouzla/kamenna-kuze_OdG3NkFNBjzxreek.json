@@ -1,0 +1,235 @@
+{
+  "_id": "OdG3NkFNBjzxreek",
+  "name": "Kamenná kůže",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Tvor má odolnost vůči nemagickým fyzickým Zásahům.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Kamenná kůže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#kamenna-kuze\" target=\"_blank\">SRD Jeskyní a draků – Kamenná kůže</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "abj",
+    "materials": {
+      "value": "diamantový prach v hodnotě 100 zl, který kouzlo spotřebuje",
+      "consumed": true,
+      "cost": 100,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "cSVCA9h5OEo5lfBE",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "stoneskin"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "kamenna-kuze",
+      "srd": "ReMbjfeOKoSj3O79",
+      "nazevEn": "Stoneskin",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#kamenna-kuze"
+    }
+  },
+  "img": "icons/magic/earth/strike-fist-stone-gray.webp",
+  "effects": [
+    {
+      "origin": "Compendium.dnd5e.spells.ReMbjfeOKoSj3O79",
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": true,
+      "_id": "cSVCA9h5OEo5lfBE",
+      "tint": "#ffffff",
+      "transfer": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "name": "Kamenná kůže",
+      "description": "<p>Účinek kouzla <em>Kamenná kůže</em>. Podrobnosti v popisu kouzla.</p>",
+      "statuses": [],
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781374318294,
+        "modifiedTime": 1781374318294,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "img": "icons/magic/earth/strike-fist-stone-gray.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.traits.dr.bypasses",
+            "value": "mgc",
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!OdG3NkFNBjzxreek.cSVCA9h5OEo5lfBE"
+    }
+  ],
+  "folder": "8hak7PLbgtXEQBpD",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OdG3NkFNBjzxreek"
+}

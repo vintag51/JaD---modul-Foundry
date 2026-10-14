@@ -1,0 +1,114 @@
+{
+  "_id": "qH7lWIPgCec79iIF",
+  "name": "Prvotní šampion",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "ti4X0x5YEyc8opwG",
+  "sort": 20000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "MnfUlcTi8LFnvFTv",
+      "name": "Prvotní šampion",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.value",
+            "value": "4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.con.value",
+            "value": "4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.str.max",
+            "value": "4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.con.max",
+            "value": "4",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Prvotní šampion (pasivní schopnost)</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.qH7lWIPgCec79iIF",
+      "_key": "!items.effects!qH7lWIPgCec79iIF.MnfUlcTi8LFnvFTv"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Tvá Síla a Odolnost se zvýší o 4 a jejich maximum je 24.</p><p><em>Úroveň: 20.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#barbar\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Barbar 20",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "prvotni-sampion",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qH7lWIPgCec79iIF"
+}

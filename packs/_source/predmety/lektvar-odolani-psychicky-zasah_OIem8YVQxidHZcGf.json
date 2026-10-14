@@ -1,0 +1,235 @@
+{
+  "_id": "OIem8YVQxidHZcGf",
+  "name": "Lektvar odolání (Psychický zásah)",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-conical-corked-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Neobvyklý</em></p><p>Na hodinu získáš Odolnost proti jednomu Typu zásahu, určenému při výrobě.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#lektvar-odolani\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": "",
+      "name": "Unidentified Potion"
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {
+      "of7MLaNWoYfQedkv": {
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "uvppImdMsIuq4DrH",
+            "level": {}
+          }
+        ],
+        "range": {
+          "units": "touch",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "sah",
+            "stationary": false
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "name": "Vypít",
+        "img": "",
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireAttunement": false,
+          "requireIdentification": false
+        },
+        "flags": {},
+        "_id": "of7MLaNWoYfQedkv"
+      }
+    },
+    "attuned": false,
+    "identifier": "potion-of-psychic-resistance"
+  },
+  "effects": [
+    {
+      "name": "Odolnost – Psychický zásah",
+      "img": "icons/magic/lightning/bolt-strike-purple.webp",
+      "origin": "Compendium.jeskyne-a-draci.predmety.Item.OIem8YVQxidHZcGf",
+      "transfer": false,
+      "_id": "uvppImdMsIuq4DrH",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "psychic",
+            "phase": "initial",
+            "priority": null
+          }
+        ],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek předmětu <em>Lektvar odolání (Psychický zásah)</em>.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!OIem8YVQxidHZcGf.uvppImdMsIuq4DrH"
+    }
+  ],
+  "folder": "iWazrPrGKvt8YelZ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "lektvar-odolani"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OIem8YVQxidHZcGf"
+}

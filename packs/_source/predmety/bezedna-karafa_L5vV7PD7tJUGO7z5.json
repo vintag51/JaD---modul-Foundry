@@ -1,0 +1,192 @@
+{
+  "_id": "L5vV7PD7tJUGO7z5",
+  "name": "Bezedná karafa",
+  "type": "consumable",
+  "img": "icons/consumables/potions/potion-flask-corked-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Neobvyklý</em></p><p>Akcí a zaklínadlem z ní vyteče 4 l, 20 l nebo 120 l vody gejzírem. Gejzír lze Bonusovou akcí namířit: předmět do 100 kg odhodí, tvor musí uspět v Záchraně na Sílu SO 13, jinak utrpí 1k4 Drtivého zásahu a je Sražen.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#bezedna-karafa\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "autoDestroy": false,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 4,
+        "bonus": "",
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Command word.",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "turn",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "line",
+            "size": "6",
+            "width": "",
+            "height": "",
+            "units": "sah"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ]
+            }
+          ]
+        },
+        "save": {
+          "ability": "str",
+          "dc": {
+            "calculation": "",
+            "formula": "13"
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true
+        },
+        "appliedEffects": []
+      }
+    },
+    "attuned": false,
+    "identifier": "decanter-of-endless-water"
+  },
+  "effects": [],
+  "folder": "9lOeroroSTBW4i0d",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "bezedna-karafa"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!L5vV7PD7tJUGO7z5"
+}

@@ -1,0 +1,480 @@
+# Původní kouzla Jeskyní a draků (mimo SRD 5.1).
+# Klíč = kotva v kapitole 10 – Magie. Název, Stupeň, škola, povolání a rituál se berou z data/jad-kouzla.yml.
+# Formát popisuje tools/vlastni.py. Shrnutí i materiály jsou psané vlastními slovy (licence JaD zakazuje kopírovat text).
+# Složky: značky dnd5e – V verbální, S pohybová (v JaD „P“), M surovinová (v JaD „S“). Vzdálenosti v sázích.
+
+drtive-uponky:
+  shrnuti: Z ruky ti vyraší škrtící réva, která sevře cíl a bonusovou akcí ho můžeš kousek posunout (o 1 sáh, na vyšších Úrovních dál).
+  slozky: [V, S]
+  dosah: {hodnota: 6}
+  cil: {pocet: 1, typ: creature}
+  aktivity:
+    - typ: attack
+      utok: melee
+      zasah: [{kostky: 1d6, typ: bludgeoning, skalovani: 1d6}]
+    - typ: utility
+      nazev: Posunout cíl
+      sesilani: bonus
+      spotrebuje_pozici: false
+
+hadi-ustknuti:
+  shrnuti: Přízračný had vyrazí z tvé ruky a uštkne cíl – zásah bodný i jedový.
+  slozky: [V, S, M]
+  material: zub jedovatého hada
+  dosah: {hodnota: 6}
+  cil: {pocet: 1, typ: creature}
+  aktivity:
+    - typ: attack
+      utok: melee
+      zasah:
+        - {kostky: 1d4, typ: piercing, skalovani: 1d4}
+        - {kostky: 1d4, typ: poison, skalovani: 1d4}
+
+hlas-boure:
+  shrnuti: Bouřlivý výkřik zasáhne tvory v kuželu hromem a ohluší je.
+  slozky: [V]
+  dosah: {jednotky: self}
+  cil: {typ: creature, sablona: {typ: cone, velikost: 2}}
+  efekty:
+    - {id: ohluseni, nazev: Ohlušený (Hlas bouře), stavy: [deafened], kola: 1, konec: turnEnd}
+  aktivity:
+    - typ: save
+      zachrana: con
+      pri_uspechu: none
+      zasah: [{kostky: 1d6, typ: thunder, skalovani: 1d6}]
+      efekty: [ohluseni]
+
+mentalni-uder:
+  shrnuti: Psychický úder myslí; proti vystrašenému nebo zmámenému cíli je silnější.
+  slozky: [S]
+  dosah: {hodnota: 12}
+  cil: {pocet: 1, typ: creature}
+  aktivity:
+    - typ: save
+      zachrana: int
+      pri_uspechu: none
+      zasah: [{kostky: 1d6, typ: psychic, skalovani: 1d6}]
+    - typ: save
+      nazev: Seslat (cíl je Vystrašený nebo Zmámený)
+      zachrana: int
+      pri_uspechu: none
+      zasah: [{kostky: 1d10, typ: psychic, skalovani: 1d10}]
+      spotrebuje_pozici: true
+
+neuveritelny-puvab:
+  shrnuti: Iluze tě učiní okouzlujícím – k Ověřením Charismatu proti tvorům, kteří tě vnímají, si přičítáš Zdatnostní bonus; po skončení ale následuje krátká nevýhoda.
+  slozky: [V, S]
+  dosah: {jednotky: self}
+  trvani: {hodnota: 1, jednotky: minute}
+  soustredeni: true
+  cil: {typ: self}
+  efekty:
+    - id: puvab
+      nazev: Neuvěřitelný půvab
+      kola: 10
+      zmeny: [{klic: system.abilities.cha.bonuses.check, hodnota: "@prof"}]
+    - id: odhaleni
+      nazev: Prohlédnutý půvab
+      kola: 10
+      zmeny: [{klic: system.abilities.cha.check.roll.mode, hodnota: "-1"}]
+  aktivity:
+    - typ: utility
+      efekty: [puvab]
+    - typ: utility
+      nazev: Konec kouzla (nevýhoda)
+      spotrebuje_pozici: false
+      efekty: [odhaleni]
+
+bajny-lucistnik:
+  shrnuti: Na okamžik se staneš bájným lučištníkem a iluzorní šíp otřese cílem psychickým zásahem.
+  slozky: [S, M]
+  material: letky šípu z barevných per
+  dosah: {hodnota: 15}
+  cil: {pocet: 1, typ: creature}
+  aktivity:
+    - typ: attack
+      utok: ranged
+      zasah: [{kostky: 3d8, typ: psychic, skalovani: 1d8}]
+
+cerny-jed:
+  shrnuti: Černá šipka otráví cíl; po dobu kouzla můžeš akcí jed v jeho těle znovu rozšířit.
+  slozky: [S, M]
+  material: černý inkoust
+  dosah: {hodnota: 6}
+  trvani: {hodnota: 1, jednotky: minute}
+  soustredeni: true
+  cil: {pocet: 1, typ: creature}
+  efekty:
+    - {id: otrava, nazev: Otrávený (Černý jed), stavy: [poisoned], kola: 1, konec: turnStart}
+  aktivity:
+    - typ: attack
+      utok: ranged
+      zasah: [{kostky: 2d6, typ: poison, skalovani: 2d6}]
+    - typ: save
+      nazev: Rozšířit jed
+      zachrana: con
+      pri_uspechu: half
+      spotrebuje_pozici: false
+      zasah: [{kostky: 1d6, typ: poison}]
+      efekty: [otrava]
+
+elementalni-erupce:
+  shrnuti: Na jeden cíl svrhneš sílu zvoleného živlu – druh zásahu si vybereš při seslání.
+  slozky: [V, S]
+  dosah: {hodnota: 18}
+  cil: {pocet: 1, typ: creature}
+  aktivity:
+    - typ: save
+      zachrana: con
+      pri_uspechu: half
+      zasah: [{kostky: 2d10, typ: [lightning, bludgeoning, thunder, cold, poison, acid, fire], skalovani: 1d10}]
+
+hexensus:
+  shrnuti: Cíl skolí ostrá bolest zad – je pomalejší, nemůže utíkat a má nevýhodu na Sílu a Obratnost; na konci každého tahu se může zkusit vyprostit.
+  slozky: [V, S, M]
+  material: hadrová panenka
+  dosah: {hodnota: 12}
+  trvani: {hodnota: 1, jednotky: minute}
+  soustredeni: true
+  cil: {pocet: 1, typ: creature}
+  efekty:
+    - id: hexensus
+      nazev: Hexenšus
+      kola: 10
+      zmeny:
+        - {klic: system.abilities.str.check.roll.mode, hodnota: "-1"}
+        - {klic: system.abilities.str.save.roll.mode, hodnota: "-1"}
+        - {klic: system.abilities.dex.check.roll.mode, hodnota: "-1"}
+        - {klic: system.abilities.dex.save.roll.mode, hodnota: "-1"}
+        - {klic: system.attributes.movement.walk, hodnota: "0.5", typ: multiply}
+        - {klic: flags.midi-qol.disadvantage.attack.all, hodnota: "1", typ: custom}
+        - {klic: flags.midi-qol.OverTime, hodnota: "turn=end,saveAbility=con,saveDC=@attributes.spell.dc,label=Hexenšus", typ: custom}
+  aktivity:
+    - typ: save
+      zachrana: con
+      pri_uspechu: none
+      efekty: [hexensus]
+    - typ: save
+      nazev: Záchrana na konci tahu
+      zachrana: con
+      pri_uspechu: none
+      spotrebuje_pozici: false
+
+hnev-zivlu:
+  shrnuti: Obrátíš blízký živel proti nepříteli – oheň, vodu, vzduch nebo zemi, každý s jiným účinkem.
+  slozky: [V, S, M]
+  material: prach z barevných krystalů
+  dosah: {hodnota: 12}
+  cil: {typ: creature}
+  efekty:
+    - id: zamrznuti
+      nazev: Zamrzlý (Hněv živlů)
+      kola: 1
+      konec: turnEnd
+      zmeny: [{klic: system.attributes.movement.all, hodnota: "0", typ: override}]
+    - {id: ohluseni, nazev: Ohlušený (Hněv živlů), stavy: [deafened], kola: 1, konec: turnEnd}
+    - {id: srazeni, nazev: Ležící (Hněv živlů), stavy: [prone]}
+  aktivity:
+    - typ: save
+      nazev: Oheň
+      zachrana: dex
+      pri_uspechu: half
+      sablona: {typ: line, velikost: 4, sirka: 1}
+      zasah: [{kostky: 3d6, typ: fire, skalovani: 1d6}]
+    - typ: save
+      nazev: Voda
+      zachrana: dex
+      pri_uspechu: none
+      spotrebuje_pozici: true
+      zasah: [{kostky: 3d6, typ: cold, skalovani: 1d6}]
+      efekty: [zamrznuti]
+    - typ: save
+      nazev: Vzduch
+      zachrana: con
+      pri_uspechu: none
+      spotrebuje_pozici: true
+      sablona: {typ: radius, velikost: 2}
+      zasah: [{kostky: 2d6, typ: thunder, skalovani: 1d6}]
+      efekty: [ohluseni]
+    - typ: save
+      nazev: Země
+      zachrana: str
+      pri_uspechu: none
+      spotrebuje_pozici: true
+      sablona: {typ: radius, velikost: 2}
+      zasah: [{kostky: 2d6, typ: bludgeoning, skalovani: 1d6}]
+      efekty: [srazeni]
+
+plast-zmaru:
+  shrnuti: Obklopí tě aura nekrotické energie, která vysává tvory poblíž a dodává ti dočasné Body výdrže.
+  slozky: [V, S, M]
+  material: černý kapesník
+  dosah: {jednotky: self}
+  trvani: {hodnota: 1, jednotky: minute}
+  cil: {typ: creature, sablona: {typ: radius, velikost: 1}}
+  aktivity:
+    - typ: utility
+    - typ: save
+      nazev: Zásah aury
+      zachrana: con
+      pri_uspechu: none
+      spotrebuje_pozici: false
+      podminka: Když tvor začne svůj Tah v auře.
+      zasah: [{kostky: 1d6, bonus: "@prof", typ: necrotic, skalovani: "2"}]
+
+pohled-smrti:
+  shrnuti: Tvé oči se naplní smrtí; po dobu kouzla můžeš bonusovou akcí vrhnout smrtící pohled na tvora poblíž.
+  slozky: [V, S, M]
+  material: oko nemrtvého
+  dosah: {jednotky: self}
+  trvani: {hodnota: 8, jednotky: hour}
+  soustredeni: true
+  cil: {typ: self}
+  aktivity:
+    - typ: utility
+    - typ: save
+      nazev: Pohled smrti
+      sesilani: bonus
+      dosah: 12
+      zachrana: wis
+      pri_uspechu: half
+      spotrebuje_pozici: false
+      zasah: [{kostky: 1d4, typ: necrotic, skalovani: 1d4}]
+
+retezy-upoutani:
+  shrnuti: Přivoláš prastaré řetězy, které spoutají cíl; podle hodu 1k4 ho každé kolo zraňují a omezují jiným způsobem.
+  slozky: [V, S, M]
+  material: kus řetězu (kouzlo ho spotřebuje)
+  material_spotreba: true
+  dosah: {hodnota: 16}
+  trvani: {hodnota: 10, jednotky: minute}
+  soustredeni: true
+  cil: {pocet: 1, typ: creature}
+  efekty:
+    - id: prazdnota
+      nazev: Řetězy prázdnoty
+      kola: 100
+      zmeny: [{klic: system.attributes.movement.all, hodnota: "0.5", typ: multiply}]
+    - id: utrpeni
+      nazev: Řetězy utrpení
+      kola: 100
+      zmeny: [{klic: system.abilities.str.save.roll.mode, hodnota: "-1"}]
+    - {id: zmar, nazev: Řetězy zmaru, kola: 100}
+    - {id: omraceni, nazev: Řetězy omráčení, kola: 100}
+  aktivity:
+    - typ: attack
+      utok: ranged
+    - typ: damage
+      nazev: Řetězy prázdnoty (1)
+      spotrebuje_pozici: false
+      podminka: Na začátku Tahu spoutaného tvora.
+      zasah: [{kostky: 1d6, typ: cold}]
+      efekty: [prazdnota]
+    - typ: damage
+      nazev: Řetězy utrpení (2)
+      spotrebuje_pozici: false
+      podminka: Na začátku Tahu spoutaného tvora.
+      zasah: [{kostky: 1d6, typ: piercing}]
+      efekty: [utrpeni]
+    - typ: damage
+      nazev: Řetězy zmaru (3)
+      spotrebuje_pozici: false
+      podminka: Na začátku Tahu spoutaného tvora; tvorové do 1 sáhu utrpí polovinu.
+      zasah: [{kostky: 1d6, typ: necrotic}]
+      efekty: [zmar]
+    - typ: damage
+      nazev: Řetězy omráčení (4)
+      spotrebuje_pozici: false
+      podminka: Na začátku Tahu spoutaného tvora; do jeho dalšího Tahu nemá Reakce.
+      zasah: [{kostky: 1d6, typ: thunder}]
+      efekty: [omraceni]
+    - typ: save
+      nazev: Pokus o shození řetězu
+      zachrana: dex
+      pri_uspechu: none
+      spotrebuje_pozici: false
+
+sila-fenixe:
+  shrnuti: Vzplaneš barevnými plameny, které popálí tvory kolem tebe, a sám si přitom obnovíš trochu Bodů výdrže.
+  slozky: [V, S]
+  dosah: {jednotky: self}
+  cil: {typ: creature, sablona: {typ: radius, velikost: 2}}
+  aktivity:
+    - typ: save
+      zachrana: dex
+      pri_uspechu: half
+      zasah: [{kostky: 2d6, typ: fire, skalovani: 1d6}]
+    - typ: heal
+      nazev: Obnova fénixe
+      spotrebuje_pozici: false
+      leceni: {bonus: "1 + @prof", typ: healing, skalovani: "2"}
+
+slizky-uder:
+  shrnuti: Kyselinová koule udeří do cíle a vrátí se k tobě; dokud zasahuješ, můžeš každé kolo útočit znovu.
+  slozky: [V, S, M]
+  material: ostatky mrtvého slizu
+  dosah: {hodnota: 6}
+  trvani: {hodnota: 10, jednotky: minute}
+  soustredeni: true
+  cil: {pocet: 1, typ: creature}
+  aktivity:
+    - typ: attack
+      utok: ranged
+      zasah:
+        - {kostky: 1d6, typ: bludgeoning}
+        - {kostky: 1d6, typ: acid}
+    - typ: attack
+      nazev: Další útok koulí
+      utok: ranged
+      spotrebuje_pozici: false
+      zasah:
+        - {kostky: 1d6, typ: bludgeoning}
+        - {kostky: 1d6, typ: acid}
+
+antropomancie:
+  shrnuti: Temný rituál, při kterém z částí mrtvého těla vyčteš poslední vjem – obraz, zvuk, emoci, dotek, slova či vůni.
+  slozky: [V, S, M]
+  material: nůž na maso, kůži a šlachy a palička na kosti
+  sesilani: minute
+  dosah: {jednotky: touch}
+  trvani: {hodnota: 5, jednotky: round}
+  cil: {pocet: 1, typ: object}
+  aktivity:
+    - typ: utility
+
+besneni:
+  shrnuti: Dotykem naplníš mysl tvora krvelačností – každý tah musí odolávat, jinak napadne nejbližšího tvora.
+  slozky: [V, S]
+  dosah: {jednotky: touch}
+  trvani: {hodnota: 1, jednotky: minute}
+  soustredeni: true
+  cil: {pocet: 1, typ: creature}
+  efekty:
+    - {id: besneni, nazev: Běsnící, stavy: [charmed], kola: 10}
+  aktivity:
+    - typ: attack
+      utok: melee
+      efekty: [besneni]
+    - typ: save
+      nazev: Záchrana na začátku tahu
+      zachrana: wis
+      pri_uspechu: none
+      spotrebuje_pozici: false
+
+chapadlo:
+  shrnuti: Hozené chapadlo vyroste do obřích rozměrů a útočí na každého, kdo se k němu přiblíží.
+  slozky: [V, S, M]
+  material: chobotnicové chapadlo (kouzlo ho spotřebuje)
+  material_spotreba: true
+  dosah: {hodnota: 9}
+  trvani: {hodnota: 1, jednotky: minute}
+  soustredeni: true
+  cil: {typ: space, sablona: {typ: cube, velikost: 1}}
+  aktivity:
+    - typ: utility
+    - typ: attack
+      nazev: Útok chapadla
+      utok: melee
+      spotrebuje_pozici: false
+      podminka: Když tvor začne Tah do 1 sáhu od chapadla nebo tam v Tahu poprvé vstoupí.
+      zasah: [{kostky: 2d8, typ: bludgeoning, skalovani: 1d8}]
+
+slidive-oko:
+  shrnuti: Otevřeš trhlinu k mocné bytosti, jejíž zkoumavý pohled psychicky drtí a omračuje tvory v kuželu.
+  slozky: [V, S]
+  dosah: {hodnota: 24}
+  trvani: {hodnota: 1, jednotky: minute}
+  soustredeni: true
+  cil: {typ: creature, sablona: {typ: cone, velikost: 4}}
+  efekty:
+    - {id: omraceni, nazev: Omráčený (Slídivé oko), stavy: [stunned], kola: 1, konec: turnStart}
+  aktivity:
+    - typ: save
+      zachrana: int
+      pri_uspechu: half
+      zasah: [{kostky: 2d10, typ: psychic}]
+      efekty: [omraceni]
+    - typ: save
+      nazev: Vstup / konec tahu v kuželu
+      zachrana: int
+      pri_uspechu: half
+      spotrebuje_pozici: false
+      zasah: [{kostky: 2d10, typ: psychic}]
+      efekty: [omraceni]
+
+zkriveni-prostoru:
+  shrnuti: Pokřivíš prostor v krychli – tvory uvnitř mate, zpomaluje, drtí a stahuje ke středu; oblast je těžký terén.
+  slozky: [V, S, M]
+  material: papír popsaný matematickými výpočty
+  dosah: {hodnota: 12}
+  trvani: {hodnota: 1, jednotky: minute}
+  soustredeni: true
+  cil: {typ: creature, sablona: {typ: cube, velikost: 8}}
+  efekty:
+    - id: zpomaleni
+      nazev: Dezorientovaný (Zkřivení prostoru)
+      kola: 1
+      konec: turnEnd
+      zmeny: [{klic: system.attributes.movement.all, hodnota: "0.5", typ: multiply}]
+  aktivity:
+    - typ: utility
+    - typ: save
+      nazev: Začátek tahu v krychli
+      zachrana: wis
+      pri_uspechu: half
+      spotrebuje_pozici: false
+      zasah: [{kostky: 2d6, typ: psychic, skalovani: 1d6}]
+      efekty: [zpomaleni]
+    - typ: save
+      nazev: Konec tahu v krychli
+      zachrana: str
+      pri_uspechu: half
+      spotrebuje_pozici: false
+      zasah: [{kostky: 2d6, typ: bludgeoning, skalovani: 1d6}]
+
+koreny-omotani:
+  shrnuti: Z hozeného semínka vyrazí pás kořenů, které chytají tvory; akcí je můžeš nechat růst dál.
+  slozky: [V, S, M]
+  material: semínko stromu obalené hlínou (kouzlo ho spotřebuje)
+  material_spotreba: true
+  dosah: {hodnota: 6}
+  trvani: {hodnota: 1, jednotky: minute}
+  soustredeni: true
+  cil: {typ: creature, sablona: {typ: line, velikost: 12, sirka: 1}}
+  efekty:
+    - {id: chyceni, nazev: Chycený kořeny, stavy: [grappled], kola: 10}
+  aktivity:
+    - typ: save
+      zachrana: str
+      pri_uspechu: none
+      efekty: [chyceni]
+    - typ: save
+      nazev: Vstup / začátek tahu v kořenech
+      zachrana: str
+      pri_uspechu: none
+      spotrebuje_pozici: false
+      efekty: [chyceni]
+    - typ: utility
+      nazev: Rozrůst kořeny
+      spotrebuje_pozici: false
+      sablona: {typ: line, velikost: 4, sirka: 1}
+
+odpocinkova-hymna:
+  shrnuti: Minutová píseň dopřeje posluchačům přínosy krátkého odpočinku, zbaví je některých stavů a dodá jim dočasné Body výdrže.
+  slozky: [V, S, M]
+  material: hudební nástroj
+  sesilani: minute
+  dosah: {hodnota: 12}
+  cil: {typ: creature}
+  aktivity:
+    - typ: heal
+      leceni: {kostky: "15 + 15 * min(1, @item.level - 7)", typ: temphp}
+
+slovo-moci-„zij:
+  shrnuti: Slovo moci vrátí čerstvě padlého či umírajícího tvora k životu a zbaví ho nemocí a většiny škodlivých stavů.
+  slozky: [V]
+  dosah: {jednotky: touch}
+  cil: {pocet: 1, typ: creature}
+  aktivity:
+    - typ: heal
+      leceni: {bonus: "1", typ: healing}

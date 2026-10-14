@@ -1,0 +1,169 @@
+{
+  "_id": "PlIylpVpMTZJapdr",
+  "name": "Lovec",
+  "type": "background",
+  "img": "icons/sundries/documents/document-sealed-brown-red.webp",
+  "folder": "7GrKTBBtDvTixn6S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Divočina ti byla domovem – víš, jak v ní chodit, lovit a přežít.</p><p><strong>Schopnost:</strong> Přežití v divočině</p><p><strong>Vybavení:</strong> Berla, lovecká past, lovecká trofej, cestovní oblečení, 10 zl.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#lovec\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "advancement": {
+      "GGNDlg8q0NGSOAht": {
+        "_id": "GGNDlg8q0NGSOAht",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ath",
+            "skills:sur"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:music:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "mgkZ4XMtQOHbFwuF": {
+        "_id": "mgkZ4XMtQOHbFwuF",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "9hbQkzpV9uwZFRVR": {
+        "_id": "9hbQkzpV9uwZFRVR",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Schopnost zázemí",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.zazemi.Item.6ymqFHHVRl9Zft4x",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "_id": "PcUTanJp6UIhnFQd",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "V0gH9YYfgoq7xtsv",
+        "group": "PcUTanJp6UIhnFQd",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.zns4M14rSYVnzdFf",
+        "count": null
+      },
+      {
+        "_id": "B2m8ojqPuTNYGpUk",
+        "group": "PcUTanJp6UIhnFQd",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.vfdtFaQmxtOL6k9B",
+        "count": null
+      },
+      {
+        "_id": "I2gCBpCUSz0CVZ7w",
+        "group": "PcUTanJp6UIhnFQd",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.U95CAq4qKrYqvZRX",
+        "count": null
+      },
+      {
+        "_id": "pl6K89kdZFofULMs",
+        "group": "PcUTanJp6UIhnFQd",
+        "sort": 500000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 10
+      }
+    ],
+    "identifier": "lovec"
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "zazemi": "lovec"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!PlIylpVpMTZJapdr"
+}

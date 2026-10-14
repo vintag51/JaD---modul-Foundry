@@ -1,0 +1,501 @@
+{
+  "_id": "63wmiCzKJHJLXyXW",
+  "name": "Zlepši Vlastnost",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Tvor má výhodu v ověřeních jedné vlastnosti a další výhody podle zvolené varianty.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Medvědí výdrž, Býčí síla, Kočičí ladnost, Orlí nádhera….</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zlepsi-vlastnost\" target=\"_blank\">SRD Jeskyní a draků – Zlepši Vlastnost</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "trs",
+    "materials": {
+      "value": "srst nebo pero zvířete",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "38V0wnjhbPgl3No8": {
+        "type": "utility",
+        "name": "Seslat",
+        "_id": "38V0wnjhbPgl3No8",
+        "img": null,
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "4wHuqQygcUoETdfL",
+            "level": {}
+          },
+          {
+            "_id": "dXPiowCzQbenlxaJ",
+            "level": {}
+          },
+          {
+            "_id": "fQYlplRem5XWAYlX",
+            "level": {}
+          },
+          {
+            "_id": "fL5yxySa2tgQR96A",
+            "level": {}
+          },
+          {
+            "_id": "pHwVg5BiH0Z7ysfD",
+            "level": {}
+          },
+          {
+            "_id": "FCTEJkHaaxkAeNhQ",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "identifier": "enhance-ability"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "zlepsi-vlastnost",
+      "srd": "9eOZDBImVKxbeOyZ",
+      "nazevEn": "Enhance Ability",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zlepsi-vlastnost"
+    }
+  },
+  "img": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+  "effects": [
+    {
+      "name": "Medvědí výdrž",
+      "img": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.63wmiCzKJHJLXyXW",
+      "transfer": false,
+      "_id": "4wHuqQygcUoETdfL",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.con.check.roll.mode",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zlepši Vlastnost</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781223235541,
+        "modifiedTime": 1783644564314,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!63wmiCzKJHJLXyXW.4wHuqQygcUoETdfL"
+    },
+    {
+      "name": "Býčí síla",
+      "img": "icons/creatures/abilities/bull-head-horns-glowing.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.63wmiCzKJHJLXyXW",
+      "transfer": false,
+      "_id": "dXPiowCzQbenlxaJ",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.encumbrance.multipliers.overall",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zlepši Vlastnost</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781223292367,
+        "modifiedTime": 1783644528808,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!63wmiCzKJHJLXyXW.dXPiowCzQbenlxaJ"
+    },
+    {
+      "name": "Kočičí ladnost",
+      "img": "icons/creatures/abilities/lion-roar-yellow.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.63wmiCzKJHJLXyXW",
+      "transfer": false,
+      "_id": "fQYlplRem5XWAYlX",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.dex.check.roll.mode",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zlepši Vlastnost</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781223343599,
+        "modifiedTime": 1783644571585,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!63wmiCzKJHJLXyXW.fQYlplRem5XWAYlX"
+    },
+    {
+      "name": "Orlí nádhera",
+      "img": "icons/creatures/birds/songbird-yellow-flying.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.63wmiCzKJHJLXyXW",
+      "transfer": false,
+      "_id": "fL5yxySa2tgQR96A",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.cha.check.roll.mode",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zlepši Vlastnost</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781223413371,
+        "modifiedTime": 1783644575469,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!63wmiCzKJHJLXyXW.fL5yxySa2tgQR96A"
+    },
+    {
+      "name": "Liščí lstivost",
+      "img": "icons/creatures/mammals/dog-husky-white-blue.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.63wmiCzKJHJLXyXW",
+      "transfer": false,
+      "_id": "pHwVg5BiH0Z7ysfD",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.int.check.roll.mode",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zlepši Vlastnost</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781223456036,
+        "modifiedTime": 1783644545025,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!63wmiCzKJHJLXyXW.pHwVg5BiH0Z7ysfD"
+    },
+    {
+      "name": "Soví moudrost",
+      "img": "icons/creatures/birds/corvid-flying-wings-purple.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.63wmiCzKJHJLXyXW",
+      "transfer": false,
+      "_id": "FCTEJkHaaxkAeNhQ",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.wis.check.roll.mode",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zlepši Vlastnost</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781223503142,
+        "modifiedTime": 1783644540216,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!63wmiCzKJHJLXyXW.FCTEJkHaaxkAeNhQ"
+    }
+  ],
+  "folder": "qeFyrqAp9wqNyjo6",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!63wmiCzKJHJLXyXW"
+}

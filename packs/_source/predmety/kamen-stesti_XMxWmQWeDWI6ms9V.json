@@ -1,0 +1,145 @@
+{
+  "_id": "XMxWmQWeDWI6ms9V",
+  "name": "Kámen štěstí",
+  "type": "equipment",
+  "img": "icons/commodities/gems/gem-rough-rectangle-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Neobvyklý, vyžaduje Sladění</em></p><p>Leštěný achát: +1 ke všem Ověřením vlastností a k Záchranám.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#kamen-stesti\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {},
+    "attuned": false,
+    "identifier": "stone-of-good-luck-luckstone"
+  },
+  "effects": [
+    {
+      "origin": "Compendium.jeskyne-a-draci.predmety.Item.XMxWmQWeDWI6ms9V",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "disabled": false,
+      "_id": "TghMVbmFnR0t0AoP",
+      "tint": "#ffffff",
+      "transfer": true,
+      "flags": {},
+      "name": "Kámen štěstí",
+      "description": "<p>Účinek předmětu <em>Kámen štěstí</em>.</p>",
+      "statuses": [],
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/commodities/gems/gem-faceted-octagon-yellow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.abilities.save",
+            "value": "+1",
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.bonuses.abilities.check",
+            "value": "+1",
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!XMxWmQWeDWI6ms9V.TghMVbmFnR0t0AoP"
+    }
+  ],
+  "folder": "MTTYWMpe7VHzYB4y",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "kamen-stesti"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!XMxWmQWeDWI6ms9V"
+}

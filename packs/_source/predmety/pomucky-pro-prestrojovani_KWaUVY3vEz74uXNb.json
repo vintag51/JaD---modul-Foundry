@@ -1,0 +1,135 @@
+{
+  "name": "Pomůcky pro přestrojování",
+  "type": "tool",
+  "img": "icons/equipment/back/cloak-hooded-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Líčidla, barva na vlasy a drobné rekvizity – Zdatnost se uplatní při tvorbě přestrojení.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/6-vybaveni.html#balicky-vybaveni\" target=\"_blank\">SRD Jeskyní a draků – Vybavení</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "ability": "int",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "container": "Zd7LbWUbcWLs0ZQt",
+    "type": {
+      "value": "",
+      "baseItem": "disg"
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "properties": [],
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "sah"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "check": {
+          "ability": "int",
+          "dc": {}
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "attuned": false,
+    "identifier": "disguise-kit"
+  },
+  "effects": [],
+  "folder": "8PVX2jtLAg9AJ05j",
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "KWaUVY3vEz74uXNb",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KWaUVY3vEz74uXNb"
+}

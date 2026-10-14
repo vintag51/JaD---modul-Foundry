@@ -1,0 +1,93 @@
+{
+  "_id": "PIeqqPV910ncPDj6",
+  "name": "Brutální Kritický zásah",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "ti4X0x5YEyc8opwG",
+  "sort": 9000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "SE5SxYhLQyqGYsdd",
+      "name": "Brutální Kritický zásah",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.meleeCriticalDamageDice",
+            "value": "@scale.barbarian.brutalni-kritik",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Brutální Kritický zásah (pasivní schopnost)</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.PIeqqPV910ncPDj6",
+      "_key": "!items.effects!PIeqqPV910ncPDj6.SE5SxYhLQyqGYsdd"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Při Kritickém zásahu na blízko si hodíš jednou (od 13. Úrovně dvakrát, od 17. třikrát) Kostkou zásahu navíc.</p><p><em>Úroveň: 9., 13., 17.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#barbar\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Barbar 9",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "brutalni-kriticky-zasah",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!PIeqqPV910ncPDj6"
+}

@@ -1,0 +1,378 @@
+{
+  "_id": "xSqgXv8xsMsVwwJb",
+  "name": "Splyň s kamenem",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Splyneš s kamenným povrchem.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Splynulý s kamenem.</li><li><strong>Zásah při částečném zničení kamene:</strong> Drtivý zásah za 6k6 Bodů výdrže.</li><li><strong>Zásah při úplném zničení kamene:</strong> Drtivý zásah za 50 Bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#splyn-s-kamenem\" target=\"_blank\">SRD Jeskyní a draků – Splyň s kamenem</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "8",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "self",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "trs",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "ritual"
+    ],
+    "activities": {
+      "aUsAItFCOoEIQd7I": {
+        "type": "utility",
+        "name": "Seslat",
+        "_id": "aUsAItFCOoEIQd7I",
+        "img": null,
+        "sort": -100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Zhqc0y1xVkLsYkgs",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      },
+      "at17qOrWdjr80zy0": {
+        "type": "damage",
+        "name": "Zásah při částečném zničení kamene",
+        "_id": "at17qOrWdjr80zy0",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "special",
+          "override": true,
+          "condition": "Když je kámen, se kterým jsi splynul, částečně zničen."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 6,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ]
+        }
+      },
+      "2NOxC43FZiwhej6W": {
+        "type": "damage",
+        "name": "Zásah při úplném zničení kamene",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "special",
+          "override": true,
+          "condition": "Když je kámen, se kterým jsi splynul, zcela zničen."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "50",
+              "types": [
+                "bludgeoning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "_id": "2NOxC43FZiwhej6W"
+      }
+    },
+    "identifier": "meld-into-stone"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "splyn-s-kamenem",
+      "srd": "64uo4fHriHLjRUrX",
+      "nazevEn": "Meld into Stone",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#splyn-s-kamenem"
+    }
+  },
+  "img": "icons/magic/earth/projectile-stone-landslide.webp",
+  "effects": [
+    {
+      "name": "Splynulý s kamenem",
+      "img": "icons/magic/earth/projectile-stone-landslide.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.xSqgXv8xsMsVwwJb",
+      "transfer": false,
+      "_id": "Zhqc0y1xVkLsYkgs",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 8,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Splyň s kamenem</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781356530799,
+        "modifiedTime": 1783720931928,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!xSqgXv8xsMsVwwJb.Zhqc0y1xVkLsYkgs"
+    }
+  ],
+  "folder": "Xm9ncGQteAtEtSzo",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!xSqgXv8xsMsVwwJb"
+}

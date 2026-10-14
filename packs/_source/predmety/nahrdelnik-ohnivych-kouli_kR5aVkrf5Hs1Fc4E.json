@@ -1,0 +1,176 @@
+{
+  "_id": "kR5aVkrf5Hs1Fc4E",
+  "name": "Náhrdelník ohnivých koulí",
+  "type": "consumable",
+  "img": "icons/equipment/neck/pendant-faceted-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Vzácný</em></p><p>Až devět korálků. Akcí jeden utrhneš a hodíš až na 12 sáhů – vybuchne jako Ohnivá koule 3. Stupně se SO 15. Každý další korálek hozený naráz zvýší Stupeň o 1.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#nahrdelnik-ohnivych-kouli\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.01,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "9",
+      "recovery": [],
+      "autoDestroy": true,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": 8,
+        "denomination": 6,
+        "bonus": "",
+        "types": [
+          "fire"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {
+      "C8zhwUVACrcYrfbe": {
+        "type": "cast",
+        "spell": {
+          "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.wwagZ4AmSQR2HkXo",
+          "challenge": {
+            "override": true,
+            "attack": null,
+            "save": 15
+          },
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": 3
+        },
+        "_id": "C8zhwUVACrcYrfbe",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": true,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "name": "",
+        "img": ""
+      }
+    },
+    "attuned": false,
+    "identifier": "necklace-of-fireballs"
+  },
+  "effects": [],
+  "folder": "nITZT0yyRkvikc2D",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "nahrdelnik-ohnivych-kouli"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!kR5aVkrf5Hs1Fc4E"
+}

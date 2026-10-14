@@ -1,0 +1,255 @@
+{
+  "_id": "PYPdl7qwJ4u09Psw",
+  "name": "Temná čepel",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "5H8pjb6hOwW2duMe",
+  "sort": 2000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Bonusovou akcí potřísníš zbraň svou krví (utrpíš Kostku temnoty) a do příštího Odpočinku způsobuje navíc Kostku temnoty zásahu typu daného rituálem – žár, mráz, šok, vztek, hnis, hlad; od 14. Úrovně i zmar, nenávist nebo fanatismus. Rituály se naučíš na 2., 7. a 14. Úrovni.</p><ul><li>Rituál žáru – ohnivý</li><li>Rituál mrazu – chladný</li><li>Rituál šoku – bleskový</li><li>Rituál vzteku – hromový</li><li>Rituál hnisu – jedový</li><li>Rituál hladu – kyselinový</li><li>Rituál zmaru – nekrotický (přízračný)</li><li>Rituál nenávisti – psychický (přízračný)</li><li>Rituál fanatismu – zářivý (přízračný)</li></ul><p><em>Úroveň: 2., 7., 14.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#lovec-netvoru\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Lovec netvorů 2",
+    "properties": [],
+    "activities": {
+      "RNicvM2Eq91f8rMa": {
+        "_id": "RNicvM2Eq91f8rMa",
+        "type": "damage",
+        "name": "Potřísnit čepel",
+        "img": "",
+        "sort": 0,
+        "flags": {},
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.lovec-netvoru.kostka-temnoty"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "YtaQ2oVEtS17DJXR": {
+        "_id": "YtaQ2oVEtS17DJXR",
+        "type": "damage",
+        "name": "Zásah Temnou čepelí",
+        "img": "",
+        "sort": 100000,
+        "flags": {},
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "fire",
+                "cold",
+                "lightning",
+                "thunder",
+                "poison",
+                "acid",
+                "necrotic",
+                "psychic",
+                "radiant"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.lovec-netvoru.kostka-temnoty"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "temna-cepel",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!PYPdl7qwJ4u09Psw"
+}

@@ -1,0 +1,531 @@
+{
+  "_id": "2oyUWvZ9KUwyxCiG",
+  "name": "Živlová tvář",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "QlOQCRlttfCqjwcl",
+  "sort": 6000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "oOns6MkkmI86aoLz",
+      "name": "Živlová tvář – oheň",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Živlová tvář</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.2oyUWvZ9KUwyxCiG",
+      "_key": "!items.effects!2oyUWvZ9KUwyxCiG.oOns6MkkmI86aoLz"
+    },
+    {
+      "_id": "JN1vT8pfz19cMvAF",
+      "name": "Živlová tvář – voda",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Živlová tvář</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.2oyUWvZ9KUwyxCiG",
+      "_key": "!items.effects!2oyUWvZ9KUwyxCiG.JN1vT8pfz19cMvAF"
+    },
+    {
+      "_id": "YVNo1c6r2SxwJw8e",
+      "name": "Živlová tvář – vzduch",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Živlová tvář</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.2oyUWvZ9KUwyxCiG",
+      "_key": "!items.effects!2oyUWvZ9KUwyxCiG.YVNo1c6r2SxwJw8e"
+    },
+    {
+      "_id": "3sqgqU9w0s3ZFb1Z",
+      "name": "Živlová tvář – země",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Živlová tvář</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.2oyUWvZ9KUwyxCiG",
+      "_key": "!items.effects!2oyUWvZ9KUwyxCiG.3sqgqU9w0s3ZFb1Z"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Bonusovou akcí na minutu přijmeš rysy zvoleného živlu a získáš odpovídající odolnost a výhodu na společenské Ověření.</p><p><em>Úroveň: 6.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#zivlovy-carodej\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "max(1, @abilities.cha.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Živlový čaroděj 6",
+    "properties": [],
+    "activities": {
+      "m6olx9slxlgap5ix": {
+        "_id": "m6olx9slxlgap5ix",
+        "type": "utility",
+        "name": "Oheň",
+        "img": "",
+        "sort": 0,
+        "flags": {},
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "oOns6MkkmI86aoLz",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "Umprqo5UgHws5KXT": {
+        "_id": "Umprqo5UgHws5KXT",
+        "type": "utility",
+        "name": "Voda",
+        "img": "",
+        "sort": 100000,
+        "flags": {},
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "JN1vT8pfz19cMvAF",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "bS5BQ5R33BUfaV0W": {
+        "_id": "bS5BQ5R33BUfaV0W",
+        "type": "utility",
+        "name": "Vzduch",
+        "img": "",
+        "sort": 200000,
+        "flags": {},
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "YVNo1c6r2SxwJw8e",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "KrRp4q1YawBS3dbb": {
+        "_id": "KrRp4q1YawBS3dbb",
+        "type": "utility",
+        "name": "Země",
+        "img": "",
+        "sort": 300000,
+        "flags": {},
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "3sqgqU9w0s3ZFb1Z",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "zivlova-tvar",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2oyUWvZ9KUwyxCiG"
+}

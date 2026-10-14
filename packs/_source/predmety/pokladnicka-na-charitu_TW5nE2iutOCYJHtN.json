@@ -1,0 +1,69 @@
+{
+  "name": "Pokladnička na charitu",
+  "type": "container",
+  "img": "icons/containers/chest/chest-simple-box-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A box with a money slot and detachable base mainly used by priests and the like to collect alms.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "capacity": {
+      "type": "weight",
+      "value": 2
+    },
+    "currency": {
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 0,
+      "pp": 0
+    },
+    "container": "XmG5H50fi4mV5RgJ",
+    "unidentified": {
+      "description": ""
+    },
+    "properties": [],
+    "attuned": false,
+    "identifier": "alms-box"
+  },
+  "effects": [],
+  "folder": "8PVX2jtLAg9AJ05j",
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "TW5nE2iutOCYJHtN",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TW5nE2iutOCYJHtN"
+}

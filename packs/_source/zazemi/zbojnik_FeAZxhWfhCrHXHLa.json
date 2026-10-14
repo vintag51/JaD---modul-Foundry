@@ -1,0 +1,139 @@
+{
+  "_id": "FeAZxhWfhCrHXHLa",
+  "name": "Zbojník",
+  "type": "background",
+  "img": "icons/sundries/documents/document-sealed-brown-red.webp",
+  "folder": "7GrKTBBtDvTixn6S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Byl jsi psancem, žil v lesních úkrytech a živil se pytláctvím a přepady.</p><p><strong>Schopnost:</strong> Přepad</p><p><strong>Vybavení:</strong> Berla, lovecká past, plakát s odměnou za tvé dopadení, cestovní oblečení, 10 zl.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#zbojnik\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "advancement": {
+      "34otyz4KGJvy6fel": {
+        "_id": "34otyz4KGJvy6fel",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ste",
+            "skills:sur",
+            "vehicle:land"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "7EQXRAKaITyUt4Xm": {
+        "_id": "7EQXRAKaITyUt4Xm",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Schopnost zázemí",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.zazemi.Item.0Lgzk9zDdxH6EkB7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "_id": "BZ6N8ONzAnVm9k7k",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "MMxfvrHSXHHTfs0H",
+        "group": "BZ6N8ONzAnVm9k7k",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.zns4M14rSYVnzdFf",
+        "count": null
+      },
+      {
+        "_id": "at44MIclvllS2aej",
+        "group": "BZ6N8ONzAnVm9k7k",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.vfdtFaQmxtOL6k9B",
+        "count": null
+      },
+      {
+        "_id": "TVi6AVLl12Umnoth",
+        "group": "BZ6N8ONzAnVm9k7k",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.U95CAq4qKrYqvZRX",
+        "count": null
+      },
+      {
+        "_id": "6R3CcfzuwDm7W0nC",
+        "group": "BZ6N8ONzAnVm9k7k",
+        "sort": 500000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 10
+      }
+    ],
+    "identifier": "zbojnik"
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "zazemi": "zbojnik"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!FeAZxhWfhCrHXHLa"
+}

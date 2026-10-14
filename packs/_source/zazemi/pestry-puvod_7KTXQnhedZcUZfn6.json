@@ -1,0 +1,84 @@
+{
+  "_id": "7KTXQnhedZcUZfn6",
+  "name": "Pestrý původ",
+  "type": "feat",
+  "img": "icons/sundries/books/book-worn-brown-grey.webp",
+  "folder": "I49mVPhzcvBZkuhz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>V tvých žilách koluje i krev jiné rasy – získáš jednu její schopnost a +1 k Vlastnosti, kterou tato rasa zvyšuje.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#odbornosti\" target=\"_blank\">SRD Jeskyní a draků</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "pestry-puvod",
+    "advancement": {
+      "Ite41zrdA44WF7Cx": {
+        "_id": "Ite41zrdA44WF7Cx",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 1,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      }
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "feat": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7KTXQnhedZcUZfn6"
+}

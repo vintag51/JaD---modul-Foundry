@@ -1,0 +1,139 @@
+{
+  "_id": "MA6JhuIeTAZG7ea6",
+  "name": "Kolej romance",
+  "type": "subclass",
+  "img": "icons/sundries/books/book-symbol-triangle-silver-blue.webp",
+  "folder": "md1aLKzP3l7FXdiK",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Šarmantní bardi společnosti, jejichž úsměv a půvab odzbrojí každé srdce.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#kolej-romance\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "kolej-romance",
+    "classIdentifier": "bard",
+    "advancement": {
+      "2IYkUGhc8gKcBK8r": {
+        "_id": "2IYkUGhc8gKcBK8r",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.gND1WInMMu6VNHPO",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.N4HZG1bKOCpDXslf",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "xHrNR99D8kvkKWPv": {
+        "_id": "xHrNR99D8kvkKWPv",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.N7QK0x8OnmVTr8Z1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "poHT6iQQnFTeke09": {
+        "_id": "poHT6iQQnFTeke09",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.jZ1P9VvgBPPg9FsG",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {}
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "obor": "kolej-romance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MA6JhuIeTAZG7ea6"
+}

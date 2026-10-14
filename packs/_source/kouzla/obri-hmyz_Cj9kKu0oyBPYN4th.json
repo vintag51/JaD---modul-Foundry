@@ -1,0 +1,271 @@
+{
+  "_id": "Cj9kKu0oyBPYN4th",
+  "name": "Obří hmyz",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Promění drobný hmyz v obří.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Obří hmyz.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#obri-hmyz\" target=\"_blank\">SRD Jeskyní a draků – Obří hmyz</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "10",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "spec",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "6",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "trs",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "summon",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "disposition": true,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "10",
+            "name": "",
+            "_id": "xLVPgOloyb3QJ0i1",
+            "uuid": "Compendium.dnd5e.monsters.Actor.Hn8FFLEzscgT7azz",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "1",
+            "name": "",
+            "_id": "zzh3sTByUIvUYVvE",
+            "uuid": "Compendium.dnd5e.monsters.Actor.GxgIVRX5GbVTifiF",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "3",
+            "name": "",
+            "_id": "Mjp51GLFAYyA6NgW",
+            "uuid": "Compendium.dnd5e.monsters.Actor.v99wOosUJjUgcUNF",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "5",
+            "name": "",
+            "_id": "LkxYBiqNIyzUJxuH",
+            "uuid": "Compendium.dnd5e.monsters.Actor.4tl0s2SnaLjkoDiI",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          }
+        ],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "appliedEffects": [],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "tempHP": "",
+        "effects": [
+          {
+            "_id": "0pp4rJR7nQHmlENe",
+            "level": {}
+          }
+        ]
+      }
+    },
+    "identifier": "giant-insect"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "obri-hmyz",
+      "srd": "czXrVRx6XYRWsHAi",
+      "nazevEn": "Giant Insect",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#obri-hmyz"
+    }
+  },
+  "img": "icons/creatures/invertebrates/spider-mandibles-brown.webp",
+  "effects": [
+    {
+      "name": "Obří hmyz",
+      "img": "icons/creatures/invertebrates/spider-mandibles-brown.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Cj9kKu0oyBPYN4th",
+      "transfer": false,
+      "_id": "0pp4rJR7nQHmlENe",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Obří hmyz</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 0,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781375487515,
+        "modifiedTime": 1781375519218,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Cj9kKu0oyBPYN4th.0pp4rJR7nQHmlENe"
+    }
+  ],
+  "folder": "8hak7PLbgtXEQBpD",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Cj9kKu0oyBPYN4th"
+}

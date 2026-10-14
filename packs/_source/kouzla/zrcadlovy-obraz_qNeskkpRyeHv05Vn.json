@@ -1,0 +1,399 @@
+{
+  "_id": "qNeskkpRyeHv05Vn",
+  "name": "Zrcadlový obraz",
+  "type": "spell",
+  "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Vytvoříš tři iluzorní dvojníky, kteří odvádějí útoky.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Zrcadlový obraz 1, Zrcadlový obraz 2, Zrcadlový obraz 3.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zrcadlovy-obraz\" target=\"_blank\">SRD Jeskyní a draků – Zrcadlový obraz</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "self",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "ill",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "I5Cgu5m0knHmdXge",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "uFd6X0bNcmjRKqu1",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "n89eid0r3Ui0XvJb",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "rQbzIAnDXYbVe48y": {
+        "type": "utility",
+        "name": "Zachycení zrcadlovým obrazem",
+        "_id": "rQbzIAnDXYbVe48y",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "special",
+          "override": true,
+          "condition": "Když na tebe během trvání kouzla tvor zaútočí."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "Hod na zničení zrcadlového obrazu",
+          "formula": "1d20"
+        }
+      }
+    },
+    "identifier": "mirror-image"
+  },
+  "effects": [
+    {
+      "name": "Zrcadlový obraz 1",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.qNeskkpRyeHv05Vn",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "icons/sundries/flags/banner-pink.webp",
+      "_id": "I5Cgu5m0knHmdXge",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.mirror-image",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Zrcadlový obraz</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": "Compendium.dnd5e.spells24.Item.phbsplMirrorImag.ActiveEffect.VUqQIaiZoIzxUdf1",
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781362576214,
+        "modifiedTime": 1781363327740,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!qNeskkpRyeHv05Vn.I5Cgu5m0knHmdXge"
+    },
+    {
+      "name": "Zrcadlový obraz 2",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.qNeskkpRyeHv05Vn",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "icons/sundries/flags/banner-green.webp",
+      "_id": "uFd6X0bNcmjRKqu1",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.mirror-image",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Zrcadlový obraz</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": "Compendium.dnd5e.spells24.Item.phbsplMirrorImag.ActiveEffect.XcTQl9DhT9lC3bxI",
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781362578608,
+        "modifiedTime": 1781363332005,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!qNeskkpRyeHv05Vn.uFd6X0bNcmjRKqu1"
+    },
+    {
+      "name": "Zrcadlový obraz 3",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.qNeskkpRyeHv05Vn",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "icons/sundries/flags/banner-blue.webp",
+      "_id": "n89eid0r3Ui0XvJb",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.world.mirror-image",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Zrcadlový obraz</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": "Compendium.dnd5e.spells24.Item.phbsplMirrorImag.ActiveEffect.uMsGEsbEZ2hckOKW",
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781362580142,
+        "modifiedTime": 1781363334041,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!qNeskkpRyeHv05Vn.n89eid0r3Ui0XvJb"
+    }
+  ],
+  "folder": "qeFyrqAp9wqNyjo6",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "zrcadlovy-obraz",
+      "srd": "X4c8xCkmF8U9HUMz",
+      "nazevEn": "Mirror Image",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zrcadlovy-obraz"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qNeskkpRyeHv05Vn"
+}

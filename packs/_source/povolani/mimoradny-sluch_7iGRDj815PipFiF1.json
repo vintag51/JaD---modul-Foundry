@@ -1,0 +1,93 @@
+{
+  "_id": "7iGRDj815PipFiF1",
+  "name": "Mimořádný sluch",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "FrDTip84yOALdb2e",
+  "sort": 14000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "WZJ5LGibS850l92E",
+      "name": "Mimořádný sluch",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.blindsight",
+            "value": "2",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Mimořádný sluch (pasivní schopnost)</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.7iGRDj815PipFiF1",
+      "_key": "!items.effects!7iGRDj815PipFiF1.WZJ5LGibS850l92E"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Do 2 sáhů víš o přítomnosti a poloze skrytých i neviditelných tvorů (pokud nejsi Ohlušený).</p><p><em>Úroveň: 14.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#tulak\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Tulák 14",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "mimoradny-sluch",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7iGRDj815PipFiF1"
+}

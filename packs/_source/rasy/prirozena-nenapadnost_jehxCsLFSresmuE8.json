@@ -1,0 +1,62 @@
+{
+  "_id": "jehxCsLFSresmuE8",
+  "name": "Přirozená nenápadnost",
+  "type": "feat",
+  "img": "icons/sundries/books/book-embossed-bound-brown.webp",
+  "folder": "zwCo1dCsL1r0dIP3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Můžeš se pokusit schovat i za tvorem, který je jen o jednu Třídu velikosti větší než ty.</p><p><em>Pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Půlčík",
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "prirozena-nenapadnost",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!jehxCsLFSresmuE8"
+}

@@ -1,0 +1,379 @@
+{
+  "_id": "Hu6Cl0vF7RP9LYf1",
+  "name": "Věčný plamen",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Předmět navždy září plamenem, který nehřeje.</p><h3>Automatizace</h3><ul><li><strong>Seslat (věčný plamen na předmět):</strong> očarování předmětu; efekt: Věčný plamen.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vecny-plamen\" target=\"_blank\">SRD Jeskyní a draků – Věčný plamen</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "disp"
+    },
+    "target": {
+      "affects": {
+        "type": "object",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "evo",
+    "materials": {
+      "value": "rubínový prach v hodnotě 50 zl, který kouzlo spotřebuje",
+      "consumed": true,
+      "cost": 50,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "AHnTfgcTLyMZLPNS": {
+        "type": "enchant",
+        "name": "Seslat (věčný plamen na předmět)",
+        "_id": "AHnTfgcTLyMZLPNS",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "H4kfOYuc1G4lckzb",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [
+                "mGjF4d035590u5V0"
+              ],
+              "item": []
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "enchant": {
+          "self": false
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "categories": [],
+          "properties": [],
+          "type": ""
+        }
+      }
+    },
+    "identifier": "continual-flame"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "vecny-plamen",
+      "srd": "MK6gpQMeDFo0cP9f",
+      "nazevEn": "Continual Flame",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vecny-plamen"
+    }
+  },
+  "img": "icons/magic/fire/flame-burning-fence.webp",
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "Věčný plamen",
+      "img": "icons/magic/fire/flame-burning-fence.webp",
+      "disabled": true,
+      "_id": "H4kfOYuc1G4lckzb",
+      "system": {
+        "changes": [
+          {
+            "key": "system.description.value",
+            "type": "override",
+            "value": "{} <p><strong>Věčný plamen.</strong> Předmět navždy září plamenem, který nehřeje.</p>",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Věčný plamen</em>. Podrobnosti v popisu kouzla.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781269159457,
+        "modifiedTime": 1783644651268,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Hu6Cl0vF7RP9LYf1.H4kfOYuc1G4lckzb"
+    },
+    {
+      "name": "Drží předmět s věčným plamenem",
+      "img": "icons/magic/fire/flame-burning-fence.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Hu6Cl0vF7RP9LYf1",
+      "type": "base",
+      "_id": "mGjF4d035590u5V0",
+      "system": {
+        "changes": [
+          {
+            "key": "token.light.dim",
+            "type": "upgrade",
+            "value": 40,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "token.light.bright",
+            "type": "upgrade",
+            "value": 20,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "token.light.color",
+            "type": "override",
+            "value": "#825326",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "token.light.animation.type",
+            "type": "override",
+            "value": "torch",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "token.light.animation.intensity",
+            "type": "override",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "token.light.animation.speed",
+            "type": "override",
+            "value": 1.5,
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Věčný plamen</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781269310156,
+        "modifiedTime": 1783644655416,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Hu6Cl0vF7RP9LYf1.mGjF4d035590u5V0"
+    }
+  ],
+  "folder": "qeFyrqAp9wqNyjo6",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Hu6Cl0vF7RP9LYf1"
+}

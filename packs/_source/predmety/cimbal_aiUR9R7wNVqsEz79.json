@@ -1,0 +1,158 @@
+{
+  "_id": "aiUR9R7wNVqsEz79",
+  "name": "Cimbál",
+  "type": "tool",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/6-vybaveni.html#pomucky\" target=\"_blank\">SRD Jeskyní a draků – Vybavení</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 10,
+      "units": "lb"
+    },
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "ability": "cha",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "type": {
+      "value": "music",
+      "baseItem": "dulcimer"
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "activities": {
+      "132H1oQX1HVA4QXj": {
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "sah",
+            "stationary": false
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "check": {
+          "ability": "cha",
+          "dc": {
+            "calculation": "",
+            "formula": ""
+          },
+          "associated": [],
+          "visible": true,
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "_id": "132H1oQX1HVA4QXj",
+        "name": "Hrát na nástroj"
+      }
+    },
+    "attuned": false,
+    "identifier": "dulcimer"
+  },
+  "effects": [],
+  "folder": "6vMQ5fIsfvBbGyMQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!aiUR9R7wNVqsEz79"
+}

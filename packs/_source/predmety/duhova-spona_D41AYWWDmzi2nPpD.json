@@ -1,0 +1,90 @@
+{
+  "_id": "D41AYWWDmzi2nPpD",
+  "name": "Duhová spona",
+  "type": "consumable",
+  "img": "icons/commodities/materials/feather-colored-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Běžný</em></p><p><em>Originální předmět JaD</em></p><p>Vyřezávaná spona jedné z duhových barev; Bonusovou akcí ji změníš. Vlasy (i vousy, obočí či srst) nositele mají její barvu.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#duhova-spona\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "common",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "loot",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {},
+    "attuned": false,
+    "identifier": "duhova-spona"
+  },
+  "effects": [],
+  "folder": "9lOeroroSTBW4i0d",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "duhova-spona"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!D41AYWWDmzi2nPpD"
+}

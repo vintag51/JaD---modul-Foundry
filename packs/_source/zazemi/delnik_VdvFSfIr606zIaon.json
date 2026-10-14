@@ -1,0 +1,155 @@
+{
+  "_id": "VdvFSfIr606zIaon",
+  "name": "Dělník",
+  "type": "background",
+  "img": "icons/sundries/documents/document-sealed-brown-red.webp",
+  "folder": "7GrKTBBtDvTixn6S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Celý život jsi poctivě dřel na stavbách a polích a viděl svět bez příkras.</p><p><strong>Schopnost:</strong> Mezi svými</p><p><strong>Vybavení:</strong> Lopata, sekera, železný kotlík, obyčejné oblečení, 5 zl.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#delnik\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "advancement": {
+      "jHSkMJx2Ntb7s2w0": {
+        "_id": "jHSkMJx2Ntb7s2w0",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ath",
+            "skills:ani",
+            "vehicle:land"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "KnFelca0jFThq0cG": {
+        "_id": "KnFelca0jFThq0cG",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Schopnost zázemí",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.zazemi.Item.qFU6pkmlkIQBIknQ",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "_id": "qsQOPjgkcy818RfK",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "ClQPov8lMJJzIQPV",
+        "group": "qsQOPjgkcy818RfK",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.gBS9rg5chXBCM1TG",
+        "count": null
+      },
+      {
+        "_id": "bC1HEc7tbeKeSaxW",
+        "group": "qsQOPjgkcy818RfK",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.8g10SpRbpcJm52PO",
+        "count": null
+      },
+      {
+        "_id": "NSPBj27TmK7yTeBL",
+        "group": "qsQOPjgkcy818RfK",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.nwOSHDy6Lxpl8GmA",
+        "count": null
+      },
+      {
+        "_id": "SizP6dCE5mNJxtpf",
+        "group": "qsQOPjgkcy818RfK",
+        "sort": 500000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.PDIzddht2dqYN1VY",
+        "count": null
+      },
+      {
+        "_id": "gDTWDRNpkNueyemY",
+        "group": "qsQOPjgkcy818RfK",
+        "sort": 600000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 5
+      }
+    ],
+    "identifier": "delnik"
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "zazemi": "delnik"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!VdvFSfIr606zIaon"
+}

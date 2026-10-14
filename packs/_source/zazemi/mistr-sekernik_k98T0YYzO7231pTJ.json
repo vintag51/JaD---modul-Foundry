@@ -1,0 +1,60 @@
+{
+  "_id": "k98T0YYzO7231pTJ",
+  "name": "Mistr sekerník",
+  "type": "feat",
+  "img": "icons/sundries/books/book-worn-brown-grey.webp",
+  "folder": "I49mVPhzcvBZkuhz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Kritický zásah sekerou zničí protivníkovi štít nebo mu zhorší zbroj o 2; jedničky na zásahu sekerou počítáš jako dvojky.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#odbornosti\" target=\"_blank\">SRD Jeskyní a draků</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "mistr-sekernik",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "feat": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!k98T0YYzO7231pTJ"
+}

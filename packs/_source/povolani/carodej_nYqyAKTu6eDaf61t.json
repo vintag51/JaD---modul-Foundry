@@ -1,0 +1,660 @@
+{
+  "_id": "nYqyAKTu6eDaf61t",
+  "name": "Čaroděj",
+  "type": "class",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "O2EJ5fZne00vb5ch",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Sesilatel s magií v krvi, který ji tvaruje vůlí a Čarodějnými body ohýbá podle svých přání.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#carodej\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "sorcerer",
+    "levels": 1,
+    "hd": {
+      "denomination": "d6",
+      "spent": 0,
+      "additional": ""
+    },
+    "hitDice": "d6",
+    "hitDiceUsed": 0,
+    "advancement": {
+      "aTHVooufgvrJSUM4": {
+        "_id": "aTHVooufgvrJSUM4",
+        "type": "HitPoints",
+        "level": 0,
+        "title": "Body výdrže",
+        "hint": "",
+        "flags": {},
+        "configuration": {},
+        "value": {}
+      },
+      "TX1VNIZQKWffELlJ": {
+        "_id": "TX1VNIZQKWffELlJ",
+        "type": "Trait",
+        "level": 1,
+        "title": "Zbraně",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:sim:dagger",
+            "weapon:sim:quarterstaff",
+            "weapon:sim:lightcrossbow",
+            "weapon:sim:sling",
+            "weapon:sim:dart"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "kKZ7KkTQ0vkjgpTB": {
+        "_id": "kKZ7KkTQ0vkjgpTB",
+        "type": "Trait",
+        "level": 1,
+        "title": "Záchranné hody",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:con",
+            "saves:cha"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "classRestriction": "primary"
+      },
+      "ZQXsALTsOuwrfGNV": {
+        "_id": "ZQXsALTsOuwrfGNV",
+        "type": "Trait",
+        "level": 1,
+        "title": "Dovednosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:dec",
+                "skills:arc",
+                "skills:rel",
+                "skills:per",
+                "skills:ins",
+                "skills:itm"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "classRestriction": "primary"
+      },
+      "dpyzJPKeJgIgspk1": {
+        "_id": "dpyzJPKeJgIgspk1",
+        "type": "ScaleValue",
+        "level": 0,
+        "title": "Čarodějné body",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "identifier": "carodejne-body",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "2": {
+              "value": 2
+            },
+            "3": {
+              "value": 3
+            },
+            "4": {
+              "value": 4
+            },
+            "5": {
+              "value": 5
+            },
+            "6": {
+              "value": 6
+            },
+            "7": {
+              "value": 7
+            },
+            "8": {
+              "value": 8
+            },
+            "9": {
+              "value": 9
+            },
+            "10": {
+              "value": 10
+            },
+            "11": {
+              "value": 11
+            },
+            "12": {
+              "value": 12
+            },
+            "13": {
+              "value": 13
+            },
+            "14": {
+              "value": 14
+            },
+            "15": {
+              "value": 15
+            },
+            "16": {
+              "value": 16
+            },
+            "17": {
+              "value": 17
+            },
+            "18": {
+              "value": 18
+            },
+            "19": {
+              "value": 19
+            },
+            "20": {
+              "value": 20
+            }
+          }
+        },
+        "value": {}
+      },
+      "Q4Woy4R4KAsICH5J": {
+        "_id": "Q4Woy4R4KAsICH5J",
+        "type": "AbilityScoreImprovement",
+        "level": 4,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "D2LvkucYSaSo8vGi": {
+        "_id": "D2LvkucYSaSo8vGi",
+        "type": "AbilityScoreImprovement",
+        "level": 8,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "u0psHsG3sqV1nJO4": {
+        "_id": "u0psHsG3sqV1nJO4",
+        "type": "AbilityScoreImprovement",
+        "level": 12,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "i4ozC5x0rPp18IIV": {
+        "_id": "i4ozC5x0rPp18IIV",
+        "type": "AbilityScoreImprovement",
+        "level": 16,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "RRFt24lSjVFxIAxx": {
+        "_id": "RRFt24lSjVFxIAxx",
+        "type": "AbilityScoreImprovement",
+        "level": 19,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "pKg3bhlJFeuh0aay": {
+        "_id": "pKg3bhlJFeuh0aay",
+        "type": "Subclass",
+        "level": 1,
+        "title": "Čarodějný původ",
+        "hint": "",
+        "flags": {},
+        "configuration": {},
+        "value": {}
+      },
+      "o9qyFtkyu7Fe6h0q": {
+        "_id": "o9qyFtkyu7Fe6h0q",
+        "type": "ItemGrant",
+        "level": 1,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.iSFkYUfSZMKf9eXF",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "4kuvZWS84Lp2pqwu": {
+        "_id": "4kuvZWS84Lp2pqwu",
+        "type": "ItemGrant",
+        "level": 2,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.wvPb1vtOGGwprLy5",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "ykJ5TPIBzT7ykRPH": {
+        "_id": "ykJ5TPIBzT7ykRPH",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.aS2Ddw25ZeJbPnyl",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "qA72oljeSAh0Ic5C": {
+        "_id": "qA72oljeSAh0Ic5C",
+        "type": "ItemGrant",
+        "level": 20,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.XN8UiSgBPEYG4QcL",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "S8STE0ftycPRupx1": {
+        "_id": "S8STE0ftycPRupx1",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Metamagie",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            },
+            "10": {
+              "count": 1,
+              "replacement": false
+            },
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.Mq2hEOZUnchgxGNJ"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.qgHZMtag3JCbumI1"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.R2nvFrNqDcRzcAWl"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.6PrRQT5sCiv16ebW"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.Fmbhr9LLYpbELevs"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.e1SfSrdrdQx2D6J0"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.swdhu0LmrWnSjDZZ"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.MAhty9xntJeLDb57"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.MPLH57vd7C9GSnWI"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.kteTcNwyXWvWpvHd"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.NtNPGsgmlPgqOCgR"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.95IHBXmYlKU57veK"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.lOz5hLgFuXggLd24"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.5QVnaN0ZmjQMn4On"
+            }
+          ],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": []
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "cha",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "startingEquipment": [
+      {
+        "_id": "g1QeQsMZCnohHM5s",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "UgVoGsz36M45h1rb",
+        "group": "g1QeQsMZCnohHM5s",
+        "sort": 200000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "viZHzCtLEihuQYN0",
+        "group": "UgVoGsz36M45h1rb",
+        "sort": 300000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "N9i9nR9UkkXCcpvB",
+        "group": "viZHzCtLEihuQYN0",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.AYXZCWYneorv0cDO",
+        "count": null
+      },
+      {
+        "_id": "3Fmp9WKWDUIwaxXL",
+        "group": "viZHzCtLEihuQYN0",
+        "sort": 500000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.XYOeHAs3f9D0jv6G",
+        "count": null
+      },
+      {
+        "_id": "PcyvZRXYPpfgzyGY",
+        "group": "UgVoGsz36M45h1rb",
+        "sort": 600000,
+        "type": "weapon",
+        "requiresProficiency": false,
+        "key": "sim",
+        "count": null
+      },
+      {
+        "_id": "XChKYR5NJsHGjMG6",
+        "group": "g1QeQsMZCnohHM5s",
+        "sort": 700000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "xMdOBrxJUrK8ZudZ",
+        "group": "XChKYR5NJsHGjMG6",
+        "sort": 800000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.NZJh9mfZeisgRnmc",
+        "count": null
+      },
+      {
+        "_id": "D33f9NuE7VF3dwPD",
+        "group": "XChKYR5NJsHGjMG6",
+        "sort": 900000,
+        "type": "focus",
+        "requiresProficiency": false,
+        "key": "arcane",
+        "count": null
+      },
+      {
+        "_id": "FkGYk4UqkLBG2C3a",
+        "group": "g1QeQsMZCnohHM5s",
+        "sort": 1000000,
+        "type": "OR",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "t8obehKYZ1sqzY5T",
+        "group": "FkGYk4UqkLBG2C3a",
+        "sort": 1100000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.P7TNNgXtPGSULEDJ",
+        "count": null
+      },
+      {
+        "_id": "3V0LJvtZdInd97FR",
+        "group": "FkGYk4UqkLBG2C3a",
+        "sort": 1200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.LcNmi3qssEyYP7JZ",
+        "count": null
+      },
+      {
+        "_id": "GPwuDoFIpJa5RLAB",
+        "group": "g1QeQsMZCnohHM5s",
+        "sort": 1300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.21m1tg18G2fWLgmD",
+        "count": 2
+      }
+    ],
+    "wealth": "3d4 * 10",
+    "primaryAbility": {
+      "value": [],
+      "all": true
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": "sorcerer"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!nYqyAKTu6eDaf61t"
+}

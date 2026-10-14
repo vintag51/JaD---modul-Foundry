@@ -1,0 +1,96 @@
+{
+  "JAD": {
+    "Nastaveni": {
+      "Seznamy": {
+        "Nazev": "Registrovat seznamy kouzel povolání JaD",
+        "Napoveda": "Přidá seznamy kouzel Barda, Klerika, Druida, Paladina, Hraničáře, Čaroděje, Černokněžníka a Kouzelníka do registru dnd5e (výběr kouzel při postupu na Úroveň)."
+      },
+      "Jednotky": {
+        "Nazev": "Kontrolovat mřížku scény",
+        "Napoveda": "Při otevření scény, která nemá mřížku v sázích, nabídne GM její převod na 1 sáh na pole."
+      },
+      "Mince": {
+        "Nazev": "Mince JaD (zl, st, md)",
+        "Napoveda": "Přejmenuje zlaté, stříbrné a měděné mince dnd5e na zlaťáky, stříbrňáky a měďáky. Převodní poměry se nemění."
+      },
+      "Predmety": {
+        "Nazev": "České základní předměty",
+        "Napoveda": "Volby zbraní, zbrojí, pomůcek a ohniskových předmětů (počáteční vybavení, zdatnosti) nabízejí předměty z kompendia JaD – Předměty a vybavení místo anglických předmětů dnd5e."
+      },
+      "Radky": {
+        "Nazev": "Nosnost na Řádky (JaD)",
+        "Napoveda": "Naložení se počítá v Řádcích podle JaD: Lehké do 5 + Oprava síly, Střední do 10 + Oprava síly (Rychlost −1 sáh), s Batohem Těžké do 15 + Oprava síly (−3 sáhy). Platí pro všechny deníky."
+      },
+      "Zjednodusena": {
+        "Nazev": "Zjednodušená nosnost (JaD)",
+        "Napoveda": "Bez Stupňů naložení: postava unese 15 + Oprava síly Řádků bez postihu, víc ne. Těžká zbroj bez potřebné Síly zpomalí o 2 sáhy."
+      },
+      "ScenyVSazich": {
+        "Nazev": "Nové scény v sázích",
+        "Napoveda": "Nově vytvořené scény dostanou mřížku 1 pole = 1 sáh, aby měření pohybu tokenů odpovídalo rychlosti postav v sázích."
+      }
+    },
+    "Import": {
+      "Zacatek": "Jeskyně a draci: plním kompendia z dat modulu…",
+      "Hotovo": "Jeskyně a draci: do kompendií naimportováno {pocet} položek.",
+      "Chyba": "Jeskyně a draci: import kompendií selhal, podrobnosti v konzoli (F12)."
+    },
+    "Midi": {
+      "Aktivni": "Jeskyně a draci: Midi-QOL je aktivní – opakované Záchranné hody a zásahy na konci tahu (OverTime) se vyhodnocují automaticky."
+    },
+    "Jednotky": {
+      "Upozorneni": "Jeskyně a draci: postavy a kouzla měří v sázích. Nastav mřížku scény na 1 sáh na pole.",
+      "Sah": {
+        "Nazev": "Sáhy",
+        "Zkratka": "sáh",
+        "Sablona": "sáh.",
+        "Pocet": {
+          "short": {
+            "one": "{number} sáh",
+            "few": "{number} sáhy",
+            "many": "{number} sáhu",
+            "other": "{number} sáhů"
+          },
+          "long": {
+            "one": "{number} sáh",
+            "few": "{number} sáhy",
+            "many": "{number} sáhu",
+            "other": "{number} sáhů"
+          },
+          "one": "{number} sáh",
+          "few": "{number} sáhy",
+          "many": "{number} sáhu",
+          "other": "{number} sáhů"
+        }
+      },
+      "Titulek": "Mřížka scény v sázích",
+      "Dotaz": "Scéna „{scena}“ má mřížku {mrizka} na pole. Jeskyně a draci počítají v sázích (1 pole = 1 sáh) – pohyb tokenů se přepočítá v každém měřítku, ale vzdálenosti na mapě pak uvidíš ve stopách. Převést scénu na 1 sáh na pole?",
+      "Prevest": "Převést na sáhy",
+      "Nechat": "Nechat (už se neptat)",
+      "Prevedeno": "Scéna „{scena}“ má teď mřížku 1 sáh na pole."
+    },
+    "Mince": {
+      "Zl": {
+        "Nazev": "Zlaťáky",
+        "Zkratka": "zl"
+      },
+      "St": {
+        "Nazev": "Stříbrňáky",
+        "Zkratka": "st"
+      },
+      "Md": {
+        "Nazev": "Měďáky",
+        "Zkratka": "md"
+      }
+    },
+    "Denik": {
+      "Nazev": "Deník JaD",
+      "Zalozka": "Deník",
+      "ZalozkaVzhled": "Vzhled a vztahy"
+    },
+    "Nosnost": {
+      "RezimNastaven": "Jeskyně a draci: pravidlo Naložení systému dnd5e bylo nastaveno podle nosnosti na Řádky.",
+      "Sloupec": "Řádky"
+    }
+  }
+}

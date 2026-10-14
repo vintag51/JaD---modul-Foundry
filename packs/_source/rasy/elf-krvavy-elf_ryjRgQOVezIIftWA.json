@@ -1,0 +1,292 @@
+{
+  "_id": "ryjRgQOVezIIftWA",
+  "name": "Elf – Krvavý elf",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "folder": "qzOuc9xP9ZV3EDJI",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Temní příbuzní Nočních elfů, zocelení útěkem do hlubin – dravci toužící po smečce. Hraní domluvte s PH a skupinou.</p><ul><li><strong>Rychlost:</strong> 6 sáhů</li><li><strong>Vidění ve tmě:</strong> 24 sáhů</li></ul><p><em>Více o rase: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/3-rasy.html#krvavi-elfove\" target=\"_blank\">SRD Jeskyní a draků – Rasy</a>; pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#schopnosti-ras\" target=\"_blank\">Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "krvavy-elf",
+    "advancement": {
+      "eXWx1OOnVwZh5ixD": {
+        "_id": "eXWx1OOnVwZh5ixD",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 2,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [
+            "str",
+            "dex",
+            "con",
+            "wis"
+          ],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "AzCaH0nabpTp16Kf": {
+        "_id": "AzCaH0nabpTp16Kf",
+        "type": "Size",
+        "level": 1,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": ""
+        }
+      },
+      "az6vHp4lNQoh1Um3": {
+        "_id": "az6vHp4lNQoh1Um3",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common",
+            "languages:standard:elvish"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "NVgx9NgMyhPrp0Gj": {
+        "_id": "NVgx9NgMyhPrp0Gj",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti a odolnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:prc",
+            "weapon:sim:dagger",
+            "weapon:mar:shortsword",
+            "weapon:mar:rapier",
+            "weapon:sim:lightcrossbow",
+            "weapon:mar:handcrossbow"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "NdoR2L1w7By9PJS4": {
+        "_id": "NdoR2L1w7By9PJS4",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Rasové schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.cMVgbjqcaJm14Eti",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.irxlokFf3YEjWuif",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.Dn1kUnX6fOtc64Em",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.hoax1briztYyuETt",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.MljXB3dymexqRH16",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "5OnZoEQENpup7EQH": {
+        "_id": "5OnZoEQENpup7EQH",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Vrozená magie",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.HxpVAVLa4sJLtVgf",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "int",
+              "cha"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "URHmz6AmUmB3MCK7": {
+        "_id": "URHmz6AmUmB3MCK7",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Vrozená magie",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.H6hpUvxJqiAqVkiF",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "int",
+              "cha"
+            ],
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "VdQawoM0ZZsElFSY": {
+        "_id": "VdQawoM0ZZsElFSY",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Vrozená magie",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.hthdovrEmcst8IeQ",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "int",
+              "cha"
+            ],
+            "uses": {
+              "max": "1",
+              "per": "sr",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "movement": {
+      "walk": 6,
+      "climb": null,
+      "burrow": null,
+      "fly": null,
+      "swim": null,
+      "units": "sah",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 24,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": "sah",
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "Elf",
+      "custom": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": "krvavy-elf"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ryjRgQOVezIIftWA"
+}

@@ -1,0 +1,169 @@
+{
+  "_id": "Pdd0RjbKtBc4RV3I",
+  "name": "Šlechtic",
+  "type": "background",
+  "img": "icons/sundries/documents/document-sealed-brown-red.webp",
+  "folder": "7GrKTBBtDvTixn6S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Pocházíš z rodu s erbem, rodokmenem a postavením, které se jen těžko zapírá.</p><p><strong>Schopnost:</strong> Urozenost</p><p><strong>Vybavení:</strong> Zdobené oblečení, pečetní prsten, rodokmen na pergamenu, 25 zl.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#slechtic-1\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "advancement": {
+      "fi5OInyQWR00IT3v": {
+        "_id": "fi5OInyQWR00IT3v",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:his",
+            "skills:per"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "I5pe9L1CQoXKCxyC": {
+        "_id": "I5pe9L1CQoXKCxyC",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "QId6wqnNZfWDlNhM": {
+        "_id": "QId6wqnNZfWDlNhM",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Schopnost zázemí",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.zazemi.Item.6i1HTFAw5V9KWE0A",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "_id": "OXqbkq6YgLaRasee",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "khxdO6pscoL6gEt1",
+        "group": "OXqbkq6YgLaRasee",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.CkW7rvKSPeuaylc6",
+        "count": null
+      },
+      {
+        "_id": "CYwrqBd8PplI73N0",
+        "group": "OXqbkq6YgLaRasee",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.lBUAbPYakHmi7dJN",
+        "count": null
+      },
+      {
+        "_id": "qwqHAtIGZbA4v7tw",
+        "group": "OXqbkq6YgLaRasee",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.aLD6IiRCUG2ZwUiY",
+        "count": null
+      },
+      {
+        "_id": "yONkuIgvarIP1APw",
+        "group": "OXqbkq6YgLaRasee",
+        "sort": 500000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 25
+      }
+    ],
+    "identifier": "slechtic"
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "zazemi": "slechtic"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Pdd0RjbKtBc4RV3I"
+}

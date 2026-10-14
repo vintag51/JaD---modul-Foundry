@@ -1,0 +1,84 @@
+identifikator: rogue
+nazev: Tulák
+kotva: tulak
+popis: Obratný a vynalézavý dobrodruh, který spoléhá na zručnost, lest a zákeřné údery.
+kostka: d8
+zachrany: [dex, int]
+zbroje: [armor:lgt]
+zbrane: [weapon:sim, weapon:mar:longsword, weapon:mar:shortsword, weapon:mar:rapier, weapon:mar:handcrossbow]
+pomucky: [tool:thief]
+dovednosti: {pocet: 4, z: [acr, ath, slt, dec, ste, inv, per, ins, prc, prf, itm]}
+asi: [4, 8, 10, 12, 16, 19]
+skaly:
+  zakerny-utok: {nazev: Zákeřný útok, typ: dice, hodnoty: {1: 1d6, 3: 2d6, 5: 3d6, 7: 4d6, 9: 5d6, 11: 6d6, 13: 7d6, 15: 8d6, 17: 9d6, 19: 10d6}}
+obor: {nazev: Tulácký archetyp, uroven: 3}
+
+schopnosti:
+  - {k: kvalifikace-tulaka, n: Kvalifikace, u: [1, 6], d: Ve dvou Zdatnostech (Dovednostech či se zlodějským náčiním) získáš Kvalifikaci; na 6. Úrovni ve dvou dalších., trait: {rezim: expertise, volby: [{pocet: 2, z: ["skills:*", tool:thief]}]}}
+  - k: zakerny-utok
+    n: Zákeřný útok
+    u: [1]
+    d: Jednou za tah při zásahu vytříbenou nebo střelnou zbraní s Výhodou (nebo se spojencem u cíle) zvýšíš Zásah o k6 podle Úrovně (polovina nahoru).
+    akt: [{n: Zákeřný útok, t: special, typ: damage, dmg: ["@scale.rogue.zakerny-utok", ""]}]
+  - {k: zlodejska-hantyrka, n: Zlodějská hantýrka, u: [1], d: Ovládáš tajnou mluvu a znaky zlodějů, kterými skrytě předáváš zprávy., trait: {zdatnosti: [languages:cant]}}
+  - {k: mazana-akce, n: Mazaná akce, u: [2], d: Každý tah můžeš bonusovou akcí Odpoutat se, Schovat se nebo Běžet., akt: [{n: Mazaná akce, t: bonus}]}
+  - {k: neuveritelne-uhybani, n: Neuvěřitelné uhýbání, u: [5], d: Reakcí snížíš na polovinu Zásah útoku, který vidíš., akt: [{n: Uhnout, t: reaction}]}
+  - {k: vyvaznuti, n: Vyváznutí, u: [7], d: Při plošném efektu se záchranou na Obratnost (polovina při úspěchu) při úspěchu neutrpíš nic a při neúspěchu jen polovinu.}
+  - {k: spolehlivy-talent, n: Spolehlivý talent, u: [11], d: Při Ověření se Zdatností se hod 9 a méně počítá jako 10., pas: [[flags.dnd5e.reliableTalent, "true", override]]}
+  - {k: mimoradny-sluch, n: Mimořádný sluch, u: [14], d: Do 2 sáhů víš o přítomnosti a poloze skrytých i neviditelných tvorů (pokud nejsi Ohlušený)., pas: [[system.attributes.senses.blindsight, "2", upgrade]]}
+  - {k: kluzka-mysl, n: Kluzká mysl, u: [15], d: Získáš Zdatnost v Záchranných hodech na Moudrost., trait: {zdatnosti: [saves:wis]}}
+  - {k: nepolapitelnost, n: Nepolapitelnost, u: [18], d: Dokud nejsi vyřazený, útočníci proti tobě nemohou mít Výhodu.}
+  - {k: eso-v-rukavu, n: Eso v rukávu, u: [20], d: Jednou mezi Odpočinky proměníš neúspěšný útok v úspěch, nebo neúspěšné Ověření v hod 20., p: 1/sr, akt: [{n: Eso v rukávu, t: special}]}
+
+obory:
+  kejklir:
+    nazev: Kejklíř
+    kotva: kejklir
+    popis: Všestranný bavič z putovní společnosti, mistr vrhu a štěstí v pravou chvíli.
+    schopnosti:
+      - {k: putovni-spolecnost, n: Putovní společnost, u: [3], d: Získáš Zdatnost s pomůckami pro přestrojování a s bylinkářskou soupravou (s jednou z nich Kvalifikaci)., trait: {zdatnosti: [tool:disg, tool:herb]}}
+      - {k: vrhac, n: Vrhač, u: [3], d: Vrhací zbraně mají pro tebe větší dostřel a k jejich Zásahu přičítáš Opravu obratnosti dvakrát.}
+      - {k: vlna-uspechu, n: Vlna úspěchu, u: [9], d: Při útoku, Ověření nebo záchraně můžeš použít svůj předchozí hod k20., p: "@prof/lr", akt: [{n: Vlna úspěchu, t: special}]}
+      - {k: vseumel-kejklire, n: Všeuměl, u: [13], d: Jednou mezi Odpočinky si přičteš Zdatnostní bonus k Dovednosti nebo pomůckám bez Zdatnosti., p: 1/sr, akt: [{n: Všeuměl, t: special}]}
+      - {k: utok-do-slabin, n: Útok do slabin, u: [17], d: Jednou mezi Odpočinky po zásahu s Výhodou připravíš cíl o jeho příští Akci a snížíš mu Rychlost na polovinu., p: 1/sr, akt: [{n: Útok do slabin, t: special}]}
+  mistr-zlodej:
+    nazev: Mistr zloděj
+    kotva: mistr-zlodej
+    popis: Lupič a lezec, pro kterého je kradení i vloupání samozřejmou rutinou.
+    schopnosti:
+      - {k: lupicstvi, n: Lupičství, u: [3], d: Šplhání tě nezpomaluje a s rozběhem skočíš dál.}
+      - {k: rychle-ruce, n: Rychlé ruce, u: [3], d: Mazanou akcí můžeš také čachrovat, používat zlodějské náčiní nebo předmět.}
+      - {k: prvotridni-tichy-pohyb, n: Prvotřídní tichý pohyb, u: [9], d: Když se v tahu pohneš nanejvýš o polovinu Rychlosti, máš Výhodu na Nenápadnost.}
+      - {k: pouzivani-kouzelnych-predmetu, n: Používání Kouzelných předmětů, u: [13], d: Při používání kouzelných předmětů ignoruješ požadavky na povolání, rasu i úroveň.}
+      - {k: zlodejovy-reflexy, n: Zlodějovy reflexy, u: [17], d: V prvním kole boje máš dva tahy (druhý s Iniciativou o 10 nižší), pokud tě nepřekvapili.}
+  svatokupec:
+    nazev: Svatokupec
+    kotva: svatokupec
+    popis: Tulák, který si božskou moc půjčuje, krade nebo dokonale napodobuje.
+    kouzleni: {progrese: third, vlastnost: wis}
+    schopnosti:
+      - {k: sesilani-svatokupce, n: Sesílání kouzel, u: [3], d: Sesíláš Klerická kouzla s Moudrostí jako sesílací vlastností (třetinový sesilatel).}
+      - {k: odposlechnuta-teologie, n: Odposlechnutá teologie, u: [3], d: Získáš Zdatnost a Kvalifikaci v Náboženství., trait: {zdatnosti: [skills:rel]}}
+      - {k: falesny-lek, n: Falešný lék, u: [9], d: Jednou za Dlouhý odpočinek sešleš léčivé kouzlo bez Pozice – místo Bodů výdrže ale dodá jen dočasné body na minutu., p: 1/lr, akt: [{n: Falešný lék, t: action}]}
+      - {k: zlodej-leceni, n: Zloděj léčení, u: [13], d: Reakcí přiměješ léčeného tvora do 6 sáhů k záchraně na Moudrost; při neúspěchu léčení selže a polovinu získáš ty., akt: [{n: Ukrást léčení, t: reaction, typ: save, save: wis, dosah: 6}]}
+      - {k: imitace-odvraceni, n: Imitace odvrácení, u: [17], d: Jednou za Dlouhý odpočinek akcí vyděsíš nadpřirozené bytosti do 12 sáhů., p: 1/lr, akt: [{n: Falešná modlitba, t: action, typ: save, save: wis, sablona: {typ: radius, velikost: 12}}]}
+  seda-eminence:
+    nazev: Šedá eminence
+    kotva: seda-eminence
+    popis: Mistr intrik, sítí poskoků a nenápadného vlivu.
+    schopnosti:
+      - {k: mezi-radky, n: Mezi řádky, u: [3], d: Skrytou řečí předáš zprávu i tvorům, kteří hantýrku neovládají, pokud je znáš.}
+      - {k: snovani-siti, n: Snování Sítí, u: [3], d: Při budování Sítí v Mezidobí jsi zdatný a rychlejší.}
+      - {k: improvizovane-site, n: Improvizované sítě, u: [9], d: Jednou za Dlouhý odpočinek najdeš za odpoledne v neznámém místě ochotné pomocníky z podsvětí., p: 1/lr}
+      - {k: znervoznujici-manevr, n: Znervózňující manévr, u: [13], d: Při Zákeřném útoku můžeš bonusovou akcí rozšířit rozsah Kritického zásahu o 2., akt: [{n: Znervózňující manévr, t: bonus}]}
+      - {k: podmaniva-osobnost, n: Podmanivá osobnost, u: [17], d: Po soukromém rozhovoru přiměješ tvora k záchraně na Moudrost – při neúspěchu je tebou Zmámený., akt: [{n: Podmanit si, t: special, typ: save, save: wis, dc: int}]}
+  vykradac-hrobek:
+    nazev: Vykradač hrobek
+    kotva: vykradac-hrobek
+    popis: Dobrodruh kobek a krypt, mistr pastí, improvizace a těsných úniků.
+    schopnosti:
+      - {k: zkusenost-s-kobkami, n: Zkušenost s kobkami, u: [3], d: Pasti hledáš i za pochodu s Výhodou a lépe jim odoláváš; snáze odhalíš přepadení.}
+      - {k: zbrojnice-sveta, n: Zbrojnice světa, u: [3], d: Improvizované zbraně ovládáš, jsou pro tebe vytříbené a mají dvojnásobek Kostek zásahu., trait: {zdatnosti: [weapon:imp]}}
+      - {k: bleskove-reflexy, n: Bleskové reflexy, u: [9], d: Když tě zasáhne past nebo plošný efekt, můžeš se odklidit z oblasti až o svou Rychlost (a vzít s sebou tvora)., akt: [{n: Uskočit, t: reaction}]}
+      - {k: zoufale-prostredky, n: Zoufalé prostředky, u: [13], d: Jednou mezi Odpočinky bonusovou akcí najdeš slabinu nepřítele nebo vhodnou improvizovanou zbraň., p: 1/sr, akt: [{n: Najít slabinu, t: bonus}]}
+      - {k: na-vsech-frontach, n: Na všech frontách, u: [17], d: Mazanou akcí můžeš provést libovolnou jinou Akci než Útok.}

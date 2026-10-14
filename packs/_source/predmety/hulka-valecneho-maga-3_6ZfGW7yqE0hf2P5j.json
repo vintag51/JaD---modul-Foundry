@@ -1,0 +1,154 @@
+{
+  "_id": "6ZfGW7yqE0hf2P5j",
+  "name": "Hůlka válečného mága +3",
+  "type": "equipment",
+  "img": "icons/weapons/wands/wand-carved-stone-shard.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Velmi vzácný, vyžaduje Sladění</em></p><p>Zvyšuje Útočný bonus kouzel o +1, +2 nebo +3 podle Vzácnosti a tvé Útoky kouzlem na dálku ignorují Poloviční kryt.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#hulka-valecneho-maga\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 40000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 0,
+      "dex": null,
+      "magicalBonus": ""
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+      "value": "wand",
+      "baseItem": ""
+    },
+    "unidentified": {
+      "description": "",
+      "name": "Unidentified Wand"
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [
+      "foc",
+      "mgc"
+    ],
+    "activities": {},
+    "attuned": false,
+    "identifier": "wand-of-the-war-mage-3"
+  },
+  "effects": [
+    {
+      "name": "Přesnost válečného mága +3",
+      "img": "icons/magic/lightning/bolt-beam-strike-blue.webp",
+      "origin": "Compendium.jeskyne-a-draci.predmety.Item.6ZfGW7yqE0hf2P5j",
+      "_id": "57wol3ftCtHAGwV5",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.msak.attack",
+            "value": 3,
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.bonuses.rsak.attack",
+            "value": 3,
+            "priority": null,
+            "type": "add"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek předmětu <em>Hůlka válečného mága +3</em>.</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!6ZfGW7yqE0hf2P5j.57wol3ftCtHAGwV5"
+    }
+  ],
+  "folder": "EGsCR07Xt7sZmS8A",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "hulka-valecneho-maga"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!6ZfGW7yqE0hf2P5j"
+}

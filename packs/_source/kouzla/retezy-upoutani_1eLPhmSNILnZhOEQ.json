@@ -1,0 +1,723 @@
+{
+  "_id": "1eLPhmSNILnZhOEQ",
+  "name": "Řetězy upoutání",
+  "type": "spell",
+  "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [
+    {
+      "_id": "0IDi5c8b22Tlilo3",
+      "name": "Řetězy prázdnoty",
+      "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.all",
+            "value": "0.5",
+            "type": "multiply",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Řetězy upoutání</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_key": "!items.effects!1eLPhmSNILnZhOEQ.0IDi5c8b22Tlilo3"
+    },
+    {
+      "_id": "bluclyuscLjfYJKD",
+      "name": "Řetězy utrpení",
+      "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Řetězy upoutání</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_key": "!items.effects!1eLPhmSNILnZhOEQ.bluclyuscLjfYJKD"
+    },
+    {
+      "_id": "794enmlpslYURbxa",
+      "name": "Řetězy zmaru",
+      "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": []
+      },
+      "description": "<p>Účinek kouzla <em>Řetězy upoutání</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_key": "!items.effects!1eLPhmSNILnZhOEQ.794enmlpslYURbxa"
+    },
+    {
+      "_id": "lYWwoUVLrApG56hh",
+      "name": "Řetězy omráčení",
+      "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": []
+      },
+      "description": "<p>Účinek kouzla <em>Řetězy upoutání</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_key": "!items.effects!1eLPhmSNILnZhOEQ.lYWwoUVLrApG56hh"
+    }
+  ],
+  "system": {
+    "identifier": "retezy-upoutani",
+    "level": 1,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "kus řetězu (kouzlo ho spotřebuje)",
+      "consumed": true,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "16",
+      "units": "sah",
+      "special": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "",
+        "size": "",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "4tZrnRrf190nx3OK": {
+        "_id": "4tZrnRrf190nx3OK",
+        "type": "attack",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        }
+      },
+      "oPtR24rN99xKkA3Z": {
+        "_id": "oPtR24rN99xKkA3Z",
+        "type": "damage",
+        "img": "",
+        "sort": 100000,
+        "name": "Řetězy prázdnoty (1)",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Na začátku Tahu spoutaného tvora."
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "0IDi5c8b22Tlilo3",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "0epJC3m2CjFguUDk": {
+        "_id": "0epJC3m2CjFguUDk",
+        "type": "damage",
+        "img": "",
+        "sort": 200000,
+        "name": "Řetězy utrpení (2)",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Na začátku Tahu spoutaného tvora."
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "bluclyuscLjfYJKD",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "piercing"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "pbqPO1O0bnHcVRAJ": {
+        "_id": "pbqPO1O0bnHcVRAJ",
+        "type": "damage",
+        "img": "",
+        "sort": 300000,
+        "name": "Řetězy zmaru (3)",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Na začátku Tahu spoutaného tvora; tvorové do 1 sáhu utrpí polovinu."
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "794enmlpslYURbxa",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "vtHr67UCxLNaZULO": {
+        "_id": "vtHr67UCxLNaZULO",
+        "type": "damage",
+        "img": "",
+        "sort": 400000,
+        "name": "Řetězy omráčení (4)",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Na začátku Tahu spoutaného tvora; do jeho dalšího Tahu nemá Reakce."
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "lYWwoUVLrApG56hh",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "thunder"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "frorKBsfRxcKWOhB": {
+        "_id": "frorKBsfRxcKWOhB",
+        "type": "save",
+        "img": "",
+        "sort": 500000,
+        "name": "Pokus o shození řetězu",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Přivoláš prastaré řetězy, které spoutají cíl; podle hodu 1k4 ho každé kolo zraňují a omezují jiným způsobem.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Útok na dálku kouzlem.</li><li><strong>Řetězy prázdnoty (1):</strong> Chladný zásah za 1k6 Bodů výdrže; efekt: Řetězy prázdnoty.</li><li><strong>Řetězy utrpení (2):</strong> Bodný zásah za 1k6 Bodů výdrže; efekt: Řetězy utrpení.</li><li><strong>Řetězy zmaru (3):</strong> Nekrotický zásah za 1k6 Bodů výdrže; efekt: Řetězy zmaru.</li><li><strong>Řetězy omráčení (4):</strong> Hromový zásah za 1k6 Bodů výdrže; efekt: Řetězy omráčení.</li><li><strong>Pokus o shození řetězu:</strong> Záchranný hod na Obratnost proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#retezy-upoutani\" target=\"_blank\">SRD Jeskyní a draků – Řetězy upoutání</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "retezy-upoutani",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#retezy-upoutani"
+    }
+  },
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1eLPhmSNILnZhOEQ"
+}

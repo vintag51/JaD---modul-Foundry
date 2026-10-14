@@ -1,0 +1,234 @@
+{
+  "_id": "dCCJm2RoxfVpIXFU",
+  "name": "Drakorozený",
+  "type": "race",
+  "img": "icons/environment/people/group.webp",
+  "folder": "qzOuc9xP9ZV3EDJI",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Humanoidní potomci draků se šupinami, dračí hrdostí a ničivým dechem.</p><ul><li><strong>Rychlost:</strong> 6 sáhů</li></ul><p><em>Více o rase: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/3-rasy.html#drakorozeni\" target=\"_blank\">SRD Jeskyní a draků – Rasy</a>; pravidla: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#schopnosti-ras\" target=\"_blank\">Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "drakorozeny",
+    "advancement": {
+      "2gE5ehxds3nwzjiy": {
+        "_id": "2gE5ehxds3nwzjiy",
+        "type": "AbilityScoreImprovement",
+        "level": 0,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "str": 2,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 1
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "xp5jr31q7hOwFHhh": {
+        "_id": "xp5jr31q7hOwFHhh",
+        "type": "Size",
+        "level": 1,
+        "title": "",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": ""
+        }
+      },
+      "pdZHffLZveCTimXP": {
+        "_id": "pdZHffLZveCTimXP",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common",
+            "languages:exotic:draconic"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "fUSOKHxREmpWAQEK": {
+        "_id": "fUSOKHxREmpWAQEK",
+        "type": "ScaleValue",
+        "level": 0,
+        "title": "Dračí dech",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "identifier": "dech",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "0": {
+              "number": 2,
+              "faces": 6,
+              "modifiers": []
+            },
+            "6": {
+              "number": 3,
+              "faces": 6,
+              "modifiers": []
+            },
+            "11": {
+              "number": 4,
+              "faces": 6,
+              "modifiers": []
+            },
+            "16": {
+              "number": 5,
+              "faces": 6,
+              "modifiers": []
+            }
+          }
+        },
+        "value": {}
+      },
+      "JdNQR0j4Xp7lXUFK": {
+        "_id": "JdNQR0j4Xp7lXUFK",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Dračí původ",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.pQqKZx6J23BXGkmH"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.PKjgHAmW0LBimxIb"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.e944mEJyFFS5DU7F"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.Y4VfOZktjv2A152S"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.7zjrLsSWYzQkFUL1"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.S0tScGwJoNESFGVt"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.atCir6hF9vMPr0ru"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.uEv8RGxOmcAZMN9n"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.gVlWTvP2nooI1ZSK"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.rasy.Item.8BuxknnfkunoHS5w"
+            }
+          ],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "race",
+            "subtype": "",
+            "level": "",
+            "list": []
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      }
+    },
+    "movement": {
+      "walk": 6,
+      "climb": null,
+      "burrow": null,
+      "fly": null,
+      "swim": null,
+      "units": "sah",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": "sah",
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "Drakorozený",
+      "custom": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "rasa": "drakorozeny"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!dCCJm2RoxfVpIXFU"
+}

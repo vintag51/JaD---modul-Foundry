@@ -1,0 +1,283 @@
+/* Jeskyně a draci – Kouzla */
+.jad-atribuce { font-size: 0.85em; opacity: 0.8; }
+
+/* ------------------------------------------------------------------ Deník JaD */
+.jad-denik {
+  --jad-pergamen: #f6f1e3;
+  --jad-pole: #e9e4d8;
+  --jad-text: #2a1d17;
+  --jad-tlumene: #6b5d52;
+  --jad-cervena: #7a1d16;
+  --jad-pruh: linear-gradient(90deg, #2b0b08 0%, #6e1a14 50%, #2b0b08 100%);
+  --jad-okraj: #3b2a22;
+}
+.jad-denik .jad-tab {
+  background: var(--jad-pergamen);
+  color: var(--jad-text);
+  font-family: "Alegreya", "Georgia", "Times New Roman", serif;
+  padding: 10px 12px 16px;
+  border-radius: 8px;
+}
+.jad-denik .jad-tab input,
+.jad-denik .jad-tab textarea {
+  background: var(--jad-pole);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: var(--jad-text);
+  font-family: inherit;
+}
+.jad-denik .jad-tab input:focus,
+.jad-denik .jad-tab textarea:focus { border-color: var(--jad-cervena); box-shadow: none; }
+.jad-denik .jad-tab a { color: var(--jad-text); }
+.jad-denik .jad-tab img { width: 20px; height: 20px; border: none; vertical-align: middle; border-radius: 3px; }
+
+.jad-denik .jad-pruh {
+  background: var(--jad-pruh);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px 8px;
+  margin: 10px 0 6px;
+  border: none;
+  border-radius: 2px;
+  clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 50%, calc(100% - 6px) 100%, 6px 100%, 0 50%);
+}
+.jad-denik .jad-pruh-maly { font-size: 0.7rem; }
+
+.jad-denik .jad-horni { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.jad-denik .jad-ctverec {
+  flex: 1 1 90px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  border: 2px solid var(--jad-okraj); border-radius: 6px; padding: 4px; min-height: 58px;
+  background: #fffaf0;
+}
+.jad-denik .jad-ctverec.rollable { cursor: pointer; }
+.jad-denik .jad-ctverec.rollable:hover { border-color: var(--jad-cervena); }
+.jad-denik .jad-hodnota { font-size: 1.4rem; font-weight: bold; display: flex; align-items: center; gap: 4px; }
+.jad-denik .jad-hodnota input { width: 3.2em; text-align: center; font-size: 1.2rem; font-weight: bold; }
+.jad-denik .jad-popis { font-size: 0.7rem; text-transform: uppercase; color: var(--jad-tlumene); text-align: center; }
+.jad-denik .jad-lomitko { font-size: 0.9rem; color: var(--jad-tlumene); }
+
+.jad-denik .jad-sloupce { display: flex; gap: 14px; align-items: flex-start; }
+.jad-denik .jad-sloupec { flex: 1 1 0; min-width: 0; }
+.jad-denik .jad-levy { flex: 0 0 230px; }
+
+.jad-denik .jad-vlastnost { display: flex; gap: 6px; margin-bottom: 6px; align-items: flex-start; }
+.jad-denik .jad-stit {
+  flex: 0 0 68px;
+  display: flex; flex-direction: column; align-items: center;
+  border: 2px solid var(--jad-okraj); border-radius: 0 0 34px 34px; padding: 2px 2px 8px;
+  background: #fffaf0;
+}
+.jad-denik .jad-stit.rollable { cursor: pointer; }
+.jad-denik .jad-stit.rollable:hover { border-color: var(--jad-cervena); }
+.jad-denik .jad-stit-nazev {
+  background: var(--jad-pruh); color: #fff; font-size: 0.62rem; text-transform: uppercase;
+  width: 100%; text-align: center; padding: 1px 0; border-radius: 2px;
+}
+.jad-denik .jad-stit-oprava { font-size: 1.35rem; font-weight: bold; line-height: 1.2; }
+.jad-denik .jad-stit-hodnota {
+  font-size: 0.8rem; border: 1px solid var(--jad-okraj); border-radius: 10px; padding: 0 8px; background: var(--jad-pole);
+}
+
+.jad-denik .jad-dovednosti { list-style: none; margin: 0; padding: 0; flex: 1; }
+.jad-denik .jad-dovednosti li {
+  display: flex; align-items: center; gap: 4px;
+  border-bottom: 1px solid #d8d0c0; padding: 1px 0; font-size: 0.85rem;
+}
+.jad-denik .jad-dovednosti .jad-nazev { flex: 1; }
+.jad-denik .jad-dovednosti .jad-nazev.rollable { cursor: pointer; }
+.jad-denik .jad-dovednosti .jad-nazev.rollable:hover { color: var(--jad-cervena); text-shadow: none; }
+.jad-denik .jad-cislo { min-width: 2.2em; text-align: right; font-weight: bold; }
+.jad-denik .jad-prazdne { color: var(--jad-tlumene); font-style: italic; }
+
+/* hvězdička zdatnosti */
+.jad-denik .jad-hvezda::before { content: "☆"; color: var(--jad-tlumene); }
+.jad-denik .jad-hvezda.polovicni::before { content: "⯪"; color: var(--jad-cervena); }
+.jad-denik .jad-hvezda.plna::before { content: "★"; color: var(--jad-cervena); }
+.jad-denik .jad-hvezda.dvojita::before { content: "✪"; color: var(--jad-cervena); }
+
+.jad-denik .jad-zdatnosti-zbroj { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 0.85rem; margin: 4px 0; }
+.jad-denik .jad-dvojice { display: flex; gap: 10px; }
+.jad-denik .jad-dvojice > div { flex: 1; }
+.jad-denik .jad-trojice { display: flex; gap: 8px; text-align: center; }
+.jad-denik .jad-trojice > div { flex: 1; display: flex; flex-direction: column; }
+.jad-denik .jad-cislo-velke { font-size: 1.25rem; font-weight: bold; }
+.jad-denik .jad-pozice { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.jad-denik .jad-pozice-stupen { display: flex; align-items: center; gap: 2px; font-size: 0.85rem; }
+.jad-denik .jad-pozice-stupen input { width: 2.4em; text-align: center; }
+.jad-denik .jad-truhla { margin-top: 6px; font-size: 0.85rem; }
+
+.jad-denik .jad-tabulka { width: 100%; border-collapse: collapse; font-size: 0.82rem; background: none; border: none; }
+.jad-denik .jad-tabulka th {
+  text-align: left; font-size: 0.68rem; text-transform: uppercase; color: var(--jad-tlumene);
+  background: none; border-bottom: 1px solid var(--jad-okraj);
+}
+.jad-denik .jad-tabulka td { background: var(--jad-pole); border-bottom: 2px solid var(--jad-pergamen); padding: 2px 4px; }
+.jad-denik .jad-tabulka tr:nth-child(even) td { background: #efeadf; }
+.jad-denik .jad-tabulka td input { width: 100%; background: transparent; }
+.jad-denik .jad-radky-tabulka td:nth-child(2),
+.jad-denik .jad-radky-tabulka td:nth-child(3) { width: 3.6em; text-align: center; }
+.jad-denik .jad-radky-tabulka td:nth-child(4) { width: 1.6em; text-align: center; }
+.jad-denik .jad-odlozeno td { opacity: 0.45; text-decoration: line-through; }
+.jad-denik .jad-kontejner { font-size: 0.7rem; color: var(--jad-tlumene); margin-left: 4px; }
+
+.jad-denik .jad-rychlost { display: flex; gap: 6px; }
+.jad-denik .jad-rychlost-stupen {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  border: 1px solid #c9bfae; border-radius: 4px; padding: 2px; opacity: 0.55;
+}
+.jad-denik .jad-rychlost-stupen.aktivni { opacity: 1; border: 2px solid var(--jad-cervena); background: #fffaf0; }
+.jad-denik .jad-poznamka { font-size: 0.72rem; color: var(--jad-tlumene); margin: 2px 0; text-align: center; }
+.jad-denik .jad-stred-text { text-align: center; }
+.jad-denik .jad-smrt { text-align: center; font-size: 1rem; color: var(--jad-cervena); }
+.jad-denik .jad-smrt.rollable { cursor: pointer; }
+.jad-denik .jad-smrt i { margin: 0 2px; }
+.jad-denik .jad-smrt .jad-zhasnute { opacity: 0.25; }
+.jad-denik .jad-poznamky { width: 100%; min-height: 120px; resize: vertical; }
+.jad-denik .jad-poznamky-velke { min-height: 260px; }
+
+.jad-denik .jad-spodek { margin-top: 6px; }
+.jad-denik .jad-mince { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 0.85rem; margin-bottom: 4px; }
+.jad-denik .jad-mince input { width: 4.5em; text-align: right; }
+.jad-denik .jad-nalozeni { border-left: 4px solid #5b7d3a; padding: 3px 8px; margin: 4px 0; font-size: 0.85rem; background: #fffaf0; }
+.jad-denik .jad-nalozeni.jad-stupen-stredni { border-left-color: #c48a1b; }
+.jad-denik .jad-nalozeni.jad-stupen-tezke { border-left-color: #b4501c; }
+.jad-denik .jad-nalozeni.jad-stupen-pretizeni { border-left-color: var(--jad-cervena); background: #f6dcd6; }
+.jad-denik .jad-meze { display: block; font-size: 0.72rem; color: var(--jad-tlumene); }
+
+.jad-denik .jad-seznam { list-style: none; margin: 0; padding: 0; }
+.jad-denik .jad-seznam li {
+  display: flex; align-items: center; gap: 4px; padding: 2px 4px; font-size: 0.85rem;
+  border-bottom: 1px solid #d8d0c0;
+}
+.jad-denik .jad-seznam li > a:first-child { flex: 1; }
+.jad-denik .jad-pouziti { font-size: 0.75rem; background: var(--jad-pole); border-radius: 8px; padding: 0 6px; }
+.jad-denik .jad-jazyky { font-size: 0.85rem; margin: 2px 0 6px; }
+.jad-denik .jad-paticka { text-align: center; font-size: 0.7rem; color: var(--jad-tlumene); margin-top: 10px; }
+
+/* Vzhled a vztahy */
+.jad-denik .jad-vzhled { flex: 0 0 300px; }
+.jad-denik .jad-mrizka { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.jad-denik .jad-mrizka label, .jad-denik .jad-blok { display: flex; flex-direction: column-reverse; font-size: 0.75rem; color: var(--jad-tlumene); }
+.jad-denik .jad-blok { margin-top: 6px; }
+.jad-denik .jad-blok textarea { resize: vertical; }
+.jad-denik .jad-tab img.jad-logo { width: 64px; height: 64px; border: none; mix-blend-mode: multiply; }
+
+/* --- úpravy po prvním testu --- */
+.jad-denik .jad-vlastnost { display: grid; grid-template-columns: 74px 1fr; gap: 8px; align-items: start; }
+.jad-denik .jad-stit { width: 74px; box-sizing: border-box; overflow: hidden; }
+.jad-denik .jad-stit-nazev { font-size: 0.52rem; letter-spacing: 0; white-space: nowrap; overflow: hidden; text-overflow: clip; }
+.jad-denik .jad-dovednosti li { min-height: 22px; }
+.jad-denik a.jad-hvezda { cursor: pointer; text-decoration: none; }
+.jad-denik a.jad-hvezda:hover::before { color: var(--jad-cervena); text-shadow: 0 0 3px rgb(122 29 22 / 40%); }
+
+.jad-denik .jad-polozka { display: inline-flex; align-items: center; gap: 6px; min-width: 0; }
+.jad-denik .jad-polozka img { flex: 0 0 22px; width: 22px; height: 22px; display: inline-block; margin: 0; }
+.jad-denik .jad-polozka span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.jad-denik .jad-seznam li > a.jad-polozka { flex: 1; }
+
+.jad-denik .jad-zbrane th { background: none; color: var(--jad-tlumene); }
+.jad-denik .jad-zbrane td { vertical-align: middle; padding: 4px 6px; }
+.jad-denik .jad-zbrane td:nth-child(2), .jad-denik .jad-zbrane td:nth-child(3) { text-align: center; white-space: nowrap; }
+.jad-denik .jad-nevybaveno td { opacity: 0.6; }
+.jad-denik .jad-vybavit { color: #b5a99a; }
+.jad-denik .jad-vybavit.aktivni { color: var(--jad-cervena); }
+.jad-denik .jad-kontejner-radek td { font-weight: bold; }
+.jad-denik .jad-odsazeni { display: inline-block; }
+
+.jad-denik .jad-ctverec .jad-max { width: 2.8em; font-size: 0.9rem; }
+.jad-denik .jad-varovani { color: var(--jad-cervena); font-weight: bold; }
+.jad-denik .jad-rychlost-stupen:last-child.aktivni { background: #f6dcd6; }
+
+/* Ostatní záložky dnd5e v barvách JaD (světlý motiv dnd5e + červené pruhy) */
+.jad-denik.dnd5e2 {
+  --dnd5e-card-header-1: #2b0b08;
+  --dnd5e-card-header-2: #6e1a14;
+  --dnd5e-color-gold: #7a1d16;
+  --dnd5e-color-hd-1: #2b0b08;
+  --dnd5e-color-hd-2: #6e1a14;
+  --dnd5e-background-card: #fffaf0;
+  --dnd5e-color-card: #fffaf0;
+  --dnd5e-background-parchment: #f6f1e3;
+  --dnd5e-color-parchment: #f6f1e3;
+  --dnd5e-character-body-image: none;
+  --dnd5e-application-background: #f6f1e3;
+}
+.jad-denik.dnd5e2 .tab-body { background: #f6f1e3; }
+.jad-denik.dnd5e2 .items-section .items-header,
+.jad-denik.dnd5e2 .items-header.header {
+  background: linear-gradient(90deg, #2b0b08 0%, #6e1a14 50%, #2b0b08 100%);
+  color: #fff;
+}
+.jad-denik.dnd5e2 .items-header .item-name,
+.jad-denik.dnd5e2 .items-header .item-header { color: #fff; }
+.jad-denik.dnd5e2 .items-section { border-color: #3b2a22; background: #fffaf0; }
+
+/* Kouzla (3. strana karty) */
+.jad-denik .jad-sesilatele td, .jad-denik .jad-sesilatele th { text-align: center; }
+.jad-denik .jad-sesilatele td:first-child, .jad-denik .jad-sesilatele th:first-child { text-align: left; }
+.jad-denik .jad-pozice-mrizka { display: flex; gap: 10px; flex-wrap: wrap; }
+.jad-denik .jad-pozice-sloupec { display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 34px; }
+.jad-denik .jad-pakt-radek { flex-direction: row; justify-content: flex-start; gap: 6px; }
+.jad-denik .jad-pozice-cislo { font-weight: bold; }
+.jad-denik .jad-pozice-pocet { font-size: 0.7rem; color: var(--jad-tlumene); }
+.jad-denik .jad-kruh {
+  display: inline-block; width: 14px; height: 14px; border-radius: 50%;
+  border: 2px solid var(--jad-okraj); background: #fffaf0; cursor: pointer; box-sizing: border-box;
+}
+.jad-denik .jad-kruh.plny { background: var(--jad-cervena); border-color: var(--jad-cervena); }
+.jad-denik .jad-kruh.jad-vzdy { background: var(--jad-tlumene); border-color: var(--jad-tlumene); cursor: default; }
+.jad-denik .jad-kouzla-nadpis { display: flex; align-items: center; gap: 10px; }
+.jad-denik .jad-kouzla-nadpis .jad-pruh { flex: 1; }
+.jad-denik .jad-tlacitko {
+  font-size: 0.75rem; border: 1px solid var(--jad-cervena); border-radius: 4px; padding: 2px 8px;
+  color: var(--jad-cervena); background: #fffaf0; white-space: nowrap;
+}
+.jad-denik .jad-tlacitko:hover { background: var(--jad-cervena); color: #fff; }
+.jad-denik .jad-seznam-kouzel td { vertical-align: middle; padding: 3px 5px; }
+.jad-denik .jad-seznam-kouzel td:first-child { width: 22px; text-align: center; }
+.jad-denik .jad-seznam-kouzel td:nth-child(2) { width: 22px; }
+.jad-denik .jad-seznam-kouzel tr.jad-skupina td {
+  background: none; border-bottom: 1px solid var(--jad-okraj); font-weight: bold; text-transform: uppercase;
+  font-size: 0.72rem; color: var(--jad-cervena); padding-top: 8px;
+}
+.jad-denik .jad-seznam-kouzel tr.jad-kouzlo- td { opacity: 0.6; }
+.jad-denik .jad-poznamka-bunka { font-size: 0.72rem; color: var(--jad-tlumene); max-width: 180px; }
+.jad-denik .jad-ovladani { white-space: nowrap; text-align: right; }
+.jad-denik .jad-ovladani a { margin-left: 4px; color: var(--jad-tlumene); }
+.jad-denik .jad-ovladani a:hover { color: var(--jad-cervena); }
+
+/* buňky tabulek: flex jen uvnitř, buňka zůstává buňkou tabulky */
+.jad-denik .jad-tabulka { table-layout: auto; }
+.jad-denik .jad-bunka { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.jad-denik .jad-bunka .jad-polozka { flex: 1; min-width: 0; }
+.jad-denik .jad-zbrane td { white-space: nowrap; }
+.jad-denik .jad-zbrane td:first-child { white-space: normal; width: 40%; }
+.jad-denik .jad-radky-tabulka td:nth-child(2) input { width: 3.2em; text-align: center; padding: 0; }
+.jad-denik .jad-radky-tabulka td:nth-child(3) input { width: 3em; text-align: center; padding: 0; }
+
+/* Vlastnosti a dovednosti jako na kartě: štíty těsně pod sebou, dovednosti souvislým seznamem */
+.jad-denik .jad-vlastnosti-blok { display: grid; grid-template-columns: 74px 1fr; gap: 8px; align-items: start; }
+.jad-denik .jad-stity { display: flex; flex-direction: column; gap: 3px; }
+.jad-denik .jad-stity .jad-stit { margin: 0; padding-bottom: 6px; }
+.jad-denik .jad-dovednosti-vse { margin: 0; }
+.jad-denik .jad-dovednosti-vse li { min-height: 21px; }
+.jad-denik .jad-podnadpis {
+  justify-content: center; border-bottom: none !important; font-size: 0.68rem; font-weight: bold;
+  text-transform: uppercase; letter-spacing: 0.06em; color: var(--jad-cervena); padding-top: 4px !important;
+}
+.jad-denik .jad-podnadpis span { flex: 0 1 auto !important; }
+.jad-denik .jad-podnadpis::before, .jad-denik .jad-podnadpis::after { content: ""; flex: 1; border-top: 1px solid var(--jad-okraj); margin: 0 6px; }
+
+.jad-denik .jad-stit .rollable { cursor: pointer; }
+.jad-denik .jad-stit .jad-stit-oprava.rollable:hover { color: var(--jad-cervena); text-shadow: none; }
+.jad-denik .jad-stit-vstup { width: 3em; text-align: center; font-size: 0.85rem; padding: 0; height: 1.4em;
+  border: 1px solid var(--jad-cervena) !important; border-radius: 10px; }
+.jad-denik .jad-podnadpis-blok { margin: 8px 0 2px; font-size: 0.72rem; text-transform: uppercase; color: var(--jad-cervena);
+  border-bottom: 1px solid var(--jad-okraj); }
+.jad-denik .jad-stupen-znak { display: inline-block; min-width: 1.4em; text-align: center; font-weight: bold;
+  border: 1px solid var(--jad-okraj); border-radius: 50%; font-size: 0.72rem; line-height: 1.3em; }

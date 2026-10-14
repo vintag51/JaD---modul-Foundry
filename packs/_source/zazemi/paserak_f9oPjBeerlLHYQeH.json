@@ -1,0 +1,99 @@
+{
+  "_id": "f9oPjBeerlLHYQeH",
+  "name": "Pašerák",
+  "type": "feat",
+  "img": "icons/sundries/books/book-worn-brown-grey.webp",
+  "folder": "I49mVPhzcvBZkuhz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Získáš Zdatnost a Kvalifikaci v Nenápadnosti a vždy dokážeš ukrýt aspoň jeden drobný předmět i před důkladnou prohlídkou.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#odbornosti\" target=\"_blank\">SRD Jeskyní a draků</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "paserak",
+    "advancement": {
+      "npEAJkWTUm54d41f": {
+        "_id": "npEAJkWTUm54d41f",
+        "type": "Trait",
+        "level": 0,
+        "title": "Pašerák",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ste"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "Ug124JyOfob947x2": {
+        "_id": "Ug124JyOfob947x2",
+        "type": "Trait",
+        "level": 0,
+        "title": "Pašerák",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "expertise",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ste"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      }
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "feat": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!f9oPjBeerlLHYQeH"
+}

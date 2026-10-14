@@ -1,0 +1,127 @@
+{
+  "_id": "fMvfzsLnAFOPDbwk",
+  "name": "Zbroj odolání (Kroužková zbroj)",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Vzácný, vyžaduje Sladění</em></p><p>Máš Odolnost proti jednomu Typu zásahu, určenému při výrobě (vyber ho v efektu předmětu).</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#zbroj-odolani\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 55,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 16,
+      "dex": 0,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 13,
+    "proficient": null,
+    "type": {
+      "value": "heavy",
+      "baseItem": "chainmail"
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [
+      "mgc",
+      "stealthDisadvantage"
+    ],
+    "activities": {},
+    "attuned": false,
+    "identifier": "chain-mail-armor-of-resistance"
+  },
+  "effects": [
+    {
+      "_id": "MmUxvI137sm61r37",
+      "name": "Odolnost (uprav typ zásahu)",
+      "img": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Výchozí typ je Ohnivý – změň podle konkrétní zbroje.</p>",
+      "origin": "Compendium.jeskyne-a-draci.predmety.Item.fMvfzsLnAFOPDbwk",
+      "flags": {},
+      "_key": "!items.effects!fMvfzsLnAFOPDbwk.MmUxvI137sm61r37"
+    }
+  ],
+  "folder": "M8CuZAT2qtfQx58E",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "zbroj-odolani"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fMvfzsLnAFOPDbwk"
+}

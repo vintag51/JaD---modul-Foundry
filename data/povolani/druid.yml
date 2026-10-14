@@ -1,0 +1,61 @@
+identifikator: druid
+nazev: Druid
+kotva: druid
+popis: Strážce a vykladač přírody, který čerpá magii ze samotné podstaty života a mění se ve zvířata.
+kostka: d8
+zachrany: [int, wis]
+zbroje: [armor:lgt, armor:med, armor:shl]
+zbrane: [weapon:sim:dagger, weapon:sim:quarterstaff, weapon:sim:spear, weapon:sim:club, weapon:sim:javelin, weapon:sim:mace, weapon:sim:sling, weapon:sim:sickle, weapon:mar:scimitar, weapon:sim:dart]
+pomucky: [tool:herb]
+dovednosti: {pocet: 2, z: [med, arc, rel, ani, sur, nat, ins, prc]}
+asi: [4, 8, 12, 16, 19]
+kouzleni: {progrese: full, vlastnost: wis, priprava: "@abilities.wis.mod + @classes.druid.levels"}
+obor: {nazev: Druidský kruh, uroven: 2}
+
+schopnosti:
+  - {k: sesilani-kouzel, n: Sesílání kouzel, u: [1], d: Připravuješ a sesíláš Druidská kouzla s Moudrostí jako sesílací vlastností; ohniskem ti je druidský předmět.}
+  - {k: druidstina, n: Druidština, u: [1], d: Ovládáš tajnou řeč druidů a umíš zanechávat skryté zprávy, které ostatní bez magie nerozluští., trait: {zdatnosti: [languages:exotic:druidic]}}
+  - k: zvireci-podoba
+    n: Zvířecí podoba
+    u: [2, 4, 8]
+    d: Dvakrát mezi Odpočinky se proměníš ve zvíře, které znáš; nejvyšší Nebezpečnost a omezení rostou s Úrovní (2. – NB 1/4 bez létání a plavání, 4. – NB 1/2 bez létání, 8. – NB 1).
+    p: 2/sr
+    akt: [{n: Proměnit se, t: action}]
+  - {k: nestarnouci-telo, n: Nestárnoucí tělo, u: [18], d: Stárneš desetkrát pomaleji.}
+  - {k: zvireci-kouzleni, n: Zvířecí kouzlení, u: [18], d: Ve Zvířecí podobě můžeš sesílat Druidská kouzla (bez surovinových složek).}
+  - {k: arcidruid, n: Arcidruid, u: [20], d: Zvířecí podobu používáš neomezeně a při sesílání ignoruješ složky bez ceny.}
+
+obory:
+  kruh-bylin:
+    nazev: Kruh bylin
+    kotva: kruh-bylin
+    popis: Druidi znalí léčivých i magických rostlin, mistři lektvarů a přípravků.
+    schopnosti:
+      - {k: mistr-bylinkar, n: Mistr bylinkář, u: [2], d: Získáš Zdatnost v Lékařství a Kvalifikaci v Lékařství a s bylinkářskou soupravou; snáze doplníš léčitelskou soupravu., trait: {zdatnosti: [skills:med]}}
+      - {k: magicke-pripravky, n: Magické přípravky, u: [6], d: Akcí a Pozicí kouzel vložíš připravené kouzlo na jeden cíl do přípravku, který vydrží do Dlouhého odpočinku., p: "@prof/lr", akt: [{n: Vytvořit přípravek, t: action}]}
+      - k: ochranne-byliny
+        n: Ochranné byliny
+        u: [10]
+        d: Bonusovou akcí dotykem dáš tvorovi na minutu Odolnost vůči jednomu typu zásahu.
+        akt: [{n: Ochranné byliny, t: bonus, ef: [0]}]
+        ef: [{n: Ochranné byliny, kola: 10}]
+      - {k: posilovac, n: Posilovač, u: [14], d: Jednou za Dlouhý odpočinek vyrobíš lektvar, který na minutu zvýší zvolenou Vlastnost o 6., p: 1/lr, akt: [{n: Namíchat posilovač, t: action}]}
+  kruh-mesta:
+    nazev: Kruh města
+    kotva: kruh-mesta
+    popis: Druidi civilizace, kteří vidí přírodu i v ulicích a v lidech kolem sebe.
+    schopnosti:
+      - {k: rasova-spriznenost, n: Rasová spřízněnost, u: [2], d: Za Zvířecí podobu změníš svou Rasu (či Rod) na jinou, kterou osobně znáš, při zachování svých statistik.}
+      - {k: pohyb-ulicemi, n: Pohyb ulicemi, u: [6], d: Mezi zdmi máš o 2 sáhy vyšší Rychlost, lépe vidíš, ignoruješ těžký terén a protlačíš se úzkými místy.}
+      - {k: maska, n: Maska, u: [6], d: Přestrojení, Zaklep a Změň svůj tvar se pro tebe počítají za Druidská kouzla.}
+      - {k: spojeni-s-mestem, n: Spojení s městem, u: [10], d: Jednou mezi Odpočinky akcí nasaješ atmosféru osídlení a získáš znalosti o okolí, lidech či událostech., p: 1/sr, akt: [{n: Naladit se na město, t: action}]}
+      - {k: mestska-havet, n: Městská havěť, u: [14], d: Jednou za Dlouhý odpočinek zaplavíš okolí do 12 sáhů na minutu městskou havětí, která překáží a zraňuje nepřátele., p: 1/lr, akt: [{n: Přivolat havěť, t: action, sablona: {typ: radius, velikost: 12}}]}
+  kruh-pohromy:
+    nazev: Kruh pohromy
+    kotva: kruh-pohromy
+    popis: Druidi hněvu přírody, kteří rozdmýchávají živly a přivolávají katastrofy.
+    schopnosti:
+      - {k: besneni-zivlu, n: Běsnění živlů, u: [2], d: Jednou mezi Odpočinky akcí rozbouříš živly v oblasti 4 sáhů – živelné zásahy v ní na minutu sílí., p: 1/sr, akt: [{n: Běsnění živlů, t: action, dosah: 12, sablona: {typ: radius, velikost: 4}}]}
+      - {k: prizen-hnevu, n: Přízeň hněvu, u: [6], d: Vidíš skrz mlhu a dým, ignoruješ těžký terén, chlad a žár; jednou mezi Odpočinky to dáš i spojencům., p: 1/sr, akt: [{n: Sdílet přízeň, t: bonus}]}
+      - {k: zivlovy-totem, n: Živlový totem, u: [10], d: Ve Zvířecí podobě máš Odolnost vůči zvolenému živlu a tvé fyzické zásahy se mění na tento typ.}
+      - {k: pohroma, n: Pohroma, u: [14], d: Jednou za Dlouhý odpočinek akcí vyvoláš kolem sebe přírodní katastrofu (povodeň, zemětřesení…) do 12 sáhů na dobu Soustředění., p: 1/lr, akt: [{n: Pohroma, t: action, sablona: {typ: radius, velikost: 12}}]}

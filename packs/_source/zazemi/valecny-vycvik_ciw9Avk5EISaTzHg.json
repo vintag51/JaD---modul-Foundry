@@ -1,0 +1,95 @@
+{
+  "_id": "ciw9Avk5EISaTzHg",
+  "name": "Válečný výcvik",
+  "type": "feat",
+  "img": "icons/sundries/books/book-worn-brown-grey.webp",
+  "folder": "I49mVPhzcvBZkuhz",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Získáš Zdatnost se štíty, se zbrojí o třídu těžší, než máš, a se dvěma válečnými zbraněmi.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#odbornosti\" target=\"_blank\">SRD Jeskyní a draků</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "valecny-vycvik",
+    "advancement": {
+      "LJiE1Eg75ml6dhzC": {
+        "_id": "LJiE1Eg75ml6dhzC",
+        "type": "Trait",
+        "level": 0,
+        "title": "Válečný výcvik",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:shl"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "armor:lgt",
+                "armor:med",
+                "armor:hvy"
+              ]
+            },
+            {
+              "count": 2,
+              "pool": [
+                "weapon:mar:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      }
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "feat": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ciw9Avk5EISaTzHg"
+}

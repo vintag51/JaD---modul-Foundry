@@ -1,0 +1,348 @@
+{
+  "_id": "01pSgGZDMRnvKHGK",
+  "name": "Kořeny omotání",
+  "type": "spell",
+  "img": "icons/magic/earth/projectile-stone-boulder-orange.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [
+    {
+      "_id": "9D5Qmi3TEChVqjuB",
+      "name": "Chycený kořeny",
+      "img": "icons/magic/earth/projectile-stone-boulder-orange.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [
+        "grappled"
+      ],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": []
+      },
+      "description": "<p>Účinek kouzla <em>Kořeny omotání</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_key": "!items.effects!01pSgGZDMRnvKHGK.9D5Qmi3TEChVqjuB"
+    }
+  ],
+  "system": {
+    "identifier": "koreny-omotani",
+    "level": 4,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "semínko stromu obalené hlínou (kouzlo ho spotřebuje)",
+      "consumed": true,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "6",
+      "units": "sah",
+      "special": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "line",
+        "size": "12",
+        "width": "1",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "z88lfCZCMkgxljFo": {
+        "_id": "z88lfCZCMkgxljFo",
+        "type": "save",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9D5Qmi3TEChVqjuB",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      },
+      "TYEelDk6cQGKx6Ey": {
+        "_id": "TYEelDk6cQGKx6Ey",
+        "type": "save",
+        "img": "",
+        "sort": 100000,
+        "name": "Vstup / začátek tahu v kořenech",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9D5Qmi3TEChVqjuB",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      },
+      "AV4ttKitf9OPiRUS": {
+        "_id": "AV4ttKitf9OPiRUS",
+        "type": "utility",
+        "img": "",
+        "sort": 200000,
+        "name": "Rozrůst kořeny",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": true,
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "sah",
+            "type": "line",
+            "size": "4",
+            "width": "1",
+            "height": "",
+            "count": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Z hozeného semínka vyrazí pás kořenů, které chytají tvory; akcí je můžeš nechat růst dál.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Sílu proti SO kouzla; efekt: Chycený kořeny.</li><li><strong>Vstup / začátek tahu v kořenech:</strong> Záchranný hod na Sílu proti SO kouzla; efekt: Chycený kořeny.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#koreny-omotani\" target=\"_blank\">SRD Jeskyní a draků – Kořeny omotání</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "koreny-omotani",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#koreny-omotani"
+    }
+  },
+  "folder": "8hak7PLbgtXEQBpD",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!01pSgGZDMRnvKHGK"
+}

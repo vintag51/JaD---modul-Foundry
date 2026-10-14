@@ -1,0 +1,163 @@
+{
+  "_id": "WYZa3aLjUbOoGOCX",
+  "name": "Zasvěcenec",
+  "type": "background",
+  "img": "icons/sundries/documents/document-sealed-brown-red.webp",
+  "folder": "7GrKTBBtDvTixn6S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Byl jsi přijat do tajného společenstva, které zná symboliku velkých chrámů a svatyní.</p><p><strong>Schopnost:</strong> Bratrstvo</p><p><strong>Vybavení:</strong> Kniha tajemství v tajném jazyce, podivný amulet, kaligrafická souprava, rýsovací pomůcky, cestovní oblečení, 15 zl.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#zasvecenec\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "advancement": {
+      "qmysC79oxVmVCsJd": {
+        "_id": "qmysC79oxVmVCsJd",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:arc",
+            "skills:rel",
+            "tool:art:calligrapher"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "3kwb2RHg1hpGjSv3": {
+        "_id": "3kwb2RHg1hpGjSv3",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "qHTSKOJIiYAGKGTN": {
+        "_id": "qHTSKOJIiYAGKGTN",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Schopnost zázemí",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.zazemi.Item.8nPkd69truQnz498",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "_id": "6xoFppziz8IOGuCv",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "cbVSvFZVMRnLrB3H",
+        "group": "6xoFppziz8IOGuCv",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.YxBlNQUaslgT0RAK",
+        "count": null
+      },
+      {
+        "_id": "yVEvi1Ijlws42axM",
+        "group": "6xoFppziz8IOGuCv",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.x5kbyNFHhhsMfnJz",
+        "count": null
+      },
+      {
+        "_id": "gicZ93lUOIC6fhXm",
+        "group": "6xoFppziz8IOGuCv",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.U95CAq4qKrYqvZRX",
+        "count": null
+      },
+      {
+        "_id": "4Z4Vda3cH3g4OqjI",
+        "group": "6xoFppziz8IOGuCv",
+        "sort": 500000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 15
+      }
+    ],
+    "identifier": "zasvecenec"
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "zazemi": "zasvecenec"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!WYZa3aLjUbOoGOCX"
+}

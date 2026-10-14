@@ -1,0 +1,67 @@
+{
+  "_id": "YDunqutJklTZMnWW",
+  "name": "Kniha mrtvých",
+  "type": "loot",
+  "img": "icons/sundries/books/book-rounded-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Artefakt, vyžaduje Sladění</em></p><p><em>Originální předmět JaD</em></p><p>Černý grimoár smrti. Otevřený rozhostí kolem noc, čte se i bez zraku a umožňuje sesílat nekromantická kouzla – od zvedání Nemrtvých z Pozice 9. Stupně po kouzla navracející život – a Přesun sférami do záhrobí. Zničit nejde, vždy se vrátí.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#kniha-mrtvych\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "artifact",
+    "identified": true,
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "identifier": "kniha-mrtvych",
+    "attunement": "required",
+    "activities": {}
+  },
+  "effects": [],
+  "folder": "1cmke0NviRUCL9fQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "kniha-mrtvych"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!YDunqutJklTZMnWW"
+}

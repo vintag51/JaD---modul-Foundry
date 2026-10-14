@@ -1,0 +1,90 @@
+{
+  "name": "Úchvatné barvy",
+  "type": "consumable",
+  "img": "icons/commodities/materials/powder-red-green-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Velmi vzácný</em></p><p>Kalíšky barev: za deset minut namaluješ předmět či terén (až 40 čtverečních sáhů plochy), který se stane skutečným – v hodnotě nejvýš 25 zl.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#uchvatne-barvy\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {},
+    "attuned": false,
+    "identifier": "marvelous-pigments"
+  },
+  "effects": [],
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "uchvatne-barvy"
+    }
+  },
+  "_id": "wC4S28T40KTqZ0ik",
+  "folder": "9lOeroroSTBW4i0d",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!wC4S28T40KTqZ0ik"
+}

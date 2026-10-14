@@ -1,0 +1,253 @@
+{
+  "_id": "sSooEgKk5EZSLCF9",
+  "name": "Mluva sfér",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Ptáš se mimosférické bytosti; hrozí ti šílenství.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Inteligenci proti SO kouzla; Psychický zásah za 6k6 Bodů výdrže; při úspěchu bez účinku; efekt: Šílenství.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mluva-sfer\" target=\"_blank\">SRD Jeskyní a draků – Mluva sfér</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "self",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 5,
+    "school": "div",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "ritual"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "I4lTsFrmG6W4G5Wo",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 6,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": "int",
+          "dc": {
+            "calculation": "",
+            "formula": "15"
+          },
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "contact-other-plane"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "mluva-sfer",
+      "srd": "dSTu1MaPhBqPITwM",
+      "nazevEn": "Contact Other Plane",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mluva-sfer"
+    }
+  },
+  "img": "icons/sundries/scrolls/scroll-bound-sealed-red-gold.webp",
+  "effects": [
+    {
+      "name": "Šílenství",
+      "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.sSooEgKk5EZSLCF9",
+      "transfer": false,
+      "_id": "I4lTsFrmG6W4G5Wo",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.languages.custom",
+            "type": "add",
+            "value": ";Can Speak only Gibberish",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.languages.custom",
+            "type": "add",
+            "value": ";Can't Read",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.languages.custom",
+            "type": "add",
+            "value": ";Can't Understand Langauge",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Mluva sfér</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781396532349,
+        "modifiedTime": 1783720394165,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!sSooEgKk5EZSLCF9.I4lTsFrmG6W4G5Wo"
+    }
+  ],
+  "folder": "wQJg6sDBR7lLiwGO",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!sSooEgKk5EZSLCF9"
+}

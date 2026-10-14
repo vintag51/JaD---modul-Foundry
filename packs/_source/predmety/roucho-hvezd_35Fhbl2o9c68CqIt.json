@@ -1,0 +1,175 @@
+{
+  "_id": "35Fhbl2o9c68CqIt",
+  "name": "Roucho hvězd",
+  "type": "equipment",
+  "img": "icons/equipment/back/cloak-plain-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Velmi vzácný, vyžaduje Sladění</em></p><p>+1 k Záchranám. Akcí přecházíš do Astrální sféry a zpět. Akcí strhneš jednu ze šesti hvězd a sešleš Magickou střelu 5. Stupně; obnoví se 1k6 hvězd denně.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#roucho-hvezd\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 40000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "cover": null,
+    "uses": {
+      "max": "6",
+      "recovery": [
+        {
+          "period": "dusk",
+          "type": "formula",
+          "formula": "1d6"
+        }
+      ],
+      "spent": 0
+    },
+    "armor": {
+      "value": 0,
+      "dex": 0,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+      "value": "clothing",
+      "baseItem": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "crewed": false,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "92G7MERyWhYbo63o": {
+        "type": "cast",
+        "spell": {
+          "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.RrDNZ15p5OxMMPty",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": "5",
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "ability": ""
+        },
+        "_id": "92G7MERyWhYbo63o",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": "",
+        "visibility": {
+          "requireIdentification": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      }
+    },
+    "attuned": false,
+    "identifier": "robe-of-stars"
+  },
+  "effects": [],
+  "folder": "OZcS9lD6pZ3oTY6Y",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "roucho-hvezd"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!35Fhbl2o9c68CqIt"
+}

@@ -1,0 +1,252 @@
+{
+  "_id": "etB3ETCxBYiskluC",
+  "name": "Hůlka paralýzy",
+  "type": "equipment",
+  "img": "icons/weapons/staves/staff-ornate-engraved-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Vzácný, vyžaduje Sladění</em></p><p>Sedm Dávek (obnova 1k6 + 1 denně). Paprsek na tvora do 12 sáhů: Záchrana na Odolnost SO 15, jinak minutu Paralyzován (opakuje na konci Tahů). Po poslední Dávce na 1 na k20 zanikne.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#hulka-paralyzy\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "7",
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d6 + 1"
+        }
+      ],
+      "autoDestroy": false,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "wand",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": "",
+      "name": "Unidentified Wand"
+    },
+    "container": null,
+    "properties": [
+      "foc",
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {
+      "Nz0tgKO1NqwN8vhb": {
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "minute",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "lgD1h0ioOsqz6jK8",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          }
+        ],
+        "range": {
+          "value": "12",
+          "units": "sah",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "sah",
+            "stationary": false
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "15"
+          },
+          "visible": true,
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "name": "Paralyzující paprsek",
+        "img": "",
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true,
+          "requireAttunement": false
+        },
+        "behaviors": [],
+        "flags": {},
+        "_id": "Nz0tgKO1NqwN8vhb"
+      }
+    },
+    "attuned": false,
+    "identifier": "wand-of-paralysis",
+    "armor": {
+      "magicalBonus": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Paralýza",
+      "img": "icons/magic/control/encase-creature-humanoid-hold.webp",
+      "origin": "Compendium.jeskyne-a-draci.predmety.Item.etB3ETCxBYiskluC",
+      "transfer": false,
+      "_id": "lgD1h0ioOsqz6jK8",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek předmětu <em>Hůlka paralýzy</em>.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "paralyzed"
+      ],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!etB3ETCxBYiskluC.lgD1h0ioOsqz6jK8"
+    }
+  ],
+  "folder": "TjFUjlZy7aiRvmQ3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "hulka-paralyzy"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!etB3ETCxBYiskluC"
+}

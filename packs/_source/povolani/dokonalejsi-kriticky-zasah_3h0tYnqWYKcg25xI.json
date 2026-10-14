@@ -1,0 +1,93 @@
+{
+  "_id": "3h0tYnqWYKcg25xI",
+  "name": "Dokonalejší Kritický zásah",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "6U1fVmQYt6kAzWPU",
+  "sort": 15000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "YfpTgtEXYklCtjDW",
+      "name": "Dokonalejší Kritický zásah",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.weaponCriticalThreshold",
+            "value": "18",
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Dokonalejší Kritický zásah (pasivní schopnost)</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.3h0tYnqWYKcg25xI",
+      "_key": "!items.effects!3h0tYnqWYKcg25xI.YfpTgtEXYklCtjDW"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Útoky zbraní způsobí Kritický zásah při hodu 18–20.</p><p><em>Úroveň: 15.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#sampion\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Šampion 15",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "dokonalejsi-kriticky-zasah",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3h0tYnqWYKcg25xI"
+}

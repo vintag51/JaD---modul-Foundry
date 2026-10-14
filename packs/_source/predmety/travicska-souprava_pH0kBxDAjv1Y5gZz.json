@@ -1,0 +1,158 @@
+{
+  "_id": "pH0kBxDAjv1Y5gZz",
+  "name": "Travičská souprava",
+  "type": "tool",
+  "img": "icons/containers/bags/sack-cloth-green-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Zdatnost se uplatní při výrobě a používání Jedů.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/6-vybaveni.html#pomucky\" target=\"_blank\">SRD Jeskyní a draků – Vybavení</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "ability": "wis",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "type": {
+      "value": "",
+      "baseItem": "pois"
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "activities": {
+      "J2duMPFbmDXPnYr9": {
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "sah",
+            "stationary": false
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "check": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "",
+            "formula": ""
+          },
+          "associated": [],
+          "visible": true,
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "_id": "J2duMPFbmDXPnYr9",
+        "name": "Použít pomůcky"
+      }
+    },
+    "attuned": false,
+    "identifier": "poisoners-kit"
+  },
+  "effects": [],
+  "folder": "6vMQ5fIsfvBbGyMQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!pH0kBxDAjv1Y5gZz"
+}

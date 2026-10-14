@@ -1,0 +1,249 @@
+# Kouzelné předměty JaD (11. kapitola). Mechanika z SRD předmětu dnd5e, název a vlastní shrnutí podle JaD.
+# kotva = id nadpisu v SRD JaD (11-kouzelne-predmety.html), * = originální předmět JaD.
+# Položka může mít varianty: [{srd, n}] – stejný popis, různý SRD základ.
+
+Lektvary:
+  - {srd: potion/oil-of-etherealness, n: Éterický olej, kotva: etericky-olej,
+     d: "Natření trvá deset minut a na hodinu přenese tvora do Éterické sféry: prochází překážkami (pohyb nahoru či dolů stojí dvojnásobek), původní Sféru vidí šedě do 12 sáhů a ovlivňuje jen éterické tvory. Pokud po skončení stojí v pevné hmotě, vysune se na nejbližší volné místo a za každý sáh utrpí 10 Silového zásahu."}
+  - {srd: potion/potion-of-healing, n: Léčivý lektvar, kotva: lecive-lektvary, d: "Obnoví 2k4 + 2 Bodů výdrže. Vypití či podání zabere Akci."}
+  - {srd: potion/potion-of-greater-healing, n: Mocný léčivý lektvar, kotva: lecive-lektvary, d: "Obnoví 4k4 + 4 Bodů výdrže."}
+  - {srd: potion/potion-of-superior-healing, n: Lektvar kvalitního léčení, kotva: lecive-lektvary, d: "Obnoví 8k4 + 8 Bodů výdrže."}
+  - {srd: potion/potion-of-supreme-healing, n: Lektvar prvotřídního léčení, kotva: lecive-lektvary, d: "Obnoví 10k4 + 20 Bodů výdrže."}
+  - {srd: potion/potion-of-mind-reading, n: Lektvar čtení myšlenek, kotva: lektvar-cteni-myslenek, d: "Dá ti účinek kouzla Odhal myšlenky se SO Záchrany 13."}
+  - {srd: potion/potion-of-heroism, n: Lektvar hrdinství, kotva: lektvar-hrdinstvi, d: "Na hodinu získáš 10 Dočasných bodů výdrže a účinek kouzla Požehnání."}
+  - {srd: potion/potion-of-flying, n: Lektvar létání, kotva: lektvar-letani, d: "Na hodinu získáš Rychlost létání rovnou své Rychlosti a můžeš se vznášet. Kdo je po skončení ve vzduchu, spadne."}
+  - {srd: potion/potion-of-gaseous-form, n: Lektvar mlžné podoby, kotva: lektvar-mlzne-podoby, d: "Na hodinu získáš účinek kouzla Mlžná podoba; ukončit ho můžeš Bonusovou akcí."}
+  - {srd: potion/potion-of-invisibility, n: Lektvar neviditelnosti, kotva: lektvar-neviditelnosti, d: "Hodinu jsi i s výbavou Neviditelný; účinek skončí, jakmile zaútočíš nebo sešleš kouzlo."}
+  - {n: Lektvar Obří síly, kotva: lektvar-obri-sily,
+     d: "Na hodinu se tvá Síla změní na Sílu obra, z jehož nehtu byl lektvar uvařen (Kopcový 21, Kamenný a Ledový 23, Ohnivý 25, Oblačný 27, Bouřný 29). Je-li tvá Síla stejná či vyšší, lektvar nepůsobí.",
+     varianty: [{srd: potion/potion-of-hill-giant-strength, n: "Lektvar Obří síly (Kopcový obr)"}, {srd: potion/potion-of-stone-giant-strength, n: "Lektvar Obří síly (Kamenný obr)"},
+                {srd: potion/potion-of-frost-giant-strength, n: "Lektvar Obří síly (Ledový obr)"}, {srd: potion/potion-of-fire-giant-strength, n: "Lektvar Obří síly (Ohnivý obr)"},
+                {srd: potion/potion-of-cloud-giant-strength, n: "Lektvar Obří síly (Oblačný obr)"}, {srd: potion/potion-of-storm-giant-strength, n: "Lektvar Obří síly (Bouřný obr)"}]}
+  - {n: Lektvar odolání, kotva: lektvar-odolani, d: "Na hodinu získáš Odolnost proti jednomu Typu zásahu, určenému při výrobě.", odolnost: "potion/potion-of-{typ}-resistance"}
+  - {srd: potion/potion-of-animal-friendship, n: Lektvar Přátelství zvířat, kotva: lektvar-pratelstvi-zvirat, d: "Hodinu můžeš libovolně sesílat Přátelství zvířat se SO Záchrany 13."}
+  - {srd: potion/potion-of-speed, n: Lektvar rychlosti, kotva: lektvar-rychlosti,
+     d: "Na minutu se ti zdvojnásobí Rychlost, máš +2 k OČ, Výhodu k Záchranám na Obratnost a každý Tah jednu Akci navíc (jen jeden Útok, Běh, Odpoutání, Skrytí nebo Použití předmětu). Po skončení se jedno Kolo nemůžeš hýbat ani jednat."}
+  - {srd: potion/potion-of-climbing, n: Lektvar šplhání, kotva: lektvar-splhani, d: "Na hodinu získáš Rychlost šplhání rovnou své Rychlosti a Výhodu k Atletice při šplhání."}
+  - {srd: potion/potion-of-water-breathing, n: Lektvar vodního dechu, kotva: lektvar-vodniho-dechu, d: "Hodinu můžeš dýchat pod vodou."}
+  - {srd: potion/potion-of-diminution, n: Lektvar zmenšování, kotva: lektvar-zmensovani,
+     d: "Na 1k4 hodin se i s výbavou zmenšíš o jednu velikost: Nevýhoda k Ověřením a Záchranám na Sílu, Zásah zmenšenými zbraněmi o 1k4 nižší (nejméně 1)."}
+  - {srd: potion/potion-of-growth, n: Lektvar zvětšování, kotva: lektvar-zvetsovani,
+     d: "Na 1k4 hodin se i s výbavou zvětšíš o jednu velikost: Výhoda k Ověřením a Záchranám na Sílu, Zásah zvětšenými zbraněmi o 1k4 vyšší."}
+  - {srd: potion/philter-of-love, n: Nápoj lásky, kotva: napoj-lasky, d: "Prvního tvora, kterého do deseti minut po vypití uvidíš, budeš hodinu Zmámen; pokud tě takoví tvorové přitahují, budeš ho mít za svou pravou lásku."}
+  - {srd: trinket/sovereign-glue, n: Nejpevnější lepidlo, kotva: nejpevnejsi-lepidlo,
+     d: "Jedna Dávka natrvalo spojí dvě plochy do velikosti jedné čtvereční stopy (tuhne minutu). Rozlepí je jen Univerzální rozpouštědlo, Éterický olej nebo Přání. Uchovává se v nádobě vytřené Olejem kluzkosti."}
+  - {srd: potion/oil-of-slipperiness, n: Olej kluzkosti, kotva: olej-kluzkosti,
+     d: "Natřený tvor (deset minut) získá na osm hodin účinek kouzla Volnost. Vylitý na čtverec o straně 2 sáhy (Akce) působí jako kouzlo Sádlo."}
+  - {srd: potion/oil-of-sharpness, n: Olej ostrosti, kotva: olej-ostrosti, d: "Natření zbraně nebo pěti Bodných či Sečných střel (minuta) jim na hodinu dá +3 k Útoku a Zásahu."}
+  - {srd: trinket/universal-solvent, n: Univerzální rozpouštědlo, kotva: univerzalni-rozpoustedlo, d: "Akcí ho naliješ na plochu do jedné čtvereční stopy a rozpustí veškerá lepidla, včetně Nejpevnějšího lepidla."}
+
+Kouzelné zbroje:
+  - {n: Adamantinová zbroj, kotva: adamantinova-zbroj, d: "Střední či Těžká zbroj (kromě Kožešinové) z adamantinu. Kritické zásahy proti tobě se mění na obyčejné.",
+     varianty: [{srd: armor/adamantine-chain-shirt, n: "Adamantinová Kroužková košile"}, {srd: armor/adamantine-scale-mail, n: "Adamantinová Šupinová zbroj"},
+                {srd: armor/adamantine-breastplate, n: "Adamantinový Kyrys"}, {srd: armor/adamantine-half-plate-armor, n: "Adamantinová Poloplátová zbroj"},
+                {srd: armor/adamantine-ring-mail, n: "Adamantinová Zbroj pošitá kroužky"}, {srd: armor/adamantine-chain-mail, n: "Adamantinová Kroužková zbroj"},
+                {srd: armor/adamantine-splint-armor, n: "Adamantinová Lamelová zbroj"}, {srd: armor/adamantine-plate-armor, n: "Adamantinová Plátová zbroj"}]}
+  - {srd: armor/dragon-scale-mail, n: Dračí šupinová zbroj, kotva: draci-supinova-zbroj,
+     d: "Šupinová zbroj s +1 k OČ, Výhodou k Záchranám proti Strašlivému vzezření a dechu Draků a Odolností proti Typu zásahu dechu Draka, z něhož pochází."}
+  - {srd: armor/glamoured-studded-leather, n: Okovaná kožená zbroj mistra převleků, kotva: okovana-kozena-zbroj-mistra-prevleku,
+     d: "Zbroj s +1 k OČ. Bonusovou akcí jí dáš vzhled jiné zbroje či oděvu, OČ se nemění."}
+  - {srd: armor/animated-shield, n: Oživlý štít, kotva: ozivly-stit,
+     d: "Bonusovou akcí štít oživíš: minutu krouží kolem tebe a chrání tě jako držený štít, ruce máš volné. Pak, nebo když jsi Otřesen či zemřeš, se vrátí do ruky nebo spadne."}
+  - {n: Štít +X, kotva: stit-x, d: "K obvyklému +2 k OČ přidává magický Bonus +1 (neobvyklý), +2 (vzácný) nebo +3 (velmi vzácný).",
+     varianty: [{srd: armor/shield-1, n: "Štít +1"}, {srd: armor/shield-2, n: "Štít +2"}, {srd: armor/shield-3, n: "Štít +3"}]}
+  - {srd: armor/spellguard-shield, n: Štít magické gardy, kotva: stit-magicke-gardy, d: "S tímto štítem máš Výhodu k Záchranám proti kouzlům a magii a Útoky kouzlem proti tobě mají Nevýhodu."}
+  - {k: stit-mytu, zaklad: armor/shield, n: Štít mýtů, kotva: stit-mytu, jad: true, vz: common, d: "Na štítu se odehrávají pohyblivé výjevy z mýtů a legend, které znal jeho tvůrce."}
+  - {n: Zbroj +X, kotva: zbroj-x, plus: zbroje,
+     d: "Ke svému OČ přidává magický Bonus +1 (vzácná), +2 (velmi vzácná) nebo +3 (legendární)."}
+  - {srd: armor/armor-of-invulnerability, n: Zbroj nezranitelnosti, kotva: zbroj-nezranitelnosti,
+     d: "Máš Odolnost proti nemagickým Zásahům. Jednou denně ji můžeš Akcí na deset minut změnit na Imunitu."}
+  - {n: Zbroj odolání, kotva: zbroj-odolani, odolani_zbroje: true,
+     d: "Máš Odolnost proti jednomu Typu zásahu, určenému při výrobě (vyber ho v efektu předmětu)."}
+
+Kouzelné zbraně:
+  - {srd: weapon/staff-of-thunder-and-lightning, n: Berla hromů a blesků, kotva: berla-hromu-a-blesku,
+     d: "Hůl s +2 k Útoku a Zásahu. Jednou denně každé: Úder bleskem (+2k6 Bleskového zásahu), Úder hromem (Odolnost SO 17, jinak Omráčen do konce příštího Tahu), Blesk (dráha 24 × 1 sáh, Obratnost SO 17, 9k6 Bleskového), Hrom (do 12 sáhů, Odolnost SO 17, 2k6 Hromového a hluchota) a Hrom i blesk naráz."}
+  - {srd: weapon/dragon-slayer-greatsword, n: Drakomlat, kotva: drakomlat, d: "Obouruční meč s +1 k Útoku a Zásahu; Draci (včetně Vyvern) utrpí dalších 3k6 Zásahu."}
+  - {srd: weapon/oathbow, n: Luk přísahy, kotva: luk-prisahy,
+     d: "Při Útoku tímto Dlouhým lukem můžeš cíl prohlásit za Zapřisáhlého nepřítele (na 7 dní nebo do jeho smrti). Proti němu máš Výhodu a +3k6 Zásahu, proti ostatním ostatními zbraněmi Nevýhodu."}
+  - {srd: weapon/frost-brand-shortsword, n: Mrazivec, kotva: mrazivec,
+     d: "Krátký meč přidává 1k6 Chladného zásahu a dokud ho držíš, máš Odolnost proti Ohni. Jednou za hodinu uhasí nemagické plameny do 6 sáhů. V mrazu svítí (Jasně 2, Slabě další 2 sáhy)."}
+  - {srd: weapon/javelin-of-lightning, n: Oštěp blesků, kotva: ostep-blesku,
+     d: "Jednou denně Akcí hodíš oštěp jako blesk na cíl do 24 sáhů: vše v dráze má Záchranu na Obratnost SO 13 proti 4k6 Bleskového zásahu (polovina při úspěchu) a zasažený cíl utrpí dalších 4k6."}
+  - {srd: weapon/mace-of-terror, n: Palcát hrůzy, kotva: palcat-hruzy,
+     d: "Tři Dávky (obnova 1k3 denně). Akcí a Dávkou vyšleš vlnu hrůzy: tvorové do 6 sáhů musí uspět v Záchraně na Moudrost SO 15, jinak jsou Vystrašeni, prchají od tebe a nemají Reakce."}
+  - {srd: weapon/mace-of-disruption, n: Palcát rozkolu, kotva: palcat-rozkolu,
+     d: "Běsům a Nemrtvým přidává 2k6 Zářivého zásahu; pokud jim zbude 25 či méně Bodů výdrže, musí uspět v Záchraně na Moudrost SO 15, jinak jsou zničeni (při úspěchu Vystrašeni). Svítí Jasně 4 a Slabě další 4 sáhy."}
+  - {srd: weapon/flame-tongue-longsword, n: Plamenec, kotva: plamenec,
+     d: "Akcí zapálíš čepel tohoto Dlouhého meče: přidává 2k6 Ohnivého zásahu a svítí Jasně 8 a Slabě dalších 8 sáhů. Uhasíš ji Bonusovou akcí nebo odložením."}
+  - {srd: weapon/vorpal-greatsword, n: Popravčí meč, kotva: popravci-mec,
+     d: "Obouruční meč s +3 k Útoku a Zásahu, ignoruje Odolnost proti Sečnému zásahu. Při 20 na kostce setne cíli hlavu; kdo je proti tomu chráněn, utrpí místo toho dalších 6k8 Sečného zásahu."}
+  - {srd: weapon/sun-blade, n: Sluneční čepel, kotva: slunecni-cepel,
+     d: "Jílec, z něhož Bonusovou akcí vysuneš zářivou čepel: +2 k Útoku a Zásahu, Vytříbená, Zářivý zásah, Nemrtvým +1k8. Svítí Jasně 2–6 sáhů a stejně daleko Slabě. Zdatnost s ní máš se Zdatností s Krátkým či Dlouhým mečem."}
+  - {srd: weapon/scimitar-of-speed, n: Šavle rychlosti, kotva: savle-rychlosti, d: "+2 k Útoku a Zásahu. Po Akci Útok s ní můžeš Bonusovou akcí zaútočit ještě jednou."}
+  - {srd: weapon/luck-blade-longsword, n: Štístko, kotva: stistko,
+     d: "+1 k Útoku a Zásahu a +1 k Záchranám, dokud zbraň neseš. Jednou denně přehodíš Útok, Ověření nebo Záchranu. Má až tři Dávky kouzla Přání (jednou denně)."}
+  - {srd: weapon/dancing-shortsword, n: Tančící meč, kotva: tancici-mec,
+     d: "Bonusovou akcí meč vyhodíš: přeletí až 6 sáhů a zaútočí s tvým Bonusem. Dalšími Bonusovými akcemi ho přesouváš a útočíš; po čtvrtém Útoku se vrátí do ruky."}
+  - {k: verna-sekera, zaklad: weapon/handaxe, n: Věrná sekera, kotva: verna-sekera, jad: true, vz: common, vl_plus: [ret],
+     d: "Vrženou Sekeru máš na konci Tahu zpátky v ruce, pokud máš volnou ruku a nejsi v Bezvědomí."}
+  - {n: Zbraň +X, kotva: zbran-x, plus: zbrane, d: "Přidává magický Bonus +1 (neobvyklá), +2 (vzácná) nebo +3 (velmi vzácná) k Útoku i Zásahu."}
+  - {srd: weapon/nine-lives-stealer-longsword, n: Zloděj devíti životů, kotva: zlodej-deviti-zivotu,
+     d: "Dlouhý meč s +2 k Útoku a Zásahu a devíti Dávkami. Zasažený tvor s méně než 100 Body výdrže (ne Nemrtvý či Výtvor) musí uspět v Záchraně na Odolnost SO 15, jinak zemře a meč ztratí Dávku."}
+
+Pomůcky pro Sesilatele kouzel:
+  - {srd: equipment/robe-of-the-archmagi, n: Arcimágovo roucho, kotva: arcimagovo-roucho,
+     d: "Pro Čaroděje, Černokněžníka či Kouzelníka: OČ beze zbroje 15 + Oprava obratnosti, +2 k Útočnému bonusu a SO Záchrany kouzel a Výhoda k Záchranám proti kouzlům a magii."}
+  - {n: Hůlka válečného mága, kotva: hulka-valecneho-maga, d: "Zvyšuje Útočný bonus kouzel o +1, +2 nebo +3 podle Vzácnosti a tvé Útoky kouzlem na dálku ignorují Poloviční kryt.",
+     varianty: [{srd: wand/wand-of-the-war-mage-1, n: "Hůlka válečného mága +1"}, {srd: wand/wand-of-the-war-mage-2, n: "Hůlka válečného mága +2"}, {srd: wand/wand-of-the-war-mage-3, n: "Hůlka válečného mága +3"}]}
+  - {n: Ohniskový předmět +X, kotva: ohniskovy-predmet-x, ohnisko: true,
+     d: "Ohniskový předmět, který zvyšuje Útočný bonus i SO Záchrany kouzel o +1 (neobvyklý), +2 (vzácný) nebo +3 (velmi vzácný)."}
+  - {srd: trinket/pearl-of-power, n: Perla moci, kotva: perla-moci,
+     d: "Jednou denně Akcí obnovíš utracenou Pozici do 3. Stupně; máš-li utracenou Pozici 4. či vyššího Stupně, vznikne dočasná Pozice 3. Stupně."}
+  - {srd: ring/ring-of-spell-storing, n: Prsten uskladňování kouzel, kotva: prsten-uskladnovani-kouzel,
+     d: "Pojme kouzla 1.–5. Stupně do součtu 5 Stupňů. Nositel je Akcí sešle s hodnotami toho, kdo je uložil."}
+  - {srd: rod/rod-of-absorption, n: Žezlo pohlcení, kotva: zezlo-pohlceni,
+     d: "Pohltí kouzlo mířené jen na tebe a získá tolik Dávek, kolik byl jeho Stupeň. Dávky (nejvýš 5 naráz) můžeš použít místo Pozic. Za celou existenci pohltí kouzla v součtu 50 Stupňů."}
+
+Předměty umožňující Sesílat kouzla:
+  - {srd: wand/wand-of-lightning-bolts, n: Hůlka blesků, kotva: hulka-blesku,
+     d: "Sedm Dávek (obnova 1k6 + 1 denně). Dávkou sešleš Blesk 3. Stupně, každá další Dávka zvýší Stupeň o 1. Po poslední Dávce na 1 na k20 hůlka zanikne."}
+  - {srd: wand/wand-of-magic-missiles, n: Hůlka magických střel, kotva: hulka-magickych-strel,
+     d: "Sedm Dávek (obnova 1k6 + 1 denně). Dávkou sešleš Magickou střelu 1. Stupně, další Dávky zvyšují Stupeň. Po poslední Dávce na 1 na k20 zanikne."}
+  - {n: Kouzelný svitek, kotva: kouzelny-svitek,
+     d: "Kouzlo ze seznamu tvého Povolání sešleš přečtením bez surovin (jinak je svitek nečitelný). Je-li nad tvé síly, potřebuješ Ověření Sesílací vlastnosti SO 10 + Stupeň. SO a Útočný bonus určuje Stupeň: trik a 1. – 13/+5, 2. – 13/+5, 3.–4. – 15/+7, 5.–6. – 17/+9, 7.–8. – 18/+10, 9. – 19/+11. Svitek se použitím zničí.",
+     varianty: [{srd: scroll/spell-scroll-cantrip, n: "Kouzelný svitek (trik)"}, {srd: scroll/spell-scroll-1st-level, n: "Kouzelný svitek (1. Stupeň)"},
+                {srd: scroll/spell-scroll-2nd-level, n: "Kouzelný svitek (2. Stupeň)"}, {srd: scroll/spell-scroll-3rd-level, n: "Kouzelný svitek (3. Stupeň)"},
+                {srd: scroll/spell-scroll-4th-level, n: "Kouzelný svitek (4. Stupeň)"}, {srd: scroll/spell-scroll-5th-level, n: "Kouzelný svitek (5. Stupeň)"},
+                {srd: scroll/spell-scroll-6th-level, n: "Kouzelný svitek (6. Stupeň)"}, {srd: scroll/spell-scroll-7th-level, n: "Kouzelný svitek (7. Stupeň)"},
+                {srd: scroll/spell-scroll-8th-level, n: "Kouzelný svitek (8. Stupeň)"}, {srd: scroll/spell-scroll-9th-level, n: "Kouzelný svitek (9. Stupeň)"}]}
+  - {srd: trinket/cubic-gate, n: Krychlová brána, kotva: krychlova-brana,
+     d: "Šest stěn krychle vede do šesti Sfér (jedna vždy do Materiální). Akcí a Dávkou sešleš ke zvolené stěně Bránu nebo Přesun sférami se SO 17. Tři Dávky, obnova 1k3 denně."}
+  - {srd: weapon/staff-of-healing, n: Léčivá berla, kotva: leciva-berla,
+     d: "Pro Barda, Druida či Klerika. Deset Dávek (obnova 1k6 + 4 denně): Zhoj zranění (1 Dávka, další zvyšují Stupeň, nejvýš 4), Nižší navrácení (2), Hromadné zhojení zranění (5). Po poslední Dávce na 1 na k20 zanikne."}
+  - {srd: trinket/necklace-of-fireballs, n: Náhrdelník ohnivých koulí, kotva: nahrdelnik-ohnivych-kouli,
+     d: "Až devět korálků. Akcí jeden utrhneš a hodíš až na 12 sáhů – vybuchne jako Ohnivá koule 3. Stupně se SO 15. Každý další korálek hozený naráz zvýší Stupeň o 1."}
+  - {srd: weapon/staff-of-fire, n: Ohnivá berla, kotva: ohniva-berla,
+     d: "Pro Čaroděje, Černokněžníka, Druida či Kouzelníka. Deset Dávek (obnova 1k6 + 4 denně): Hořící ruce (1), Ohnivá koule (3), Ohnivá zeď (4). Po poslední Dávce na 1 na k20 zanikne."}
+  - {srd: equipment/cape-of-the-mountebank, n: Pláštěnka šarlatána, kotva: plastenka-sarlatana,
+     d: "Jednou denně Akcí sešleš Dimenzionální dveře; v místě odchodu i příchodu zůstane obláček dýmu do konce tvého dalšího Tahu."}
+  - {srd: ring/ring-of-three-wishes, n: Prsten tří přání, kotva: prsten-tri-prani, d: "Tři Dávky kouzla Přání (Akce). Po poslední Dávce prsten ztratí magii."}
+  - {k: septajici-prsten, zaklad: ring/ring-of-warmth, n: Šeptající prsten, kotva: septajici-prsten, jad: true, vz: common, sladeni: "",
+     d: "Dokud prsten nosíš, můžeš libovolně sesílat trik Zpráva.", cast: message}
+  - {n: Živelný drahokam, kotva: zivelny-drahokam, d: "Akcí drahokam rozbiješ a sešleš Vyvolej Elementála – druh určuje kámen.",
+     varianty: [{srd: trinket/elemental-gem-of-fire, n: "Živelný drahokam (rudý korund – ohnivý)"}, {srd: trinket/elemental-gem-of-water, n: "Živelný drahokam (smaragd – vodní)"},
+                {srd: trinket/elemental-gem-of-air, n: "Živelný drahokam (modrý safír – vzdušný)"}, {srd: trinket/elemental-gem-of-earth, n: "Živelný drahokam (žlutý diamant – zemní)"}]}
+
+Posilující předměty:
+  - {srd: equipment/amulet-of-health, n: Amulet zdraví, kotva: amulet-zdravi, d: "Tvá Odolnost je 19, pokud nebyla vyšší."}
+  - {srd: equipment/headband-of-intellect, n: Čelenka intelektu, kotva: celenka-intelektu, d: "Tvá Inteligence je 19, pokud nebyla vyšší."}
+  - {srd: equipment/stone-of-good-luck-luckstone, n: Kámen štěstí, kotva: kamen-stesti, d: "Leštěný achát: +1 ke všem Ověřením vlastností a k Záchranám."}
+  - {n: Manuál sebezdokonalení, kotva: manual-sebezdokonaleni,
+     d: "Dvě Scény mezidobí studia a cvičení ti trvale zvýší příslušnou Vlastnost i její maximum o 2. Znovu ho lze použít až za sto let.",
+     varianty: [{srd: trinket/manual-of-gainful-exercise, n: "Manuál užitečného posilování (Síla)"}, {srd: trinket/manual-of-quickness-of-action, n: "Manuál rychlého jednání (Obratnost)"},
+                {srd: trinket/manual-of-bodily-health, n: "Manuál tělesného zdraví (Odolnost)"}, {srd: trinket/tome-of-clear-thought, n: "Rukověť jasného myšlení (Inteligence)"},
+                {srd: trinket/tome-of-understanding, n: "Rukověť chápání (Moudrost)"}, {srd: trinket/tome-of-leadership-and-influence, n: "Rukověť vedení a vlivu (Charisma)"}]}
+  - {srd: equipment/cloak-of-protection, n: Ochranný plášť, kotva: ochranny-plast, d: "+1 k OČ a k Záchranám."}
+  - {n: Opasek Obří síly, kotva: opasek-obri-sily, d: "Tvá Síla se změní na Sílu daného obra (Kopcový 21, Kamenný a Ledový 23, Ohnivý 25, Oblačný 27, Bouřný 29), pokud nebyla vyšší.",
+     varianty: [{srd: equipment/belt-of-hill-giant-strength, n: "Opasek Obří síly (Kopcový obr)"}, {srd: equipment/belt-of-stone-giant-strength, n: "Opasek Obří síly (Kamenný obr)"},
+                {srd: equipment/belt-of-frost-giant-strength, n: "Opasek Obří síly (Ledový obr)"}, {srd: equipment/belt-of-fire-giant-strength, n: "Opasek Obří síly (Ohnivý obr)"},
+                {srd: equipment/belt-of-cloud-giant-strength, n: "Opasek Obří síly (Oblačný obr)"}, {srd: equipment/belt-of-storm-giant-strength, n: "Opasek Obří síly (Bouřný obr)"}]}
+
+Předměty pro vyvolávání:
+  - {srd: trinket/pipes-of-the-sewers, n: Flétna stok, kotva: fletna-stok,
+     d: "Vyžaduje Zdatnost s dechovými nástroji. Krysy na tebe neútočí. Tři Dávky (obnova 1k3 za úsvitu): hraním a Dávkami přivoláš z okolí půl míle Hejna krys; Střetem Charismatu s jejich Moudrostí je přiměješ poslouchat, dokud hraješ."}
+  - {srd: ring/ring-of-djinni-summoning, n: Prsten přivolávání Džinů, kotva: prsten-privolavani-dzinu,
+     d: "Přivolá spřízněného Džina do 24 sáhů. Zůstane, dokud se Soustředíš (nejvýš hodinu) nebo nepadne, a plní tvé příkazy."}
+  - {n: Roh Valhally, kotva: roh-valhally,
+     d: "Akcí přivoláš duše padlých válečníků (Berserkry) na hodinu nebo do jejich pádu; znovu po sedmi dnech. Kdo nesplní požadavek rohu, má je proti sobě. Stříbrný 2k4 + 2 (bez požadavku), Mosazný 3k4 + 3 (Jednoduché zbraně), Bronzový 4k4 + 4 (Střední zbroje), Železný 5k4 + 5 (Válečné zbraně).",
+     varianty: [{srd: trinket/silver-horn-of-valhalla, n: "Roh Valhally (stříbrný)"}, {srd: trinket/brass-horn-of-valhalla, n: "Roh Valhally (mosazný)"},
+                {srd: trinket/bronze-horn-of-valhalla, n: "Roh Valhally (bronzový)"}, {srd: trinket/iron-horn-of-valhalla, n: "Roh Valhally (železný)"}]}
+
+Předměty obnovující Výdrž:
+  - {srd: ring/ring-of-regeneration, n: Prsten regenerace, kotva: prsten-regenerace,
+     d: "Máš-li aspoň 1 Bod výdrže, každých deset minut si obnovíš 1k6. Ztracená část těla doroste za 1k6 + 1 dní."}
+  - {srd: potion/restorative-ointment, n: Regenerační mazání, kotva: regeneracni-mazani,
+     d: "Pět Dávek. Natřený tvor si obnoví 2k8 + 2 Bodů výdrže a zbaví se Nemocí a Stavu Otrávený."}
+
+Předměty způsobující Stavy:
+  - {srd: wand/wand-of-paralysis, n: Hůlka paralýzy, kotva: hulka-paralyzy,
+     d: "Sedm Dávek (obnova 1k6 + 1 denně). Paprsek na tvora do 12 sáhů: Záchrana na Odolnost SO 15, jinak minutu Paralyzován (opakuje na konci Tahů). Po poslední Dávce na 1 na k20 zanikne."}
+  - {srd: trinket/rope-of-entanglement, n: Omotávací lano, kotva: omotavaci-lano,
+     d: "Akcí ho pošleš na tvora do 4 sáhů: Záchrana na Obratnost SO 15, jinak Zadržen. Uvolníš ho Bonusovou akcí, on se může vyprostit Ověřením Síly či Obratnosti. Lano má OČ 20 a 20 Bodů výdrže a regeneruje."}
+  - {srd: rod/rod-of-rulership, n: Žezlo panování, kotva: zezlo-panovani,
+     d: "Jednou denně přikážeš tvorovi do 24 sáhů: Záchrana na Moudrost SO 15, jinak je osm hodin Zmámen a řídí se tebou. Zranění nebo příkaz proti jeho povaze účinek ukončí."}
+
+Předměty s různými efekty:
+  - {srd: equipment/robe-of-stars, n: Roucho hvězd, kotva: roucho-hvezd,
+     d: "+1 k Záchranám. Akcí přecházíš do Astrální sféry a zpět. Akcí strhneš jednu ze šesti hvězd a sešleš Magickou střelu 5. Stupně; obnoví se 1k6 hvězd denně."}
+  - {srd: equipment/robe-of-eyes, n: Roucho očí, kotva: roucho-oci,
+     d: "Vidíš všemi směry a máš Výhodu ke zrakovému Vnímání. Světlo či Denní světlo do 1 sáhu tě na minutu oslepí (Záchrana na Odolnost SO 11, resp. 15 na konci Tahů)."}
+  - {srd: trinket/scarab-of-protection, n: Skarabeus ochrany, kotva: skarabeus-ochrany,
+     d: "Výhoda k Záchranám proti kouzlům a magii. Neuspěješ-li proti Nekromantickému kouzlu či zraňujícímu účinku Nemrtvého, změníš Reakcí neúspěch v úspěch za jednu z 12 Dávek."}
+
+Předměty, které dávají trvalý přínos:
+  - {srd: equipment/goggles-of-night, n: Brýle noci, kotva: bryle-noci, d: "Vidění ve tmě na 12 sáhů; máš-li ho už, prodlouží se o 12 sáhů."}
+  - {srd: trinket/lantern-of-revealing, n: Lucerna odhalení, kotva: lucerna-odhaleni, d: "Lucerna s okenicemi, v jejímž světle jsou vidět Neviditelní tvorové (ne ti v Éterické sféře)."}
+  - {srd: equipment/necklace-of-adaptation, n: Náhrdelník přizpůsobení, kotva: nahrdelnik-prizpusobeni, d: "Dýcháš v jakémkoli prostředí a máš Výhodu k Záchranám proti plynům a výparům."}
+  - {srd: equipment/mantle-of-spell-resistance, n: Pelerína magického odolání, kotva: pelerina-magickeho-odolani, d: "Výhoda k Záchranám proti kouzlům a magickým účinkům."}
+  - {n: Prsten odolání, kotva: prsten-odolani, d: "Odolnost proti jednomu Typu zásahu.", odolnost: "ring/ring-of-{typ}-resistance"}
+  - {srd: ring/ring-of-spell-turning, n: Prsten odrážení kouzel, kotva: prsten-odrazeni-kouzel,
+     d: "Výhoda k Záchranám proti kouzlům mířeným jen na tebe. Padne-li 20 a kouzlo je do 7. Stupně, odrazí se na sesilatele."}
+  - {srd: ring/ring-of-mind-shielding, n: Prsten zaštítění mysli, kotva: prsten-zastiteni-mysli,
+     d: "Magie nečte tvé myšlenky ani nepozná lži, Přesvědčení či typ; telepatie jen s tvým svolením. Akcí prsten zneviditelníš. Kdo s ním zemře, jeho duše v něm zůstane."}
+  - {srd: equipment/periapt-of-proof-against-poison, n: Škapulíř proti Jedu, kotva: skapulir-proti-jedu, d: "Imunita vůči Jedovému zásahu a Stavu Otrávený."}
+
+Cestovatelské vybavení:
+  - {n: Létající koberec, kotva: letajici-koberec,
+     d: "Akcí a zaklínadlem ho rozletíš (musíš být do 6 sáhů). Unese dvojnásobek nosnosti, nad základní nosností letí poloviční rychlostí. 0,5 × 1 sáh: 20 Řádků, 16 sáhů; 1 × 1: 40 Řádků, 12 sáhů; 1 × 1,5: 60 Řádků, 8 sáhů; 1 × 2: 80 Řádků, 6 sáhů.",
+     varianty: [{srd: trinket/carpet-of-flying-3x5, n: "Létající koberec (0,5 × 1 sáh)"}, {srd: trinket/carpet-of-flying-4x6, n: "Létající koberec (1 × 1 sáh)"},
+                {srd: trinket/carpet-of-flying-5x7, n: "Létající koberec (1 × 1,5 sáhu)"}, {srd: trinket/carpet-of-flying-6x9, n: "Létající koberec (1 × 2 sáhy)"}]}
+  - {srd: trinket/broom-of-flying, n: Létající koště, kotva: letajici-koste,
+     d: "Na zaklínadlo (Akce) létá rychlostí 12 sáhů s nosností 20 Řádků (dvojnásobek poloviční rychlostí). Můžeš ho poslat až míli daleko a přivolat zpět."}
+  - {srd: container/bag-of-holding, n: Pytel beztíže, kotva: pytel-beztize,
+     d: "Zabírá jen Řádek, ale pojme 50 Řádků. Roztržený vysype obsah do Astrální sféry; vzduch pro tvora vydrží 10 minut. Se Šikovnou brašnou se navzájem zničí a vše okolo odnese do Astrální sféry."}
+  - {srd: equipment/cloak-of-the-manta-ray, n: Rejnočí plášť, kotva: rejnoci-plast, d: "S nasazenou kápí dýcháš pod vodou a plaveš rychlostí 12 sáhů."}
+  - {srd: trinket/folding-boat, n: Skládací člun, kotva: skladaci-clun, d: "Krabička, kterou Akcí rozložíš na člun pro čtyři nebo loď pro patnáct Středních tvorů, a zase zpět."}
+  - {srd: container/handy-haversack, n: Šikovná brašna, kotva: sikovna-brasna,
+     d: "Dvě boční kapsy po 2 Řádcích a hlavní na 8 Řádků, a přesto se počítá jako Drobný předmět. Hledaná věc je vždy navrchu. Nesnese se s Pytlem beztíže."}
+  - {srd: container/efficient-quiver, n: Šikovný toulec, kotva: sikovny-toulec, d: "Pojme 60 šípů, 18 oštěpů a 6 luků či kopí, přesto je to Drobný předmět."}
+  - {srd: trinket/rope-of-climbing, n: Šplhací lano, kotva: splhaci-lano,
+     d: "12 sáhů dlouhé lano, které Akcí oživíš a Bonusovými akcemi mu přikazuješ: lézt k cíli (2 sáhy za Kolo), smotat se, uvázat či odvázat se a vytvořit uzly. OČ 20, 20 Bodů výdrže, regeneruje."}
+  - {srd: equipment/slippers-of-spider-climbing, n: Trepky pavoučího šplhu, kotva: trepky-pavouciho-splhu,
+     d: "Rychlost šplhání rovná tvé Rychlosti, i po stěnách a stropech – ne však po kluzkém povrchu."}
+
+Předměty s konkrétním účelem:
+  - {srd: equipment/cloak-of-elvenkind, n: Elfí plášť, kotva: elfi-plast, d: "S nasazenou kápí máš Výhodu k Nenápadnosti a ostatní mají Nevýhodu k Vnímání, když tě hledají."}
+  - {srd: wand/wand-of-enemy-detection, n: Hůlka nalezení nepřátel, kotva: hulka-nalezeni-nepratel,
+     d: "Sedm Dávek (obnova 1k6 + 1 denně). Dávkou na minutu zjistíš směr k nejbližšímu nepřátelskému tvorovi do 12 sáhů, i neviditelnému či skrytému."}
+  - {srd: wand/wand-of-secrets, n: Hůlka tajemství, kotva: hulka-tajemstvi, d: "Tři Dávky (obnova 1k3 denně). Dávkou ukáže na nejbližší tajné dveře nebo past."}
+  - {k: lakmusove-papirky, zaklad: potion/antitoxin, n: Lakmusové papírky, kotva: lakmusove-papirky, jad: true, vz: common, typ: trinket, mnozstvi: 10,
+     d: "Papírek ponořený do tekutiny prozradí nemagický jed – jaký je a jak silný. Balení obsahuje deset papírků."}
+  - {k: truhla-elegance, zaklad: container/chest, n: Truhla elegance, kotva: truhla-elegance, jad: true, vz: common,
+     d: "Oděvy a zbroje z truhly vyjdeš čisté, urovnané (oděvy i vyžehlené) a jemně vonící levandulí."}
+  - {srd: trinket/chime-of-opening, n: Zvonička otevírání, kotva: zvonicka-otevirani,
+     d: "Akcí ji namíříš na předmět do 24 sáhů – zazvoní a otevře se jeden zámek či petlice. Po desátém použití praskne."}
+  - {srd: rod/rod-of-security, n: Žezlo bezpečnosti, kotva: zezlo-bezpecnosti,
+     d: "Akcí přeneseš sebe a až 199 tvorů do mimosférického ráje, kde nestárnou a hojí se. Pobyt (200 dní dělených mezi všechny) ukončíš Akcí. Znovu za deset dní."}
+
+Předměty s nepředvídatelným užitím:
+  - {srd: trinket/decanter-of-endless-water, n: Bezedná karafa, kotva: bezedna-karafa,
+     d: "Akcí a zaklínadlem z ní vyteče 4 l, 20 l nebo 120 l vody gejzírem. Gejzír lze Bonusovou akcí namířit: předmět do 100 kg odhodí, tvor musí uspět v Záchraně na Sílu SO 13, jinak utrpí 1k4 Drtivého zásahu a je Sražen."}
+  - {k: duhova-spona, zaklad: trinket/feather-token-fan, n: Duhová spona, kotva: duhova-spona, jad: true, vz: common, typ: loot,
+     d: "Vyřezávaná spona jedné z duhových barev; Bonusovou akcí ji změníš. Vlasy (i vousy, obočí či srst) nositele mají její barvu."}
+  - {srd: trinket/eversmoking-bottle, n: Dýmající láhev, kotva: dymajici-lahev,
+     d: "Otevřená láhev chrlí hustý dým: zahalí 12 sáhů a šíří se o 2 sáhy za Kolo až na 24. Oblast je Hustě zahalená. Po uzavření dým do deseti minut zmizí."}
+  - {srd: trinket/marvelous-pigments, n: Úchvatné barvy, kotva: uchvatne-barvy,
+     d: "Kalíšky barev: za deset minut namaluješ předmět či terén (až 40 čtverečních sáhů plochy), který se stane skutečným – v hodnotě nejvýš 25 zl."}
+  - {srd: trinket/dust-of-dryness, n: Vysušující prach, kotva: vysusujici-prach,
+     d: "Dávka promění krychli vody o hraně 3 sáhy v kuličku, kterou lze Akcí rozbít zpět ve vodu. Vodní Elementál posypaný prachem musí uspět v Záchraně na Odolnost SO 13, jinak 10k6 Nekrotického zásahu (polovina při úspěchu)."}
+
+Artefakty:
+  - {k: excalibur, zaklad: weapon/longsword, n: Excalibur, kotva: excalibur, jad: true, vz: artifact, sladeni: required, magie: 3, kostka: [1, 10], kostka2: [1, 12], extra: [1, 10, radiant], kriticky: 19,
+     d: "Legendární meč krále, který prosekává kov: +3 k Útoku a Zásahu, k sečnému zásahu přidává stejnou kostku Zářivého, kriticky zasahuje na 19–20 a kritický zásah ničí nemagickou zbraň či štít nebo poškodí zbroj. Při tasení oslepí nepřátele okolo (Odolnost SO 15). Pochva chrání před nemagickými Bodnými, Drtivými a Sečnými zásahy. Zneužitý k sobeckým cílům se může zlomit."}
+  - {k: jeden-prsten, zaklad: ring/ring-of-invisibility, n: Jeden prsten, kotva: jeden-prsten, jad: true, vz: artifact, sladeni: required,
+     d: "Prsten moci Temného pána. Sladí se jen s tvorem se Zdatnostním bonusem aspoň +4 a dává mu schopnosti dalších Úrovní, vládu nad nositeli menších prstenů, děsivou přítomnost a neviditelnost. Vyvolává ale Závislost a svou vůlí nositele kazí a zrazuje."}
+  - {k: kniha-mrtvych, zaklad: loot/book, n: Kniha mrtvých, kotva: kniha-mrtvych, jad: true, vz: artifact, sladeni: required, typ: equipment,
+     d: "Černý grimoár smrti. Otevřený rozhostí kolem noc, čte se i bez zraku a umožňuje sesílat nekromantická kouzla – od zvedání Nemrtvých z Pozice 9. Stupně po kouzla navracející život – a Přesun sférami do záhrobí. Zničit nejde, vždy se vrátí."}
+  - {k: mjolnir, zaklad: weapon/warhammer, n: Mjölnir, kotva: mjolnir, jad: true, vz: artifact, sladeni: required, kostka: [2, 8], dostrel: [120, 120], vl_plus: [thr, ret], sila: 27,
+     d: "Kladivo boha hromu: Zásah 2k8 Drtivý nebo Hromový ignorující Odolnost, při 20 nepřítele Srazí. Sladění zvýší Sílu na 27. Vržený letí až 24 sáhů a vrací se. Obrům způsobuje o 1k8 víc a při 20 je zabíjí. Jednou mezi Odpočinky sešle Svolej blesky."}

@@ -1,0 +1,335 @@
+{
+  "_id": "FJazCdz4xVnEP4rL",
+  "name": "Olej kluzkosti",
+  "type": "consumable",
+  "img": "icons/consumables/potions/potion-tube-corked-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Neobvyklý</em></p><p>Natřený tvor (deset minut) získá na osm hodin účinek kouzla Volnost. Vylitý na čtverec o straně 2 sáhy (Akce) působí jako kouzlo Sádlo.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#olej-kluzkosti\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": "",
+      "name": "Unidentified Oil"
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "magicalBonus": null,
+    "activities": {
+      "OMSMC85UR5All9Vz": {
+        "type": "utility",
+        "activation": {
+          "type": "minute",
+          "value": 10,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "8",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "4OOm3lGF9n4bLHyt",
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "units": "touch",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "sah",
+            "stationary": false
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "name": "Natřít olej",
+        "img": "",
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireAttunement": false,
+          "requireIdentification": false
+        },
+        "behaviors": [],
+        "flags": {},
+        "_id": "OMSMC85UR5All9Vz"
+      },
+      "OCcBVLFoBjsgBp2r": {
+        "type": "cast",
+        "name": "Vylít olej",
+        "_id": "OCcBVLFoBjsgBp2r",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "concentration": false,
+          "override": true,
+          "value": "8"
+        },
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": "square",
+            "size": "2",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "spell": {
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": false,
+          "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.SUFiEZ6W5k79uBYt",
+          "ability": "",
+          "level": 1
+        }
+      }
+    },
+    "attuned": false,
+    "identifier": "oil-of-slipperiness"
+  },
+  "effects": [
+    {
+      "name": "Kluzkost",
+      "origin": "Compendium.jeskyne-a-draci.predmety.Item.FJazCdz4xVnEP4rL",
+      "duration": {
+        "value": 8,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "_id": "4OOm3lGF9n4bLHyt",
+      "description": "<p>Účinek předmětu <em>Olej kluzkosti</em>.</p>",
+      "transfer": false,
+      "statuses": [],
+      "flags": {
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.6",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/skills/movement/arrow-upward-yellow.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "paralyzed",
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "restrained",
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.ignoredDifficultTerrain",
+            "value": "all",
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "magical": true
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!FJazCdz4xVnEP4rL.4OOm3lGF9n4bLHyt"
+    }
+  ],
+  "folder": "qBb2ap6iqOYoK6Y6",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "olej-kluzkosti"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!FJazCdz4xVnEP4rL"
+}

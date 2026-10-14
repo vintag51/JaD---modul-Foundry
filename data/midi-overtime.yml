@@ -1,0 +1,18 @@
+# Volitelná vrstva pro Midi-QOL + DAE: opakované záchrany a zranění na konci/začátku tahu.
+# Přidává se do efektů jako změna `flags.midi-qol.OverTime` (typ custom).
+# Bez Midi-QOL se změna jen uloží jako nepoužitý příznak a nic neovlivní.
+# {N} = stupeň kouzla odvozený z názvu efektu ("…: 4. stupeň"), jinak základní stupeň.
+# status: pokud je uveden, OverTime dostanou jen efekty s tímto stavem.
+
+hold-person: {ot: "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc"}
+hold-monster: {ot: "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc"}
+hideous-laughter: {ot: "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc"}
+slow: {ot: "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc"}
+blindness-deafness: {ot: "turn=end,saveAbility=con,saveDC=@attributes.spell.dc"}
+ray-of-enfeeblement: {ot: "turn=end,saveAbility=con,saveDC=@attributes.spell.dc"}
+confusion: {ot: "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc"}
+fear: {ot: "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc"}
+phantasmal-killer: {ot: "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll={N}d10,damageType=psychic,saveDamage=nodamage"}
+acid-arrow: {ot: "turn=end,damageRoll={N}d4,damageType=acid"}
+irresistible-dance: {ot: "actionSave=roll,saveAbility=wis,saveDC=@attributes.spell.dc"}
+entangle: {ot: "actionSave=roll,rollType=check,saveAbility=str,saveDC=@attributes.spell.dc"}

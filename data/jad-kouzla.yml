@@ -1,0 +1,3230 @@
+# Kouzla Jeskyní a draků podle kapitoly 10 – Magie (SRD JaD).
+# Klíč = kotva na stránce https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html
+# srd = identifikátor kouzla v kompendiu SRD 5.1 systému dnd5e (zdroj automatizace); null = kouzlo mimo SRD
+# (data/vlastni-kouzla.yml). Obsahuje jen názvy a pravidlová data (stupeň, škola, povolání), žádné texty kouzel.
+divotvorstvi:
+  cz: Divotvorství
+  stupen: 0
+  skola: trs
+  ritual: false
+  povolani:
+  - cleric
+  srd: thaumaturgy
+dotek-smrti:
+  cz: Dotek smrti
+  stupen: 0
+  skola: nec
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: chill-touch
+drobna-iluze:
+  cz: Drobná iluze
+  stupen: 0
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: minor-illusion
+drtive-uponky:
+  cz: Drtivé úponky
+  stupen: 0
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  srd: null
+druidstvi:
+  cz: Druidství
+  stupen: 0
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  srd: druidcraft
+hadi-ustknuti:
+  cz: Hadí uštknutí
+  stupen: 0
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  srd: null
+hlas-boure:
+  cz: Hlas bouře
+  stupen: 0
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  srd: null
+jedovata-sprska:
+  cz: Jedovatá sprška
+  stupen: 0
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - druid
+  - wizard
+  srd: poison-spray
+kejkle:
+  cz: Kejkle
+  stupen: 0
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: prestidigitation
+kyselinova-koule:
+  cz: Kyselinová koule
+  stupen: 0
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: acid-splash
+magova-ruka:
+  cz: Mágova ruka
+  stupen: 0
+  skola: con
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: mage-hand
+mentalni-uder:
+  cz: Mentální úder
+  stupen: 0
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - cleric
+  - wizard
+  srd: null
+mrazivy-paprsek:
+  cz: Mrazivý paprsek
+  stupen: 0
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: ray-of-frost
+neuveritelny-puvab:
+  cz: Neuvěřitelný půvab
+  stupen: 0
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: null
+odolani:
+  cz: Odolání
+  stupen: 0
+  skola: abj
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  srd: resistance
+ohniva-strela:
+  cz: Ohnivá střela
+  stupen: 0
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: fire-bolt
+oprava:
+  cz: Oprava
+  stupen: 0
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - druid
+  - cleric
+  - wizard
+  srd: mending
+posvatny-plamen:
+  cz: Posvátný plamen
+  stupen: 0
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: sacred-flame
+presny-uder:
+  cz: Přesný úder
+  stupen: 0
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: true-strike
+stvor-plamen:
+  cz: Stvoř plamen
+  stupen: 0
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  srd: produce-flame
+sukovice:
+  cz: Sukovice
+  stupen: 0
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  srd: shillelagh
+svetlo:
+  cz: Světlo
+  stupen: 0
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - cleric
+  - wizard
+  srd: light
+sokujici-sevreni:
+  cz: Šokující sevření
+  stupen: 0
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: shocking-grasp
+tajemny-vysleh:
+  cz: Tajemný výšleh
+  stupen: 0
+  skola: evo
+  ritual: false
+  povolani:
+  - warlock
+  srd: eldritch-blast
+tancici-svetla:
+  cz: Tančící světla
+  stupen: 0
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: dancing-lights
+usetri-umirajiciho:
+  cz: Ušetři umírajícího
+  stupen: 0
+  skola: nec
+  ritual: false
+  povolani:
+  - cleric
+  srd: spare-the-dying
+vedeni:
+  cz: Vedení
+  stupen: 0
+  skola: div
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  srd: guidance
+zlomyslny-vysmech:
+  cz: Zlomyslný výsměch
+  stupen: 0
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  srd: vicious-mockery
+zprava:
+  cz: Zpráva
+  stupen: 0
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: message
+azyl:
+  cz: Azyl
+  stupen: 1
+  skola: abj
+  ritual: false
+  povolani:
+  - cleric
+  srd: sanctuary
+bajny-lucistnik:
+  cz: Bájný lučištník
+  stupen: 1
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - ranger
+  srd: null
+barevna-sprska:
+  cz: Barevná sprška
+  stupen: 1
+  skola: ill
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: color-spray
+cerny-jed:
+  cz: Černý jed
+  stupen: 1
+  skola: nec
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: null
+desivy-smich:
+  cz: Děsivý smích
+  stupen: 1
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: hideous-laughter
+dlouhokrok:
+  cz: Dlouhokrok
+  stupen: 1
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - ranger
+  - wizard
+  srd: longstrider
+dobruvka:
+  cz: Dobrůvka
+  stupen: 1
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  srd: goodberry
+elementalni-erupce:
+  cz: Elementální erupce
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: null
+falesny-zivot:
+  cz: Falešný život
+  stupen: 1
+  skola: nec
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: false-life
+hexensus:
+  cz: Hexenšus
+  stupen: 1
+  skola: nec
+  ritual: false
+  povolani:
+  - warlock
+  - cleric
+  - wizard
+  srd: null
+hnev-zivlu:
+  cz: Hněv živlů
+  stupen: 1
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: null
+horici-ruce:
+  cz: Hořící ruce
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: burning-hands
+hrdinstvi:
+  cz: Hrdinství
+  stupen: 1
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - paladin
+  srd: heroism
+hromova-vlna:
+  cz: Hromová vlna
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - druid
+  - wizard
+  srd: thunderwave
+iluzorni-text:
+  cz: Iluzorní text
+  stupen: 1
+  skola: ill
+  ritual: true
+  povolani:
+  - bard
+  - warlock
+  - wizard
+  srd: illusory-script
+lecive-slovo:
+  cz: Léčivé slovo
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - cleric
+  srd: healing-word
+levitujici-disk:
+  cz: Levitující disk
+  stupen: 1
+  skola: con
+  ritual: true
+  povolani:
+  - wizard
+  srd: floating-disk
+lovcova-korist:
+  cz: Lovcova kořist
+  stupen: 1
+  skola: div
+  ritual: false
+  povolani:
+  - ranger
+  srd: hunters-mark
+magicka-strela:
+  cz: Magická střela
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: magic-missile
+magova-zbroj:
+  cz: Mágova zbroj
+  stupen: 1
+  skola: abj
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: mage-armor
+mluv-se-zviraty:
+  cz: Mluv se zvířaty
+  stupen: 1
+  skola: div
+  ritual: true
+  povolani:
+  - bard
+  - druid
+  - ranger
+  srd: speak-with-animals
+najdi-jed-a-nemoc:
+  cz: Najdi Jed a Nemoc
+  stupen: 1
+  skola: div
+  ritual: true
+  povolani:
+  - druid
+  - ranger
+  - cleric
+  - paladin
+  srd: detect-poison-and-disease
+najdi-magii:
+  cz: Najdi magii
+  stupen: 1
+  skola: div
+  ritual: true
+  povolani:
+  - bard
+  - sorcerer
+  - druid
+  - ranger
+  - cleric
+  - wizard
+  - paladin
+  srd: detect-magic
+najdi-pritelicka:
+  cz: Najdi Přítelíčka
+  stupen: 1
+  skola: con
+  ritual: true
+  povolani:
+  - wizard
+  srd: find-familiar
+najdi-zlo-a-dobro:
+  cz: Najdi zlo a dobro
+  stupen: 1
+  skola: div
+  ritual: false
+  povolani:
+  - cleric
+  - paladin
+  srd: detect-evil-and-good
+navadeci-blesk:
+  cz: Naváděcí blesk
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: guiding-bolt
+neviditelny-sluzebnik:
+  cz: Neviditelný služebník
+  stupen: 1
+  skola: con
+  ritual: true
+  povolani:
+  - bard
+  - warlock
+  - wizard
+  srd: unseen-servant
+oblak-mlhy:
+  cz: Oblak mlhy
+  stupen: 1
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - ranger
+  - wizard
+  srd: fog-cloud
+ocisti-jidlo-a-piti:
+  cz: Očisti jídlo a pití
+  stupen: 1
+  skola: trs
+  ritual: true
+  povolani:
+  - druid
+  - cleric
+  - paladin
+  srd: purify-food-and-drink
+ochrana-pred-zlem-a-dobrem:
+  cz: Ochrana před zlem a dobrem
+  stupen: 1
+  skola: abj
+  ritual: false
+  povolani:
+  - warlock
+  - cleric
+  - wizard
+  - paladin
+  srd: protection-from-evil-and-good
+pekelne-pokarani:
+  cz: Pekelné pokárání
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - warlock
+  srd: hellish-rebuke
+plast-zmaru:
+  cz: Plášť zmaru
+  stupen: 1
+  skola: nec
+  ritual: false
+  povolani:
+  - warlock
+  srd: null
+pohled-smrti:
+  cz: Pohled smrti
+  stupen: 1
+  skola: nec
+  ritual: false
+  povolani:
+  - warlock
+  srd: null
+pomaly-pad:
+  cz: Pomalý pád
+  stupen: 1
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: feather-fall
+poplach:
+  cz: Poplach
+  stupen: 1
+  skola: abj
+  ritual: true
+  povolani:
+  - ranger
+  - wizard
+  srd: alarm
+porozumeni-jazykum:
+  cz: Porozumění jazykům
+  stupen: 1
+  skola: div
+  ritual: true
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: comprehend-languages
+pozehnani:
+  cz: Požehnání
+  stupen: 1
+  skola: enc
+  ritual: false
+  povolani:
+  - cleric
+  - paladin
+  srd: bless
+pratelstvi-zvirat:
+  cz: Přátelství zvířat
+  stupen: 1
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - ranger
+  srd: animal-friendship
+prestrojeni:
+  cz: Přestrojení
+  stupen: 1
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: disguise-self
+prizen-bohu:
+  cz: Přízeň bohů
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - paladin
+  srd: divine-favor
+rozkaz:
+  cz: Rozkaz
+  stupen: 1
+  skola: enc
+  ritual: false
+  povolani:
+  - cleric
+  - paladin
+  srd: command
+retezy-upoutani:
+  cz: Řetězy upoutání
+  stupen: 1
+  skola: con
+  ritual: false
+  povolani:
+  - warlock
+  srd: null
+sadlo:
+  cz: Sádlo
+  stupen: 1
+  skola: con
+  ritual: false
+  povolani:
+  - wizard
+  srd: grease
+sila-fenixe:
+  cz: Síla fénixe
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  srd: null
+skok:
+  cz: Skok
+  stupen: 1
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - ranger
+  - wizard
+  srd: jump
+slizky-uder:
+  cz: Slizký úder
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: null
+spanek:
+  cz: Spánek
+  stupen: 1
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: sleep
+spesny-ustup:
+  cz: Spěšný ústup
+  stupen: 1
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: expeditious-retreat
+stvor-nebo-znic-vodu:
+  cz: Stvoř nebo znič vodu
+  stupen: 1
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  srd: create-or-destroy-water
+stit:
+  cz: Štít
+  stupen: 1
+  skola: abj
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: shield
+stit-viry:
+  cz: Štít víry
+  stupen: 1
+  skola: abj
+  ritual: false
+  povolani:
+  - cleric
+  - paladin
+  srd: shield-of-faith
+tichy-obraz:
+  cz: Tichý obraz
+  stupen: 1
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: silent-image
+urceni:
+  cz: Určení
+  stupen: 1
+  skola: div
+  ritual: true
+  povolani:
+  - bard
+  - wizard
+  srd: identify
+urknuti:
+  cz: Uřknutí
+  stupen: 1
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  srd: bane
+vili-ohen:
+  cz: Vílí oheň
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  srd: faerie-fire
+zapleteni:
+  cz: Zapletení
+  stupen: 1
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  srd: entangle
+zhoj-zraneni:
+  cz: Zhoj zranění
+  stupen: 1
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - ranger
+  - cleric
+  - paladin
+  srd: cure-wounds
+zmam-osobu:
+  cz: Zmam osobu
+  stupen: 1
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - druid
+  - wizard
+  srd: charm-person
+zpusob-zraneni:
+  cz: Způsob zranění
+  stupen: 1
+  skola: nec
+  ritual: false
+  povolani:
+  - cleric
+  srd: inflict-wounds
+antropomancie:
+  cz: Antropomancie
+  stupen: 2
+  skola: nec
+  ritual: true
+  povolani:
+  - warlock
+  - cleric
+  - wizard
+  srd: null
+besneni:
+  cz: Běsnění
+  stupen: 2
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: null
+cejchovaci-uder:
+  cz: Cejchovací úder
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - paladin
+  srd: shining-smite
+duchovni-zbran:
+  cz: Duchovní zbraň
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: spiritual-weapon
+dustojny-odpocinek:
+  cz: Důstojný odpočinek
+  stupen: 2
+  skola: nec
+  ritual: true
+  povolani:
+  - cleric
+  - wizard
+  srd: gentle-repose
+fascinuj:
+  cz: Fascinuj
+  stupen: 2
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - warlock
+  srd: enthrall
+chapadlo:
+  cz: Chapadlo
+  stupen: 2
+  skola: con
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: null
+kurokuze:
+  cz: Kůrokůže
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  srd: barkskin
+kyselinovy-sip:
+  cz: Kyselinový šíp
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - wizard
+  srd: acid-arrow
+leciva-modlitba:
+  cz: Léčivá modlitba
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: prayer-of-healing
+levitace:
+  cz: Levitace
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: levitate
+magicka-usta:
+  cz: Magická ústa
+  stupen: 2
+  skola: ill
+  ritual: true
+  povolani:
+  - bard
+  - wizard
+  srd: magic-mouth
+magicka-zbran:
+  cz: Magická zbraň
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - wizard
+  - paladin
+  srd: magic-weapon
+mesicni-paprsek:
+  cz: Měsíční paprsek
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - druid
+  srd: moonbeam
+mlzny-krok:
+  cz: Mlžný krok
+  stupen: 2
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: misty-step
+mysticky-zamek:
+  cz: Mystický zámek
+  stupen: 2
+  skola: abj
+  ritual: false
+  povolani:
+  - wizard
+  srd: arcane-lock
+najdi-ore:
+  cz: Najdi oře
+  stupen: 2
+  skola: con
+  ritual: false
+  povolani:
+  - paladin
+  srd: find-steed
+najdi-pasti:
+  cz: Najdi pasti
+  stupen: 2
+  skola: div
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  - cleric
+  srd: find-traps
+najdi-predmet:
+  cz: Najdi předmět
+  stupen: 2
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - ranger
+  - cleric
+  - wizard
+  - paladin
+  srd: locate-object
+najdi-zvirata-a-rostliny:
+  cz: Najdi zvířata a rostliny
+  stupen: 2
+  skola: div
+  ritual: true
+  povolani:
+  - bard
+  - druid
+  - ranger
+  srd: locate-animals-or-plants
+neviditelnost:
+  cz: Neviditelnost
+  stupen: 2
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: invisibility
+nizsi-navraceni:
+  cz: Nižší navrácení
+  stupen: 2
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - ranger
+  - cleric
+  - paladin
+  srd: lesser-restoration
+odhal-myslenky:
+  cz: Odhal myšlenky
+  stupen: 2
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: detect-thoughts
+ohniva-cepel:
+  cz: Ohnivá čepel
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - druid
+  srd: flame-blade
+ochrana-pred-jedem:
+  cz: Ochrana před Jedem
+  stupen: 2
+  skola: abj
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  - cleric
+  - paladin
+  srd: protection-from-poison
+paprsek-slabosti:
+  cz: Paprsek slabosti
+  stupen: 2
+  skola: nec
+  ritual: false
+  povolani:
+  - warlock
+  - wizard
+  srd: ray-of-enfeeblement
+pavouci-splh:
+  cz: Pavoučí šplh
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: spider-climb
+pavucina:
+  cz: Pavučina
+  stupen: 2
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: web
+planouci-koule:
+  cz: Planoucí koule
+  stupen: 2
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  - wizard
+  srd: flaming-sphere
+podpora:
+  cz: Podpora
+  stupen: 2
+  skola: abj
+  ritual: false
+  povolani:
+  - cleric
+  - paladin
+  srd: aid
+poryv-vetru:
+  cz: Poryv větru
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: gust-of-wind
+projdi-beze-stop:
+  cz: Projdi beze stop
+  stupen: 2
+  skola: abj
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  srd: pass-without-trace
+predvidani:
+  cz: Předvídání
+  stupen: 2
+  skola: div
+  ritual: true
+  povolani:
+  - cleric
+  srd: augury
+rozmazani:
+  cz: Rozmazání
+  stupen: 2
+  skola: ill
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: blur
+rozpal-kov:
+  cz: Rozpal kov
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  srd: heat-metal
+roztristeni:
+  cz: Roztříštění
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: shatter
+sezehujici-paprsek:
+  cz: Sežehující paprsek
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: scorching-ray
+slepota-nebo-hluchota:
+  cz: Slepota nebo hluchota
+  stupen: 2
+  skola: nec
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - cleric
+  - wizard
+  srd: blindness-deafness
+spatri-neviditelne:
+  cz: Spatři neviditelné
+  stupen: 2
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: see-invisibility
+strazne-pouto:
+  cz: Strážné pouto
+  stupen: 2
+  skola: abj
+  ritual: false
+  povolani:
+  - cleric
+  srd: warding-bond
+sugesce:
+  cz: Sugesce
+  stupen: 2
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: suggestion
+tajemna-magicka-aura:
+  cz: Tajemná magická aura
+  stupen: 2
+  skola: ill
+  ritual: false
+  povolani:
+  - wizard
+  srd: arcanists-magic-aura
+ticho:
+  cz: Ticho
+  stupen: 2
+  skola: ill
+  ritual: true
+  povolani:
+  - bard
+  - ranger
+  - cleric
+  srd: silence
+tma:
+  cz: Tma
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: darkness
+trik-s-lanem:
+  cz: Trik s lanem
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - wizard
+  srd: rope-trick
+trny:
+  cz: Trny
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  srd: spike-growth
+uklidni-emoce:
+  cz: Uklidni emoce
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  srd: calm-emotions
+vecny-plamen:
+  cz: Věčný plamen
+  stupen: 2
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  - wizard
+  srd: continual-flame
+videni-ve-tme:
+  cz: Vidění ve tmě
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - ranger
+  - wizard
+  srd: darkvision
+zaklep:
+  cz: Zaklep
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: knock
+zlepsi-vlastnost:
+  cz: Zlepši Vlastnost
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - druid
+  - cleric
+  srd: enhance-ability
+zmen-svuj-tvar:
+  cz: Změň svůj tvar
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: alter-self
+znehybni-osobu:
+  cz: Znehybni osobu
+  stupen: 2
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - druid
+  - cleric
+  - wizard
+  srd: hold-person
+zona-pravdy:
+  cz: Zóna pravdy
+  stupen: 2
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  - paladin
+  srd: zone-of-truth
+zrcadlovy-obraz:
+  cz: Zrcadlový obraz
+  stupen: 2
+  skola: ill
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: mirror-image
+zvetseni-nebo-zmenseni:
+  cz: Zvětšení nebo zmenšení
+  stupen: 2
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: enlarge-reduce
+zvireci-posel:
+  cz: Zvířecí posel
+  stupen: 2
+  skola: enc
+  ritual: true
+  povolani:
+  - bard
+  - druid
+  - ranger
+  srd: animal-messenger
+blesk:
+  cz: Blesk
+  stupen: 3
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: lightning-bolt
+denni-svetlo:
+  cz: Denní světlo
+  stupen: 3
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - ranger
+  - cleric
+  - paladin
+  srd: daylight
+hromadne-lecive-slovo:
+  cz: Hromadné léčivé slovo
+  stupen: 3
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: mass-healing-word
+hypnoticky-vzor:
+  cz: Hypnotický vzor
+  stupen: 3
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: hypnotic-pattern
+chuze-po-vode:
+  cz: Chůze po vodě
+  stupen: 3
+  skola: trs
+  ritual: true
+  povolani:
+  - sorcerer
+  - druid
+  - ranger
+  - cleric
+  srd: water-walk
+jasnozrivost:
+  cz: Jasnozřivost
+  stupen: 3
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - cleric
+  - wizard
+  srd: clairvoyance
+jazyky:
+  cz: Jazyky
+  stupen: 3
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - cleric
+  - wizard
+  srd: tongues
+let:
+  cz: Leť
+  stupen: 3
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: fly
+magicky-kruh:
+  cz: Magický kruh
+  stupen: 3
+  skola: abj
+  ritual: false
+  povolani:
+  - warlock
+  - cleric
+  - wizard
+  - paladin
+  srd: magic-circle
+majak-nadeje:
+  cz: Maják naděje
+  stupen: 3
+  skola: abj
+  ritual: false
+  povolani:
+  - cleric
+  srd: beacon-of-hope
+mihotani:
+  cz: Mihotání
+  stupen: 3
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: blink
+mluv-s-mrtvymi:
+  cz: Mluv s mrtvými
+  stupen: 3
+  skola: nec
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  srd: speak-with-dead
+mluv-s-rostlinami:
+  cz: Mluv s rostlinami
+  stupen: 3
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - ranger
+  srd: speak-with-plants
+mlzna-podoba:
+  cz: Mlžná podoba
+  stupen: 3
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: gaseous-form
+nezjistitelnost:
+  cz: Nezjistitelnost
+  stupen: 3
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - ranger
+  - wizard
+  srd: nondetection
+obrozeni:
+  cz: Obrození
+  stupen: 3
+  skola: nec
+  ritual: false
+  povolani:
+  - cleric
+  - paladin
+  srd: revivify
+ohniva-koule:
+  cz: Ohnivá koule
+  stupen: 3
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: fireball
+ochrana-pred-energii:
+  cz: Ochrana před energií
+  stupen: 3
+  skola: abj
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - ranger
+  - cleric
+  - wizard
+  srd: protection-from-energy
+pachnouci-oblak:
+  cz: Páchnoucí oblak
+  stupen: 3
+  skola: con
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: stinking-cloud
+poselstvi:
+  cz: Poselství
+  stupen: 3
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  - wizard
+  srd: sending
+protikouzlo:
+  cz: Protikouzlo
+  stupen: 3
+  skola: abj
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: counterspell
+pristresek:
+  cz: Přístřešek
+  stupen: 3
+  skola: evo
+  ritual: true
+  povolani:
+  - bard
+  - wizard
+  srd: tiny-hut
+prizracni-strazci:
+  cz: Přízrační strážci
+  stupen: 3
+  skola: con
+  ritual: false
+  povolani:
+  - cleric
+  srd: spirit-guardians
+prizracny-or:
+  cz: Přízračný oř
+  stupen: 3
+  skola: ill
+  ritual: true
+  povolani:
+  - wizard
+  srd: phantom-steed
+rozptyl-magii:
+  cz: Rozptyl magii
+  stupen: 3
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - druid
+  - cleric
+  - wizard
+  - paladin
+  srd: dispel-magic
+rust-rostlin:
+  cz: Růst rostlin
+  stupen: 3
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - ranger
+  srd: plant-growth
+rychlost:
+  cz: Rychlost
+  stupen: 3
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: haste
+sejmi-kletbu:
+  cz: Sejmi Kletbu
+  stupen: 3
+  skola: abj
+  ritual: false
+  povolani:
+  - warlock
+  - cleric
+  - wizard
+  - paladin
+  srd: remove-curse
+slidive-oko:
+  cz: Slídivé oko
+  stupen: 3
+  skola: con
+  ritual: false
+  povolani:
+  - warlock
+  srd: null
+splyn-s-kamenem:
+  cz: Splyň s kamenem
+  stupen: 3
+  skola: trs
+  ritual: true
+  povolani:
+  - druid
+  - cleric
+  srd: meld-into-stone
+strach:
+  cz: Strach
+  stupen: 3
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: fear
+strazny-znak:
+  cz: Strážný znak
+  stupen: 3
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  - wizard
+  srd: glyph-of-warding
+stvor-jidlo-a-vodu:
+  cz: Stvoř jídlo a vodu
+  stupen: 3
+  skola: con
+  ritual: false
+  povolani:
+  - cleric
+  - paladin
+  srd: create-food-and-water
+stvor-nemrtveho:
+  cz: Stvoř Nemrtvého
+  stupen: 3
+  skola: nec
+  ritual: false
+  povolani:
+  - cleric
+  - wizard
+  srd: animate-dead
+svolej-blesky:
+  cz: Svolej blesky
+  stupen: 3
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  srd: call-lightning
+upiri-dotyk:
+  cz: Upíří dotyk
+  stupen: 3
+  skola: nec
+  ritual: false
+  povolani:
+  - warlock
+  - wizard
+  srd: vampiric-touch
+uvrhni-kletbu:
+  cz: Uvrhni Kletbu
+  stupen: 3
+  skola: nec
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  - wizard
+  srd: bestow-curse
+velky-obraz:
+  cz: Velký obraz
+  stupen: 3
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: major-image
+vetrna-zed:
+  cz: Větrná zeď
+  stupen: 3
+  skola: evo
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  srd: wind-wall
+vodni-dech:
+  cz: Vodní dech
+  stupen: 3
+  skola: trs
+  ritual: true
+  povolani:
+  - sorcerer
+  - druid
+  - ranger
+  - wizard
+  srd: water-breathing
+vyvolej-zvirata:
+  cz: Vyvolej zvířata
+  stupen: 3
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  srd: conjure-animals
+zkriveni-prostoru:
+  cz: Zkřivení prostoru
+  stupen: 3
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: null
+zmrzly-dest:
+  cz: Zmrzlý déšť
+  stupen: 3
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: sleet-storm
+zpomaleni:
+  cz: Zpomalení
+  stupen: 3
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: slow
+cerna-chapadla:
+  cz: Černá chapadla
+  stupen: 4
+  skola: con
+  ritual: false
+  povolani:
+  - wizard
+  srd: black-tentacles
+dimenzionalni-dvere:
+  cz: Dimenzionální dveře
+  stupen: 4
+  skola: con
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: dimension-door
+fantom:
+  cz: Fantóm
+  stupen: 4
+  skola: ill
+  ritual: false
+  povolani:
+  - wizard
+  srd: phantasmal-killer
+hniloba:
+  cz: Hniloba
+  stupen: 4
+  skola: nec
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - druid
+  - wizard
+  srd: blight
+kamenna-kuze:
+  cz: Kamenná kůže
+  stupen: 4
+  skola: abj
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - ranger
+  - wizard
+  srd: stoneskin
+klamny-prostor:
+  cz: Klamný prostor
+  stupen: 4
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - warlock
+  - druid
+  - wizard
+  srd: hallucinatory-terrain
+koreny-omotani:
+  cz: Kořeny omotání
+  stupen: 4
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  srd: null
+ledova-boure:
+  cz: Ledová bouře
+  stupen: 4
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: ice-storm
+mocna-neviditelnost:
+  cz: Mocná neviditelnost
+  stupen: 4
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: greater-invisibility
+mysticke-oko:
+  cz: Mystické oko
+  stupen: 4
+  skola: div
+  ritual: false
+  povolani:
+  - wizard
+  srd: arcane-eye
+najdi-tvora:
+  cz: Najdi tvora
+  stupen: 4
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - ranger
+  - cleric
+  - wizard
+  - paladin
+  srd: locate-creature
+nepoddajna-koule:
+  cz: Nepoddajná koule
+  stupen: 4
+  skola: evo
+  ritual: false
+  povolani:
+  - wizard
+  srd: resilient-sphere
+nutkani:
+  cz: Nutkání
+  stupen: 4
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  srd: compulsion
+obri-hmyz:
+  cz: Obří hmyz
+  stupen: 4
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  srd: giant-insect
+ohniva-zed:
+  cz: Ohnivá zeď
+  stupen: 4
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: wall-of-fire
+ohnivy-stit:
+  cz: Ohnivý štít
+  stupen: 4
+  skola: evo
+  ritual: false
+  povolani:
+  - wizard
+  srd: fire-shield
+ovladni-vodu:
+  cz: Ovládni vodu
+  stupen: 4
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  - wizard
+  srd: control-water
+podrob-zvire:
+  cz: Podrob Zvíře
+  stupen: 4
+  skola: enc
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  srd: dominate-beast
+promen-tvora:
+  cz: Proměň tvora
+  stupen: 4
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - druid
+  - wizard
+  srd: polymorph
+soukroma-svatyne:
+  cz: Soukromá svatyně
+  stupen: 4
+  skola: abj
+  ritual: false
+  povolani:
+  - wizard
+  srd: private-sanctum
+strazce-viry:
+  cz: Strážce víry
+  stupen: 4
+  skola: con
+  ritual: false
+  povolani:
+  - cleric
+  srd: guardian-of-faith
+tajna-truhla:
+  cz: Tajná truhla
+  stupen: 4
+  skola: con
+  ritual: false
+  povolani:
+  - wizard
+  srd: secret-chest
+tvaruj-kamen:
+  cz: Tvaruj kámen
+  stupen: 4
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  - wizard
+  srd: stone-shape
+verny-pes:
+  cz: Věrný pes
+  stupen: 4
+  skola: con
+  ritual: false
+  povolani:
+  - wizard
+  srd: faithful-hound
+vesteni:
+  cz: Věštění
+  stupen: 4
+  skola: div
+  ritual: true
+  povolani:
+  - cleric
+  srd: divination
+volnost:
+  cz: Volnost
+  stupen: 4
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - ranger
+  - cleric
+  srd: freedom-of-movement
+vypuzeni:
+  cz: Vypuzení
+  stupen: 4
+  skola: abj
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - cleric
+  - wizard
+  - paladin
+  srd: banishment
+vyvolej-lesni-bytosti:
+  cz: Vyvolej lesní bytosti
+  stupen: 4
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  srd: conjure-woodland-beings
+vyvolej-nizsi-elementaly:
+  cz: Vyvolej nižší Elementály
+  stupen: 4
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  - wizard
+  srd: conjure-minor-elementals
+zhotov:
+  cz: Zhotov
+  stupen: 4
+  skola: trs
+  ritual: false
+  povolani:
+  - wizard
+  srd: fabricate
+zmatek:
+  cz: Zmatek
+  stupen: 4
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - druid
+  - wizard
+  srd: confusion
+znameni-proti-smrti:
+  cz: Znamení proti smrti
+  stupen: 4
+  skola: abj
+  ritual: false
+  povolani:
+  - cleric
+  - paladin
+  srd: death-ward
+dvojnik:
+  cz: Dvojník
+  stupen: 5
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: mislead
+hmyzi-zhouba:
+  cz: Hmyzí zhouba
+  stupen: 5
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - cleric
+  srd: insect-plague
+hromadne-prestrojeni:
+  cz: Hromadné přestrojení
+  stupen: 5
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: seeming
+hromadne-zhojeni-zraneni:
+  cz: Hromadné zhojení zranění
+  stupen: 5
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - cleric
+  srd: mass-cure-wounds
+chuze-stromy:
+  cz: Chůze stromy
+  stupen: 5
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  - ranger
+  srd: tree-stride
+kamenna-zed:
+  cz: Kamenná zeď
+  stupen: 5
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: wall-of-stone
+kuzel-mrazu:
+  cz: Kužel mrazu
+  stupen: 5
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: cone-of-cold
+mluva-sfer:
+  cz: Mluva sfér
+  stupen: 5
+  skola: div
+  ritual: true
+  povolani:
+  - warlock
+  - wizard
+  srd: contact-other-plane
+mocne-navraceni:
+  cz: Mocné navrácení
+  stupen: 5
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - cleric
+  srd: greater-restoration
+mysticka-ruka:
+  cz: Mystická ruka
+  stupen: 5
+  skola: evo
+  ritual: false
+  povolani:
+  - wizard
+  srd: arcane-hand
+nakaza:
+  cz: Nákaza
+  stupen: 5
+  skola: nec
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  srd: contagion
+oblak-smrti:
+  cz: Oblak smrti
+  stupen: 5
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: cloudkill
+ozivle-predmety:
+  cz: Oživlé předměty
+  stupen: 5
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: animate-objects
+plamenny-uder:
+  cz: Plamenný úder
+  stupen: 5
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: flame-strike
+podrob-osobu:
+  cz: Podrob osobu
+  stupen: 5
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: dominate-person
+poslys-myty:
+  cz: Poslyš mýty
+  stupen: 5
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  - wizard
+  srd: legend-lore
+posvatna-puda:
+  cz: Posvátná půda
+  stupen: 5
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: hallow
+probuzeni:
+  cz: Probuzení
+  stupen: 5
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  srd: awaken
+projdi-zdi:
+  cz: Projdi zdí
+  stupen: 5
+  skola: trs
+  ritual: false
+  povolani:
+  - wizard
+  srd: passwall
+reinkarnace:
+  cz: Reinkarnace
+  stupen: 5
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  srd: reincarnate
+rozptyl-zlo-a-dobro:
+  cz: Rozptyl zlo a dobro
+  stupen: 5
+  skola: abj
+  ritual: false
+  povolani:
+  - cleric
+  - paladin
+  srd: dispel-evil-and-good
+sen:
+  cz: Sen
+  stupen: 5
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - warlock
+  - wizard
+  srd: dream
+sfericka-vazba:
+  cz: Sférická vazba
+  stupen: 5
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - cleric
+  - wizard
+  srd: planar-binding
+sledovani:
+  cz: Sledování
+  stupen: 5
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - warlock
+  - druid
+  - cleric
+  - wizard
+  srd: scrying
+spojeni:
+  cz: Spojení
+  stupen: 5
+  skola: div
+  ritual: true
+  povolani:
+  - cleric
+  srd: commune
+spojeni-s-prirodou:
+  cz: Spojení s přírodou
+  stupen: 5
+  skola: div
+  ritual: true
+  povolani:
+  - druid
+  - ranger
+  srd: commune-with-nature
+stit-proti-zivym:
+  cz: Štít proti živým
+  stupen: 5
+  skola: abj
+  ritual: false
+  povolani:
+  - druid
+  srd: antilife-shell
+telekineze:
+  cz: Telekineze
+  stupen: 5
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: telekinesis
+telepaticke-pouto:
+  cz: Telepatické pouto
+  stupen: 5
+  skola: div
+  ritual: true
+  povolani:
+  - wizard
+  srd: telepathic-bond
+teleportacni-kruh:
+  cz: Teleportační kruh
+  stupen: 5
+  skola: con
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: teleportation-circle
+tvorba:
+  cz: Tvorba
+  stupen: 5
+  skola: ill
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: creation
+ukol:
+  cz: Úkol
+  stupen: 5
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - cleric
+  - wizard
+  - paladin
+  srd: geas
+vyvolej-elementala:
+  cz: Vyvolej Elementála
+  stupen: 5
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  - wizard
+  srd: conjure-elemental
+vzkriseni:
+  cz: Vzkříšení
+  stupen: 5
+  skola: nec
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  - paladin
+  srd: raise-dead
+zed-sily:
+  cz: Zeď síly
+  stupen: 5
+  skola: evo
+  ritual: false
+  povolani:
+  - wizard
+  srd: wall-of-force
+zmen-pamet:
+  cz: Změň paměť
+  stupen: 5
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: modify-memory
+znehybni-nestvuru:
+  cz: Znehybni nestvůru
+  stupen: 5
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: hold-monster
+bariera-cepeli:
+  cz: Bariéra čepelí
+  stupen: 6
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: blade-barrier
+hlidej-a-strez:
+  cz: Hlídej a střež
+  stupen: 6
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: guards-and-wards
+hromadna-sugesce:
+  cz: Hromadná sugesce
+  stupen: 6
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: mass-suggestion
+koule-nezranitelnosti:
+  cz: Koule nezranitelnosti
+  stupen: 6
+  skola: abj
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: globe-of-invulnerability
+kruh-smrti:
+  cz: Kruh smrti
+  stupen: 6
+  skola: nec
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: circle-of-death
+ledova-zed:
+  cz: Ledová zeď
+  stupen: 6
+  skola: evo
+  ritual: false
+  povolani:
+  - wizard
+  srd: wall-of-ice
+mraziva-koule:
+  cz: Mrazivá koule
+  stupen: 6
+  skola: evo
+  ritual: false
+  povolani:
+  - wizard
+  srd: freezing-sphere
+najdi-cestu:
+  cz: Najdi cestu
+  stupen: 6
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - cleric
+  srd: find-the-path
+naplanovana-iluze:
+  cz: Naplánovaná iluze
+  stupen: 6
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: programmed-illusion
+neodolatelny-tanec:
+  cz: Neodolatelný tanec
+  stupen: 6
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: irresistible-dance
+okamzite-privolani:
+  cz: Okamžité přivolání
+  stupen: 6
+  skola: con
+  ritual: true
+  povolani:
+  - wizard
+  srd: instant-summons
+podminecnost:
+  cz: Podmínečnost
+  stupen: 6
+  skola: evo
+  ritual: false
+  povolani:
+  - wizard
+  srd: contingency
+pohni-zemi:
+  cz: Pohni zemí
+  stupen: 6
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: move-earth
+pravdive-videni:
+  cz: Pravdivé vidění
+  stupen: 6
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - cleric
+  - wizard
+  srd: true-seeing
+presun-rostlinami:
+  cz: Přesun rostlinami
+  stupen: 6
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  srd: transport-via-plants
+rozklad:
+  cz: Rozklad
+  stupen: 6
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: disintegrate
+rozvetveny-blesk:
+  cz: Rozvětvený blesk
+  stupen: 6
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: chain-lightning
+sfericky-spojenec:
+  cz: Sférický spojenec
+  stupen: 6
+  skola: con
+  ritual: false
+  povolani:
+  - cleric
+  srd: planar-ally
+schranka-zivota:
+  cz: Schránka života
+  stupen: 6
+  skola: nec
+  ritual: false
+  povolani:
+  - wizard
+  srd: magic-jar
+slovo-navratu:
+  cz: Slovo návratu
+  stupen: 6
+  skola: con
+  ritual: false
+  povolani:
+  - cleric
+  srd: word-of-recall
+slunecni-paprsek:
+  cz: Sluneční paprsek
+  stupen: 6
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: sunbeam
+stvor-nemrtve:
+  cz: Stvoř Nemrtvé
+  stupen: 6
+  skola: nec
+  ritual: false
+  povolani:
+  - warlock
+  - cleric
+  - wizard
+  srd: create-undead
+trnova-zed:
+  cz: Trnová zeď
+  stupen: 6
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  srd: wall-of-thorns
+ubrousku-prostri-se:
+  cz: Ubrousku, prostři se!
+  stupen: 6
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  srd: heroes-feast
+uzdrav:
+  cz: Uzdrav
+  stupen: 6
+  skola: evo
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  srd: heal
+vetrna-chuze:
+  cz: Větrná chůze
+  stupen: 6
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  srd: wind-walk
+vyvolej-vilu:
+  cz: Vyvolej Vílu
+  stupen: 6
+  skola: con
+  ritual: false
+  povolani:
+  - warlock
+  - druid
+  srd: conjure-fey
+zakaz:
+  cz: Zákaz
+  stupen: 6
+  skola: abj
+  ritual: true
+  povolani:
+  - cleric
+  srd: forbiddance
+zkameneni:
+  cz: Zkamenění
+  stupen: 6
+  skola: trs
+  ritual: false
+  povolani:
+  - warlock
+  - wizard
+  srd: flesh-to-stone
+zle-oko:
+  cz: Zlé oko
+  stupen: 6
+  skola: nec
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: eyebite
+zran:
+  cz: Zraň
+  stupen: 6
+  skola: nec
+  ritual: false
+  povolani:
+  - cleric
+  srd: harm
+bozske-slovo:
+  cz: Božské slovo
+  stupen: 7
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: divine-word
+casovana-ohniva-koule:
+  cz: Časovaná ohnivá koule
+  stupen: 7
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: delayed-blast-fireball
+etericnost:
+  cz: Éteričnost
+  stupen: 7
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - cleric
+  - wizard
+  srd: etherealness
+fata-morgana:
+  cz: Fata morgána
+  stupen: 7
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - wizard
+  srd: mirage-arcane
+mysticka-cepel:
+  cz: Mystická čepel
+  stupen: 7
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: arcane-sword
+napodobenina:
+  cz: Napodobenina
+  stupen: 7
+  skola: ill
+  ritual: false
+  povolani:
+  - wizard
+  srd: simulacrum
+odpocinkova-hymna:
+  cz: Odpočinková hymna
+  stupen: 7
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  srd: null
+ohniva-boure:
+  cz: Ohnivá bouře
+  stupen: 7
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - cleric
+  srd: fire-storm
+otoc-gravitaci:
+  cz: Otoč gravitaci
+  stupen: 7
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: reverse-gravity
+prst-smrti:
+  cz: Prst smrti
+  stupen: 7
+  skola: nec
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - wizard
+  srd: finger-of-death
+presun-sferami:
+  cz: Přesun Sférami
+  stupen: 7
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - warlock
+  - druid
+  - cleric
+  - wizard
+  srd: plane-shift
+regenerace:
+  cz: Regenerace
+  stupen: 7
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - druid
+  - cleric
+  srd: regenerate
+silova-klec:
+  cz: Silová klec
+  stupen: 7
+  skola: evo
+  ritual: false
+  povolani:
+  - bard
+  - warlock
+  - wizard
+  srd: forcecage
+spektralni-sprska:
+  cz: Spektrální sprška
+  stupen: 7
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: prismatic-spray
+symbol:
+  cz: Symbol
+  stupen: 7
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  - wizard
+  srd: symbol
+teleport:
+  cz: Teleport
+  stupen: 7
+  skola: con
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - wizard
+  srd: teleport
+velkolepy-dum:
+  cz: Velkolepý dům
+  stupen: 7
+  skola: con
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: magnificent-mansion
+vlastni-obraz:
+  cz: Vlastní obraz
+  stupen: 7
+  skola: ill
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: project-image
+vyvolej-nebestana:
+  cz: Vyvolej Nebešťana
+  stupen: 7
+  skola: con
+  ritual: false
+  povolani:
+  - cleric
+  srd: conjure-celestial
+zahaleni:
+  cz: Zahalení
+  stupen: 7
+  skola: trs
+  ritual: false
+  povolani:
+  - wizard
+  srd: sequester
+zmrtvychvstani:
+  cz: Zmrtvýchvstání
+  stupen: 7
+  skola: nec
+  ritual: false
+  povolani:
+  - bard
+  - cleric
+  srd: resurrection
+antimagicke-pole:
+  cz: Antimagické pole
+  stupen: 8
+  skola: abj
+  ritual: false
+  povolani:
+  - cleric
+  - wizard
+  srd: antimagic-field
+antipatie-nebo-sympatie:
+  cz: Antipatie nebo sympatie
+  stupen: 8
+  skola: enc
+  ritual: false
+  povolani:
+  - druid
+  - wizard
+  srd: antipathy-sympathy
+bludiste:
+  cz: Bludiště
+  stupen: 8
+  skola: con
+  ritual: false
+  povolani:
+  - wizard
+  srd: maze
+horici-oblak:
+  cz: Hořící oblak
+  stupen: 8
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: incendiary-cloud
+klon:
+  cz: Klon
+  stupen: 8
+  skola: nec
+  ritual: false
+  povolani:
+  - wizard
+  srd: clone
+ovladni-pocasi:
+  cz: Ovládni počasí
+  stupen: 8
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  - wizard
+  srd: control-weather
+podrob-nestvuru:
+  cz: Podrob nestvůru
+  stupen: 8
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: dominate-monster
+polosfera:
+  cz: Polosféra
+  stupen: 8
+  skola: con
+  ritual: false
+  povolani:
+  - warlock
+  - wizard
+  srd: demiplane
+slabomyslnost:
+  cz: Slabomyslnost
+  stupen: 8
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - warlock
+  - druid
+  - wizard
+  srd: befuddlement
+slovo-moci-„ochrom:
+  cz: Slovo moci „ochrom"
+  stupen: 8
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: power-word-stun
+slunecni-zablesk:
+  cz: Sluneční záblesk
+  stupen: 8
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - wizard
+  srd: sunburst
+svata-aura:
+  cz: Svatá aura
+  stupen: 8
+  skola: abj
+  ritual: false
+  povolani:
+  - cleric
+  srd: holy-aura
+ukryj-mysl:
+  cz: Ukryj mysl
+  stupen: 8
+  skola: abj
+  ritual: false
+  povolani:
+  - bard
+  - wizard
+  srd: mind-blank
+vyrecnost:
+  cz: Výřečnost
+  stupen: 8
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - warlock
+  srd: glibness
+zemetreseni:
+  cz: Zemětřesení
+  stupen: 8
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - druid
+  - cleric
+  srd: earthquake
+zvireci-podoba:
+  cz: Zvířecí podoba
+  stupen: 8
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  srd: animal-shapes
+astralni-projekce:
+  cz: Astrální projekce
+  stupen: 9
+  skola: nec
+  ritual: false
+  povolani:
+  - warlock
+  - cleric
+  - wizard
+  srd: astral-projection
+boure-odplaty:
+  cz: Bouře odplaty
+  stupen: 9
+  skola: con
+  ritual: false
+  povolani:
+  - druid
+  srd: storm-of-vengeance
+brana:
+  cz: Brána
+  stupen: 9
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - cleric
+  - wizard
+  srd: gate
+hromadne-uzdraveni:
+  cz: Hromadné uzdravení
+  stupen: 9
+  skola: evo
+  ritual: false
+  povolani:
+  - cleric
+  srd: mass-heal
+nemesis:
+  cz: Nemesis
+  stupen: 9
+  skola: ill
+  ritual: false
+  povolani:
+  - wizard
+  srd: weird
+prani:
+  cz: Přání
+  stupen: 9
+  skola: con
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: wish
+predtucha:
+  cz: Předtucha
+  stupen: 9
+  skola: div
+  ritual: false
+  povolani:
+  - bard
+  - warlock
+  - druid
+  - wizard
+  srd: foresight
+roj-meteoritu:
+  cz: Roj meteoritů
+  stupen: 9
+  skola: evo
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: meteor-swarm
+skutecna-promena:
+  cz: Skutečná proměna
+  stupen: 9
+  skola: trs
+  ritual: false
+  povolani:
+  - bard
+  - warlock
+  - wizard
+  srd: true-polymorph
+slovo-moci-„zabij:
+  cz: Slovo moci „zabij"
+  stupen: 9
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  - sorcerer
+  - warlock
+  - wizard
+  srd: power-word-kill
+slovo-moci-„zij:
+  cz: Slovo moci „žij"
+  stupen: 9
+  skola: enc
+  ritual: false
+  povolani:
+  - bard
+  srd: null
+spektralni-zed:
+  cz: Spektrální zeď
+  stupen: 9
+  skola: abj
+  ritual: false
+  povolani:
+  - wizard
+  srd: prismatic-wall
+uvezneni:
+  cz: Uvěznění
+  stupen: 9
+  skola: abj
+  ritual: false
+  povolani:
+  - warlock
+  - wizard
+  srd: imprisonment
+zastav-cas:
+  cz: Zastav čas
+  stupen: 9
+  skola: trs
+  ritual: false
+  povolani:
+  - sorcerer
+  - wizard
+  srd: time-stop
+zmena-podoby:
+  cz: Změna podoby
+  stupen: 9
+  skola: trs
+  ritual: false
+  povolani:
+  - druid
+  - wizard
+  srd: shapechange
+znovuzrozeni:
+  cz: Znovuzrození
+  stupen: 9
+  skola: nec
+  ritual: false
+  povolani:
+  - druid
+  - cleric
+  srd: true-resurrection

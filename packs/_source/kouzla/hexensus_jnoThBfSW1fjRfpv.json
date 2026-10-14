@@ -1,0 +1,324 @@
+{
+  "_id": "jnoThBfSW1fjRfpv",
+  "name": "Hexenšus",
+  "type": "spell",
+  "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [
+    {
+      "_id": "swcU715YAMbE3LTH",
+      "name": "Hexenšus",
+      "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.dex.check.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "value": "-1",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.walk",
+            "value": "0.5",
+            "type": "multiply",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "value": "1",
+            "type": "custom",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end,saveAbility=con,saveDC=@attributes.spell.dc,label=Hexenšus",
+            "type": "custom",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Hexenšus</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_key": "!items.effects!jnoThBfSW1fjRfpv.swcU715YAMbE3LTH"
+    }
+  ],
+  "system": {
+    "identifier": "hexensus",
+    "level": 1,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "hadrová panenka",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "12",
+      "units": "sah",
+      "special": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "",
+        "size": "",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "9tdsPC6zfchj7D88": {
+        "_id": "9tdsPC6zfchj7D88",
+        "type": "save",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "swcU715YAMbE3LTH",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      },
+      "kkNMVy5oGUd78AsE": {
+        "_id": "kkNMVy5oGUd78AsE",
+        "type": "save",
+        "img": "",
+        "sort": 100000,
+        "name": "Záchrana na konci tahu",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Cíl skolí ostrá bolest zad – je pomalejší, nemůže utíkat a má nevýhodu na Sílu a Obratnost; na konci každého tahu se může zkusit vyprostit.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Odolnost proti SO kouzla; efekt: Hexenšus.</li><li><strong>Záchrana na konci tahu:</strong> Záchranný hod na Odolnost proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hexensus\" target=\"_blank\">SRD Jeskyní a draků – Hexenšus</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "hexensus",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hexensus"
+    }
+  },
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!jnoThBfSW1fjRfpv"
+}

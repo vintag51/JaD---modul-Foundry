@@ -1,0 +1,149 @@
+{
+  "_id": "AuG7hCBcHxaCLXtI",
+  "name": "Bylinkář",
+  "type": "background",
+  "img": "icons/sundries/documents/document-sealed-brown-red.webp",
+  "folder": "7GrKTBBtDvTixn6S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Znáš byliny, z nichž se dělají léky i jedy, a okolí si zvyklo chodit za tebou pro mast či lék.</p><p><strong>Schopnost:</strong> Ingredience</p><p><strong>Vybavení:</strong> Bylinkářská a travičská souprava, herbář, obyčejné oblečení, 10 zl.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#bylinkar\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "advancement": {
+      "AyBJCCpfW7c2xLW1": {
+        "_id": "AyBJCCpfW7c2xLW1",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:med",
+            "skills:nat",
+            "tool:herb",
+            "tool:pois"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "XUXtD2vWgZJXV2va": {
+        "_id": "XUXtD2vWgZJXV2va",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Schopnost zázemí",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.zazemi.Item.C4BdX70nFjHZTCD7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "_id": "EjP2mubSnot9lSHn",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "8ewTTmuXWQ91pG99",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.FjiDbuYxXVCONEqh",
+        "count": null
+      },
+      {
+        "_id": "euTE8vLd5XXOGwxb",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.pH0kBxDAjv1Y5gZz",
+        "count": null
+      },
+      {
+        "_id": "zS0ORk13XtM091q6",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 400000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.YxBlNQUaslgT0RAK",
+        "count": null
+      },
+      {
+        "_id": "8FySFRJ3bIZ999Hh",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 500000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.PDIzddht2dqYN1VY",
+        "count": null
+      },
+      {
+        "_id": "DbPBi4cMKhZrvffT",
+        "group": "EjP2mubSnot9lSHn",
+        "sort": 600000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 10
+      }
+    ],
+    "identifier": "bylinkar"
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "zazemi": "bylinkar"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!AuG7hCBcHxaCLXtI"
+}

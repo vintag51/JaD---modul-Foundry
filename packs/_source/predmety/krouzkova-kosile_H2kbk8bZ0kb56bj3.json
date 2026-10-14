@@ -1,0 +1,87 @@
+{
+  "_id": "H2kbk8bZ0kb56bj3",
+  "name": "Kroužková košile",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-scale-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Střední zbroj</strong></p><p>Obranné číslo: 13 + Oprava obratnosti (max +2)</p><p>Zabírá 2 Řádky vybavení</p><p>Drátěná košile s prošívanicí, chrání trup od pasu nahoru.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/6-vybaveni.html#zbroje-a-stity\" target=\"_blank\">SRD Jeskyní a draků – Vybavení</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 20,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 13,
+      "dex": 2,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "type": {
+      "value": "medium",
+      "baseItem": "chainshirt"
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [],
+    "activities": {},
+    "attuned": false,
+    "identifier": "chain-shirt"
+  },
+  "effects": [],
+  "folder": "rxrA48Zwj0Qxq12N",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!H2kbk8bZ0kb56bj3"
+}

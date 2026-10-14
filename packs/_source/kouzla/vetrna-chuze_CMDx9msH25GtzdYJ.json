@@ -1,0 +1,271 @@
+{
+  "_id": "CMDx9msH25GtzdYJ",
+  "name": "Větrná chůze",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Ty a spolucestující se změníte v oblaka a rychle cestujete.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Větrná chůze.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vetrna-chuze\" target=\"_blank\">SRD Jeskyní a draků – Větrná chůze</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "8",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "11",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "6",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 6,
+    "school": "trs",
+    "materials": {
+      "value": "oheň a svěcená voda",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Ci7AbltSNoXhSBWy",
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "wind-walk"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "vetrna-chuze",
+      "srd": "8PJAsHmbu6UgDHC0",
+      "nazevEn": "Wind Walk",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vetrna-chuze"
+    }
+  },
+  "img": "icons/magic/air/wind-tornado-funnel-gray.webp",
+  "effects": [
+    {
+      "name": "Větrná chůze",
+      "img": "icons/magic/air/wind-tornado-funnel-gray.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.CMDx9msH25GtzdYJ",
+      "transfer": false,
+      "_id": "Ci7AbltSNoXhSBWy",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.fly",
+            "type": "upgrade",
+            "value": 300,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.walk",
+            "type": "override",
+            "value": 0,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.swim",
+            "type": "override",
+            "value": 0,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.climb",
+            "type": "override",
+            "value": 0,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.burrow",
+            "type": "override",
+            "value": 0,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "bludgeoning",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "piercing",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "slashing",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.bypasses",
+            "type": "add",
+            "value": "mgc",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 8,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Větrná chůze</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781440747893,
+        "modifiedTime": 1781440913228,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!CMDx9msH25GtzdYJ.Ci7AbltSNoXhSBWy"
+    }
+  ],
+  "folder": "q8T7G2snLfGf2EUI",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!CMDx9msH25GtzdYJ"
+}

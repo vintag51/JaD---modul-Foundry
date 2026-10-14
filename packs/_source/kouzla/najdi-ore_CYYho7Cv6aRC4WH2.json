@@ -1,0 +1,309 @@
+{
+  "_id": "CYYho7Cv6aRC4WH2",
+  "name": "Najdi oře",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Přivoláš věrného duchovního oře.</p><h3>Automatizace</h3><ul><li><strong>Přivolat oře:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Přivolaný oř.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#najdi-ore\" target=\"_blank\">SRD Jeskyní a draků – Najdi oře</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 10
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "space",
+        "choice": false,
+        "count": "",
+        "special": ""
+      },
+      "template": {
+        "units": "any",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "6",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "con",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "summon",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "bonuses": {
+          "ac": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": "",
+          "hd": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [
+          "celestial",
+          "fey",
+          "fiend"
+        ],
+        "match": {
+          "attacks": false,
+          "disposition": true,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "AjbDWduosqyViS2D",
+            "uuid": "Compendium.dnd5e.monsters.Actor.FQMFuzzSh73d0Nrd",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "5bNPkSBX9Nc043lQ",
+            "uuid": "Compendium.dnd5e.monsters.Actor.55PkbskG5iBZGrgR",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "3hWu8Ub25OiFqWhu",
+            "uuid": "Compendium.dnd5e.monsters.Actor.YTpL2c3NO4sOn2UA",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "qwzKyNaevY3tXRfu",
+            "uuid": "Compendium.dnd5e.monsters.Actor.PHO4J98zK2p4KNyc",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "DprNdxi3hb7lbrjw",
+            "uuid": "Compendium.dnd5e.monsters.Actor.T1xZTDCGuvMBSq8d",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Přivolat oře",
+        "img": "",
+        "appliedEffects": [],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "tempHP": "",
+        "effects": [
+          {
+            "_id": "QAbEeDGXCby1oGvV",
+            "level": {}
+          }
+        ]
+      }
+    },
+    "identifier": "find-steed"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "najdi-ore",
+      "srd": "5eh2HFbS13078Y3H",
+      "nazevEn": "Find Steed",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#najdi-ore"
+    }
+  },
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "effects": [
+    {
+      "name": "Přivolaný oř",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.CYYho7Cv6aRC4WH2",
+      "transfer": false,
+      "_id": "QAbEeDGXCby1oGvV",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.int.value",
+            "type": "upgrade",
+            "value": 6,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.languages.custom",
+            "type": "add",
+            "value": "Jeden jazyk, který zná jeho vyvolávač; telepaticky komunikuje s vyvolávačem;",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.languages.communication.telepathy.value",
+            "type": "upgrade",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.languages.communication.telepathy.units",
+            "type": "override",
+            "value": "mi",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Najdi oře</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781222524400,
+        "modifiedTime": 1781222978167,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!CYYho7Cv6aRC4WH2.QAbEeDGXCby1oGvV"
+    }
+  ],
+  "folder": "qeFyrqAp9wqNyjo6",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!CYYho7Cv6aRC4WH2"
+}

@@ -1,0 +1,81 @@
+{
+  "_id": "tKRPk0txnTU3Ebk8",
+  "name": "Mistr tajných řemesel",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "QOFMpiFzGUHJdGw2",
+  "sort": 6000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>S alchymistickou a bylinkářskou soupravou a jedním dalším nářadím máš Kvalifikaci.</p><p><em>Úroveň: 6.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#alchymista\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Alchymista 6",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "mistr-tajnych-remesel",
+    "advancement": {
+      "erVoSMsNUEYwC016": {
+        "_id": "erVoSMsNUEYwC016",
+        "type": "Trait",
+        "level": 0,
+        "title": "Mistr tajných řemesel",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "expertise",
+          "allowReplacements": false,
+          "grants": [
+            "tool:alchemist",
+            "tool:herb"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      }
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!tKRPk0txnTU3Ebk8"
+}

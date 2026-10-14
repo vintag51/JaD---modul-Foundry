@@ -1,0 +1,16 @@
+{
+  "name": "jeskyne-a-draci",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Jeskyně a draci – automatizovaná kouzla pro Foundry VTT (dnd5e)",
+  "type": "module",
+  "scripts": {
+    "generuj": "python3 tools/generuj.py --dnd5e ../dnd5e",
+    "build": "node tools/build.mjs",
+    "zip": "node tools/build.mjs && cd .. && zip -r jeskyne-a-draci/dist/jeskyne-a-draci.zip jeskyne-a-draci/module.json jeskyne-a-draci/README.md jeskyne-a-draci/LICENSE.md jeskyne-a-draci/scripts jeskyne-a-draci/styles jeskyne-a-draci/templates jeskyne-a-draci/lang jeskyne-a-draci/packs/kouzla jeskyne-a-draci/packs/seznamy-kouzel jeskyne-a-draci/packs/rasy jeskyne-a-draci/packs/povolani jeskyne-a-draci/packs/zazemi jeskyne-a-draci/packs/predmety jeskyne-a-draci/data/kompendium jeskyne-a-draci/assets -x '*/_source/*'"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": ">=1.1.0",
+    "handlebars": "^4.7.8"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "_id": "E0TT1UIr1qmyy3Ta",
+  "name": "Truhla elegance",
+  "type": "container",
+  "img": "icons/containers/chest/chest-elm-steel-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Běžný</em></p><p><em>Originální předmět JaD</em></p><p>Oděvy a zbroje z truhly vyjdeš čisté, urovnané (oděvy i vyžehlené) a jemně vonící levandulí.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#truhla-elegance\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 25,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "common",
+    "identified": true,
+    "capacity": {
+      "type": "weight",
+      "value": 300
+    },
+    "currency": {
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 0,
+      "pp": 0
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "attuned": false,
+    "identifier": "truhla-elegance",
+    "activities": {}
+  },
+  "effects": [],
+  "folder": "3wwT4hrd62GK9cNr",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "truhla-elegance"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!E0TT1UIr1qmyy3Ta"
+}

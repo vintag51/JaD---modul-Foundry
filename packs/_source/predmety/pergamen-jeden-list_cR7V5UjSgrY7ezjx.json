@@ -1,0 +1,63 @@
+{
+  "name": "Pergamen (jeden list)",
+  "type": "loot",
+  "img": "icons/sundries/scrolls/scroll-plain-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/6-vybaveni.html#balicky-vybaveni\" target=\"_blank\">SRD Jeskyní a draků – Vybavení</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 10,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "rarity": "",
+    "identified": true,
+    "container": "Z5ze3G2o8K1qiMSp",
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "properties": [],
+    "identifier": "parchment"
+  },
+  "effects": [],
+  "folder": "8PVX2jtLAg9AJ05j",
+  "flags": {
+    "jeskyne-a-draci": {
+      "radky": 0.05
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "cR7V5UjSgrY7ezjx",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cR7V5UjSgrY7ezjx"
+}

@@ -1,0 +1,301 @@
+{
+  "name": "Zapletení",
+  "type": "spell",
+  "img": "icons/magic/nature/root-vine-entangle-foot-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Rostliny v oblasti spoutají tvory, kteří neuspějí v Záchranném hodu; oblast je obtížný terén.</p><h3>Automatizace</h3><ul><li><strong>Hod na vyproštění z rostlin:</strong> Ověření vlastnosti.</li><li><strong>Seslat:</strong> Záchranný hod na Sílu proti SO kouzla; efekt: Zapletení.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zapleteni\" target=\"_blank\">SRD Jeskyní a draků – Zapletení</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "square",
+        "size": "4",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "18",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 1,
+    "school": "con",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "fO14IutGR3Hrepun",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": "str",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "rh7ciGbrgpnnZ3B2": {
+        "type": "check",
+        "name": "Hod na vyproštění z rostlin",
+        "_id": "rh7ciGbrgpnnZ3B2",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "spec",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "1",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "check": {
+          "associated": [],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "ability": "str"
+        }
+      }
+    },
+    "identifier": "entangle"
+  },
+  "effects": [
+    {
+      "name": "Zapletení",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.8sO5DkPBhKtpfXox",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": true,
+      "_id": "fO14IutGR3Hrepun",
+      "description": "<p>Účinek kouzla <em>Zapletení</em>. Podrobnosti v popisu kouzla.</p>",
+      "transfer": false,
+      "statuses": [
+        "restrained"
+      ],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "jeskyne-a-draci": {
+          "midiOverTime": true
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.0",
+        "createdTime": null,
+        "modifiedTime": 1772827930363,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "img": "icons/magic/nature/root-vine-entangle-foot-green.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "actionSave=roll,rollType=check,saveAbility=str,saveDC=@attributes.spell.dc,label=Zapletení",
+            "type": "custom",
+            "phase": "initial",
+            "priority": 20
+          }
+        ]
+      },
+      "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!8sO5DkPBhKtpfXox.fO14IutGR3Hrepun"
+    }
+  ],
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "zapleteni",
+      "srd": "gMrWeG8fMDPRFiVe",
+      "nazevEn": "Entangle",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zapleteni"
+    }
+  },
+  "_id": "8sO5DkPBhKtpfXox",
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8sO5DkPBhKtpfXox"
+}

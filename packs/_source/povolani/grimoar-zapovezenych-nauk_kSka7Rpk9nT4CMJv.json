@@ -1,0 +1,60 @@
+{
+  "_id": "kSka7Rpk9nT4CMJv",
+  "name": "Grimoár zapovězených nauk",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "sTtSrEepZ5FHUJTJ",
+  "sort": 1000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Získáš Grimoár s tolika Černokněžnickými kouzly</p><ul><li>Rozšířený seznam: Magická střela, Určení; Odhal myšlenky, Spatři neviditelné; Jasnozřivost, Stvoř Nemrtvého; Fantóm, Mocná neviditelnost; Mystická ruka, Podrob osobu</li></ul><p><em>Úroveň: 1.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#ztraceny-mistr\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Ztracený mistr 1",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "grimoar-zapovezenych-nauk",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!kSka7Rpk9nT4CMJv"
+}

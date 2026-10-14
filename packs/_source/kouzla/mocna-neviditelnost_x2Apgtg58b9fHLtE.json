@@ -1,0 +1,199 @@
+{
+  "_id": "x2Apgtg58b9fHLtE",
+  "name": "Mocná neviditelnost",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Tvor zůstane neviditelný i při útocích a sesílání kouzel.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Mocná neviditelnost.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mocna-neviditelnost\" target=\"_blank\">SRD Jeskyní a draků – Mocná neviditelnost</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "ill",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "lhYVl4DD9jyS5gcn"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "name": "Seslat"
+      }
+    },
+    "identifier": "greater-invisibility"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "mocna-neviditelnost",
+      "srd": "tEpDmYZNGc9f5OhJ",
+      "nazevEn": "Greater Invisibility",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mocna-neviditelnost"
+    }
+  },
+  "img": "icons/creatures/magical/spirit-undead-ghost-purple.webp",
+  "effects": [
+    {
+      "name": "Mocná neviditelnost",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.x2Apgtg58b9fHLtE",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": true,
+      "_id": "lhYVl4DD9jyS5gcn",
+      "description": "<p>Účinek kouzla <em>Mocná neviditelnost</em>. Podrobnosti v popisu kouzla.</p>",
+      "transfer": false,
+      "statuses": [
+        "invisible"
+      ],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781379000294,
+        "modifiedTime": 1781379000294,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "img": "icons/creatures/magical/spirit-undead-ghost-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!x2Apgtg58b9fHLtE.lhYVl4DD9jyS5gcn"
+    }
+  ],
+  "folder": "8hak7PLbgtXEQBpD",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!x2Apgtg58b9fHLtE"
+}

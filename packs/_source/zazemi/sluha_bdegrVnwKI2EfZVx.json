@@ -1,0 +1,153 @@
+{
+  "_id": "bdegrVnwKI2EfZVx",
+  "name": "Sluha",
+  "type": "background",
+  "img": "icons/sundries/documents/document-sealed-brown-red.webp",
+  "folder": "7GrKTBBtDvTixn6S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Sloužil jsi mocným a bohatým – nevšímali si tě, ale ty sis všímal jich.</p><p><strong>Schopnost:</strong> Doma pod schody</p><p><strong>Vybavení:</strong> Doporučení od zaměstnavatele, sada nádobí, obyčejné oblečení, 10 zl.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/2-tvorba-postavy.html#sluha\" target=\"_blank\">SRD Jeskyní a draků – Tvorba postavy</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "advancement": {
+      "4yeSHlVXf4DBll7O": {
+        "_id": "4yeSHlVXf4DBll7O",
+        "type": "Trait",
+        "level": 0,
+        "title": "Zdatnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:ste",
+            "skills:ins"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "tsGCKUypkuZyWGPK": {
+        "_id": "tsGCKUypkuZyWGPK",
+        "type": "Trait",
+        "level": 0,
+        "title": "Jazyky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "pA3qSn6MtaUgFXbj": {
+        "_id": "pA3qSn6MtaUgFXbj",
+        "type": "ItemGrant",
+        "level": 0,
+        "title": "Schopnost zázemí",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.zazemi.Item.V7zStrrUFYvOV7NV",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "startingEquipment": [
+      {
+        "_id": "sjwnEF7TLTjKnK20",
+        "group": "",
+        "sort": 100000,
+        "type": "AND",
+        "requiresProficiency": false
+      },
+      {
+        "_id": "2jzJ2zDl7HWERjwH",
+        "group": "sjwnEF7TLTjKnK20",
+        "sort": 200000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.ByaKsO5fPzE17DGt",
+        "count": null
+      },
+      {
+        "_id": "OUFeRQVvy4bNLhtQ",
+        "group": "sjwnEF7TLTjKnK20",
+        "sort": 300000,
+        "type": "linked",
+        "requiresProficiency": false,
+        "key": "Compendium.jeskyne-a-draci.predmety.Item.PDIzddht2dqYN1VY",
+        "count": null
+      },
+      {
+        "_id": "8OqTzJihOZt9xkdl",
+        "group": "sjwnEF7TLTjKnK20",
+        "sort": 400000,
+        "type": "currency",
+        "requiresProficiency": false,
+        "key": "gp",
+        "count": 10
+      }
+    ],
+    "identifier": "sluha"
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "zazemi": "sluha"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!bdegrVnwKI2EfZVx"
+}

@@ -1,0 +1,77 @@
+{
+  "_id": "c2958bJeXHFIaa2E",
+  "name": "Pytel beztíže",
+  "type": "container",
+  "img": "icons/containers/bags/pack-engraved-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Neobvyklý</em></p><p>Zabírá jen Řádek, ale pojme 50 Řádků. Roztržený vysype obsah do Astrální sféry; vzduch pro tvora vydrží 10 minut. Se Šikovnou brašnou se navzájem zničí a vše okolo odnese do Astrální sféry.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/11-kouzelne-predmety.html#pytel-beztize\" target=\"_blank\">SRD Jeskyní a draků – Kouzelné předměty</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 15,
+      "units": "lb"
+    },
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "capacity": {
+      "type": "weight",
+      "value": 500
+    },
+    "currency": {
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 0,
+      "pp": 0
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc",
+      "weightlessContents"
+    ],
+    "attuned": false,
+    "identifier": "bag-of-holding"
+  },
+  "effects": [],
+  "folder": "monJq3WM8Ubk9o5z",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "pytel-beztize",
+      "radky": 1
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!c2958bJeXHFIaa2E"
+}
