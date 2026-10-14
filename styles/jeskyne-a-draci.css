@@ -218,3 +218,37 @@
 .jad-denik.dnd5e2 .items-header .item-name,
 .jad-denik.dnd5e2 .items-header .item-header { color: #fff; }
 .jad-denik.dnd5e2 .items-section { border-color: #3b2a22; background: #fffaf0; }
+
+/* Kouzla (3. strana karty) */
+.jad-denik .jad-sesilatele td, .jad-denik .jad-sesilatele th { text-align: center; }
+.jad-denik .jad-sesilatele td:first-child, .jad-denik .jad-sesilatele th:first-child { text-align: left; }
+.jad-denik .jad-pozice-mrizka { display: flex; gap: 10px; flex-wrap: wrap; }
+.jad-denik .jad-pozice-sloupec { display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 34px; }
+.jad-denik .jad-pakt-radek { flex-direction: row; justify-content: flex-start; gap: 6px; }
+.jad-denik .jad-pozice-cislo { font-weight: bold; }
+.jad-denik .jad-pozice-pocet { font-size: 0.7rem; color: var(--jad-tlumene); }
+.jad-denik .jad-kruh {
+  display: inline-block; width: 14px; height: 14px; border-radius: 50%;
+  border: 2px solid var(--jad-okraj); background: #fffaf0; cursor: pointer; box-sizing: border-box;
+}
+.jad-denik .jad-kruh.plny { background: var(--jad-cervena); border-color: var(--jad-cervena); }
+.jad-denik .jad-kruh.jad-vzdy { background: var(--jad-tlumene); border-color: var(--jad-tlumene); cursor: default; }
+.jad-denik .jad-kouzla-nadpis { display: flex; align-items: center; gap: 10px; }
+.jad-denik .jad-kouzla-nadpis .jad-pruh { flex: 1; }
+.jad-denik .jad-tlacitko {
+  font-size: 0.75rem; border: 1px solid var(--jad-cervena); border-radius: 4px; padding: 2px 8px;
+  color: var(--jad-cervena); background: #fffaf0; white-space: nowrap;
+}
+.jad-denik .jad-tlacitko:hover { background: var(--jad-cervena); color: #fff; }
+.jad-denik .jad-seznam-kouzel td { vertical-align: middle; padding: 3px 5px; }
+.jad-denik .jad-seznam-kouzel td:first-child { width: 22px; text-align: center; }
+.jad-denik .jad-seznam-kouzel td:nth-child(2) { width: 22px; }
+.jad-denik .jad-seznam-kouzel tr.jad-skupina td {
+  background: none; border-bottom: 1px solid var(--jad-okraj); font-weight: bold; text-transform: uppercase;
+  font-size: 0.72rem; color: var(--jad-cervena); padding-top: 8px;
+}
+.jad-denik .jad-seznam-kouzel tr.jad-kouzlo- td { opacity: 0.6; }
+.jad-denik .jad-poznamka-bunka { font-size: 0.72rem; color: var(--jad-tlumene); max-width: 180px; }
+.jad-denik .jad-ovladani { white-space: nowrap; text-align: right; }
+.jad-denik .jad-ovladani a { margin-left: 4px; color: var(--jad-tlumene); }
+.jad-denik .jad-ovladani a:hover { color: var(--jad-cervena); }

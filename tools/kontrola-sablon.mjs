@@ -32,7 +32,13 @@ const vzor = {
     smrt: { uspechy: [true, false, false], neuspechy: [false, false, false] }, poznamky: "",
     // vzhled
     vek: "30", plet: "", vyska: "", vlasy: "", vaha: "", oci: "", postava: "", obleceni: "", dojem: "", tituly: "",
-    vztahy: [{ i: 0, kdo: "Bran", vztah: "přítel" }]
+    vztahy: [{ i: 0, kdo: "Bran", vztah: "přítel" }],
+    // kouzla
+    povolani: [{ nazev: "Kouzelník", klic: "wizard", uroven: 3, maxStupen: 2, vlastnost: "Inteligence", so: 13, utok: "+5" }],
+    pozice: [{ stupen: 1, max: 4, value: 2, cesta: "system.spells.spell1.value", kruhy: [{ index: 0, plny: true }, { index: 1, plny: false }] }],
+    pakt: null, tridaPovolani: "wizard", zadna: false,
+    skupiny: [{ nazev: "1. Stupeň", kouzla: [{ id: "k", nazev: "Magická střela", img: "x.webp", stupen: 1, stav: "pripraveno", klikaci: true,
+      utokSo: "", doba: "Akce", slozky: "V, P", dosah: "24 sáhů", trvani: "Okamžité", poznamka: "" }] }]
   }
 };
 if ( !Handlebars ) {

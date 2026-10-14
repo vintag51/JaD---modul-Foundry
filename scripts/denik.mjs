@@ -58,7 +58,10 @@ export function vytvoritDenik() {
         jadOdlozit: DenikJaD.#odlozit,
         jadOtevrit: DenikJaD.#otevrit,
         jadZdatnost: DenikJaD.#zdatnost,
-        jadVybavit: DenikJaD.#vybavit
+        jadVybavit: DenikJaD.#vybavit,
+        jadPripravit: DenikJaD.#pripravit,
+        jadPozice: DenikJaD.#pozice,
+        jadSmazat: DenikJaD.#smazat
       }
     };
 
@@ -75,7 +78,12 @@ export function vytvoritDenik() {
         template: `${SABLONY}/vzhled.hbs`,
         scrollable: [""]
       },
-      ...ostatni
+      ...ostatni,
+      spells: {
+        container: { classes: ["tab-body"], id: "tabs" },
+        template: `${SABLONY}/kouzla.hbs`,
+        scrollable: [""]
+      }
     };
 
     static TABS = [
@@ -99,6 +107,14 @@ export function vytvoritDenik() {
         }
       }
       if ( partId === "vzhled" ) context.jad = this.#pripravitVzhled(context);
+      if ( partId === "spells" ) {
+        try {
+          context.jad = pripravitKouzla(this.actor, this.isEditable);
+        } catch(err) {
+          console.error(`${MODUL} | Kouzla Deníku JaD nelze připravit`, err);
+          context.jad = { chyba: `${err.name}: ${err.message}` };
+        }
+      }
       return context;
     }
 
@@ -373,6 +389,26 @@ export function vytvoritDenik() {
       return item?.sheet.render(true);
     }
 
+    /** Připravit / odložit kouzlo (kroužek P). */
+    static async #pripravit(event, target) {
+      const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+      if ( !item || (item.type !== "spell") || !item.system.canPrepare || (item.system.prepared === 2) ) return;
+      return item.update({ "system.prepared": item.system.prepared ? 0 : 1 });
+    }
+
+    /** Kliknutí na kroužek pozice kouzla: nastaví počet zbývajících pozic. */
+    static async #pozice(event, target) {
+      const { cesta, index } = target.dataset;
+      const aktualni = Number(foundry.utils.getProperty(this.actor, cesta) ?? 0);
+      const n = Number(index) + 1;
+      return this.actor.update({ [cesta]: aktualni === n ? n - 1 : n });
+    }
+
+    static async #smazat(event, target) {
+      const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+      return item?.deleteDialog?.() ?? item?.delete();
+    }
+
     static async #vybavit(event, target) {
       const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
       if ( !item || !("equipped" in item.system) ) return;
@@ -385,6 +421,131 @@ export function vytvoritDenik() {
       if ( item.flags?.[MODUL]?.odlozeno ) return item.unsetFlag(MODUL, "odlozeno");
       return item.setFlag(MODUL, "odlozeno", true);
     }
+  };
+}
+
+// ------------------------------------------------------------------ Kouzla (3. strana karty JaD)
+
+const ZKRATKY = { str: "SIL", dex: "OBR", con: "ODL", int: "INT", wis: "MDR", cha: "CHA" };
+const VLASTNOST_NAZEV = { str: "Síla", dex: "Obratnost", con: "Odolnost", int: "Inteligence", wis: "Moudrost", cha: "Charisma" };
+const AKTIVACE = {
+  action: "Akce", bonus: "Bon. akce", reaction: "Reakce", minute: "min.", hour: "hod.", day: "den",
+  special: "Zvláštní", legendary: "Leg. akce", none: "—"
+};
+const TRVANI = { inst: "Okamžité", turn: "tah", round: "kolo", minute: "min.", hour: "hod.", day: "den", month: "měsíc",
+  year: "rok", perm: "Trvalé", disp: "Do rozptýlení", spec: "Zvláštní", ureq: "Do spuštění" };
+const POVOLANI_NAZEV = { wizard: "Kouzelník", sorcerer: "Čaroděj", warlock: "Černokněžník", druid: "Druid", cleric: "Klerik",
+  bard: "Bard", alchymista: "Alchymista", fighter: "Bojovník", rogue: "Tulák", "lovec-netvoru": "Lovec netvorů" };
+
+function cislovka(n, jedna, dve, pet) {
+  return n === 1 ? jedna : (n >= 2 && n <= 4) ? dve : pet;
+}
+
+function textDosahu(r) {
+  if ( !r ) return "";
+  const u = r.units;
+  if ( u === "self" ) return "Sesilatel";
+  if ( u === "touch" ) return "Dotyk";
+  if ( u === "spec" ) return "Zvláštní";
+  if ( u === "any" ) return "Neomezený";
+  if ( u === "sah" ) {
+    const v = Number(r.value);
+    return `${r.value} ${cislovka(v, "sáh", "sáhy", "sáhů")}`;
+  }
+  if ( u === "ft" && r.value ) {
+    const v = Number(r.value) / 5;
+    return `${v} ${cislovka(v, "sáh", "sáhy", "sáhů")}`;
+  }
+  if ( u === "mi" ) return `${r.value} mil`;
+  return [r.value, u].filter(_ => _).join(" ");
+}
+
+function textTrvani(d, soustredeni) {
+  if ( !d ) return "";
+  let t = TRVANI[d.units] ?? d.units ?? "";
+  if ( d.value && !["inst", "perm", "spec", "disp", "ureq"].includes(d.units) ) t = `${d.value} ${t}`;
+  return soustredeni ? `S, ${t}` : t;
+}
+
+/**
+ * Data pro záložku Kouzla v rozložení karty JaD.
+ * @param {Actor} actor
+ * @param {boolean} editovatelne
+ */
+export function pripravitKouzla(actor, editovatelne) {
+  const sys = actor.system;
+  const prof = sys.attributes?.prof ?? 0;
+
+  // Sesilatelská povolání
+  const povolani = Object.entries(actor.spellcastingClasses ?? {}).map(([klic, cls]) => {
+    const vl = cls.spellcasting?.ability || sys.attributes.spellcasting;
+    const mod = sys.abilities?.[vl]?.mod ?? 0;
+    return {
+      nazev: cls.name ?? POVOLANI_NAZEV[klic] ?? klic, klic, uroven: cls.system?.levels ?? "",
+      vlastnost: VLASTNOST_NAZEV[vl] ?? "—",
+      so: vl ? 8 + prof + mod + (Number(sys.bonuses?.spell?.dc) || 0) : "—",
+      utok: vl ? sign(prof + mod) : "—"
+    };
+  });
+
+  // Pozice kouzel
+  const pozice = [];
+  let maxStupen = 0;
+  for ( let i = 1; i <= 9; i++ ) {
+    const p = sys.spells?.[`spell${i}`];
+    const max = p?.max ?? 0;
+    if ( max ) maxStupen = i;
+    pozice.push({
+      stupen: i, max, value: p?.value ?? 0, cesta: `system.spells.spell${i}.value`,
+      kruhy: Array.from({ length: max }, (_, k) => ({ index: k, plny: k < (p?.value ?? 0) }))
+    });
+  }
+  const pk = sys.spells?.pact;
+  const pakt = pk?.max ? {
+    stupen: pk.level, max: pk.max, value: pk.value ?? 0, cesta: "system.spells.pact.value",
+    kruhy: Array.from({ length: pk.max }, (_, k) => ({ index: k, plny: k < (pk.value ?? 0) }))
+  } : null;
+  if ( pakt ) maxStupen = Math.max(maxStupen, pk.level ?? 0);
+  for ( const p of povolani ) p.maxStupen = maxStupen || "—";
+
+  // Kouzla podle Stupně
+  const skupiny = new Map();
+  const kouzla = [...(actor.itemTypes.spell ?? [])].sort((a, b) => (a.system.level - b.system.level) || a.name.localeCompare(b.name, "cs"));
+  for ( const item of kouzla ) {
+    const s = item.system;
+    const vl = s.properties ?? new Set();
+    const aktivity = [...(s.activities ?? [])];
+    const utok = aktivity.find(a => a.type === "attack");
+    const zachrana = aktivity.find(a => a.type === "save");
+    let utokSo = "";
+    if ( utok ) utokSo = utok.labels?.toHit ?? "útok";
+    else if ( zachrana ) {
+      const abl = [...(zachrana.save?.ability ?? [])].map(k => ZKRATKY[k] ?? k).join("/");
+      utokSo = `${abl} ${zachrana.save?.dc?.value ?? ""}`.trim();
+    }
+    const slozky = [vl.has?.("vocal") && "V", vl.has?.("somatic") && "P", vl.has?.("material") && "S"].filter(_ => _).join(", ");
+    const akt = s.activation ?? {};
+    let doba = AKTIVACE[akt.type] ?? akt.type ?? "";
+    if ( ["minute", "hour", "day"].includes(akt.type) ) doba = `${akt.value ?? 1} ${doba}`;
+    if ( vl.has?.("ritual") ) doba += " (R)";
+    const pripravitelne = !!s.canPrepare;
+    const stav = pripravitelne ? (s.prepared === 2 ? "vzdy" : (s.prepared ? "pripraveno" : "")) : "vzdy";
+    const pouziti = s.uses?.max ? `${s.uses.value ?? 0}/${s.uses.max}` : "";
+    const radek = {
+      id: item.id, nazev: item.name, img: item.img, stupen: s.level || "T", stav,
+      klikaci: pripravitelne && (s.prepared !== 2), utokSo, doba, slozky,
+      dosah: textDosahu(s.range), trvani: textTrvani(s.duration, vl.has?.("concentration")),
+      poznamka: [s.materials?.value, pouziti && `Použití ${pouziti}`].filter(_ => _).join(" · ")
+    };
+    const klic = s.level;
+    if ( !skupiny.has(klic) ) skupiny.set(klic, { nazev: klic ? `${klic}. Stupeň` : "Triky", kouzla: [] });
+    skupiny.get(klic).kouzla.push(radek);
+  }
+
+  const prvni = povolani[0]?.klic ?? "";
+  return {
+    povolani, pozice: pozice.filter(p => p.max), pakt, skupiny: [...skupiny.values()],
+    zadna: !kouzla.length, editovatelne, tridaPovolani: prvni
   };
 }
 

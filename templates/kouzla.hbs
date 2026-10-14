@@ -1,0 +1,102 @@
+<section class="tab jad-tab jad-kouzla-tab {{ tab.cssClass }}" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
+{{#with jad}}
+  {{#if chyba}}<p class="jad-nalozeni jad-stupen-pretizeni">Kouzla se nepodařilo připravit: {{ chyba }}</p>{{else}}
+
+  <h3 class="jad-pruh">Sesilatelská povolání</h3>
+  <table class="jad-tabulka jad-sesilatele">
+    <thead><tr><th>Povolání</th><th>Úroveň</th><th>Max. Stupeň kouzel</th><th>Sesílací vlastnost</th><th>SO Záchrany kouzel</th><th>Útočný bonus</th></tr></thead>
+    <tbody>
+      {{#each povolani}}
+      <tr><td><strong>{{ nazev }}</strong></td><td>{{ uroven }}</td><td>{{ maxStupen }}</td><td>{{ vlastnost }}</td><td><strong>{{ so }}</strong></td><td><strong>{{ utok }}</strong></td></tr>
+      {{else}}
+      <tr><td colspan="6" class="jad-prazdne">Postava nemá sesilatelské povolání.</td></tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{#if pozice.length}}
+  <div class="jad-sloupce jad-pozice-blok">
+    <div class="jad-sloupec">
+      <h3 class="jad-pruh">Pozice kouzel</h3>
+      <div class="jad-pozice-mrizka">
+        {{#each pozice}}
+        <div class="jad-pozice-sloupec">
+          <span class="jad-pozice-cislo">{{ stupen }}.</span>
+          {{#each kruhy}}
+          <a class="jad-kruh {{#if plny}}plny{{/if}}" data-action="jadPozice" data-cesta="{{ ../cesta }}" data-index="{{ index }}"
+             data-tooltip="{{#if plny}}Volná pozice – kliknutím utratíš{{else}}Utracená pozice – kliknutím obnovíš{{/if}}"></a>
+          {{/each}}
+          <span class="jad-pozice-pocet">{{ value }}/{{ max }}</span>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    {{#if pakt}}
+    <div class="jad-sloupec jad-pakt-blok">
+      <h3 class="jad-pruh">Magie paktu</h3>
+      <div class="jad-pozice-sloupec jad-pakt-radek">
+        <span class="jad-pozice-cislo">Stupeň pozic: {{ pakt.stupen }}.</span>
+        {{#each pakt.kruhy}}
+        <a class="jad-kruh {{#if plny}}plny{{/if}}" data-action="jadPozice" data-cesta="{{ ../pakt.cesta }}" data-index="{{ index }}"></a>
+        {{/each}}
+        <span class="jad-pozice-pocet">{{ pakt.value }}/{{ pakt.max }}</span>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+  {{else if pakt}}
+  <h3 class="jad-pruh">Magie paktu</h3>
+  <div class="jad-pozice-sloupec jad-pakt-radek">
+    <span class="jad-pozice-cislo">Stupeň pozic: {{ pakt.stupen }}.</span>
+    {{#each pakt.kruhy}}
+    <a class="jad-kruh {{#if plny}}plny{{/if}}" data-action="jadPozice" data-cesta="{{ ../pakt.cesta }}" data-index="{{ index }}"></a>
+    {{/each}}
+    <span class="jad-pozice-pocet">{{ pakt.value }}/{{ pakt.max }}</span>
+  </div>
+  {{/if}}
+
+  <div class="jad-kouzla-nadpis">
+    <h3 class="jad-pruh">Kouzla</h3>
+    {{#if editovatelne}}
+    <a class="jad-tlacitko" data-action="findItem" data-item-type="spell" {{#if tridaPovolani}}data-class-identifier="{{ tridaPovolani }}"{{/if}}>
+      <i class="fas fa-plus"></i> Přidat kouzlo z kompendia
+    </a>
+    {{/if}}
+  </div>
+  <table class="jad-tabulka jad-seznam-kouzel">
+    <thead>
+      <tr>
+        <th data-tooltip="Připravené">P</th><th data-tooltip="Stupeň">S</th><th>Název</th><th>Útok / SO ZH</th><th>Doba sesl.</th>
+        <th>Složky</th><th>Dosah</th><th>Trvání</th><th>Poznámka</th><th></th>
+      </tr>
+    </thead>
+    {{#each skupiny}}
+    <tbody>
+      <tr class="jad-skupina"><td colspan="10">{{ nazev }}</td></tr>
+      {{#each kouzla}}
+      <tr data-item-id="{{ id }}" class="jad-kouzlo-{{ stav }}">
+        <td>
+          {{#if klikaci}}
+          <a class="jad-kruh {{#if stav}}plny{{/if}}" data-action="jadPripravit" data-tooltip="{{#if stav}}Připravené – kliknutím odložíš{{else}}Nepřipravené – kliknutím připravíš{{/if}}"></a>
+          {{else}}
+          <span class="jad-kruh plny jad-vzdy" data-tooltip="Vždy připravené / známé"></span>
+          {{/if}}
+        </td>
+        <td class="jad-stred-text">{{ stupen }}</td>
+        <td><a class="jad-polozka" data-action="jadPouzit" data-tooltip="Seslat"><img src="{{ img }}" alt=""><span>{{ nazev }}</span></a></td>
+        <td>{{ utokSo }}</td><td>{{ doba }}</td><td>{{ slozky }}</td><td>{{ dosah }}</td><td>{{ trvani }}</td>
+        <td class="jad-poznamka-bunka">{{ poznamka }}</td>
+        <td class="jad-ovladani">
+          <a data-action="jadOtevrit" data-tooltip="Popis kouzla"><i class="fas fa-book-open"></i></a>
+          {{#if ../../editovatelne}}<a data-action="jadSmazat" data-tooltip="Odebrat"><i class="fas fa-trash"></i></a>{{/if}}
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+    {{/each}}
+  </table>
+  {{#if zadna}}<p class="jad-prazdne">Postava zatím nezná žádná kouzla. Přetáhni je sem z kompendia JaD – Kouzla.</p>{{/if}}
+  <p class="jad-poznamka">Složky: V = Verbální, P = Pohybová, S = Surovinová · S, … v Trvání = Soustředění · (R) = Rituál</p>
+  {{/if}}
+{{/with}}
+</section>
