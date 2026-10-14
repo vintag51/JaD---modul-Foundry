@@ -1,0 +1,95 @@
+{
+  "_id": "5pYi5jgaHjpas1NJ",
+  "name": "Průprava na nevěřící",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "JNSOEEsZYi50Lz7r",
+  "sort": 1000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Získáš Zdatnost v Přesvědčování a Vhledu (v jedné Kvalifikaci)</p><p><em>Úroveň: 1.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#misionar\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Misionář 1",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "pruprava-na-neverici",
+    "advancement": {
+      "FBuIwb9u5DeG10P2": {
+        "_id": "FBuIwb9u5DeG10P2",
+        "type": "Trait",
+        "level": 0,
+        "title": "Průprava na nevěřící",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:per",
+            "skills:ins"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:his",
+                "skills:nat"
+              ]
+            },
+            {
+              "count": 2,
+              "pool": [
+                "weapon:mar:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        }
+      }
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5pYi5jgaHjpas1NJ"
+}

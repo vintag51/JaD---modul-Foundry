@@ -397,6 +397,21 @@ def main():
                                    "spells": sorted(f"Compendium.{MODUL}.kouzla.Item.{x}" for x in set(povolani_kouzla[ident])),
                                    "unlinkedSpells": []},
                         "ownership": {"default": -1}, "flags": {}, "_key": f"!journal.pages!{jid}.{pid}"})
+    # seznamy kouzel oborů, které sesílají kouzla jiného povolání
+    OBORY_SEZNAMY = {"chodec": ("druid", "Chodec"), "chramovy-rytir": ("cleric", "Chrámový rytíř"),
+                     "svatokupec": ("cleric", "Svatokupec"), "theurg": ("wizard", "Theurg"),
+                     "rad-zaprodancu": ("warlock", "Řád zaprodanců")}
+    for i, (obor, (zdroj, nazev)) in enumerate(OBORY_SEZNAMY.items()):
+        if zdroj not in povolani_kouzla:
+            continue
+        pid = foundry_id(f"seznam-obor-{obor}")
+        stranky.append({"_id": pid, "name": f"Kouzla oboru {nazev}", "type": "spells",
+                        "sort": (len(stranky) + 1) * 100000, "title": {"show": True, "level": 1},
+                        "system": {"type": "subclass", "identifier": obor, "grouping": "level",
+                                   "description": {"value": ATRIBUCE},
+                                   "spells": sorted(f"Compendium.{MODUL}.kouzla.Item.{x}" for x in set(povolani_kouzla[zdroj])),
+                                   "unlinkedSpells": []},
+                        "ownership": {"default": -1}, "flags": {}, "_key": f"!journal.pages!{jid}.{pid}"})
     denik = {"_id": jid, "name": "Seznamy kouzel povolání (JaD)", "pages": stranky, "folder": None, "sort": 0,
              "ownership": {"default": 0}, "flags": {}, "_key": f"!journal!{jid}"}
 
@@ -432,7 +447,7 @@ def main():
 
     print(f"Kouzel: {len(kouzla)} (SRD {len(kouzla) - sum(1 for k in kouzla if k['flags'][MODUL].get('vlastni'))}, "
           f"původní JaD {sum(1 for k in kouzla if k['flags'][MODUL].get('vlastni'))}), jednotky: {args.jednotky}")
-    print("Seznamy:", {POVOLANI[p["system"]["identifier"]]: len(p["system"]["spells"]) for p in stranky})
+    print("Seznamy:", {POVOLANI.get(p["system"]["identifier"], p["system"]["identifier"]): len(p["system"]["spells"]) for p in stranky})
     for c in chyby:
         print("  !", c)
     if nepr_akt:

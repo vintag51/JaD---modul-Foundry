@@ -1,0 +1,164 @@
+# Formát povolání – viz tools/generuj_povolani.py
+# Popisy (d) jsou vlastní shrnutí, ne text knihy. Plné znění: SRD JaD, kapitola 4 – Povolání.
+# Zkratky: p = použití "max/obnova" (sr = mezi Odpočinky, lr = mezi Dlouhými odpočinky)
+#          akt = aktivity, ef = efekty aplikované aktivitou, pas = pasivní změny [klíč, hodnota, typ]
+
+identifikator: barbarian
+nazev: Barbar
+kotva: barbar
+popis: Divoký válečník, který v boji propadá Zuřivosti a spoléhá na instinkt, výdrž a hrubou sílu.
+kostka: d12
+zachrany: [str, con]
+zbroje: [armor:lgt, armor:med, armor:shl]
+zbrane: [weapon:sim, weapon:mar]
+dovednosti: {pocet: 2, z: [ath, ani, sur, nat, prc, itm]}
+asi: [4, 8, 12, 16, 19]
+skaly:
+  zurivost: {nazev: Použití Zuřivosti, hodnoty: {1: 2, 3: 3, 6: 4, 12: 5, 17: 6, 20: 99}}
+  zurivost-zasah: {nazev: Zásah Zuřivosti, hodnoty: {1: 2, 9: 3, 16: 4}}
+  brutalni-kritik: {nazev: Brutální Kritický zásah, hodnoty: {9: 1, 13: 2, 17: 3}}
+obor: {nazev: Prvotní cesta, uroven: 3}
+
+schopnosti:
+  - k: zurivost
+    n: Zuřivost
+    u: [1]
+    d: Bonusovou akcí se Rozzuříš na minutu – bez Těžké zbroje máš Výhodu na Sílu, vyšší Zásah na blízko silou a Odolnost vůči bodným, drtivým a sečným zásahům; nemůžeš kouzlit.
+    p: "@scale.barbarian.zurivost/lr"
+    akt:
+      - {n: Rozzuřit se, t: bonus, ef: [0]}
+    ef:
+      - n: Zuřivost
+        kola: 10
+        z:
+          - [system.traits.dr.value, bludgeoning, add]
+          - [system.traits.dr.value, piercing, add]
+          - [system.traits.dr.value, slashing, add]
+          - [system.bonuses.mwak.damage, "+@scale.barbarian.zurivost-zasah", add]
+          - [system.abilities.str.check.roll.mode, "1", add]
+          - [system.abilities.str.save.roll.mode, "1", add]
+  - k: obrana-beze-zbroje
+    n: Obrana beze zbroje
+    u: [1]
+    d: Bez zbroje je tvé OČ 10 + Oprava obratnosti + Oprava odolnosti (můžeš přidat štít).
+    pas: [[system.attributes.ac.calc, unarmoredBarb, override]]
+  - k: bezhlavy-utok
+    n: Bezhlavý útok
+    u: [2]
+    d: Prvním útokem v tahu můžeš zaútočit bezhlavě – v tomto tahu máš Výhodu na útoky silou, ale do tvého dalšího tahu mají Výhodu i útoky proti tobě.
+    akt: [{n: Zaútočit bezhlavě, t: special}]
+  - k: smysl-pro-nebezpeci
+    n: Smysl pro nebezpečí
+    u: [2]
+    d: Dokud vidíš a slyšíš, máš Výhodu k Záchranným hodům na Obratnost proti tomu, co vidíš.
+  - k: utok-navic
+    n: Útok navíc
+    u: [5]
+    d: V rámci akce Útok zaútočíš dvakrát (místo útoku můžeš provést útočný manévr).
+  - k: rychly-pohyb
+    n: Rychlý pohyb
+    u: [5]
+    d: Bez Těžké zbroje se tvá Rychlost zvýší o 2 sáhy.
+    pas: [[system.attributes.movement.walk, "2", add]]
+  - k: zvireci-instinkt
+    n: Zvířecí instinkt
+    u: [7]
+    d: Máš Výhodu na Iniciativu; když tě překvapí, ale okamžitě se Rozzuříš, překvapení ignoruješ.
+    pas: [[system.attributes.init.roll.mode, "1", add]]
+  - k: brutalni-kriticky-zasah
+    n: Brutální Kritický zásah
+    u: [9, 13, 17]
+    d: Při Kritickém zásahu na blízko si hodíš jednou (od 13. Úrovně dvakrát, od 17. třikrát) Kostkou zásahu navíc.
+    pas: [[flags.dnd5e.meleeCriticalDamageDice, "@scale.barbarian.brutalni-kritik", add]]
+  - k: zaryta-zurivost
+    n: Zarytá Zuřivost
+    u: [11]
+    d: Když klesneš na 0 Bodů výdrže a nezemřeš, Záchranným hodem na Odolnost (SO 10, +5 za každé další použití do Dlouhého odpočinku) zůstaneš na 1.
+    akt: [{n: Zůstat na nohou, t: special, typ: save, save: con, dc: "10"}]
+  - k: vytrvala-zurivost
+    n: Vytrvalá Zuřivost
+    u: [15]
+    d: Zuřivost tě opouští jen v Bezvědomí nebo když ji sám ukončíš.
+  - k: nezkrotna-sila
+    n: Nezkrotná síla
+    u: [18]
+    d: Když na Ověření síly hodíš celkem méně, než je Hodnota tvé Síly, použiješ místo výsledku tuto Hodnotu.
+  - k: prvotni-sampion
+    n: Prvotní šampion
+    u: [20]
+    d: Tvá Síla a Odolnost se zvýší o 4 a jejich maximum je 24.
+    pas:
+      - [system.abilities.str.value, "4", add]
+      - [system.abilities.con.value, "4", add]
+      - [system.abilities.str.max, "4", add]
+      - [system.abilities.con.max, "4", add]
+
+obory:
+  cesta-berserkra:
+    nazev: Cesta berserkra
+    kotva: cesta-berserkra
+    popis: Barbar, jehož Zuřivost přechází v nezastavitelné běsnění na úkor vlastního bezpečí.
+    schopnosti:
+      - {k: bojove-silenstvi, n: Bojové šílenství, u: [3], d: Během Zuřivosti můžeš propadnout šílenství – do konce Zuřivosti máš každý tah jeden útok na blízko jako bonusovou akci, po skončení ale utrpíš Stupeň únavy., akt: [{n: Propadnout šílenství, t: special}, {n: Útok bonusovou akcí, t: bonus}]}
+      - {k: bezducha-zurivost, n: Bezduchá zuřivost, u: [6], d: Během Zuřivosti tě nelze Vystrašit ani Zmámit; takové stavy se po dobu Zuřivosti pozastaví.}
+      - k: zastrasujici-vzhled
+        n: Zastrašující vzhled
+        u: [10]
+        d: Akcí vyděsíš tvora do 6 sáhů (Záchranný hod na Moudrost proti tvému SO odvozenému od Charismatu); efekt můžeš akcí prodlužovat.
+        akt: [{n: Zastrašit, t: action, typ: save, save: wis, dc: cha, ef: [0], dosah: 6}]
+        ef: [{n: Vystrašený (Zastrašující vzhled), st: [frightened], kola: 1}]
+      - {k: odplata, n: Odplata, u: [14], d: Když tě zasáhne tvor do 1 sáhu, můžeš na něj reakcí zaútočit zbraní na blízko., akt: [{n: Odplata, t: reaction}]}
+  cesta-bijce:
+    nazev: Cesta bijce
+    kotva: cesta-bijce
+    popis: Barbar, jehož síla je skutečně ve svalech – zápasník, který láme kosti holýma rukama.
+    schopnosti:
+      - k: tvrda-rana
+        n: Tvrdá rána
+        u: [3]
+        d: Během Zuřivosti můžeš bonusovou akcí udeřit beze zbraně za 1k6 + Oprava síly + Zdatnostní bonus drtivého zásahu.
+        akt: [{n: Tvrdá rána, t: bonus, typ: attack, utok: melee, dmg: ["1d6 + @abilities.str.mod + @prof", bludgeoning]}]
+      - {k: nepovalitelny, n: Nepovalitelný, u: [3], d: Během Zuřivosti tě nelze proti tvé vůli srazit k zemi a pokusy tě odstrčit nebo prorazit mají Nevýhodu.}
+      - k: drtive-sevreni
+        n: Drtivé sevření
+        u: [6]
+        d: Jednou mezi Odpočinky máš Výhodu na chycení a sevřeného tvora můžeš akcí drtit za 2k10 + Oprava síly.
+        p: 1/sr
+        akt: [{n: Vyhlásit Drtivé sevření, t: special}, {n: Drtit, t: action, typ: damage, dmg: ["2d10 + @abilities.str.mod", bludgeoning], bezpouziti: true}]
+      - {k: osedlani-titana, n: Osedlání titána, u: [10], d: Jednou mezi Odpočinky vyšplháš bonusovou akcí s Výhodou na velkého tvora a z jeho hřbetu ho zpomaluješ a ovládáš jeho pohyb., p: 1/sr, akt: [{n: Osedlat titána, t: bonus}]}
+      - k: nezdolnost-bijce
+        n: Nezdolnost
+        u: [14]
+        d: Během Zuřivosti můžeš reakcí snížit utrpěný zásah o polovinu své Úrovně barbara.
+        akt: [{n: Snížit zásah, t: reaction}]
+  cesta-kmenoveho-valecnika:
+    nazev: Cesta kmenového válečníka
+    kotva: cesta-kmenoveho-valecnika
+    popis: Barbar, který svou Zuřivost obrací k ochraně kmene a spolubojovníků.
+    schopnosti:
+      - {k: clen-kmene, n: Člen kmene, u: [3], d: Získáš Zdatnost ve Vhledu a Přesvědčování (jinak v jiné Barbarské dovednosti)., trait: {zdatnosti: [skills:ins, skills:per]}}
+      - {k: ochranitelske-reflexy, n: Ochranitelské reflexy, u: [3], d: Když vidíš útok na spojence do 1 sáhu od tebe, můžeš reakcí způsobit, že mine., akt: [{n: Ochránit spojence, t: reaction}]}
+      - k: divoka-obrana
+        n: Divoká obrana
+        u: [6]
+        d: Jednou mezi Odpočinky si reakcí na zásah zvýšíš OČ o Opravu síly proti tomuto a dalším útokům do konce svého příštího tahu.
+        p: 1/sr
+        akt: [{n: Divoká obrana, t: reaction, ef: [0]}]
+        ef: [{n: Divoká obrana, kola: 1, z: [[system.attributes.ac.bonus, "+@abilities.str.mod", add]]}]
+      - k: povzbuzujici-ryk
+        n: Povzbuzující ryk
+        u: [10]
+        d: Jednou mezi Odpočinky během Zuřivosti dáš všem spojencům Dočasné body výdrže rovné tvé Úrovni barbara.
+        p: 1/sr
+        akt: [{n: Povzbuzující ryk, t: special, typ: heal, heal: "@classes.barbarian.levels", htyp: temphp}]
+      - {k: na-cele-hordy, n: Na čele hordy, u: [14], d: Během Zuřivosti můžeš její přínosy (Výhodu na Sílu, bonus k zásahu a odolnosti) sdílet s libovolnými tvory do 4 sáhů.}
+  cesta-nicitele:
+    nazev: Cesta ničitele
+    kotva: cesta-nicitele
+    popis: Barbar na osobní výpravě za pomstou, slávou nebo prozřením, za nímž zůstávají jen trosky.
+    schopnosti:
+      - {k: vyprava, n: Výprava, u: [3], d: Podle cíle své výpravy získáš Zdatnost v Historii, Mystice nebo Náboženství., trait: {volby: [{pocet: 1, z: [skills:his, skills:arc, skills:rel]}]}}
+      - {k: bojovy-styl-nicitele, n: Bojový styl, u: [3], d: "Zvolíš si bojový styl: Boj obouruční zbraní, Ochranu, nebo Šerm (+2 k zásahu jednoruční zbraní)."}
+      - {k: krik-nepratel, n: Křik nepřátel, u: [6, 9, 13], d: Když během Zuřivosti srazíš nepřítele na 0, můžeš utratit Kostku obnovy (od 9. Úrovně dvě, od 13. tři) a obnovit si Body výdrže., akt: [{n: Křik nepřátel, t: special}]}
+      - {k: tajemstvi-oceli, n: Tajemství oceli, u: [10], d: Nelze tě Zastrašit, máš Výhodu proti Iluzím a Očarováním a Odolnost vůči psychickým zásahům., pas: [[system.traits.dr.value, psychic, add]]}
+      - {k: sam-proti-svetu, n: Sám proti světu, u: [14], d: Jednou za Zuřivost zaútočíš akcí Útok na každého tvora, který se během tvého tahu ocitne v tvém dosahu., akt: [{n: Sám proti světu, t: action}]}

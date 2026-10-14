@@ -1,0 +1,73 @@
+identifikator: bard
+nazev: Bard
+kotva: bard
+popis: Umělec, vypravěč a dobrodruh, jehož písně a slova mají magickou moc inspirovat spojence i ohýbat realitu.
+kostka: d8
+zachrany: [dex, cha]
+zbroje: [armor:lgt]
+zbrane: [weapon:sim, weapon:mar:longsword, weapon:mar:shortsword, weapon:mar:rapier, weapon:mar:handcrossbow]
+volby_pomucek: [{pocet: 3, z: ["tool:music:*"]}]
+dovednosti: {pocet: 3}
+asi: [4, 8, 12, 16, 19]
+kouzleni: {progrese: full, vlastnost: cha}
+skaly:
+  inspirace: {nazev: Kostka inspirace, typ: dice, hodnoty: {1: d6, 5: d8, 10: d10, 15: d12}}
+  odpocinkova-pisen: {nazev: Odpočinková píseň, typ: dice, hodnoty: {2: d6, 9: d8, 13: d10, 17: d12}}
+obor: {nazev: Bardská kolej, uroven: 3}
+
+schopnosti:
+  - {k: sesilani-kouzel, n: Sesílání kouzel, u: [1], d: Sesíláš Bardská kouzla s Charismatem jako sesílací vlastností; hudební nástroj ti slouží jako ohnisko.}
+  - k: bardska-inspirace
+    n: Bardská inspirace
+    u: [1, 5, 10, 15]
+    d: Bonusovou akcí dáš tvorovi do 12 sáhů Kostku inspirace, kterou může během 10 minut přičíst k jednomu Ověření, Útoku nebo Záchrannému hodu; kostka roste s Úrovní (k6 → k12).
+    p: "max(1, @abilities.cha.mod)/lr"
+    akt: [{n: Inspirovat, t: bonus, dosah: 12, hod: "@scale.bard.inspirace"}]
+  - {k: vseumel, n: Všeuměl, u: [2], d: K Ověřením vlastností bez Zdatnosti si přičítáš polovinu Zdatnostního bonusu., pas: [[flags.dnd5e.jackOfAllTrades, "true", override]]}
+  - k: odpocinkova-pisen
+    n: Odpočinková píseň
+    u: [2, 9, 13, 17]
+    d: Při Krátkém odpočinku si každý spojenec, který tě slyší a utratí Kostku obnovy, obnoví navíc Body výdrže podle kostky písně (k6 → k12).
+    akt: [{n: Odpočinková píseň, t: special, typ: heal, heal: "@scale.bard.odpocinkova-pisen"}]
+  - {k: kvalifikace-barda, n: Kvalifikace, u: [3, 10], d: Ve dvou Dovednostech se Zdatností máš Kvalifikaci (dvojnásobný Zdatnostní bonus); na 10. Úrovni ve dvou dalších., trait: {rezim: expertise, volby: [{pocet: 2, z: ["skills:*"]}]}}
+  - {k: pramen-inspirace, n: Pramen inspirace, u: [5], d: Bardskou inspiraci si obnovuješ i Krátkým odpočinkem.}
+  - k: protizmameni
+    n: Protizmámení
+    u: [6]
+    d: Akcí dáš sobě a spojencům do 6 sáhů, kteří tě slyší, Výhodu na Záchranné hody proti Vystrašení a Zmámení do konce svého příštího tahu.
+    akt: [{n: Protizmámení, t: action}]
+  - {k: magicka-tajemstvi, n: Magická tajemství, u: [10, 14, 18], d: Naučíš se dvě kouzla ze seznamu libovolného povolání (na 14. a 18. Úrovni další dvě); považují se za Bardská.}
+  - {k: zlepsena-inspirace, n: Zlepšená inspirace, u: [20], d: Pokud při hodu na Iniciativu nemáš žádné použití Bardské inspirace, jedno si obnovíš.}
+
+obory:
+  kolej-dramatu:
+    nazev: Kolej dramatu
+    kotva: kolej-dramatu
+    popis: Bardi dobrodružných ság, jejichž inspirace mění souboje v dramatické zvraty.
+    schopnosti:
+      - {k: stupnujici-se-napeti, n: Stupňující se napětí, u: [3], d: Tvor s Kostkou inspirace ji může přičíst k Zásahu svého útoku, nebo jí snížit Zásah, který sám utrpí.}
+      - {k: necekany-zvrat, n: Nečekaný zvrat, u: [6], d: Když ty nebo spojenec utrpíte Zásah, můžeš reakcí utratit Kostku inspirace a zasažený hned vrátí útok zbraní nebo trikem s bonusem kostky., akt: [{n: Nečekaný zvrat, t: reaction}]}
+      - {k: fatalni-slabina, n: Fatální slabina, u: [14], d: Jednou mezi Odpočinky bonusovou akcí učiníš nepřítele do začátku tvého tahu Zranitelným zvoleným typem zásahu (ignoruje Odolnost) a útoky tohoto typu proti němu mají Výhodu., p: 1/sr, akt: [{n: Fatální slabina, t: bonus}]}
+  kolej-romance:
+    nazev: Kolej romance
+    kotva: kolej-romance
+    popis: Šarmantní bardi společnosti, jejichž úsměv a půvab odzbrojí každé srdce.
+    schopnosti:
+      - {k: saty-delaji-cloveka, n: Šaty dělají člověka, u: [3], d: Lehkou zbroj upravíš, aby vypadala jako slavnostní oděv, a svůj vzhled vždy rychle napravíš.}
+      - {k: magicky-usmev, n: Magický úsměv, u: [3], d: Při seslání Očarovávacího kouzla na cíl, který tě vidí, můžeš Kostkou inspirace zvýšit jeho SO.}
+      - {k: neodolatelny-sarm, n: Neodolatelný šarm, u: [6], d: Po deseti minutách rozhovoru máš vůči tvorovi hodinu Výhodu na Klamání a Přesvědčování; naučíš se dvě Očarovávací kouzla navíc.}
+      - {k: osudova-pritazlivost, n: Osudová přitažlivost, u: [14], d: Nepřítel, kterého jsi dosud nenapadl, musí uspět v Záchranném hodu na Moudrost, jinak má na útoky proti tobě Nevýhodu.}
+  kolej-svetskych-pisni:
+    nazev: Kolej světských písní
+    kotva: kolej-svetskych-pisni
+    popis: Bardi lidové moudrosti, kteří léčí, radí a hrou na nástroj dokážou strhnout davy.
+    schopnosti:
+      - {k: pisen-zivota, n: Píseň života, u: [3], d: Kostkou inspirace může tvor zesílit léčení, které na něj míří, a zbavit se jednoho Stavu (nebo jeho Stupně).}
+      - {k: lidova-moudrost, n: Lidová moudrost, u: [6], d: Jednou mezi Odpočinky dáš reakcí spojenci Výhodu na Záchranný hod proti kouzlu., p: 1/sr, akt: [{n: Poradit, t: reaction}]}
+      - k: vtahujici-melodie
+        n: Vtahující melodie
+        u: [14]
+        d: Jednou mezi Odpočinky akcí začneš hrát píseň; tvorové, kteří ji slyší, musí uspět v Záchranném hodu na Moudrost, jinak jsou Zmámení a zanechají činnosti.
+        p: 1/sr
+        akt: [{n: Vtahující melodie, t: action, typ: save, save: wis, ef: [0]}]
+        ef: [{n: Zmámený (Vtahující melodie), st: [charmed], kola: 10}]

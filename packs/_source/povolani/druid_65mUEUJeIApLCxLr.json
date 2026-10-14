@@ -1,0 +1,442 @@
+{
+  "_id": "65mUEUJeIApLCxLr",
+  "name": "Druid",
+  "type": "class",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "O2EJ5fZne00vb5ch",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Strážce a vykladač přírody, který čerpá magii ze samotné podstaty života a mění se ve zvířata.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#druid\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "druid",
+    "levels": 1,
+    "hd": {
+      "denomination": "d8",
+      "spent": 0,
+      "additional": ""
+    },
+    "hitDice": "d8",
+    "hitDiceUsed": 0,
+    "advancement": {
+      "T3kuHrplyCWQ20hO": {
+        "_id": "T3kuHrplyCWQ20hO",
+        "type": "HitPoints",
+        "level": 0,
+        "title": "Body výdrže",
+        "hint": "",
+        "flags": {},
+        "configuration": {},
+        "value": {}
+      },
+      "rFA8yGJtlWYfPylg": {
+        "_id": "rFA8yGJtlWYfPylg",
+        "type": "Trait",
+        "level": 1,
+        "title": "Zbroje",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt",
+            "armor:med",
+            "armor:shl"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "HxcyIq18xktA82HP": {
+        "_id": "HxcyIq18xktA82HP",
+        "type": "Trait",
+        "level": 1,
+        "title": "Zbraně",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:sim:dagger",
+            "weapon:sim:quarterstaff",
+            "weapon:sim:spear",
+            "weapon:sim:club",
+            "weapon:sim:javelin",
+            "weapon:sim:mace",
+            "weapon:sim:sling",
+            "weapon:sim:sickle",
+            "weapon:mar:scimitar",
+            "weapon:sim:dart"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "O2ofFl9gJ1DnMLYa": {
+        "_id": "O2ofFl9gJ1DnMLYa",
+        "type": "Trait",
+        "level": 1,
+        "title": "Pomůcky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:herb"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "RsJKtrEl0URGQFpk": {
+        "_id": "RsJKtrEl0URGQFpk",
+        "type": "Trait",
+        "level": 1,
+        "title": "Záchranné hody",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:int",
+            "saves:wis"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "classRestriction": "primary"
+      },
+      "2WWFxZPIZ4NGtBdC": {
+        "_id": "2WWFxZPIZ4NGtBdC",
+        "type": "Trait",
+        "level": 1,
+        "title": "Dovednosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:med",
+                "skills:arc",
+                "skills:rel",
+                "skills:ani",
+                "skills:sur",
+                "skills:nat",
+                "skills:ins",
+                "skills:prc"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "classRestriction": "primary"
+      },
+      "OPAf4xiyQjCynggx": {
+        "_id": "OPAf4xiyQjCynggx",
+        "type": "AbilityScoreImprovement",
+        "level": 4,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "XWSSgceCrOIKogR5": {
+        "_id": "XWSSgceCrOIKogR5",
+        "type": "AbilityScoreImprovement",
+        "level": 8,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "jDKVn7V6mihuFzOw": {
+        "_id": "jDKVn7V6mihuFzOw",
+        "type": "AbilityScoreImprovement",
+        "level": 12,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "K73Ug8YdUbCf8tKC": {
+        "_id": "K73Ug8YdUbCf8tKC",
+        "type": "AbilityScoreImprovement",
+        "level": 16,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "ofzBdQPnYlQPHxCI": {
+        "_id": "ofzBdQPnYlQPHxCI",
+        "type": "AbilityScoreImprovement",
+        "level": 19,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "Qt8Xm2nmQo00ZBGD": {
+        "_id": "Qt8Xm2nmQo00ZBGD",
+        "type": "Subclass",
+        "level": 2,
+        "title": "Druidský kruh",
+        "hint": "",
+        "flags": {},
+        "configuration": {},
+        "value": {}
+      },
+      "fCC3hJu9cTWot6G1": {
+        "_id": "fCC3hJu9cTWot6G1",
+        "type": "ItemGrant",
+        "level": 1,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.MWXXbgJdEGG8LV6v",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.bkAvKEkLEOcPG8bG",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "PDrjneF13nD7bUdq": {
+        "_id": "PDrjneF13nD7bUdq",
+        "type": "ItemGrant",
+        "level": 2,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.Uq3oZ3SF9ZJgH0Ap",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "OuoMo1PXYeSoeUEv": {
+        "_id": "OuoMo1PXYeSoeUEv",
+        "type": "ItemGrant",
+        "level": 18,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.fOo7kzgEOhpdWcnL",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.Xj2Ah6UMRApWrsdd",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "is77LJKyE6GVafjv": {
+        "_id": "is77LJKyE6GVafjv",
+        "type": "ItemGrant",
+        "level": 20,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.COjaRHZGG5n69FHF",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "wis",
+      "preparation": {
+        "formula": "@abilities.wis.mod + @classes.druid.levels"
+      }
+    },
+    "startingEquipment": [],
+    "wealth": "",
+    "primaryAbility": {
+      "value": [],
+      "all": true
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": "druid"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!65mUEUJeIApLCxLr"
+}

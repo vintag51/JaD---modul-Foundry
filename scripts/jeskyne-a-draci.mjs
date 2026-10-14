@@ -15,7 +15,8 @@ const DATA = `modules/${MODUL}/data/kompendium`;
 const BALIKY = [
   { pack: "kouzla", soubor: "kouzla.json" },
   { pack: "seznamy-kouzel", soubor: "seznamy-kouzel.json" },
-  { pack: "rasy", soubor: "rasy.json" }
+  { pack: "rasy", soubor: "rasy.json" },
+  { pack: "povolani", soubor: "povolani.json" }
 ];
 
 const t = (klic, data) => data ? game.i18n.format(`JAD.${klic}`, data) : game.i18n.localize(`JAD.${klic}`);

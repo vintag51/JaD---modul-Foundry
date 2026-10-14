@@ -1,0 +1,235 @@
+{
+  "_id": "T3QZLNxk1fXzEhMw",
+  "name": "Pradávný drak",
+  "type": "subclass",
+  "img": "icons/sundries/books/book-symbol-triangle-silver-blue.webp",
+  "folder": "sTtSrEepZ5FHUJTJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Patron z řad nejstarších draků, spojený s kostmi světa a ničivým dechem.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#pradavny-drak\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "pradavny-drak",
+    "classIdentifier": "warlock",
+    "advancement": {
+      "OzmcKp5ZP8yAOc1r": {
+        "_id": "OzmcKp5ZP8yAOc1r",
+        "type": "ItemGrant",
+        "level": 1,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.yZ1gCFc5csEQ9op5",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "xn0R0R0SR7qAB1De": {
+        "_id": "xn0R0R0SR7qAB1De",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.kKD9UhPv5BjrXBo5",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "qCIZnR7OcdARAJwc": {
+        "_id": "qCIZnR7OcdARAJwc",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.wdROFHWs2TBHgJSg",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "PBmBX8lGGblqiYWT": {
+        "_id": "PBmBX8lGGblqiYWT",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.RG416PR1CzPqR5zK",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "bOID8I90pCMx9FEy": {
+        "_id": "bOID8I90pCMx9FEy",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Bonusový trik (Dech Patrona)",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.aWZk8cwlcgmDJf0x"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.crEHZYvdLcVNCSur"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.JF9H7RAgdtRas4Jy"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.9ywFAAPt0UKewQco"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.S4ZXChlCsqdGTXdw"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.21OrhIKaJWFZj4x0"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.NqR2DF3jcZJUgwiM"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.HxpVAVLa4sJLtVgf"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.s5AnAIPu34ubraAv"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.cwRveljW5DSGimaS"
+            }
+          ],
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": []
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {}
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "obor": "pradavny-drak"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!T3QZLNxk1fXzEhMw"
+}

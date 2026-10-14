@@ -1,0 +1,52 @@
+identifikator: wizard
+nazev: Kouzelník
+kotva: kouzelnik
+popis: Učenec magie, který studiem a knihou kouzel rozplétá a spřádá vlákna magické tapiserie světa.
+kostka: d6
+zachrany: [int, wis]
+zbrane: [weapon:sim:dagger, weapon:sim:quarterstaff, weapon:sim:lightcrossbow, weapon:sim:sling, weapon:sim:dart]
+dovednosti: {pocet: 2, z: [his, med, arc, rel, inv, ins]}
+asi: [4, 8, 12, 16, 19]
+kouzleni: {progrese: full, vlastnost: int, priprava: "@abilities.int.mod + @classes.wizard.levels"}
+obor: {nazev: Mystická tradice, uroven: 2}
+
+schopnosti:
+  - {k: sesilani-kouzel, n: Sesílání kouzel, u: [1], d: Kouzla zapisuješ do knihy kouzel, připravuješ si je a sesíláš s Inteligencí jako sesílací vlastností.}
+  - {k: zotaveni-mystiky, n: Zotavení mystiky, u: [1], d: Jednou denně si Krátkým odpočinkem obnovíš Pozice kouzel v součtu Stupňů nanejvýš polovina Úrovně kouzelníka (nahoru), žádnou vyšší než 5. Stupně., p: 1/day, akt: [{n: Zotavení mystiky, t: special}]}
+  - {k: mistr-kouzel, n: Mistr kouzel, u: [18], d: Jedno připravené kouzlo 1. Stupně a jedno do 2. Stupně sesíláš na nejnižším Stupni bez Pozice.}
+  - {k: typicka-kouzla, n: Typická kouzla, u: [20], d: Dvě známá kouzla do 3. Stupně máš vždy připravená a každé jednou mezi Odpočinky sešleš na 3. Stupni bez Pozice., p: 2/sr, akt: [{n: Typické kouzlo, t: special}]}
+
+obory:
+  mistr-svitku:
+    nazev: Mistr svitků
+    kotva: mistr-svitku
+    popis: Akademický kouzelník, pro něhož jsou svitky druhou pamětí i zbraní.
+    schopnosti:
+      - {k: svitkovy-adept, n: Svitkový adept, u: [2], d: Při sesílání ze svitku můžeš místo jeho spotřebování utratit vlastní Pozici a hodem na Inteligenci svitek zachovat.}
+      - {k: pisar-svitku, n: Písař svitků, u: [2, 6], d: Místo obnovy Pozic Zotavením mystiky vytvoříš dočasné kouzelné svitky odpovídajících Stupňů.}
+      - {k: mistr-kopirovani, n: Mistr kopírování, u: [2], d: Během Dlouhého odpočinku přepíšeš do knihy kouzel více kouzel za poloviční cenu.}
+      - {k: srozumitelny-zapis, n: Srozumitelný zápis, u: [6, 11], d: Tvé svitky dokáže akcí použít kdokoli gramotný – s tvými hodnotami sesílání.}
+      - {k: svitkovy-mistr, n: Svitkový mistr, u: [10], d: Používáš svitky libovolného povolání a můžeš jim dát své SO a útočný bonus.}
+      - {k: rychly-ctenar, n: Rychlý čtenář, u: [14], d: Jednou mezi Odpočinky použiješ svitek bonusovou akcí., p: 1/sr, akt: [{n: Rychlé čtení, t: bonus}]}
+  pruzkumnik:
+    nazev: Průzkumník
+    kotva: pruzkumnik
+    popis: Dobrodružný kouzelník terénu, otužilý cestovatel a praktický znalec nestvůr.
+    schopnosti:
+      - {k: znalosti-pruzkumnika, n: Znalosti Průzkumníka, u: [2], d: Získáš Zdatnost v Ovládání zvířat, Přežití a Přírodě; několik cestovatelských kouzel se pro tebe počítá za Kouzelnická., trait: {zdatnosti: [skills:ani, skills:sur, skills:nat]}}
+      - {k: pochodova-magie, n: Pochodová magie, u: [2], d: Hodina klidného cestování ti stačí k Zotavení mystiky a cestou můžeš i opisovat kouzla.}
+      - {k: pohotove-kouzleni, n: Pohotové kouzlení, u: [6], d: Jednou mezi Odpočinky sešleš reakcí ochranné kouzlo proti překvapivému nebezpečí., p: 1/sr, akt: [{n: Pohotové kouzlo, t: reaction}]}
+      - {k: zelezne-soustredeni, n: Železné soustředění, u: [6], d: K udržení Soustředění přičítáš Zdatnostní bonus; zásahy z pastí a prostředí mají SO nejvýš 10., pas: [[system.attributes.concentration.bonuses.save, "@prof", add]]}
+      - {k: znalec-exponatu, n: Znalec potenciálních exponátů, u: [10], d: Bonusovou akcí hodem na Přírodu zjistíš slabinu či vlastnost nadpřirozeného tvora., akt: [{n: Prozkoumat tvora, t: bonus}]}
+      - {k: nezpomalitelny, n: Nezpomalitelný, u: [10], d: Ignoruješ těžký terén a jsi imunní vůči zpomalení (kromě snížení Rychlosti na 0).}
+      - {k: snidane-sampionu, n: Snídaně šampionů, u: [14], d: Získáš Zdatnost v Záchranných hodech na Sílu a Obratnost; minuta rozcvičky ti dá na 10 minut Výhodu na Sílu a Obratnost., trait: {zdatnosti: [saves:str, saves:dex]}}
+  psychicky-mag:
+    nazev: Psychický mág
+    kotva: psychicky-mag
+    popis: Kouzelník, jehož magie vychází ze síly osobnosti a útočí na mysl.
+    schopnosti:
+      - {k: sila-osobnosti, n: Síla osobnosti, u: [2], d: Naučíš se jeden zvláštní trik navíc (Divotvorství, Drobná iluze, Mentální úder aj.) s vylepšením.}
+      - {k: projekce-osobnosti, n: Projekce osobnosti, u: [2], d: Očarovávací kouzla mají dvojnásobný dosah a počítá se od místa, odkud se díváš.}
+      - {k: mentalni-stit, n: Mentální štít, u: [6], d: Získáš Zdatnost v záchranách na Charisma a bonusovou akcí dáš tvorovi Výhodu na duševní záchranu., trait: {zdatnosti: [saves:cha]}, akt: [{n: Mentální štít, t: bonus}]}
+      - {k: hypnoticke-udery, n: Hypnotické údery, u: [10], d: K psychickým zásahům přičítáš Opravu inteligence a zasažený má Nevýhodu na záchrany proti Očarování a Iluzím.}
+      - {k: mistr-iluzi, n: Mistr Iluzí, u: [14], d: Jednou mezi Odpočinky vytvoříš iluzi, kterou nelze prohlédnout., p: 1/sr, akt: [{n: Mistrovská iluze, t: special}]}

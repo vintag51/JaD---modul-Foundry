@@ -1,0 +1,323 @@
+{
+  "_id": "jr6uPmGaJ24vNRgm",
+  "name": "Živlový čaroděj",
+  "type": "subclass",
+  "img": "icons/sundries/books/book-symbol-triangle-silver-blue.webp",
+  "folder": "QlOQCRlttfCqjwcl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Čaroděj, jemuž v žilách proudí živly – a ty mu nikdy dobrovolně neublíží.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#zivlovy-carodej\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "zivlovy-carodej",
+    "classIdentifier": "sorcerer",
+    "advancement": {
+      "cY3HamGUUD6UQj2W": {
+        "_id": "cY3HamGUUD6UQj2W",
+        "type": "ItemGrant",
+        "level": 1,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.YLOFVUBXCeKsue8b",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "P5TaCq6iNuIxGVUb": {
+        "_id": "P5TaCq6iNuIxGVUb",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.2oyUWvZ9KUwyxCiG",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "h06ixn12jXzlguHc": {
+        "_id": "h06ixn12jXzlguHc",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.LVMhxIFBxbCymEW9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "wRK4suCLW4Jek3rG": {
+        "_id": "wRK4suCLW4Jek3rG",
+        "type": "ItemGrant",
+        "level": 18,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.UezvSjSzfJgQX8iP",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "rPBkTBkr0KlyrNtM": {
+        "_id": "rPBkTBkr0KlyrNtM",
+        "type": "ItemGrant",
+        "level": 1,
+        "title": "Kouzla původu",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.nYRRPlXTFdFq12IV",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.BKqRtvIeGGcSNY5e",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      },
+      "7XZG8tHUrO3PoPFh": {
+        "_id": "7XZG8tHUrO3PoPFh",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Kouzla původu",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.eU14h9AEwV4qyJcO",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.3uYWDTmrBBtCREBH",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      },
+      "PMvam5ni9zV7BJOQ": {
+        "_id": "PMvam5ni9zV7BJOQ",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Kouzla původu",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.wwagZ4AmSQR2HkXo",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.xSqgXv8xsMsVwwJb",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      },
+      "QSjvd0QPO7yoo87k": {
+        "_id": "QSjvd0QPO7yoo87k",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Kouzla původu",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.hRlO00AViL3HWrsk",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.UXqdolwaGdhebDaR",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      },
+      "7h3gZL2n2hMZxFMp": {
+        "_id": "7h3gZL2n2hMZxFMp",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Kouzla původu",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.yE4Jdro2pj3Fwv4P",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.kouzla.Item.J3vy4YPsjl4aQ2h8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          }
+        },
+        "value": {}
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {}
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "obor": "zivlovy-carodej"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!jr6uPmGaJ24vNRgm"
+}

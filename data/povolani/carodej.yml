@@ -1,0 +1,108 @@
+identifikator: sorcerer
+nazev: Čaroděj
+kotva: carodej
+popis: Sesilatel s magií v krvi, který ji tvaruje vůlí a Čarodějnými body ohýbá podle svých přání.
+kostka: d6
+zachrany: [con, cha]
+zbrane: [weapon:sim:dagger, weapon:sim:quarterstaff, weapon:sim:lightcrossbow, weapon:sim:sling, weapon:sim:dart]
+dovednosti: {pocet: 2, z: [dec, arc, rel, per, ins, itm]}
+asi: [4, 8, 12, 16, 19]
+kouzleni: {progrese: full, vlastnost: cha}
+skaly:
+  carodejne-body: {nazev: Čarodějné body, hodnoty: {2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, 13: 13, 14: 14, 15: 15, 16: 16, 17: 17, 18: 18, 19: 19, 20: 20}}
+obor: {nazev: Čarodějný původ, uroven: 1}
+volby:
+  - {nazev: Metamagie, typ: feat, pocty: {3: 2, 10: 1, 17: 1}, z: [mm-elementalni, mm-neomylne, mm-opatrne, mm-posilene, mm-prodlouzene, mm-prenesene, mm-soustredene, mm-vzdalene, mm-zaludne, mm-zatvrzene, mm-zdvojene, mm-zostrene, mm-zrcadlene, mm-zrychlene]}
+
+schopnosti:
+  - {k: sesilani-kouzel, n: Sesílání kouzel, u: [1], d: Sesíláš Čarodějská kouzla s Charismatem jako sesílací vlastností.}
+  - k: zridlo-magie
+    n: Zřídlo magie
+    u: [2]
+    d: Máš Čarodějné body rovné Úrovni čaroděje; bonusovou akcí z nich tvoříš Pozice kouzel (1. Stupeň za 2, 2. za 3, 3. za 5, 4. za 6, 5. za 7) nebo Pozice měníš na body.
+    p: "@scale.sorcerer.carodejne-body/lr"
+    akt: [{n: Vytvořit Pozici kouzel, t: bonus}, {n: Přetavit Pozici na body, t: bonus, bezpouziti: true}]
+  - {k: metamagie, n: Metamagie, u: [3, 10, 17], d: Ovládáš dvě možnosti Metamagie (další na 10. a 17. Úrovni); při sesílání za ně utrácíš Čarodějné body.}
+  - {k: mm-elementalni, n: "Metamagie: Elementální kouzlo", d: "1 bod – změníš bleskový, hromový, chladný, kyselinový nebo ohnivý zásah kouzla na jiný z těchto typů."}
+  - {k: mm-neomylne, n: "Metamagie: Neomylné kouzlo", d: "1 bod – minutý útok kouzlem můžeš zopakovat (lze kombinovat s jinou Metamagií)."}
+  - {k: mm-opatrne, n: "Metamagie: Opatrné kouzlo", d: "1 bod – až tolik tvorů, kolik je tvá Oprava charismatu, v záchraně proti kouzlu automaticky uspěje."}
+  - {k: mm-posilene, n: "Metamagie: Posílené kouzlo", d: "1 bod – přehodíš až tolik kostek zásahu, kolik je tvá Oprava charismatu."}
+  - {k: mm-prodlouzene, n: "Metamagie: Prodloužené kouzlo", d: "1 bod – zdvojnásobíš trvání kouzla (nejvýš na 24 hodin)."}
+  - {k: mm-prenesene, n: "Metamagie: Přenesené kouzlo", d: "2 body – bonusovou akcí nebo reakcí přeneseš trvající kouzlo na jiný cíl."}
+  - {k: mm-soustredene, n: "Metamagie: Soustředěné kouzlo", d: "1 bod – Výhoda na udržení Soustředění na toto kouzlo."}
+  - {k: mm-vzdalene, n: "Metamagie: Vzdálené kouzlo", d: "1 bod – kouzlo na dotyk má dosah 6 sáhů, jinak se dosah zdvojnásobí."}
+  - {k: mm-zaludne, n: "Metamagie: Záludné kouzlo", d: "1 bod – sešleš kouzlo bez verbální a pohybové složky."}
+  - {k: mm-zatvrzene, n: "Metamagie: Zatvrzené kouzlo", d: "1 bod za Stupeň – kouzlo se proti rozptýlení a protikouzlům počítá jako vyššího Stupně."}
+  - {k: mm-zdvojene, n: "Metamagie: Zdvojené kouzlo", d: "Body podle Stupně (trik 1) – kouzlo na jeden cíl zacílíš na dva tvory."}
+  - {k: mm-zostrene, n: "Metamagie: Zostřené kouzlo", d: "3 body – jeden cíl má Nevýhodu na první záchranu proti kouzlu."}
+  - {k: mm-zrcadlene, n: "Metamagie: Zrcadlené kouzlo", d: "Body podle Stupně – reakcí okopíruješ cizí kouzlo sesílané poblíž a můžeš ho sám jednou seslat."}
+  - {k: mm-zrychlene, n: "Metamagie: Zrychlené kouzlo", d: "2 body – kouzlo se sesláním na akci sešleš bonusovou akcí."}
+  - {k: carodejna-obnova, n: Čarodějná obnova, u: [20], d: Krátkým odpočinkem si obnovíš 4 Čarodějné body.}
+
+obory:
+  fantaskni-magie:
+    nazev: Fantaskní magie
+    kotva: fantaskni-magie
+    popis: Čaroděj s nespoutanou fantazií, jehož představy se mění ve skutečnost.
+    kouzla_nazev: Kouzla původu
+    kouzla:
+      - {uroven: 1, kouzla: [Neviditelný služebník, Přestrojení]}
+      - {uroven: 3, kouzla: [Neviditelnost]}
+      - {uroven: 5, kouzla: [Strach, Velký obraz]}
+      - {uroven: 7, kouzla: [Mocná neviditelnost, Podrob Zvíře]}
+      - {uroven: 9, kouzla: [Dvojník, Změň paměť]}
+    schopnosti:
+      - {k: ziva-predstavivost, n: Živá představivost, u: [1], d: Naučíš se trik Drobná iluze navíc.}
+      - {k: imaginarni-pratele, n: Imaginární přátelé, u: [1], d: Neviditelného služebníka sešleš bez Pozice kouzel tolikrát za Dlouhý odpočinek, kolik je tvá Oprava charismatu (aspoň jednou)., p: "max(1, @abilities.cha.mod)/lr", akt: [{n: Imaginární přítel, t: action}]}
+      - {k: vlastni-svet, n: Vlastní svět, u: [6], d: Jednou mezi Odpočinky vynutíš přehození libovolného hodu, kterého jsi svědkem; za 2 Čarodějné body mu dáš Výhodu či Nevýhodu., p: 1/sr, akt: [{n: Vlastní svět, t: special}]}
+      - {k: neomezena-tvorivost, n: Neomezená tvořivost, u: [14], d: Živelnému kouzlu můžeš přiřadit dva jiné typy zásahu najednou a rozdělit mezi ně zásah., p: "max(1, @abilities.cha.mod)/lr", akt: [{n: Neomezená tvořivost, t: special}]}
+      - {k: studna-prani, n: Studna Přání, u: [18], d: Naučíš se kouzlo Přání navíc a jeho alternativní efekty ti nezpůsobí stres.}
+  sfericky-carodej:
+    nazev: Sférický čaroděj
+    kotva: sfericky-carodej
+    popis: Čaroděj spjatý s jinými Sférami, který čerpá sílu z portálů a cizí magie.
+    kouzla_nazev: Kouzla původu
+    kouzla:
+      - {uroven: 1, kouzla: [Magická střela, Najdi magii, Určení]}
+      - {uroven: 3, kouzla: [Mlžný krok, Spatři neviditelné]}
+      - {uroven: 5, kouzla: [Mihotání, Protikouzlo, Rozptyl magii]}
+      - {uroven: 7, kouzla: [Dimenzionální dveře, Vypuzení]}
+      - {uroven: 9, kouzla: [Telekineze, Mluva sfér]}
+    schopnosti:
+      - {k: sedmy-smysl, n: Sedmý smysl, u: [1], d: Najdi magii a Určení sesíláš jako rituály; Najdi magii odhalí i věci a bytosti z jiných Sfér.}
+      - {k: okna-do-neznama, n: Okna do neznáma, u: [2], d: Po minutě u portálu, sférického jevu nebo bytosti z jiné Sféry si obnovíš 2 Čarodějné body.}
+      - {k: energie-jinych-svetu, n: Energie jiných světů, u: [6], d: Když Protikouzlem nebo Rozptylem magie zrušíš cizí kouzlo, obnovíš si až 3 Čarodějné body.}
+      - {k: mistrovske-tkani, n: Mistrovské tkaní, u: [14], d: Naučíš se dvě další možnosti Metamagie a na kouzlo můžeš použít dvě naráz.}
+      - {k: volani-sfer, n: Volání Sfér, u: [18], d: Naučíš se Přesun Sférami navíc; sešleš ho bez složek a jednou mezi Odpočinky i bez Pozice kouzel., p: 1/sr, akt: [{n: Přesun Sférami zdarma, t: action}]}
+  zivlovy-carodej:
+    nazev: Živlový čaroděj
+    kotva: zivlovy-carodej
+    popis: Čaroděj, jemuž v žilách proudí živly – a ty mu nikdy dobrovolně neublíží.
+    kouzla_nazev: Kouzla původu
+    kouzla:
+      - {uroven: 1, kouzla: [Elementální erupce, Oblak mlhy]}
+      - {uroven: 3, kouzla: [Planoucí koule, Poryv větru]}
+      - {uroven: 5, kouzla: [Ohnivá koule, Splyň s kamenem]}
+      - {uroven: 7, kouzla: [Ovládni vodu, Tvaruj kámen]}
+      - {uroven: 9, kouzla: [Kamenná zeď, Plamenný úder]}
+    schopnosti:
+      - {k: pratelstvi-zivlu, n: Přátelství živlů, u: [1], d: Nemagický oheň, tlak, chlad a horko ti neublíží a můžeš dýchat pod vodou i v dýmu.}
+      - k: zivlova-tvar
+        n: Živlová tvář
+        u: [6]
+        d: Bonusovou akcí na minutu přijmeš rysy zvoleného živlu a získáš odpovídající odolnost a výhodu na společenské Ověření.
+        p: "max(1, @abilities.cha.mod)/lr"
+        akt: [{n: Oheň, t: bonus, ef: [0]}, {n: Voda, t: bonus, ef: [1]}, {n: Vzduch, t: bonus, ef: [2]}, {n: Země, t: bonus, ef: [3]}]
+        ef:
+          - {n: Živlová tvář – oheň, kola: 10, z: [[system.traits.dr.value, fire, add]]}
+          - {n: Živlová tvář – voda, kola: 10, z: [[system.traits.dr.value, cold, add]]}
+          - {n: Živlová tvář – vzduch, kola: 10, z: [[system.traits.dr.value, lightning, add]]}
+          - {n: Živlová tvář – země, kola: 10, z: [[system.traits.dr.value, acid, add]]}
+      - {k: zivlova-cesta, n: Živlová cesta, u: [14], d: Plaveš svou Rychlostí, vznášíš se, procházíš přirozenou zemí jako těžkým terénem a vidíš skrz dým a mlhu.}
+      - k: zivlova-podoba
+        n: Živlová podoba
+        u: [18]
+        d: Jednou za Dlouhý odpočinek se bonusovou akcí na minutu proměníš v čistý živel – OČ aspoň 20, imunita vůči bodným, drtivým a sečným zásahům i živlu a další přínosy.
+        p: 1/lr
+        akt: [{n: Živlová podoba, t: bonus, ef: [0]}]
+        ef: [{n: Živlová podoba, kola: 10, z: [[system.traits.di.value, bludgeoning, add], [system.traits.di.value, piercing, add], [system.traits.di.value, slashing, add], [system.attributes.ac.min, "20", upgrade]]}]

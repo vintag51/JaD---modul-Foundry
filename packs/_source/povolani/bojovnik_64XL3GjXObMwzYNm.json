@@ -1,0 +1,595 @@
+{
+  "_id": "64XL3GjXObMwzYNm",
+  "name": "Bojovník",
+  "type": "class",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "O2EJ5fZne00vb5ch",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Mistr zbraní a boje, jehož výcvik a vytrvalost z něj činí oporu každé družiny.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#bojovnik\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "fighter",
+    "levels": 1,
+    "hd": {
+      "denomination": "d10",
+      "spent": 0,
+      "additional": ""
+    },
+    "hitDice": "d10",
+    "hitDiceUsed": 0,
+    "advancement": {
+      "ahdKk4lLCTed9uYO": {
+        "_id": "ahdKk4lLCTed9uYO",
+        "type": "HitPoints",
+        "level": 0,
+        "title": "Body výdrže",
+        "hint": "",
+        "flags": {},
+        "configuration": {},
+        "value": {}
+      },
+      "LVzCFOvmOOEVQOu6": {
+        "_id": "LVzCFOvmOOEVQOu6",
+        "type": "Trait",
+        "level": 1,
+        "title": "Zbroje",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt",
+            "armor:med",
+            "armor:hvy",
+            "armor:shl"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "pqkGat4RQXLR5S52": {
+        "_id": "pqkGat4RQXLR5S52",
+        "type": "Trait",
+        "level": 1,
+        "title": "Zbraně",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:sim",
+            "weapon:mar"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "2Um2jKbMc2kYBPFV": {
+        "_id": "2Um2jKbMc2kYBPFV",
+        "type": "Trait",
+        "level": 1,
+        "title": "Záchranné hody",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:str",
+            "saves:con"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "classRestriction": "primary"
+      },
+      "90oFTBBb48flVUJy": {
+        "_id": "90oFTBBb48flVUJy",
+        "type": "Trait",
+        "level": 1,
+        "title": "Dovednosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:acr",
+                "skills:ath",
+                "skills:his",
+                "skills:ani",
+                "skills:sur",
+                "skills:ins",
+                "skills:prc",
+                "skills:itm"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "classRestriction": "primary"
+      },
+      "nbQnZ5ZlL3QOIEIv": {
+        "_id": "nbQnZ5ZlL3QOIEIv",
+        "type": "ScaleValue",
+        "level": 0,
+        "title": "Použití Akční vlny",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "identifier": "akcni-vlna",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "2": {
+              "value": 1
+            },
+            "17": {
+              "value": 2
+            }
+          }
+        },
+        "value": {}
+      },
+      "OysuHYipciwPwwOi": {
+        "_id": "OysuHYipciwPwwOi",
+        "type": "ScaleValue",
+        "level": 0,
+        "title": "Použití Nezdolnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "identifier": "nezdolnost",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "9": {
+              "value": 1
+            },
+            "13": {
+              "value": 2
+            },
+            "17": {
+              "value": 3
+            }
+          }
+        },
+        "value": {}
+      },
+      "uYYqcnpSYie9bkRT": {
+        "_id": "uYYqcnpSYie9bkRT",
+        "type": "ScaleValue",
+        "level": 0,
+        "title": "Počet útoků",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "identifier": "utoky",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": 1
+            },
+            "5": {
+              "value": 2
+            },
+            "11": {
+              "value": 3
+            },
+            "20": {
+              "value": 4
+            }
+          }
+        },
+        "value": {}
+      },
+      "H3GBOUgMkzCR3KFa": {
+        "_id": "H3GBOUgMkzCR3KFa",
+        "type": "AbilityScoreImprovement",
+        "level": 4,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "6FNpTuolfaLjzN8z": {
+        "_id": "6FNpTuolfaLjzN8z",
+        "type": "AbilityScoreImprovement",
+        "level": 6,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "zEFx2wrUiAJ3AjZN": {
+        "_id": "zEFx2wrUiAJ3AjZN",
+        "type": "AbilityScoreImprovement",
+        "level": 8,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "mFa8eDRaOMkhw668": {
+        "_id": "mFa8eDRaOMkhw668",
+        "type": "AbilityScoreImprovement",
+        "level": 12,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "uEC1OmrEREKruLx0": {
+        "_id": "uEC1OmrEREKruLx0",
+        "type": "AbilityScoreImprovement",
+        "level": 14,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "iT2zFTipBriNIeGH": {
+        "_id": "iT2zFTipBriNIeGH",
+        "type": "AbilityScoreImprovement",
+        "level": 16,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "vjgFUEkWt43wKVeF": {
+        "_id": "vjgFUEkWt43wKVeF",
+        "type": "AbilityScoreImprovement",
+        "level": 19,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "ZL6PO1tXlEHOl43h": {
+        "_id": "ZL6PO1tXlEHOl43h",
+        "type": "Subclass",
+        "level": 3,
+        "title": "Bojový archetyp",
+        "hint": "",
+        "flags": {},
+        "configuration": {},
+        "value": {}
+      },
+      "0t2K7or7xXn0G5kY": {
+        "_id": "0t2K7or7xXn0G5kY",
+        "type": "ItemGrant",
+        "level": 1,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.w0Z1rArApoFBnMod",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.wlitrsmD1bRbjc2n",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "aozXldZLwfPSlROi": {
+        "_id": "aozXldZLwfPSlROi",
+        "type": "ItemGrant",
+        "level": 2,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.eJWYND5Eg8diHu37",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "k44ZYZQEDR4DkLLa": {
+        "_id": "k44ZYZQEDR4DkLLa",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.bU6F4P3HK985ztFv",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "UrieC10ITyQSAucu": {
+        "_id": "UrieC10ITyQSAucu",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.wehXxDovW3BaugrV",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "GWyC56XmLHIZC7TR": {
+        "_id": "GWyC56XmLHIZC7TR",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Bojový styl",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.TL2chlsj9LkvWBd9"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.SIksVkS1r9F02tDp"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.At9BXew2tGLNMWrT"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.DHRC1U4wsLzdAflU"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.rjsmWat4qP85RCuE"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.ipl5OUPGZF7AFld2"
+            }
+          ],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": []
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {}
+    },
+    "startingEquipment": [],
+    "wealth": "",
+    "primaryAbility": {
+      "value": [],
+      "all": true
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": "fighter"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!64XL3GjXObMwzYNm"
+}

@@ -1,0 +1,99 @@
+identifikator: alchymista
+nazev: Alchymista
+kotva: alchymista
+popis: Badatel, vynálezce a praktický filosof, který ze své Alchymistické truhly vytáhne přesně to, co je zrovna potřeba.
+kostka: d8
+zachrany: [dex, int]
+zbroje: [armor:lgt]
+zbrane: [weapon:sim, weapon:mar:shortsword, weapon:mar:scimitar, weapon:mar:handcrossbow]
+pomucky: [tool:alchemist, tool:herb]
+volby_pomucek: [{pocet: 1, z: ["tool:art:*", "tool:*"]}]
+dovednosti: {pocet: 3, z: [his, med, arc, rel, inv, nat, ins]}
+asi: [4, 8, 10, 12, 16, 19]
+hlavni: [int]
+skaly:
+  kostka: {nazev: Kostka alchymisty, typ: dice, hodnoty: {1: d4, 5: d6, 9: d8, 13: d10, 17: d12}}
+obor: {nazev: Alchymistova specializace, uroven: 3}
+
+schopnosti:
+  - k: alchymisticka-truhla
+    n: Alchymistická truhla
+    u: [1]
+    d: Ze své Truhly vytáhneš za Použití truhly (počet = Úroveň alchymisty, obnova Dlouhým odpočinkem) běžný alchymistický výrobek – alchymistický oheň, dýmovnici, kyselinu, léčitelskou soupravu, léčivý lektvar, protijed, vodu sfér nebo základní jed. Akcí ho rovnou použiješ, bonusovou akcí předáš tvorovi do 2 sáhů.
+    p: "@classes.alchymista.levels/lr"
+    akt:
+      - {n: Vytáhnout a použít, t: action}
+      - {n: Vytáhnout a předat, t: bonus}
+      - {n: Alchymistický oheň, t: action, typ: attack, utok: ranged, druh: weapon, vlastnost: dex, dosah: 4, dmg: ["@scale.alchymista.kostka + @abilities.int.mod", fire]}
+      - {n: Léčivý lektvar, t: action, typ: heal, heal: "2d4 + 2"}
+  - {k: improvizace, n: Improvizace, u: [1], d: Jednou denně na konci Krátkého odpočinku obnovíš jedno Použití truhly., p: 1/lr, akt: [{n: Improvizovat, t: special}]}
+  - {k: zdatnost-s-vytvory, n: Zdatnost s výtvory, u: [1], d: Máš Zdatnost se všemi alchymistickými výrobky a s tím, co vytáhneš z Truhly.}
+  - k: alchymistova-zbran
+    n: Alchymistova zbraň
+    u: [2]
+    d: Během Dlouhého odpočinku připravíš dvě dávky zbraňové tinktury; akcí ji naneseš na upravenou zbraň (nebo 20 střel) a zásahy jí způsobí navíc Kostku alchymisty jedového, kyselinového či ohnivého zásahu.
+    p: 2/lr
+    akt:
+      - {n: Nanést tinkturu, t: action, ef: [0]}
+      - {n: Zásah tinkturou, t: special, typ: damage, dmg: ["@scale.alchymista.kostka", [poison, acid, fire]], bezpouziti: true}
+    ef: [{n: Zbraňová tinktura, z: []}]
+  - {k: znalost-magickych-predmetu, n: Znalost magických předmětů, u: [2], d: Znáš kouzla Najdi magii a Určení a sesíláš je jako rituály.}
+  - {k: tvurce-mocnych-predmetu, n: Tvůrce mocných předmětů, u: [5], d: Výrobky z Truhly jsou silnější – vrháš je dál, jejich SO je tvé SO schopností a každý dostane konkrétní vylepšení (např. mocný léčivý lektvar).}
+  - {k: zlepsena-improvizace, n: Zlepšená improvizace, u: [5], d: Každým Krátkým odpočinkem obnovíš tolik Použití truhly, kolik je tvá Oprava inteligence (aspoň 1).}
+  - {k: mistr-tajnych-remesel, n: Mistr tajných řemesel, u: [6], d: S alchymistickou a bylinkářskou soupravou a jedním dalším nářadím máš Kvalifikaci., trait: {rezim: expertise, zdatnosti: [tool:alchemist, tool:herb]}}
+  - {k: tvurce-magickych-lektvaru, n: Tvůrce magických Lektvarů, u: [7], d: Umíš vyrobit dva neobvyklé lektvary (a další s každou Úrovní); vytažení magického lektvaru stojí 2 Použití truhly.}
+  - {k: znalec-legendarnich-predmetu, n: Znalec legendárních předmětů, u: [11], d: Jednou za Dlouhý odpočinek sešleš s pomocí Truhly Poslyš mýty bez Pozice a surovin., p: 1/lr, akt: [{n: Poslyš mýty, t: minute}]}
+  - {k: mocna-alchymistova-zbran, n: Mocná alchymistova zbraň, u: [11], d: K zásahu tinktury přičítáš Opravu inteligence.}
+  - {k: privyknuti-tinkturam, n: Přivyknutí tinkturám, u: [14], d: Získáš Zdatnost v Záchranných hodech na Odolnost., trait: {zdatnosti: [saves:con]}}
+  - {k: tvurce-mocnych-lektvaru, n: Tvůrce mocných lektvarů, u: [15], d: Umíš vyrobit dva velmi vzácné lektvary (létání, neviditelnost, rychlost…); vytažení stojí 3 Použití truhly.}
+  - {k: tvurce-dokonalych-predmetu, n: Tvůrce dokonalých předmětů, u: [18], d: Vrhané kapaliny se při zásahu rozprsknou na okolní tvory a všechny běžné výrobky dostanou další vylepšení.}
+  - k: velke-dilo
+    n: Velké dílo
+    u: [20]
+    d: Vyrobíš Kámen mudrců – přestaneš stárnout, Obratnost a Inteligence se ti zvýší o 2 (max 22), jednou za Dlouhý odpočinek sešleš Vzkříšení bez Pozice, transmutuješ kovy a dotykem léčíš nemoci a jedy.
+    p: 1/lr
+    akt: [{n: Elixír života, t: action}]
+    pas: [[system.abilities.dex.value, "2", add], [system.abilities.int.value, "2", add], [system.abilities.dex.max, "2", add], [system.abilities.int.max, "2", add]]
+
+obory:
+  divotvurce:
+    nazev: Divotvůrce
+    kotva: divotvurce
+    popis: Alchymista zaměřený na techniku, lektvary a kouzelné předměty – tvůrce divů a zázraků.
+    schopnosti:
+      - {k: mechanik, n: Mechanik, u: [3], d: Získáš Zdatnost a Kvalifikaci s kutilskými nástroji., trait: {zdatnosti: [tool:art:tinker]}}
+      - {k: mechanicke-hricky, n: Mechanické hříčky, u: [3], d: Za 3 Použití truhly akcí vyrobíš mechanickou hříčku (cibule, karbidka, lano s navijákem, lovecká nástraha, nářadí, univerzální nůž…), kterou musíš udržovat., seznam: [Dobrodruhovy cibule, Karbidka, Lano s kotvičkou a navijákem, Lovecká nástraha, Mechanikovo nářadí, Univerzální nůž, Vyšetřovatelovo nářadí], akt: [{n: Vyrobit hříčku, t: action}]}
+      - {k: magicka-zbran-divotvurce, n: Magická zbraň, u: [9], d: Tinktura Alchymistovy zbraně může mít i nekrotický, zářivý nebo silový typ a útoky jí i hříčkami jsou magické.}
+      - {k: tvurce-magickych-predmetu, n: Tvůrce magických předmětů, u: [13, 17, 19], d: S Drahocennými surovinami a Použitími truhly vyrobíš na cestách dočasné kouzelné předměty a od 19. Úrovně legendární lektvary.}
+      - {k: tvurce-zivota, n: Tvůrce života, u: [17], d: Za hodinu a 10 Použití truhly stvoříš humanoidní výtvor, který tě poslouchá a bojuje podle tvých rozkazů.}
+  pyrofor:
+    nazev: Pyrofor
+    kotva: pyrofor
+    popis: Alchymista války – mistr ohně, výbušnin a palných zbraní.
+    schopnosti:
+      - {k: pyroforova-kombineza, n: Pyroforova kombinéza, u: [3], d: Upravíš si koženou zbroj na kombinézu s OČ 10 + Oprava obratnosti + Oprava inteligence., pas: [[system.attributes.ac.calc, custom, override], [system.attributes.ac.formula, "10 + @abilities.dex.mod + @abilities.int.mod", override]]}
+      - k: palna-zbran
+        n: Palná zbraň
+        u: [3, 13]
+        d: Máš jednoruční palnou zbraň (2k8 bodného, nabíjecí, dostřel 8/32 sáhů), se kterou jsi zdatný; náboje vyrobíš Dlouhým odpočinkem nebo za Použití truhly. Od 13. Úrovně má 2k10.
+        akt: [{n: Výstřel, t: action, typ: attack, utok: ranged, vlastnost: dex, dosah: 32, dmg: ["2d8 + @abilities.dex.mod", piercing]}]
+      - k: vybusniny
+        n: Výbušniny
+        u: [9]
+        d: Akcí utratíš libovolný počet Použití truhly a získáš granát či nálož – za každé Použití Kostku alchymisty ohnivého a drtivého zásahu (Obratnost, polovina).
+        akt: [{n: Hodit granát, t: action, typ: save, save: dex, dc: dex, sablona: {typ: radius, velikost: 1}, dmg: [["@scale.alchymista.kostka", fire], ["@scale.alchymista.kostka", bludgeoning]]}]
+      - {k: dute-projektily, n: Duté projektily, u: [13], d: Palná zbraň má zásah 2k10 a její náboje jsou Alchymistovou zbraní.}
+      - {k: rakety, n: Rakety, u: [13], d: Z výbušniny vyrobíš raketu s dostřelem 20/60 sáhů, která zasáhne cíl a pak exploduje., akt: [{n: Odpálit raketu, t: action, typ: attack, utok: ranged, dosah: 60, dmg: ["@classes.alchymista.levels", bludgeoning]}]}
+      - {k: silnejsi-traskaviny, n: Silnější třaskaviny, u: [17], d: Dvojnásobný dostřel palné zbraně a raket; za další Použití truhly zvětšíš výbuch, zapálíš okolí, boříš budovy a hloubíš jámy.}
+  theurg:
+    nazev: Theurg
+    kotva: theurg
+    popis: Alchymista kosmologie a metafyziky, který ovládá magii i bytosti jiných Sfér.
+    kouzleni: {progrese: third, vlastnost: int}
+    schopnosti:
+      - {k: sesilani-theurga, n: Sesílání kouzel, u: [3], d: Sesíláš Kouzelnická kouzla s Inteligencí (třetinový sesilatel); znáš Najdi přítelíčka a Truhla ti slouží jako brašnička na suroviny.}
+      - {k: zlepseny-pritelicek, n: Zlepšený Přítelíček, u: [3], d: Tvůj přítelíček může mít podobu nižšího běsa či víly, je odolnější, útočí tvým bonusem a vnímáš jeho smysly.}
+      - {k: vymitac, n: Vymítač, u: [9], d: Akcí přinutíš běsy, elementály, nebešťany a víly do 6 sáhů k záchraně na Moudrost – při neúspěchu je na minutu pošleš domů nebo odvrátíš., p: "max(1, @abilities.int.mod)/lr", akt: [{n: Vymítat, t: action, typ: save, save: wis, dc: int, sablona: {typ: radius, velikost: 6}}]}
+      - {k: znalec-sfer, n: Znalec Sfér, u: [9, 13], d: Jednou za Dlouhý odpočinek sešleš za Použití truhly Mluvu sfér či Sférickou vazbu (od 13. Úrovně i Sférického spojence) bez Pozice., p: 1/lr, akt: [{n: Sférické kouzlo, t: action}]}
+      - {k: spolubojovnik, n: Spolubojovník, u: [13], d: Přítelíček může zaútočit tvou bonusovou akcí bez spotřebování své reakce.}
+      - {k: vyvolavac, n: Vyvolávač, u: [17], d: Jednou mezi Odpočinky utratíš Pozici a vyvoláš přátelské bytosti jednoho druhu z jiné Sféry na minutu., p: 1/sr, akt: [{n: Vyvolat spojence, t: action}]}

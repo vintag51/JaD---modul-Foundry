@@ -1,0 +1,93 @@
+{
+  "_id": "kPQgIgnir16sgCe2",
+  "name": "Vzývání: Ďábelský zrak",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "P9y2KMIcZxVLbzmv",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "TnVixpt31P5uf1Hz",
+      "name": "Vzývání: Ďábelský zrak",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.darkvision",
+            "value": "24",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Vzývání: Ďábelský zrak (pasivní schopnost)</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.kPQgIgnir16sgCe2",
+      "_key": "!items.effects!kPQgIgnir16sgCe2.TnVixpt31P5uf1Hz"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>V magické i nemagické tmě vidíš normálně do 24 sáhů.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#cernokneznik\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Černokněžník",
+    "properties": [],
+    "activities": {},
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "tv-dabelsky-zrak",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!kPQgIgnir16sgCe2"
+}

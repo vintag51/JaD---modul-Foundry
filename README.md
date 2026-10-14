@@ -6,7 +6,7 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 
 > Jeskyně a draci pro Foundry VTT je nezávislá tvorba autora vintag51 a není spojena s autory ani vydavatelem hry Jeskyně a Draci (dostupné na [imago.cz](https://imago.cz)). Publikováno pod Licencí JaD pro třetí strany.
 
-## Co modul obsahuje (verze 0.2.0)
+## Co modul obsahuje (verze 0.3.0)
 
 | Část | Stav |
 |---|---|
@@ -19,7 +19,10 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 | Vzdálenosti v **sázích** (1 sáh = 1 pole = 5 stop) – modul přidává jednotku „sáh“ do dnd5e | hotovo |
 | Volitelná vrstva Midi-QOL + DAE (opakované Záchranné hody a zásahy na konci tahu) | 13 kouzel |
 | **14 hratelných ras a rodů** (Člověk s lidskými rody a variantami, 4 elfí a 4 trpasličí rody, Půlčík, Půlork, Gnóm, Drakorozený s 10 dračími původy, Tiefling) s automatickým postupem: vlastnosti, velikost, rychlost a vidění ve tmě v sázích, jazyky, zdatnosti, odolnosti, vrozená kouzla a rasové schopnosti | hotovo |
-| Povolání a obory (včetně Alchymisty a Lovce netvorů), předměty | další fáze, ve stejném modulu |
+| **11 povolání JaD** (Alchymista, Barbar, Bard, Bojovník, Čaroděj, Černokněžník, Druid, Klerik, Kouzelník, Lovec netvorů, Tulák) s postupem do 20. Úrovně: Body výdrže, zdatnosti, záchrany, dovednosti, zvýšení vlastností, škály (Zuřivost, Zákeřný útok, Kostka temnoty…), sesílání kouzel a volba oboru | hotovo |
+| **41 oborů** včetně doménových kouzel a kouzel původu; obory se sesíláním kouzel (Chodec, Chrámový rytíř, Svatokupec, Theurg, Řád zaprodanců) mají vlastní seznamy kouzel | hotovo |
+| **374 schopností povolání** – počty použití a obnova, aktivity (léčení, útoky, záchrany, efekty) a volby (Tajemná vzývání, Metamagie, Bojové styly, Lovecká zakletí, Laskavost paktu, Mystický taj) | hotovo |
+| Zázemí, Odbornosti, předměty | další fáze, ve stejném modulu |
 
 ## Instalace
 
@@ -55,6 +58,7 @@ git clone https://github.com/foundryvtt/dnd5e ../dnd5e
 pip install pyyaml
 python3 tools/generuj.py --dnd5e ../dnd5e        # --jednotky ft pro stopy místo sáhů
 python3 tools/generuj_rasy.py                     # rasy
+python3 tools/generuj_povolani.py                 # povolání a obory
 python3 tools/kontrola.py                        # strukturní kontrola
 npm install && npm run build                     # LevelDB kompendia (Foundry CLI)
 ```

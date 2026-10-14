@@ -1,0 +1,840 @@
+{
+  "_id": "DnyqetJMIFnzQ27A",
+  "name": "Černokněžník",
+  "type": "class",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "folder": "O2EJ5fZne00vb5ch",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Sesilatel, který získal magickou moc smlouvou s mocnou bytostí – svým Patronem.</p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#cernokneznik\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "identifier": "warlock",
+    "levels": 1,
+    "hd": {
+      "denomination": "d8",
+      "spent": 0,
+      "additional": ""
+    },
+    "hitDice": "d8",
+    "hitDiceUsed": 0,
+    "advancement": {
+      "Ay73k4F3HbNsMftx": {
+        "_id": "Ay73k4F3HbNsMftx",
+        "type": "HitPoints",
+        "level": 0,
+        "title": "Body výdrže",
+        "hint": "",
+        "flags": {},
+        "configuration": {},
+        "value": {}
+      },
+      "65GklbVPdJcbXZ24": {
+        "_id": "65GklbVPdJcbXZ24",
+        "type": "Trait",
+        "level": 1,
+        "title": "Zbroje",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "nQ69443ViGWk8b0M": {
+        "_id": "nQ69443ViGWk8b0M",
+        "type": "Trait",
+        "level": 1,
+        "title": "Zbraně",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:sim"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        }
+      },
+      "njukd7cZ7nWaQ3NO": {
+        "_id": "njukd7cZ7nWaQ3NO",
+        "type": "Trait",
+        "level": 1,
+        "title": "Záchranné hody",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:wis",
+            "saves:cha"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "classRestriction": "primary"
+      },
+      "fXOoJMcKa66aTGV7": {
+        "_id": "fXOoJMcKa66aTGV7",
+        "type": "Trait",
+        "level": 1,
+        "title": "Dovednosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:his",
+                "skills:dec",
+                "skills:arc",
+                "skills:rel",
+                "skills:inv",
+                "skills:nat",
+                "skills:itm"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "classRestriction": "primary"
+      },
+      "4fqovs7NOnlzdzdB": {
+        "_id": "4fqovs7NOnlzdzdB",
+        "type": "AbilityScoreImprovement",
+        "level": 4,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "a6I9WNXIK8XNhkIg": {
+        "_id": "a6I9WNXIK8XNhkIg",
+        "type": "AbilityScoreImprovement",
+        "level": 8,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "nLBePegG2ghyt3qY": {
+        "_id": "nLBePegG2ghyt3qY",
+        "type": "AbilityScoreImprovement",
+        "level": 12,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "0bKu2Pwne1GBCtRd": {
+        "_id": "0bKu2Pwne1GBCtRd",
+        "type": "AbilityScoreImprovement",
+        "level": 16,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "7iQDp73Oe4FEAx6u": {
+        "_id": "7iQDp73Oe4FEAx6u",
+        "type": "AbilityScoreImprovement",
+        "level": 19,
+        "title": "Zvýšení Hodnot vlastností",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "points": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 2,
+          "locked": [],
+          "recommendation": null
+        },
+        "value": {}
+      },
+      "3Ow09Sf4io815kqZ": {
+        "_id": "3Ow09Sf4io815kqZ",
+        "type": "Subclass",
+        "level": 1,
+        "title": "Černokněžníkův patron",
+        "hint": "",
+        "flags": {},
+        "configuration": {},
+        "value": {}
+      },
+      "2Rr93mPiBcS6xfSq": {
+        "_id": "2Rr93mPiBcS6xfSq",
+        "type": "ItemGrant",
+        "level": 1,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.zOO30TzZhwkTrjZf",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "ymeonRAEpy757hJq": {
+        "_id": "ymeonRAEpy757hJq",
+        "type": "ItemGrant",
+        "level": 2,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.vGX3kuAmGRlG4plQ",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "MCqdesEd1uvIKdcN": {
+        "_id": "MCqdesEd1uvIKdcN",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.pQDzGoG1BddLeL28",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "gTmuhxG78qhi6uP1": {
+        "_id": "gTmuhxG78qhi6uP1",
+        "type": "ItemGrant",
+        "level": 11,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.tvZXZQXaw19NYSNk",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "RdyfI2l5vBWH176b": {
+        "_id": "RdyfI2l5vBWH176b",
+        "type": "ItemGrant",
+        "level": 20,
+        "title": "Schopnosti",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.49Qr8pkPFKPTLcIa",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          }
+        },
+        "value": {}
+      },
+      "PuDaLcoMLqJGXRgc": {
+        "_id": "PuDaLcoMLqJGXRgc",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Tajemná vzývání",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "2": {
+              "count": 2,
+              "replacement": true
+            },
+            "5": {
+              "count": 1,
+              "replacement": true
+            },
+            "7": {
+              "count": 1,
+              "replacement": true
+            },
+            "9": {
+              "count": 1,
+              "replacement": true
+            },
+            "12": {
+              "count": 1,
+              "replacement": true
+            },
+            "15": {
+              "count": 1,
+              "replacement": true
+            },
+            "18": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.zmdKq6F6bnKFHYO6"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.kPQgIgnir16sgCe2"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.RIfMOFWlGoh8jBJq"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.87WXttWPzAgqm6Bw"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.zv6ARY44BE6Vlfkj"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.zUl7gLI4SyheicaA"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.mmohxV7nQEkdSk2W"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.P5vNeNNwngRka9Xb"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.DNU8YMIUEGX0cDcW"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.45qN0W01ajyZTlGH"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.6bDsrfEdV11CtVqh"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.TWAuxWPyApaflH4v"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.ZB60mhijydXYevDa"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.Aiuxdfcp39k9GiJS"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.HNDZTtW3lrbgSL78"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.3w9op2VrLCLq83GQ"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.KMCzpcCuxTYjcoAJ"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.o9iM7sEQDrHcowkI"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.oYp2PQh9SvKGU80T"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.I3aU1zzvGqIvQk1l"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.efbWPYC4ooRp6RxJ"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.OM6hlw0TQZaR96DQ"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.4TuqyWyiEL4ncSN7"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.afqoFqY3cXiqVriF"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.tnG39WIlZmUwp0u5"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.NLZRewpJJn14FIvj"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.RiCpBjlI91vR0tro"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.7OG0eBlJnvZS8zfG"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.G8f7Sgw7fT8IzZHz"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.XlO47EhK1Wi5iMw2"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.HCYeGeSg7yn8hFqz"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.qjfw7THj0P6BLCXw"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.Jdo6puoEmm8IaBkH"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.DTBEBijbOIwcHCR9"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.7FyiTxC7nxQ6EGCz"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.Bp1p4J7fm9N0rSWw"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.fogJgqLormcg6kH7"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.JFxajmnc06ZytDtE"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.nx1ArY5btuBOkt2P"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.t8Ox74CpeLL4FlIT"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.3aOypbX2LUEn3SdD"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.faeQ6obI5UG3t9Q0"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.i0n7JdW7mBl8r6y9"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.yU0LUJHl73rJd36i"
+            }
+          ],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": []
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      "ViGZhKXAPN8OVNkx": {
+        "_id": "ViGZhKXAPN8OVNkx",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Laskavost daná Paktem",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.GAa4KXz6zjEl8gBf"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.RNm2Sg7WyCoqHsw3"
+            },
+            {
+              "uuid": "Compendium.jeskyne-a-draci.povolani.Item.a0mzWOzLPwAI2YID"
+            }
+          ],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "",
+            "list": []
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      "swdzi9yOQDpKQUgo": {
+        "_id": "swdzi9yOQDpKQUgo",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Mystický taj (6. Stupeň)",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "11": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "6",
+            "list": [
+              "class:warlock"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      "rmaXMJjQN4lpjFoQ": {
+        "_id": "rmaXMJjQN4lpjFoQ",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Mystický taj (7. Stupeň)",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "7",
+            "list": [
+              "class:warlock"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      "MbjiM8gV98utlddq": {
+        "_id": "MbjiM8gV98utlddq",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Mystický taj (8. Stupeň)",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "15": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "8",
+            "list": [
+              "class:warlock"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      "LK5DsPNhgLkU4iJh": {
+        "_id": "LK5DsPNhgLkU4iJh",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Mystický taj (9. Stupeň)",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            },
+            "method": "innate",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "9",
+            "list": [
+              "class:warlock"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      }
+    },
+    "spellcasting": {
+      "progression": "pact",
+      "ability": "cha",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "startingEquipment": [],
+    "wealth": "",
+    "primaryAbility": {
+      "value": [],
+      "all": true
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": "warlock"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!DnyqetJMIFnzQ27A"
+}

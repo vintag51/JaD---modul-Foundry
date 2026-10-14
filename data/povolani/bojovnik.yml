@@ -1,0 +1,125 @@
+identifikator: fighter
+nazev: Bojovník
+kotva: bojovnik
+popis: Mistr zbraní a boje, jehož výcvik a vytrvalost z něj činí oporu každé družiny.
+kostka: d10
+zachrany: [str, con]
+zbroje: [armor:lgt, armor:med, armor:hvy, armor:shl]
+zbrane: [weapon:sim, weapon:mar]
+dovednosti: {pocet: 2, z: [acr, ath, his, ani, sur, ins, prc, itm]}
+asi: [4, 6, 8, 12, 14, 16, 19]
+skaly:
+  akcni-vlna: {nazev: Použití Akční vlny, hodnoty: {2: 1, 17: 2}}
+  nezdolnost: {nazev: Použití Nezdolnosti, hodnoty: {9: 1, 13: 2, 17: 3}}
+  utoky: {nazev: Počet útoků, hodnoty: {1: 1, 5: 2, 11: 3, 20: 4}}
+obor: {nazev: Bojový archetyp, uroven: 3}
+volby:
+  - {nazev: Bojový styl, typ: feat, pocty: {1: 1}, z: [styl-dve-zbrane, styl-obourucni, styl-obrana, styl-ochrana, styl-strelba, styl-serm]}
+
+schopnosti:
+  - {k: bojovy-styl, n: Bojový styl, u: [1], d: Osvojíš si jeden bojový styl (vybereš ho při postupu na Úroveň).}
+  - {k: styl-dve-zbrane, n: "Bojový styl: Boj dvěma zbraněmi", d: K Zásahu útoku druhou zbraní si přičítáš Opravu vlastnosti.}
+  - {k: styl-obourucni, n: "Bojový styl: Boj obouruční zbraní", d: Na Zásahu obouručně drženou zbraní na blízko si jedničky a dvojky můžeš přehodit.}
+  - {k: styl-obrana, n: "Bojový styl: Obrana", d: Ve zbroji máš +1 k OČ., pas: [[system.attributes.ac.bonus, "+1", add]]}
+  - {k: styl-ochrana, n: "Bojový styl: Ochrana", d: Se štítem můžeš reakcí dát Nevýhodu útoku na spojence do 1 sáhu., akt: [{n: Ochránit, t: reaction}]}
+  - {k: styl-strelba, n: "Bojový styl: Střelba", d: K útokům střelnou zbraní máš +2., pas: [[system.bonuses.rwak.attack, "+2", add]]}
+  - {k: styl-serm, n: "Bojový styl: Šerm", d: Se zbraní na blízko v jedné ruce a bez další zbraně máš +2 k Zásahu., pas: [[system.bonuses.mwak.damage, "+2", add]]}
+  - k: druhy-dech
+    n: Druhý dech
+    u: [1]
+    d: Jednou mezi Odpočinky si bonusovou akcí obnovíš 1k10 + Úroveň bojovníka Bodů výdrže.
+    p: 1/sr
+    akt: [{n: Druhý dech, t: bonus, typ: heal, heal: "1d10 + @classes.fighter.levels"}]
+  - {k: akcni-vlna, n: Akční vlna, u: [2, 17], d: Jednou mezi Odpočinky (od 17. Úrovně dvakrát) provedeš ve svém tahu jednu Akci navíc., p: "@scale.fighter.akcni-vlna/sr", akt: [{n: Akční vlna, t: special}]}
+  - {k: utok-navic, n: Útok navíc, u: [5, 11, 20], d: V akci Útok zaútočíš dvakrát, od 11. Úrovně třikrát a od 20. Úrovně čtyřikrát.}
+  - {k: nezdolnost, n: Nezdolnost, u: [9, 13, 17], d: Neúspěšný Záchranný hod můžeš zopakovat; jednou za Dlouhý odpočinek, od 13. Úrovně dvakrát, od 17. třikrát., p: "@scale.fighter.nezdolnost/lr", akt: [{n: Zopakovat záchranu, t: special}]}
+
+obory:
+  gardista:
+    nazev: Gardista
+    kotva: gardista
+    popis: Ochránce, který vlastním tělem kryje spojence a nikoho k nim nepustí.
+    schopnosti:
+      - {k: kryju-te, n: Kryju tě, u: [3], d: Reakcí si prohodíš místo se spojencem do 1 sáhu, na kterého míří útok, a cílem se staneš ty., akt: [{n: Kryju tě, t: reaction}]}
+      - {k: na-vsech-stranach, n: Na všech stranách, u: [7], d: Máš v kole dvě Reakce (stejný efekt ale nemůžeš použít dvakrát naráz).}
+      - {k: instinktivni-odrazeni, n: Instinktivní odražení, u: [10], d: Příležitostné útoky proti tobě mají Nevýhodu.}
+      - {k: za-mnou, n: Za mnou!, u: [15], d: Když se pohneš, spojenci do 1 sáhu se mohou pohnout s tebou bez využití svého pohybu.}
+      - {k: zivy-stit, n: Živý štít, u: [15], d: Příležitostný útok na spojence do 1 sáhu můžeš přesměrovat na sebe.}
+      - {k: ziva-hradba, n: Živá hradba, u: [18], d: Útoky zbraní na blízko proti spojencům v tvém dosahu mají Nevýhodu.}
+  chodec:
+    nazev: Chodec
+    kotva: chodec
+    popis: Bojovník divočiny, jehož pouto s krajinou mu dává přírodní magii a vládu nad terénem.
+    kouzleni: {progrese: third, vlastnost: wis}
+    schopnosti:
+      - {k: sesilani-chodce, n: Sesílání kouzel, u: [3], d: Sesíláš Druidská kouzla s Moudrostí jako sesílací vlastností (třetinový sesilatel).}
+      - {k: souziti-s-krajinou, n: Soužití s krajinou, u: [3], d: V terénu, kde se nacházíš, získáš přínos podle Tabulky krajiny; družinu nezpomaluje těžký terén a přirozeně se neztratíte.}
+      - {k: krajinna-magie, n: Krajinná magie, u: [7], d: Automaticky znáš a máš připravená kouzla odpovídající okolnímu terénu (od 13. a 19. Úrovně i vyšších Stupňů).}
+      - {k: pozornost-zalesaka, n: Pozornost zálesáka, u: [10], d: +5 k Pasivnímu vnímání, Výhoda na Vnímání a Iniciativu, a i ve spánku vnímáš okolí., pas: [[system.attributes.init.roll.mode, "1", add], [system.skills.prc.bonuses.passive, "5", add]]}
+      - {k: zbran-krajiny, n: Zbraň krajiny, u: [15], d: Tvé útoky zbraní způsobí dodatečný zásah 1k12 + Zdatnostní bonus typu daného krajinou., p: "max(1, @abilities.wis.mod)/sr", akt: [{n: Zbraň krajiny, t: special, typ: damage, dmg: ["1d12 + @prof", [fire, cold, lightning, thunder, poison, acid]]}]}
+      - {k: pomoc-krajiny, n: Pomoc krajiny, u: [18], d: Jednou za Dlouhý odpočinek akcí přivoláš zvířata krajiny, která ti pomohou., p: 1/lr, akt: [{n: Přivolat zvířata, t: action}]}
+  chramovy-rytir:
+    nazev: Chrámový rytíř
+    kotva: chramovy-rytir
+    popis: Válečník víry, jehož údery nesou boží hněv a dotek léčivou sílu.
+    kouzleni: {progrese: third, vlastnost: wis}
+    schopnosti:
+      - {k: sesilani-rytire, n: Sesílání kouzel, u: [3], d: Sesíláš Klerická kouzla s Moudrostí jako sesílací vlastností (třetinový sesilatel).}
+      - k: povzbuzeni
+        n: Povzbuzení
+        u: [3]
+        d: Jednou mezi Odpočinky dáš akcí až pěti tvorům Dočasné body výdrže (Úroveň bojovníka + Oprava moudrosti + Zdatnostní bonus).
+        p: 1/sr
+        akt: [{n: Povzbuzení, t: action, typ: heal, htyp: temphp, heal: "@classes.fighter.levels + @abilities.wis.mod + @prof"}]
+      - {k: duchovni-rana, n: Duchovní rána, u: [7], d: Po zásahu tvora můžeš bonusovou akcí zaútočit magicky (útok kouzlem) za 1k6 + Oprava moudrosti zářivého nebo nekrotického zásahu., akt: [{n: Duchovní rána, t: bonus, typ: attack, utok: melee, druh: spell, vlastnost: wis, dmg: [["1d6 + @abilities.wis.mod", [radiant, necrotic]]]}]}
+      - {k: lecivy-dotyk, n: Léčivý dotyk, u: [10], d: Jednou mezi Odpočinky bonusovou akcí vyléčíš dotykem 1k10 + Úroveň bojovníka a odstraníš Ohlušení, Oslepení nebo Paralýzu., p: 1/sr, akt: [{n: Léčivý dotyk, t: bonus, typ: heal, heal: "1d10 + @classes.fighter.levels"}]}
+      - {k: nuceny-navrat, n: Nucený návrat, u: [15], d: Jednou mezi Odpočinky můžeš zasaženého mimosférického tvora Záchranným hodem na Moudrost vypudit na hodinu do jeho domovské Sféry., p: 1/sr, akt: [{n: Nucený návrat, t: special, typ: save, save: wis}]}
+      - {k: kracejici-talisman, n: Kráčející talisman, u: [18], d: Jednou mezi Odpočinky způsobíš, že útok na tvora do 6 sáhů mine, nebo že tvor v Záchranném hodu uspěje., p: 1/sr, akt: [{n: Kráčející talisman, t: reaction}]}
+  strelec:
+    nazev: Střelec
+    kotva: strelec
+    popis: Mistr střelných zbraní, který zasáhne cokoliv a na jakoukoliv vzdálenost.
+    schopnosti:
+      - {k: zbehla-strelba, n: Zběhlá střelba, u: [3], d: Všechny dostřely zbraní máš dvojnásobné, ignoruješ vlastnost Nabíjecí a střílíš i s drobným předmětem v prstech.}
+      - {k: prilezitostny-vystrel, n: Příležitostný výstřel, u: [7], d: Když tvor bez krytu v krátkém dostřelu opustí dosah svého nepřítele, můžeš na něj reakcí vystřelit., akt: [{n: Příležitostný výstřel, t: reaction}]}
+      - {k: kryci-strelba, n: Krycí střelba, u: [10], d: Jednou mezi Odpočinky akcí zasypeš oblast střelami a tvorové v ní nemohou do tvého dalšího tahu provádět Reakce bez rizika zásahu., p: 1/sr, akt: [{n: Krycí střelba, t: action, sablona: {typ: radius, velikost: 2}}]}
+      - {k: zastavujici-zasah, n: Zastavující zásah, u: [15], d: Jednou za tah můžeš tvora zasaženého útokem na dálku srazit k zemi; zásah Příležitostným výstřelem mu sníží Rychlost na 0.}
+      - {k: plosne-ostrelovani, n: Plošné ostřelování, u: [18], d: Jednou mezi Odpočinky akcí zasáhneš všechny tvory do 2 sáhů od zvoleného bodu (Záchranný hod na Obratnost) za trojnásobek kostek zbraně a Opravy obratnosti., p: 1/sr, akt: [{n: Plošné ostřelování, t: action, typ: save, save: dex, dc: dex, sablona: {typ: radius, velikost: 2}}]}
+  sampion:
+    nazev: Šampion
+    kotva: sampion
+    popis: Bojovník dovedený k fyzické dokonalosti, jehož rány častěji drtí kriticky.
+    schopnosti:
+      - {k: zlepseny-kriticky-zasah, n: Zlepšený kritický zásah, u: [3], d: Útoky zbraní způsobí Kritický zásah při hodu 19–20., pas: [[flags.dnd5e.weaponCriticalThreshold, "19", downgrade]]}
+      - {k: mimoradny-atlet, n: Mimořádný atlet, u: [7], d: K hodům na Sílu, Obratnost a Odolnost bez Zdatnosti si přičítáš polovinu Zdatnostního bonusu (nahoru) a dál skáčeš., pas: [[flags.dnd5e.remarkableAthlete, "true", override]]}
+      - {k: dalsi-bojovy-styl, n: Další Bojový styl, u: [10], d: Zvolíš si druhý bojový styl.}
+      - {k: dokonalejsi-kriticky-zasah, n: Dokonalejší Kritický zásah, u: [15], d: Útoky zbraní způsobí Kritický zásah při hodu 18–20., pas: [[flags.dnd5e.weaponCriticalThreshold, "18", downgrade]]}
+      - {k: prezivsi, n: Přeživší, u: [18], d: Když máš nanejvýš polovinu Bodů výdrže (ale víc než 0), obnovíš si na začátku tahu 5 + Oprava odolnosti., akt: [{n: Přeživší, t: special, typ: heal, heal: "5 + @abilities.con.mod"}]}
+  veteran:
+    nazev: Veterán
+    kotva: veteran
+    popis: Ostřílený voják, který čte bojiště a těží z každé chyby nepřítele.
+    schopnosti:
+      - {k: bez-vahani, n: Bez váhání, u: [3], d: Když spojenec zasáhne nepřítele ve tvém dosahu, můžeš na něj reakcí provést Příležitostný útok., akt: [{n: Bez váhání, t: reaction}]}
+      - {k: prehled-o-bojisti, n: Přehled o bojišti, u: [3], d: Boj ti nedává Nevýhodu na Vnímání a v boji ho můžeš použít bonusovou akcí., akt: [{n: Rozhlédnout se, t: bonus}]}
+      - {k: veteranske-reflexy, n: Veteránské reflexy, u: [7], d: Získáš Zdatnost v Záchranných hodech na Obratnost., trait: {zdatnosti: [saves:dex]}}
+      - {k: bitevni-houzevnatost, n: Bitevní houževnatost, u: [10], d: Druhý dech můžeš mezi Odpočinky použít dvakrát.}
+      - {k: sila-jednotky, n: Síla jednotky, u: [15], d: Když spojenec získá proti nepříteli ve tvém dosahu Výhodu, můžeš ji reakcí získat i ty – a naopak bonusovou akcí předat svou.}
+      - {k: smrtici-instinkty, n: Smrtící instinkty, u: [18], d: Zásah Příležitostným útokem je vždy Kritický.}
+  vojevudce:
+    nazev: Vojevůdce
+    kotva: vojevudce
+    popis: Velitel, který rozkazy a Válečnými kostkami řídí spojence v boji i v bitvě.
+    skaly:
+      valecna-kostka: {nazev: Válečná kostka, typ: dice, hodnoty: {3: d8, 10: d10, 18: d12}}
+      valecne-kostky: {nazev: Počet Válečných kostek, hodnoty: {3: 4, 7: 5, 15: 6}}
+    schopnosti:
+      - {k: autorita, n: Autorita, u: [3], d: Při povzbuzování morálky u nenepřátelských tvorů máš Výhodu na Klamání, Přesvědčování, Vhled a Zastrašování.}
+      - k: veleni
+        n: Velení
+        u: [3]
+        d: Umíš vydávat Rozkazy (4 až 8 podle Úrovně); každý stojí Válečnou kostku (k8 → k12), které si obnovíš Dlouhým odpočinkem. Rozkaz ve svém tahu nestojí akci, mimo tah Reakci.
+        p: "@scale.vojevudce.valecne-kostky/lr"
+        akt: [{n: Vydat rozkaz, t: special, hod: "@scale.vojevudce.valecna-kostka"}]
+      - {k: odhad-bojiste, n: Odhad bojiště, u: [7], d: Akcí zjistíš taktiku nepřátel a dvě další důležité informace o bojišti.}
+      - {k: neunavny, n: Neúnavný, u: [15], d: Pokud při hodu na Iniciativu nemáš žádnou Válečnou kostku, jednu si obnovíš.}

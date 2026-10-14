@@ -1,0 +1,204 @@
+{
+  "_id": "UezvSjSzfJgQX8iP",
+  "name": "Živlová podoba",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+  "folder": "QlOQCRlttfCqjwcl",
+  "sort": 18000,
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "_id": "t9tz1jAivyV8okbY",
+      "name": "Živlová podoba",
+      "img": "icons/skills/melee/weapons-crossed-swords-white-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "bludgeoning",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "piercing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "slashing",
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.ac.min",
+            "value": "20",
+            "type": "upgrade",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Živlová podoba</p>",
+      "flags": {},
+      "origin": "Compendium.jeskyne-a-draci.povolani.Item.UezvSjSzfJgQX8iP",
+      "_key": "!items.effects!UezvSjSzfJgQX8iP.t9tz1jAivyV8okbY"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>Jednou za Dlouhý odpočinek se bonusovou akcí na minutu proměníš v čistý živel – OČ aspoň 20, imunita vůči bodným, drtivým a sečným zásahům i živlu a další přínosy.</p><p><em>Úroveň: 18.</em></p><p><em>Plné znění: <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/4-povolani.html#zivlovy-carodej\" target=\"_blank\">SRD Jeskyní a draků – Povolání</a>.</em></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Živlový čaroděj 18",
+    "properties": [],
+    "activities": {
+      "R9Mm2ygskGj5dtFF": {
+        "_id": "R9Mm2ygskGj5dtFF",
+        "type": "utility",
+        "name": "Živlová podoba",
+        "img": "",
+        "sort": 0,
+        "flags": {},
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "t9tz1jAivyV8okbY",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "units": "",
+          "value": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "prerequisites": {
+      "level": null
+    },
+    "identifier": "zivlova-podoba",
+    "advancement": {}
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "povolani": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UezvSjSzfJgQX8iP"
+}
