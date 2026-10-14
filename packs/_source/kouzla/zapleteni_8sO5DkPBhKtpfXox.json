@@ -4,7 +4,7 @@
   "img": "icons/magic/nature/root-vine-entangle-foot-green.webp",
   "system": {
     "description": {
-      "value": "<p>Rostliny v oblasti spoutají tvory, kteří neuspějí v záchraně; oblast je obtížný terén.</p><h3>Automatizace</h3><ul><li><strong>Hod na vyproštění z rostlin:</strong> ověření vlastnosti.</li><li><strong>Seslat:</strong> záchranný hod na Sílu proti SO kouzla; efekt: Zapletení.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zapleteni\" target=\"_blank\">SRD Jeskyní a draků – Zapletení</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Rostliny v oblasti spoutají tvory, kteří neuspějí v Záchranném hodu; oblast je obtížný terén.</p><h3>Automatizace</h3><ul><li><strong>Hod na vyproštění z rostlin:</strong> Ověření vlastnosti.</li><li><strong>Seslat:</strong> Záchranný hod na Sílu proti SO kouzla; efekt: Zapletení.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zapleteni\" target=\"_blank\">SRD Jeskyní a draků – Zapletení</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -29,16 +29,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "square",
-        "size": "6",
+        "size": "4",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "27",
-      "units": "m",
+      "value": "18",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -105,7 +105,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -175,7 +175,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -260,6 +260,7 @@
             "key": "flags.midi-qol.OverTime",
             "value": "actionSave=roll,rollType=check,saveAbility=str,saveDC=@attributes.spell.dc,label=Zapletení",
             "type": "custom",
+            "phase": "initial",
             "priority": 20
           }
         ]
@@ -273,10 +274,10 @@
   ],
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "zapleteni",
       "srd": "gMrWeG8fMDPRFiVe",
       "nazevEn": "Entangle",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zapleteni"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zapleteni"
     }
   },
   "_id": "8sO5DkPBhKtpfXox",

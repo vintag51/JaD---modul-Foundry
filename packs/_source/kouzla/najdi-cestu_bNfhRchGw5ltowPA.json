@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Najdeš nejkratší cestu k určenému místu.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#najdi-cestu\" target=\"_blank\">SRD Jeskyní a draků – Najdi cestu</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Najdeš nejkratší cestu k určenému místu.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#najdi-cestu\" target=\"_blank\">SRD Jeskyní a draků – Najdi cestu</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,7 +32,7 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -97,7 +97,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -131,10 +131,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "najdi-cestu",
       "srd": "cYI4RNNjI5GAmLhy",
       "nazevEn": "Find the Path",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#najdi-cestu"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#najdi-cestu"
     }
   },
   "img": "icons/tools/navigation/map-chart-tan.webp",

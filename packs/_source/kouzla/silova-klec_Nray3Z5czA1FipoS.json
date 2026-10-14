@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Neviditelná silová klec uvězní tvory.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Charisma proti SO kouzla; efekt: Uvězněný v silové kleci.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#silova-klec\" target=\"_blank\">SRD Jeskyní a draků – Silová klec</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Neviditelná silová klec uvězní tvory.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Charisma proti SO kouzla; efekt: Uvězněný v silové kleci.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#silova-klec\" target=\"_blank\">SRD Jeskyní a draků – Silová klec</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cube",
-        "size": "6",
+        "size": "4",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "30",
-      "units": "m",
+      "value": "20",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -105,7 +105,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -145,10 +145,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "silova-klec",
       "srd": "Y7uWUO4yqUN0JKl0",
       "nazevEn": "Forcecage",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#silova-klec"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#silova-klec"
     }
   },
   "img": "icons/magic/control/debuff-chains-orb-movement-blue.webp",

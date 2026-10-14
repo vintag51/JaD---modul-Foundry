@@ -1,0 +1,239 @@
+{
+  "_id": "SUFiEZ6W5k79uBYt",
+  "name": "Sádlo",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Oblast pokryje kluzký tuk; tvorové v ní mohou upadnout.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Obratnost proti SO kouzla.</li><li><strong>Záchrana při vstupu / konci tahu v mastnotě:</strong> Záchranný hod na Obratnost proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sadlo\" target=\"_blank\">SRD Jeskyní a draků – Sádlo</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "square",
+        "size": "2",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "12",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 1,
+    "school": "con",
+    "materials": {
+      "value": "kousek vepřové kůže nebo másla",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "dex",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "OiCc4lVFXS0vkFhf": {
+        "type": "save",
+        "name": "Záchrana při vstupu / konci tahu v mastnotě",
+        "_id": "OiCc4lVFXS0vkFhf",
+        "img": "",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": true,
+          "condition": "Když tvor vstoupí do oblasti nebo v ní ukončí tah."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "spec",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "1",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "identifier": "grease"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "sadlo",
+      "srd": "etgcR9wqmrhyZ0tx",
+      "nazevEn": "Grease",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sadlo"
+    }
+  },
+  "img": "icons/commodities/materials/slime-white.webp",
+  "effects": [],
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!SUFiEZ6W5k79uBYt"
+}

@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Spletitý vzor okouzlí a ochromí tvory, kteří ho vidí.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Hypnotický vzor.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hypnoticky-vzor\" target=\"_blank\">SRD Jeskyní a draků – Hypnotický vzor</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Spletitý vzor okouzlí a ochromí tvory, kteří ho vidí.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Hypnotický vzor.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hypnoticky-vzor\" target=\"_blank\">SRD Jeskyní a draků – Hypnotický vzor</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cube",
-        "size": "9",
+        "size": "6",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "36",
-      "units": "m",
+      "value": "24",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -108,7 +108,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -148,10 +148,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "hypnoticky-vzor",
       "srd": "6g3WLOZ2u0EbaLAd",
       "nazevEn": "Hypnotic Pattern",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hypnoticky-vzor"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hypnoticky-vzor"
     }
   },
   "img": "icons/magic/air/air-burst-spiral-large-pink.webp",
@@ -198,31 +198,31 @@
         "changes": [
           {
             "key": "system.attributes.movement.burrow",
-            "value": "0",
+            "value": 0,
             "priority": null,
             "type": "override"
           },
           {
             "key": "system.attributes.movement.climb",
-            "value": "0",
+            "value": 0,
             "priority": null,
             "type": "override"
           },
           {
             "key": "system.attributes.movement.fly",
-            "value": "0",
+            "value": 0,
             "priority": null,
             "type": "override"
           },
           {
             "key": "system.attributes.movement.swim",
-            "value": "0",
+            "value": 0,
             "priority": null,
             "type": "override"
           },
           {
             "key": "system.attributes.movement.walk",
-            "value": "0",
+            "value": 0,
             "priority": null,
             "type": "override"
           }

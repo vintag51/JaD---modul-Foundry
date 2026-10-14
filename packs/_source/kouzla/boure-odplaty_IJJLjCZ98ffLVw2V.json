@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Bouře, která po kolech přináší hrom, kyselinu, blesky a krupobití.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Odolnost proti SO kouzla; 2k6 hromové zranění; při úspěchu nic; efekt: Ohlušující rána.</li><li><strong>2. kolo: Kyselý déšť:</strong> 1k6 kyselinové zranění.</li><li><strong>3. kolo: Blesky:</strong> záchranný hod na Obratnost proti SO kouzla; 10k6 bleskové zranění; při úspěchu polovina.</li><li><strong>4. kolo: Kroupy:</strong> 2k6 drtivé zranění.</li><li><strong>5.–10. kolo: Poryvy a mrznoucí déšť:</strong> 1k6 chladné zranění.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#boure-odplaty\" target=\"_blank\">SRD Jeskyní a draků – Bouře odplaty</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Bouře, která po kolech přináší hrom, kyselinu, blesky a krupobití.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Odolnost proti SO kouzla; Hromový zásah za 2k6 Bodů výdrže; při úspěchu bez účinku; efekt: Ohlušující rána.</li><li><strong>2. kolo: Kyselý déšť:</strong> Kyselinový zásah za 1k6 Bodů výdrže.</li><li><strong>3. kolo: Blesky:</strong> Záchranný hod na Obratnost proti SO kouzla; Bleskový zásah za 10k6 Bodů výdrže; při úspěchu poloviční Zásah.</li><li><strong>4. kolo: Kroupy:</strong> Drtivý zásah za 2k6 Bodů výdrže.</li><li><strong>5.–10. kolo: Poryvy a mrznoucí déšť:</strong> Chladný zásah za 1k6 Bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#boure-odplaty\" target=\"_blank\">SRD Jeskyní a draků – Bouře odplaty</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,9 +34,9 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "radius",
-        "size": "108",
+        "size": "72",
         "contiguous": false,
         "count": ""
       }
@@ -115,9 +115,9 @@
           "template": {
             "contiguous": false,
             "stationary": true,
-            "units": "m",
+            "units": "sah",
             "type": "radius",
-            "size": "108",
+            "size": "72",
             "count": ""
           },
           "affects": {
@@ -213,7 +213,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -291,16 +291,16 @@
         "effects": [],
         "flags": {},
         "range": {
-          "units": "m",
+          "units": "sah",
           "override": true,
           "special": "",
-          "value": "108"
+          "value": "72"
         },
         "target": {
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -395,7 +395,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -482,7 +482,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -534,10 +534,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "boure-odplaty",
       "srd": "7KjExw0kmuqERa7C",
       "nazevEn": "Storm of Vengeance",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#boure-odplaty"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#boure-odplaty"
     }
   },
   "img": "icons/magic/lightning/bolts-salvo-clouds-sky.webp",

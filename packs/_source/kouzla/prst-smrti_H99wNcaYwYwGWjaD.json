@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Nekrotická energie zabije a mrtvého humanoida promění v zombii.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Odolnost proti SO kouzla; 7k8 + 30 nekrotické zranění; při úspěchu polovina.</li><li><strong>Pozvednout zombii:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Trvale ovládaný.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#prst-smrti\" target=\"_blank\">SRD Jeskyní a draků – Prst smrti</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Nekrotická energie zabije a mrtvého humanoida promění v zombii.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Odolnost proti SO kouzla; Nekrotický zásah za 7k8 + 30 Bodů výdrže; při úspěchu poloviční Zásah.</li><li><strong>Pozvednout zombii:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Trvale ovládaný.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#prst-smrti\" target=\"_blank\">SRD Jeskyní a draků – Prst smrti</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -195,7 +195,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -263,10 +263,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "prst-smrti",
       "srd": "HPvZm8YJO91k6Qdg",
       "nazevEn": "Finger of Death",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#prst-smrti"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#prst-smrti"
     }
   },
   "img": "icons/magic/unholy/energy-smoke-pink.webp",

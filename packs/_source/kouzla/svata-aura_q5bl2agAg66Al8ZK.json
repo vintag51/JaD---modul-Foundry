@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Spojenci září, mají výhodu v záchranách a útoky proti nim nevýhodu.</p><h3>Automatizace</h3><ul><li><strong>Oslepující světlo:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Oslepený svatou aurou.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#svata-aura\" target=\"_blank\">SRD Jeskyní a draků – Svatá aura</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Spojenci září, mají výhodu v záchranách a útoky proti nim nevýhodu.</p><h3>Automatizace</h3><ul><li><strong>Oslepující světlo:</strong> Záchranný hod na Odolnost proti SO kouzla; efekt: Oslepený svatou aurou.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#svata-aura\" target=\"_blank\">SRD Jeskyní a draků – Svatá aura</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,9 +32,9 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "radius",
-        "size": "9",
+        "size": "6",
         "contiguous": false,
         "count": ""
       }
@@ -99,7 +99,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "type": "",
             "size": "",
             "count": ""
@@ -176,7 +176,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -218,10 +218,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "svata-aura",
       "srd": "j8S49Rea8b1640Zi",
       "nazevEn": "Holy Aura",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#svata-aura"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#svata-aura"
     }
   },
   "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",

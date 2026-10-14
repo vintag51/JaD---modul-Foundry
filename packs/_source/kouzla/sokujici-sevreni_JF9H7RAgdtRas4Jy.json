@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Elektrický výboj při doteku; zasažený nemůže do začátku svého tahu použít reakci. Proti cíli v kovové zbroji máš výhodu.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> útok kouzlem na blízko; zásah: 1k8 bleskové zranění (roste na 5., 11. a 17. úrovni postavy); efekt: Šokující sevření.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#sokujici-sevreni\" target=\"_blank\">SRD Jeskyní a draků – Šokující sevření</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Elektrický výboj při doteku; zasažený nemůže do začátku svého tahu použít reakci. Proti cíli v kovové zbroji máš výhodu.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Útok na blízko kouzlem; při Zásahu Bleskový zásah za 1k8 Bodů výdrže (roste na 5., 11. a 17. Úrovni); efekt: Šokující sevření.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sokujici-sevreni\" target=\"_blank\">SRD Jeskyní a draků – Šokující sevření</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -105,7 +105,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -170,10 +170,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "sokujici-sevreni",
       "srd": "XvbiNhNqXXIFisIy",
       "nazevEn": "Shocking Grasp",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#sokujici-sevreni"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sokujici-sevreni"
     }
   },
   "img": "icons/magic/lightning/projectile-orb-blue.webp",

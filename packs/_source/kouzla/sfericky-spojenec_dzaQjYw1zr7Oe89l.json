@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Požádáš božstvo o vyslání pomocníka.</p><h3>Automatizace</h3><ul><li><strong>Přivolat:</strong> přivolání tvora (karta tvora se vytvoří automaticky).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#sfericky-spojenec\" target=\"_blank\">SRD Jeskyní a draků – Sférický spojenec</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Požádáš božstvo o vyslání pomocníka.</p><h3>Automatizace</h3><ul><li><strong>Přivolat:</strong> přivolání tvora (karta tvora se vytvoří automaticky).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sfericky-spojenec\" target=\"_blank\">SRD Jeskyní a draků – Sférický spojenec</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -40,8 +40,8 @@
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -102,7 +102,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -171,10 +171,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "sfericky-spojenec",
       "srd": "fkREcytuZ8sngWtC",
       "nazevEn": "Planar Ally",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#sfericky-spojenec"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sfericky-spojenec"
     }
   },
   "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",

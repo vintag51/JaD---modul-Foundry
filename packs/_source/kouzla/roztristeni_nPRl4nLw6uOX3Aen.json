@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Bolestivý zvuk zraní tvory v oblasti hromem.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Odolnost proti SO kouzla; 3k8 hromové zranění (+1k8 za každý stupeň nad 2); při úspěchu polovina.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#roztristeni\" target=\"_blank\">SRD Jeskyní a draků – Roztříštění</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Bolestivý zvuk zasáhne tvory v oblasti hromem.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Odolnost proti SO kouzla; Hromový zásah za 3k8 Bodů výdrže (+1k8 za každý Stupeň nad 2); při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#roztristeni\" target=\"_blank\">SRD Jeskyní a draků – Roztříštění</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "sphere",
-        "size": "3",
+        "size": "2",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -99,7 +99,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -157,10 +157,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "roztristeni",
       "srd": "wJKpSvSTbSkTjqyb",
       "nazevEn": "Shatter",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#roztristeni"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#roztristeni"
     }
   },
   "img": "icons/magic/lightning/barrier-shield-orb-pink.webp",

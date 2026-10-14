@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vytvoříš kouli jasného denního světla.</p><h3>Automatizace</h3><ul><li><strong>Seslat (denní světlo na předmět):</strong> očaruje předmět; efekt: Denní světlo.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#denni-svetlo\" target=\"_blank\">SRD Jeskyní a draků – Denní světlo</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Vytvoříš kouli jasného denního světla.</p><h3>Automatizace</h3><ul><li><strong>Seslat (denní světlo na předmět):</strong> očarování předmětu; efekt: Denní světlo.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#denni-svetlo\" target=\"_blank\">SRD Jeskyní a draků – Denní světlo</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "sphere",
-        "size": "18",
+        "size": "12",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -177,7 +177,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -220,10 +220,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "denni-svetlo",
       "srd": "BP3GCwa66IAw1yTG",
       "nazevEn": "Daylight",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#denni-svetlo"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#denni-svetlo"
     }
   },
   "img": "icons/magic/light/explosion-star-glow-yellow.webp",

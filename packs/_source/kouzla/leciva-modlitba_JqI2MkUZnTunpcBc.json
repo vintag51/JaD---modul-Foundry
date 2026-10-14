@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Během deseti minut vyléčíš až šest tvorů.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> obnoví 2k8 + oprava sesílací vlastnosti životů (+1k8 za každý stupeň nad 2).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#leciva-modlitba\" target=\"_blank\">SRD Jeskyní a draků – Léčivá modlitba</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Během deseti minut vyléčíš až šest tvorů.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> obnoví 2k8 + Oprava sesílací vlastnosti Bodů výdrže (+1k8 za každý Stupeň nad 2).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#leciva-modlitba\" target=\"_blank\">SRD Jeskyní a draků – Léčivá modlitba</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -97,7 +97,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -142,10 +142,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "leciva-modlitba",
       "srd": "MOEmz9N0j0QPkKEE",
       "nazevEn": "Prayer of Healing",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#leciva-modlitba"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#leciva-modlitba"
     }
   },
   "img": "icons/magic/life/cross-beam-green.webp",

@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Zářivý plamen sestoupí na cíl; před ním nechrání krytí.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Obratnost proti SO kouzla; 1k8 zářivé zranění (roste na 5., 11. a 17. úrovni postavy); při úspěchu nic.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#posvatny-plamen\" target=\"_blank\">SRD Jeskyní a draků – Posvátný plamen</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Zářivý plamen sestoupí na cíl; před ním nechrání krytí.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Obratnost proti SO kouzla; Zářivý zásah za 1k8 Bodů výdrže (roste na 5., 11. a 17. Úrovni); při úspěchu bez účinku.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#posvatny-plamen\" target=\"_blank\">SRD Jeskyní a draků – Posvátný plamen</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -155,10 +155,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "posvatny-plamen",
       "srd": "n9pJzTDsAwQxJVRl",
       "nazevEn": "Sacred Flame",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#posvatny-plamen"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#posvatny-plamen"
     }
   },
   "img": "icons/magic/light/beam-strike-village-yellow.webp",

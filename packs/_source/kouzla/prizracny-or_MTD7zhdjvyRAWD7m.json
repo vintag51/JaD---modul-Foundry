@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vyvoláš přízračného koně.</p><h3>Automatizace</h3><ul><li><strong>Přivolat oře:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Přízračný oř.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#prizracny-or\" target=\"_blank\">SRD Jeskyní a draků – Přízračný oř</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vyvoláš přízračného koně.</p><h3>Automatizace</h3><ul><li><strong>Přivolat oře:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Přízračný oř.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#prizracny-or\" target=\"_blank\">SRD Jeskyní a draků – Přízračný oř</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -40,8 +40,8 @@
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -108,7 +108,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -172,10 +172,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "prizracny-or",
       "srd": "wpx42mtoZ5BmXRs1",
       "nazevEn": "Phantom Steed",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#prizracny-or"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#prizracny-or"
     }
   },
   "img": "icons/creatures/magical/humanoid-horned-rider.webp",
@@ -192,7 +192,7 @@
           {
             "key": "system.attributes.movement.walk",
             "type": "upgrade",
-            "value": "30",
+            "value": 100,
             "phase": "initial",
             "priority": null
           }

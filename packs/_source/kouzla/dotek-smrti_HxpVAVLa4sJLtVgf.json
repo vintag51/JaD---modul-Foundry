@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Přízračná kostlivá ruka zraní cíl nekrotickou energií a zabrání mu léčit se; nemrtvé navíc ztíží v útocích na tebe.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> útok kouzlem na dálku; zásah: 1k8 nekrotické zranění (roste na 5., 11. a 17. úrovni postavy); efekt: Dotek smrti.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#dotek-smrti\" target=\"_blank\">SRD Jeskyní a draků – Dotek smrti</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Přízračná kostlivá ruka zasáhne cíl nekrotickou energií a zabrání mu léčit se; nemrtvé navíc ztíží v útocích na tebe.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Útok na dálku kouzlem; při Zásahu Nekrotický zásah za 1k8 Bodů výdrže (roste na 5., 11. a 17. Úrovni); efekt: Dotek smrti.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#dotek-smrti\" target=\"_blank\">SRD Jeskyní a draků – Dotek smrti</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "36",
-      "units": "m",
+      "value": "24",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -106,7 +106,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -171,10 +171,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "dotek-smrti",
       "srd": "vrN18tbTw7io5MWd",
       "nazevEn": "Chill Touch",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#dotek-smrti"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#dotek-smrti"
     }
   },
   "img": "icons/magic/unholy/hand-claw-fire-blue.webp",

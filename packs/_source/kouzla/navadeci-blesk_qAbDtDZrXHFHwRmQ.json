@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Záblesk světla zraní cíl a příští útok proti němu má výhodu.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> útok kouzlem na dálku; zásah: 4k6 zářivé zranění (+1k6 za každý stupeň nad 1); efekt: Naváděcí blesk.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#navadeci-blesk\" target=\"_blank\">SRD Jeskyní a draků – Naváděcí blesk</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Záblesk světla zasáhne cíl a příští útok proti němu má výhodu.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Útok na dálku kouzlem; při Zásahu Zářivý zásah za 4k6 Bodů výdrže (+1k6 za každý Stupeň nad 1); efekt: Naváděcí blesk.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#navadeci-blesk\" target=\"_blank\">SRD Jeskyní a draků – Naváděcí blesk</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "36",
-      "units": "m",
+      "value": "24",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -102,7 +102,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -167,10 +167,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "navadeci-blesk",
       "srd": "7buEm5KhI5lP8m1z",
       "nazevEn": "Guiding Bolt",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#navadeci-blesk"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#navadeci-blesk"
     }
   },
   "img": "icons/magic/light/projectile-flare-expliosion-yellow.webp",

@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vstoupíš do snů tvora a můžeš ho mučit nočními můrami.</p><h3>Automatizace</h3><ul><li><strong>Záchrana proti noční můře:</strong> záchranný hod na Moudrost proti SO kouzla; 3k6 psychické zranění; při úspěchu polovina.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#sen\" target=\"_blank\">SRD Jeskyní a draků – Sen</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vstoupíš do snů tvora a můžeš ho mučit nočními můrami.</p><h3>Automatizace</h3><ul><li><strong>Záchrana proti noční můře:</strong> Záchranný hod na Moudrost proti SO kouzla; Psychický zásah za 3k6 Bodů výdrže; při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sen\" target=\"_blank\">SRD Jeskyní a draků – Sen</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -103,7 +103,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -194,7 +194,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -223,10 +223,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "sen",
       "srd": "kSPRpeIx3w3nihrF",
       "nazevEn": "Dream",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#sen"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sen"
     }
   },
   "img": "icons/magic/nature/plant-undersea-orb-purple.webp",

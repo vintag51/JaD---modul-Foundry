@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Božské slovo zasáhne tvory podle počtu jejich životů.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Charisma proti SO kouzla; efekt: Božské slovo (50 životů a méně), Božské slovo (40 životů a méně), Božské slovo (30 životů a méně).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#bozske-slovo\" target=\"_blank\">SRD Jeskyní a draků – Božské slovo</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Božské slovo zasáhne tvory podle počtu jejich Bodů výdrže.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Charisma proti SO kouzla; efekt: Božské slovo (50 Bodů výdrže a méně), Božské slovo (40 Bodů výdrže a méně), Božské slovo (30 Bodů výdrže a méně).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#bozske-slovo\" target=\"_blank\">SRD Jeskyní a draků – Božské slovo</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -40,8 +40,8 @@
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -122,7 +122,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -162,16 +162,16 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "bozske-slovo",
       "srd": "T1vpZLam7LezjToj",
       "nazevEn": "Divine Word",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#bozske-slovo"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#bozske-slovo"
     }
   },
   "img": "icons/magic/lightning/bolt-strike-explosion-yellow.webp",
   "effects": [
     {
-      "name": "Božské slovo (50 životů a méně)",
+      "name": "Božské slovo (50 Bodů výdrže a méně)",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.qrUo1mQ1ZqZuoqIX",
       "duration": {
         "value": 1,
@@ -217,7 +217,7 @@
       "_key": "!items.effects!T1vpZLam7LezjToj.ng33sfAG959luxm1"
     },
     {
-      "name": "Božské slovo (40 životů a méně)",
+      "name": "Božské slovo (40 Bodů výdrže a méně)",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.qrUo1mQ1ZqZuoqIX",
       "duration": {
         "value": 10,
@@ -264,7 +264,7 @@
       "_key": "!items.effects!T1vpZLam7LezjToj.WFygB4koHfaqBOiK"
     },
     {
-      "name": "Božské slovo (30 životů a méně)",
+      "name": "Božské slovo (30 Bodů výdrže a méně)",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.qrUo1mQ1ZqZuoqIX",
       "duration": {
         "value": 1,

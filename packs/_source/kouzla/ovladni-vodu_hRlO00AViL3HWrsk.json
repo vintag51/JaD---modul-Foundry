@@ -1,0 +1,592 @@
+{
+  "_id": "hRlO00AViL3HWrsk",
+  "name": "Ovládni vodu",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Ovládáš vodu v oblasti – zaplavení, rozestoupení, přesměrování nebo vír.</p><h3>Automatizace</h3><ul><li><strong>Vír (záchrana na začátku tahu):</strong> Záchranný hod na Sílu proti SO kouzla; Drtivý zásah za 2k8 Bodů výdrže; při úspěchu poloviční Zásah; efekt: Chycen ve víru.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ovladni-vodu\" target=\"_blank\">SRD Jeskyní a draků – Ovládni vodu</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "cube",
+        "size": "20",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "trs",
+    "materials": {
+      "value": "kapka vody a špetka prachu",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "3uKDmmkF8irChzl6": {
+        "type": "utility",
+        "name": "Zaplavení",
+        "_id": "3uKDmmkF8irChzl6",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "action",
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": true,
+          "value": "1"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "spec",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "",
+            "special": "",
+            "count": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      },
+      "bgxFEFucjRRDxtIr": {
+        "type": "utility",
+        "name": "Rozestoupit vodu",
+        "_id": "bgxFEFucjRRDxtIr",
+        "img": "",
+        "sort": 300000,
+        "activation": {
+          "type": "action",
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": true,
+          "value": "1"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "spec",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      },
+      "tcZLcPr3nsDOEaiC": {
+        "type": "utility",
+        "name": "Přesměrovat tok",
+        "_id": "tcZLcPr3nsDOEaiC",
+        "img": "",
+        "sort": 400000,
+        "activation": {
+          "type": "action",
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "spec",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      },
+      "HneTMN8U6QKaRU7B": {
+        "type": "utility",
+        "name": "Vír",
+        "_id": "HneTMN8U6QKaRU7B",
+        "img": "",
+        "sort": 500000,
+        "activation": {
+          "type": "action",
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": true,
+          "special": "",
+          "value": "1"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "spec",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      },
+      "BTnvB5e4TEPEgZaS": {
+        "type": "save",
+        "name": "Vír (záchrana na začátku tahu)",
+        "_id": "BTnvB5e4TEPEgZaS",
+        "img": "",
+        "sort": 600000,
+        "activation": {
+          "type": "special",
+          "override": true,
+          "condition": "Když tvor poprvé v tahu vstoupí do víru nebo v něm začne tah."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [
+          {
+            "_id": "G5aZCiqtwSzf1PhW",
+            "level": {},
+            "onSave": false
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "spec",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        }
+      },
+      "fXJqNRirIlkLmU1Q": {
+        "type": "utility",
+        "name": "Seslat",
+        "_id": "fXJqNRirIlkLmU1Q",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      }
+    },
+    "identifier": "control-water"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "ovladni-vodu",
+      "srd": "7fFHlBk3UNX8gPKL",
+      "nazevEn": "Control Water",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ovladni-vodu"
+    }
+  },
+  "img": "icons/magic/water/wave-water-blue.webp",
+  "effects": [
+    {
+      "name": "Chycen ve víru",
+      "img": "icons/magic/water/vortex-water-whirlpool.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.hRlO00AViL3HWrsk",
+      "transfer": false,
+      "_id": "G5aZCiqtwSzf1PhW",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Ovládni vodu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 2,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781378597411,
+        "modifiedTime": 1781378648188,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!7fFHlBk3UNX8gPKL.G5aZCiqtwSzf1PhW"
+    }
+  ],
+  "folder": "8hak7PLbgtXEQBpD",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!hRlO00AViL3HWrsk"
+}

@@ -1,0 +1,157 @@
+{
+  "_id": "vC2DUBjvHXoGvB0Y",
+  "name": "Soukromá svatyně",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Chráníš oblast před průnikem smysly, věštbami a teleportací.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#soukroma-svatyne\" target=\"_blank\">SRD Jeskyní a draků – Soukromá svatyně</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 10
+    },
+    "duration": {
+      "value": "24",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "cube",
+        "size": "20",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "24",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "abj",
+    "materials": {
+      "value": "tenký olověný plát, kousek neprůhledného skla, chuchvalec bavlny či látky a práškový chryzolit",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "private-sanctum"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "soukroma-svatyne",
+      "srd": "NJgxf7pmSsBArIG7",
+      "nazevEn": "Private Sanctum",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#soukroma-svatyne"
+    }
+  },
+  "img": "icons/environment/settlement/watchtower-moonlit-blue.webp",
+  "effects": [],
+  "folder": "8hak7PLbgtXEQBpD",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!vC2DUBjvHXoGvB0Y"
+}

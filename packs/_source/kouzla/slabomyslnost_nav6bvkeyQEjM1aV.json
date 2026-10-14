@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Roztříštíš mysl tvora – Inteligence a Charisma klesnou na 1.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Inteligenci proti SO kouzla; 4k6 psychické zranění; zranění i při úspěchu; efekt: Slabomyslnost.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#slabomyslnost\" target=\"_blank\">SRD Jeskyní a draků – Slabomyslnost</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Roztříštíš mysl tvora – Inteligence a Charisma klesnou na 1.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Inteligenci proti SO kouzla; Psychický zásah za 4k6 Bodů výdrže; plný Zásah i při úspěchu; efekt: Slabomyslnost.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#slabomyslnost\" target=\"_blank\">SRD Jeskyní a draků – Slabomyslnost</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "45",
-      "units": "m",
+      "value": "30",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -108,7 +108,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -165,10 +165,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "slabomyslnost",
       "srd": "hYCrN82dMJFuJODB",
       "nazevEn": "Feeblemind",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#slabomyslnost"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#slabomyslnost"
     }
   },
   "img": "icons/commodities/biological/organ-brain-pink-purple.webp",

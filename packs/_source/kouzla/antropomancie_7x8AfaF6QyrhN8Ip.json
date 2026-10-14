@@ -1,0 +1,155 @@
+{
+  "_id": "7x8AfaF6QyrhN8Ip",
+  "name": "Antropomancie",
+  "type": "spell",
+  "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [],
+  "system": {
+    "identifier": "antropomancie",
+    "level": 2,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "ritual"
+    ],
+    "materials": {
+      "value": "nůž na maso, kůži a šlachy a palička na kosti",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "minute",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "",
+      "units": "touch",
+      "special": ""
+    },
+    "duration": {
+      "value": "5",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "object",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "",
+        "size": "",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "SPiFupRGKoA9feQx": {
+        "_id": "SPiFupRGKoA9feQx",
+        "type": "utility",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Temný rituál, při kterém z částí mrtvého těla vyčteš poslední vjem – obraz, zvuk, emoci, dotek, slova či vůni.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#antropomancie\" target=\"_blank\">SRD Jeskyní a draků – Antropomancie</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "antropomancie",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#antropomancie"
+    }
+  },
+  "folder": "qeFyrqAp9wqNyjo6",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7x8AfaF6QyrhN8Ip"
+}

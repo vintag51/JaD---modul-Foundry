@@ -5,7 +5,7 @@
   "img": "icons/magic/symbols/runes-carved-stone-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Až tři tvorové si při útocích a záchranách přičítají k4.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Požehnání.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#pozehnani\" target=\"_blank\">SRD Jeskyní a draků – Požehnání</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Až tři tvorové si při útocích a záchranách přičítají k4.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Požehnání.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pozehnani\" target=\"_blank\">SRD Jeskyní a draků – Požehnání</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,14 +32,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -106,7 +106,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -221,10 +221,10 @@
   },
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "pozehnani",
       "srd": "8dzaICjGy6mTUaUr",
       "nazevEn": "Bless",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#pozehnani"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pozehnani"
     }
   },
   "_stats": {

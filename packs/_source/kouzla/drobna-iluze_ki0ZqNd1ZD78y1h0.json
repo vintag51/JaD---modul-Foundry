@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vytvoříš zvuk nebo nehybný obraz předmětu, který lze prohlédnout pátráním.</p><h3>Automatizace</h3><ul><li><strong>Hod na prohlédnutí iluze:</strong> ověření vlastnosti.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#drobna-iluze\" target=\"_blank\">SRD Jeskyní a draků – Drobná iluze</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Vytvoříš zvuk nebo nehybný obraz předmětu, který lze prohlédnout pátráním.</p><h3>Automatizace</h3><ul><li><strong>Hod na prohlédnutí iluze:</strong> Ověření vlastnosti.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#drobna-iluze\" target=\"_blank\">SRD Jeskyní a draků – Drobná iluze</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cube",
-        "size": "1.5",
+        "size": "1",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -163,7 +163,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -206,10 +206,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "drobna-iluze",
       "srd": "oIzA2MEHwxhtQneU",
       "nazevEn": "Minor Illusion",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#drobna-iluze"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#drobna-iluze"
     }
   },
   "img": "icons/magic/perception/orb-crystal-ball-scrying-blue.webp",

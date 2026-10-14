@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Přivoláš víly.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Vyvolaná lesní bytost.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vyvolej-lesni-bytosti\" target=\"_blank\">SRD Jeskyní a draků – Vyvolej lesní bytosti</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Přivoláš víly.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Vyvolaná lesní bytost.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vyvolej-lesni-bytosti\" target=\"_blank\">SRD Jeskyní a draků – Vyvolej lesní bytosti</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -40,8 +40,8 @@
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -99,7 +99,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -215,10 +215,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "vyvolej-lesni-bytosti",
       "srd": "dEfSELiY1eO3cpX9",
       "nazevEn": "Conjure Woodland Beings",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vyvolej-lesni-bytosti"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vyvolej-lesni-bytosti"
     }
   },
   "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",

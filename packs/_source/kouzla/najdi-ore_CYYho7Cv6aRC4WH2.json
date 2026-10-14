@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Přivoláš věrného duchovního oře.</p><h3>Automatizace</h3><ul><li><strong>Přivolat oře:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Přivolaný oř.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#najdi-ore\" target=\"_blank\">SRD Jeskyní a draků – Najdi oře</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Přivoláš věrného duchovního oře.</p><h3>Automatizace</h3><ul><li><strong>Přivolat oře:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Přivolaný oř.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#najdi-ore\" target=\"_blank\">SRD Jeskyní a draků – Najdi oře</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -40,8 +40,8 @@
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -97,7 +97,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -211,10 +211,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "najdi-ore",
       "srd": "5eh2HFbS13078Y3H",
       "nazevEn": "Find Steed",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#najdi-ore"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#najdi-ore"
     }
   },
   "img": "icons/environment/creatures/horse-brown.webp",

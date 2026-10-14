@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Tvorové mají výhodu v záchranách proti Moudrosti a smrti a léčení na ně působí naplno.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#majak-nadeje\" target=\"_blank\">SRD Jeskyní a draků – Maják naděje</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Tvorové mají výhodu v záchranách proti Moudrosti a smrti a léčení na ně působí naplno.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#majak-nadeje\" target=\"_blank\">SRD Jeskyní a draků – Maják naděje</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -40,8 +40,8 @@
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -100,7 +100,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false
           },
           "affects": {
@@ -140,10 +140,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "majak-nadeje",
       "srd": "ZU9d6woBdUP8pIPt",
       "nazevEn": "Beacon of Hope",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#majak-nadeje"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#majak-nadeje"
     }
   },
   "img": "icons/magic/light/orb-hands-humanoid-yellow.webp",

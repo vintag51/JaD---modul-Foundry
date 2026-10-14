@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Nejmocnější kouzlo – napodobí jiné kouzlo nebo změní realitu.</p><h3>Automatizace</h3><ul><li><strong>Vyčerpávající přání: udělit odolnost:</strong> efekt: Odolnost vůči kyselině, Odolnost vůči drtivému zranění, Odolnost vůči chladu, Odolnost vůči ohni….</li><li><strong>Vyčerpávající přání: udělit odolnost:</strong> efekt: Imunita.</li><li><strong>Vyčerpávající přání: přepsat události:</strong> efekt: Imunita.</li><li><strong>Následky vyčerpávajícího přání:</strong> efekt: Vyčerpání z přání.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#prani\" target=\"_blank\">SRD Jeskyní a draků – Přání</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Nejmocnější kouzlo – napodobí jiné kouzlo nebo změní realitu.</p><h3>Automatizace</h3><ul><li><strong>Vyčerpávající přání: udělit odolnost:</strong> efekt: Odolnost vůči kyselině, Odolnost vůči drtivým zásahům, Odolnost vůči chladu, Odolnost vůči ohni….</li><li><strong>Vyčerpávající přání: udělit odolnost:</strong> efekt: Imunita.</li><li><strong>Vyčerpávající přání: přepsat události:</strong> efekt: Imunita.</li><li><strong>Následky vyčerpávajícího přání:</strong> efekt: Vyčerpání z přání.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#prani\" target=\"_blank\">SRD Jeskyní a draků – Přání</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,7 +33,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -65,7 +65,7 @@
     "activities": {
       "9MWp6lmC7jks1X2b": {
         "type": "utility",
-        "name": "Napodobit kouzlo (8. stupně nebo nižší)",
+        "name": "Napodobit kouzlo (8. Stupně nebo nižší)",
         "_id": "9MWp6lmC7jks1X2b",
         "img": "",
         "sort": 100000,
@@ -99,7 +99,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -164,7 +164,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -228,7 +228,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -386,7 +386,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -460,7 +460,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -537,7 +537,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -615,7 +615,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -650,10 +650,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "prani",
       "srd": "3okM6Gn63zzEULkz",
       "nazevEn": "Wish",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#prani"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#prani"
     }
   },
   "img": "icons/commodities/treasure/brass-lamp-yellow.webp",
@@ -711,7 +711,7 @@
       "_key": "!items.effects!3okM6Gn63zzEULkz.ZGUs6XyEiVhupfxs"
     },
     {
-      "name": "Odolnost vůči drtivému zranění",
+      "name": "Odolnost vůči drtivým zásahům",
       "img": "icons/skills/melee/strike-flail-destructive-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2dKQRXftkWIeCatQ",
       "transfer": false,
@@ -867,7 +867,7 @@
       "_key": "!items.effects!3okM6Gn63zzEULkz.N9eB29lBOFMj6YQS"
     },
     {
-      "name": "Odolnost vůči silovému zranění",
+      "name": "Odolnost vůči silovým zásahům",
       "img": "icons/magic/lightning/bolt-beam-strike-blue.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2dKQRXftkWIeCatQ",
       "transfer": false,
@@ -971,7 +971,7 @@
       "_key": "!items.effects!3okM6Gn63zzEULkz.9g5ioU44S0IIIE7N"
     },
     {
-      "name": "Odolnost vůči nekrotickému zranění",
+      "name": "Odolnost vůči nekrotickým zásahům",
       "img": "icons/magic/death/hand-withered-gray.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2dKQRXftkWIeCatQ",
       "transfer": false,
@@ -1023,7 +1023,7 @@
       "_key": "!items.effects!3okM6Gn63zzEULkz.bwOhsXgOgwViMUIq"
     },
     {
-      "name": "Odolnost vůči bodnému zranění",
+      "name": "Odolnost vůči bodným zásahům",
       "img": "icons/skills/ranged/arrow-flying-broadhead-metal.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2dKQRXftkWIeCatQ",
       "transfer": false,
@@ -1127,7 +1127,7 @@
       "_key": "!items.effects!3okM6Gn63zzEULkz.sB9UWRUrZxxt19wX"
     },
     {
-      "name": "Odolnost vůči psychickému zranění",
+      "name": "Odolnost vůči psychickým zásahům",
       "img": "icons/magic/lightning/strike-arrow-spear-red.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2dKQRXftkWIeCatQ",
       "transfer": false,
@@ -1179,7 +1179,7 @@
       "_key": "!items.effects!3okM6Gn63zzEULkz.hARpKSAZFBZILJ8L"
     },
     {
-      "name": "Odolnost vůči zářivému zranění",
+      "name": "Odolnost vůči zářivým zásahům",
       "img": "icons/magic/light/beam-strike-village-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2dKQRXftkWIeCatQ",
       "transfer": false,
@@ -1231,7 +1231,7 @@
       "_key": "!items.effects!3okM6Gn63zzEULkz.WjdaHgMyQCSNPhK9"
     },
     {
-      "name": "Odolnost vůči sečnému zranění",
+      "name": "Odolnost vůči sečným zásahům",
       "img": "icons/skills/melee/strike-axe-red.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2dKQRXftkWIeCatQ",
       "transfer": false,

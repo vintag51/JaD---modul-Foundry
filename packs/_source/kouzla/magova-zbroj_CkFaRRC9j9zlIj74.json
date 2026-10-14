@@ -5,7 +5,7 @@
   "img": "icons/equipment/chest/robe-layered-blue.webp",
   "system": {
     "description": {
-      "value": "<p>Ochotný tvor bez zbroje má vyšší OČ.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Mágova zbroj.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#magova-zbroj\" target=\"_blank\">SRD Jeskyní a draků – Mágova zbroj</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Ochotný tvor bez zbroje má vyšší OČ.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Mágova zbroj.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#magova-zbroj\" target=\"_blank\">SRD Jeskyní a draků – Mágova zbroj</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,7 +32,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -104,7 +104,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -195,10 +195,10 @@
   },
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "magova-zbroj",
       "srd": "CKZTpZlxj7hjjo2H",
       "nazevEn": "Mage Armor",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#magova-zbroj"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#magova-zbroj"
     }
   },
   "_stats": {

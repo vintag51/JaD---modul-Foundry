@@ -1,9 +1,9 @@
 # Krátká vlastní shrnutí kouzel (nejsou to texty z knihy JaD ani SRD; plné znění viz odkaz na SRD JaD).
 acid-splash: Vrhneš kuličku kyseliny na jednoho nebo dva tvory stojící vedle sebe.
-chill-touch: Přízračná kostlivá ruka zraní cíl nekrotickou energií a zabrání mu léčit se; nemrtvé navíc ztíží v útocích na tebe.
+chill-touch: Přízračná kostlivá ruka zasáhne cíl nekrotickou energií a zabrání mu léčit se; nemrtvé navíc ztíží v útocích na tebe.
 dancing-lights: Vytvoříš až čtyři poletující světla, která můžeš posouvat nebo spojit do jedné zářící postavy.
 druidcraft: Drobný přírodní zázrak – předpověď počasí, rozkvetlý květ, smyslový efekt nebo zapálení či zhasnutí malého plamene.
-eldritch-blast: Paprsek praskavé energie; na vyšších úrovních postavy vyšleš více paprsků.
+eldritch-blast: Paprsek praskavé energie; na vyšších Úrovních postavy vyšleš více paprsků.
 fire-bolt: Vrhneš ohnivou střelu na tvora nebo předmět; hořlavé nenesené věci se mohou vznítit.
 guidance: Dotkneš se ochotného tvora a ten si jednou přičte k ověření vlastnosti k4.
 light: Předmět začne svítit jako pochodeň.
@@ -14,68 +14,68 @@ minor-illusion: Vytvoříš zvuk nebo nehybný obraz předmětu, který lze proh
 poison-spray: Vypustíš oblak jedovatého plynu proti tvoru poblíž.
 prestidigitation: Drobné kouzelnické triky – zahřátí, vyčištění, ochucení, záblesk či malá iluzorní značka.
 produce-flame: V dlani ti vzplane plamen, který svítí a který můžeš vrhnout na nepřítele.
-ray-of-frost: Mrazivý paprsek zraní cíl a zpomalí ho.
+ray-of-frost: Mrazivý paprsek zasáhne cíl a zpomalí ho.
 resistance: Ochotný tvor si jednou přičte k záchrannému hodu k4.
 sacred-flame: Zářivý plamen sestoupí na cíl; před ním nechrání krytí.
 shillelagh: Tvá hůl nebo kyj se stane magickou zbraní, se kterou útočíš svou sesílací vlastností.
 shocking-grasp: Elektrický výboj při doteku; zasažený nemůže do začátku svého tahu použít reakci. Proti cíli v kovové zbroji máš výhodu.
-spare-the-dying: Stabilizuješ umírajícího tvora s 0 životy.
+spare-the-dying: Stabilizuješ umírajícího tvora s 0 Body výdrže.
 thaumaturgy: Drobný projev božské moci – hřmící hlas, mihotání plamenů, otřesy, zvuky nebo změna očí.
 true-strike: Prohlédneš obranu cíle a v příštím útoku proti němu máš výhodu.
-vicious-mockery: Urážka protkaná magií psychicky zraní cíl a způsobí mu nevýhodu v příštím útoku.
+vicious-mockery: Urážka protkaná magií psychicky zasáhne cíl a způsobí mu nevýhodu v příštím útoku.
 
 alarm: Střežíš oblast; když do ní někdo vstoupí, ozve se slyšitelný nebo mentální poplach.
-animal-friendship: Zvíře, které neuspěje v záchraně, je tebou okouzleno.
+animal-friendship: Zvíře, které neuspěje v Záchranném hodu, je tebou okouzleno.
 bane: Až tři tvorové si při útocích a záchranách odečítají k4.
 bless: Až tři tvorové si při útocích a záchranách přičítají k4.
 burning-hands: Z prstů ti vyšlehne kužel plamenů.
-charm-person: Humanoid, který neuspěje v záchraně, tě považuje za přítele.
-color-spray: Oslnivá barevná záře oslepí tvory s nejnižšími životy.
+charm-person: Humanoid, který neuspěje v Záchranném hodu, tě považuje za přítele.
+color-spray: Oslnivá barevná záře oslepí tvory s nejnižšími Body výdrže.
 command: Vyslovíš jednoslovný rozkaz, který cíl při neúspěchu splní ve svém příštím tahu.
 comprehend-languages: Rozumíš doslovnému významu slyšené řeči a čteného písma.
 create-or-destroy-water: Vytvoříš čistou vodu nebo vodu či mlhu zničíš.
-cure-wounds: Dotykem vyléčíš tvoru životy.
+cure-wounds: Dotykem vyléčíš tvoru Body výdrže.
 detect-evil-and-good: Cítíš přítomnost aberací, nebešťanů, elementálů, víl, běsů a nemrtvých poblíž.
 detect-magic: Cítíš přítomnost magie poblíž a poznáš její školu.
 detect-poison-and-disease: Odhalíš jedy, jedovaté tvory a nemoci poblíž.
 disguise-self: Iluzí změníš svůj vzhled včetně oblečení a výstroje.
-divine-favor: Tvé útoky zbraní způsobují navíc zářivé zranění.
-entangle: Rostliny v oblasti spoutají tvory, kteří neuspějí v záchraně; oblast je obtížný terén.
+divine-favor: Tvé útoky zbraní způsobují navíc Zářivý zásah.
+entangle: Rostliny v oblasti spoutají tvory, kteří neuspějí v Záchranném hodu; oblast je obtížný terén.
 expeditious-retreat: Po dobu kouzla můžeš bonusovou akcí Uhánět.
 faerie-fire: Tvorové v oblasti září a útoky proti nim mají výhodu; nemohou být neviditelní.
-false-life: Získáš dočasné životy.
-feather-fall: Až pět padajících tvorů zpomalí pád a nezraní se.
+false-life: Získáš Dočasné body výdrže.
+feather-fall: Až pět padajících tvorů zpomalí pád a nezasáhne se.
 find-familiar: Přivoláš duchovního familiára v podobě malého zvířete, který ti slouží.
 floating-disk: Vytvoříš vznášející se disk, který za tebou nese náklad.
 fog-cloud: Vytvoříš kouli husté mlhy, která silně zakrývá výhled.
-goodberry: Vytvoříš až deset bobulí, z nichž každá vyléčí 1 život a nasytí na den.
+goodberry: Vytvoříš až deset bobulí, z nichž každá vyléčí 1 Bod výdrže a nasytí na den.
 grease: Oblast pokryje kluzký tuk; tvorové v ní mohou upadnout.
-guiding-bolt: Záblesk světla zraní cíl a příští útok proti němu má výhodu.
-healing-word: Bonusovou akcí na dálku vyléčíš tvoru životy.
-hellish-rebuke: Reakcí na zranění obklopíš útočníka pekelnými plameny.
-heroism: Tvor je imunní vůči vystrašení a každé kolo získává dočasné životy.
+guiding-bolt: Záblesk světla zasáhne cíl a příští útok proti němu má výhodu.
+healing-word: Bonusovou akcí na dálku vyléčíš tvoru Body výdrže.
+hellish-rebuke: Reakcí na Zásah obklopíš útočníka pekelnými plameny.
+heroism: Tvor je imunní vůči vystrašení a každé kolo získává Dočasné body výdrže.
 hideous-laughter: Cíl se svíjí v záchvatu smíchu, padá k zemi a je neschopný.
-hunters-mark: Označíš si kořist – způsobuješ jí navíc zranění a snáze ji stopuješ.
+hunters-mark: Označíš si kořist – způsobuješ jí Zásah navíc a snáze ji stopuješ.
 identify: Zjistíš vlastnosti kouzelného předmětu nebo kouzla působícího na tvora či předmět.
 illusory-script: Napíšeš zprávu, kterou dokáže přečíst jen tebou určený čtenář.
-inflict-wounds: Dotykem způsobíš cíli nekrotické zranění.
+inflict-wounds: Dotykem způsobíš cíli Nekrotický zásah.
 jump: Tvor může skákat třikrát dál.
 longstrider: Rychlost tvora se zvýší.
 mage-armor: Ochotný tvor bez zbroje má vyšší OČ.
 magic-missile: Vyšleš tři neomylné silové střely.
 protection-from-evil-and-good: Chráníš tvora před vybranými druhy nadpřirozených bytostí.
 purify-food-and-drink: Očistíš jídlo a pití od jedů a nemocí.
-sanctuary: Tvor je chráněn – útočníci na něj musí nejprve uspět v záchraně.
+sanctuary: Tvor je chráněn – útočníci na něj musí nejprve uspět v Záchranném hodu.
 shield: Reakcí si dočasně zvýšíš OČ o 5 a jsi chráněn před magickou střelou.
 shield-of-faith: Tvor získá +2 k OČ.
 silent-image: Vytvoříš tichý iluzorní obraz předmětu nebo tvora.
-sleep: Uspíš tvory s nejnižším součtem životů.
+sleep: Uspíš tvory s nejnižším součtem Bodů výdrže.
 speak-with-animals: Rozumíš zvířatům a můžeš s nimi mluvit.
-thunderwave: Hromová vlna zraní tvory poblíž a odhodí je.
+thunderwave: Hromová vlna zasáhne tvory poblíž a odhodí je.
 unseen-servant: Neviditelná síla plní tvé jednoduché úkoly.
 
-acid-arrow: Kyselinový šíp zraní cíl při zásahu a ještě jednou na konci jeho tahu.
-aid: Až tři tvorové získají vyšší maximum i aktuální hodnotu životů.
+acid-arrow: Kyselinový šíp zasáhne cíl při Útoku a ještě jednou na konci jeho tahu.
+aid: Až tři tvorové získají vyšší maximum i aktuální hodnotu Bodů výdrže.
 alter-self: Změníš svou podobu – vodní přizpůsobení, jiný vzhled nebo přirozené zbraně.
 animal-messenger: Malé zvíře doručí tvou zprávu na určené místo.
 arcane-lock: Magicky zamkneš dveře, okno, bránu nebo truhlu.
@@ -84,7 +84,7 @@ augury: Dostaneš znamení, zda bude blízký plán dobrý, nebo špatný.
 barkskin: Kůže tvora ztvrdne jako kůra – OČ nemůže klesnout pod 16.
 blindness-deafness: Oslepíš nebo ohlušíš cíl.
 blur: Tvé obrysy se rozmažou a útoky proti tobě mají nevýhodu.
-shining-smite: Tvůj příští zásah zbraní zazáří, způsobí navíc zranění a cíl nemůže být neviditelný.
+shining-smite: Tvůj příští Zásah zbraní zazáří, způsobí Zásah navíc a cíl nemůže být neviditelný.
 calm-emotions: Potlačíš silné emoce tvorů v oblasti.
 continual-flame: Předmět navždy září plamenem, který nehřeje.
 darkness: Vytvoříš oblast magické tmy, kterou neprohlédne ani vidění ve tmě.
@@ -99,7 +99,7 @@ flame-blade: V ruce ti vzplane ohnivá čepel, se kterou útočíš.
 flaming-sphere: Vytvoříš ohnivou kouli, kterou koulíš proti nepřátelům.
 gentle-repose: Mrtvola se nerozkládá a nelze ji oživit jako nemrtvého.
 gust-of-wind: Silný vítr tlačí tvory v linii a rozfoukává plyny.
-heat-metal: Rozžhavíš kovový předmět; kdo se ho dotýká, utrží zranění.
+heat-metal: Rozžhavíš kovový předmět; kdo se ho dotýká, utrží Zásah.
 hold-person: Humanoid je paralyzován.
 invisibility: Tvor se stane neviditelným, dokud nezaútočí nebo nesešle kouzlo.
 knock: Otevřeš zamčený nebo zablokovaný předmět; zvuk se rozlehne daleko.
@@ -108,24 +108,24 @@ levitate: Tvor nebo předmět se vznese a ty ovládáš jeho výšku.
 locate-animals-or-plants: Zjistíš směr a vzdálenost k nejbližšímu zvířeti nebo rostlině zadaného druhu.
 locate-object: Cítíš směr k hledanému předmětu.
 magic-mouth: Do předmětu vložíš zprávu, která zazní při splnění podmínky.
-magic-weapon: Zbraň se stane magickou s bonusem k útoku a zranění.
+magic-weapon: Zbraň se stane magickou s bonusem k Útoku a Zásahu.
 mirror-image: Vytvoříš tři iluzorní dvojníky, kteří odvádějí útoky.
 misty-step: Bonusovou akcí se přeneseš na viditelné místo poblíž.
 moonbeam: Sloup měsíčního světla zraňuje tvory, kteří do něj vstoupí nebo v něm začnou tah.
 pass-without-trace: Tvoje skupina se skrývá výrazně lépe a nezanechává stopy.
 prayer-of-healing: Během deseti minut vyléčíš až šest tvorů.
-protection-from-poison: Neutralizuješ jed a dáš tvoru ochranu před otravou a jedovým zraněním.
-ray-of-enfeeblement: Zasažený tvor způsobuje zbraněmi založenými na Síle jen poloviční zranění.
+protection-from-poison: Neutralizuješ jed a dáš tvoru ochranu před otravou a jedovým zásahem.
+ray-of-enfeeblement: Zasažený tvor způsobuje zbraněmi založenými na Síle jen poloviční Zásah.
 rope-trick: Lano vede do mimodimenzionálního úkrytu.
 scorching-ray: Vyšleš tři ohnivé paprsky, každý s vlastním útokem.
 see-invisibility: Vidíš neviditelné tvory a předměty i do Éterické sféry.
-shatter: Bolestivý zvuk zraní tvory v oblasti hromem.
+shatter: Bolestivý zvuk zasáhne tvory v oblasti hromem.
 silence: V oblasti nelze vydat ani slyšet žádný zvuk.
 spider-climb: Tvor může šplhat po stěnách a stropech.
 spike-growth: Země v oblasti je posetá trny, které zraňují při pohybu.
 spiritual-weapon: Vytvoříš vznášející se zbraň, která bonusovou akcí útočí.
 suggestion: Vnukneš cíli rozumně znějící postup, který splní.
-warding-bond: Chráněný tvor má bonus k OČ a záchranám a odolnosti; ty sdílíš jeho zranění.
+warding-bond: Chráněný tvor má bonus k OČ a záchranám a odolnosti; ty sdílíš jeho Zásahy.
 web: Lepkavé pavučiny spoutají tvory v oblasti.
 zone-of-truth: V oblasti nelze vědomě lhát.
 
@@ -147,7 +147,7 @@ gaseous-form: Tvor se změní v mlhavý oblak.
 glyph-of-warding: Vepíšeš glyf, který při spuštění vybuchne nebo sešle uložené kouzlo.
 haste: Tvor je rychlejší, má lepší OČ a akci navíc; po skončení je na kolo malátný.
 hypnotic-pattern: Spletitý vzor okouzlí a ochromí tvory, kteří ho vidí.
-lightning-bolt: Blesk v linii zraní všechny tvory v cestě.
+lightning-bolt: Blesk v linii zasáhne všechny tvory v cestě.
 magic-circle: Kruh, který brání vybraným druhům tvorů vstoupit nebo uniknout.
 major-image: Vytvoříš iluzi se zvukem, pachem i teplotou.
 mass-healing-word: Bonusovou akcí vyléčíš až šest tvorů na dálku.
@@ -164,7 +164,7 @@ slow: Až šest tvorů je zpomaleno – pomalejší, s horší OČ a omezenými 
 speak-with-dead: Mrtvola ti odpoví na až pět otázek.
 speak-with-plants: Rostliny ti rozumí a odpovídají; můžeš ovlivnit jejich porost.
 spirit-guardians: Duchové kolem tebe zpomalují a zraňují nepřátele.
-stinking-cloud: Oblak dusivého plynu ochromí tvory, kteří neuspějí v záchraně.
+stinking-cloud: Oblak dusivého plynu ochromí tvory, kteří neuspějí v Záchranném hodu.
 tiny-hut: Vytvoříš ochrannou kopuli pro odpočinek.
 tongues: Tvor rozumí každému mluvenému jazyku a je mu rozumět.
 vampiric-touch: Dotyk vysává životní sílu a léčí tě.
@@ -175,13 +175,13 @@ wind-wall: Stěna silného větru odráží střely a plyny.
 arcane-eye: Vytvoříš neviditelné magické oko, které můžeš posílat na průzkum.
 banishment: Pošleš cíl na jinou sféru.
 black-tentacles: Černá chapadla v oblasti svírají a zraňují tvory.
-blight: Vysaješ z tvora vláhu a životní sílu nekrotickým zraněním.
+blight: Vysaješ z tvora vláhu a životní sílu nekrotickým zásahem.
 compulsion: Tvorové jsou nuceni pohybovat se směrem, který určíš.
 confusion: Tvorové v oblasti jednají zmateně podle náhodné tabulky.
 conjure-minor-elementals: Přivoláš menší elementály.
 conjure-woodland-beings: Přivoláš víly.
 control-water: Ovládáš vodu v oblasti – zaplavení, rozestoupení, přesměrování nebo vír.
-death-ward: Tvor při prvním poklesu na 0 životů zůstane na 1 životu.
+death-ward: Tvor při prvním poklesu na 0 Bodů výdrže zůstane na 1 Bodu výdrže.
 dimension-door: Přeneseš se (případně s jedním společníkem) na místo až do velké vzdálenosti.
 divination: Položíš otázku božstvu a dostaneš pravdivou odpověď.
 dominate-beast: Ovládneš zvíře.
@@ -193,15 +193,15 @@ giant-insect: Promění drobný hmyz v obří.
 greater-invisibility: Tvor zůstane neviditelný i při útocích a sesílání kouzel.
 guardian-of-faith: Přízračný strážce zraňuje nepřátele, kteří se přiblíží.
 hallucinatory-terrain: Krajina v oblasti vypadá, zní a voní jako jiný terén.
-ice-storm: Kroupy zraní tvory v oblasti a promění ji v obtížný terén.
+ice-storm: Kroupy zasáhne tvory v oblasti a promění ji v obtížný terén.
 locate-creature: Cítíš směr ke hledanému tvoru.
-phantasmal-killer: Cíl vidí ztělesnění svých nejhorších obav, je vystrašen a utrpí psychické zranění.
+phantasmal-killer: Cíl vidí ztělesnění svých nejhorších obav, je vystrašen a utrpí Psychický zásah.
 polymorph: Proměníš tvora ve zvíře.
 private-sanctum: Chráníš oblast před průnikem smysly, věštbami a teleportací.
 resilient-sphere: Uzavřeš tvora nebo předmět do neproniknutelné koule.
 secret-chest: Ukryješ truhlu v Éterické sféře a můžeš si ji přivolat.
 stone-shape: Vytvaruješ kámen do libovolné podoby.
-stoneskin: Tvor má odolnost vůči nemagickému fyzickému zranění.
+stoneskin: Tvor má odolnost vůči nemagickým fyzickým Zásahům.
 wall-of-fire: Ohnivá stěna zraňuje tvory, kteří jí projdou nebo se k ní přiblíží.
 
 animate-objects: Oživíš předměty, které za tebe bojují.
@@ -211,7 +211,7 @@ awaken: Zvíře nebo rostlina získá inteligenci a řeč.
 cloudkill: Jedovatý oblak se plazí krajinou a zraňuje.
 commune: Položíš svému božstvu tři otázky s odpověďmi ano či ne.
 commune-with-nature: Zjistíš vlastnosti okolní krajiny.
-cone-of-cold: Kužel mrazu zraní tvory v oblasti.
+cone-of-cold: Kužel mrazu zasáhne tvory v oblasti.
 conjure-elemental: Přivoláš elementála.
 contact-other-plane: Ptáš se mimosférické bytosti; hrozí ti šílenství.
 contagion: Nakazíš cíl jednou z magických nemocí.
@@ -219,7 +219,7 @@ creation: Vytvoříš předmět z rostlinné či nerostné hmoty.
 dispel-evil-and-good: Chráníš se před mimosférickými tvory a můžeš je zapudit.
 dominate-person: Ovládneš humanoida.
 dream: Vstoupíš do snů tvora a můžeš ho mučit nočními můrami.
-flame-strike: Sloup posvátného ohně zraní tvory ohněm i září.
+flame-strike: Sloup posvátného ohně zasáhne tvory ohněm i září.
 geas: Uložíš tvoru závazný úkol pod hrozbou bolesti.
 greater-restoration: Ukončíš silné negativní účinky – kletby, zkamenění, vyčerpání, snížení vlastností.
 hallow: Posvětíš místo a připojíš k němu zvolený účinek.
@@ -244,21 +244,21 @@ wall-of-stone: Kamenná stěna, kterou lze tvarovat.
 
 blade-barrier: Stěna vířících čepelí zraňuje tvory, kteří jí projdou.
 chain-lightning: Blesk přeskakuje z cíle na další tři tvory.
-circle-of-death: Nekrotická vlna zraní všechny tvory v oblasti.
+circle-of-death: Nekrotická vlna zasáhne všechny tvory v oblasti.
 conjure-fey: Přivoláš vílu nebo vílí zvíře.
 contingency: Připravíš kouzlo, které se samo sešle za určené podmínky.
 create-undead: Vytvoříš silnější nemrtvé – ghúly, ghasty, mumie či wighty.
-disintegrate: Zelený paprsek rozloží tvora či předmět; kdo klesne na 0 životů, obrátí se v prach.
+disintegrate: Zelený paprsek rozloží tvora či předmět; kdo klesne na 0 Bodů výdrže, obrátí se v prach.
 eyebite: Pohledem uspíš, vyděsíš nebo oslabíš tvory.
 find-the-path: Najdeš nejkratší cestu k určenému místu.
-flesh-to-stone: Postupně proměníš tvora v kámen.
+flesh-to-stone: PoStupně proměníš tvora v kámen.
 forbiddance: Oblast nelze dosáhnout teleportací a zraňuje vybrané tvory.
-freezing-sphere: Mrazivá koule zraní tvory a může zmrazit vodu.
+freezing-sphere: Mrazivá koule zasáhne tvory a může zmrazit vodu.
 globe-of-invulnerability: Bariéra tě chrání před kouzly nižších stupňů.
 guards-and-wards: Rozsáhlá ochrana pevnosti – mlha, zamčené dveře, pavučiny a další.
-harm: Zničující nemoc zraní cíl a sníží jeho maximum životů.
-heal: Vyléčíš tvoru velké množství životů a odstraníš některé stavy.
-heroes-feast: Hostina dodá hostům imunity, odvahu a vyšší maximum životů.
+harm: Zničující nemoc zasáhne cíl a sníží jeho maximum Bodů výdrže.
+heal: Vyléčíš tvoru velké množství Bodů výdrže a odstraníš některé stavy.
+heroes-feast: Hostina dodá hostům imunity, odvahu a vyšší maximum Bodů výdrže.
 instant-summons: Označený předmět si můžeš okamžitě přivolat do ruky.
 irresistible-dance: Cíl je nucen komicky tančit.
 magic-jar: Tvá duše opustí tělo a může posednout jiné tvory.
@@ -277,7 +277,7 @@ word-of-recall: Ty a společníci se okamžitě vrátíte do zasvěcené svatyn�
 arcane-sword: Silový meč útočí na tvé povely.
 conjure-celestial: Přivoláš nebešťana.
 delayed-blast-fireball: Žhnoucí kulička, jejíž exploze sílí s každým kolem odkladu.
-divine-word: Božské slovo zasáhne tvory podle počtu jejich životů.
+divine-word: Božské slovo zasáhne tvory podle počtu jejich Bodů výdrže.
 etherealness: Vstoupíš do Éterické sféry.
 finger-of-death: Nekrotická energie zabije a mrtvého humanoida promění v zombii.
 fire-storm: Řada ohnivých krychlí zasáhne zvolenou oblast.
@@ -308,9 +308,9 @@ glibness: Tvá řeč přesvědčí i magii odhalující lži.
 holy-aura: Spojenci září, mají výhodu v záchranách a útoky proti nim nevýhodu.
 incendiary-cloud: Oblak žhavého kouře a uhlíků zraňuje a putuje.
 maze: Vyhostíš cíl do mimodimenzionálního bludiště.
-mind-blank: Tvor je chráněn před psychickým zraněním, čtením myšlenek a věštbami.
-power-word-stun: Omráčíš tvora se 150 a méně životy.
-sunburst: Exploze slunečního světla zraní a oslepí.
+mind-blank: Tvor je chráněn před psychickým zásahem, čtením myšlenek a věštbami.
+power-word-stun: Omráčíš tvora se 150 a méně Body výdrže.
+sunburst: Exploze slunečního světla zasáhne a oslepí.
 
 astral-projection: Tvé astrální tělo a tělo společníků cestuje Astrální sférou.
 foresight: Tvor nemůže být překvapen a má výhodu na hody.
@@ -318,7 +318,7 @@ gate: Otevřeš portál na jinou sféru, případně k určitému tvoru.
 imprisonment: Uvězníš tvora jedním z magických způsobů.
 mass-heal: Rozdělíš velké množství léčení mezi tvory v dosahu.
 meteor-swarm: Čtyři ohnivé koule dopadnou na zvolená místa.
-power-word-kill: Zabiješ tvora se 100 a méně životy.
+power-word-kill: Zabiješ tvora se 100 a méně Body výdrže.
 prismatic-wall: Vícebarevná stěna s mnoha vrstvami účinků.
 shapechange: Měníš se v různé tvory.
 storm-of-vengeance: Bouře, která po kolech přináší hrom, kyselinu, blesky a krupobití.

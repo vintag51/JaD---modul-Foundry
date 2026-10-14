@@ -1,13 +1,13 @@
 {
   "_id": "E4H2BcNkWEvSb4em",
-  "name": "Antipatie nebo Sympatie",
+  "name": "Antipatie nebo sympatie",
   "ownership": {
     "default": 0
   },
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Místo nebo předmět odpuzuje, nebo naopak přitahuje vybrané tvory.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Aura antipatie, Aura sympatie.</li><li><strong>Záchrana k ukončení účinku:</strong> záchranný hod na Moudrost proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#antipatie-nebo-sympatie\" target=\"_blank\">SRD Jeskyní a draků – Antipatie nebo Sympatie</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Místo nebo předmět odpuzuje, nebo naopak přitahuje vybrané tvory.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Aura antipatie, Aura sympatie.</li><li><strong>Záchrana k ukončení účinku:</strong> Záchranný hod na Moudrost proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#antipatie-nebo-sympatie\" target=\"_blank\">SRD Jeskyní a draků – Antipatie nebo sympatie</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -115,7 +115,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -182,7 +182,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -230,10 +230,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "antipatie-nebo-sympatie",
       "srd": "GJ2WYm3SQFR0winH",
       "nazevEn": "Antipathy/Sympathy",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#antipatie-nebo-sympatie"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#antipatie-nebo-sympatie"
     }
   },
   "img": "icons/commodities/treasure/totem-wooden-glowing-green.webp",
@@ -249,7 +249,7 @@
       },
       "disabled": true,
       "_id": "Cz824xQ2Z4BYuSa9",
-      "description": "<p>Účinek kouzla <em>Antipatie nebo Sympatie</em>. Podrobnosti v popisu kouzla.</p>",
+      "description": "<p>Účinek kouzla <em>Antipatie nebo sympatie</em>. Podrobnosti v popisu kouzla.</p>",
       "transfer": false,
       "statuses": [
         "frightened"
@@ -296,7 +296,7 @@
         "expiry": "turnStart",
         "expired": false
       },
-      "description": "<p>Účinek kouzla <em>Antipatie nebo Sympatie</em>. Podrobnosti v popisu kouzla.</p>",
+      "description": "<p>Účinek kouzla <em>Antipatie nebo sympatie</em>. Podrobnosti v popisu kouzla.</p>",
       "tint": "#ffffff",
       "statuses": [],
       "showIcon": 1,
@@ -339,7 +339,7 @@
         "expiry": "turnStart",
         "expired": false
       },
-      "description": "<p>Účinek kouzla <em>Antipatie nebo Sympatie</em>. Podrobnosti v popisu kouzla.</p>",
+      "description": "<p>Účinek kouzla <em>Antipatie nebo sympatie</em>. Podrobnosti v popisu kouzla.</p>",
       "tint": "#ffffff",
       "statuses": [],
       "showIcon": 1,

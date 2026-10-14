@@ -1,0 +1,248 @@
+{
+  "_id": "yE4Jdro2pj3Fwv4P",
+  "name": "Kamenná zeď",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Kamenná stěna, kterou lze tvarovat.</p><h3>Automatizace</h3><ul><li><strong>Vyvolat kamennou stěnu (díly 3 × 3 m):</strong> Záchranný hod na Obratnost proti SO kouzla.</li><li><strong>Vyvolat kamennou stěnu (díly 3 × 6 m):</strong> Záchranný hod na Obratnost proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#kamenna-zed\" target=\"_blank\">SRD Jeskyní a draků – Kamenná zeď</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "wall",
+        "size": "2",
+        "contiguous": false,
+        "width": "1.2",
+        "height": "2",
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "24",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 5,
+    "school": "evo",
+    "materials": {
+      "value": "malý žulový kvádr",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": "dex",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Vyvolat kamennou stěnu (díly 3 × 3 m)",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "d5HiSblAgFL6tu4u": {
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah",
+            "stationary": false,
+            "type": "wall",
+            "size": "2",
+            "width": "0.6",
+            "height": "4",
+            "count": "10"
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": true
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "bonus": "",
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "name": "Vyvolat kamennou stěnu (díly 3 × 6 m)",
+        "img": "",
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "_id": "d5HiSblAgFL6tu4u"
+      }
+    },
+    "identifier": "wall-of-stone"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "kamenna-zed",
+      "srd": "NmoRmM1mhuM3pqnY",
+      "nazevEn": "Wall of Stone",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#kamenna-zed"
+    }
+  },
+  "img": "icons/commodities/stone/paver-brick-brown.webp",
+  "effects": [],
+  "folder": "wQJg6sDBR7lLiwGO",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!yE4Jdro2pj3Fwv4P"
+}

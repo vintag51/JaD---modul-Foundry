@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vepíšeš smrtící nebo ochromující symbol.</p><h3>Automatizace</h3><ul><li><strong>Účinek glyfu: Smrt:</strong> záchranný hod na Odolnost proti SO kouzla; 10k10 nekrotické zranění; při úspěchu polovina.</li><li><strong>Účinek glyfu: Sváru:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Svár.</li><li><strong>Účinek glyfu: Strach:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Strach.</li><li><strong>Účinek glyfu: Beznaděj:</strong> záchranný hod na Charisma proti SO kouzla; efekt: Beznaděj.</li><li><strong>Účinek glyfu: Šílenství:</strong> záchranný hod na Inteligenci proti SO kouzla; efekt: Šílenství.</li><li><strong>Účinek glyfu: Bolest:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Bolest.</li><li><strong>Účinek glyfu: Spánek:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Spánek.</li><li><strong>Účinek glyfu: Omráčení:</strong> záchranný hod na Charisma proti SO kouzla; efekt: Omráčený.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#symbol\" target=\"_blank\">SRD Jeskyní a draků – Symbol</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vepíšeš smrtící nebo ochromující symbol.</p><h3>Automatizace</h3><ul><li><strong>Účinek glyfu: Smrt:</strong> Záchranný hod na Odolnost proti SO kouzla; Nekrotický zásah za 10k10 Bodů výdrže; při úspěchu poloviční Zásah.</li><li><strong>Účinek glyfu: Sváru:</strong> Záchranný hod na Odolnost proti SO kouzla; efekt: Svár.</li><li><strong>Účinek glyfu: Strach:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Strach.</li><li><strong>Účinek glyfu: Beznaděj:</strong> Záchranný hod na Charisma proti SO kouzla; efekt: Beznaděj.</li><li><strong>Účinek glyfu: Šílenství:</strong> Záchranný hod na Inteligenci proti SO kouzla; efekt: Šílenství.</li><li><strong>Účinek glyfu: Bolest:</strong> Záchranný hod na Odolnost proti SO kouzla; efekt: Bolest.</li><li><strong>Účinek glyfu: Spánek:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Spánek.</li><li><strong>Účinek glyfu: Omráčení:</strong> Záchranný hod na Charisma proti SO kouzla; efekt: Omráčený.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#symbol\" target=\"_blank\">SRD Jeskyní a draků – Symbol</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,7 +32,7 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -100,7 +100,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -161,9 +161,9 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": "sphere",
-            "size": "18",
+            "size": "12",
             "count": ""
           },
           "affects": {
@@ -269,10 +269,10 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "count": "",
             "type": "sphere",
-            "size": "18"
+            "size": "12"
           },
           "affects": {
             "choice": false,
@@ -361,10 +361,10 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "count": "",
             "type": "sphere",
-            "size": "18"
+            "size": "12"
           },
           "affects": {
             "choice": false,
@@ -453,10 +453,10 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "count": "",
             "type": "sphere",
-            "size": "18"
+            "size": "12"
           },
           "affects": {
             "choice": false,
@@ -545,10 +545,10 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "count": "",
             "type": "sphere",
-            "size": "18"
+            "size": "12"
           },
           "affects": {
             "choice": false,
@@ -637,10 +637,10 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "count": "",
             "type": "sphere",
-            "size": "18"
+            "size": "12"
           },
           "affects": {
             "choice": false,
@@ -729,10 +729,10 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "count": "",
             "type": "sphere",
-            "size": "18"
+            "size": "12"
           },
           "affects": {
             "choice": false,
@@ -821,10 +821,10 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "count": "",
             "type": "sphere",
-            "size": "18"
+            "size": "12"
           },
           "affects": {
             "choice": false,
@@ -872,10 +872,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "symbol",
       "srd": "B2kbmgbA2WQR00kx",
       "nazevEn": "Symbol",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#symbol"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#symbol"
     }
   },
   "img": "icons/magic/symbols/rune-sigil-horned-white-purple.webp",

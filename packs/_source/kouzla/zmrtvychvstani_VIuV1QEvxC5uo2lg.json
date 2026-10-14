@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Oživíš tvora mrtvého až sto let.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Nemoc ze vzkříšení, Magická únava.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zmrtvychvstani\" target=\"_blank\">SRD Jeskyní a draků – Zmrtvýchvstání</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Oživíš tvora mrtvého až sto let.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Nemoc ze vzkříšení, Magická únava.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zmrtvychvstani\" target=\"_blank\">SRD Jeskyní a draků – Zmrtvýchvstání</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -107,7 +107,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -141,10 +141,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "zmrtvychvstani",
       "srd": "jhhT9PsHy5A7EojO",
       "nazevEn": "Resurrection",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zmrtvychvstani"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zmrtvychvstani"
     }
   },
   "img": "icons/magic/holy/saint-glass-portrait-halo.webp",

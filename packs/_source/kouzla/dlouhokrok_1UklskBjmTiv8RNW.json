@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Rychlost tvora se zvýší.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Dlouhokrok.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#dlouhokrok\" target=\"_blank\">SRD Jeskyní a draků – Dlouhokrok</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Rychlost tvora se zvýší.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Dlouhokrok.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#dlouhokrok\" target=\"_blank\">SRD Jeskyní a draků – Dlouhokrok</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -102,7 +102,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -136,10 +136,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "dlouhokrok",
       "srd": "B0pnIcc52O6G8hi8",
       "nazevEn": "Longstrider",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#dlouhokrok"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#dlouhokrok"
     }
   },
   "img": "icons/skills/movement/feet-winged-boots-brown.webp",

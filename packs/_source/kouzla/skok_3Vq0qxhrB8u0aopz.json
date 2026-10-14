@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Tvor může skákat třikrát dál.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Skok.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#skok\" target=\"_blank\">SRD Jeskyní a draků – Skok</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Tvor může skákat třikrát dál.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Skok.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#skok\" target=\"_blank\">SRD Jeskyní a draků – Skok</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -102,7 +102,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -136,10 +136,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "skok",
       "srd": "ZrTc23tToJ0JpH2h",
       "nazevEn": "Jump",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#skok"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#skok"
     }
   },
   "img": "icons/skills/movement/arrow-upward-blue.webp",

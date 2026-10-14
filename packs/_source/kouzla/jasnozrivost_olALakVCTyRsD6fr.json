@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vytvoříš neviditelný smyslový orgán, kterým vidíš nebo slyšíš na vzdáleném místě.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#jasnozrivost\" target=\"_blank\">SRD Jeskyní a draků – Jasnozřivost</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vytvoříš neviditelný smyslový orgán, kterým vidíš nebo slyšíš na vzdáleném místě.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#jasnozrivost\" target=\"_blank\">SRD Jeskyní a draků – Jasnozřivost</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -40,8 +40,8 @@
       }
     },
     "range": {
-      "value": "1.5",
-      "units": "km",
+      "value": "1",
+      "units": "mi",
       "special": ""
     },
     "uses": {
@@ -100,7 +100,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -134,10 +134,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "jasnozrivost",
       "srd": "cg50KpBkBdPK6vPL",
       "nazevEn": "Clairvoyance",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#jasnozrivost"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#jasnozrivost"
     }
   },
   "img": "icons/magic/perception/eye-winged-pink.webp",

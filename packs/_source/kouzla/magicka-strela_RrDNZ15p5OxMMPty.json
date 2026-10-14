@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vyšleš tři neomylné silové střely.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> 1k4 + 1 silové zranění.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#magicka-strela\" target=\"_blank\">SRD Jeskyní a draků – Magická střela</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vyšleš tři neomylné silové střely.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Silový zásah za 1k4 + 1 Bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#magicka-strela\" target=\"_blank\">SRD Jeskyní a draků – Magická střela</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "36",
-      "units": "m",
+      "value": "24",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -101,7 +101,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -152,10 +152,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "magicka-strela",
       "srd": "41JIhpDyM9Anm7cs",
       "nazevEn": "Magic Missile",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#magicka-strela"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#magicka-strela"
     }
   },
   "img": "icons/magic/lightning/projectiles-tendril-salvo-pink.webp",

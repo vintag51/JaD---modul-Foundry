@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Oblak dusivého plynu ochromí tvory, kteří neuspějí v záchraně.</p><h3>Automatizace</h3><ul><li><strong>Záchrana v páchnoucím oblaku:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Dávící se a vrávorající.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#pachnouci-oblak\" target=\"_blank\">SRD Jeskyní a draků – Páchnoucí oblak</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Oblak dusivého plynu ochromí tvory, kteří neuspějí v Záchranném hodu.</p><h3>Automatizace</h3><ul><li><strong>Záchrana v páchnoucím oblaku:</strong> Záchranný hod na Odolnost proti SO kouzla; efekt: Dávící se a vrávorající.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pachnouci-oblak\" target=\"_blank\">SRD Jeskyní a draků – Páchnoucí oblak</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,16 +33,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "sphere",
-        "size": "6",
+        "size": "4",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "27",
-      "units": "m",
+      "value": "18",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -114,7 +114,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -188,7 +188,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -217,10 +217,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "pachnouci-oblak",
       "srd": "TwlD4PLcltv7Xh7j",
       "nazevEn": "Stinking Cloud",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#pachnouci-oblak"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pachnouci-oblak"
     }
   },
   "img": "icons/magic/acid/dissolve-pool-bubbles.webp",

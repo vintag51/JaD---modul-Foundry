@@ -1,0 +1,247 @@
+{
+  "_id": "tcCkteptHAc9Q6Hk",
+  "name": "Chapadlo",
+  "type": "spell",
+  "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [],
+  "system": {
+    "identifier": "chapadlo",
+    "level": 2,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "chobotnicové chapadlo (kouzlo ho spotřebuje)",
+      "consumed": true,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "9",
+      "units": "sah",
+      "special": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "space",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "cube",
+        "size": "1",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "19CF9GjwStXJBgC0": {
+        "_id": "19CF9GjwStXJBgC0",
+        "type": "utility",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "SAIDhqyh6hzg9k2g": {
+        "_id": "SAIDhqyh6hzg9k2g",
+        "type": "attack",
+        "img": "",
+        "sort": 100000,
+        "name": "Útok chapadla",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Když tvor začne Tah do 1 sáhu od chapadla nebo tam v Tahu poprvé vstoupí."
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Hozené chapadlo vyroste do obřích rozměrů a útočí na každého, kdo se k němu přiblíží.</p><h3>Automatizace</h3><ul><li><strong>Útok chapadla:</strong> Útok na blízko kouzlem; při Zásahu Drtivý zásah za 2k8 Bodů výdrže (+1k8 za každý Stupeň nad 2).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#chapadlo\" target=\"_blank\">SRD Jeskyní a draků – Chapadlo</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "chapadlo",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#chapadlo"
+    }
+  },
+  "folder": "qeFyrqAp9wqNyjo6",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!tcCkteptHAc9Q6Hk"
+}

@@ -1,0 +1,232 @@
+{
+  "_id": "s5AnAIPu34ubraAv",
+  "name": "Zlomyslný výsměch",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Urážka protkaná magií psychicky zasáhne cíl a způsobí mu nevýhodu v příštím útoku.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Moudrost proti SO kouzla; Psychický zásah za 1k4 Bodů výdrže (roste na 5., 11. a 17. Úrovni); při úspěchu bez účinku; efekt: Zlomyslný výsměch.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zlomyslny-vysmech\" target=\"_blank\">SRD Jeskyní a draků – Zlomyslný výsměch</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "12",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 0,
+    "school": "enc",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "imsGW3YRra9KF6iK",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "vicious-mockery"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "zlomyslny-vysmech",
+      "srd": "cdrYKaFi98YWaBMw",
+      "nazevEn": "Vicious Mockery",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zlomyslny-vysmech"
+    }
+  },
+  "img": "icons/creatures/magical/spirit-poison-smoke-green.webp",
+  "effects": [
+    {
+      "name": "Zlomyslný výsměch",
+      "img": "icons/creatures/magical/spirit-poison-smoke-green.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.s5AnAIPu34ubraAv",
+      "transfer": false,
+      "_id": "imsGW3YRra9KF6iK",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": 6,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Zlomyslný výsměch</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.0",
+        "createdTime": 1772660959541,
+        "modifiedTime": 1772660981291,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!cdrYKaFi98YWaBMw.imsGW3YRra9KF6iK"
+    }
+  ],
+  "folder": "I62ubbhWiKyu3sLU",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!s5AnAIPu34ubraAv"
+}

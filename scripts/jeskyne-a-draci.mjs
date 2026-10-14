@@ -14,6 +14,7 @@ const DATA = `modules/${MODUL}/data/kompendium`;
 const t = (klic, data) => data ? game.i18n.format(`JAD.${klic}`, data) : game.i18n.localize(`JAD.${klic}`);
 
 Hooks.once("init", () => {
+  registrovatSahy();
   game.settings.register(MODUL, "registrovatSeznamy", {
     name: "JAD.Nastaveni.Seznamy.Nazev",
     hint: "JAD.Nastaveni.Seznamy.Napoveda",
@@ -112,10 +113,31 @@ async function naplnit(pack, vytvorit, vynutit) {
   }
 }
 
-/** Kouzla mají vzdálenosti v metrech (JaD: 1 pole = 1,5 m). Upozorní GM, pokud svět používá stopy. */
+/**
+ * Jednotka délky JaD: 1 sáh = 5 stop = 1 pole. Přidá ji do konfigurace dnd5e, aby se dosahy a oblasti kouzel
+ * zobrazovaly v sázích a šablony se správně přepočítaly na jednotky scény.
+ */
+function registrovatSahy() {
+  const cfg = CONFIG.DND5E;
+  if ( !cfg?.movementUnits || cfg.movementUnits.sah ) return;
+  cfg.movementUnits.sah = {
+    label: "JAD.Jednotky.Sah.Nazev",
+    abbreviation: "JAD.Jednotky.Sah.Zkratka",
+    template: "JAD.Jednotky.Sah.Sablona",
+    counted: "JAD.Jednotky.Sah.Pocet",
+    conversion: 5,
+    type: "imperial",
+    travelResolution: "round"
+  };
+  if ( cfg.distanceUnits && !Object.isFrozen(cfg.distanceUnits) ) cfg.distanceUnits.sah = "JAD.Jednotky.Sah.Nazev";
+}
+
+/** Upozorní GM, pokud aktuální scéna nemá mřížku 1 pole = 5 stop / 1 sáh (doporučené nastavení pro JaD). */
 function upozornitNaJednotky() {
   if ( !game.settings.get(MODUL, "upozorneniJednotky") ) return;
-  let metricke = false;
-  try { metricke = game.settings.get("dnd5e", "metricLengthUnits"); } catch(err) { /* starší dnd5e */ }
-  if ( !metricke ) ui.notifications.warn(t("Jednotky.Upozorneni"), { permanent: false });
+  const grid = canvas?.scene?.grid;
+  if ( !grid ) return;
+  const ok = (grid.units === "sah" && grid.distance === 1) || (grid.units === "ft" && grid.distance === 5)
+    || (grid.units === "m" && grid.distance === 1.5);
+  if ( !ok ) ui.notifications.warn(t("Jednotky.Upozorneni"));
 }

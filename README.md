@@ -10,21 +10,22 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 
 | Část | Stav |
 |---|---|
-| 319 kouzel SRD 5.1 s automatizací dnd5e (útoky, záchrany, zranění, léčení, škálování dle stupně i úrovně, efekty, přivolání, šablony oblastí) | hotovo |
-| České názvy, stupně, materiály, názvy aktivit a efektů, podmínky | hotovo – 38 názvů ověřeno proti SRD JaD, ostatní pracovní |
+| **Všech 342 kouzel z kapitoly 10 – Magie** knihy Jeskyně a draci | hotovo |
+| – 319 kouzel s automatizací převzatou ze SRD 5.1 v systému dnd5e (útoky, Záchranné hody, Zásahy, léčení, škálování dle Stupně Pozice i Úrovně, efekty, přivolání, šablony oblastí) | hotovo |
+| – 23 původních kouzel JaD (Hexenšus, Hněv živlů, Řetězy upoutání, Slídivé oko…) s vlastní automatizací | hotovo |
+| Názvy, Stupně, školy a seznamy kouzel 8 povolání přesně podle knihy JaD | hotovo, ověřeno |
+| Terminologie JaD (Zásah, Body výdrže, Pozice, Stupeň, SO, Oprava sesílací vlastnosti) | hotovo |
 | Vlastní krátká shrnutí + odkaz na plné znění v SRD JaD | hotovo |
-| Vzdálenosti v metrech podle JaD (5 stop = 1,5 m) | hotovo (lze přepnout na stopy) |
-| Seznamy kouzel 8 povolání zaregistrované do dnd5e (výběr kouzel při postupu) | hotovo pro kouzla SRD |
-| Volitelná vrstva Midi-QOL + DAE (opakované záchrany a zranění na konci tahu – OverTime) | hotovo pro 12 kouzel |
-| Kouzla z knihy JaD mimo SRD 5.1 a původní kouzla JaD | připravený formát, čeká na data z PDF |
-| Rasy, povolání, předměty | další fáze |
+| Vzdálenosti v **sázích** (1 sáh = 1 pole = 5 stop) – modul přidává jednotku „sáh“ do dnd5e | hotovo |
+| Volitelná vrstva Midi-QOL + DAE (opakované Záchranné hody a zásahy na konci tahu) | 13 kouzel |
+| Rasy, povolání, předměty | další fáze, ve stejném modulu |
 
 ## Instalace
 
 1. Do `assets/` vlož **logo komunitní tvorby JaD** jako `logo-jad-komunitni.jpg` (stáhni z <https://www.mytago.cz/blog/jad-komunitni-tvorba>; licence vyžaduje jeho viditelné použití v nezměněné podobě, barvu lze upravit).
 2. Zkopíruj složku `jeskyne-a-draci` do `Data/modules/` (nebo instaluj přes manifest po zveřejnění na GitHubu).
 3. Ve světě s dnd5e zapni modul. Při prvním spuštění GM modul sám naplní kompendia z `data/kompendium/*.json` (pokud nejsou předem sestavená).
-4. Doporučeno: v nastavení dnd5e zapni **metrické jednotky délky** a scény nastav na **1,5 m na pole**.
+4. Mřížku scén nastav na **1 sáh** (nebo 5 stop / 1,5 m) na pole – šablony kouzel se přepočítají automaticky.
 
 Kompendia najdeš ve složce **Jeskyně a draci**: *JaD – Kouzla* a *JaD – Seznamy kouzel povolání*.
 
@@ -39,7 +40,7 @@ Ruční reimport (např. po aktualizaci dat): v konzoli `game.modules.get("jesky
 
 ```
 dnd5e (SRD 5.1, automatizace)  ─┐
-data/nazvy-kouzel.yml           │
+data/jad-kouzla.yml             │  (seznam kouzel JaD, párování na SRD)
 data/shrnuti.yml                ├─► tools/generuj.py ─► packs/_source/*  ─► tools/build.mjs ─► packs/* (LevelDB)
 data/materialy.yml              │                    └► data/kompendium/* (záložní import)
 data/preklady-aktivit.yml       │
@@ -51,20 +52,18 @@ data/vlastni-kouzla.yml        ─┘
 ```bash
 git clone https://github.com/foundryvtt/dnd5e ../dnd5e
 pip install pyyaml
-python3 tools/generuj.py --dnd5e ../dnd5e        # --jednotky ft pro stopy
+python3 tools/generuj.py --dnd5e ../dnd5e        # --jednotky ft pro stopy místo sáhů
 python3 tools/kontrola.py                        # strukturní kontrola
 npm install && npm run build                     # LevelDB kompendia (Foundry CLI)
 ```
 
 GitHub Action `.github/workflows/release.yml` při vydání vše vygeneruje, sestaví a přiloží `module.json` + `jeskyne-a-draci.zip`.
 
-### Přidání kouzla mimo SRD
+### Přidání nebo úprava kouzla
 
-Zápis do `data/vlastni-kouzla.yml` (formát v `tools/vlastni.py`), pak znovu `generuj.py`. Popis piš vlastními slovy – licence JaD zakazuje kopírovat bloky textu z knihy.
-
-### Ověření názvů
-
-V `data/nazvy-kouzel.yml` má každé kouzlo `overeno: true/false`. Neověřené mají v popisu poznámku „Pracovní název“. Po porovnání s knihou stačí název opravit a přepnout na `true`.
+- Seznam kouzel JaD je v `data/jad-kouzla.yml` (vznikl z uložené stránky kapitoly 10 – Magie pomocí `tools/parsuj_magii.py` a spárováním se SRD podle mechanik).
+- Původní kouzla JaD mají mechaniku v `data/vlastni-kouzla.yml` (formát v `tools/vlastni.py`).
+- Popisy piš vlastními slovy – licence JaD zakazuje kopírovat bloky textu z knihy.
 
 ## Licence
 

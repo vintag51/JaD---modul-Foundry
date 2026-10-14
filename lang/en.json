@@ -1,11 +1,42 @@
 {
-  "JAD.Nastaveni.Seznamy.Nazev": "Register JaD class spell lists",
-  "JAD.Nastaveni.Seznamy.Napoveda": "Adds the JaD class spell lists to the dnd5e spell list registry.",
-  "JAD.Nastaveni.Jednotky.Nazev": "Warn about metric units",
-  "JAD.Nastaveni.Jednotky.Napoveda": "Spells use metres (1 square = 1.5 m). Warns the GM if dnd5e metric length units are disabled.",
-  "JAD.Import.Zacatek": "Jeskyně a draci: populating compendiums from module data…",
-  "JAD.Import.Hotovo": "Jeskyně a draci: imported {pocet} spells.",
-  "JAD.Import.Chyba": "Jeskyně a draci: compendium import failed, see console (F12).",
-  "JAD.Midi.Aktivni": "Jeskyně a draci: Midi-QOL is active – repeat saves and end-of-turn damage (OverTime) are automated.",
-  "JAD.Jednotky.Upozorneni": "JaD Spells use metres. Enable dnd5e metric length units and set scenes to 1.5 m per square."
+  "JAD": {
+    "Nastaveni": {
+      "Seznamy": {
+        "Nazev": "Register JaD class spell lists",
+        "Napoveda": "Adds the JaD class spell lists to the dnd5e spell list registry."
+      },
+      "Jednotky": {
+        "Nazev": "Check scene grid",
+        "Napoveda": "Warns the GM if the scene grid is not 1 square = 1 fathom (5 ft, 1.5 m)."
+      }
+    },
+    "Import": {
+      "Zacatek": "Jeskyně a draci: populating compendiums…",
+      "Hotovo": "Jeskyně a draci: imported {pocet} spells.",
+      "Chyba": "Jeskyně a draci: compendium import failed, see console (F12)."
+    },
+    "Midi": {
+      "Aktivni": "Jeskyně a draci: Midi-QOL is active – repeat saves and end-of-turn damage (OverTime) are automated."
+    },
+    "Jednotky": {
+      "Upozorneni": "Jeskyně a draci spells measure in fathoms (1 fathom = 1 square). Set the scene grid to 1 fathom, 5 ft or 1.5 m.",
+      "Sah": {
+        "Nazev": "Fathoms (sáh)",
+        "Zkratka": "sáh",
+        "Sablona": "sáh",
+        "Pocet": {
+          "short": {
+            "one": "{number} sáh",
+            "other": "{number} sáh"
+          },
+          "long": {
+            "one": "{number} fathom",
+            "other": "{number} fathoms"
+          },
+          "one": "{number} sáh",
+          "other": "{number} sáh"
+        }
+      }
+    }
+  }
 }

@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Sloup posvátného ohně zraní tvory ohněm i září.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Obratnost proti SO kouzla; 4k6 zářivé zranění; 4k6 ohnivé zranění; při úspěchu polovina.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#plamenny-uder\" target=\"_blank\">SRD Jeskyní a draků – Plamenný úder</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Sloup posvátného ohně zasáhne tvory ohněm i září.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Obratnost proti SO kouzla; Zářivý zásah za 4k6 Bodů výdrže; Ohnivý zásah za 4k6 Bodů výdrže; při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#plamenny-uder\" target=\"_blank\">SRD Jeskyní a draků – Plamenný úder</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,17 +32,17 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cylinder",
-        "size": "3",
+        "size": "2",
         "contiguous": false,
-        "height": "12",
+        "height": "8",
         "count": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -100,7 +100,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -190,10 +190,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "plamenny-uder",
       "srd": "5e1xTohkzqFqbYH4",
       "nazevEn": "Flame Strike",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#plamenny-uder"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#plamenny-uder"
     }
   },
   "img": "icons/magic/light/beam-rays-red-large.webp",

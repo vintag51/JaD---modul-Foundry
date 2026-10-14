@@ -1,0 +1,388 @@
+{
+  "_id": "H5o09cgbL59npu9a",
+  "name": "Ohnivá zeď",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Ohnivá stěna zraňuje tvory, kteří jí projdou nebo se k ní přiblíží.</p><h3>Automatizace</h3><ul><li><strong>Vyvolat ohnivou stěnu:</strong> Záchranný hod na Obratnost proti SO kouzla; Ohnivý zásah za 5k8 Bodů výdrže (+1k8 za každý Stupeň nad 4); při úspěchu poloviční Zásah.</li><li><strong>Vyvolat kruhovou ohnivou stěnu:</strong> Záchranný hod na Obratnost proti SO kouzla; Ohnivý zásah za 5k8 Bodů výdrže (+1k8 za každý Stupeň nad 4); při úspěchu poloviční Zásah.</li><li><strong>Zásah při dotyku stěny:</strong> Ohnivý zásah za 5k8 Bodů výdrže (+1k8 za každý Stupeň nad 4).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ohniva-zed\" target=\"_blank\">SRD Jeskyní a draků – Ohnivá zeď</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": "creature"
+      },
+      "template": {
+        "units": "sah",
+        "type": "wall",
+        "size": "12",
+        "contiguous": false,
+        "width": "0.2",
+        "height": "4",
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "24",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "evo",
+    "materials": {
+      "value": "kousek fosforu",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "c7IcbrVmmq74Rzqn": {
+        "type": "save",
+        "name": "Vyvolat ohnivou stěnu",
+        "_id": "c7IcbrVmmq74Rzqn",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": "wall",
+            "size": "",
+            "width": "",
+            "height": "",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 5,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        }
+      },
+      "M7ljtGAftvbGGZ0J": {
+        "type": "save",
+        "name": "Vyvolat kruhovou ohnivou stěnu",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": "ring",
+            "size": "2",
+            "count": "",
+            "width": "0.2",
+            "height": "4"
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 5,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        },
+        "_id": "M7ljtGAftvbGGZ0J"
+      },
+      "mVqRN9uGISDMRO1z": {
+        "type": "damage",
+        "name": "Zásah při dotyku stěny",
+        "_id": "mVqRN9uGISDMRO1z",
+        "img": "",
+        "sort": 300000,
+        "activation": {
+          "type": "special",
+          "override": true,
+          "condition": "Když tvor ukončí tah do 3 m od škodlivé strany stěny nebo ve stěně."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "spec",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 5,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "identifier": "wall-of-fire"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "ohniva-zed",
+      "srd": "X3DrXgxjwI2dvkD6",
+      "nazevEn": "Wall of Fire",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ohniva-zed"
+    }
+  },
+  "img": "icons/magic/fire/projectile-wave-yellow.webp",
+  "effects": [],
+  "folder": "8hak7PLbgtXEQBpD",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!H5o09cgbL59npu9a"
+}

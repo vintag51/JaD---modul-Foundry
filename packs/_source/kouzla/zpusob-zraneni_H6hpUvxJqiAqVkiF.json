@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Dotykem způsobíš cíli nekrotické zranění.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> útok kouzlem na blízko; zásah: 3k10 nekrotické zranění (+1k10 za každý stupeň nad 1).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zpusob-zraneni\" target=\"_blank\">SRD Jeskyní a draků – Způsob zranění</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Dotykem způsobíš cíli Nekrotický zásah.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Útok na blízko kouzlem; při Zásahu Nekrotický zásah za 3k10 Bodů výdrže (+1k10 za každý Stupeň nad 1).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zpusob-zraneni\" target=\"_blank\">SRD Jeskyní a draků – Způsob zranění</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -97,7 +97,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -162,10 +162,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "zpusob-zraneni",
       "srd": "ksaaTxIbKx2sJfia",
       "nazevEn": "Inflict Wounds",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zpusob-zraneni"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zpusob-zraneni"
     }
   },
   "img": "icons/magic/death/hand-withered-gray.webp",

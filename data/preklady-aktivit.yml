@@ -15,7 +15,7 @@ aktivity:
   "6. Indigo Ray": "6. Indigový paprsek"
   "7. Violet Ray": "7. Fialový paprsek"
   Activated Spell Glyph: Aktivovaný kouzelný glyf
-  Additional End of Turn Damage: Zranění navíc na konci tahu
+  Additional End of Turn Damage: Zásah navíc na konci tahu
   Apply Disease: Nakazit nemocí
   Assume Direct Control: Převzít přímou kontrolu
   Avoid Light Save: Záchrana – vyhnout se světlu
@@ -26,10 +26,10 @@ aktivity:
   Blinding Light: Oslepující světlo
   Blink Check: Hod na mihnutí
   Blue Wall: Modrá vrstva
-  Bonus Damage On Hit: Zranění navíc při zásahu
-  Bonus Mark Damage: Zranění navíc proti označenému
+  Bonus Damage On Hit: Zásah navíc při zasažení
+  Bonus Mark Damage: Zásah navíc proti označenému
   Break Enchantment: Zlomit očarování
-  Burning Web Damage: Zranění hořící pavučinou
+  Burning Web Damage: Zásah hořící pavučinou
   Cast (Conjure Continual Flame on Object): Seslat (věčný plamen na předmět)
   Cast (Conjure Darkness on Object): Seslat (tma na předmět)
   Cast (Conjure Daylight on Object): Seslat (denní světlo na předmět)
@@ -46,7 +46,7 @@ aktivity:
   Command Creature: Velet tvoru
   Command Creatures: Velet tvorům
   Command Servant: Velet sluhovi
-  Complete Stone Destruction Damage: Zranění při úplném zničení kamene
+  Complete Stone Destruction Damage: Zásah při úplném zničení kamene
   Configure Connection of Target: Nastavit spojení s cílem
   Configure Knowledge of Target: Nastavit znalost cíle
   Conjure Blade Barrier (Ringed Wall): Vyvolat bariéru čepelí (kruhová stěna)
@@ -93,12 +93,12 @@ aktivity:
   Escape Plants Check: Hod na vyproštění z rostlin
   Evoke Flame Blade to Hand: Přivolat plamennou čepel do ruky
   Explosive Rune Save: Záchrana proti výbušné runě
-  Failed Teleportation Damage: Zranění při nezdařené teleportaci
+  Failed Teleportation Damage: Zásah při nezdařené teleportaci
   Falling Debris: Padající sutiny
   Flood: Zaplavení
   Focus Gaze: Zaměřit pohled
-  Forbidden Creature Damage: Zranění zakázaného tvora
-  Frigid Air Damage: Zranění mrazivým vzduchem
+  Forbidden Creature Damage: Zásah zakázaného tvora
+  Frigid Air Damage: Zásah mrazivým vzduchem
   "Glyph Effect: Death": "Účinek glyfu: Smrt"
   "Glyph Effect: Discord": "Účinek glyfu: Sváru"
   "Glyph Effect: Fear": "Účinek glyfu: Strach"
@@ -108,7 +108,7 @@ aktivity:
   "Glyph Effect: Sleep": "Účinek glyfu: Spánek"
   "Glyph Effect: Stunning": "Účinek glyfu: Omráčení"
   Grab Fixed Object Save: Záchrana – chycení pevného předmětu
-  Grant Temporary Hit Points: Udělit dočasné životy
+  Grant Temporary Hit Points: Udělit Dočasné body výdrže
   Green Wall: Zelená vrstva
   Guardian Strike Save: Záchrana proti úderu strážce
   Hallow Effect Save: Záchrana proti účinku posvěcení
@@ -125,7 +125,7 @@ aktivity:
   Manipulate Creature: Manipulovat s tvorem
   Manipulate Object: Manipulovat s předmětem
   Mirror Image Interception: Zachycení zrcadlovým obrazem
-  Mishap Damage: Zranění při nehodě
+  Mishap Damage: Zásah při nehodě
   Moonbeam Burn Save: Záchrana proti spálení měsíčním paprskem
   Move & Command Spiritual Weapon: Posunout a ovládat duchovní zbraň
   Move Moonbeam: Posunout měsíční paprsek
@@ -135,7 +135,7 @@ aktivity:
   Open Fissures: Otevřít trhliny
   Orange Wall: Oranžová vrstva
   Part Water: Rozestoupit vodu
-  Partial Stone Destruction Damage: Zranění při částečném zničení kamene
+  Partial Stone Destruction Damage: Zásah při částečném zničení kamene
   Petrification Save: Záchrana proti zkamenění
   Possess Creature: Posednout tvora
   Probe Deeper: Proniknout hlouběji
@@ -145,7 +145,7 @@ aktivity:
   Redirect Flow: Přesměrovat tok
   Repeat Save: Opakovaná záchrana
   Repeat Save (After Comand): Opakovaná záchrana (po rozkazu)
-  Replicate Spell (8th Level or Lower): Napodobit kouzlo (8. stupně nebo nižší)
+  Replicate Spell (8th Level or Lower): Napodobit kouzlo (8. Stupně nebo nižší)
   Restraining Tentacles: Svírající chapadla
   Revive Target: Oživit cíl
   Roll Confusion Table Result: Hodit na tabulku zmatení
@@ -158,7 +158,7 @@ aktivity:
   Scorching Ray Attack: Útok spalujícím paprskem
   Sequester Creature: Ukrýt tvora
   Sequester Item: Ukrýt předmět
-  Shield Retaliation Damage: Odvetné zranění štítu
+  Shield Retaliation Damage: Odvetný zásah štítu
   Slippery Ice Save: Záchrana na kluzkém ledu
   Speak Suggestion: Vyslovit sugesci
   Spellcasting Attack: Útok kouzlem
@@ -169,7 +169,7 @@ aktivity:
   "Stressful Wish: Conjure Wealth": "Vyčerpávající přání: vyvolat bohatství"
   "Stressful Wish: Restore Health": "Vyčerpávající přání: obnovit zdraví"
   "Stressful Wish: Rewrite Events": "Vyčerpávající přání: přepsat události"
-  Structure Damage: Zranění stavby
+  Structure Damage: Zásah stavby
   Summon: Přivolat
   Summon Celestial: Přivolat nebešťana
   Summon Creature: Přivolat tvora
@@ -184,10 +184,10 @@ aktivity:
   Summon Steed: Přivolat oře
   Thwart Teleportation Save: Záchrana proti zmaření teleportace
   Transform into Beast: Proměnit se ve zvíře
-  Traversal Damage: Zranění při průchodu
+  Traversal Damage: Zásah při průchodu
   Vampiric Touch Attack: Útok upířím dotekem
   Violet Wall: Fialová vrstva
-  Wall Contact Damage: Zranění při dotyku stěny
+  Wall Contact Damage: Zásah při dotyku stěny
   Wall Contact Save: Záchrana při dotyku stěny
   Ward Save: Záchrana proti ochraně
   Whirlpool: Vír
@@ -254,9 +254,9 @@ efekty:
   Wielding Darkness Covered Object: Drží předmět zahalený tmou
   Wielding Daylight Object: Drží předmět s denním světlem
   Cast: Sesláno
-  "Divine Word (30 HP or fewer)": "Božské slovo (30 životů a méně)"
-  "Divine Word (40 HP or fewer)": "Božské slovo (40 životů a méně)"
-  "Divine Word (50 HP or fewer)": "Božské slovo (50 životů a méně)"
+  "Divine Word (30 HP or fewer)": "Božské slovo (30 Bodů výdrže a méně)"
+  "Divine Word (40 HP or fewer)": "Božské slovo (40 Bodů výdrže a méně)"
+  "Divine Word (50 HP or fewer)": "Božské slovo (50 Bodů výdrže a méně)"
   Buried under Rubble: Zasypaný sutinami
   "Bear's Endurance": Medvědí výdrž
   "Bull's Strength": Býčí síla
@@ -350,16 +350,16 @@ efekty:
   Wind Walking: Větrná chůze
   Ability Immunity: Imunita
   Acid Resistance: Odolnost vůči kyselině
-  Bludgeoning Resistance: Odolnost vůči drtivému zranění
+  Bludgeoning Resistance: Odolnost vůči drtivým zásahům
   Cold Resistance: Odolnost vůči chladu
   Fire Resistance: Odolnost vůči ohni
-  Force Resistance: Odolnost vůči silovému zranění
+  Force Resistance: Odolnost vůči silovým zásahům
   Lightning Resistance: Odolnost vůči blesku
-  Necrotic Resistance: Odolnost vůči nekrotickému zranění
-  Piercing Resistance: Odolnost vůči bodnému zranění
+  Necrotic Resistance: Odolnost vůči nekrotickým zásahům
+  Piercing Resistance: Odolnost vůči bodným zásahům
   Poison Resistance: Odolnost vůči jedu
-  Psychic Resistance: Odolnost vůči psychickému zranění
-  Radiant Resistance: Odolnost vůči zářivému zranění
-  Slashing Resistance: Odolnost vůči sečnému zranění
+  Psychic Resistance: Odolnost vůči psychickým zásahům
+  Radiant Resistance: Odolnost vůči zářivým zásahům
+  Slashing Resistance: Odolnost vůči sečným zásahům
   Thunder Resistance: Odolnost vůči hromu
   Wish Stress: Vyčerpání z přání

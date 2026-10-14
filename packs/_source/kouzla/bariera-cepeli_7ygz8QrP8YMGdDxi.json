@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Stěna vířících čepelí zraňuje tvory, kteří jí projdou.</p><h3>Automatizace</h3><ul><li><strong>Záchrana při dotyku stěny:</strong> záchranný hod na Obratnost proti SO kouzla; 6k10 sečné zranění; při úspěchu polovina.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#bariera-cepeli\" target=\"_blank\">SRD Jeskyní a draků – Bariéra čepelí</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Stěna vířících čepelí zraňuje tvory, kteří jí projdou.</p><h3>Automatizace</h3><ul><li><strong>Záchrana při dotyku stěny:</strong> Záchranný hod na Obratnost proti SO kouzla; Sečný zásah za 6k10 Bodů výdrže; při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#bariera-cepeli\" target=\"_blank\">SRD Jeskyní a draků – Bariéra čepelí</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,18 +32,18 @@
         "type": "creature"
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "wall",
-        "size": "30",
+        "size": "20",
         "contiguous": false,
-        "width": "1.5",
-        "height": "6",
+        "width": "1",
+        "height": "4",
         "count": ""
       }
     },
     "range": {
-      "value": "27",
-      "units": "m",
+      "value": "18",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -105,7 +105,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -196,7 +196,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -260,12 +260,12 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": "ring",
-            "size": "9",
+            "size": "6",
             "count": "",
-            "width": "1.5",
-            "height": "6"
+            "width": "1",
+            "height": "4"
           },
           "affects": {
             "choice": false,
@@ -304,10 +304,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "bariera-cepeli",
       "srd": "dLJhxDfeyOsc3zsY",
       "nazevEn": "Blade Barrier",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#bariera-cepeli"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#bariera-cepeli"
     }
   },
   "img": "icons/skills/melee/strikes-sword-scimitar.webp",

@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Přeneseš se (případně s jedním společníkem) na místo až do velké vzdálenosti.</p><h3>Automatizace</h3><ul><li><strong>Zranění při nezdařené teleportaci:</strong> 4k6 silové zranění.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#dimenzionalni-dvere\" target=\"_blank\">SRD Jeskyní a draků – Dimenzionální dveře</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Přeneseš se (případně s jedním společníkem) na místo až do velké vzdálenosti.</p><h3>Automatizace</h3><ul><li><strong>Zásah při nezdařené teleportaci:</strong> Silový zásah za 4k6 Bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#dimenzionalni-dvere\" target=\"_blank\">SRD Jeskyní a draků – Dimenzionální dveře</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,14 +33,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "150",
-      "units": "m",
+      "value": "100",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -137,7 +137,7 @@
           "max": ""
         },
         "sort": 200000,
-        "name": "Zranění při nezdařené teleportaci",
+        "name": "Zásah při nezdařené teleportaci",
         "img": "",
         "visibility": {
           "level": {
@@ -182,7 +182,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -211,10 +211,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "dimenzionalni-dvere",
       "srd": "A4RsPuSvB9wFtz1j",
       "nazevEn": "Dimension Door",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#dimenzionalni-dvere"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#dimenzionalni-dvere"
     }
   },
   "img": "icons/environment/wilderness/mine-interior-dungeon-door.webp",

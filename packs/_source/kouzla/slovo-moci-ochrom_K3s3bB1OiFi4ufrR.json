@@ -1,0 +1,286 @@
+{
+  "_id": "K3s3bB1OiFi4ufrR",
+  "name": "Slovo moci „ochrom\"",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Omráčíš tvora se 150 a méně Body výdrže.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Slovo moci „ochrom&quot;.</li><li><strong>Opakovaná záchrana:</strong> Záchranný hod na Odolnost proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#slovo-moci-„ochrom\" target=\"_blank\">SRD Jeskyní a draků – Slovo moci „ochrom&quot;</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "12",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 8,
+    "school": "enc",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": true,
+          "condition": "Když tvor &reference[stunned apply=false] tímto kouzlem ukončí tah."
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "spec",
+          "special": ""
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "1",
+            "special": ""
+          },
+          "override": true
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "con",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 200000,
+        "name": "Opakovaná záchrana",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "q30p6TFrVTCsUSij": {
+        "type": "utility",
+        "name": "Seslat",
+        "_id": "q30p6TFrVTCsUSij",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "XUk41wJR26neJaic",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        }
+      }
+    },
+    "identifier": "power-word-stun"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "slovo-moci-„ochrom",
+      "srd": "35j2QIMmIk6aEdxj",
+      "nazevEn": "Power Word Stun",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#slovo-moci-„ochrom"
+    }
+  },
+  "img": "icons/magic/air/wind-vortex-swirl-blue.webp",
+  "effects": [
+    {
+      "name": "Slovo moci „ochrom\"",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.K3s3bB1OiFi4ufrR",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "disabled": true,
+      "_id": "XUk41wJR26neJaic",
+      "description": "<p>Účinek kouzla <em>Slovo moci „ochrom&quot;</em>. Podrobnosti v popisu kouzla.</p>",
+      "transfer": false,
+      "statuses": [
+        "stunned"
+      ],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781451668827,
+        "modifiedTime": 1781451668827,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "img": "icons/magic/air/wind-vortex-swirl-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!35j2QIMmIk6aEdxj.XUk41wJR26neJaic"
+    }
+  ],
+  "folder": "1rbmT7DUq2Bh5zzE",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!K3s3bB1OiFi4ufrR"
+}

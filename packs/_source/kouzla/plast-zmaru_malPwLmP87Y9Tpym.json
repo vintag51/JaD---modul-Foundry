@@ -1,0 +1,240 @@
+{
+  "_id": "malPwLmP87Y9Tpym",
+  "name": "Plášť zmaru",
+  "type": "spell",
+  "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [],
+  "system": {
+    "identifier": "plast-zmaru",
+    "level": 1,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "černý kapesník",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "radius",
+        "size": "1",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "e7zPc3wHyCXHC9Fi": {
+        "_id": "e7zPc3wHyCXHC9Fi",
+        "type": "utility",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "CJYWmiA0dJ3E6nzI": {
+        "_id": "CJYWmiA0dJ3E6nzI",
+        "type": "save",
+        "img": "",
+        "sort": 100000,
+        "name": "Zásah aury",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": "Když tvor začne svůj Tah v auře."
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "@prof",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": "2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Obklopí tě aura nekrotické energie, která vysává tvory poblíž a dodává ti dočasné Body výdrže.</p><h3>Automatizace</h3><ul><li><strong>Zásah aury:</strong> Záchranný hod na Odolnost proti SO kouzla; Nekrotický zásah za 1k6 + Zdatnostní bonus Bodů výdrže (+2 za každý Stupeň nad 1); při úspěchu bez účinku.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#plast-zmaru\" target=\"_blank\">SRD Jeskyní a draků – Plášť zmaru</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "plast-zmaru",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#plast-zmaru"
+    }
+  },
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!malPwLmP87Y9Tpym"
+}

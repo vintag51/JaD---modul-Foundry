@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Přetváříš terén v rozsáhlé oblasti.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#pohni-zemi\" target=\"_blank\">SRD Jeskyní a draků – Pohni zemí</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Přetváříš terén v rozsáhlé oblasti.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pohni-zemi\" target=\"_blank\">SRD Jeskyní a draků – Pohni zemí</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "square",
-        "size": "12",
+        "size": "8",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "36",
-      "units": "m",
+      "value": "24",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -100,7 +100,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -134,10 +134,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "pohni-zemi",
       "srd": "yI0XWIgI0IGGsR3R",
       "nazevEn": "Move Earth",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#pohni-zemi"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pohni-zemi"
     }
   },
   "img": "icons/magic/earth/laval-stone-orange.webp",

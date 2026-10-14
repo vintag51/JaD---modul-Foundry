@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Uložíš tvoru závazný úkol pod hrozbou bolesti.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Moudrost proti SO kouzla; 5k10 psychické zranění; při úspěchu polovina; efekt: Úkol.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#ukol\" target=\"_blank\">SRD Jeskyní a draků – Úkol</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Uložíš tvoru závazný úkol pod hrozbou bolesti.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Moudrost proti SO kouzla; Psychický zásah za 5k10 Bodů výdrže; při úspěchu poloviční Zásah; efekt: Úkol.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ukol\" target=\"_blank\">SRD Jeskyní a draků – Úkol</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -106,7 +106,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -164,10 +164,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "ukol",
       "srd": "JQyigMNPiDnGI18b",
       "nazevEn": "Geas",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#ukol"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ukol"
     }
   },
   "img": "icons/magic/control/control-influence-puppet.webp",

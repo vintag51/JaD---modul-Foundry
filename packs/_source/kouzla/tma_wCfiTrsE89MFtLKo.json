@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vytvoříš oblast magické tmy, kterou neprohlédne ani vidění ve tmě.</p><h3>Automatizace</h3><ul><li><strong>Seslat (tma na předmět):</strong> očaruje předmět; efekt: Tma.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#tma\" target=\"_blank\">SRD Jeskyní a draků – Tma</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vytvoříš oblast magické tmy, kterou neprohlédne ani vidění ve tmě.</p><h3>Automatizace</h3><ul><li><strong>Seslat (tma na předmět):</strong> očarování předmětu; efekt: Tma.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#tma\" target=\"_blank\">SRD Jeskyní a draků – Tma</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,16 +33,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "sphere",
-        "size": "4.5",
+        "size": "3",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -100,7 +100,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -179,7 +179,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -221,10 +221,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "tma",
       "srd": "S7VbUetIfVT7B6Eq",
       "nazevEn": "Darkness",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#tma"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#tma"
     }
   },
   "img": "icons/magic/unholy/orb-rays-blue.webp",

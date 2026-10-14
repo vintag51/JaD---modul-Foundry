@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vytvoříš iluzi se zvukem, pachem i teplotou.</p><h3>Automatizace</h3><ul><li><strong>Hod na prohlédnutí iluze:</strong> ověření vlastnosti.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#velky-obraz\" target=\"_blank\">SRD Jeskyní a draků – Velký obraz</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vytvoříš iluzi se zvukem, pachem i teplotou.</p><h3>Automatizace</h3><ul><li><strong>Hod na prohlédnutí iluze:</strong> Ověření vlastnosti.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#velky-obraz\" target=\"_blank\">SRD Jeskyní a draků – Velký obraz</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cube",
-        "size": "6",
+        "size": "4",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "36",
-      "units": "m",
+      "value": "24",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -101,7 +101,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false
           },
           "affects": {
@@ -172,7 +172,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -217,10 +217,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "velky-obraz",
       "srd": "nslx2nT3p4lNkmdp",
       "nazevEn": "Major Image",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#velky-obraz"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#velky-obraz"
     }
   },
   "img": "icons/commodities/treasure/glass-cube-teal.webp",

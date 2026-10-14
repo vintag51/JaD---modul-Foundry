@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vnukneš postup až dvanácti tvorům.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Hromadná sugesce (podle stupně).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hromadna-sugesce\" target=\"_blank\">SRD Jeskyní a draků – Hromadná sugesce</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vnukneš postup až dvanácti tvorům.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Hromadná sugesce (podle Stupně).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hromadna-sugesce\" target=\"_blank\">SRD Jeskyní a draků – Hromadná sugesce</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -131,7 +131,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -171,16 +171,16 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "hromadna-sugesce",
       "srd": "5OGFdJw35QXp6mh6",
       "nazevEn": "Mass Suggestion",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hromadna-sugesce"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hromadna-sugesce"
     }
   },
   "img": "icons/environment/people/charge.webp",
   "effects": [
     {
-      "name": "Hromadná sugesce: 6. stupeň",
+      "name": "Hromadná sugesce: 6. Stupeň",
       "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.FJg5MM9QP7gI1nkm",
       "transfer": false,
@@ -224,7 +224,7 @@
       "_key": "!items.effects!5OGFdJw35QXp6mh6.s8TC1UrCgjeBdf78"
     },
     {
-      "name": "Hromadná sugesce: 7. stupeň",
+      "name": "Hromadná sugesce: 7. Stupeň",
       "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.FJg5MM9QP7gI1nkm",
       "transfer": false,
@@ -268,7 +268,7 @@
       "_key": "!items.effects!5OGFdJw35QXp6mh6.8zdxyPjy2ubw9zER"
     },
     {
-      "name": "Hromadná sugesce: 8. stupeň",
+      "name": "Hromadná sugesce: 8. Stupeň",
       "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.FJg5MM9QP7gI1nkm",
       "transfer": false,
@@ -312,7 +312,7 @@
       "_key": "!items.effects!5OGFdJw35QXp6mh6.BGqCb71GgI0jO1zt"
     },
     {
-      "name": "Hromadná sugesce: 9. stupeň",
+      "name": "Hromadná sugesce: 9. Stupeň",
       "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.FJg5MM9QP7gI1nkm",
       "transfer": false,

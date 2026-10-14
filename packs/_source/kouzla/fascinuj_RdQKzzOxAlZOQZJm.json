@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Tvá řeč upoutá pozornost posluchačů.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Fascinovaný.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#fascinuj\" target=\"_blank\">SRD Jeskyní a draků – Fascinuj</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Tvá řeč upoutá pozornost posluchačů.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Fascinovaný.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#fascinuj\" target=\"_blank\">SRD Jeskyní a draků – Fascinuj</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -40,8 +40,8 @@
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -104,7 +104,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -144,10 +144,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "fascinuj",
       "srd": "30ZgXtijJVCxQk5N",
       "nazevEn": "Enthrall",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#fascinuj"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#fascinuj"
     }
   },
   "img": "icons/magic/control/hypnosis-mesmerism-watch.webp",

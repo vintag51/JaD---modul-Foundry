@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Tvůj příští zásah zbraní zazáří, způsobí navíc zranění a cíl nemůže být neviditelný.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Cejchovací úder (podle stupně).</li><li><strong>Zranění navíc při zásahu:</strong> 2k6 zářivé zranění (+1k6 za každý stupeň nad 2); efekt: Cejch.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#cejchovaci-uder\" target=\"_blank\">SRD Jeskyní a draků – Cejchovací úder</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Tvůj příští Zásah zbraní zazáří, způsobí Zásah navíc a cíl nemůže být neviditelný.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Cejchovací úder (podle Stupně).</li><li><strong>Zásah navíc při zasažení:</strong> Zářivý zásah za 2k6 Bodů výdrže (+1k6 za každý Stupeň nad 2); efekt: Cejch.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#cejchovaci-uder\" target=\"_blank\">SRD Jeskyní a draků – Cejchovací úder</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,7 +33,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -103,7 +103,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -141,7 +141,7 @@
           "max": ""
         },
         "sort": 200000,
-        "name": "Zranění navíc při zásahu",
+        "name": "Zásah navíc při zasažení",
         "img": "",
         "visibility": {
           "level": {
@@ -243,7 +243,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -278,16 +278,16 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "cejchovaci-uder",
       "srd": "7UwUjJ6owIQkEPrs",
       "nazevEn": "Branding Smite",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#cejchovaci-uder"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#cejchovaci-uder"
     }
   },
   "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
   "effects": [
     {
-      "name": "Cejchovací úder: 2. stupeň",
+      "name": "Cejchovací úder: 2. Stupeň",
       "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Vci1EXDHnpgCnmB4",
       "transfer": false,
@@ -331,7 +331,7 @@
       "_key": "!items.effects!7UwUjJ6owIQkEPrs.xM2PEzUfQZgNIXRv"
     },
     {
-      "name": "Cejchovací úder: 3. stupeň",
+      "name": "Cejchovací úder: 3. Stupeň",
       "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Vci1EXDHnpgCnmB4",
       "transfer": false,
@@ -375,7 +375,7 @@
       "_key": "!items.effects!7UwUjJ6owIQkEPrs.pkXLCMEMNzccLQs4"
     },
     {
-      "name": "Cejchovací úder: 4. stupeň",
+      "name": "Cejchovací úder: 4. Stupeň",
       "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Vci1EXDHnpgCnmB4",
       "transfer": false,
@@ -419,7 +419,7 @@
       "_key": "!items.effects!7UwUjJ6owIQkEPrs.wylpKcAY3Gw609ug"
     },
     {
-      "name": "Cejchovací úder: 5. stupeň",
+      "name": "Cejchovací úder: 5. Stupeň",
       "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Vci1EXDHnpgCnmB4",
       "transfer": false,
@@ -463,7 +463,7 @@
       "_key": "!items.effects!7UwUjJ6owIQkEPrs.f4xG4p6y77duw9yt"
     },
     {
-      "name": "Cejchovací úder: 6. stupeň",
+      "name": "Cejchovací úder: 6. Stupeň",
       "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Vci1EXDHnpgCnmB4",
       "transfer": false,
@@ -507,7 +507,7 @@
       "_key": "!items.effects!7UwUjJ6owIQkEPrs.13BrsdpazrFevbup"
     },
     {
-      "name": "Cejchovací úder: 7. stupeň",
+      "name": "Cejchovací úder: 7. Stupeň",
       "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Vci1EXDHnpgCnmB4",
       "transfer": false,
@@ -551,7 +551,7 @@
       "_key": "!items.effects!7UwUjJ6owIQkEPrs.XNwGaFsyQyqp7cP7"
     },
     {
-      "name": "Cejchovací úder: 8. stupeň",
+      "name": "Cejchovací úder: 8. Stupeň",
       "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Vci1EXDHnpgCnmB4",
       "transfer": false,
@@ -595,7 +595,7 @@
       "_key": "!items.effects!7UwUjJ6owIQkEPrs.doT9gQvDafhsdNxs"
     },
     {
-      "name": "Cejchovací úder: 9. stupeň",
+      "name": "Cejchovací úder: 9. Stupeň",
       "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Vci1EXDHnpgCnmB4",
       "transfer": false,

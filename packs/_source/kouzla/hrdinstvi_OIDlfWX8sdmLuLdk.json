@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Tvor je imunní vůči vystrašení a každé kolo získává dočasné životy.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Hrdinství.</li><li><strong>Udělit dočasné životy:</strong> obnoví oprava sesílací vlastnosti dočasných životů.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hrdinstvi\" target=\"_blank\">SRD Jeskyní a draků – Hrdinství</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Tvor je imunní vůči vystrašení a každé kolo získává Dočasné body výdrže.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Hrdinství.</li><li><strong>Udělit Dočasné body výdrže:</strong> obnoví Oprava sesílací vlastnosti Dočasných bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hrdinstvi\" target=\"_blank\">SRD Jeskyní a draků – Hrdinství</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -101,7 +101,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -131,7 +131,7 @@
           "max": ""
         },
         "sort": 100000,
-        "name": "Udělit dočasné životy",
+        "name": "Udělit Dočasné body výdrže",
         "img": "",
         "visibility": {
           "level": {
@@ -179,7 +179,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -208,10 +208,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "hrdinstvi",
       "srd": "ge3Saet9zPTDyaoL",
       "nazevEn": "Heroism",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hrdinstvi"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hrdinstvi"
     }
   },
   "img": "icons/sundries/flags/banner-sword-blue.webp",

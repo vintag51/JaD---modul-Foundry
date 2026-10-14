@@ -1,13 +1,13 @@
 {
   "_id": "HQxOOt7g4bWvJpj9",
-  "name": "Let",
+  "name": "Leť",
   "ownership": {
     "default": 0
   },
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Tvor získá rychlost létání.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Let.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#let\" target=\"_blank\">SRD Jeskyní a draků – Let</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Tvor získá rychlost létání.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Leť.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#let\" target=\"_blank\">SRD Jeskyní a draků – Leť</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -104,7 +104,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -138,16 +138,16 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "let",
       "srd": "yfbK8gZqESlaoY5t",
       "nazevEn": "Fly",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#let"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#let"
     }
   },
   "img": "icons/creatures/abilities/wings-birdlike-blue.webp",
   "effects": [
     {
-      "name": "Let",
+      "name": "Leť",
       "img": "icons/creatures/abilities/wings-birdlike-blue.webp",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.HQxOOt7g4bWvJpj9",
       "transfer": false,
@@ -158,7 +158,7 @@
           {
             "key": "system.attributes.movement.fly",
             "type": "upgrade",
-            "value": "18",
+            "value": 60,
             "phase": "initial",
             "priority": null
           }
@@ -172,7 +172,7 @@
         "expiry": "turnStart",
         "expired": false
       },
-      "description": "<p>Účinek kouzla <em>Let</em>. Podrobnosti v popisu kouzla.</p>",
+      "description": "<p>Účinek kouzla <em>Leť</em>. Podrobnosti v popisu kouzla.</p>",
       "tint": "#ffffff",
       "statuses": [],
       "showIcon": 1,

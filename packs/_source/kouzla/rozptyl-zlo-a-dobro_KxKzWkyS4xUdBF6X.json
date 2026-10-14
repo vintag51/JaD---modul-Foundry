@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Chráníš se před mimosférickými tvory a můžeš je zapudit.</p><h3>Automatizace</h3><ul><li><strong>Útok k odvolání:</strong> útok kouzlem na blízko.</li><li><strong>Záchrana proti odvolání:</strong> záchranný hod na Charisma proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#rozptyl-zlo-a-dobro\" target=\"_blank\">SRD Jeskyní a draků – Rozptyl zlo a dobro</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Chráníš se před mimosférickými tvory a můžeš je zapudit.</p><h3>Automatizace</h3><ul><li><strong>Útok k odvolání:</strong> Útok na blízko kouzlem.</li><li><strong>Záchrana proti odvolání:</strong> Záchranný hod na Charisma proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#rozptyl-zlo-a-dobro\" target=\"_blank\">SRD Jeskyní a draků – Rozptyl zlo a dobro</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,7 +33,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -103,7 +103,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -173,7 +173,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -257,7 +257,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -335,7 +335,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -364,10 +364,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "rozptyl-zlo-a-dobro",
       "srd": "TkJ8Wtg1L7TZtspm",
       "nazevEn": "Dispel Evil and Good",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#rozptyl-zlo-a-dobro"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#rozptyl-zlo-a-dobro"
     }
   },
   "img": "icons/magic/symbols/fleur-de-lis-yellow.webp",

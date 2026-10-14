@@ -1,0 +1,169 @@
+{
+  "_id": "X9Gakp02MiTMJzE8",
+  "name": "Slovo moci „žij\"",
+  "type": "spell",
+  "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [],
+  "system": {
+    "identifier": "slovo-moci-„zij",
+    "level": 9,
+    "school": "enc",
+    "properties": [
+      "vocal"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "",
+      "units": "touch",
+      "special": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "",
+        "size": "",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "d2HeBanau4eaPrfg": {
+        "_id": "d2HeBanau4eaPrfg",
+        "type": "heal",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "bonus": "1",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Slovo moci vrátí čerstvě padlého či umírajícího tvora k životu a zbaví ho nemocí a většiny škodlivých stavů.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> obnoví 1 Bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#slovo-moci-„zij\" target=\"_blank\">SRD Jeskyní a draků – Slovo moci „žij&quot;</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "slovo-moci-„zij",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#slovo-moci-„zij"
+    }
+  },
+  "folder": "3SUmAYQgHNHXGLIK",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!X9Gakp02MiTMJzE8"
+}

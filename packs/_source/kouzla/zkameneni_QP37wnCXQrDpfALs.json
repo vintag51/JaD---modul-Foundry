@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Postupně proměníš tvora v kámen.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Zkamenění.</li><li><strong>Záchrana proti zkamenění:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Neúspěšná záchrana proti zkamenění, Úspěšná záchrana proti zkamenění, Zkamenělý.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zkameneni\" target=\"_blank\">SRD Jeskyní a draků – Zkamenění</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>PoStupně proměníš tvora v kámen.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Odolnost proti SO kouzla; efekt: Zkamenění.</li><li><strong>Záchrana proti zkamenění:</strong> Záchranný hod na Odolnost proti SO kouzla; efekt: Neúspěšná záchrana proti zkamenění, Úspěšná záchrana proti zkamenění, Zkamenělý.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zkameneni\" target=\"_blank\">SRD Jeskyní a draků – Zkamenění</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -110,7 +110,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false
           },
           "affects": {
@@ -210,7 +210,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false,
             "type": ""
           },
@@ -263,10 +263,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "zkameneni",
       "srd": "kozNy29b0X6exFhY",
       "nazevEn": "Flesh to Stone",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zkameneni"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zkameneni"
     }
   },
   "img": "icons/commodities/treasure/statue-bust-stone-grey.webp",

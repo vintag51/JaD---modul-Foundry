@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Zvíře nebo rostlina získá inteligenci a řeč.</p><h3>Automatizace</h3><ul><li><strong>Probudit rostlinu:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Přátelskost probuzeného, Probuzený.</li><li><strong>Probudit zvíře:</strong> efekt: Probuzený.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#probuzeni\" target=\"_blank\">SRD Jeskyní a draků – Probuzení</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Zvíře nebo rostlina získá inteligenci a řeč.</p><h3>Automatizace</h3><ul><li><strong>Probudit rostlinu:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Přátelskost probuzeného, Probuzený.</li><li><strong>Probudit zvíře:</strong> efekt: Probuzený.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#probuzeni\" target=\"_blank\">SRD Jeskyní a draků – Probuzení</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -178,7 +178,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -290,7 +290,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -325,10 +325,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "probuzeni",
       "srd": "MCEpGpvovcXagwQS",
       "nazevEn": "Awaken",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#probuzeni"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#probuzeni"
     }
   },
   "img": "icons/magic/nature/tree-animated-squint.webp",

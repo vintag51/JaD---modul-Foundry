@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Tvor získá odolnost vůči jednomu druhu energie.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Ochrana před kyselinou, Ochrana před chladem, Ochrana před ohněm, Ochrana před bleskem….</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#ochrana-pred-energii\" target=\"_blank\">SRD Jeskyní a draků – Ochrana před energií</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Tvor získá odolnost vůči jednomu druhu energie.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Ochrana před kyselinou, Ochrana před chladem, Ochrana před ohněm, Ochrana před bleskem….</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ochrana-pred-energii\" target=\"_blank\">SRD Jeskyní a draků – Ochrana před energií</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -132,7 +132,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false
           },
           "affects": {
@@ -172,10 +172,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "ochrana-pred-energii",
       "srd": "j8NtLXOOJ3GAKF8I",
       "nazevEn": "Protection from Energy",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#ochrana-pred-energii"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ochrana-pred-energii"
     }
   },
   "img": "icons/magic/defensive/shield-barrier-flaming-pentagon-purple-orange.webp",

@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Tvorové v kuželu jsou vystrašení a prchají.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Strach.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#strach\" target=\"_blank\">SRD Jeskyní a draků – Strach</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Tvorové v kuželu jsou vystrašení a prchají.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Strach.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#strach\" target=\"_blank\">SRD Jeskyní a draků – Strach</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,9 +32,9 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cone",
-        "size": "9",
+        "size": "6",
         "contiguous": false,
         "count": ""
       }
@@ -108,7 +108,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -148,10 +148,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "strach",
       "srd": "XXUDGFELgoskdOD0",
       "nazevEn": "Fear",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#strach"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#strach"
     }
   },
   "img": "icons/magic/control/fear-fright-monster-grin-purple-blue.webp",
@@ -202,6 +202,7 @@
             "key": "flags.midi-qol.OverTime",
             "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,label=Strach",
             "type": "custom",
+            "phase": "initial",
             "priority": 20
           }
         ]

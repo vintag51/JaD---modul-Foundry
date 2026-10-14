@@ -5,7 +5,7 @@
   "img": "icons/weapons/hammers/hammer-double-glowing-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Vytvoříš vznášející se zbraň, která bonusovou akcí útočí.</p><h3>Automatizace</h3><ul><li><strong>Vyvolat duchovní zbraň:</strong> přivolání tvora (karta tvora se vytvoří automaticky).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#duchovni-zbran\" target=\"_blank\">SRD Jeskyní a draků – Duchovní zbraň</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Vytvoříš vznášející se zbraň, která bonusovou akcí útočí.</p><h3>Automatizace</h3><ul><li><strong>Vyvolat duchovní zbraň:</strong> přivolání tvora (karta tvora se vytvoří automaticky).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#duchovni-zbran\" target=\"_blank\">SRD Jeskyní a draků – Duchovní zbraň</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -30,16 +30,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "square",
-        "size": "1.5",
+        "size": "1",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -100,7 +100,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -187,16 +187,16 @@
         "effects": [],
         "flags": {},
         "range": {
-          "units": "m",
+          "units": "sah",
           "override": true,
           "special": "",
-          "value": "6"
+          "value": "4"
         },
         "target": {
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -238,10 +238,10 @@
   },
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "duchovni-zbran",
       "srd": "JbxsYXxSOTZbf9I0",
       "nazevEn": "Spiritual Weapon",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#duchovni-zbran"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#duchovni-zbran"
     }
   },
   "_stats": {

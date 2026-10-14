@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Reakcí přerušíš sesílání jiného kouzla.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> ověření vlastnosti.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#protikouzlo\" target=\"_blank\">SRD Jeskyní a draků – Protikouzlo</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Reakcí přerušíš sesílání jiného kouzla.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Ověření vlastnosti.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#protikouzlo\" target=\"_blank\">SRD Jeskyní a draků – Protikouzlo</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -100,7 +100,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -140,10 +140,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "protikouzlo",
       "srd": "Ek45cBpVXvJdv1Qy",
       "nazevEn": "Counterspell",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#protikouzlo"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#protikouzlo"
     }
   },
   "img": "icons/magic/lightning/orb-ball-purple.webp",

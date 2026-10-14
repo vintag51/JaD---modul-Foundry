@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Bariéra tě chrání před kouzly nižších stupňů.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#koule-nezranitelnosti\" target=\"_blank\">SRD Jeskyní a draků – Koule nezranitelnosti</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Bariéra tě chrání před kouzly nižších stupňů.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#koule-nezranitelnosti\" target=\"_blank\">SRD Jeskyní a draků – Koule nezranitelnosti</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,9 +32,9 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "radius",
-        "size": "3",
+        "size": "2",
         "contiguous": false,
         "stationary": true,
         "count": ""
@@ -100,7 +100,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -134,10 +134,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "koule-nezranitelnosti",
       "srd": "WmQpxfjZwF3MGUby",
       "nazevEn": "Globe of Invulnerability",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#koule-nezranitelnosti"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#koule-nezranitelnosti"
     }
   },
   "img": "icons/commodities/gems/pearl-turquoise.webp",

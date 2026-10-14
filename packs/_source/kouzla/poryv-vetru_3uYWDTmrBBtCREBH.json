@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Silný vítr tlačí tvory v linii a rozfoukává plyny.</p><h3>Automatizace</h3><ul><li><strong>Záchrana proti větrnému náporu:</strong> záchranný hod na Sílu proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#poryv-vetru\" target=\"_blank\">SRD Jeskyní a draků – Poryv větru</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Silný vítr tlačí tvory v linii a rozfoukává plyny.</p><h3>Automatizace</h3><ul><li><strong>Záchrana proti větrnému náporu:</strong> Záchranný hod na Sílu proti SO kouzla.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#poryv-vetru\" target=\"_blank\">SRD Jeskyní a draků – Poryv větru</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,9 +33,9 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "line",
-        "size": "18",
+        "size": "12",
         "contiguous": false,
         "width": "",
         "count": ""
@@ -104,7 +104,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -180,7 +180,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -247,7 +247,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -276,10 +276,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "poryv-vetru",
       "srd": "FSMy6VAjDnXY9vWz",
       "nazevEn": "Gust of Wind",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#poryv-vetru"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#poryv-vetru"
     }
   },
   "img": "icons/magic/air/air-pressure-shield-blue.webp",

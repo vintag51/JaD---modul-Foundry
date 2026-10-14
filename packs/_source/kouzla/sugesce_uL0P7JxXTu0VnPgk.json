@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vnukneš cíli rozumně znějící postup, který splní.</p><h3>Automatizace</h3><ul><li><strong>Vyslovit sugesci:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Pod sugescí.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#sugesce\" target=\"_blank\">SRD Jeskyní a draků – Sugesce</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vnukneš cíli rozumně znějící postup, který splní.</p><h3>Automatizace</h3><ul><li><strong>Vyslovit sugesci:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Pod sugescí.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sugesce\" target=\"_blank\">SRD Jeskyní a draků – Sugesce</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -105,7 +105,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -145,10 +145,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "sugesce",
       "srd": "zMAWdyc8UVb37BK4",
       "nazevEn": "Suggestion",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#sugesce"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sugesce"
     }
   },
   "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",

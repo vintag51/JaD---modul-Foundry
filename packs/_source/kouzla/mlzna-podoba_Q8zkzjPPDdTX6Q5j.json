@@ -1,0 +1,294 @@
+{
+  "_id": "Q8zkzjPPDdTX6Q5j",
+  "name": "Mlžná podoba",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Tvor se změní v mlhavý oblak.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Mlžná podoba.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mlzna-podoba\" target=\"_blank\">SRD Jeskyní a draků – Mlžná podoba</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "trs",
+    "materials": {
+      "value": "kousek gázy a obláček kouře",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "gICakgyAi1hrs8ug",
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "gaseous-form"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "mlzna-podoba",
+      "srd": "2IWiZAJtOGDoKjiz",
+      "nazevEn": "Gaseous Form",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mlzna-podoba"
+    }
+  },
+  "img": "icons/magic/air/wind-tornado-cyclone-white.webp",
+  "effects": [
+    {
+      "name": "Mlžná podoba",
+      "img": "icons/magic/air/wind-tornado-cyclone-white.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Q8zkzjPPDdTX6Q5j",
+      "transfer": false,
+      "_id": "gICakgyAi1hrs8ug",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.fly",
+            "type": "override",
+            "value": 10,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.walk",
+            "type": "override",
+            "value": 0,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.swim",
+            "type": "override",
+            "value": 0,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.climb",
+            "type": "override",
+            "value": 0,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.attributes.movement.burrow",
+            "type": "override",
+            "value": 0,
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "bludgeoning",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "piercing",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.value",
+            "type": "add",
+            "value": "slashing",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.traits.dr.bypasses",
+            "type": "add",
+            "value": "mgc",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": 1,
+        "units": "hours",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Mlžná podoba</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "transformed"
+      ],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781359773544,
+        "modifiedTime": 1783720892792,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!2IWiZAJtOGDoKjiz.gICakgyAi1hrs8ug"
+    }
+  ],
+  "folder": "Xm9ncGQteAtEtSzo",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Q8zkzjPPDdTX6Q5j"
+}

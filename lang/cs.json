@@ -1,11 +1,48 @@
 {
-  "JAD.Nastaveni.Seznamy.Nazev": "Registrovat seznamy kouzel povolání JaD",
-  "JAD.Nastaveni.Seznamy.Napoveda": "Přidá seznamy kouzel Barda, Klerika, Druida, Paladina, Hraničáře, Čaroděje, Černokněžníka a Kouzelníka do registru dnd5e (výběr kouzel při postupu na úroveň).",
-  "JAD.Nastaveni.Jednotky.Nazev": "Upozornit na metrické jednotky",
-  "JAD.Nastaveni.Jednotky.Napoveda": "Kouzla používají metry (1 pole = 1,5 m). Upozorní GM, pokud systém dnd5e nemá zapnuté metrické délky.",
-  "JAD.Import.Zacatek": "Jeskyně a draci: plním kompendia z dat modulu…",
-  "JAD.Import.Hotovo": "Jeskyně a draci: naimportováno {pocet} kouzel.",
-  "JAD.Import.Chyba": "Jeskyně a draci: import kompendií selhal, podrobnosti v konzoli (F12).",
-  "JAD.Midi.Aktivni": "Jeskyně a draci: Midi-QOL je aktivní – opakované záchrany a zranění na konci tahu (OverTime) se vyhodnocují automaticky.",
-  "JAD.Jednotky.Upozorneni": "JaD – Kouzla používají metry. Pro správné zobrazení zapni v nastavení systému dnd5e „metrické jednotky délky“ a nastav scény na 1,5 m na pole."
+  "JAD": {
+    "Nastaveni": {
+      "Seznamy": {
+        "Nazev": "Registrovat seznamy kouzel povolání JaD",
+        "Napoveda": "Přidá seznamy kouzel Barda, Klerika, Druida, Paladina, Hraničáře, Čaroděje, Černokněžníka a Kouzelníka do registru dnd5e (výběr kouzel při postupu na Úroveň)."
+      },
+      "Jednotky": {
+        "Nazev": "Kontrolovat mřížku scény",
+        "Napoveda": "Upozorní GM, pokud scéna nemá 1 pole = 1 sáh (5 stop, 1,5 m)."
+      }
+    },
+    "Import": {
+      "Zacatek": "Jeskyně a draci: plním kompendia z dat modulu…",
+      "Hotovo": "Jeskyně a draci: naimportováno {pocet} kouzel.",
+      "Chyba": "Jeskyně a draci: import kompendií selhal, podrobnosti v konzoli (F12)."
+    },
+    "Midi": {
+      "Aktivni": "Jeskyně a draci: Midi-QOL je aktivní – opakované Záchranné hody a zásahy na konci tahu (OverTime) se vyhodnocují automaticky."
+    },
+    "Jednotky": {
+      "Upozorneni": "Jeskyně a draci: kouzla měří v sázích (1 sáh = 1 pole). Nastav mřížku scény na 1 sáh, 5 stop nebo 1,5 m na pole.",
+      "Sah": {
+        "Nazev": "Sáhy",
+        "Zkratka": "sáh",
+        "Sablona": "sáh.",
+        "Pocet": {
+          "short": {
+            "one": "{number} sáh",
+            "few": "{number} sáhy",
+            "many": "{number} sáhu",
+            "other": "{number} sáhů"
+          },
+          "long": {
+            "one": "{number} sáh",
+            "few": "{number} sáhy",
+            "many": "{number} sáhu",
+            "other": "{number} sáhů"
+          },
+          "one": "{number} sáh",
+          "few": "{number} sáhy",
+          "many": "{number} sáhu",
+          "other": "{number} sáhů"
+        }
+      }
+    }
+  }
 }

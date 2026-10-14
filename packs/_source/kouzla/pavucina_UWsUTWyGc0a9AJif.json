@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/material-webbing.webp",
   "system": {
     "description": {
-      "value": "<p>Lepkavé pavučiny spoutají tvory v oblasti.</p><h3>Automatizace</h3><ul><li><strong>Záchrana při vstupu do pavučiny:</strong> záchranný hod na Obratnost proti SO kouzla; efekt: Spoutaný v pavučinách.</li><li><strong>Zranění hořící pavučinou:</strong> 2k4 ohnivé zranění.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#pavucina\" target=\"_blank\">SRD Jeskyní a draků – Pavučina</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Lepkavé pavučiny spoutají tvory v oblasti.</p><h3>Automatizace</h3><ul><li><strong>Záchrana při vstupu do pavučiny:</strong> Záchranný hod na Obratnost proti SO kouzla; efekt: Spoutaný v pavučinách.</li><li><strong>Zásah hořící pavučinou:</strong> Ohnivý zásah za 2k4 Bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pavucina\" target=\"_blank\">SRD Jeskyní a draků – Pavučina</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -30,16 +30,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cube",
-        "size": "6",
+        "size": "4",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -102,7 +102,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -169,7 +169,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -213,7 +213,7 @@
       },
       "EQ3kh837OtgGcg8n": {
         "type": "damage",
-        "name": "Zranění hořící pavučinou",
+        "name": "Zásah hořící pavučinou",
         "_id": "EQ3kh837OtgGcg8n",
         "img": "",
         "sort": 300000,
@@ -249,7 +249,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -355,10 +355,10 @@
   },
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "pavucina",
       "srd": "UJJu9c2UvCzVljiP",
       "nazevEn": "Web",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#pavucina"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pavucina"
     }
   },
   "_stats": {

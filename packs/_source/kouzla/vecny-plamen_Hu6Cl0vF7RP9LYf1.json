@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Předmět navždy září plamenem, který nehřeje.</p><h3>Automatizace</h3><ul><li><strong>Seslat (věčný plamen na předmět):</strong> očaruje předmět; efekt: Věčný plamen.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vecny-plamen\" target=\"_blank\">SRD Jeskyní a draků – Věčný plamen</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Předmět navždy září plamenem, který nehřeje.</p><h3>Automatizace</h3><ul><li><strong>Seslat (věčný plamen na předmět):</strong> očarování předmětu; efekt: Věčný plamen.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vecny-plamen\" target=\"_blank\">SRD Jeskyní a draků – Věčný plamen</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -177,7 +177,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -215,10 +215,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "vecny-plamen",
       "srd": "MK6gpQMeDFo0cP9f",
       "nazevEn": "Continual Flame",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vecny-plamen"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vecny-plamen"
     }
   },
   "img": "icons/magic/fire/flame-burning-fence.webp",

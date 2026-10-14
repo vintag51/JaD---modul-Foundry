@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Zemětřesení otvírá trhliny a boří stavby.</p><h3>Automatizace</h3><ul><li><strong>Záchrana – sražení / soustředění:</strong> záchranný hod na Obratnost proti SO kouzla.</li><li><strong>Otevřít trhliny:</strong> záchranný hod na Obratnost proti SO kouzla.</li><li><strong>Zranění stavby:</strong> 50 drtivé zranění.</li><li><strong>Padající sutiny:</strong> záchranný hod na Obratnost proti SO kouzla; 5k6 drtivé zranění; při úspěchu polovina; efekt: Zasypaný sutinami.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zemetreseni\" target=\"_blank\">SRD Jeskyní a draků – Zemětřesení</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Zemětřesení otvírá trhliny a boří stavby.</p><h3>Automatizace</h3><ul><li><strong>Záchrana – sražení / soustředění:</strong> Záchranný hod na Obratnost proti SO kouzla.</li><li><strong>Otevřít trhliny:</strong> Záchranný hod na Obratnost proti SO kouzla.</li><li><strong>Zásah stavby:</strong> Drtivý zásah za 50 Bodů výdrže.</li><li><strong>Padající sutiny:</strong> Záchranný hod na Obratnost proti SO kouzla; Drtivý zásah za 5k6 Bodů výdrže; při úspěchu poloviční Zásah; efekt: Zasypaný sutinami.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zemetreseni\" target=\"_blank\">SRD Jeskyní a draků – Zemětřesení</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "radius",
-        "size": "30",
+        "size": "20",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "150",
-      "units": "m",
+      "value": "100",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -104,7 +104,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -164,7 +164,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -243,10 +243,10 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": "line",
-            "size": "60",
-            "width": "3",
+            "size": "40",
+            "width": "2",
             "count": "1"
           },
           "affects": {
@@ -335,7 +335,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -396,7 +396,7 @@
       },
       "xIIRL1ckzWTxHikd": {
         "type": "damage",
-        "name": "Zranění stavby",
+        "name": "Zásah stavby",
         "_id": "xIIRL1ckzWTxHikd",
         "img": "",
         "sort": 350000,
@@ -432,7 +432,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -488,10 +488,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "zemetreseni",
       "srd": "x5JNBSyIBBZsjcGT",
       "nazevEn": "Earthquake",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zemetreseni"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zemetreseni"
     }
   },
   "img": "icons/magic/earth/explosion-lava-stone-red.webp",

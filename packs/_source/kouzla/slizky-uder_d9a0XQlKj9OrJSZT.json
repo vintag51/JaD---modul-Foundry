@@ -1,0 +1,318 @@
+{
+  "_id": "d9a0XQlKj9OrJSZT",
+  "name": "Slizký úder",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [],
+  "system": {
+    "identifier": "slizky-uder",
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "ostatky mrtvého slizu",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "6",
+      "units": "sah",
+      "special": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "",
+        "size": "",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "WcowTz2QO2hxuwuf": {
+        "_id": "WcowTz2QO2hxuwuf",
+        "type": "attack",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            },
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "acid"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "LN3JRoSdkb6kdBRA": {
+        "_id": "LN3JRoSdkb6kdBRA",
+        "type": "attack",
+        "img": "",
+        "sort": 100000,
+        "name": "Další útok koulí",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            },
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "acid"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Kyselinová koule udeří do cíle a vrátí se k tobě; dokud zasahuješ, můžeš každé kolo útočit znovu.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Útok na dálku kouzlem; při Zásahu Drtivý zásah za 1k6 Bodů výdrže; při Zásahu Kyselinový zásah za 1k6 Bodů výdrže.</li><li><strong>Další útok koulí:</strong> Útok na dálku kouzlem; při Zásahu Drtivý zásah za 1k6 Bodů výdrže; při Zásahu Kyselinový zásah za 1k6 Bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#slizky-uder\" target=\"_blank\">SRD Jeskyní a draků – Slizký úder</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "slizky-uder",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#slizky-uder"
+    }
+  },
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!d9a0XQlKj9OrJSZT"
+}

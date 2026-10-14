@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Bonusovou akcí se přeneseš na viditelné místo poblíž.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> přesun.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#mlzny-krok\" target=\"_blank\">SRD Jeskyní a draků – Mlžný krok</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Bonusovou akcí se přeneseš na viditelné místo poblíž.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> přesun.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mlzny-krok\" target=\"_blank\">SRD Jeskyní a draků – Mlžný krok</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -95,16 +95,16 @@
         "effects": [],
         "flags": {},
         "range": {
-          "units": "m",
+          "units": "sah",
           "override": true,
           "special": "",
-          "value": "9"
+          "value": "6"
         },
         "target": {
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -140,10 +140,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "mlzny-krok",
       "srd": "wqfAVANuQonNBgnL",
       "nazevEn": "Misty Step",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#mlzny-krok"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mlzny-krok"
     }
   },
   "img": "icons/magic/lightning/orb-ball-blue.webp",

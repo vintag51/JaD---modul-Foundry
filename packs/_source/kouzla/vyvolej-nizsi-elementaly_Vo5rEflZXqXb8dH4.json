@@ -1,0 +1,291 @@
+{
+  "_id": "Vo5rEflZXqXb8dH4",
+  "name": "Vyvolej nižší Elementály",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Přivoláš menší elementály.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Vyvolaný elementál.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vyvolej-nizsi-elementaly\" target=\"_blank\">SRD Jeskyní a draků – Vyvolej nižší Elementály</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "space",
+        "choice": false,
+        "count": "",
+        "special": ""
+      },
+      "template": {
+        "units": "any",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "18",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "con",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "summon",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "disposition": true,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "1 * min(3, floor((@item.level - 2) / 2))",
+            "cr": "2",
+            "name": "",
+            "_id": "GXYOvyt5u1zbrtH5",
+            "uuid": "",
+            "types": [
+              "elemental"
+            ],
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "2 * min(3, floor((@item.level - 2) / 2))",
+            "cr": "1",
+            "name": "",
+            "_id": "ip4lVc7sx8WcM7Vd",
+            "uuid": "",
+            "types": [
+              "elemental"
+            ],
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "4 * min(3, floor((@item.level - 2) / 2))",
+            "cr": "0.5",
+            "name": "",
+            "_id": "1jJHfKlD44tW61sJ",
+            "uuid": "",
+            "types": [
+              "elemental"
+            ],
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "8 * min(3, floor((@item.level - 2) / 2))",
+            "cr": "0.25",
+            "name": "",
+            "_id": "7sGiKZLEAIU83Lqx",
+            "uuid": "",
+            "types": [
+              "elemental"
+            ],
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "identifier": "",
+          "mode": "cr",
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "appliedEffects": [],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "tempHP": "",
+        "effects": [
+          {
+            "_id": "UEWE8BJT1TE6KDt0",
+            "level": {}
+          }
+        ]
+      }
+    },
+    "identifier": "conjure-minor-elementals"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "vyvolej-nizsi-elementaly",
+      "srd": "KgEw3sDr39C6g8nY",
+      "nazevEn": "Conjure Minor Elementals",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vyvolej-nizsi-elementaly"
+    }
+  },
+  "img": "icons/creatures/magical/spirit-fire-yellow.webp",
+  "effects": [
+    {
+      "name": "Vyvolaný elementál",
+      "img": "icons/creatures/magical/spirit-fire-yellow.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.Vo5rEflZXqXb8dH4",
+      "transfer": false,
+      "_id": "UEWE8BJT1TE6KDt0",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "name",
+            "type": "override",
+            "value": "Conjured {}",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Vyvolej nižší Elementály</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781374102148,
+        "modifiedTime": 1781374130884,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.hZx0vuumWdsJ0x3Y.ActiveEffect.sfKQeT5HoeUFiaBj",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!KgEw3sDr39C6g8nY.UEWE8BJT1TE6KDt0"
+    }
+  ],
+  "folder": "8hak7PLbgtXEQBpD",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Vo5rEflZXqXb8dH4"
+}

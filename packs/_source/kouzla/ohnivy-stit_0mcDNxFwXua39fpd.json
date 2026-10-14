@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Plameny chrání před chladem nebo ohněm a pálí útočníky na blízko.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Hřejivý štít, Mrazivý štít.</li><li><strong>Odvetné zranění štítu:</strong> 2k8 chladné nebo ohnivé zranění.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#ohnivy-stit\" target=\"_blank\">SRD Jeskyní a draků – Ohnivý štít</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Plameny chrání před chladem nebo ohněm a pálí útočníky na blízko.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Hřejivý štít, Mrazivý štít.</li><li><strong>Odvetný zásah štítu:</strong> Chladný/Ohnivý (dle volby) zásah za 2k8 Bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ohnivy-stit\" target=\"_blank\">SRD Jeskyní a draků – Ohnivý štít</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,7 +33,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -93,15 +93,15 @@
         "effects": [],
         "range": {
           "override": true,
-          "units": "m",
+          "units": "sah",
           "special": "",
-          "value": "1.5"
+          "value": "1"
         },
         "target": {
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -143,7 +143,7 @@
           "max": ""
         },
         "sort": 0,
-        "name": "Odvetné zranění štítu",
+        "name": "Odvetný zásah štítu",
         "img": "",
         "visibility": {
           "level": {
@@ -200,7 +200,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -235,10 +235,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "ohnivy-stit",
       "srd": "avD5XUtkBPQQR97c",
       "nazevEn": "Fire Shield",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#ohnivy-stit"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ohnivy-stit"
     }
   },
   "img": "icons/magic/defensive/shield-barrier-flaming-diamond-orange.webp",

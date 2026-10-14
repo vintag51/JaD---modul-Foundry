@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Až deset tvorů může chodit po kapalinách.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Chodí po vodě.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#chuze-po-vode\" target=\"_blank\">SRD Jeskyní a draků – Chůze po vodě</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Až deset tvorů může chodit po kapalinách.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Chodí po vodě.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#chuze-po-vode\" target=\"_blank\">SRD Jeskyní a draků – Chůze po vodě</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -106,7 +106,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false
           },
           "affects": {
@@ -146,10 +146,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "chuze-po-vode",
       "srd": "YBda6nLKjxdT1LbS",
       "nazevEn": "Water Walk",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#chuze-po-vode"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#chuze-po-vode"
     }
   },
   "img": "icons/magic/water/waves-water-blue.webp",

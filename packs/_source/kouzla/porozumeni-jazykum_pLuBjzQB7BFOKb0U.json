@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Rozumíš doslovnému významu slyšené řeči a čteného písma.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Porozumění jazykům.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#porozumeni-jazykum\" target=\"_blank\">SRD Jeskyní a draků – Porozumění jazykům</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Rozumíš doslovnému významu slyšené řeči a čteného písma.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Porozumění jazykům.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#porozumeni-jazykum\" target=\"_blank\">SRD Jeskyní a draků – Porozumění jazykům</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,7 +33,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -102,7 +102,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -136,10 +136,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "porozumeni-jazykum",
       "srd": "4dSvfvTy2ZIJ3K4k",
       "nazevEn": "Comprehend Languages",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#porozumeni-jazykum"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#porozumeni-jazykum"
     }
   },
   "img": "icons/sundries/documents/document-letter-blue.webp",

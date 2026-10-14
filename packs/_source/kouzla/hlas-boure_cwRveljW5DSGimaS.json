@@ -1,0 +1,222 @@
+{
+  "_id": "cwRveljW5DSGimaS",
+  "name": "Hlas bouře",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [
+    {
+      "_id": "RtGSNLNATlt1M8f7",
+      "name": "Ohlušený (Hlas bouře)",
+      "img": "icons/magic/lightning/bolt-strike-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [
+        "deafened"
+      ],
+      "duration": {
+        "value": 6,
+        "units": "seconds",
+        "expiry": "turnEnd",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": []
+      },
+      "description": "<p>Účinek kouzla <em>Hlas bouře</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      }
+    }
+  ],
+  "system": {
+    "identifier": "hlas-boure",
+    "level": 0,
+    "school": "evo",
+    "properties": [
+      "vocal"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "cone",
+        "size": "2",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "SQpzvq22jlWa4Fqb": {
+        "_id": "SQpzvq22jlWa4Fqb",
+        "type": "save",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "RtGSNLNATlt1M8f7",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "thunder"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Bouřlivý výkřik zasáhne tvory v kuželu hromem a ohluší je.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Odolnost proti SO kouzla; Hromový zásah za 1k6 Bodů výdrže (roste na 5., 11. a 17. Úrovni); při úspěchu bez účinku; efekt: Ohlušený (Hlas bouře).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hlas-boure\" target=\"_blank\">SRD Jeskyní a draků – Hlas bouře</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "hlas-boure",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hlas-boure"
+    }
+  },
+  "folder": "I62ubbhWiKyu3sLU",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!cwRveljW5DSGimaS"
+}

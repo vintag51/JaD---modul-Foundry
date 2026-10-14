@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Přeneseš sebe a společníky kamkoli na stejné sféře.</p><h3>Automatizace</h3><ul><li><strong>Zranění při nehodě:</strong> 3k10 silové zranění.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#teleport\" target=\"_blank\">SRD Jeskyní a draků – Teleport</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Přeneseš sebe a společníky kamkoli na stejné sféře.</p><h3>Automatizace</h3><ul><li><strong>Zásah při nehodě:</strong> Silový zásah za 3k10 Bodů výdrže.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#teleport\" target=\"_blank\">SRD Jeskyní a draků – Teleport</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,13 +33,13 @@
         "choice": false
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false
       }
     },
     "range": {
-      "value": "3",
-      "units": "m"
+      "value": "2",
+      "units": "sah"
     },
     "uses": {
       "max": "",
@@ -94,7 +94,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -124,7 +124,7 @@
       },
       "FRz2LntLdKnrnVvH": {
         "type": "damage",
-        "name": "Zranění při nehodě",
+        "name": "Zásah při nehodě",
         "_id": "FRz2LntLdKnrnVvH",
         "img": "",
         "sort": 100000,
@@ -160,7 +160,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -216,10 +216,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "teleport",
       "srd": "L4J89JXqbKs6puEV",
       "nazevEn": "Teleport",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#teleport"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#teleport"
     }
   },
   "img": "icons/magic/symbols/runes-star-pentagon-magenta.webp",

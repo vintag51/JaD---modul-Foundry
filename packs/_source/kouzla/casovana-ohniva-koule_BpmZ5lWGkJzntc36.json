@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Žhnoucí kulička, jejíž exploze sílí s každým kolem odkladu.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> 12k6 ohnivé zranění (+1k6 za každý stupeň nad 7); při úspěchu polovina.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#casovana-ohniva-koule\" target=\"_blank\">SRD Jeskyní a draků – Časovaná ohnivá koule</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Žhnoucí kulička, jejíž exploze sílí s každým kolem odkladu.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Ohnivý zásah za 12k6 Bodů výdrže (+1k6 za každý Stupeň nad 7); při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#casovana-ohniva-koule\" target=\"_blank\">SRD Jeskyní a draků – Časovaná ohnivá koule</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "sphere",
-        "size": "6",
+        "size": "4",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "45",
-      "units": "m",
+      "value": "30",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -105,7 +105,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -165,10 +165,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "casovana-ohniva-koule",
       "srd": "AoTTjapz1FsGOIZz",
       "nazevEn": "Delayed Blast Fireball",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#casovana-ohniva-koule"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#casovana-ohniva-koule"
     }
   },
   "img": "icons/magic/fire/explosion-mushroom-nuke-orange.webp",

@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vstoupíš do Éterické sféry.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Éteričnost.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#etericnost\" target=\"_blank\">SRD Jeskyní a draků – Éteričnost</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Vstoupíš do Éterické sféry.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Éteričnost.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#etericnost\" target=\"_blank\">SRD Jeskyní a draků – Éteričnost</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,7 +32,7 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -103,7 +103,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -141,10 +141,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "etericnost",
       "srd": "PQuEgKyCdovOvhqN",
       "nazevEn": "Etherealness",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#etericnost"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#etericnost"
     }
   },
   "img": "icons/creatures/magical/construct-golem-stone-blue.webp",

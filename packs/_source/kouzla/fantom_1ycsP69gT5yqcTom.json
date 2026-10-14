@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Cíl vidí ztělesnění svých nejhorších obav, je vystrašen a utrpí psychické zranění.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Moudrost proti SO kouzla; 4k10 psychické zranění (+1k10 za každý stupeň nad 4); při úspěchu polovina; efekt: Fantóm (podle stupně).</li><li><strong>Záchrana na konci tahu:</strong> záchranný hod na Moudrost proti SO kouzla; 4k10 psychické zranění (+1k10 za každý stupeň nad 4); při úspěchu nic.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#fantom\" target=\"_blank\">SRD Jeskyní a draků – Fantóm</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Cíl vidí ztělesnění svých nejhorších obav, je vystrašen a utrpí Psychický zásah.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Moudrost proti SO kouzla; Psychický zásah za 4k10 Bodů výdrže (+1k10 za každý Stupeň nad 4); při úspěchu poloviční Zásah; efekt: Fantóm (podle Stupně).</li><li><strong>Záchrana na konci tahu:</strong> Záchranný hod na Moudrost proti SO kouzla; Psychický zásah za 4k10 Bodů výdrže (+1k10 za každý Stupeň nad 4); při úspěchu bez účinku.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#fantom\" target=\"_blank\">SRD Jeskyní a draků – Fantóm</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "36",
-      "units": "m",
+      "value": "24",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -148,7 +148,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -238,7 +238,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -304,16 +304,16 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "fantom",
       "srd": "BYNvBJzHcF5VJhXw",
       "nazevEn": "Phantasmal Killer",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#fantom"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#fantom"
     }
   },
   "img": "icons/magic/control/fear-fright-mask-yellow.webp",
   "effects": [
     {
-      "name": "Fantóm: 4. stupeň",
+      "name": "Fantóm: 4. Stupeň",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.1ycsP69gT5yqcTom",
       "duration": {
         "value": 1,
@@ -356,8 +356,9 @@
         "changes": [
           {
             "key": "flags.midi-qol.OverTime",
-            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=4d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 4. stupeň",
+            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=4d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 4. Stupeň",
             "type": "custom",
+            "phase": "initial",
             "priority": 20
           }
         ]
@@ -369,7 +370,7 @@
       "_key": "!items.effects!BYNvBJzHcF5VJhXw.J6OIwL9rmPzNN307"
     },
     {
-      "name": "Fantóm: 5. stupeň",
+      "name": "Fantóm: 5. Stupeň",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.1ycsP69gT5yqcTom",
       "duration": {
         "value": 1,
@@ -411,8 +412,9 @@
         "changes": [
           {
             "key": "flags.midi-qol.OverTime",
-            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=5d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 5. stupeň",
+            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=5d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 5. Stupeň",
             "type": "custom",
+            "phase": "initial",
             "priority": 20
           }
         ]
@@ -425,7 +427,7 @@
       "_key": "!items.effects!BYNvBJzHcF5VJhXw.R5MdvUZbqqCgBL6t"
     },
     {
-      "name": "Fantóm: 6. stupeň",
+      "name": "Fantóm: 6. Stupeň",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.1ycsP69gT5yqcTom",
       "duration": {
         "value": 1,
@@ -467,8 +469,9 @@
         "changes": [
           {
             "key": "flags.midi-qol.OverTime",
-            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=6d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 6. stupeň",
+            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=6d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 6. Stupeň",
             "type": "custom",
+            "phase": "initial",
             "priority": 20
           }
         ]
@@ -481,7 +484,7 @@
       "_key": "!items.effects!BYNvBJzHcF5VJhXw.fm26pCWmSEBcWEBe"
     },
     {
-      "name": "Fantóm: 7. stupeň",
+      "name": "Fantóm: 7. Stupeň",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.1ycsP69gT5yqcTom",
       "duration": {
         "value": 1,
@@ -523,8 +526,9 @@
         "changes": [
           {
             "key": "flags.midi-qol.OverTime",
-            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=7d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 7. stupeň",
+            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=7d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 7. Stupeň",
             "type": "custom",
+            "phase": "initial",
             "priority": 20
           }
         ]
@@ -537,7 +541,7 @@
       "_key": "!items.effects!BYNvBJzHcF5VJhXw.3oeCmX26bWOj5E8C"
     },
     {
-      "name": "Fantóm: 8. stupeň",
+      "name": "Fantóm: 8. Stupeň",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.1ycsP69gT5yqcTom",
       "duration": {
         "value": 1,
@@ -579,8 +583,9 @@
         "changes": [
           {
             "key": "flags.midi-qol.OverTime",
-            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=8d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 8. stupeň",
+            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=8d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 8. Stupeň",
             "type": "custom",
+            "phase": "initial",
             "priority": 20
           }
         ]
@@ -593,7 +598,7 @@
       "_key": "!items.effects!BYNvBJzHcF5VJhXw.LNGvFzuugMXHIx7o"
     },
     {
-      "name": "Fantóm: 9. stupeň",
+      "name": "Fantóm: 9. Stupeň",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.1ycsP69gT5yqcTom",
       "duration": {
         "value": 1,
@@ -635,8 +640,9 @@
         "changes": [
           {
             "key": "flags.midi-qol.OverTime",
-            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=9d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 9. stupeň",
+            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,damageRoll=9d10,damageType=psychic,saveDamage=nodamage,label=Fantóm: 9. Stupeň",
             "type": "custom",
+            "phase": "initial",
             "priority": 20
           }
         ]

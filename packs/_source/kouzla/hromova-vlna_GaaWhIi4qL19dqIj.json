@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Hromová vlna zraní tvory poblíž a odhodí je.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Odolnost proti SO kouzla; 2k8 hromové zranění (+1k8 za každý stupeň nad 1); při úspěchu polovina.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hromova-vlna\" target=\"_blank\">SRD Jeskyní a draků – Hromová vlna</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Hromová vlna zasáhne tvory poblíž a odhodí je.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Odolnost proti SO kouzla; Hromový zásah za 2k8 Bodů výdrže (+1k8 za každý Stupeň nad 1); při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hromova-vlna\" target=\"_blank\">SRD Jeskyní a draků – Hromová vlna</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,9 +32,9 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cube",
-        "size": "4.5",
+        "size": "3",
         "contiguous": false,
         "count": ""
       }
@@ -97,7 +97,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -154,10 +154,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "hromova-vlna",
       "srd": "WTbOQBsarsL1LuXJ",
       "nazevEn": "Thunderwave",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#hromova-vlna"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#hromova-vlna"
     }
   },
   "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",

@@ -1,0 +1,728 @@
+{
+  "_id": "2bD7VnJpDEtSgZNf",
+  "name": "Uvrhni Kletbu",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Uvalíš na cíl kletbu dle vlastní volby.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Prokleté Charisma, Prokletá Odolnost, Prokletá Obratnost, Prokletá Inteligence….</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#uvrhni-kletbu\" target=\"_blank\">SRD Jeskyní a draků – Uvrhni Kletbu</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "nec",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "OSGSF1Zm61GXLvrC",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "pgBN0brGeJBSc413",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "RoAMbIx9IUqpNREv",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "KCdm5KtgQkFm9L9b",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "yO17H6NUUH6yTtJj",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "yFn5nMRayDT5pVeT",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "aahOmoNF6ZsMVxUs",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "Ebzd58ARPldBzKci",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "2EP5ujWSLnkP1zV0",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "bestow-curse"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "uvrhni-kletbu",
+      "srd": "pO4zGe5LmFIYqJiL",
+      "nazevEn": "Bestow Curse",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#uvrhni-kletbu"
+    }
+  },
+  "img": "icons/magic/unholy/hand-light-pink.webp",
+  "effects": [
+    {
+      "name": "Prokleté Charisma",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/charisma.svg",
+      "_id": "OSGSF1Zm61GXLvrC",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.cha.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.abilities.cha.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Uvrhni Kletbu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "cursed"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf.ActiveEffect.OSGSF1Zm61GXLvrC",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1761861699311,
+        "modifiedTime": 1783217402003,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!pO4zGe5LmFIYqJiL.OSGSF1Zm61GXLvrC"
+    },
+    {
+      "name": "Prokletá Odolnost",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/constitution.svg",
+      "_id": "pgBN0brGeJBSc413",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.con.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Uvrhni Kletbu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "cursed"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf.ActiveEffect.pgBN0brGeJBSc413",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1761861700362,
+        "modifiedTime": 1783217405566,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!pO4zGe5LmFIYqJiL.pgBN0brGeJBSc413"
+    },
+    {
+      "name": "Prokletá Obratnost",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/dexterity.svg",
+      "_id": "RoAMbIx9IUqpNREv",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.dex.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Uvrhni Kletbu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "cursed"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf.ActiveEffect.RoAMbIx9IUqpNREv",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1761861702288,
+        "modifiedTime": 1783217409287,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!pO4zGe5LmFIYqJiL.RoAMbIx9IUqpNREv"
+    },
+    {
+      "name": "Prokletá Inteligence",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/intelligence.svg",
+      "_id": "KCdm5KtgQkFm9L9b",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.int.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.abilities.int.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Uvrhni Kletbu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "cursed"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf.ActiveEffect.KCdm5KtgQkFm9L9b",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1761861704580,
+        "modifiedTime": 1783217414140,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!pO4zGe5LmFIYqJiL.KCdm5KtgQkFm9L9b"
+    },
+    {
+      "name": "Prokletá Síla",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/strength.svg",
+      "_id": "yO17H6NUUH6yTtJj",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Uvrhni Kletbu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "cursed"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf.ActiveEffect.yO17H6NUUH6yTtJj",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1761861706464,
+        "modifiedTime": 1783217417782,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!pO4zGe5LmFIYqJiL.yO17H6NUUH6yTtJj"
+    },
+    {
+      "name": "Prokletá Moudrost",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/wisdom.svg",
+      "_id": "yFn5nMRayDT5pVeT",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.wis.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.abilities.wis.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Uvrhni Kletbu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "cursed"
+      ],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf.ActiveEffect.yFn5nMRayDT5pVeT",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1761861707655,
+        "modifiedTime": 1783217421087,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!pO4zGe5LmFIYqJiL.yFn5nMRayDT5pVeT"
+    },
+    {
+      "name": "Prokleté útoky",
+      "img": "icons/skills/melee/sword-damaged-broken-purple.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf",
+      "transfer": false,
+      "_id": "aahOmoNF6ZsMVxUs",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Uvrhni Kletbu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "cursed"
+      ],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Item.aTXZkpQ5Ay6bIxZV.ActiveEffect.u7Yc7mxHYPDvipS1",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1761861708992,
+        "modifiedTime": 1783217424280,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!pO4zGe5LmFIYqJiL.aahOmoNF6ZsMVxUs"
+    },
+    {
+      "name": "Prokleté akce",
+      "img": "icons/magic/control/debuff-chains-shackles-movement-blue.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnEnd",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Uvrhni Kletbu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "cursed"
+      ],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Item.aTXZkpQ5Ay6bIxZV.ActiveEffect.T3x6XvQbSkg6kW6u",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1761861710228,
+        "modifiedTime": 1783217430033,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "_id": "Ebzd58ARPldBzKci",
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!pO4zGe5LmFIYqJiL.Ebzd58ARPldBzKci"
+    },
+    {
+      "name": "Prokletá houževnatost",
+      "img": "icons/skills/wounds/bone-broken-marrow-red.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.2bD7VnJpDEtSgZNf",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Uvrhni Kletbu</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "cursed"
+      ],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Item.aTXZkpQ5Ay6bIxZV.ActiveEffect.DRsQi8p3Zvhte2G0",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1761861711417,
+        "modifiedTime": 1783217434817,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "_id": "2EP5ujWSLnkP1zV0",
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!pO4zGe5LmFIYqJiL.2EP5ujWSLnkP1zV0"
+    }
+  ],
+  "folder": "Xm9ncGQteAtEtSzo",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2bD7VnJpDEtSgZNf"
+}

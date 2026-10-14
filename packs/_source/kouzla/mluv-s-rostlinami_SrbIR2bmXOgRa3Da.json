@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Rostliny ti rozumí a odpovídají; můžeš ovlivnit jejich porost.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#mluv-s-rostlinami\" target=\"_blank\">SRD Jeskyní a draků – Mluv s rostlinami</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Rostliny ti rozumí a odpovídají; můžeš ovlivnit jejich porost.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mluv-s-rostlinami\" target=\"_blank\">SRD Jeskyní a draků – Mluv s rostlinami</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,9 +32,9 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "radius",
-        "size": "9",
+        "size": "6",
         "contiguous": false,
         "count": ""
       }
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false
           },
           "affects": {
@@ -138,10 +138,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "mluv-s-rostlinami",
       "srd": "2VXGS206tuChoeXy",
       "nazevEn": "Speak with Plants",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#mluv-s-rostlinami"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#mluv-s-rostlinami"
     }
   },
   "img": "icons/magic/nature/tree-animated-smile.webp",

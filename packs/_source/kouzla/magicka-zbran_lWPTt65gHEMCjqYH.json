@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Zbraň se stane magickou s bonusem k útoku a zranění.</p><h3>Automatizace</h3><ul><li><strong>Očarovat zbraň:</strong> očaruje předmět; efekt: Magická zbraň +1, Magická zbraň +2, Magická zbraň +3.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#magicka-zbran\" target=\"_blank\">SRD Jeskyní a draků – Magická zbraň</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Zbraň se stane magickou s bonusem k Útoku a Zásahu.</p><h3>Automatizace</h3><ul><li><strong>Očarovat zbraň:</strong> očarování předmětu; efekt: Magická zbraň +1, Magická zbraň +2, Magická zbraň +3.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#magicka-zbran\" target=\"_blank\">SRD Jeskyní a draků – Magická zbraň</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,7 +32,7 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -121,7 +121,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -162,10 +162,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "magicka-zbran",
       "srd": "Sgjrf8qqv97CCWM4",
       "nazevEn": "Magic Weapon",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#magicka-zbran"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#magicka-zbran"
     }
   },
   "img": "icons/weapons/polearms/spear-flared-silver-pink.webp",

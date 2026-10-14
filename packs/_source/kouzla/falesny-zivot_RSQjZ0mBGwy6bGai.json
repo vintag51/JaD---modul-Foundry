@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Získáš dočasné životy.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> obnoví 1k4 + 4 dočasných životů (+5 za každý stupeň nad 1); efekt: Falešný život.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#falesny-zivot\" target=\"_blank\">SRD Jeskyní a draků – Falešný život</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Získáš Dočasné body výdrže.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> obnoví 1k4 + 4 Dočasných bodů výdrže (+5 za každý Stupeň nad 1); efekt: Falešný život.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#falesny-zivot\" target=\"_blank\">SRD Jeskyní a draků – Falešný život</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,7 +33,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -105,7 +105,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -150,10 +150,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "falesny-zivot",
       "srd": "7e3QXF10hLNDEdr6",
       "nazevEn": "False Life",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#falesny-zivot"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#falesny-zivot"
     }
   },
   "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",

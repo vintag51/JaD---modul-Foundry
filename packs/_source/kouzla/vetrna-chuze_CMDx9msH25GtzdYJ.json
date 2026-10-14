@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Ty a spolucestující se změníte v oblaka a rychle cestujete.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Větrná chůze.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vetrna-chuze\" target=\"_blank\">SRD Jeskyní a draků – Větrná chůze</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Ty a spolucestující se změníte v oblaka a rychle cestujete.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Větrná chůze.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vetrna-chuze\" target=\"_blank\">SRD Jeskyní a draků – Větrná chůze</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -104,7 +104,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -138,10 +138,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "vetrna-chuze",
       "srd": "8PJAsHmbu6UgDHC0",
       "nazevEn": "Wind Walk",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vetrna-chuze"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vetrna-chuze"
     }
   },
   "img": "icons/magic/air/wind-tornado-funnel-gray.webp",
@@ -158,35 +158,35 @@
           {
             "key": "system.attributes.movement.fly",
             "type": "upgrade",
-            "value": "90",
+            "value": 300,
             "phase": "initial",
             "priority": null
           },
           {
             "key": "system.attributes.movement.walk",
             "type": "override",
-            "value": "0",
+            "value": 0,
             "phase": "initial",
             "priority": null
           },
           {
             "key": "system.attributes.movement.swim",
             "type": "override",
-            "value": "0",
+            "value": 0,
             "phase": "initial",
             "priority": null
           },
           {
             "key": "system.attributes.movement.climb",
             "type": "override",
-            "value": "0",
+            "value": 0,
             "phase": "initial",
             "priority": null
           },
           {
             "key": "system.attributes.movement.burrow",
             "type": "override",
-            "value": "0",
+            "value": 0,
             "phase": "initial",
             "priority": null
           },

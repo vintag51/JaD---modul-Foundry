@@ -1,13 +1,13 @@
 {
   "_id": "rKoOj5IugXGfdppi",
-  "name": "Vyvolej nebešťana",
+  "name": "Vyvolej Nebešťana",
   "ownership": {
     "default": 0
   },
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Přivoláš nebešťana.</p><h3>Automatizace</h3><ul><li><strong>Přivolat nebešťana:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Přivolaný nebešťan.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vyvolej-nebestana\" target=\"_blank\">SRD Jeskyní a draků – Vyvolej nebešťana</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Přivoláš nebešťana.</p><h3>Automatizace</h3><ul><li><strong>Přivolat nebešťana:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Přivolaný nebešťan.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vyvolej-nebestana\" target=\"_blank\">SRD Jeskyní a draků – Vyvolej Nebešťana</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -40,8 +40,8 @@
       }
     },
     "range": {
-      "value": "27",
-      "units": "m",
+      "value": "18",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -172,10 +172,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "vyvolej-nebestana",
       "srd": "XT7nzJmVGgv73uaf",
       "nazevEn": "Conjure Celestial",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#vyvolej-nebestana"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#vyvolej-nebestana"
     }
   },
   "img": "icons/magic/holy/angel-wings-gray.webp",
@@ -198,7 +198,7 @@
         "expiry": null,
         "expired": false
       },
-      "description": "<p>Účinek kouzla <em>Vyvolej nebešťana</em>. Podrobnosti v popisu kouzla.</p>",
+      "description": "<p>Účinek kouzla <em>Vyvolej Nebešťana</em>. Podrobnosti v popisu kouzla.</p>",
       "tint": "#ffffff",
       "statuses": [],
       "showIcon": 2,

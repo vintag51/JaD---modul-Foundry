@@ -5,7 +5,7 @@
   "img": "icons/magic/light/projectile-beams-salvo-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>Oslnivá barevná záře oslepí tvory s nejnižšími životy.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Barevná sprška.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#barevna-sprska\" target=\"_blank\">SRD Jeskyní a draků – Barevná sprška</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Oslnivá barevná záře oslepí tvory s nejnižšími Body výdrže.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Barevná sprška.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#barevna-sprska\" target=\"_blank\">SRD Jeskyní a draků – Barevná sprška</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -30,9 +30,9 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cone",
-        "size": "4.5",
+        "size": "3",
         "contiguous": false,
         "count": ""
       }
@@ -107,9 +107,9 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": "cone",
-            "size": "4.5",
+            "size": "3",
             "count": ""
           },
           "affects": {
@@ -198,10 +198,10 @@
   },
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "barevna-sprska",
       "srd": "LWTUqKkUQdMAmOe0",
       "nazevEn": "Color Spray",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#barevna-sprska"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#barevna-sprska"
     }
   },
   "_stats": {

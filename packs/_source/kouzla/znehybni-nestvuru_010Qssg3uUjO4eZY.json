@@ -1,0 +1,241 @@
+{
+  "_id": "010Qssg3uUjO4eZY",
+  "name": "Znehybni nestvůru",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Paralyzuješ libovolného tvora.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Znehybni nestvůru.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#znehybni-nestvuru\" target=\"_blank\">SRD Jeskyní a draků – Znehybni nestvůru</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1 + @scaling.increase",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "18",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 5,
+    "school": "enc",
+    "materials": {
+      "value": "malý rovný kousek železa",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "dFpKVSjb8Qm2BNTl": {
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "1nGyCW9SEQ2TusXw",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "bonus": "",
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "name": "Seslat",
+        "img": "",
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "_id": "dFpKVSjb8Qm2BNTl"
+      }
+    },
+    "identifier": "hold-monster"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "znehybni-nestvuru",
+      "srd": "l9Ju5KE7bbn3WpTm",
+      "nazevEn": "Hold Monster",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#znehybni-nestvuru"
+    }
+  },
+  "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+  "effects": [
+    {
+      "name": "Znehybni nestvůru",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.010Qssg3uUjO4eZY",
+      "duration": {
+        "value": 1,
+        "units": "minutes",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "_id": "1nGyCW9SEQ2TusXw",
+      "description": "<p>Účinek kouzla <em>Znehybni nestvůru</em>. Podrobnosti v popisu kouzla.</p>",
+      "transfer": false,
+      "statuses": [
+        "paralyzed"
+      ],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "jeskyne-a-draci": {
+          "midiOverTime": true
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.361",
+        "systemId": "dnd5e",
+        "systemVersion": "6.0.0",
+        "createdTime": 1781404634111,
+        "modifiedTime": 1781404634111,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,label=Znehybni nestvůru",
+            "type": "custom",
+            "phase": "initial",
+            "priority": 20
+          }
+        ]
+      },
+      "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null,
+      "_key": "!items.effects!l9Ju5KE7bbn3WpTm.1nGyCW9SEQ2TusXw"
+    }
+  ],
+  "folder": "wQJg6sDBR7lLiwGO",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!010Qssg3uUjO4eZY"
+}

@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Nakazíš cíl jednou z magických nemocí.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> útok kouzlem na blízko; efekt: Inkubace – oslepující nemoc, Inkubace – špinavá horečka, Inkubace – hniloba masa, Inkubace – oheň mysli….</li><li><strong>Záchrana proti nemoci:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Neúspěšná záchrana proti nákaze, Úspěšná záchrana proti nákaze.</li><li><strong>Nakazit nemocí:</strong> efekt: Oslepující nemoc, Špinavá horečka, Hniloba masa, Oheň mysli….</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#nakaza\" target=\"_blank\">SRD Jeskyní a draků – Nákaza</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Nakazíš cíl jednou z magických nemocí.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Útok na blízko kouzlem; efekt: Inkubace – oslepující nemoc, Inkubace – špinavá horečka, Inkubace – hniloba masa, Inkubace – oheň mysli….</li><li><strong>Záchrana proti nemoci:</strong> Záchranný hod na Odolnost proti SO kouzla; efekt: Neúspěšná záchrana proti nákaze, Úspěšná záchrana proti nákaze.</li><li><strong>Nakazit nemocí:</strong> efekt: Oslepující nemoc, Špinavá horečka, Hniloba masa, Oheň mysli….</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#nakaza\" target=\"_blank\">SRD Jeskyní a draků – Nákaza</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -141,7 +141,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -229,7 +229,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false,
             "type": ""
           },
@@ -358,7 +358,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m",
+            "units": "sah",
             "type": ""
           },
           "affects": {
@@ -397,10 +397,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "nakaza",
       "srd": "CjIq8Ed7bu3vVwT1",
       "nazevEn": "Contagion",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#nakaza"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#nakaza"
     }
   },
   "img": "icons/skills/wounds/blood-cells-disease-green.webp",

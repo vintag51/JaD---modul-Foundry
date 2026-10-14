@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Blesk v linii zraní všechny tvory v cestě.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Obratnost proti SO kouzla; 8k6 bleskové zranění (+1k6 za každý stupeň nad 3); při úspěchu polovina.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#blesk\" target=\"_blank\">SRD Jeskyní a draků – Blesk</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Blesk v linii zasáhne všechny tvory v cestě.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Obratnost proti SO kouzla; Bleskový zásah za 8k6 Bodů výdrže (+1k6 za každý Stupeň nad 3); při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#blesk\" target=\"_blank\">SRD Jeskyní a draků – Blesk</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,9 +32,9 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "line",
-        "size": "30",
+        "size": "20",
         "contiguous": false,
         "width": "",
         "count": ""
@@ -99,7 +99,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -157,10 +157,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "blesk",
       "srd": "IyikgTEOTv701jgQ",
       "nazevEn": "Lightning Bolt",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#blesk"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#blesk"
     }
   },
   "img": "icons/magic/lightning/bolt-strike-sparks-blue.webp",

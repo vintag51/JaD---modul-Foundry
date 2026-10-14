@@ -5,7 +5,7 @@
   "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
   "system": {
     "description": {
-      "value": "<p>Vytvoříš tři iluzorní dvojníky, kteří odvádějí útoky.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Zrcadlový obraz 1, Zrcadlový obraz 2, Zrcadlový obraz 3.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zrcadlovy-obraz\" target=\"_blank\">SRD Jeskyní a draků – Zrcadlový obraz</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Vytvoříš tři iluzorní dvojníky, kteří odvádějí útoky.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Zrcadlový obraz 1, Zrcadlový obraz 2, Zrcadlový obraz 3.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zrcadlovy-obraz\" target=\"_blank\">SRD Jeskyní a draků – Zrcadlový obraz</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -31,7 +31,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -116,7 +116,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -181,7 +181,7 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -378,10 +378,10 @@
   },
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "zrcadlovy-obraz",
       "srd": "X4c8xCkmF8U9HUMz",
       "nazevEn": "Mirror Image",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zrcadlovy-obraz"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zrcadlovy-obraz"
     }
   },
   "_stats": {

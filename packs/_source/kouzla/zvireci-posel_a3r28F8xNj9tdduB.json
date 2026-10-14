@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Malé zvíře doručí tvou zprávu na určené místo.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Zvířecí posel.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zvireci-posel\" target=\"_blank\">SRD Jeskyní a draků – Zvířecí posel</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Malé zvíře doručí tvou zprávu na určené místo.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Zvířecí posel.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zvireci-posel\" target=\"_blank\">SRD Jeskyní a draků – Zvířecí posel</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "9",
-      "units": "m",
+      "value": "6",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -106,7 +106,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false
           },
           "affects": {
@@ -146,10 +146,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "zvireci-posel",
       "srd": "X8w9EzYLGc4vQ1H2",
       "nazevEn": "Animal Messenger",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zvireci-posel"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zvireci-posel"
     }
   },
   "img": "icons/creatures/birds/songbird-yellow-flying.webp",

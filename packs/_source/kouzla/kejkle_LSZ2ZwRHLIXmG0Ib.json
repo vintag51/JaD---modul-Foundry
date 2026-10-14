@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Drobné kouzelnické triky – zahřátí, vyčištění, ochucení, záblesk či malá iluzorní značka.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#kejkle\" target=\"_blank\">SRD Jeskyní a draků – Kejkle</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Drobné kouzelnické triky – zahřátí, vyčištění, ochucení, záblesk či malá iluzorní značka.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#kejkle\" target=\"_blank\">SRD Jeskyní a draků – Kejkle</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,14 +32,14 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "3",
-      "units": "m",
+      "value": "2",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -96,7 +96,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -130,10 +130,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "kejkle",
       "srd": "udsLtG0BugXHR2JQ",
       "nazevEn": "Prestidigitation",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#kejkle"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#kejkle"
     }
   },
   "img": "icons/weapons/wands/wand-gem-pink.webp",

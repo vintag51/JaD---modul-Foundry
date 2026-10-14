@@ -1,13 +1,13 @@
 {
   "_id": "LGV2mLDLtHVCIE1R",
-  "name": "Ochrana před jedem",
+  "name": "Ochrana před Jedem",
   "ownership": {
     "default": 0
   },
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Neutralizuješ jed a dáš tvoru ochranu před otravou a jedovým zraněním.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Ochrana před jedem.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#ochrana-pred-jedem\" target=\"_blank\">SRD Jeskyní a draků – Ochrana před jedem</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Neutralizuješ jed a dáš tvoru ochranu před otravou a jedovým zásahem.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Ochrana před Jedem.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ochrana-pred-jedem\" target=\"_blank\">SRD Jeskyní a draků – Ochrana před Jedem</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,7 +34,7 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
@@ -105,7 +105,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -139,16 +139,16 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "ochrana-pred-jedem",
       "srd": "MAxM77CDUu8dgIRQ",
       "nazevEn": "Protection from Poison",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#ochrana-pred-jedem"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#ochrana-pred-jedem"
     }
   },
   "img": "icons/skills/toxins/symbol-poison-drop-skull-green.webp",
   "effects": [
     {
-      "name": "Ochrana před jedem",
+      "name": "Ochrana před Jedem",
       "origin": "Compendium.jeskyne-a-draci.kouzla.Item.LGV2mLDLtHVCIE1R",
       "duration": {
         "value": 1,
@@ -158,7 +158,7 @@
       },
       "disabled": false,
       "_id": "dNSELIYDQMBopj0Z",
-      "description": "<p>Účinek kouzla <em>Ochrana před jedem</em>. Podrobnosti v popisu kouzla.</p>",
+      "description": "<p>Účinek kouzla <em>Ochrana před Jedem</em>. Podrobnosti v popisu kouzla.</p>",
       "transfer": false,
       "statuses": [],
       "flags": {

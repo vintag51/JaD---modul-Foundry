@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Vrhneš kuličku kyseliny na jednoho nebo dva tvory stojící vedle sebe.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Obratnost proti SO kouzla; 1k6 kyselinové zranění (roste na 5., 11. a 17. úrovni postavy); při úspěchu nic.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#kyselinova-koule\" target=\"_blank\">SRD Jeskyní a draků – Kyselinová koule</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p>",
+      "value": "<p>Vrhneš kuličku kyseliny na jednoho nebo dva tvory stojící vedle sebe.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Obratnost proti SO kouzla; Kyselinový zásah za 1k6 Bodů výdrže (roste na 5., 11. a 17. Úrovni); při úspěchu bez účinku.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#kyselinova-koule\" target=\"_blank\">SRD Jeskyní a draků – Kyselinová koule</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -34,14 +34,14 @@
         "special": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "18",
-      "units": "m",
+      "value": "12",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -155,10 +155,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "kyselinova-koule",
       "srd": "JLTQyqXEaJDrTXyW",
       "nazevEn": "Acid Splash",
-      "overeno": true,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#kyselinova-koule"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#kyselinova-koule"
     }
   },
   "img": "icons/magic/acid/projectile-faceted-glob.webp",

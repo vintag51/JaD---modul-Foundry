@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Rostliny v oblasti zbujnějí, nebo dlouhodobě obohatíš úrodu.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#rust-rostlin\" target=\"_blank\">SRD Jeskyní a draků – Růst rostlin</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Rostliny v oblasti zbujnějí, nebo dlouhodobě obohatíš úrodu.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#rust-rostlin\" target=\"_blank\">SRD Jeskyní a draků – Růst rostlin</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "radius",
-        "size": "30",
+        "size": "20",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "45",
-      "units": "m",
+      "value": "30",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -99,7 +99,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m",
+            "units": "sah",
             "stationary": false
           },
           "affects": {
@@ -173,9 +173,9 @@
           "template": {
             "contiguous": false,
             "stationary": false,
-            "units": "km",
+            "units": "mi",
             "type": "radius",
-            "size": "0.75",
+            "size": "0.5",
             "count": ""
           },
           "affects": {
@@ -212,10 +212,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "rust-rostlin",
       "srd": "YWtwzp6ZnQJMEmVW",
       "nazevEn": "Plant Growth",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#rust-rostlin"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#rust-rostlin"
     }
   },
   "img": "icons/magic/nature/plant-sprout-snow-green.webp",

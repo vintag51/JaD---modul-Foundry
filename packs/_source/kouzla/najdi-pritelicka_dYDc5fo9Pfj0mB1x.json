@@ -1,0 +1,381 @@
+{
+  "_id": "dYDc5fo9Pfj0mB1x",
+  "name": "Najdi Přítelíčka",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Přivoláš duchovního familiára v podobě malého zvířete, který ti slouží.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> přivolání tvora (karta tvora se vytvoří automaticky); efekt: Familiár.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#najdi-pritelicka\" target=\"_blank\">SRD Jeskyní a draků – Najdi Přítelíčka</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "hour",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "space",
+        "choice": false,
+        "count": "",
+        "special": ""
+      },
+      "template": {
+        "units": "any",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "2",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 1,
+    "school": "con",
+    "materials": {
+      "value": "dřevěné uhlí, kadidlo a byliny v hodnotě 10 zl, které musí shořet v mosazné pánvi",
+      "consumed": true,
+      "cost": 10,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "ritual"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "summon",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "bonuses": {
+          "ac": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": "",
+          "hd": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [
+          "celestial",
+          "fey",
+          "fiend"
+        ],
+        "match": {
+          "attacks": false,
+          "disposition": true,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "HShhzdPtYkhNleyj",
+            "uuid": "Compendium.dnd5e.monsters.Actor.qav2dvMIUiMQCCsy",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "NIHXnk03LvysDp7t",
+            "uuid": "Compendium.dnd5e.monsters.Actor.hIf83RD3ZVW4Egfi",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "L59Xqchh128r45Rc",
+            "uuid": "Compendium.dnd5e.monsters.Actor.8RgUhb31VvjUNZU1",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "Fish",
+            "_id": "kaiiJrnUWOqlQHt3",
+            "uuid": "Compendium.dnd5e.monsters.Actor.nkyCGJ9wXeAZkyyz",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "zGRnQq2EkrfRb14O",
+            "uuid": "Compendium.dnd5e.monsters.Actor.EZgiprHXA2D7Uyb3",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "n2fhgnH9XTc8MbKt",
+            "uuid": "Compendium.dnd5e.monsters.Actor.fnkPNfIpS62LqOu4",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "bZJcnv1H2Vjm5XI6",
+            "uuid": "Compendium.dnd5e.monsters.Actor.I2x01hzOjVN4NUjf",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "aqC42mfjOB5PB5JU",
+            "uuid": "Compendium.dnd5e.monsters.Actor.3UUNbGiG2Yf1ZPxM",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "9sLcKSCGrnG7gO7O",
+            "uuid": "Compendium.dnd5e.monsters.Actor.d0prpsGSAorDadec",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "IxXkUKUna11rHprj",
+            "uuid": "Compendium.dnd5e.monsters.Actor.D5rwVIxmfFrdyyxT",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "0t4KAcZWZ7fY9A5u",
+            "uuid": "Compendium.dnd5e.monsters.Actor.pozQUPTnLZW8epox",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "op4FTfM9QWefJxOJ",
+            "uuid": "Compendium.dnd5e.monsters.Actor.LPdX5YLlwci0NDZx",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "1gJGQBWi5LJYjONw",
+            "uuid": "Compendium.dnd5e.monsters.Actor.FWSDiq9SZsdiBAa8",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "7hgp23Fe02ITFtIw",
+            "uuid": "Compendium.dnd5e.monsters.Actor.28gU50HtG8Kp7uIz",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "czhL1VUn6ecvG0WV",
+            "uuid": "Compendium.dnd5e.monsters.Actor.WOdeacKCYVhgLDuN",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "appliedEffects": [],
+        "effects": [
+          {
+            "_id": "ElS7F2Oh06jeZtpi"
+          }
+        ]
+      }
+    },
+    "identifier": "find-familiar"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "najdi-pritelicka",
+      "srd": "JGT5bNqu9REL7Fuz",
+      "nazevEn": "Find Familiar",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#najdi-pritelicka"
+    }
+  },
+  "img": "icons/creatures/birds/corvid-flying-wings-purple.webp",
+  "effects": [
+    {
+      "name": "Familiár",
+      "img": "icons/creatures/birds/corvid-flying-wings-purple.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.dYDc5fo9Pfj0mB1x",
+      "transfer": false,
+      "_id": "ElS7F2Oh06jeZtpi",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "name",
+            "value": "{} Familiar",
+            "priority": null,
+            "type": "override"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Najdi Přítelíčka</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.0",
+        "createdTime": 1772822662813,
+        "modifiedTime": 1772822776833,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!JGT5bNqu9REL7Fuz.ElS7F2Oh06jeZtpi"
+    }
+  ],
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!dYDc5fo9Pfj0mB1x"
+}

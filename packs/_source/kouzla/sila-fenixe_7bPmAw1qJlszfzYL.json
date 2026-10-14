@@ -1,0 +1,256 @@
+{
+  "_id": "7bPmAw1qJlszfzYL",
+  "name": "Síla fénixe",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [],
+  "system": {
+    "identifier": "sila-fenixe",
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "",
+      "units": "self",
+      "special": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "radius",
+        "size": "2",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "caBFh87u2NiXPDHZ": {
+        "_id": "caBFh87u2NiXPDHZ",
+        "type": "save",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "5hE5DBKGoj767eq7": {
+        "_id": "5hE5DBKGoj767eq7",
+        "type": "heal",
+        "img": "",
+        "sort": 100000,
+        "name": "Obnova fénixe",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "bonus": "1 + @prof",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": "2"
+          }
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Vzplaneš barevnými plameny, které popálí tvory kolem tebe, a sám si přitom obnovíš trochu Bodů výdrže.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Obratnost proti SO kouzla; Ohnivý zásah za 2k6 Bodů výdrže (+1k6 za každý Stupeň nad 1); při úspěchu poloviční Zásah.</li><li><strong>Obnova fénixe:</strong> obnoví 1 + Zdatnostní bonus Bodů výdrže (+2 za každý Stupeň nad 1).</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sila-fenixe\" target=\"_blank\">SRD Jeskyní a draků – Síla fénixe</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "sila-fenixe",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#sila-fenixe"
+    }
+  },
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7bPmAw1qJlszfzYL"
+}

@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Až šest tvorů je zpomaleno – pomalejší, s horší OČ a omezenými akcemi.</p><h3>Automatizace</h3><ul><li><strong>Záchrana:</strong> záchranný hod na Moudrost proti SO kouzla; efekt: Zpomalený.</li><li><strong>Užitek:</strong> efekt: Zpomalený.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zpomaleni\" target=\"_blank\">SRD Jeskyní a draků – Zpomalení</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Až šest tvorů je zpomaleno – pomalejší, s horší OČ a omezenými akcemi.</p><h3>Automatizace</h3><ul><li><strong>Záchrana:</strong> Záchranný hod na Moudrost proti SO kouzla; efekt: Zpomalený.</li><li><strong>Užitek:</strong> efekt: Zpomalený.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zpomaleni\" target=\"_blank\">SRD Jeskyní a draků – Zpomalení</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,16 +32,16 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cube",
-        "size": "12",
+        "size": "8",
         "contiguous": false,
         "count": ""
       }
     },
     "range": {
-      "value": "36",
-      "units": "m",
+      "value": "24",
+      "units": "sah",
       "special": ""
     },
     "uses": {
@@ -105,7 +105,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -166,7 +166,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -192,10 +192,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "zpomaleni",
       "srd": "yqUDoxk4x0NWG5Bz",
       "nazevEn": "Slow",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#zpomaleni"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zpomaleni"
     }
   },
   "img": "icons/skills/movement/arrow-down-pink.webp",
@@ -250,35 +250,35 @@
           {
             "key": "system.attributes.movement.burrow",
             "type": "multiply",
-            "value": "0.15",
+            "value": 0.5,
             "phase": "initial",
             "priority": null
           },
           {
             "key": "system.attributes.movement.climb",
             "type": "multiply",
-            "value": "0.15",
+            "value": 0.5,
             "phase": "initial",
             "priority": null
           },
           {
             "key": "system.attributes.movement.fly",
             "type": "multiply",
-            "value": "0.15",
+            "value": 0.5,
             "phase": "initial",
             "priority": null
           },
           {
             "key": "system.attributes.movement.swim",
             "type": "multiply",
-            "value": "0.15",
+            "value": 0.5,
             "phase": "initial",
             "priority": null
           },
           {
             "key": "system.attributes.movement.walk",
             "type": "multiply",
-            "value": "0.15",
+            "value": 0.5,
             "phase": "initial",
             "priority": null
           },
@@ -293,6 +293,7 @@
             "key": "flags.midi-qol.OverTime",
             "value": "turn=end,saveAbility=wis,saveDC=@attributes.spell.dc,label=Zpomalený",
             "type": "custom",
+            "phase": "initial",
             "priority": 20
           }
         ]

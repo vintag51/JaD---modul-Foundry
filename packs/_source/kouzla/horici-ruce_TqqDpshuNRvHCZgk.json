@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Z prstů ti vyšlehne kužel plamenů.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Obratnost proti SO kouzla; 3k6 ohnivé zranění (+1k6 za každý stupeň nad 1); při úspěchu polovina.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#horici-ruce\" target=\"_blank\">SRD Jeskyní a draků – Hořící ruce</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Z prstů ti vyšlehne kužel plamenů.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Obratnost proti SO kouzla; Ohnivý zásah za 3k6 Bodů výdrže (+1k6 za každý Stupeň nad 1); při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#horici-ruce\" target=\"_blank\">SRD Jeskyní a draků – Hořící ruce</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -32,9 +32,9 @@
         "type": ""
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "type": "cone",
-        "size": "4.5",
+        "size": "3",
         "contiguous": false,
         "count": ""
       }
@@ -97,7 +97,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -154,10 +154,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "horici-ruce",
       "srd": "5SuJewoa1CRWaj1F",
       "nazevEn": "Burning Hands",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#horici-ruce"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#horici-ruce"
     }
   },
   "img": "icons/magic/fire/projectile-wave-arrow.webp",

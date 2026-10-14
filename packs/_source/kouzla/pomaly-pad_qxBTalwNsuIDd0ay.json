@@ -1,0 +1,205 @@
+{
+  "_id": "qxBTalwNsuIDd0ay",
+  "name": "Pomalý pád",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Až pět padajících tvorů zpomalí pád a nezasáhne se.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> efekt: Pomalý pád.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pomaly-pad\" target=\"_blank\">SRD Jeskyní a draků – Pomalý pád</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "reaction",
+      "condition": "kterou použiješ, když ty nebo tvor do 18 m padáte",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "5",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "12",
+      "units": "sah",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 1,
+    "school": "trs",
+    "materials": {
+      "value": "malé pírko nebo kousek prachového peří",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "gMdi8F2ylxkgG58U"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Seslat",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "identifier": "feather-fall"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "pomaly-pad",
+      "srd": "pub0OWVEB71XQx1n",
+      "nazevEn": "Feather Fall",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#pomaly-pad"
+    }
+  },
+  "img": "icons/commodities/materials/feather-blue-glowing.webp",
+  "effects": [
+    {
+      "name": "Pomalý pád",
+      "img": "icons/commodities/materials/feather-blue-glowing.webp",
+      "origin": "Compendium.jeskyne-a-draci.kouzla.Item.qxBTalwNsuIDd0ay",
+      "transfer": false,
+      "_id": "gMdi8F2ylxkgG58U",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Účinek kouzla <em>Pomalý pád</em>. Podrobnosti v popisu kouzla.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.0",
+        "createdTime": 1772822823602,
+        "modifiedTime": 1772823074092,
+        "lastModifiedBy": "dnd5ebuilder0000"
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!pub0OWVEB71XQx1n.gMdi8F2ylxkgG58U"
+    }
+  ],
+  "folder": "aVvLAlK6Hr9Fqnla",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qxBTalwNsuIDd0ay"
+}

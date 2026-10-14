@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Tvor nebo předmět se vznese a ty ovládáš jeho výšku.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> záchranný hod na Odolnost proti SO kouzla; efekt: Levitující.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#levitace\" target=\"_blank\">SRD Jeskyní a draků – Levitace</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Tvor nebo předmět se vznese a ty ovládáš jeho výšku.</p><h3>Automatizace</h3><ul><li><strong>Seslat:</strong> Záchranný hod na Odolnost proti SO kouzla; efekt: Levitující.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#levitace\" target=\"_blank\">SRD Jeskyní a draků – Levitace</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -33,13 +33,13 @@
         "choice": false
       },
       "template": {
-        "units": "m",
+        "units": "sah",
         "contiguous": false
       }
     },
     "range": {
-      "value": "18",
-      "units": "m"
+      "value": "12",
+      "units": "sah"
     },
     "uses": {
       "max": "",
@@ -103,7 +103,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -143,10 +143,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "levitace",
       "srd": "MRxldJd6C4bsBo3O",
       "nazevEn": "Levitate",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#levitace"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#levitace"
     }
   },
   "img": "icons/magic/control/debuff-energy-hold-levitate-pink.webp",

@@ -1,0 +1,263 @@
+{
+  "_id": "S7ZKOBjXHfzMZdOw",
+  "name": "Změna podoby",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "system": {
+    "description": {
+      "value": "<p>Měníš se v různé tvory.</p><h3>Automatizace</h3><ul><li><strong>Změnit tvar:</strong> proměna podoby.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zmena-podoby\" target=\"_blank\">SRD Jeskyní a draků – Změna podoby</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2014"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "self",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 9,
+    "school": "trs",
+    "materials": {
+      "value": "nefritová čelenka v hodnotě nejméně 1 500 zl, kterou si musíš před sesláním nasadit",
+      "consumed": false,
+      "cost": 1500,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "DV7Fh5ovppv9imwJ": {
+        "type": "transform",
+        "name": "Změnit tvar",
+        "img": "",
+        "sort": 200000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "profiles": [
+          {
+            "cr": "@details.level",
+            "name": "",
+            "_id": "SbEygzQNI7zvTz8d",
+            "uuid": null,
+            "sizes": [],
+            "types": [],
+            "movement": [],
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "settings": {
+          "preset": "",
+          "effects": [
+            "all"
+          ],
+          "keep": [
+            "mental",
+            "gearProf",
+            "languages",
+            "class",
+            "feats",
+            "items",
+            "spells",
+            "bio",
+            "hp",
+            "tempHP",
+            "resistances",
+            "vision"
+          ],
+          "merge": [
+            "saves",
+            "skills"
+          ],
+          "other": [],
+          "spellLists": [],
+          "transformTokens": true,
+          "minimumAC": "",
+          "tempFormula": ""
+        },
+        "transform": {
+          "customize": true,
+          "mode": "cr",
+          "preset": ""
+        },
+        "_id": "DV7Fh5ovppv9imwJ"
+      },
+      "Pb2Lx0WUv5zDQ87G": {
+        "type": "utility",
+        "name": "Seslat",
+        "_id": "Pb2Lx0WUv5zDQ87G",
+        "img": null,
+        "sort": 150000,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "identifier": "shapechange"
+  },
+  "sort": 0,
+  "flags": {
+    "jeskyne-a-draci": {
+      "kotva": "zmena-podoby",
+      "srd": "N2UEFq8X5LRsLcOZ",
+      "nazevEn": "Shapechange",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zmena-podoby"
+    }
+  },
+  "img": "icons/creatures/abilities/paw-print-yellow.webp",
+  "effects": [],
+  "folder": "3SUmAYQgHNHXGLIK",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!S7ZKOBjXHfzMZdOw"
+}

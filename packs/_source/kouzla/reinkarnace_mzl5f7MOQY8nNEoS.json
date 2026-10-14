@@ -7,7 +7,7 @@
   "type": "spell",
   "system": {
     "description": {
-      "value": "<p>Duše mrtvého se vrátí v novém, náhodném těle.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#reinkarnace\" target=\"_blank\">SRD Jeskyní a draků – Reinkarnace</a> (případně Kapitola 10 – Magie v knize Jeskyně a draci).</p><p><em>Pracovní název – čeká na ověření proti knize JaD.</em></p>",
+      "value": "<p>Duše mrtvého se vrátí v novém, náhodném těle.</p><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#reinkarnace\" target=\"_blank\">SRD Jeskyní a draků – Reinkarnace</a> (Kapitola 10 – Magie).</p>",
       "chat": ""
     },
     "source": {
@@ -98,7 +98,7 @@
           "prompt": true,
           "template": {
             "contiguous": false,
-            "units": "m"
+            "units": "sah"
           },
           "affects": {
             "choice": false
@@ -132,10 +132,10 @@
   "sort": 0,
   "flags": {
     "jeskyne-a-draci": {
+      "kotva": "reinkarnace",
       "srd": "zMEo5DKK8uxsuWnq",
       "nazevEn": "Reincarnate",
-      "overeno": false,
-      "odkaz": "https://dnd5esrd.d20.cz/grimoar/grimoar-jmen.html#reinkarnace"
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#reinkarnace"
     }
   },
   "img": "icons/magic/nature/tree-spirit-glow-black-yellow.webp",

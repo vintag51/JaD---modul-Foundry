@@ -1,0 +1,372 @@
+{
+  "_id": "GtCCiRBoSAaDB7gB",
+  "name": "Zkřivení prostoru",
+  "type": "spell",
+  "img": "icons/magic/earth/projectile-stone-boulder-orange.webp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "effects": [
+    {
+      "_id": "8J85i9Ki09vQ9Mel",
+      "name": "Dezorientovaný (Zkřivení prostoru)",
+      "img": "icons/magic/earth/projectile-stone-boulder-orange.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "duration": {
+        "value": 6,
+        "units": "seconds",
+        "expiry": "turnEnd",
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.all",
+            "value": "0.5",
+            "type": "multiply",
+            "phase": "initial",
+            "priority": null
+          }
+        ]
+      },
+      "description": "<p>Účinek kouzla <em>Zkřivení prostoru</em>. Podrobnosti v popisu kouzla.</p>",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      }
+    }
+  ],
+  "system": {
+    "identifier": "zkriveni-prostoru",
+    "level": 3,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "papír popsaný matematickými výpočty",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "range": {
+      "value": "12",
+      "units": "sah",
+      "special": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "sah",
+        "type": "cube",
+        "size": "8",
+        "width": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "4XOY0S2gOsPRcewo": {
+        "_id": "4XOY0S2gOsPRcewo",
+        "type": "utility",
+        "img": "",
+        "sort": 0,
+        "name": "Seslat",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "IkLyF6wW8bbHJKzV": {
+        "_id": "IkLyF6wW8bbHJKzV",
+        "type": "save",
+        "img": "",
+        "sort": 100000,
+        "name": "Začátek tahu v krychli",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "8J85i9Ki09vQ9Mel",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "PPOtDw8JGHLhPdtV": {
+        "_id": "PPOtDw8JGHLhPdtV",
+        "type": "save",
+        "img": "",
+        "sort": 200000,
+        "name": "Konec tahu v krychli",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "override": false,
+          "template": {
+            "contiguous": false,
+            "units": "sah"
+          },
+          "affects": {
+            "choice": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "source": {
+      "custom": "",
+      "book": "Jeskyně a draci",
+      "page": "",
+      "license": "Licence JaD pro třetí strany",
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<p>Pokřivíš prostor v krychli – tvory uvnitř mate, zpomaluje, drtí a stahuje ke středu; oblast je těžký terén.</p><h3>Automatizace</h3><ul><li><strong>Začátek tahu v krychli:</strong> Záchranný hod na Moudrost proti SO kouzla; Psychický zásah za 2k6 Bodů výdrže (+1k6 za každý Stupeň nad 3); při úspěchu poloviční Zásah; efekt: Dezorientovaný (Zkřivení prostoru).</li><li><strong>Konec tahu v krychli:</strong> Záchranný hod na Sílu proti SO kouzla; Drtivý zásah za 2k6 Bodů výdrže (+1k6 za každý Stupeň nad 3); při úspěchu poloviční Zásah.</li></ul><p><strong>Plné znění:</strong> <a href=\"https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zkriveni-prostoru\" target=\"_blank\">SRD Jeskyní a draků – Zkřivení prostoru</a> (Kapitola 10 – Magie).</p>",
+      "chat": ""
+    }
+  },
+  "flags": {
+    "jeskyne-a-draci": {
+      "vlastni": true,
+      "kotva": "zkriveni-prostoru",
+      "odkaz": "https://dnd5esrd.d20.cz/jeskyne-a-draci/10-magie.html#zkriveni-prostoru"
+    }
+  },
+  "folder": "Xm9ncGQteAtEtSzo",
+  "_stats": {
+    "coreVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.6",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!GtCCiRBoSAaDB7gB"
+}
