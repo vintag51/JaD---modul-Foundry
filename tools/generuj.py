@@ -400,6 +400,11 @@ def main():
     denik = {"_id": jid, "name": "Seznamy kouzel povolání (JaD)", "pages": stranky, "folder": None, "sort": 0,
              "ownership": {"default": 0}, "flags": {}, "_key": f"!journal!{jid}"}
 
+    # klíče vnořených efektů pro Foundry CLI (musí odkazovat na nové ID položky)
+    for k in kouzla:
+        for e in k.get("effects", []):
+            e["_key"] = f"!items.effects!{k['_id']}.{e['_id']}"
+
     # zápis
     for cil in ("packs/_source/kouzla", "packs/_source/seznamy-kouzel", "data/kompendium"):
         shutil.rmtree(os.path.join(KOREN, cil), ignore_errors=True)
@@ -413,8 +418,9 @@ def main():
     with open(os.path.join(KOREN, "packs/_source/seznamy-kouzel/seznamy-kouzel.json"), "w", encoding="utf-8") as fh:
         json.dump(denik, fh, ensure_ascii=False, indent=2)
     bez = lambda o: {a: b for a, b in o.items() if a != "_key"}
+    bez_k = lambda k: {**bez(k), "effects": [bez(e) for e in k.get("effects", [])]}
     with open(os.path.join(KOREN, "data/kompendium/kouzla.json"), "w", encoding="utf-8") as fh:
-        json.dump({"folders": [bez(s) for s in slozky], "items": [bez(k) for k in kouzla]}, fh, ensure_ascii=False)
+        json.dump({"folders": [bez(s) for s in slozky], "items": [bez_k(k) for k in kouzla]}, fh, ensure_ascii=False)
     d2 = bez(denik)
     d2["pages"] = [bez(p) for p in d2["pages"]]
     with open(os.path.join(KOREN, "data/kompendium/seznamy-kouzel.json"), "w", encoding="utf-8") as fh:

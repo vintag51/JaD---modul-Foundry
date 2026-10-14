@@ -34,6 +34,8 @@ for p in polozky:
         chyby.append(f"{n}: škola {sy['school']}")
     efekty = {e["_id"] for e in p.get("effects", [])}
     for e in p.get("effects", []):
+        if e.get("_key") != f"!items.effects!{p['_id']}.{e['_id']}":
+            chyby.append(f"{n}: špatný _key efektu {e.get('_key')}")
         if not ID.match(e["_id"]):
             chyby.append(f"{n}: id efektu {e['_id']}")
     if not sy["activities"]:
