@@ -149,7 +149,11 @@
   "ownership": {
     "default": 0
   },
-  "flags": {},
+  "flags": {
+    "jeskyne-a-draci": {
+      "radky": 1
+    }
+  },
   "_id": "5gdGOiCcNGFTFF3g",
   "_stats": {
     "coreVersion": "14.367",

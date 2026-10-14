@@ -306,3 +306,44 @@ pomucky:
   - {srd: tool/poisoners-kit, n: Travičská souprava, cena: 50 zl, lb: 2, d: "Zdatnost se uplatní při výrobě a používání Jedů."}
   - {srd: tool/thieves-tools, n: Zlodějské náčiní, cena: 25 zl, lb: 1,
      d: "Pilník, paklíče, zrcátko na držátku, nůžky a kleště. Zdatnost se uplatní při otevírání zámků a zneškodňování pastí."}
+
+# Řádky nosnosti (za kus) tam, kde se automatický odhad podle typu a váhy liší od JaD.
+radky:
+  Dýka: 0.3333
+  Šipka: 0.3333
+  Dřevec: 2
+  Halapartna: 2
+  Kůsa: 2
+  Obouruční meč: 2
+  Obouruční sekera: 2
+  Palice: 2
+  Píka: 2
+  Těžký kyj: 2
+  Těžká kuše: 2
+  Dlouhý luk: 1
+  Hákovnice: 2
+  Mušketa: 2
+  Ruční hmoždíř: 2
+  Dělo (malé): 10
+  Batoh: 0
+  Beranidlo (přenosné): 2
+  "Stan, pro dvě osoby": 3
+  Zásoby (na 1 den): 0.3333
+  Měch na vodu: 0.3333
+  Pochodeň: 0.2
+  Svíčka: 0.1
+  Papír (jeden list): 0.05
+  Pergamen (jeden list): 0.05
+  Křída (1 ks): 0.05
+  Zlodějské náčiní: 0.3333
+  Alchymistická truhla: 2
+  Truhla: 3
+  Sud: 3
+  Žebřík (2 sáhy): 2
+  Krmivo (na den): 1
+  "Sedlo, exotické": 2
+  Sedlové brašny: 0.3333
+  Udidlo a uzda: 0.3333
+  Pytel beztíže: 1
+  Šikovná brašna: 0.3333
+  Šikovný toulec: 0.3333

@@ -58,7 +58,8 @@
   },
   "flags": {
     "jeskyne-a-draci": {
-      "kotva": "sikovny-toulec"
+      "kotva": "sikovny-toulec",
+      "radky": 0.3333
     }
   },
   "_stats": {

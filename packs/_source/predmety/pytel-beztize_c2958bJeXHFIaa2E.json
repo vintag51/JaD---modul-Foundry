@@ -58,7 +58,8 @@
   },
   "flags": {
     "jeskyne-a-draci": {
-      "kotva": "pytel-beztize"
+      "kotva": "pytel-beztize",
+      "radky": 1
     }
   },
   "_stats": {

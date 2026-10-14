@@ -546,6 +546,16 @@ def main():
                 d["flags"] = {MODUL: {"kotva": m["kotva"]}}
                 g.pridej(d)
 
+    # ----- Řádky nosnosti (přepis automatického odhadu)
+    radky = data.get("radky", {})
+    nalezene = set()
+    for d in g.polozky:
+        if d["name"] in radky:
+            d.setdefault("flags", {}).setdefault(MODUL, {})["radky"] = radky[d["name"]]
+            nalezene.add(d["name"])
+    for n in set(radky) - nalezene:
+        g.chyby.append(f"radky: předmět „{n}“ neexistuje")
+
     # ----- kontrola odkazů na SRD předměty a zápis
     for d in g.polozky:
         txt = json.dumps(d)

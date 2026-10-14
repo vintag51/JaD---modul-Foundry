@@ -27,7 +27,15 @@ Modul pro **Foundry VTT v14** a systém **dnd5e** (5.3+ / 6.x), který přidáv�
 | **Vybavení JaD** – 37 zbraní, 7 palných zbraní (volitelné pravidlo), 12 zbrojí a štít, 109 položek výbavy, ohniskových předmětů, střel a jezdeckých potřeb, 39 pomůcek a 7 balíčků s obsahem; ceny v zl/st/md, dostřely v sázích | hotovo |
 | **Kouzelné předměty JaD** – 116 předmětů z 11. kapitoly (celkem 336 položek včetně variant): lektvary, zbroje, zbraně (i všechny varianty +1 až +3), hůlky, berly, prsteny, svitky, posilující, vyvolávací, cestovatelské předměty a 4 artefakty; automatizace z SRD dnd5e, kouzla odkazují do kompendia JaD | hotovo |
 | **Počáteční vybavení** povolání (volby podle JaD + náhodné bohatství) a zázemí napojené na předměty JaD; volby „jakákoliv zbraň/zbroj/pomůcka/ohnisko“ nabízejí české předměty | hotovo |
+| **Deník JaD** – volitelný deník postavy s rozložením podle karty postavy JaD (vlastnosti s dovednostmi, záchrany, OČ, rychlost dle Naložení, kouzla a Použití truhly, zbraně, výbava v Řádcích, schopnosti, vzhled a vztahy); ostatní záložky dnd5e zůstávají | hotovo |
+| **Nosnost na Řádky** podle JaD (Lehké/Střední/Těžké naložení, Batoh, odložení věcí, Rychlost −1/−3 sáhy) pro všechny deníky; volitelně zjednodušená nosnost | hotovo |
 | Mince přejmenované na zlaťáky, stříbrňáky a měďáky (lze vypnout v nastavení) | hotovo |
+
+## Deník JaD a nosnost na Řádky
+
+- Deník zapneš u postavy přes nastavení deníku v záhlaví okna (Deník JaD), nebo pro všechny postavy ve výchozích denících.
+- Nosnost na Řádky a zjednodušenou nosnost přepneš v nastavení modulu. GM modul při zapnutých Řádcích nastaví pravidlo Naložení systému dnd5e.
+- Řádky předmětu se odhadnou podle typu a váhy (předměty JaD mají hodnoty z knihy); v Deníku JaD je lze u předmětu ručně přepsat. Kontejner (Batoh) lze odložit – nepočítá se pak ani jeho obsah.
 
 ## Instalace
 

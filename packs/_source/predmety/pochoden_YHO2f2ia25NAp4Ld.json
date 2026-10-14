@@ -175,7 +175,11 @@
   },
   "effects": [],
   "folder": "8PVX2jtLAg9AJ05j",
-  "flags": {},
+  "flags": {
+    "jeskyne-a-draci": {
+      "radky": 0.2
+    }
+  },
   "_stats": {
     "coreVersion": "14.367",
     "systemId": "dnd5e",

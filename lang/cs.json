@@ -16,6 +16,14 @@
       "Predmety": {
         "Nazev": "České základní předměty",
         "Napoveda": "Volby zbraní, zbrojí, pomůcek a ohniskových předmětů (počáteční vybavení, zdatnosti) nabízejí předměty z kompendia JaD – Předměty a vybavení místo anglických předmětů dnd5e."
+      },
+      "Radky": {
+        "Nazev": "Nosnost na Řádky (JaD)",
+        "Napoveda": "Naložení se počítá v Řádcích podle JaD: Lehké do 5 + Oprava síly, Střední do 10 + Oprava síly (Rychlost −1 sáh), s Batohem Těžké do 15 + Oprava síly (−3 sáhy). Platí pro všechny deníky."
+      },
+      "Zjednodusena": {
+        "Nazev": "Zjednodušená nosnost (JaD)",
+        "Napoveda": "Bez Stupňů naložení: postava unese 15 + Oprava síly Řádků bez postihu, víc ne. Těžká zbroj bez potřebné Síly zpomalí o 2 sáhy."
       }
     },
     "Import": {
@@ -65,6 +73,14 @@
         "Nazev": "Měďáky",
         "Zkratka": "md"
       }
+    },
+    "Denik": {
+      "Nazev": "Deník JaD",
+      "Zalozka": "Deník",
+      "ZalozkaVzhled": "Vzhled a vztahy"
+    },
+    "Nosnost": {
+      "RezimNastaven": "Jeskyně a draci: pravidlo Naložení systému dnd5e bylo nastaveno podle nosnosti na Řádky."
     }
   }
 }

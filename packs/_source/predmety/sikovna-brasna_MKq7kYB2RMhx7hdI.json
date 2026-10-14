@@ -58,7 +58,8 @@
   },
   "flags": {
     "jeskyne-a-draci": {
-      "kotva": "sikovna-brasna"
+      "kotva": "sikovna-brasna",
+      "radky": 0.3333
     }
   },
   "_stats": {

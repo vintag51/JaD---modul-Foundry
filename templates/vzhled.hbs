@@ -1,0 +1,44 @@
+<section class="tab jad-tab {{ tab.cssClass }}" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
+{{#with jad}}
+  <div class="jad-sloupce">
+    <div class="jad-sloupec jad-vzhled">
+      <h3 class="jad-pruh">Vzhled</h3>
+      <div class="jad-mrizka">
+        <label><span>Věk</span><input type="text" name="system.details.age" value="{{ vek }}" {{#unless editovatelne}}disabled{{/unless}}></label>
+        <label><span>Pleť</span><input type="text" name="system.details.skin" value="{{ plet }}" {{#unless editovatelne}}disabled{{/unless}}></label>
+        <label><span>Výška</span><input type="text" name="system.details.height" value="{{ vyska }}" {{#unless editovatelne}}disabled{{/unless}}></label>
+        <label><span>Vlasy</span><input type="text" name="system.details.hair" value="{{ vlasy }}" {{#unless editovatelne}}disabled{{/unless}}></label>
+        <label><span>Váha</span><input type="text" name="system.details.weight" value="{{ vaha }}" {{#unless editovatelne}}disabled{{/unless}}></label>
+        <label><span>Oči</span><input type="text" name="system.details.eyes" value="{{ oci }}" {{#unless editovatelne}}disabled{{/unless}}></label>
+      </div>
+      <label class="jad-blok"><span>Postava</span>
+        <textarea name="flags.jeskyne-a-draci.postava" rows="2" {{#unless editovatelne}}disabled{{/unless}}>{{ postava }}</textarea></label>
+      <label class="jad-blok"><span>Oblečení / vzezření</span>
+        <textarea name="flags.jeskyne-a-draci.obleceni" rows="3" {{#unless editovatelne}}disabled{{/unless}}>{{ obleceni }}</textarea></label>
+      <label class="jad-blok"><span>Dojem / vystupování</span>
+        <textarea name="flags.jeskyne-a-draci.dojem" rows="3" {{#unless editovatelne}}disabled{{/unless}}>{{ dojem }}</textarea></label>
+      <label class="jad-blok"><span>Tituly, hodnosti, řády…</span>
+        <textarea name="flags.jeskyne-a-draci.tituly" rows="2" {{#unless editovatelne}}disabled{{/unless}}>{{ tituly }}</textarea></label>
+    </div>
+
+    <div class="jad-sloupec jad-vztahy">
+      <h3 class="jad-pruh">Vztahy</h3>
+      <table class="jad-tabulka">
+        <thead><tr><th>Postava</th><th>Vztah</th></tr></thead>
+        <tbody>
+          {{#each vztahy}}
+          <tr>
+            <td><input type="text" name="flags.jeskyne-a-draci.vztahy.{{ i }}.kdo" value="{{ kdo }}" {{#unless ../editovatelne}}disabled{{/unless}}></td>
+            <td><input type="text" name="flags.jeskyne-a-draci.vztahy.{{ i }}.vztah" value="{{ vztah }}" {{#unless ../editovatelne}}disabled{{/unless}}></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3 class="jad-pruh">Další poznámky</h3>
+  <p class="jad-poznamka">Historie, poklady, organizace…</p>
+  <textarea class="jad-poznamky jad-poznamky-velke" name="flags.jeskyne-a-draci.poznamky" rows="14" {{#unless editovatelne}}disabled{{/unless}}>{{ poznamky }}</textarea>
+{{/with}}
+</section>

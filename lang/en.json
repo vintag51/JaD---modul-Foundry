@@ -16,6 +16,14 @@
       "Predmety": {
         "Nazev": "Czech base items",
         "Napoveda": "Weapon, armor, tool and focus choices (starting equipment, proficiencies) offer items from the JaD Items compendium instead of the English dnd5e items."
+      },
+      "Radky": {
+        "Nazev": "Encumbrance in Rows (JaD)",
+        "Napoveda": "Encumbrance is counted in Rows as in JaD: light up to 5 + Str mod, medium up to 10 + Str mod (speed −1 sáh), with a backpack heavy up to 15 + Str mod (−3 sáhy). Applies to all sheets."
+      },
+      "Zjednodusena": {
+        "Nazev": "Simplified encumbrance (JaD)",
+        "Napoveda": "No encumbrance levels: a character carries 15 + Str mod Rows without penalty, but no more. Heavy armor without the required Strength slows by 2 sáhy."
       }
     },
     "Import": {
@@ -59,6 +67,14 @@
         "Nazev": "Měďáky (copper)",
         "Zkratka": "md"
       }
+    },
+    "Denik": {
+      "Nazev": "JaD character sheet",
+      "Zalozka": "Sheet",
+      "ZalozkaVzhled": "Appearance & relations"
+    },
+    "Nosnost": {
+      "RezimNastaven": "Jeskyně a draci: the dnd5e encumbrance rule was set for Row-based encumbrance."
     }
   }
 }

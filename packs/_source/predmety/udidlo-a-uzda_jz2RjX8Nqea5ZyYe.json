@@ -70,7 +70,11 @@
   "ownership": {
     "default": 0
   },
-  "flags": {},
+  "flags": {
+    "jeskyne-a-draci": {
+      "radky": 0.3333
+    }
+  },
   "_id": "jz2RjX8Nqea5ZyYe",
   "_stats": {
     "coreVersion": "14.367",

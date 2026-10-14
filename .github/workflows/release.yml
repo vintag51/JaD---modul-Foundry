@@ -34,7 +34,7 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p dist
-          ( npm install && npm run zip ) 2>&1 | tee build.log || {
+          ( npm install && node tools/kontrola-sablon.mjs && npm run zip ) 2>&1 | tee build.log || {
             tail -n 25 build.log | while IFS= read -r l; do echo "::error::$l"; done
             exit 1
           }

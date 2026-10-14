@@ -9,6 +9,8 @@
  */
 
 import { NASTROJE, ZAKLADNI } from "./registr-predmetu.mjs";
+import { zapnoutNosnost, zajistitRezimNalozeni } from "./nosnost.mjs";
+import { registrovatDenik } from "./denik.mjs";
 
 const MODUL = "jeskyne-a-draci";
 const DATA = `modules/${MODUL}/data/kompendium`;
@@ -48,8 +50,23 @@ Hooks.once("init", () => {
     hint: "JAD.Nastaveni.Predmety.Napoveda",
     scope: "world", config: true, type: Boolean, default: true, requiresReload: true
   });
+  game.settings.register(MODUL, "nosnostRadky", {
+    name: "JAD.Nastaveni.Radky.Nazev",
+    hint: "JAD.Nastaveni.Radky.Napoveda",
+    scope: "world", config: true, type: Boolean, default: true, requiresReload: true
+  });
+  game.settings.register(MODUL, "nosnostZjednodusena", {
+    name: "JAD.Nastaveni.Zjednodusena.Nazev",
+    hint: "JAD.Nastaveni.Zjednodusena.Napoveda",
+    scope: "world", config: true, type: Boolean, default: false, requiresReload: true
+  });
   registrovatNastroje();
   if ( game.settings.get(MODUL, "jmenaMinci") ) prejmenovatMince();
+  if ( game.settings.get(MODUL, "nosnostRadky") && zapnoutNosnost() ) {
+    // Zpomalení Těžkou zbrojí bez potřebné Síly platí v JaD jen se zjednodušenou nosností.
+    if ( !game.settings.get(MODUL, "nosnostZjednodusena") ) CONFIG.DND5E.armorSpeedReduction = 0;
+  }
+  registrovatDenik();
   if ( game.settings.get(MODUL, "ceskePredmety") ) nahraditZakladniPredmety();
 });
 
@@ -103,6 +120,7 @@ Hooks.once("ready", async () => {
       ui.notifications.error(t("Import.Chyba"));
     }
     upozornitNaJednotky();
+    if ( game.settings.get(MODUL, "nosnostRadky") ) await zajistitRezimNalozeni();
     if ( game.modules.get("midi-qol")?.active ) ui.notifications.info(t("Midi.Aktivni"));
   }
 
