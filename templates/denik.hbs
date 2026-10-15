@@ -123,8 +123,8 @@
             {{#each vlastnosti}}
             <li data-ability="{{ key }}">
               <a class="jad-hvezda {{#if zachranaZdatnost}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.abilities.{{ key }}.proficient" data-druh="prepinac" data-tooltip="Zdatnost v záchraně"></a>
-              <span class="jad-nazev saving-throw {{ @root.rollableClass }}" data-action="roll" data-type="ability">{{ nazev }}</span>
-              <span class="jad-cislo">{{ zachrana }}</span>
+              <span class="jad-nazev saving-throw {{ @root.rollableClass }}" data-action="roll" data-type="ability" data-tooltip="Hodit záchranný hod">{{ nazev }}</span>
+              <span class="jad-cislo saving-throw {{ @root.rollableClass }}" data-action="roll" data-type="ability" data-tooltip="Hodit záchranný hod">{{ zachrana }}</span>
             </li>
             {{/each}}
           </ul>

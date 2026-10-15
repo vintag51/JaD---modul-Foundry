@@ -356,3 +356,8 @@
 .jad-denik .jad-tabulka thead tr { background: var(--jad-pruh); }
 .jad-denik .jad-tabulka th,
 .jad-denik .jad-zbrane th { color: #fff; background: none; border-bottom: none; padding: 3px 4px; text-shadow: none; }
+
+/* Klikací hody v deníku – zvýraznění při najetí */
+.jad-denik .jad-dovednosti .rollable { cursor: pointer; }
+.jad-denik .jad-dovednosti .rollable:hover,
+.jad-denik .jad-stit .rollable:hover { color: var(--jad-cervena); text-decoration: underline; }
