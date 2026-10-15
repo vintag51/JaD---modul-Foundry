@@ -1,5 +1,9 @@
 # Změny
 
+## 0.7.3 – oprava deníku
+
+- Tabulka zbraní na úvodní stránce deníku už nepřetéká přes Poznámky – dlouhé zásahy, typy a dosahy se zalomí.
+
 ## 0.7.2 – úpravy deníku
 
 - **Povolání a úrovně na úvodní stránce** – povolání s oborem, výběr úrovně (spustí postup na další úroveň), tlačítko pro přidání povolání a zkušenosti s upozorněním, že postava může postoupit.
