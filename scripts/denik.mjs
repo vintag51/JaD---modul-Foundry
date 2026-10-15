@@ -502,8 +502,10 @@ export function pripravitKouzla(actor, editovatelne) {
     return {
       nazev: cls.name ?? POVOLANI_NAZEV[klic] ?? klic, klic, uroven: cls.system?.levels ?? "",
       vlastnost: VLASTNOST_NAZEV[vl] ?? "—",
-      so: vl ? 8 + prof + mod + (Number(sys.bonuses?.spell?.dc) || 0) : "—",
-      utok: vl ? sign(prof + mod) : "—"
+      // dnd5e už počítá SO i útok včetně bonusů (např. předmětů); vlastní výpočet je jen záloha
+      so: vl ? (Number.isFinite(cls.spellcasting?.save) ? cls.spellcasting.save
+        : 8 + prof + mod + (Number(sys.bonuses?.spell?.dc) || 0)) : "—",
+      utok: vl ? sign(Number.isFinite(cls.spellcasting?.attack) ? cls.spellcasting.attack : prof + mod) : "—"
     };
   });
 
