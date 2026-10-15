@@ -3,6 +3,11 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag existujícího vydání, ke kterému nahrát (např. v0.7.5) – prázdné = jen sestavit"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -10,6 +15,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
     steps:
       - uses: actions/checkout@v4
         with: { path: jeskyne-a-draci }
@@ -29,6 +36,19 @@ jobs:
           python3 tools/generuj_povolani.py
           python3 tools/generuj_zazemi.py
           python3 tools/kontrola.py
+      - name: Verze podle tagu vydání
+        if: env.TAG != ''
+        working-directory: jeskyne-a-draci
+        run: |
+          python3 - <<'PY'
+          import json, os
+          tag = os.environ["TAG"]
+          m = json.load(open("module.json", encoding="utf-8"))
+          m["version"] = tag.lstrip("v")
+          m["download"] = f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/releases/download/{tag}/jeskyne-a-draci.zip"
+          json.dump(m, open("module.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+          print("Verze modulu:", m["version"])
+          PY
       - name: Sestavit kompendia a ZIP
         working-directory: jeskyne-a-draci
         run: |
@@ -40,9 +60,11 @@ jobs:
           }
           cp module.json dist/module.json
       - name: Nahrát k vydání
-        if: github.event_name == 'release'
+        if: env.TAG != ''
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ env.TAG }}
+          overwrite_files: true
           files: |
             jeskyne-a-draci/dist/module.json
             jeskyne-a-draci/dist/jeskyne-a-draci.zip

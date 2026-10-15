@@ -1,6 +1,6 @@
 # Změny
 
-## 0.7.4
+## 0.7.5
 
 - Zrušeno zalamování textu v deníku (slova se už nedělí na půl).
 - Tabulka zbraní už nepřekrývá pravý sloupec – prostřední sloupec si vezme potřebnou šířku.
