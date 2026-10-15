@@ -309,8 +309,44 @@
 .jad-denik .jad-vycerpani-stupen[data-action] { cursor: pointer; }
 .jad-denik .jad-vycerpani-stupen.plny { background: var(--jad-cervena); color: #fff; opacity: 1; }
 
-/* Na záložce Deník je postranní panel jen s portrétem – vše ostatní je přímo v deníku */
-.jad-denik:has(.tab[data-tab="denik"].active) .sidebar .card .stats { display: none; }
+/* Postranní panel jen s portrétem – vše ostatní je přímo v deníku */
+.jad-denik .sidebar .card .stats { display: none; }
 
 /* Prostřední sloupec (zbraně) se nesmí zúžit pod šířku tabulky – raději zúží ostatní, než aby přetékal */
 .jad-denik .jad-sloupec.jad-stred { min-width: min-content; }
+
+/* Šipky změny úrovně */
+.jad-denik .jad-skryte { display: none !important; }
+.jad-denik .jad-uroven-sipka { color: #2e6b1f; font-size: 15px; cursor: pointer; }
+.jad-denik .jad-uroven-sipka.jad-dolu { color: var(--jad-tlumene); font-size: 12px; }
+.jad-denik .jad-uroven-sipka:hover { filter: brightness(1.3); }
+
+/* ------------------------------------------------ Záložka Detaily ve stylu deníku */
+.jad-denik.dnd5e2.tab-details .tab-body { padding-top: 10px; }
+.jad-denik.dnd5e2 .ability-scores { display: none; } /* vlastnosti se upravují přímo v deníku */
+.jad-denik.dnd5e2 .tab[data-tab="details"] {
+  font-family: "Alegreya", "Georgia", "Times New Roman", serif;
+  color: #2a1d17;
+  --filigree-background-color: #fffaf0;
+  --filigree-border-color: #3b2a22;
+  --filigree-drop-shadow: none;
+  --dnd5e-border-gold: 1px solid #3b2a22;
+  --color-text-title: #fff;
+}
+.jad-denik.dnd5e2 .tab[data-tab="details"] filigree-box > h3,
+.jad-denik.dnd5e2 .tab[data-tab="details"] .pills-group > h3 {
+  background: linear-gradient(90deg, #2b0b08 0%, #6e1a14 50%, #2b0b08 100%);
+  color: #fff; padding: 3px 8px; margin: 0 0 6px; border: none; border-radius: 2px;
+  font-size: 0.8rem; letter-spacing: .08em; justify-content: center;
+  clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 50%, calc(100% - 6px) 100%, 6px 100%, 0 50%);
+}
+.jad-denik.dnd5e2 .tab[data-tab="details"] filigree-box > h3 { margin: 8px 8px 6px; }
+.jad-denik.dnd5e2 .tab[data-tab="details"] filigree-box > h3 *,
+.jad-denik.dnd5e2 .tab[data-tab="details"] .pills-group > h3 * { color: #fff; }
+.jad-denik.dnd5e2 .tab[data-tab="details"] .pills-group > h3 .config-button { margin-left: 6px; }
+.jad-denik.dnd5e2 .tab[data-tab="details"] .pill-lg {
+  background: #fffaf0; border: 1px solid #3b2a22; box-shadow: none; border-radius: 6px;
+}
+.jad-denik.dnd5e2 .tab[data-tab="details"] .pill-lg .title { font-family: inherit; color: #2a1d17; }
+.jad-denik.dnd5e2 .tab[data-tab="details"] .pill { background: #e9e4d8; border-color: #3b2a22; color: #2a1d17; }
+.jad-denik.dnd5e2 .tab[data-tab="details"] li:nth-child(even) { background-color: rgba(0,0,0,.03); }

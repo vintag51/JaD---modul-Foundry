@@ -62,7 +62,8 @@ export function vytvoritDenik() {
         jadPripravit: DenikJaD.#pripravit,
         jadPozice: DenikJaD.#pozice,
         jadSmazat: DenikJaD.#smazat,
-        jadVycerpani: DenikJaD.#vycerpani
+        jadVycerpani: DenikJaD.#vycerpani,
+        jadUroven: DenikJaD.#uroven
       }
     };
 
@@ -258,11 +259,7 @@ export function vytvoritDenik() {
       const celkem = sys.details?.level ?? 0;
       const povolaniRadek = (actor.itemTypes.class ?? []).map(cls => ({
         id: cls.id, nazev: cls.name, obor: cls.subclass?.name ?? "", uroven: cls.system.levels,
-        urovne: Array.fromRange(maxUroven, 1).map(u => {
-          const rozdil = u - cls.system.levels;
-          return { hodnota: rozdil, popis: rozdil ? `${u} (${rozdil > 0 ? "+" : ""}${rozdil})` : `${u}`,
-            vybrano: !rozdil, zakazano: rozdil > maxUroven - celkem };
-        })
+        dalsi: cls.system.levels + 1, muzeNahoru: celkem < maxUroven, muzeDolu: cls.system.levels > 1
       }));
       const xp = sys.details?.xp ?? {};
       const zkusenosti = (() => { try { return game.settings.get("dnd5e", "levelingMode"); } catch { return ""; } })() === "noxp" ? null : {
@@ -438,6 +435,15 @@ export function vytvoritDenik() {
     static async #otevrit(event, target) {
       const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
       return item?.sheet.render(true);
+    }
+
+    /** Změnit úroveň povolání o 1 – předá skrytému výběru, aby proběhl standardní postup dnd5e. */
+    static async #uroven(event, target) {
+      const vyber = target.closest("[data-item-id]")?.querySelector("select.level-selector");
+      if ( !vyber ) return;
+      vyber.value = target.dataset.smer;
+      vyber.dispatchEvent(new Event("change", { bubbles: true }));
+      vyber.value = "0";
     }
 
     /** Nastavit stupeň vyčerpání (klik na už nastavený stupeň ho sníží o jeden). */

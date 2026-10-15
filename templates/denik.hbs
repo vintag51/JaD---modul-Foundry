@@ -5,11 +5,15 @@
     {{#each povolaniRadek}}
     <div class="jad-povolani-stitek" data-item-id="{{ id }}">
       <a class="jad-povolani-nazev" data-action="jadOtevrit" data-id="{{ id }}">{{ nazev }}{{#if obor}} <span class="jad-podpopis">({{ obor }})</span>{{/if}}</a>
+      <span class="jad-povolani-uroven">{{ uroven }}</span>
       {{#if ../editovatelne}}
-      <select class="level-selector" data-tooltip="Změnit úroveň – spustí postup na další úroveň">
-        {{#each urovne}}<option value="{{ hodnota }}" {{#if vybrano}}selected{{/if}} {{#if zakazano}}disabled{{/if}}>{{ popis }}</option>{{/each}}
+      {{!-- Skrytý výběr – změnu úrovně (včetně postupu) obslouží dnd5e; šipky mění vždy jen o 1 --}}
+      <select class="level-selector jad-skryte" tabindex="-1" aria-hidden="true">
+        <option value="0" selected></option><option value="1"></option><option value="-1"></option>
       </select>
-      {{else}}<span class="jad-povolani-uroven">{{ uroven }}</span>{{/if}}
+      {{#if muzeNahoru}}<a class="jad-uroven-sipka" data-action="jadUroven" data-smer="1" data-tooltip="Postoupit na {{ dalsi }}. úroveň"><i class="fas fa-circle-up"></i></a>{{/if}}
+      {{#if muzeDolu}}<a class="jad-uroven-sipka jad-dolu" data-action="jadUroven" data-smer="-1" data-tooltip="Vrátit o úroveň níž"><i class="fas fa-circle-down"></i></a>{{/if}}
+      {{/if}}
     </div>
     {{else}}
     <span class="jad-prazdne">Postava zatím nemá povolání.</span>
