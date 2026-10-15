@@ -13,7 +13,7 @@ const vzor = {
   rollableClass: "rollable",
   tab: { cssClass: "active", id: "denik", group: "primary" },
   jad: {
-    prof: "+2", inspirace: false, iniciativa: "+3", oc: 15, editovatelne: true, nosenaZbroj: "Kroužková zbroj + Štít",
+    prof: "+2", inspirace: false, iniciativa: "+3", oc: 15, editovatelne: true, povolaniRadek: [{ id: "p", nazev: "Bojovník", obor: "Mistr zbraní", uroven: 3, urovne: [{ hodnota: 0, popis: "3", vybrano: true }, { hodnota: 1, popis: "4 (+1)" }] }], zkusenosti: { value: 900, max: 900, postup: true }, nosenaZbroj: "Kroužková zbroj + Štít",
     upravy: true,
     vlastnosti: [{ key: "str", nazev: "Síla", hodnota: 14, zdroj: 14, oprava: "+2", zachrana: "+4", zachranaZdatnost: true }],
     skupiny: [{ key: "str", nazev: "Síla", dovednosti: [{ key: "ath", nazev: "Atletika", celkem: "+4", zdatnost: "plna" }] }],

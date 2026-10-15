@@ -1,6 +1,29 @@
 <section class="tab jad-tab {{ tab.cssClass }}" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
 {{#with jad}}
   {{#if chyba}}<p class="jad-nalozeni jad-stupen-pretizeni">Deník JaD se nepodařilo připravit: {{ chyba }}</p>{{else}}
+  <div class="jad-povolani-radek">
+    {{#each povolaniRadek}}
+    <div class="jad-povolani-stitek" data-item-id="{{ id }}">
+      <a class="jad-povolani-nazev" data-action="jadOtevrit" data-id="{{ id }}">{{ nazev }}{{#if obor}} <span class="jad-podpopis">({{ obor }})</span>{{/if}}</a>
+      {{#if ../editovatelne}}
+      <select class="level-selector" data-tooltip="Změnit úroveň – spustí postup na další úroveň">
+        {{#each urovne}}<option value="{{ hodnota }}" {{#if vybrano}}selected{{/if}} {{#if zakazano}}disabled{{/if}}>{{ popis }}</option>{{/each}}
+      </select>
+      {{else}}<span class="jad-povolani-uroven">{{ uroven }}</span>{{/if}}
+    </div>
+    {{else}}
+    <span class="jad-prazdne">Postava zatím nemá povolání.</span>
+    {{/each}}
+    {{#if editovatelne}}
+    <a class="jad-tlacitko" data-action="findItem" data-item-type="class" data-tooltip="Přidat povolání z kompendia"><i class="fas fa-plus"></i> Povolání</a>
+    {{/if}}
+    {{#if zkusenosti}}
+    <span class="jad-zkusenosti {{#if zkusenosti.postup}}jad-postup{{/if}}">
+      Zkušenosti: {{ zkusenosti.value }}{{#if zkusenosti.max}} / {{ zkusenosti.max }}{{/if}}
+      {{#if zkusenosti.postup}}<strong>– můžeš postoupit na další úroveň!</strong>{{/if}}
+    </span>
+    {{/if}}
+  </div>
   <div class="jad-horni">
     <div class="jad-ctverec"><span class="jad-hodnota">{{ prof }}</span><span class="jad-popis">Zdatnostní bonus</span></div>
     <label class="jad-ctverec jad-inspirace">

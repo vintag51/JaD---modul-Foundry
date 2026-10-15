@@ -286,3 +286,12 @@
 .jad-denik .jad-nosena-zbroj { display: flex; align-items: baseline; gap: 6px; padding: 4px 6px 2px; font-size: 13px; }
 .jad-denik .jad-nosena-zbroj .jad-oc-maly { margin-left: auto; font-weight: bold; white-space: nowrap; }
 .jad-denik .jad-podpopis { font-size: 11px; text-transform: uppercase; opacity: .7; margin-right: 2px; }
+
+/* Povolání a úrovně na úvodní stránce */
+.jad-denik .jad-povolani-radek { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 13px; }
+.jad-denik .jad-povolani-stitek { display: flex; align-items: center; gap: 6px; padding: 2px 4px 2px 8px; border: 1px solid var(--jad-okraj, #8a7350); border-radius: 4px; background: rgba(255,255,255,.4); }
+.jad-denik .jad-povolani-nazev { font-weight: bold; cursor: pointer; }
+.jad-denik .jad-povolani-stitek select.level-selector { width: auto; height: 22px; padding: 0 2px; font-size: 12px; }
+.jad-denik .jad-povolani-uroven { font-weight: bold; min-width: 1.5em; text-align: center; }
+.jad-denik .jad-zkusenosti { margin-left: auto; white-space: nowrap; }
+.jad-denik .jad-zkusenosti.jad-postup strong { color: #2e6b1f; }

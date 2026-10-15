@@ -252,11 +252,28 @@ export function vytvoritDenik() {
 
       const jazyky = sys.traits?.languages?.labels;
       const hp = sys.attributes.hp ?? {};
+      // Povolání a úrovně – výběr úrovně obslouží dnd5e (.level-selector → postup úrovní)
+      const maxUroven = CONFIG.DND5E.maxLevel ?? 20;
+      const celkem = sys.details?.level ?? 0;
+      const povolaniRadek = (actor.itemTypes.class ?? []).map(cls => ({
+        id: cls.id, nazev: cls.name, obor: cls.subclass?.name ?? "", uroven: cls.system.levels,
+        urovne: Array.fromRange(maxUroven, 1).map(u => {
+          const rozdil = u - cls.system.levels;
+          return { hodnota: rozdil, popis: rozdil ? `${u} (${rozdil > 0 ? "+" : ""}${rozdil})` : `${u}`,
+            vybrano: !rozdil, zakazano: rozdil > maxUroven - celkem };
+        })
+      }));
+      const xp = sys.details?.xp ?? {};
+      const zkusenosti = (() => { try { return game.settings.get("dnd5e", "levelingMode"); } catch { return ""; } })() === "noxp" ? null : {
+        value: xp.value ?? 0, max: xp.max ?? "", postup: !!(xp.max && xp.value >= xp.max && celkem < maxUroven)
+      };
+
       const hd = sys.attributes.hd ?? {};
       const smrt = sys.attributes.death ?? {};
 
       return {
         prof: sign(sys.attributes.prof ?? 0),
+        povolaniRadek, celkovaUroven: celkem, zkusenosti,
         inspirace: !!sys.attributes.inspiration,
         iniciativa: sign(sys.attributes.init?.total ?? sys.attributes.init?.mod ?? 0),
         vlastnosti, skupiny: Object.values(skupiny), pomucky,
