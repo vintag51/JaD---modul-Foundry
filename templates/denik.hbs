@@ -232,6 +232,14 @@
         </div>
       </div>
 
+      <div class="jad-vycerpani">
+        <span class="jad-podpopis">Vyčerpání</span>
+        {{#each vycerpani.stupne}}
+        <a class="jad-vycerpani-stupen {{#if plny}}plny{{/if}}" {{#if ../editovatelne}}data-action="jadVycerpani"{{/if}} data-stupen="{{ stupen }}"
+           data-tooltip="{{ stupen }}. stupeň vyčerpání">{{ stupen }}</a>
+        {{/each}}
+      </div>
+
       <h3 class="jad-pruh">Poznámky k hraní postavy</h3>
       <textarea data-cesta="flags.jeskyne-a-draci.poznamkyHrani" data-typ="text" class="jad-pole jad-poznamky" rows="8" {{#unless editovatelne}}disabled{{/unless}}>{{ poznamky }}</textarea>
     </div>

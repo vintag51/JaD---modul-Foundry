@@ -61,7 +61,8 @@ export function vytvoritDenik() {
         jadVybavit: DenikJaD.#vybavit,
         jadPripravit: DenikJaD.#pripravit,
         jadPozice: DenikJaD.#pozice,
-        jadSmazat: DenikJaD.#smazat
+        jadSmazat: DenikJaD.#smazat,
+        jadVycerpani: DenikJaD.#vycerpani
       }
     };
 
@@ -297,6 +298,11 @@ export function vytvoritDenik() {
         hp: { value: hp.value ?? 0, max: hp.max ?? 0, temp: hp.temp || "",
           maxRucne: actor._source?.system?.attributes?.hp?.max ?? "" },
         hd: { value: hd.value ?? "", max: hd.max ?? "" },
+        vycerpani: (() => {
+          const max = CONFIG.DND5E.conditionTypes?.exhaustion?.levels ?? 6;
+          const v = sys.attributes.exhaustion ?? 0;
+          return { value: v, stupne: Array.fromRange(max, 1).map(stupen => ({ stupen, plny: stupen <= v })) };
+        })(),
         smrt: {
           uspechy: [1, 2, 3].map(n => n <= (smrt.success ?? 0)),
           neuspechy: [1, 2, 3].map(n => n <= (smrt.failure ?? 0))
@@ -432,6 +438,13 @@ export function vytvoritDenik() {
     static async #otevrit(event, target) {
       const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
       return item?.sheet.render(true);
+    }
+
+    /** Nastavit stupeň vyčerpání (klik na už nastavený stupeň ho sníží o jeden). */
+    static async #vycerpani(event, target) {
+      const stupen = Number(target.dataset.stupen);
+      const aktualni = this.actor.system.attributes.exhaustion ?? 0;
+      return this.actor.update({ "system.attributes.exhaustion": stupen === aktualni ? stupen - 1 : stupen });
     }
 
     /** Připravit / odložit kouzlo (kroužek P). */

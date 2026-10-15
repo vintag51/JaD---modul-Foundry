@@ -31,6 +31,7 @@ const vzor = {
     nalozeni: { radky: 7, maximum: 17, lehke: 7, stredni: 12, tezke: 17, batoh: true, stupen: "Lehké", tridaStupne: "lehke", zjednodusena: false },
     mince: [{ key: "gp", cesta: "system.currency.gp", hodnota: 10, nazev: "zl" }],
     jazyky: "obecná řeč", hp: { value: 10, max: 12, temp: "", maxRucne: "" }, hd: { value: 1, max: 1 },
+    vycerpani: { value: 1, stupne: [{ stupen: 1, plny: true }, { stupen: 2, plny: false }] },
     smrt: { uspechy: [true, false, false], neuspechy: [false, false, false] }, poznamky: "",
     // vzhled
     vek: "30", plet: "", vyska: "", vlasy: "", vaha: "", oci: "", postava: "", obleceni: "", dojem: "", tituly: "",
