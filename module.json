@@ -1,7 +1,7 @@
 {
   "id": "jeskyne-a-draci",
   "title": "Jeskyně a draci pro Foundry VTT (komunitní tvorba)",
-  "description": "<p>Obsah kompatibilní s hrou Jeskyně a draci pro systém dnd5e – automatizovaná kouzla, rasy a povolání s obory (předměty připravujeme): české názvy, stupně, seslání, útoky, záchrany, zranění, léčení, škálování, efekty a seznamy kouzel povolání. Volitelně rozšířené o Midi-QOL + DAE.</p><p><img src=\"modules/jeskyne-a-draci/assets/logo-jad-komunitni.jpg\" alt=\"JaD – komunitní tvorba\" width=\"160\"></p><p><em>Jeskyně a draci pro Foundry VTT je nezávislá tvorba autora vintag51 a není spojena s autory ani vydavatelem hry Jeskyně a Draci (dostupné na imago.cz). Publikováno pod Licencí JaD pro třetí strany.</em></p>",
+  "description": "<p>Neoficiální komunitní modul, který přináší hru Jeskyně a draci (JaD) na systém D&amp;D 5e: všechna kouzla JaD včetně unikátních (plně automatizovaná), rasy, povolání s obory, zázemí, odbornosti, předměty a kouzelné předměty, počáteční vybavení, vlastní Deník JaD a nosnost na Řádky podle pravidel JaD.</p><p><img src=\"modules/jeskyne-a-draci/assets/logo-jad-komunitni.jpg\" alt=\"JaD – komunitní tvorba\" width=\"160\"></p><p><em>Jeskyně a draci pro Foundry VTT je nezávislá tvorba autora vintag51 a není spojena s autory ani vydavatelem hry Jeskyně a Draci (dostupné na imago.cz). Publikováno pod Licencí JaD pro třetí strany.</em></p>",
   "version": "0.7.3",
   "authors": [
     {
