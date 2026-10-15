@@ -1,5 +1,14 @@
 # Změny
 
+## 0.7.2 – úpravy deníku
+
+- **Povolání a úrovně na úvodní stránce** – povolání s oborem, výběr úrovně (spustí postup na další úroveň), tlačítko pro přidání povolání a zkušenosti s upozorněním, že postava může postoupit.
+- **Nápověda k nosnosti** – po najetí myší na Řádky se ukáže, jak se nosnost spočítala (předměty, mince, Síla, batoh, meze naložení).
+- **Blok Zbroj** – ukazuje nošenou zbroj a štít s výsledným OČ a zdatnosti se zbrojí.
+- **Vyčerpání** přímo v deníku.
+- **Levý panel** na záložce Deník ukazuje jen portrét – vše ostatní je v deníku.
+- SO a útok kouzel u povolání zahrnují i bonusy z předmětů.
+
 ## 0.7.1 – čeština v deníku
 
 Zbytek popisků na listu postavy je nově česky a v názvosloví JaD: postranní panel, inventář, kouzla, schopnosti, efekty a životopis (Rychlost, Body výdrže, Pozice kouzel, Pomůcky, Zdatnosti, Smysly, Jazyky, Vlastnosti zbraní a další).
