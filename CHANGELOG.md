@@ -2,6 +2,9 @@
 
 ## 0.7.4
 
+- Zrušeno zalamování textu v deníku (slova se už nedělí na půl).
+- Tabulka zbraní už nepřekrývá pravý sloupec – prostřední sloupec si vezme potřebnou šířku.
+- Poznámky k hraní postavy jsou nově v záložce Vzhled.
 - Aktuální popis modulu v manifestu.
 
 ## 0.7.3 – oprava deníku
