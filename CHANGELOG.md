@@ -1,14 +1,17 @@
 # Změny
 
-## 0.7.5
+## 0.7.5 – úpravy deníku
 
-- Zrušeno zalamování textu v deníku (slova se už nedělí na půl).
-- Tabulka zbraní už nepřekrývá pravý sloupec – prostřední sloupec si vezme potřebnou šířku.
-- Poznámky k hraní postavy jsou nově v záložce Vzhled.
 - Úroveň povolání se mění šipkou vždy o jednu úroveň.
 - Levý panel ukazuje na všech záložkách jen portrét.
 - Záložka Detaily má vzhled deníku JaD.
 - Záhlaví tabulek zbraní, výbavy a kouzel je čitelné (bílý text).
+
+## 0.7.4 – úpravy deníku
+
+- Zrušeno zalamování textu v deníku (slova se už nedělí na půl).
+- Tabulka zbraní už nepřekrývá pravý sloupec – prostřední sloupec si vezme potřebnou šířku.
+- Poznámky k hraní postavy jsou nově v záložce Vzhled.
 - Aktuální popis modulu v manifestu.
 
 ## 0.7.3 – oprava deníku
