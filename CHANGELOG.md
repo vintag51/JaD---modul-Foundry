@@ -8,6 +8,7 @@
 - Úroveň povolání se mění šipkou vždy o jednu úroveň.
 - Levý panel ukazuje na všech záložkách jen portrét.
 - Záložka Detaily má vzhled deníku JaD.
+- Záhlaví tabulek zbraní, výbavy a kouzel je čitelné (bílý text).
 - Aktuální popis modulu v manifestu.
 
 ## 0.7.3 – oprava deníku

@@ -350,3 +350,9 @@
 .jad-denik.dnd5e2 .tab[data-tab="details"] .pill-lg .title { font-family: inherit; color: #2a1d17; }
 .jad-denik.dnd5e2 .tab[data-tab="details"] .pill { background: #e9e4d8; border-color: #3b2a22; color: #2a1d17; }
 .jad-denik.dnd5e2 .tab[data-tab="details"] li:nth-child(even) { background-color: rgba(0,0,0,.03); }
+
+/* Záhlaví tabulek (zbraně, výbava, kouzla): bílý text na tmavém pruhu – jinak splývá s pozadím Foundry */
+.jad-denik .jad-tabulka thead,
+.jad-denik .jad-tabulka thead tr { background: var(--jad-pruh); }
+.jad-denik .jad-tabulka th,
+.jad-denik .jad-zbrane th { color: #fff; background: none; border-bottom: none; padding: 3px 4px; text-shadow: none; }
