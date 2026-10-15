@@ -1,5 +1,9 @@
 # Změny
 
+## 0.7.4
+
+- Aktuální popis modulu v manifestu.
+
 ## 0.7.3 – oprava deníku
 
 - Tabulka zbraní na úvodní stránce deníku už nepřetéká přes Poznámky – dlouhé zásahy, typy a dosahy se zalomí.
