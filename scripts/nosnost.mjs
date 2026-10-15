@@ -148,7 +148,40 @@ export function spocitatNalozeni(actor) {
   if ( radky > maximum ) stupen = "pretizeni";
   else if ( radky > stredni ) stupen = "tezke";
   else if ( radky > lehke ) stupen = "stredni";
-  return { radky, presne: celkem, lehke, stredni, tezke, maximum, batoh, stupen, polozky, zjednodusena };
+  const radkyMinci = Math.ceil(mince / 100) * TRETINA;
+  return { radky, presne: celkem, lehke, stredni, tezke, maximum, batoh, stupen, polozky, zjednodusena,
+    rozpis: { predmety: celkem - radkyMinci, mince, radkyMinci, oprava, nasobek, velikost,
+      mohutna: !!actor.flags?.dnd5e?.powerfulBuild } };
+}
+
+const VELIKOST_NAZEV = { tiny: "drobná", sm: "malá", med: "střední", lg: "velká", huge: "obrovská", grg: "gigantická" };
+
+/**
+ * Textový rozpis výpočtu nosnosti (HTML pro data-tooltip).
+ * @param {object} n  výsledek spocitatNalozeni
+ */
+export function rozpisNalozeni(n) {
+  if ( !n?.rozpis ) return "";
+  const r = n.rozpis;
+  const sila = r.oprava >= 0 ? `+${r.oprava}` : `${r.oprava}`;
+  const nas = r.nasobek !== 1 ? ` × ${r.nasobek} (${VELIKOST_NAZEV[r.velikost] ?? r.velikost} velikost${r.mohutna ? ", Mohutná postava" : ""})` : "";
+  const radky = [
+    (Math.abs(n.presne - n.radky) > 1e-6
+      ? `<strong>Neseno: ${formatRadky(n.presne)} → zaokrouhleno nahoru ${n.radky} Řádků</strong>`
+      : `<strong>Neseno: ${n.radky} Řádků</strong>`),
+    `Předměty: ${formatRadky(r.predmety) || "0"}`,
+    `Mince: ${r.mince} ks → ${formatRadky(r.radkyMinci) || "0"} (⅓ Řádku za každých započatých 100)`,
+    "",
+    `<strong>Maximum: ${n.maximum} Řádků</strong>`
+  ];
+  if ( n.zjednodusena ) radky.push(`Zjednodušená nosnost: 15 ${sila} (Síla)${nas} = ${n.tezke}`);
+  else {
+    radky.push(n.batoh ? `S batohem: 15 ${sila} (Síla)${nas} = ${n.tezke}`
+      : `Bez batohu: 10 ${sila} (Síla)${nas} = ${n.stredni} (batoh by dal ${n.tezke})`);
+    radky.push("", `Lehké do ${n.lehke} · Střední do ${n.stredni} (−1 sáh) · Těžké do ${n.tezke} (−3 sáhy)`);
+  }
+  radky.push("", "<em>Nepočítá se: odložené předměty a obsah beztížných kontejnerů.</em>");
+  return radky.join("<br>");
 }
 
 /** Zapne výpočet nosnosti podle Řádků (volá se v init). */

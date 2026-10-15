@@ -5,7 +5,7 @@
  * OČ, záchrany, rychlost dle Naložení, zbraně, kouzla, výbava v Řádcích, schopnosti) a
  * „Vzhled a vztahy“. Ostatní záložky (Inventář, Schopnosti, Kouzla, Efekty…) zůstávají z dnd5e.
  */
-import { MODUL, formatRadky, odlozeny, radkyPredmetu, spocitatNalozeni } from "./nosnost.mjs";
+import { MODUL, formatRadky, odlozeny, radkyPredmetu, rozpisNalozeni, spocitatNalozeni } from "./nosnost.mjs";
 
 const SABLONY = `modules/${MODUL}/templates`;
 
@@ -287,7 +287,7 @@ export function vytvoritDenik() {
         nalozeni: nalozeni ? {
           radky: nalozeni.radky, maximum: nalozeni.maximum, lehke: nalozeni.lehke, stredni: nalozeni.stredni,
           tezke: nalozeni.tezke, batoh: nalozeni.batoh, stupen: STUPNE[nalozeni.stupen], tridaStupne: nalozeni.stupen,
-          zjednodusena: nalozeni.zjednodusena
+          zjednodusena: nalozeni.zjednodusena, rozpis: rozpisNalozeni(nalozeni)
         } : null,
         mince: ["gp", "sp", "cp"].map(k => ({
           key: k, cesta: `system.currency.${k}`, hodnota: sys.currency?.[k] ?? 0,
@@ -335,6 +335,13 @@ export function vytvoritDenik() {
       // Světlý (pergamenový) motiv dnd5e pro všechny záložky Deníku JaD
       this.element.classList.remove("theme-dark");
       this.element.classList.add("themed", "theme-light");
+      // Rozpis výpočtu Řádků i u ukazatele zatížení v záložce Inventář
+      const rozpis = rozpisNalozeni(this.actor.system.attributes?.encumbrance?.jad);
+      if ( rozpis ) for ( const el of this.element.querySelectorAll(".encumbrance") ) {
+        el.dataset.tooltipHtml = rozpis;
+        el.dataset.tooltipClass = "jad-tooltip";
+        el.dataset.tooltipDirection = "UP";
+      }
       for ( const input of this.element.querySelectorAll("input.jad-pocet") ) {
         input.addEventListener("change", event => {
           event.stopPropagation();

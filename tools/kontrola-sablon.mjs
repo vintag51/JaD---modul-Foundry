@@ -64,7 +64,7 @@ globalThis.Math.clamp ??= (v, a, b) => Math.min(Math.max(v, a), b);
 globalThis.CONFIG = { DND5E: { actorSizes: { tiny: {}, sm: {}, med: {}, lg: {}, huge: {}, grg: {} } } };
 const nastaveni = { nosnostZjednodusena: false };
 globalThis.game = { settings: { get: (m, k) => nastaveni[k] } };
-const { spocitatNalozeni, formatRadky } = await import("../scripts/nosnost.mjs");
+const { spocitatNalozeni, formatRadky, rozpisNalozeni } = await import("../scripts/nosnost.mjs");
 
 const predmet = (id, type, system, flags = {}) => ({ id, type, system: { quantity: 1, weight: { value: 0 }, properties: new Set(), ...system }, flags });
 const items = [
@@ -88,6 +88,8 @@ items[0].flags = { "jeskyne-a-draci": { odlozeno: true } };
 const bez = spocitatNalozeni(actor);
 if ( bez.maximum !== 12 || bez.radky !== 8 ) chyba(`odložený Batoh: ${bez.radky}/${bez.maximum}, čekáno 8/12`);
 if ( formatRadky(2 + 1 / 3) !== "2⅓" || formatRadky(2 / 3) !== "⅔" ) chyba("formatRadky");
+const rozpis = rozpisNalozeni(n); if ( process.env.UKAZ ) console.log(rozpis.replaceAll("<br>", "\n"));
+if ( !rozpis.includes("S batohem: 15 +2 (Síla) = 17") || !rozpis.includes("Mince: 50 ks") ) chyba("rozpis nosnosti", rozpis);
 console.log(`Nosnost: ${n.radky}/${n.maximum} (${n.stupen}), bez Batohu ${bez.radky}/${bez.maximum}`);
 
 if ( chyby ) process.exit(1);

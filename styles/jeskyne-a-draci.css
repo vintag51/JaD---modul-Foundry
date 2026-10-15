@@ -295,3 +295,8 @@
 .jad-denik .jad-povolani-uroven { font-weight: bold; min-width: 1.5em; text-align: center; }
 .jad-denik .jad-zkusenosti { margin-left: auto; white-space: nowrap; }
 .jad-denik .jad-zkusenosti.jad-postup strong { color: #2e6b1f; }
+
+/* Rozpis výpočtu nosnosti */
+.jad-denik .jad-nalozeni[data-tooltip-html] { cursor: help; }
+.jad-denik .jad-info { opacity: .6; font-size: .85em; }
+#tooltip.jad-tooltip { text-align: left; max-width: 380px; line-height: 1.35; }

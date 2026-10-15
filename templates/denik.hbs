@@ -247,8 +247,8 @@
         {{/each}}
       </div>
       {{#if nalozeni}}
-      <div class="jad-nalozeni jad-stupen-{{ nalozeni.tridaStupne }}">
-        <strong>{{ nalozeni.radky }} / {{ nalozeni.maximum }} Řádků</strong> – {{ nalozeni.stupen }} naložení
+      <div class="jad-nalozeni jad-stupen-{{ nalozeni.tridaStupne }}" data-tooltip-html="{{ nalozeni.rozpis }}" data-tooltip-class="jad-tooltip" data-tooltip-direction="UP">
+        <strong>{{ nalozeni.radky }} / {{ nalozeni.maximum }} Řádků</strong> – {{ nalozeni.stupen }} naložení <i class="fas fa-circle-info jad-info"></i>
         <span class="jad-meze">
           {{#if nalozeni.zjednodusena}}(zjednodušená nosnost: max. {{ nalozeni.tezke }})
           {{else}}(Lehké do {{ nalozeni.lehke }}, Střední do {{ nalozeni.stredni }}, Těžké do {{ nalozeni.tezke }}{{#unless nalozeni.batoh}} – jen s Batohem{{/unless}}){{/if}}
