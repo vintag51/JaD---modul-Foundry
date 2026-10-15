@@ -311,3 +311,16 @@
 
 /* Na záložce Deník je postranní panel jen s portrétem – vše ostatní je přímo v deníku */
 .jad-denik:has(.tab[data-tab="denik"].active) .sidebar .card .stats { display: none; }
+
+/* Tabulka zbraní se vždy vejde do svého sloupce (dlouhé zásahy a dosahy se zalomí, nepřetečou přes Poznámky) */
+.jad-denik .jad-sloupec { overflow-wrap: anywhere; }
+.jad-denik .jad-zbrane { table-layout: fixed; width: 100%; }
+.jad-denik .jad-zbrane .jad-z-nazev { width: 36%; }
+.jad-denik .jad-zbrane .jad-z-bonus { width: 12%; }
+.jad-denik .jad-zbrane .jad-z-zasah { width: 20%; }
+.jad-denik .jad-zbrane .jad-z-typ { width: 16%; }
+.jad-denik .jad-zbrane .jad-z-dosah { width: 16%; }
+.jad-denik .jad-zbrane td, .jad-denik .jad-zbrane td:nth-child(3) { white-space: normal; overflow-wrap: break-word; }
+.jad-denik .jad-zbrane td:nth-child(2) { white-space: nowrap; }
+.jad-denik .jad-zbrane td:first-child { width: auto; }
+.jad-denik .jad-zbrane th { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
