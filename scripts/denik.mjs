@@ -323,7 +323,7 @@ export function vytvoritDenik() {
       return {
         vek: d.age ?? "", plet: d.skin ?? "", vyska: d.height ?? "", vlasy: d.hair ?? "", vaha: d.weight ?? "", oci: d.eyes ?? "",
         postava: f.postava ?? "", obleceni: f.obleceni ?? "", dojem: f.dojem ?? "", tituly: f.tituly ?? "",
-        poznamky: f.poznamky ?? "", vztahy, editovatelne: this.isEditable
+        poznamky: f.poznamky ?? "", poznamkyHrani: f.poznamkyHrani ?? "", vztahy, editovatelne: this.isEditable
       };
     }
 
