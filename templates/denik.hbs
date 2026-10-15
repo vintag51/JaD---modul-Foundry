@@ -75,8 +75,14 @@
 
     {{!-- Prostřední sloupec --}}
     <div class="jad-sloupec jad-stred">
-      <h3 class="jad-pruh">Obranné číslo</h3>
+      <h3 class="jad-pruh">Zbroj</h3>
+      <div class="jad-nosena-zbroj">
+        <span class="jad-podpopis">Na sobě:</span>
+        {{#if nosenaZbroj}}{{ nosenaZbroj }}{{else}}bez zbroje{{/if}}
+        <span class="jad-oc-maly">OČ {{ oc }}</span>
+      </div>
       <div class="jad-zdatnosti-zbroj">
+        <span class="jad-podpopis">Zdatnost:</span>
         <a class="jad-hvezda {{#if zbroj.lehke}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.armorProf.value" data-klic="lgt" data-druh="sada"></a> Lehké
         <a class="jad-hvezda {{#if zbroj.stredni}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.armorProf.value" data-klic="med" data-druh="sada"></a> Střední
         <a class="jad-hvezda {{#if zbroj.tezke}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.armorProf.value" data-klic="hvy" data-druh="sada"></a> Těžké
@@ -171,6 +177,7 @@
         </tbody>
       </table>
       <div class="jad-zdatnosti-zbroj">
+        <span class="jad-podpopis">Zdatnost:</span>
         <a class="jad-hvezda {{#if zbraneZdatnost.jednoduche}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.weaponProf.value" data-klic="sim" data-druh="sada"></a> Jednoduché
         <a class="jad-hvezda {{#if zbraneZdatnost.valecne}}plna{{/if}}" data-action="jadZdatnost" data-cesta="system.traits.weaponProf.value" data-klic="mar" data-druh="sada"></a> Válečné
       </div>

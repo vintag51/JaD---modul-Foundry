@@ -261,6 +261,8 @@ export function vytvoritDenik() {
         iniciativa: sign(sys.attributes.init?.total ?? sys.attributes.init?.mod ?? 0),
         vlastnosti, skupiny: Object.values(skupiny), pomucky,
         oc: sys.attributes.ac?.value ?? 10,
+        nosenaZbroj: [sys.attributes.ac?.equippedArmor, sys.attributes.ac?.equippedShield]
+          .filter(_ => _).map(i => i.name).join(" + "),
         zbroj: { lehke: zbroj.has?.("lgt"), stredni: zbroj.has?.("med"), tezke: zbroj.has?.("hvy"), stity: zbroj.has?.("shl") },
         zbraneZdatnost: { jednoduche: zbrane.has?.("sim"), valecne: zbrane.has?.("mar") },
         pasivni: PASIVNI.map(([k, nazev]) => ({ nazev, hodnota: sys.skills?.[k]?.passive ?? "" })),

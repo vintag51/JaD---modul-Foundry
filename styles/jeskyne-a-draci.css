@@ -281,3 +281,8 @@
   border-bottom: 1px solid var(--jad-okraj); }
 .jad-denik .jad-stupen-znak { display: inline-block; min-width: 1.4em; text-align: center; font-weight: bold;
   border: 1px solid var(--jad-okraj); border-radius: 50%; font-size: 0.72rem; line-height: 1.3em; }
+
+/* Nošená zbroj nad zdatnostmi */
+.jad-denik .jad-nosena-zbroj { display: flex; align-items: baseline; gap: 6px; padding: 4px 6px 2px; font-size: 13px; }
+.jad-denik .jad-nosena-zbroj .jad-oc-maly { margin-left: auto; font-weight: bold; white-space: nowrap; }
+.jad-denik .jad-podpopis { font-size: 11px; text-transform: uppercase; opacity: .7; margin-right: 2px; }
