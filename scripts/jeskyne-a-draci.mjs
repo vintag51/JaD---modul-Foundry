@@ -140,6 +140,15 @@ Hooks.on("preCreateScene", (scene, data) => {
   }
 });
 
+// Pojistka: po Dlouhém odpočinku vždy doplnit Použití Alchymistické truhly
+Hooks.on("dnd5e.restCompleted", async (actor, result, config) => {
+  if ( (config?.type ?? (config?.longRest ? "long" : "")) !== "long" ) return;
+  if ( !actor?.isOwner ) return;
+  const truhly = actor.items.filter(i => (i.type === "feat") && (i.system.identifier === "alchymisticka-truhla")
+    && (i.system.uses?.spent > 0));
+  if ( truhly.length ) await actor.updateEmbeddedDocuments("Item", truhly.map(i => ({ _id: i.id, "system.uses.spent": 0 })));
+});
+
 Hooks.on("canvasReady", () => {
   if ( game.ready ) upozornitNaJednotky();
 });
@@ -158,10 +167,50 @@ Hooks.once("ready", async () => {
     upozornitNaJednotky();
     if ( game.settings.get(MODUL, "nosnostRadky") ) await zajistitRezimNalozeni();
     if ( game.modules.get("midi-qol")?.active ) ui.notifications.info(t("Midi.Aktivni"));
+    try {
+      await aktualizovatTruhly();
+    } catch(err) {
+      console.error(`${MODUL} | Aktualizace Alchymistické truhly selhala`, err);
+    }
   }
 
   if ( game.settings.get(MODUL, "registrovatSeznamy") ) await registrovatSeznamy();
 });
+
+/**
+ * Postavám s Alchymistickou truhlou ze starší verze modulu doplní nové aktivity (všechny výrobky)
+ * a obnovu použití z kompendia. Spotřebovaná použití zůstanou zachována.
+ */
+async function aktualizovatTruhly() {
+  const pack = game.packs.get(`${MODUL}.povolani`);
+  if ( !pack ) return;
+  const index = await pack.getIndex({ fields: ["system.identifier"] });
+  const zaznam = index.find(i => i.system?.identifier === "alchymisticka-truhla");
+  if ( !zaznam ) return;
+  const vzor = (await pack.getDocument(zaznam._id))?.toObject();
+  if ( !vzor ) return;
+  const verze = game.modules.get(MODUL).version;
+  let pocet = 0;
+  for ( const actor of game.actors ) {
+    for ( const item of actor.items ) {
+      if ( (item.type !== "feat") || (item.system.identifier !== "alchymisticka-truhla") ) continue;
+      if ( item.getFlag(MODUL, "verzeTruhly") === verze ) continue;
+      const update = {
+        "system.activities": vzor.system.activities,
+        "system.uses.max": vzor.system.uses.max,
+        "system.uses.recovery": vzor.system.uses.recovery,
+        "system.description": vzor.system.description,
+        [`flags.${MODUL}.verzeTruhly`]: verze
+      };
+      for ( const id of Object.keys(item._source.system.activities ?? {}) ) {
+        if ( !(id in vzor.system.activities) ) update[`system.activities.-=${id}`] = null;
+      }
+      await item.update(update);
+      pocet++;
+    }
+  }
+  if ( pocet ) ui.notifications.info(`Jeskyně a draci: Alchymistická truhla aktualizována u ${pocet} postav(y).`);
+}
 
 /** Zaregistruje stránky se seznamy kouzel povolání do registru dnd5e. */
 async function registrovatSeznamy() {

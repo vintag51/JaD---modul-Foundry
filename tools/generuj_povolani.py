@@ -79,6 +79,11 @@ def aktivita(seed, a, idx, ma_pouziti, efekty_id):
                       "affects": {"count": "", "type": "", "choice": False, "special": ""}, "prompt": True, "override": False},
            "uses": {"spent": 0, "recovery": [], "max": ""},
            "visibility": {"level": {"min": None, "max": None}}}
+    if a.get("spotreba"):  # vlastní spotřeba, např. [[activityUses, 1], [itemUses, -1]]
+        akt["consumption"]["targets"] = [{"type": t, "value": str(v), "target": "", "scaling": {}} for t, v in a["spotreba"]]
+    if a.get("pouziti"):  # vlastní počet použití aktivity, např. "1/lr"
+        mx, ob = str(a["pouziti"]).rsplit("/", 1)
+        akt["uses"] = {"spent": 0, "recovery": [{"period": OBNOVA[ob], "type": "recoverAll"}], "max": mx}
     if a.get("sablona"):
         s = a["sablona"]
         akt["target"]["template"] = {"count": "", "contiguous": False, "type": s["typ"], "size": str(s["velikost"]),

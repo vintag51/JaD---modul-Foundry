@@ -385,3 +385,31 @@
 .jad-urceni-zalozky { display: flex; gap: 12px; margin: 6px 0; }
 .jad-urceni-radek { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 3px 0; }
 .jad-urceni-radek select, .jad-urceni-radek input { width: 90px; }
+
+/* Navigace záložek (ikony vedle deníku): světlý podklad, tmavé ikony, aktivní červeně */
+.jad-denik.dnd5e2 nav.tabs {
+  background: #fffaf0;
+  border-color: #3b2a22;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .35);
+}
+.jad-denik.dnd5e2 nav.tabs > .item {
+  color: #3b2a22;
+  --icon-fill: #3b2a22;
+}
+.jad-denik.dnd5e2 nav.tabs > .item.active,
+.jad-denik.dnd5e2 nav.tabs > .item:hover {
+  background: #7a1d16;
+  color: #fff;
+  --icon-fill: #fff;
+}
+
+/* Posuvníky: deník se dá posouvat svisle i do stran, když se okno nevejde na obrazovku */
+.jad-denik .sheet-body .main-content {
+  overflow: auto;
+  scrollbar-width: auto;
+  scrollbar-color: #7a1d16 #e9e4d8;
+}
+.jad-denik .tab-body .jad-tab[data-tab="denik"] { min-width: 720px; }
+.jad-denik .sheet-body .main-content::-webkit-scrollbar { width: 12px; height: 12px; }
+.jad-denik .sheet-body .main-content::-webkit-scrollbar-thumb { background: #7a1d16; border-radius: 6px; }
+.jad-denik .sheet-body .main-content::-webkit-scrollbar-track { background: #e9e4d8; }

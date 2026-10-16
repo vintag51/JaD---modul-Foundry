@@ -9,6 +9,9 @@
 - **Soustředění** na úvodní stránce deníku – ukazuje aktivní kouzlo, hod na záchranu a ukončení.
 - **Zdroje** v deníku – Kostky inspirace (s velikostí kostky), Použití truhly a další schopnosti s počtem použití, s rychlou úpravou +/−.
 - Ručně zadané maximum Bodů výdrže je v deníku zvýrazněné.
+- **Alchymistická truhla u hotových postav** se při spuštění světa sama aktualizuje (nové výrobky, obnova); po Dlouhém odpočinku se Použití vždy doplní. Improvizace je tlačítkem přímo v Truhle (vrátí 1 Použití, 1× denně).
+- Ikony záložek vedle deníku jsou čitelné (světlý podklad, aktivní červeně).
+- Deník má posuvníky – dá se posouvat svisle i do stran, když se okno nevejde na obrazovku.
 
 ## 0.7.5 – úpravy deníku
 

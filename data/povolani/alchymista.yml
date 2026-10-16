@@ -24,6 +24,7 @@ schopnosti:
     obnova: [{period: sr, formula: "max(@abilities.int.mod, 1) * min(1, floor(@classes.alchymista.levels / 5))"}]
     akt:
       - {n: Vytáhnout a předat, t: bonus}
+      - {n: "Improvizace: obnovit 1 Použití (po Krátkém odpočinku, 1× denně)", t: special, spotreba: [[activityUses, 1], [itemUses, -1]], pouziti: 1/lr}
       - {n: Alchymistický oheň, t: action, typ: attack, utok: ranged, druh: weapon, vlastnost: dex, dosah: 4, dmg: ["@scale.alchymista.kostka + @abilities.dex.mod * (1 - min(1, floor(@classes.alchymista.levels / 5))) + @abilities.int.mod * min(1, floor(@classes.alchymista.levels / 5))", fire]}
       - {n: Dýmovnice, t: action, dosah: 4, sablona: {typ: radius, velikost: 2}}
       - {n: Kyselina, t: action, typ: attack, utok: ranged, druh: weapon, vlastnost: dex, dosah: 4, dmg: [["2d6 + @abilities.dex.mod", acid], ["(max(@abilities.int.mod, 1) * min(1, floor(@classes.alchymista.levels / 5)))d@scale.alchymista.kostka.faces", acid]]}
