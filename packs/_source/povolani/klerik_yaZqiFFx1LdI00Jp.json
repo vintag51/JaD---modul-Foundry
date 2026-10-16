@@ -427,6 +427,57 @@
           }
         },
         "value": {}
+      },
+      "pIM55GWlCPo1xgqS": {
+        "_id": "pIM55GWlCPo1xgqS",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Triky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 3,
+              "replacement": false
+            },
+            "4": {
+              "count": 1,
+              "replacement": false
+            },
+            "10": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 1
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": [
+              "class:cleric"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
       }
     },
     "spellcasting": {

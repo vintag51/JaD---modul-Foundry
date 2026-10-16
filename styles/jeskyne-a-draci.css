@@ -361,3 +361,27 @@
 .jad-denik .jad-dovednosti .rollable { cursor: pointer; }
 .jad-denik .jad-dovednosti .rollable:hover,
 .jad-denik .jad-stit .rollable:hover { color: var(--jad-cervena); text-decoration: underline; }
+
+/* Soustředění */
+.jad-denik .jad-soustredeni { position: relative; }
+.jad-denik .jad-soustredeni .jad-hodnota.rollable { cursor: pointer; }
+.jad-denik .jad-soustredeni.aktivni { border-color: #2e5fa3; box-shadow: 0 0 0 2px rgba(46,95,163,.35) inset; }
+.jad-denik .jad-soustredeni-nazev { font-size: 10px; max-width: 90px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #2e5fa3; font-weight: bold; }
+.jad-denik .jad-soustredeni-konec { position: absolute; top: 2px; right: 4px; font-size: 11px; color: var(--jad-cervena); cursor: pointer; }
+
+/* Zdroje (Kostky inspirace, Truhla…) */
+.jad-denik .jad-zdroje { list-style: none; margin: 0; padding: 0; }
+.jad-denik .jad-zdroje li { display: flex; align-items: center; gap: 4px; padding: 2px 0; border-bottom: 1px solid var(--jad-pole); }
+.jad-denik .jad-zdroje .jad-polozka { flex: 1; min-width: 0; display: flex; align-items: center; gap: 4px; cursor: pointer; }
+.jad-denik .jad-zdroje .jad-cislo { font-weight: bold; white-space: nowrap; }
+.jad-denik .jad-zdroj-tl { font-size: 10px; color: var(--jad-tlumene); cursor: pointer; }
+.jad-denik .jad-zdroj-tl:hover { color: var(--jad-cervena); }
+
+/* Ručně zadané maximum BV – výrazně, aby bylo vidět, že se nepočítá automaticky */
+.jad-denik .jad-bv input.jad-max.jad-rucne { color: var(--jad-cervena); font-style: italic; text-decoration: underline dotted; }
+
+/* Určení Hodnot vlastností */
+.jad-denik .jad-urcit { display: block; text-align: center; margin: 0 0 6px; cursor: pointer; }
+.jad-urceni-zalozky { display: flex; gap: 12px; margin: 6px 0; }
+.jad-urceni-radek { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 3px 0; }
+.jad-urceni-radek select, .jad-urceni-radek input { width: 90px; }

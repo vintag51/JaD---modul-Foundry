@@ -5,6 +5,7 @@
  * OČ, záchrany, rychlost dle Naložení, zbraně, kouzla, výbava v Řádcích, schopnosti) a
  * „Vzhled a vztahy“. Ostatní záložky (Inventář, Schopnosti, Kouzla, Efekty…) zůstávají z dnd5e.
  */
+import { urcitVlastnosti } from "./vlastnosti.mjs";
 import { MODUL, formatRadky, odlozeny, radkyPredmetu, rozpisNalozeni, spocitatNalozeni } from "./nosnost.mjs";
 
 const SABLONY = `modules/${MODUL}/templates`;
@@ -63,7 +64,10 @@ export function vytvoritDenik() {
         jadPozice: DenikJaD.#pozice,
         jadSmazat: DenikJaD.#smazat,
         jadVycerpani: DenikJaD.#vycerpani,
-        jadUroven: DenikJaD.#uroven
+        jadUroven: DenikJaD.#uroven,
+        jadZdroj: DenikJaD.#zdroj,
+        jadUrcitVlastnosti: DenikJaD.#urcitVlastnosti,
+        jadUkoncit: DenikJaD.#ukoncitSoustredeni
       }
     };
 
@@ -194,10 +198,14 @@ export function vytvoritDenik() {
       }
       const pakt = sys.spells?.pact?.max ? { value: sys.spells.pact.value ?? 0, max: sys.spells.pact.max, stupen: sys.spells.pact.level } : null;
       const truhla = actor.items.find(i => i.type === "feat" && /alchymistick[áa] truhla/i.test(i.name) && i.system.uses?.max);
+      // Alchymista nesesílá kouzla, ale jeho výrobky používají SO schopností = 8 + Zdatnost + Oprava inteligence
+      const alchymista = !sys.attributes.spellcasting && actor.items.some(i => i.type === "class" && i.system.identifier === "alchymista");
+      const intMod = sys.abilities?.int?.mod ?? 0;
       const kouzla = {
-        vlastnost: CONFIG.DND5E.abilities[sys.attributes.spellcasting]?.label ?? "—",
-        utok: sys.attributes.spellcasting ? sign(spell.attack ?? 0) : "—",
-        so: sys.attributes.spellcasting ? (spell.dc ?? "—") : "—",
+        vlastnost: alchymista ? `${CONFIG.DND5E.abilities.int?.label ?? "Inteligence"} (SO schopností)`
+          : (CONFIG.DND5E.abilities[sys.attributes.spellcasting]?.label ?? "—"),
+        utok: alchymista ? sign((sys.attributes.prof ?? 0) + intMod) : (sys.attributes.spellcasting ? sign(spell.attack ?? 0) : "—"),
+        so: alchymista ? 8 + (sys.attributes.prof ?? 0) + intMod : (sys.attributes.spellcasting ? (spell.dc ?? "—") : "—"),
         pozice, pakt,
         truhla: truhla ? { id: truhla.id, value: truhla.system.uses.value ?? 0, max: truhla.system.uses.max } : null,
         pripravena: (() => {
@@ -247,6 +255,25 @@ export function vytvoritDenik() {
       };
       fyzicke.filter(i => !i.system.container || !actor.items.get(i.system.container)).sort(serad).forEach(i => pridat(i, 0));
 
+      // Zdroje: schopnosti s omezeným počtem použití (Kostky inspirace, Truhla, Druhý dech…)
+      const zdroje = (actor.itemTypes.feat ?? []).filter(i => i.system.uses?.max).map(item => {
+        const ident = item.system.identifier;
+        const kostka = ident === "bardska-inspirace" ? sys.scale?.bard?.inspirace?.die : null;
+        return {
+          id: item.id, nazev: ident === "bardska-inspirace" ? "Kostky inspirace" : item.name, img: item.img,
+          value: item.system.uses.value ?? 0, max: item.system.uses.max, kostka: kostka ? kostka.replace(/^d/, "k") : "",
+          spent: item.system.uses.spent ?? 0
+        };
+      }).sort((a, b) => (b.nazev === "Kostky inspirace") - (a.nazev === "Kostky inspirace"));
+
+      // Soustředění
+      const konc = actor.concentration ?? { items: new Set(), effects: new Set() };
+      const soustredeni = {
+        aktivni: konc.effects.size > 0,
+        nazvy: [...konc.items].map(i => i.name).concat(konc.items.size ? [] : [...konc.effects].map(e => e.name)).join(", "),
+        bonus: sign(sys.attributes.concentration?.save ?? 0)
+      };
+
       const schopnosti = (actor.itemTypes.feat ?? []).map(item => ({
         id: item.id, nazev: item.name, img: item.img,
         pouziti: item.system.uses?.max ? `${item.system.uses.value ?? 0}/${item.system.uses.max}` : ""
@@ -271,6 +298,7 @@ export function vytvoritDenik() {
 
       return {
         prof: sign(sys.attributes.prof ?? 0),
+        zdroje, soustredeni,
         povolaniRadek, celkovaUroven: celkem, zkusenosti,
         inspirace: !!sys.attributes.inspiration,
         iniciativa: sign(sys.attributes.init?.total ?? sys.attributes.init?.mod ?? 0),
@@ -444,6 +472,26 @@ export function vytvoritDenik() {
       vyber.value = target.dataset.smer;
       vyber.dispatchEvent(new Event("change", { bubbles: true }));
       vyber.value = "0";
+    }
+
+    /** Ruční úprava zdroje: data-smer +1 = vrátit použití, -1 = spotřebovat. */
+    static async #zdroj(event, target) {
+      const item = this.actor.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+      if ( !item?.system.uses ) return;
+      const spent = item.system.uses.spent ?? 0;
+      const max = Number(item.system.uses.max) || 0;
+      const nove = Math.clamp(spent - Number(target.dataset.smer), 0, max);
+      return item.update({ "system.uses.spent": nove });
+    }
+
+    /** Dialog pro určení základních Hodnot vlastností. */
+    static async #urcitVlastnosti() {
+      return urcitVlastnosti(this.actor);
+    }
+
+    /** Ukončit soustředění. */
+    static async #ukoncitSoustredeni() {
+      return this.actor.endConcentration?.();
     }
 
     /** Nastavit stupeň vyčerpání (klik na už nastavený stupeň ho sníží o jeden). */

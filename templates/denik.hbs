@@ -37,13 +37,21 @@
     <div class="jad-ctverec {{ @root.rollableClass }}" data-action="roll" data-type="initiative">
       <span class="jad-hodnota">{{ iniciativa }}</span><span class="jad-popis">Iniciativa</span>
     </div>
+    <div class="jad-ctverec jad-soustredeni {{#if soustredeni.aktivni}}aktivni{{/if}}" data-ability="concentration">
+      <span class="jad-hodnota {{ @root.rollableClass }}" data-action="roll" data-type="ability" data-tooltip="Hodit Záchranu na soustředění">{{ soustredeni.bonus }}</span>
+      <span class="jad-popis">Soustředění</span>
+      {{#if soustredeni.aktivni}}
+      <span class="jad-soustredeni-nazev" data-tooltip="Soustředíš se na: {{ soustredeni.nazvy }}">{{ soustredeni.nazvy }}</span>
+      {{#if editovatelne}}<a class="jad-soustredeni-konec" data-action="jadUkoncit" data-tooltip="Ukončit soustředění"><i class="fas fa-xmark"></i></a>{{/if}}
+      {{/if}}
+    </div>
     <div class="jad-ctverec jad-oc"><span class="jad-hodnota">{{ oc }}</span><span class="jad-popis">Obranné číslo</span></div>
     <div class="jad-ctverec jad-bv">
       <span class="jad-hodnota">
         <input type="number" class="jad-pole" data-cesta="system.attributes.hp.value" data-typ="cislo" value="{{ hp.value }}" {{#unless editovatelne}}disabled{{/unless}}>
         <span class="jad-lomitko">/</span>
-        <input type="number" class="jad-pole jad-max" data-cesta="system.attributes.hp.max" data-typ="cislo-null" value="{{ hp.maxRucne }}" placeholder="{{ hp.max }}"
-               data-tooltip="Maximum Bodů výdrže – prázdné = automaticky podle povolání" {{#unless editovatelne}}disabled{{/unless}}>
+        <input type="number" class="jad-pole jad-max {{#if hp.maxRucne}}jad-rucne{{/if}}" data-cesta="system.attributes.hp.max" data-typ="cislo-null" value="{{ hp.maxRucne }}" placeholder="{{ hp.max }}"
+               data-tooltip="{{#if hp.maxRucne}}Maximum je zadané RUČNĚ a nepočítá se podle Úrovní. Smaž číslo pro automatický výpočet.{{else}}Maximum Bodů výdrže – prázdné = automaticky podle povolání{{/if}}" {{#unless editovatelne}}disabled{{/unless}}>
       </span>
       <span class="jad-popis">Body výdrže</span>
     </div>
@@ -57,6 +65,9 @@
     {{!-- Levý sloupec: vlastnosti a dovednosti --}}
     <div class="jad-sloupec jad-levy">
       <h3 class="jad-pruh">Dovednosti</h3>
+      {{#if upravy}}
+      <a class="jad-tlacitko jad-urcit" data-action="jadUrcitVlastnosti" data-tooltip="Standardní sada, nákup bodů nebo hod 4k6"><i class="fas fa-dice-d20"></i> Určit Hodnoty vlastností</a>
+      {{/if}}
       <div class="jad-vlastnosti-blok">
         <div class="jad-stity">
           {{#each vlastnosti}}
@@ -235,6 +246,20 @@
           </div>
         </div>
       </div>
+
+      {{#if zdroje.length}}
+      <h3 class="jad-pruh jad-pruh-maly">Zdroje</h3>
+      <ul class="jad-zdroje">
+        {{#each zdroje}}
+        <li data-item-id="{{ id }}">
+          <a class="jad-polozka" data-action="jadPouzit" data-tooltip="Použít"><img src="{{ img }}" alt=""><span>{{ nazev }}{{#if kostka}} ({{ kostka }}){{/if}}</span></a>
+          {{#if ../editovatelne}}<a class="jad-zdroj-tl" data-action="jadZdroj" data-smer="-1" data-tooltip="Spotřebovat"><i class="fas fa-minus"></i></a>{{/if}}
+          <span class="jad-cislo">{{ value }} / {{ max }}</span>
+          {{#if ../editovatelne}}<a class="jad-zdroj-tl" data-action="jadZdroj" data-smer="1" data-tooltip="Vrátit"><i class="fas fa-plus"></i></a>{{/if}}
+        </li>
+        {{/each}}
+      </ul>
+      {{/if}}
 
       <div class="jad-vycerpani">
         <span class="jad-podpopis">Vyčerpání</span>

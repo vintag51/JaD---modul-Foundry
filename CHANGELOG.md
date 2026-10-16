@@ -1,5 +1,15 @@
 # Změny
 
+## 0.8.0 – povolání a deník
+
+- **Výběr kouzel při postupu** – na každé Úrovni se nabídnou triky a známá kouzla (Bard, Čaroděj, Černokněžník, Kouzelník do knihy kouzel, Klerik a Druid triky, třetinoví sesilatelé oborů) rovnou ze seznamu kouzel povolání.
+- **Určení Hodnot vlastností** – v režimu úprav deníku: standardní sada, nákup bodů nebo hod 4k6.
+- **Alchymistická truhla** – všechny běžné výrobky (oheň, dýmovnice, kyselina, léčitelská souprava, léčivý lektvar, protijed, voda sfér, základní jed) včetně zesílení od 5. Úrovně; Zlepšená improvizace obnovuje Použití při Krátkém odpočinku.
+- **Alchymista** má v deníku SO schopností a útok (8 + Zdatnost + Oprava inteligence).
+- **Soustředění** na úvodní stránce deníku – ukazuje aktivní kouzlo, hod na záchranu a ukončení.
+- **Zdroje** v deníku – Kostky inspirace (s velikostí kostky), Použití truhly a další schopnosti s počtem použití, s rychlou úpravou +/−.
+- Ručně zadané maximum Bodů výdrže je v deníku zvýrazněné.
+
 ## 0.7.5 – úpravy deníku
 
 - Úroveň povolání se mění šipkou vždy o jednu úroveň.

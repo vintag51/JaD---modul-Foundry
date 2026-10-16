@@ -129,6 +129,9 @@ def schopnost(s, pozadavek, kotva, slozka, ikona=IKONY["feat"]):
     for i, a in enumerate(s.get("akt", [])):
         x = aktivita(f"{iid}-akt-{i}", a, i, bool(s.get("p")), efekty_id)
         akt[x["_id"]] = x
+    uses = pouziti(s.get("p"))
+    for o in s.get("obnova", []):  # další způsoby obnovy, např. {period: sr, formula: "..."}
+        uses["recovery"].append({"period": o["period"], "type": "formula", "formula": str(o["formula"])})
     postup = {}
     if s.get("trait"):
         aid, adv = adv_trait(f"{iid}-trait", s["n"], s["trait"].get("zdatnosti", []), s["trait"].get("volby", []),
@@ -142,7 +145,7 @@ def schopnost(s, pozadavek, kotva, slozka, ikona=IKONY["feat"]):
         "ownership": {"default": 0}, "effects": efekty,
         "system": {"description": {"value": popis(s.get("d", ""), s.get("u", []), kotva, extra), "chat": ""},
                    "source": {"custom": "", "book": "Jeskyně a draci", "page": "", "license": LICENCE, "rules": "2014"},
-                   "uses": pouziti(s.get("p")), "type": {"value": "class", "subtype": ""},
+                   "uses": uses, "type": {"value": "class", "subtype": ""},
                    "requirements": f"{pozadavek} {min(s['u'])}" if s.get("u") else pozadavek, "properties": [],
                    "activities": akt, "enchant": {}, "prerequisites": {"level": None}, "identifier": slug(s["k"]),
                    "advancement": postup},
@@ -201,6 +204,62 @@ def volby(seed, seznam, ids, kouzla, chyby):
                                       "allowDrops": True, "type": typ, "pool": [{"uuid": u} for u in pool],
                                       "spell": cfg, "restriction": restr},
                     "value": {"added": {}, "replaced": {}}}
+    return adv
+
+
+# Počty známých triků a kouzel (tabulky povolání; shodné s 5E SRD, Theurg dle SRD JaD).
+_TRETINOVY = {"triky": {3: 2, 10: 3},
+              "kouzla": {3: 3, 4: 4, 7: 5, 8: 6, 10: 7, 11: 8, 13: 9, 14: 10, 16: 11, 19: 12, 20: 13}}
+ZNAMA_KOUZLA = {
+    "bard": {"triky": {1: 2, 4: 3, 10: 4},
+             "kouzla": {1: 4, 2: 5, 3: 6, 4: 7, 5: 8, 6: 9, 7: 10, 8: 11, 9: 12, 10: 14, 11: 15, 13: 16, 14: 18,
+                        15: 19, 17: 20, 18: 22}},
+    "sorcerer": {"triky": {1: 4, 4: 5, 10: 6},
+                 "kouzla": {1: 2, 2: 3, 3: 4, 4: 5, 5: 6, 6: 7, 7: 8, 8: 9, 9: 10, 10: 11, 11: 12, 13: 13, 15: 14, 17: 15}},
+    "warlock": {"triky": {1: 2, 4: 3, 10: 4},
+                "kouzla": {1: 2, 2: 3, 3: 4, 4: 5, 5: 6, 6: 7, 7: 8, 8: 9, 9: 10, 11: 11, 13: 12, 15: 13, 17: 14, 19: 15}},
+    "wizard": {"triky": {1: 3, 4: 4, 10: 5}, "kniha": {1: 6, **{u: 2 for u in range(2, 21)}}},
+    "cleric": {"triky": {1: 3, 4: 4, 10: 5}},
+    "druid": {"triky": {1: 2, 4: 3, 10: 4}},
+    "theurg": _TRETINOVY, "chodec": _TRETINOVY, "chramovy-rytir": _TRETINOVY, "svatokupec": _TRETINOVY,
+    "rad-zaprodancu": _TRETINOVY,
+}
+
+
+def prirustky(tabulka):
+    """{úroveň: celkem} → {úroveň: přírůstek}."""
+    out, predchozi = {}, 0
+    for u in sorted(tabulka):
+        if tabulka[u] > predchozi:
+            out[u] = tabulka[u] - predchozi
+        predchozi = tabulka[u]
+    return out
+
+
+def volby_kouzel(seed, klic, seznam, vlastnost):
+    """ItemChoice pro výběr triků a kouzel při postupu na Úroveň (filtr podle seznamu kouzel povolání)."""
+    t = ZNAMA_KOUZLA.get(klic)
+    if not t or not vlastnost:
+        return {}
+    adv = {}
+
+    def pridej(nazev, pocty, stupen, vymena, pripraveno):
+        aid = foundry_id(f"{seed}-{nazev}")
+        adv[aid] = {"_id": aid, "type": "ItemChoice", "level": 0, "title": nazev, "hint": "", "flags": {},
+                    "configuration": {"choices": {str(u): {"count": c, "replacement": bool(vymena and u > min(pocty))}
+                                                  for u, c in pocty.items()},
+                                      "allowDrops": True, "type": "spell", "pool": [],
+                                      "spell": {"ability": [vlastnost], "uses": {"max": "", "per": "", "requireSlot": False},
+                                                "method": "spell", "prepared": pripraveno},
+                                      "restriction": {"type": "", "subtype": "", "level": stupen, "list": [seznam]}},
+                    "value": {"added": {}, "replaced": {}}}
+
+    if t.get("triky"):
+        pridej("Triky", prirustky(t["triky"]), "0", False, 1)
+    if t.get("kouzla"):
+        pridej("Známá kouzla", prirustky(t["kouzla"]), "availableNoCantrips", True, 1)
+    if t.get("kniha"):
+        pridej("Kouzla do knihy kouzel", t["kniha"], "availableNoCantrips", False, 0)
     return adv
 
 
@@ -276,6 +335,7 @@ def main():
                     "flags": {}, "configuration": {}, "value": {}}
         adv.update(granty_po_urovnich(f"{cid}-granty", p.get("schopnosti", []), ids))
         adv.update(volby(f"{cid}-volba", p.get("volby", []), ids, kouzla, chyby))
+        adv.update(volby_kouzel(f"{cid}-znama", cid, f"class:{cid}", (p.get("kouzleni") or {}).get("vlastnost")))
 
         cls_id = foundry_id(f"povolani-{cid}")
         tab = ""
@@ -314,6 +374,8 @@ def main():
                                         "method": "spell", "prepared": 2})
                     oadv[aid] = a
             oadv.update(volby(f"{oid}-volba", o.get("volby", []), oids, kouzla, chyby))
+            oadv.update(volby_kouzel(f"{oid}-znama", slug(oid), f"subclass:{slug(oid)}",
+                                     (o.get("kouzleni") or {}).get("vlastnost")))
             for sid, s in (o.get("skaly") or {}).items():
                 aid, a = skala(f"{oid}-skala-{sid}", sid, s)
                 oadv[aid] = a

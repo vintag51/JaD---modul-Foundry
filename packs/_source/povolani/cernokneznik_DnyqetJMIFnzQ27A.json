@@ -804,6 +804,152 @@
           "added": {},
           "replaced": {}
         }
+      },
+      "2z4Khdf9qTm8xSca": {
+        "_id": "2z4Khdf9qTm8xSca",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Triky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 2,
+              "replacement": false
+            },
+            "4": {
+              "count": 1,
+              "replacement": false
+            },
+            "10": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 1
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": [
+              "class:warlock"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      "KaRRmnvdz0yCft4B": {
+        "_id": "KaRRmnvdz0yCft4B",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Známá kouzla",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 2,
+              "replacement": false
+            },
+            "2": {
+              "count": 1,
+              "replacement": true
+            },
+            "3": {
+              "count": 1,
+              "replacement": true
+            },
+            "4": {
+              "count": 1,
+              "replacement": true
+            },
+            "5": {
+              "count": 1,
+              "replacement": true
+            },
+            "6": {
+              "count": 1,
+              "replacement": true
+            },
+            "7": {
+              "count": 1,
+              "replacement": true
+            },
+            "8": {
+              "count": 1,
+              "replacement": true
+            },
+            "9": {
+              "count": 1,
+              "replacement": true
+            },
+            "11": {
+              "count": 1,
+              "replacement": true
+            },
+            "13": {
+              "count": 1,
+              "replacement": true
+            },
+            "15": {
+              "count": 1,
+              "replacement": true
+            },
+            "17": {
+              "count": 1,
+              "replacement": true
+            },
+            "19": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 1
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:warlock"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
       }
     },
     "spellcasting": {

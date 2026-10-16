@@ -327,6 +327,176 @@
           }
         },
         "value": {}
+      },
+      "ezWcawcdEpFi1TLs": {
+        "_id": "ezWcawcdEpFi1TLs",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Triky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 3,
+              "replacement": false
+            },
+            "4": {
+              "count": 1,
+              "replacement": false
+            },
+            "10": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [
+              "int"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 1
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": [
+              "class:wizard"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      "IFU65tLmoK1DW37O": {
+        "_id": "IFU65tLmoK1DW37O",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Kouzla do knihy kouzel",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 6,
+              "replacement": false
+            },
+            "2": {
+              "count": 2,
+              "replacement": false
+            },
+            "3": {
+              "count": 2,
+              "replacement": false
+            },
+            "4": {
+              "count": 2,
+              "replacement": false
+            },
+            "5": {
+              "count": 2,
+              "replacement": false
+            },
+            "6": {
+              "count": 2,
+              "replacement": false
+            },
+            "7": {
+              "count": 2,
+              "replacement": false
+            },
+            "8": {
+              "count": 2,
+              "replacement": false
+            },
+            "9": {
+              "count": 2,
+              "replacement": false
+            },
+            "10": {
+              "count": 2,
+              "replacement": false
+            },
+            "11": {
+              "count": 2,
+              "replacement": false
+            },
+            "12": {
+              "count": 2,
+              "replacement": false
+            },
+            "13": {
+              "count": 2,
+              "replacement": false
+            },
+            "14": {
+              "count": 2,
+              "replacement": false
+            },
+            "15": {
+              "count": 2,
+              "replacement": false
+            },
+            "16": {
+              "count": 2,
+              "replacement": false
+            },
+            "17": {
+              "count": 2,
+              "replacement": false
+            },
+            "18": {
+              "count": 2,
+              "replacement": false
+            },
+            "19": {
+              "count": 2,
+              "replacement": false
+            },
+            "20": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [
+              "int"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 0
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "class:wizard"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
       }
     },
     "spellcasting": {

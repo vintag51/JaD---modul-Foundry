@@ -19,13 +19,20 @@ schopnosti:
   - k: alchymisticka-truhla
     n: Alchymistická truhla
     u: [1]
-    d: Ze své Truhly vytáhneš za Použití truhly (počet = Úroveň alchymisty, obnova Dlouhým odpočinkem) běžný alchymistický výrobek – alchymistický oheň, dýmovnici, kyselinu, léčitelskou soupravu, léčivý lektvar, protijed, vodu sfér nebo základní jed. Akcí ho rovnou použiješ, bonusovou akcí předáš tvorovi do 2 sáhů.
+    d: Ze své Truhly vytáhneš za Použití truhly (počet = Úroveň alchymisty, obnova Dlouhým odpočinkem) běžný alchymistický výrobek – alchymistický oheň, dýmovnici, kyselinu, léčitelskou soupravu, léčivý lektvar, protijed, vodu sfér nebo základní jed. Akcí ho rovnou použiješ, bonusovou akcí předáš tvorovi do 2 sáhů. Od 5. Úrovně (Tvůrce mocných předmětů) jsou výrobky silnější a Krátkým odpočinkem obnovíš tolik Použití, kolik je tvá Oprava inteligence (Zlepšená improvizace).
     p: "@classes.alchymista.levels/lr"
+    obnova: [{period: sr, formula: "max(@abilities.int.mod, 1) * min(1, floor(@classes.alchymista.levels / 5))"}]
     akt:
-      - {n: Vytáhnout a použít, t: action}
       - {n: Vytáhnout a předat, t: bonus}
-      - {n: Alchymistický oheň, t: action, typ: attack, utok: ranged, druh: weapon, vlastnost: dex, dosah: 4, dmg: ["@scale.alchymista.kostka + @abilities.int.mod", fire]}
-      - {n: Léčivý lektvar, t: action, typ: heal, heal: "2d4 + 2"}
+      - {n: Alchymistický oheň, t: action, typ: attack, utok: ranged, druh: weapon, vlastnost: dex, dosah: 4, dmg: ["@scale.alchymista.kostka + @abilities.dex.mod * (1 - min(1, floor(@classes.alchymista.levels / 5))) + @abilities.int.mod * min(1, floor(@classes.alchymista.levels / 5))", fire]}
+      - {n: Dýmovnice, t: action, dosah: 4, sablona: {typ: radius, velikost: 2}}
+      - {n: Kyselina, t: action, typ: attack, utok: ranged, druh: weapon, vlastnost: dex, dosah: 4, dmg: [["2d6 + @abilities.dex.mod", acid], ["(max(@abilities.int.mod, 1) * min(1, floor(@classes.alchymista.levels / 5)))d@scale.alchymista.kostka.faces", acid]]}
+      - {n: Léčitelská souprava – stabilizace, t: action, dosah: 1}
+      - {n: Léčitelská souprava – 1 BV (od 5. Úrovně), t: action, typ: heal, heal: "1", dosah: 1}
+      - {n: Léčivý lektvar, t: action, typ: heal, heal: "(2 + 2 * min(1, floor(@classes.alchymista.levels / 5)))d4 + 2 + 2 * min(1, floor(@classes.alchymista.levels / 5))"}
+      - {n: Protijed, t: action}
+      - {n: Voda sfér, t: action, typ: attack, utok: ranged, druh: weapon, vlastnost: dex, dosah: 4, dmg: [["2d6 + @abilities.dex.mod", radiant], ["(max(@abilities.int.mod, 1) * min(1, floor(@classes.alchymista.levels / 5)))d@scale.alchymista.kostka.faces", radiant]]}
+      - {n: Základní jed, t: action, typ: save, save: con, dc: "max(10, (8 + @prof + @abilities.int.mod) * min(1, floor(@classes.alchymista.levels / 5)))", dmg: ["@scale.alchymista.kostka", poison], onsave: none}
   - {k: improvizace, n: Improvizace, u: [1], d: Jednou denně na konci Krátkého odpočinku obnovíš jedno Použití truhly., p: 1/lr, akt: [{n: Improvizovat, t: special}]}
   - {k: zdatnost-s-vytvory, n: Zdatnost s výtvory, u: [1], d: Máš Zdatnost se všemi alchymistickými výrobky a s tím, co vytáhneš z Truhly.}
   - k: alchymistova-zbran

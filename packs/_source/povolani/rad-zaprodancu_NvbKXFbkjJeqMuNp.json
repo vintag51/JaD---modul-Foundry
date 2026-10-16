@@ -175,6 +175,136 @@
           }
         },
         "value": {}
+      },
+      "z1t2tZblKrZS3Mho": {
+        "_id": "z1t2tZblKrZS3Mho",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Triky",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            },
+            "10": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 1
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "0",
+            "list": [
+              "subclass:rad-zaprodancu"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      "v1mvSiFa5HWyMXTq": {
+        "_id": "v1mvSiFa5HWyMXTq",
+        "type": "ItemChoice",
+        "level": 0,
+        "title": "Známá kouzla",
+        "hint": "",
+        "flags": {},
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 3,
+              "replacement": false
+            },
+            "4": {
+              "count": 1,
+              "replacement": true
+            },
+            "7": {
+              "count": 1,
+              "replacement": true
+            },
+            "8": {
+              "count": 1,
+              "replacement": true
+            },
+            "10": {
+              "count": 1,
+              "replacement": true
+            },
+            "11": {
+              "count": 1,
+              "replacement": true
+            },
+            "13": {
+              "count": 1,
+              "replacement": true
+            },
+            "14": {
+              "count": 1,
+              "replacement": true
+            },
+            "16": {
+              "count": 1,
+              "replacement": true
+            },
+            "19": {
+              "count": 1,
+              "replacement": true
+            },
+            "20": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 1
+          },
+          "restriction": {
+            "type": "",
+            "subtype": "",
+            "level": "availableNoCantrips",
+            "list": [
+              "subclass:rad-zaprodancu"
+            ]
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
       }
     },
     "spellcasting": {
