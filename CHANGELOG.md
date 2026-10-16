@@ -1,5 +1,9 @@
 # Změny
 
+## 0.8.1
+
+- Oprava aktualizace Alchymistické truhly u hotových postav: schopnost se nahradí čerstvou kopií z kompendia se všemi výrobky (spotřebovaná Použití zůstanou).
+
 ## 0.8.0 – povolání a deník
 
 - **Výběr kouzel při postupu** – na každé Úrovni se nabídnou triky a známá kouzla (Bard, Čaroděj, Černokněžník, Kouzelník do knihy kouzel, Klerik a Druid triky, třetinoví sesilatelé oborů) rovnou ze seznamu kouzel povolání.

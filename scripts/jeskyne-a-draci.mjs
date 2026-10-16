@@ -155,7 +155,7 @@ Hooks.on("canvasReady", () => {
 
 Hooks.once("ready", async () => {
   const modul = game.modules.get(MODUL);
-  modul.api = { importovat: (vynutit = true) => zajistitKompendia(vynutit), prevestScenuNaSahy };
+  modul.api = { importovat: (vynutit = true) => zajistitKompendia(vynutit), prevestScenuNaSahy, aktualizovatTruhly };
 
   if ( game.users.activeGM?.isSelf ) {
     try {
@@ -192,21 +192,25 @@ async function aktualizovatTruhly() {
   const verze = game.modules.get(MODUL).version;
   let pocet = 0;
   for ( const actor of game.actors ) {
-    for ( const item of actor.items ) {
-      if ( (item.type !== "feat") || (item.system.identifier !== "alchymisticka-truhla") ) continue;
-      if ( item.getFlag(MODUL, "verzeTruhly") === verze ) continue;
-      const update = {
-        "system.activities": vzor.system.activities,
-        "system.uses.max": vzor.system.uses.max,
-        "system.uses.recovery": vzor.system.uses.recovery,
-        "system.description": vzor.system.description,
-        [`flags.${MODUL}.verzeTruhly`]: verze
-      };
-      for ( const id of Object.keys(item._source.system.activities ?? {}) ) {
-        if ( !(id in vzor.system.activities) ) update[`system.activities.-=${id}`] = null;
+    const stare = actor.items.filter(i => (i.type === "feat") && (i.system.identifier === "alchymisticka-truhla")
+      && (i.getFlag(MODUL, "verzeTruhly") !== verze));
+    for ( const item of stare ) {
+      // Celou schopnost nahradíme čerstvou kopií z kompendia (sloučení aktivit se starými ID by nebylo spolehlivé).
+      const nova = foundry.utils.deepClone(vzor);
+      delete nova._id;
+      delete nova.folder;
+      delete nova.ownership;
+      nova.system.uses.spent = Math.min(item.system.uses?.spent ?? 0, Number(item.system.uses?.max) || 0);
+      nova.sort = item.sort;
+      foundry.utils.setProperty(nova, `flags.${MODUL}.verzeTruhly`, verze);
+      foundry.utils.setProperty(nova, "_stats.compendiumSource", zaznam.uuid ?? `Compendium.${MODUL}.povolani.Item.${zaznam._id}`);
+      try {
+        await actor.createEmbeddedDocuments("Item", [nova]);
+        await item.delete();
+        pocet++;
+      } catch(err) {
+        console.error(`${MODUL} | Truhlu u ${actor.name} nelze aktualizovat`, err);
       }
-      await item.update(update);
-      pocet++;
     }
   }
   if ( pocet ) ui.notifications.info(`Jeskyně a draci: Alchymistická truhla aktualizována u ${pocet} postav(y).`);
